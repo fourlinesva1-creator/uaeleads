@@ -1,0 +1,523 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   RMT UAE - PREMIUM LUXURY DESIGN SYSTEM
+   Inspired by Modern Luxury Rentals Aesthetic
+   Dark Theme | Gold Accents | Manrope Typography
+   ========================================================================== */
+
+@theme {
+  /* ========== PRIMARY COLORS ========== */
+  /* Gold - The luxury accent */
+  --color-gold: #D4AF37;
+  --color-gold-light: #E5C76B;
+  --color-gold-dark: #B8960F;
+  --color-gold-muted: rgba(212, 175, 55, 0.1);
+  --color-gold-border: rgba(212, 175, 55, 0.3);
+
+  /* Primary Blue - CTA and interactive */
+  --color-primary: #1152d4;
+  --color-primary-light: #3B7AE8;
+  --color-primary-dark: #0D3FA3;
+  --color-primary-muted: rgba(17, 82, 212, 0.1);
+
+  /* ========== BACKGROUND COLORS ========== */
+  --color-bg-dark: #101622;
+  --color-bg-darker: #0b0f17;
+  --color-bg-card: #1c1f27;
+  --color-bg-elevated: #151a25;
+  --color-bg-light: #f6f6f8;
+  --color-bg-white: #ffffff;
+
+  /* ========== BORDER COLORS ========== */
+  --color-border: #282e39;
+  --color-border-light: #3b4354;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+
+  /* ========== TEXT COLORS ========== */
+  --color-text-white: #ffffff;
+  --color-text-light: #e5e7eb;
+  --color-text-muted: #9da6b9;
+  --color-text-dark: #1a1a1a;
+  --color-text-secondary: #6b7280;
+
+  /* ========== FUNCTIONAL COLORS ========== */
+  --color-whatsapp: #25D366;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* ========== TYPOGRAPHY ========== */
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-arabic: 'Tajawal', 'Cairo', sans-serif;
+
+  /* ========== SHADOWS ========== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 4px 20px 0 rgba(212, 175, 55, 0.25);
+  --shadow-primary: 0 4px 20px 0 rgba(17, 82, 212, 0.4);
+
+  /* ========== BORDER RADIUS ========== */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* ========== TRANSITIONS ========== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slower: 700ms ease;
+}
+
+/* ========== BASE STYLES ========== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-display);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-text-white);
+    line-height: 1.1;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6 {
+    font-family: var(--font-arabic);
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-bg-dark);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg-dark);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-light);
+  }
+}
+
+/* ========== COMPONENT STYLES ========== */
+@layer components {
+  /* Container */
+  .container-luxury {
+    @apply max-w-7xl mx-auto px-6 lg:px-16;
+  }
+
+  /* ===== BUTTONS ===== */
+  /* Primary Button - Blue */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-primary text-white
+           font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:bg-primary-light
+           shadow-lg shadow-primary/20
+           hover:shadow-xl hover:shadow-primary/30
+           hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  /* Secondary Button - Outline */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-transparent text-white
+           border border-white/20
+           font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:bg-white/10 hover:border-white/40
+           backdrop-blur-sm
+           focus:outline-none focus:ring-2 focus:ring-white/20;
+  }
+
+  /* White Button */
+  .btn-white {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-white text-bg-dark
+           font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:bg-gray-100
+           focus:outline-none focus:ring-2 focus:ring-white/50;
+  }
+
+  /* WhatsApp Button */
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-[#25D366] text-white
+           font-bold text-sm tracking-wider
+           transition-all duration-300
+           hover:bg-[#20BD5A]
+           shadow-lg shadow-green-900/30
+           hover:shadow-xl
+           focus:outline-none focus:ring-2 focus:ring-green-400/50;
+  }
+
+  /* Gold Text Button */
+  .btn-gold-text {
+    @apply inline-flex items-center gap-2
+           text-gold font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:gap-4;
+  }
+
+  /* Gold Solid Button */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-gold text-bg-dark
+           font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:bg-gold-light
+           shadow-lg shadow-gold/20
+           hover:shadow-xl hover:shadow-gold/30
+           focus:outline-none focus:ring-2 focus:ring-gold/50;
+  }
+
+  /* Outline Button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-lg
+           bg-transparent text-white
+           border border-border
+           font-bold text-sm tracking-wider uppercase
+           transition-all duration-300
+           hover:border-gold hover:text-gold
+           focus:outline-none focus:ring-2 focus:ring-gold/30;
+  }
+
+  /* ===== CARDS ===== */
+  .card-dark {
+    @apply bg-bg-card rounded-xl border border-border
+           transition-all duration-300
+           hover:border-gold/30 hover:-translate-y-1;
+  }
+
+  .card-feature {
+    @apply flex flex-col gap-3 p-5 rounded-xl
+           bg-bg-card border border-border
+           transition-all duration-300
+           hover:border-gold/50 hover:-translate-y-1;
+  }
+
+  /* ===== SECTIONS ===== */
+  .section-dark {
+    @apply py-20 lg:py-32 bg-bg-dark;
+  }
+
+  .section-darker {
+    @apply py-20 lg:py-32 bg-bg-darker;
+  }
+
+  .section-elevated {
+    @apply py-20 lg:py-32 bg-bg-elevated;
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  /* Section Label - Gold with line */
+  .section-label {
+    @apply flex items-center gap-3 mb-6;
+  }
+
+  .section-label::before {
+    content: '';
+    @apply w-12 h-px bg-gold;
+  }
+
+  .section-label span {
+    @apply text-gold text-sm font-bold tracking-[0.2em] uppercase;
+  }
+
+  /* Heading XL - Hero style */
+  .heading-hero {
+    @apply text-5xl lg:text-7xl font-light tracking-tight leading-[1.1];
+  }
+
+  .heading-hero-bold {
+    @apply font-bold;
+  }
+
+  .heading-hero-light {
+    @apply text-text-muted font-light;
+  }
+
+  /* Heading Large */
+  .heading-lg {
+    @apply text-3xl lg:text-5xl font-bold leading-tight;
+  }
+
+  /* Heading Medium */
+  .heading-md {
+    @apply text-2xl lg:text-3xl font-bold;
+  }
+
+  /* Body Large */
+  .body-lg {
+    @apply text-lg lg:text-xl text-text-muted font-light leading-relaxed;
+  }
+
+  /* Body Regular */
+  .body-md {
+    @apply text-base text-text-muted leading-relaxed;
+  }
+
+  /* ===== DECORATIVE ELEMENTS ===== */
+  /* Gold Line Accent */
+  .gold-line {
+    @apply h-px bg-gold;
+  }
+
+  .gold-line-vertical {
+    @apply w-px bg-gold;
+  }
+
+  /* Gold Border Left */
+  .gold-border-left {
+    @apply border-l-4 border-gold;
+  }
+
+  /* Gold Badge */
+  .badge-gold {
+    @apply inline-block px-4 py-1.5 rounded-full
+           border border-gold text-gold
+           text-xs font-bold tracking-[0.15em] uppercase;
+  }
+
+  /* Popular Badge */
+  .badge-popular {
+    @apply inline-block px-3 py-1 rounded-full
+           bg-black/60 backdrop-blur-md
+           text-white text-xs font-bold tracking-wide
+           border border-white/10;
+  }
+
+  /* ===== NAVIGATION ===== */
+  .nav-link {
+    @apply flex items-center gap-4 px-4 py-3 rounded-lg
+           text-text-muted text-sm font-medium
+           border-l-4 border-transparent
+           transition-all duration-200
+           hover:bg-bg-card hover:text-white hover:border-gold/50;
+  }
+
+  .nav-link-active {
+    @apply bg-primary/10 text-white border-gold;
+  }
+
+  /* ===== FORM INPUTS ===== */
+  .input-dark {
+    @apply w-full px-4 py-3 rounded-lg
+           bg-bg-card border border-border
+           text-white placeholder:text-text-muted
+           transition-all duration-200
+           focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30;
+  }
+
+  .input-label {
+    @apply block text-sm font-medium text-text-muted mb-2 uppercase tracking-wider;
+  }
+
+  /* ===== STATS ===== */
+  .stat-item {
+    @apply flex flex-col;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold text-white;
+  }
+
+  .stat-label {
+    @apply text-xs text-text-muted uppercase tracking-wider;
+  }
+
+  /* ===== FLOATING WHATSAPP ===== */
+  .whatsapp-float {
+    @apply fixed bottom-6 z-50
+           flex items-center justify-center
+           w-14 h-14 rounded-full
+           bg-[#25D366] text-white
+           shadow-lg shadow-green-900/40
+           transition-all duration-300
+           hover:scale-110 hover:shadow-xl;
+  }
+
+  [dir="ltr"] .whatsapp-float {
+    @apply right-6;
+  }
+
+  [dir="rtl"] .whatsapp-float {
+    @apply left-6;
+  }
+
+  /* ===== IMAGE HOVER EFFECTS ===== */
+  .image-zoom-container {
+    @apply relative overflow-hidden;
+  }
+
+  .image-zoom-container img,
+  .image-zoom-container .image-zoom {
+    @apply transition-transform duration-700;
+  }
+
+  .image-zoom-container:hover img,
+  .image-zoom-container:hover .image-zoom {
+    @apply scale-110;
+  }
+
+  /* Image overlay on hover */
+  .image-overlay {
+    @apply absolute inset-0 bg-black/40
+           opacity-0 transition-opacity duration-300
+           flex items-center justify-center;
+  }
+
+  .image-zoom-container:hover .image-overlay {
+    @apply opacity-100;
+  }
+
+  /* ===== DECORATIVE FRAME ===== */
+  .frame-gold {
+    @apply relative;
+  }
+
+  .frame-gold::before {
+    content: '';
+    @apply absolute -top-4 -right-4 lg:-top-6 lg:-right-6
+           w-full h-full
+           border-2 border-gold/30 rounded-2xl
+           hidden lg:block;
+  }
+}
+
+/* ========== UTILITY STYLES ========== */
+@layer utilities {
+  /* Text Balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient Text */
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold via-gold-light to-gold
+           bg-clip-text text-transparent;
+  }
+
+  /* Background Gradient Overlays */
+  .bg-gradient-hero {
+    background: linear-gradient(
+      to top,
+      rgba(16, 22, 34, 1) 0%,
+      rgba(16, 22, 34, 0.6) 40%,
+      rgba(16, 22, 34, 0.3) 100%
+    );
+  }
+
+  .bg-gradient-dark-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(16, 22, 34, 0.95) 0%,
+      rgba(16, 22, 34, 0.8) 50%,
+      rgba(16, 22, 34, 0.6) 100%
+    );
+  }
+
+  /* Backdrop blur */
+  .backdrop-dark {
+    @apply bg-bg-dark/90 backdrop-blur-md;
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Stagger delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+
+  /* Hover lift */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  /* Gold glow on hover */
+  .hover-glow-gold {
+    @apply transition-shadow duration-300 hover:shadow-gold;
+  }
+}

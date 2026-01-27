@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "title": "RMT UAE - Three Decades of Defining the Ramadan Majlis Experience",
+    "description": "30 years of expertise in premium Ramadan tent & Majlis rentals across UAE. Complete solutions for hotels, corporates & families in Dubai, Abu Dhabi & Sharjah."
+  },
+  "brand": {
+    "name": "RMT UAE",
+    "fullName": "Ramadan Majlis Tent Solutions",
+    "tagline": "Premium Rentals UAE",
+    "established": "Est. 1994",
+    "experience": "30+ Years of Excellence"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "locations": "Locations",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Inquire Now",
+    "experience": "Ramadan Specialists"
+  },
+  "hero": {
+    "label": "Veteran Architects of Ramadan",
+    "titleBold": "DEFINING TRADITION",
+    "titleLight": "FOR 30 YEARS",
+    "description": "From intimate family gatherings to grand corporate Iftars, RMT UAE delivers the region's most sophisticated Majlis setups—blending three decades of expertise with pricing the market can't match.",
+    "introduction": {
+      "hook": "Ramadan in the UAE is more than just a month; it is a tradition that has been refined over generations. At RMT UAE, we haven't just watched this evolution—we’ve led it.",
+      "body": "While others see a tent rental as a seasonal transaction, we see it as the heart of your hospitality. For 30 years, our group of experts has been the invisible force behind the region's most seamless Majlis setups. We have the supply chain dominance to beat any competitor’s price and the design heritage to deliver an aesthetic you won’t find anywhere else."
+    },
+    "whyUs": {
+      "title": "Why Experience Matters When the Sun Goes Down",
+      "body": "Setting up a Ramadan Majlis in the UAE heat requires precision engineering and deep cultural understanding. We are not generalists; we are specialists.",
+      "features": {
+        "buyingPower": {
+          "title": "Unmatched Buying Power",
+          "description": "Three decades of relationships with global suppliers. We pass these savings directly to you—elite-level luxury at aggressive market rates."
+        },
+        "design": {
+          "title": "Design Intelligence",
+          "description": "We don’t copy Pinterest. We create unique themes that resonate with Emirati heritage and modern luxury."
+        },
+        "logistics": {
+          "title": "Logistical Mastery",
+          "description": "We know the roads, the regulations, and the shortcuts. Precise, punctual, and respectful installation teams."
+        }
+      }
+    },
+    "cta": {
+      "callback": "Request for call back",
+      "whatsapp": "WhatsApp Us",
+      "call": "Call Now",
+      "secure": "Secure Your Dates Early",
+      "secureBody": "The best designs and the best prices vanish first. Let us customize a solution that fits your vision and your budget."
+    }
+  },
+  "stats": {
+    "years": "30+",
+    "yearsLabel": "Years Experience",
+    "events": "5,000+",
+    "eventsLabel": "Events Curated",
+    "vip": "VIP",
+    "vipLabel": "Protocol Ready",
+    "support": "24/7",
+    "supportLabel": "Concierge Support"
+  },
+  "experience": {
+    "label": "Our Heritage",
+    "title": "THE ART OF GATHERING",
+    "description": "The Majlis is more than a seating arrangement; it is the heart of Emirati hospitality. We bridge the gap between timeless heritage and contemporary design, creating spaces that foster connection and respect.",
+    "ourStory": {
+      "title": "Three Decades of Heritage. One Standard of Excellence.",
+      "subtitle": "The architects behind the region's most prestigious Ramadan gatherings.",
+      "body": "To understand RMT UAE, you have to understand the evolution of hospitality in the Emirates. We were here when the skyline was younger and the traditions simpler. Over 30 years, we helped engineer the change from simple canopies to the modern architectural marvels of 2026.",
+      "ethos": "We started as a group of passionate specialists with a simple mission: to treat every client's event with the same care we would treat our own family gatherings. That ethos remains our beating heart today."
+    },
+    "features": {
+      "heritage": {
+        "title": "Unmatched Experience",
+        "description": "30 years of solutions for every scenario."
+      },
+      "design": {
+        "title": "Best Price",
+        "description": "5-star quality at market rates."
+      },
+      "comfort": {
+        "title": "Culture First",
+        "description": "Design that speaks your language."
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "integrity": {
+        "title": "Integrity",
+        "description": "We quote what we deliver. No hidden fees."
+      },
+      "respect": {
+        "title": "Respect",
+        "description": "Honoring Ramadan traditions and UAE culture."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "If it's not perfect, it doesn't leave our warehouse."
+      }
+    },
+    "cta": "Read Our Story"
+  },
+  "services": {
+    "title": "CURATED COLLECTIONS",
+    "subtitle": "Discover our range of premium seating options.",
+    "viewAll": "View Full Inventory",
+    "items": {
+      "hotel": {
+        "title": "Hotel & Restaurant Majlis",
+        "description": "Distinct identity designs that look unique, ensuring your hotel stands out. Premium interiors matching 5-star brand standards. Zero disruption to operations.",
+        "detailedBody": "In the UAE hospitality sector, the Ramadan Tent is your biggest revenue generator for Q1. Hotels choose RMT UAE because we operate on their level of standards. We deliver distinct identities that look unique on social media, installed quickly and quietly by highly professional experts.",
+        "price": "AED 5,400",
+        "priceLabel": "Starting"
+      },
+      "corporate": {
+        "title": "Corporate Event Tents",
+        "description": "Secure, compliant, and spacious structures for staff Iftars and corporate gatherings. Civil Defense approved with 30 years of zero-failure logistics.",
+        "detailedBody": "In the corporate world, the Ramadan Iftar is where relationships are strengthened. We provide bespoke brand integration, VIP delegation areas, and climate mastery. We handle the permits, safety checks, and structural integrity reports while you focus on your guests.",
+        "price": "AED 3,500",
+        "priceLabel": "Per Event"
+      },
+      "home": {
+        "title": "Home & Family Majlis",
+        "description": "Intimate family Majlis setups for your home. Authentic Arabic carpets, intricate partitions, and premium seating that honors your hospitality.",
+        "detailedBody": "A Majlis is the physical representation of your hospitality. We specialize in the art of the Majlis, from the heritage look with deep reds and rich golds to modern minimalist white-on-white themes. We transform bare spaces into palace-like experiences in days.",
+        "price": "AED 360",
+        "priceLabel": "Per Day"
+      },
+      "furniture": {
+        "title": "Premium Furniture Rental",
+        "description": "Arabian low-seating, dining sets, lounge furniture, and decor. Meticulously maintained assets that define the quality of your gathering.",
+        "detailedBody": "The tent is the shell; the furniture is the experience. We hold the largest inventory of Ramadan-specific furniture in the region. Every cushion, table, and rug is inspected, cleaned, and maintained to ensure a 5-star seating experience.",
+        "price": "AED 250",
+        "priceLabel": "Per Day"
+      },
+      "decor": {
+        "title": "Decor & Lighting",
+        "description": "Lanterns, centerpieces, entrance archways, and ambient lighting. The finishing touches that define luxury and create the perfect nightly retreat.",
+        "detailedBody": "While Iftar is about abundance, Suhoor is about ambiance. We focus on mood lighting, lush furnishings, and sophisticated decor that invites guests to linger. We create enclaves of calm in the bustling city night.",
+        "price": "Custom",
+        "priceLabel": "Quote"
+      }
+    }
+  },
+  "locations": {
+    "title": "Serving All Emirates",
+    "subtitle": "Premium Majlis rentals across UAE",
+    "cities": {
+      "dubai": "Dubai",
+      "abuDhabi": "Abu Dhabi",
+      "sharjah": "Sharjah",
+      "ajman": "Ajman",
+      "rak": "Ras Al Khaimah",
+      "fujairah": "Fujairah",
+      "uaq": "Umm Al Quwain"
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "5,000+ successful events curated over three decades",
+    "viewMore": "View Full Portfolio"
+  },
+  "cta": {
+    "label": "Bespoke Services",
+    "title": "TAILORED TO",
+    "titleBold": "PERFECTION",
+    "description": "Bespoke event styling services for weddings, corporate galas, and VIP gatherings. Let us curate your perfect evening with our signature touch of elegance.",
+    "quote": "Book Consultation",
+    "brochure": "Download Brochure"
+  },
+  "quote": {
+    "title": "Let's Build Your Vision Together",
+    "titleBold": "Request Your Custom Proposal",
+    "subtitle": "Consult with the team that has been defining Ramadan standards in the UAE for 30 years. Transparent pricing. Expert design. Zero hidden costs.",
+    "intro": "Every Ramadan Majlis is unique. The dimensions of your space, the nature of your guests, and your brand identity all play a role in creating the perfect setup. At RMT UAE, we don't believe in \"cookie-cutter\" price lists that leave you guessing.",
+    "precision": "We believe in precision.",
+    "partnership": "By requesting a quote from us, you are initiating a partnership with a group of highly professional experts who are ready to engineer a solution specifically for your 2026 requirements. With the Holy Month beginning mid-February, time is of the essence. We provide accurate, competitive quotes quickly—so you can secure your inventory and move on to your other priorities.",
+    "whyHeader": "Why Request from RMT UAE?",
+    "benefits": {
+      "budget": {
+        "title": "We Optimize Your Budget",
+        "description": "With 30 years of buying power, we know how to achieve the look you want for the price you need. We will suggest alternatives that save you money without sacrificing quality."
+      },
+      "availability": {
+        "title": "Real Availability Checks",
+        "description": "We don't quote you for tents we don't have. Our team checks our live 2026 inventory to ensure what you need is actually there."
+      },
+      "insight": {
+        "title": "Technical Insight Included",
+        "description": "Our quotes aren't just numbers. They include technical recommendations on AC tonnage, layout flow, and safety compliance."
+      }
+    },
+    "process": {
+      "title": "What Happens Next?",
+      "submit": {
+        "title": "You Submit",
+        "description": "Fill out the form below with as much detail as possible."
+      },
+      "review": {
+        "title": "We Review",
+        "description": "A senior consultant reviews your requirements against our current stock and logistical capabilities."
+      },
+      "receive": {
+        "title": "You Receive",
+        "description": "Within 24 hours, you will receive a detailed proposal—including pricing, design options, and a timeline for installation."
+      }
+    },
+    "steps": {
+      "event": "Event Details",
+      "requirements": "Requirements",
+      "addons": "Customization",
+      "contact": "Contact Info"
+    },
+    "form": {
+      "headline": "Tell Us About Your Requirements",
+      "name": "Name / Contact Person",
+      "company": "Company / Organization (optional)",
+      "companyHelper": "Leave blank if this is a private/villa booking",
+      "email": "Email Address",
+      "phone": "Phone Number (WhatsApp preferred)",
+      "eventType": "What type of setup are you planning?",
+      "eventTypeOptions": {
+        "corporate": "Corporate Iftar",
+        "private": "Private Family Majlis",
+        "hotel": "Hotel Ramadan Tent",
+        "staff": "Staff Accommodation",
+        "suhoor": "Suhoor Lounge",
+        "other": "Other"
+      },
+      "guestCount": "Approximate Number of Guests",
+      "guestOptions": {
+        "under50": "Under 50",
+        "50-150": "50 - 150",
+        "150-500": "150 - 500",
+        "500-1000": "500 - 1000",
+        "1000plus": "1000+"
+      },
+      "eventDate": "Event Dates (Start & End of Ramadan 2026)",
+      "dateHelper": "Remember, Ramadan is expected to start mid-February 2026. Do you need setup before this date?",
+      "locationStatus": "Do you have a confirmed location/venue?",
+      "locationOptions": {
+        "yes": "Yes",
+        "no": "No - Still looking"
+      },
+      "message": "Tell us about your vision or specific needs",
+      "messageHelper": "e.g., \"I need a modern white majlis with gold accents,\" or \"We need heavy-duty AC for an industrial site.\"",
+      "submit": "Request My Custom Proposal",
+      "next": "Next Step",
+      "back": "Back",
+      "privacy": "Privacy is Respected: Your information will only be used to prepare your quote and discuss your project. We do not share data with third parties.",
+      "directCall": "Prefer to Call Us Directly?",
+      "directCallBody": "If your requirements are complex or you need immediate assistance, speak to one of our senior project managers now.",
+      "callBtn": "Call RMT UAE Support"
+    }
+  },
+  "footer": {
+    "description": "Elevating events across the UAE with premium Majlis rentals and bespoke styling services since 1994.",
+    "quickLinks": "Explore",
+    "services": "Services",
+    "support": "Support",
+    "contact": "Contact",
+    "address": "SAIF Zone, Sharjah, UAE",
+    "phone": "+971 55 510 1069",
+    "copyright": "© {year} RMT UAE. All rights reserved.",
+    "tagline": "Designed for Excellence"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "contactUs": "Contact Us",
+    "requestQuote": "Request Quote",
+    "requestCallback": "Request Call Back",
+    "viewMore": "View More",
+    "callNow": "Call Now",
+    "whatsappUs": "WhatsApp Us",
+    "close": "Close",
+    "menu": "Menu",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success!",
+    "required": "Required",
+    "quickView": "Quick View",
+    "findOutMore": "Find Out More"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything You Need to Know About Ramadan Tent Rentals in Dubai",
+    "intro": "At RMT UAE, we’ve spent 30 years answering every question imaginable about Ramadan setups. We’ve compiled the most common ones here, providing clear, expert answers that reflect our deep knowledge of UAE regulations, climate challenges, and cultural expectations.",
+    "categories": {
+      "general": "General & Planning",
+      "regulations": "Regulations, Permits & Safety",
+      "comfort": "Weather, Cooling & Comfort",
+      "pricing": "Pricing, Packages & Customization",
+      "venues": "Specific Venues & Scenarios",
+      "support": "Installation, Dismantling & Support",
+      "design": "Design, Furniture & Aesthetics"
+    },
+    "items": {
+      "when": {
+        "q": "When is Ramadan 2026 in the UAE?",
+        "a": "Ramadan 2026 is expected to commence on or around February 17th, 2026. The exact date is subject to the moon sighting, but it is crucial to begin planning your setup well in advance."
+      },
+      "howEarly": {
+        "q": "How early should I book my Ramadan tent or Majlis?",
+        "a": "Immediately. With Ramadan starting in mid-February 2026, the peak booking season is already underway. Early booking ensures you secure your preferred dates, designs, and the best possible pricing."
+      },
+      "difference": {
+        "q": "What is the difference between an Iftar tent, a Suhoor tent, and a general Ramadan Majlis?",
+        "a": "Iftar Tents focus on efficient flow for buffet service and large seating capacity. Suhoor Tents are more relaxed, intimate, and lounge-like with softer lighting. A general Majlis is a versatile space balancing comfort with elegance for hosting throughout the Holy Month."
+      },
+      "permits": {
+        "q": "What permits do I need to set up a Ramadan tent in Dubai?",
+        "a": "Most common approvals are required from Dubai Civil Defense (fire/safety) and Dubai Municipality (hygiene/food). Our experienced team handles all permitting on your behalf."
+      },
+      "cooling": {
+        "q": "Do I still need powerful air conditioning in February?",
+        "a": "Yes. While February is cooler, humidity and guest occupancy levels can cause temperatures to rise quickly. Our precise AC tonnage calculations ensure a consistently crisp environment."
+      },
+      "custom": {
+        "q": "Can you create a completely custom-designed Majlis?",
+        "a": "Customization is our hallmark. Our in-house design team can create a bespoke concept exclusively for you, matching your specific vision or brand guidelines."
+      }
+    },
+    "cta": "Still Have Questions?",
+    "ctaBody": "Ramadan planning involves many details. Our team of experts is ready to provide personalized guidance for your unique 2026 requirements."
+  },
+  "testimonials": {
+    "title": "Trusted by Thousands",
+    "subtitle": "Real experiences from our clients across the UAE",
+    "items": {
+      "1": {
+        "text": "For our hotel's Ramadan tent, RMT UAE delivered a design that truly stood out. Their attention to detail and 24/7 support throughout the month was exceptional.",
+        "author": "F&B Director",
+        "company": "Luxury Hotel, Dubai"
+      },
+      "2": {
+        "text": "Setting up an industrial Iftar for 2,000 workers is no small feat. RMT's logistical mastery and focus on safety were evident from day one. Highly recommended.",
+        "author": "HR Manager",
+        "company": "Industrial Group, Abu Dhabi"
+      },
+      "3": {
+        "text": "Our family Majlis felt like a palace. The heritage design and the quality of the carpets and seating were far beyond our expectations. A perfect Ramadan experience.",
+        "author": "Private Client",
+        "company": "Khalifa City, Abu Dhabi"
+      }
+    }
+  },
+  "quickQuote": {
+    "title": "Get Your Instant Quote",
+    "subtitle": "Receive a detailed proposal within 24 hours",
+    "fields": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "service": "Service Type",
+      "guests": "Expected Guests",
+      "submit": "Request Proposal"
+    },
+    "placeholders": {
+      "name": "E.g. Ahmed Ali",
+      "phone": "050 123 4567",
+      "email": "contact@company.com"
+    },
+    "services": {
+      "hotel": "Hotel Majlis",
+      "corporate": "Corporate Iftar",
+      "private": "Private Family Majlis",
+      "furniture": "Furniture Rental",
+      "other": "Other"
+    }
+  },
+  "callback": {
+    "title": "Request a Call Back",
+    "subtitle": "Speak with our Ramadan Majlis experts",
+    "form": {
+      "name": "Full Name",
+      "phone": "UAE Phone Number",
+      "location": "Location / Emirate",
+      "purpose": "Purpose of Event",
+      "time": "Preferred Call Time (Optional)",
+      "submit": "Request Call Back",
+      "success": "Request sent successfully! We will call you soon.",
+      "validation": {
+        "name": "Full name is required",
+        "phone": "Valid UAE phone number is required",
+        "location": "Location is required",
+        "purpose": "Purpose is required"
+      }
+    }
+  }
+}
