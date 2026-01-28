@@ -13,8 +13,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Premium Ramadan Tent Rental in Dubai',
                 subtitle: '30 Years of Architectural Excellence across Jumeirah, DIFC, and Downtown Dubai',
-                intro: 'From the luxury villas of Jumeirah and Al Barsha to the high-profile corporate events in DIFC and Downtown, RMT UAE has been the trusted name in Dubai for three decades. We don’t just rent tents; we engineer environments that honor tradition and define luxury.',
-                mainBody: 'Dubai’s Ramadan season is a unique blend of heritage and global sophistication. Whether you are hosting a private Iftar in Dubai Marina or a massive industrial catering setup in Jebel Ali or Dubai Investment Park (DIP), your choice of venue defines your hospitality. RMT UAE brings thirty years of logistical mastery to the table, ensuring that your tent is not only beautiful but fully compliant with Dubai Civil Defense regulations and optimized for the unique humidity levels of February in the UAE.',
+                intro: 'From the luxury villas of Jumeirah and Al Barsha to the high-profile corporate events in DIFC and Downtown, Tent Now has been the trusted name in Dubai for three decades. We don’t just rent tents; we engineer environments that honor tradition and define luxury.',
+                mainBody: 'Dubai’s Ramadan season is a unique blend of heritage and global sophistication. Whether you are hosting a private Iftar in Dubai Marina or a massive industrial catering setup in Jebel Ali or Dubai Investment Park (DIP), your choice of venue defines your hospitality. Tent Now brings thirty years of logistical mastery to the table, ensuring that your tent is not only beautiful but fully compliant with Dubai Civil Defense regulations and optimized for the unique humidity levels of February in the UAE.',
                 features: [
                     { title: 'Logistical Mastery', body: 'We know Dubai’s roads and regulations from Al Quoz to Deira. We handle all permits and logistics, ensuring zero stress for you.' },
                     { title: 'Elite Design', body: 'Our themes are tailored for Dubai’s aesthetic—from ultra-modern minimalist white tents for DIFC to rich, traditional majlis setups for private villas.' },
@@ -38,7 +38,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Grand Iftar Tent Solutions in Dubai',
                 subtitle: 'Hospitality Infrastructure for Corporate DIFC and Industrial Jebel Ali',
                 intro: 'Hosting a large-scale Iftar in Dubai requires precision. We provide the infrastructure for mass hospitality from hotel terraces to industrial zones.',
-                mainBody: 'RMT UAE specializes in high-capacity Iftar tents for Dubai’s corporate sector and community organizations. We design for flow—ensuring buffet lines, seating zones, and prayer areas work in harmony. Our structures in areas like Dubai Investment Park (DIP) and Al Quoz are engineered for maximum safety and comfort for hundreds of guests simultaneously.',
+                mainBody: 'Tent Now specializes in high-capacity Iftar tents for Dubai’s corporate sector and community organizations. We design for flow—ensuring buffet lines, seating zones, and prayer areas work in harmony. Our structures in areas like Dubai Investment Park (DIP) and Al Quoz are engineered for maximum safety and comfort for hundreds of guests simultaneously.',
                 features: [
                     { title: 'Rapid Deployment', body: 'Expert teams capable of installing large-scale structures in record time across Dubai Marina, DIFC, and Al Quoz.' },
                     { title: 'Buffet Integration', body: 'Specific zones designed for food service with extra reinforced flooring and ventilation optimized for hot buffet stations.' },
@@ -63,7 +63,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Premium Ramadan Tent Rental in Abu Dhabi',
                 subtitle: 'Majestic Structures for the Corniche, Khalifa City, and Yas Island',
-                intro: 'In the capital, Ramadan is marked by a blend of grand state hospitality and intimate family heritage. RMT UAE brings 30 years of engineering excellence to Abu Dhabi’s most prestigious locations.',
+                intro: 'In the capital, Ramadan is marked by a blend of grand state hospitality and intimate family heritage. Tent Now brings 30 years of engineering excellence to Abu Dhabi’s most prestigious locations.',
                 mainBody: 'From the iconic Corniche to the modern estates of Khalifa City and the corporate hubs of Yas Island, our Abu Dhabi team delivers unmatched quality. We understand the specific Abu Dhabi Civil Defense (ADCD) requirements and the need for structures that reflect the capital’s majestic aesthetic. Whether it’s a high-profile governmental Iftar or a private Majlis in Al Mushrif, we ensure every detail is perfect.',
                 features: [
                     { title: 'Capital Compliance', body: 'Full alignment with Abu Dhabi Civil Defense and Municipality safety standards for temporary structures.' },
@@ -88,7 +88,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Grand Iftar Tent Solutions in Abu Dhabi',
                 subtitle: 'Hospitality Infrastructure for Corporate and Community Groups',
                 intro: 'Host the perfect break of fast with Abu Dhabi’s most reliable tent partners. We specialize in high-capacity setups for 50 to 5,000 guests.',
-                mainBody: 'Abu Dhabi’s corporate sector depends on RMT UAE for seasonal Iftar tents that balance scale with elegance. Whether you are hosting staff Iftars in Musaffah or VIP gatherings in Al Reem, our structures are engineered for flow and safety. We integrate buffet stations, prayer areas, and guest zones into a single, seamless environment.',
+                mainBody: 'Abu Dhabi’s corporate sector depends on Tent Now for seasonal Iftar tents that balance scale with elegance. Whether you are hosting staff Iftars in Musaffah or VIP gatherings in Al Reem, our structures are engineered for flow and safety. We integrate buffet stations, prayer areas, and guest zones into a single, seamless environment.',
                 features: [
                     { title: 'Rapid Mobilization', body: 'Capable of deploying large-scale food-service structures anywhere in the Emirate.' },
                     { title: 'Hygiene Standards', body: 'Built for compliance with Abu Dhabi Agriculture and Food Safety Authority (ADAFSA).' },
@@ -113,7 +113,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Professional Ramadan Tent Rental in Sharjah',
                 subtitle: '30 Years of Presence in the Cultural Heart of the UAE',
-                intro: 'Based right here in Sharjah, RMT UAE is the local expert for the Emirate’s Ramadan traditions. We understand Sharjah’s unique community spirit.',
+                intro: 'Based right here in Sharjah, Tent Now is the local expert for the Emirate’s Ramadan traditions. We understand Sharjah’s unique community spirit.',
                 mainBody: 'Operating out of SAIF Zone, we have been Sharjah’s premier tent supplier for three decades. From the family-focused suburbs of Al Rahmaniya to the bustling Al Majaz Waterfront and University City, our Sharjah team provides rapid, reliable, and respectful setups. We pride ourselves on being the local choice, offering the best logistics and prices since we are right in your neighborhood.',
                 features: [
                     { title: 'Local Logistics', body: 'Being Sharjah-based means zero-delay delivery and immediate on-site technical support.' },
@@ -164,7 +164,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Quality Ramadan Tent Rental in Ajman',
                 subtitle: 'Reliable Service for Al Jurf, Al Rawda, and Ajman Corniche',
                 intro: 'Ajman’s Ramadan is defined by close-knit community ties and traditional hospitality. We provide professional tent solutions tailored for Ajman’s residential and commercial hubs.',
-                mainBody: 'From the suburban homes of Al Rawda to the corporate offices in Al Jurf and the leisure spots along Ajman Corniche, RMT UAE offers rapid deployment and 5-star quality. We handle all Ajman Municipality and Civil Defense approvals, ensuring your seasonal setup is safe, compliant, and beautifully executed.',
+                mainBody: 'From the suburban homes of Al Rawda to the corporate offices in Al Jurf and the leisure spots along Ajman Corniche, Tent Now offers rapid deployment and 5-star quality. We handle all Ajman Municipality and Civil Defense approvals, ensuring your seasonal setup is safe, compliant, and beautifully executed.',
                 features: [
                     { title: 'Rapid Install', body: 'Local mobilization teams ensuring your tent is ready well before the Holy Month.' },
                     { title: 'Community Design', body: 'Classic Arabic themes that resonate with Ajman’s rich cultural heritage.' },
@@ -188,7 +188,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Seamless Iftar Tent Solutions in Ajman',
                 subtitle: 'Scale and Efficiency for Community Break-of-Fast',
                 intro: 'Host your community or staff Iftar with confidence. We provide the infrastructure for mass hospitality in Ajman.',
-                mainBody: 'RMT UAE designs Iftar tents for Ajman’s charitable organizations and corporations, focusing on flow, safety, and hygiene. Our structures in areas like industrial Ajman and Corniche are built to accommodate large crowds with ease.',
+                mainBody: 'Tent Now designs Iftar tents for Ajman’s charitable organizations and corporations, focusing on flow, safety, and hygiene. Our structures in areas like industrial Ajman and Corniche are built to accommodate large crowds with ease.',
                 features: [
                     { title: 'High Capacity', body: 'Modular designs that can be scaled to fit any guest count.' },
                     { title: 'Safe Design', body: 'Strict adherence to all safety regulations for large-scale dining.' },
@@ -213,8 +213,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Premium Ramadan Tent Rental in Ras Al Khaimah',
                 subtitle: 'Iconic Setups for Al Marjan Island and Al Hamra',
-                intro: 'RAK’s Ramadan season combines mountain majesty with coastal luxury. RMT UAE delivers world-class structures to the northernmost Emirate.',
-                mainBody: 'From the luxury resorts of Al Marjan Island to the private estates of Al Hamra and the bustling city center, RMT UAE is RAK’s trusted partner. We bring 30 years of experience to the intricate requirements of RAK Civil Defense and the unique wind-loads of the northern coast.',
+                intro: 'RAK’s Ramadan season combines mountain majesty with coastal luxury. Tent Now delivers world-class structures to the northernmost Emirate.',
+                mainBody: 'From the luxury resorts of Al Marjan Island to the private estates of Al Hamra and the bustling city center, Tent Now is RAK’s trusted partner. We bring 30 years of experience to the intricate requirements of RAK Civil Defense and the unique wind-loads of the northern coast.',
                 features: [
                     { title: 'Wind Resistant', body: 'Specifically engineered structures for RAK’s coastal and mountainous wind patterns.' },
                     { title: 'Luxury Finishes', body: 'Premium interiors that match RAK’s high-end resort aesthetic.' },
@@ -237,7 +237,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'iftar-tent-rental': {
                 title: 'Grand Iftar Tent Solutions in RAK',
                 subtitle: 'Infrastructure for Corporate Hospitality and Hotels',
-                intro: 'Partner with RMT UAE for RAK’s most reliable Iftar setups. We specialize in hospitality infrastructure for hotels and businesses.',
+                intro: 'Partner with Tent Now for RAK’s most reliable Iftar setups. We specialize in hospitality infrastructure for hotels and businesses.',
                 mainBody: 'Supporting RAK’s thriving tourism and corporate sectors, we provide high-capacity Iftar tents that drive revenue and employee engagement. Our structures are found at RAK’s top hotels and industrial hubs.',
                 features: [
                     { title: 'Hotel Standards', body: '5-star interior finishing that aligns with your brand’s reputation.' },
@@ -263,7 +263,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Professional Ramadan Tent Rental in Fujairah',
                 subtitle: 'Rugged and Reliable Setups for the East Coast',
-                intro: 'Fujairah’s unique geography requires specialized tent expertise. RMT UAE delivers heavy-duty structures that perform under any conditions.',
+                intro: 'Fujairah’s unique geography requires specialized tent expertise. Tent Now delivers heavy-duty structures that perform under any conditions.',
                 mainBody: 'From the city center to Dibba and Al Shohadaa, we provide Fujairah with Civil Defense compliant Ramadan tents. Our structures are built to handle the humid coastal air and the strong mountain winds of the East Coast, ensuring safety and comfort throughout the Holy Month.',
                 features: [
                     { title: 'Engineered Strength', body: 'Structures designed for Fujairah’s unique environmental conditions.' },
@@ -288,7 +288,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Grand Iftar Tent Solutions in Fujairah',
                 subtitle: 'Support for Corporate and Community Hospitality',
                 intro: 'Reliable infrastructure for Fujairah’s largest Iftar gatherings. We specialize in high-capacity, safe environments.',
-                mainBody: 'Providing Iftar tents for Fujairah’s community centers and industrial giants, RMT UAE focuses on large-scale safety and operational flow. Our structures are engineered for the high volume of the break-of-fast.',
+                mainBody: 'Providing Iftar tents for Fujairah’s community centers and industrial giants, Tent Now focuses on large-scale safety and operational flow. Our structures are engineered for the high volume of the break-of-fast.',
                 features: [
                     { title: 'High Capacity', body: 'Large span tents that provide open, unobstructed spaces for hundreds.' },
                     { title: 'Industrial AC', body: 'The most powerful cooling systems available in the Northern Emirates.' },
@@ -313,8 +313,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Reliable Ramadan Tent Rental in Umm Al Quwain',
                 subtitle: 'Community-Focused Setups for Al Salamah and Beyond',
-                intro: 'Umm Al Quwain’s Ramadan traditions are deeply rooted. RMT UAE provides the professional infrastructure to support UAQ’s hospitality.',
-                mainBody: 'From the growing residential areas of Al Salamah to the coastal developments, RMT UAE offers UAQ’s best value and quality. We handle all local UAQ Civil Defense and Municipality approvals, providing a stress-free experience for families and businesses alike.',
+                intro: 'Umm Al Quwain’s Ramadan traditions are deeply rooted. Tent Now provides the professional infrastructure to support UAQ’s hospitality.',
+                mainBody: 'From the growing residential areas of Al Salamah to the coastal developments, Tent Now offers UAQ’s best value and quality. We handle all local UAQ Civil Defense and Municipality approvals, providing a stress-free experience for families and businesses alike.',
                 features: [
                     { title: 'Efficient Install', body: 'Quick deployment teams ensuring your tent is ready on schedule.' },
                     { title: 'Local Know-How', body: '30 years of navigating UAQ’s specific regulations and site conditions.' },
@@ -365,8 +365,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان فخمة في دبي',
                 subtitle: '30 عاماً من التميز المعماري في جميرا، ومركز دبي المالي العالمي، وداون تاون',
-                intro: 'من الفلل الفاخرة في جميرا والبرشاء إلى فعاليات الشركات المرموقة في DIFC وداون تاون، كانت RMT UAE الاسم الموثوق به في دبي لمدة ثلاثة عقود. نحن لا نكتفي بتأجير الخيام؛ بل نصمم بيئات تكرم التقاليد وتحدد الفخامة.',
-                mainBody: 'يعد موسم رمضان في دبي مزيجاً فريداً من التراث والرقي العالمي. سواء كنت تستضيف إفطاراً خاصاً في مرسى دبي أو تجهيزاً صناعياً ضخماً في جبل علي أو مجمع دبي للاستثمار (DIP)، فإن اختيارك للمكان يحدد ضيافتك. تقدم RMT UAE ثلاثين عاماً من الإتقان اللوجستي، مما يضمن أن خيمتك متوافقة تماماً مع لوائح الدفاع المدني في دبي ومحسنة للتعامل مع مستويات الرطوبة في شهر فبراير.',
+                intro: 'من الفلل الفاخرة في جميرا والبرشاء إلى فعاليات الشركات المرموقة في DIFC وداون تاون، كانت Tent Now الاسم الموثوق به في دبي لمدة ثلاثة عقود. نحن لا نكتفي بتأجير الخيام؛ بل نصمم بيئات تكرم التقاليد وتحدد الفخامة.',
+                mainBody: 'يعد موسم رمضان في دبي مزيجاً فريداً من التراث والرقي العالمي. سواء كنت تستضيف إفطاراً خاصاً في مرسى دبي أو تجهيزاً صناعياً ضخماً في جبل علي أو مجمع دبي للاستثمار (DIP)، فإن اختيارك للمكان يحدد ضيافتك. تقدم Tent Now ثلاثين عاماً من الإتقان اللوجستي، مما يضمن أن خيمتك متوافقة تماماً مع لوائح الدفاع المدني في دبي ومحسنة للتعامل مع مستويات الرطوبة في شهر فبراير.',
                 features: [
                     { title: 'إتقان لوجستي', body: 'نحن نعرف طرق ولوائح دبي من القوز إلى ديرة. نتولى جميع التصاريح والخدمات اللوجستية، مما يضمن لك راحة البال التامة.' },
                     { title: 'تصميم النخبة', body: 'تصاميمنا مصممة خصيصاً لجماليات دبي - من الخيام البيضاء الحديثة لمركز دبي المالي العالمي إلى تجهيزات المجالس التقليدية للفلل الخاصة.' },
@@ -415,7 +415,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان فخمة في أبوظبي',
                 subtitle: 'هياكل مهيبة للكورنيش ومدينة خليفة وجزيرة ياس',
-                intro: 'في العاصمة، يتميز رمضان بمزيج من كرم الضيافة الحكومية والتراث العائلي العريق. تقدم RMT UAE 30 عاماً من التميز الهندسي في أرقى مواقع أبوظبي.',
+                intro: 'في العاصمة، يتميز رمضان بمزيج من كرم الضيافة الحكومية والتراث العائلي العريق. تقدم Tent Now 30 عاماً من التميز الهندسي في أرقى مواقع أبوظبي.',
                 mainBody: 'من الكورنيش الشهير إلى العقارات الحديثة في مدينة خليفة والمراكز التجارية في جزيرة ياس، يقدم فريقنا في أبوظبي جودة لا تضاهى. نحن نتفهم المتطلبات الخاصة للدفاع المدني في أبوظبي (ADCD) والحاجة إلى هياكل تعكس الجمالية المهيبة للعاصمة. سواء كان ذلك إفطاراً حكومياً رفيع المستوى أو مجلساً خاصاً في المشرف، فإننا نضمن أن تكون كل التفاصيل مثالية.',
                 features: [
                     { title: 'الامتثال للعاصمة', body: 'التوافق التام مع معايير السلامة في الدفاع المدني وبلدية أبوظبي للهياكل المؤقتة.' },
@@ -440,7 +440,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'حلول خيام الإفطار الكبرى في أبوظبي',
                 subtitle: 'بنية تحتية للضيافة للشركات والمجموعات المجتمعية',
                 intro: 'استضف الإفطار المثالي مع شركاء الخيام الأكثر موثوقية في أبوظبي. نحن متخصصون في التجهيزات ذات السعة الكبيرة من 50 إلى 5000 ضيف.',
-                mainBody: 'يعتمد قطاع الشركات في أبوظبي على RMT UAE لخيام الإفطار الموسمية التي توازن بين الحجم والأناقة. سواء كنت تستضيف إفطاراً للموظفين في مصفح أو تجمعات كبار الشخصيات في الريم، فقد تم تصميم هياكلنا من أجل الانسيابية والسلامة. نحن ندمج محطات البوفيه ومناطق الصلاة ومناطق الضيوف في بيئة واحدة متكاملة.',
+                mainBody: 'يعتمد قطاع الشركات في أبوظبي على Tent Now لخيام الإفطار الموسمية التي توازن بين الحجم والأناقة. سواء كنت تستضيف إفطاراً للموظفين في مصفح أو تجمعات كبار الشخصيات في الريم، فقد تم تصميم هياكلنا من أجل الانسيابية والسلامة. نحن ندمج محطات البوفيه ومناطق الصلاة ومناطق الضيوف في بيئة واحدة متكاملة.',
                 features: [
                     { title: 'تعبئة سريعة', body: 'قادرون على نشر هياكل خدمة الطعام على نطاق واسع في أي مكان في الإمارة.' },
                     { title: 'معايير النظافة', body: 'بنيت لتتوافق مع معايير هيئة أبوظبي للزراعة والسلامة الغذائية (ADAFSA).' },
@@ -465,7 +465,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان احترافية في الشارقة',
                 subtitle: '30 عاماً من التواجد في القلب الثقافي لدولة الإمارات',
-                intro: 'يقع مقرنا هنا في الشارقة، وRMT UAE هي الخبير المحلي لتقاليد رمضان في الإمارة. نحن نفهم روح مجتمع الشارقة الفريدة.',
+                intro: 'يقع مقرنا هنا في الشارقة، وTent Now هي الخبير المحلي لتقاليد رمضان في الإمارة. نحن نفهم روح مجتمع الشارقة الفريدة.',
                 mainBody: 'من مقرنا في المنطقة الحرة بمطار الشارقة الدولي (SAIF Zone)، كنا المورد الأول للخيام في الشارقة لمدة ثلاثة عقود. من ضواحي الرحمانية التي تركز على العائلة إلى واجهة المجاز المائية النابضة بالحياة والمدينة الجامعية، يوفر فريقنا في الشارقة تجهيزات سريعة وموثوقة. نحن نفخر بكوننا الخيار المحلي الأفضل، حيث نقدم أفضل اللوجستيات والأسعار لقربنا منكم.',
                 features: [
                     { title: 'لوجستيات محلية', body: 'تواجدنا في الشارقة يعني توصيلاً بدون تأخير ودعماً فنياً فورياً في الموقع.' },
@@ -516,7 +516,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'تأجير خيام رمضان بجودة عالية في عجمان',
                 subtitle: 'خدمة موثوقة للجرف والروضة وكورنيش عجمان',
                 intro: 'يتميز رمضان في عجمان بروابط مجتمعية وثيقة وكرم ضيافة تقليدي. نحن نوفر حلول خيام احترافية مصممة للمراكز السكنية والتجارية في عجمان.',
-                mainBody: 'من المنازل السكنية في الروضة إلى المكاتب في الجرف والمنتزهات على طول كورنيش عجمان، تقدم RMT UAE جودة 5 نجوم. نحن نتولى جميع تصاريح بلدية عجمان والدفاع المدني، مما يضمن أن يكون تجهيزك الموسمي آمناً وجميلاً.',
+                mainBody: 'من المنازل السكنية في الروضة إلى المكاتب في الجرف والمنتزهات على طول كورنيش عجمان، تقدم Tent Now جودة 5 نجوم. نحن نتولى جميع تصاريح بلدية عجمان والدفاع المدني، مما يضمن أن يكون تجهيزك الموسمي آمناً وجميلاً.',
                 features: [
                     { title: 'تركيب سريع', body: 'فرق تعبئة محلية تضمن جاهزية خيمتك قبل وقت كافٍ من الشهر الفضيل.' },
                     { title: 'تصميم مجتمعي', body: 'سمات عربية كلاسيكية تتماشى مع التراث الثقافي الغني لعجمان.' },
@@ -540,7 +540,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'حلول خيام إفطار سلسة في عجمان',
                 subtitle: 'الحجم والكفاءة لإفطار المجتمع',
                 intro: 'استضف إفطارك المجتمعي أو الوظيفي بكل ثقة. نحن نوفر البنية التحتية للضيافة في عجمان.',
-                mainBody: 'تصمم RMT UAE خيام الإفطار للمنظمات الخيرية والشركات في عجمان، مع التركيز على الانسيابية والسلامة والنظافة. هياكلنا في مناطق مثل عجمان الصناعية والكورنيش مبنية لاستيعاب الحشود الكبيرة بسهولة.',
+                mainBody: 'تصمم Tent Now خيام الإفطار للمنظمات الخيرية والشركات في عجمان، مع التركيز على الانسيابية والسلامة والنظافة. هياكلنا في مناطق مثل عجمان الصناعية والكورنيش مبنية لاستيعاب الحشود الكبيرة بسهولة.',
                 features: [
                     { title: 'سعة عالية', body: 'تصاميم معيارية يمكن توسيعها لتناسب أي عدد من الضيوف.' },
                     { title: 'تصميم آمن', body: 'الالتزام الصارم بجميع لوائح السلامة لتناول الطعام على نطاق واسع.' },
@@ -565,8 +565,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان فخمة في رأس الخيمة',
                 subtitle: 'تجهيزات أيقونية لجزيرة المرجان والحمراء',
-                intro: 'يجمع موسم رمضان في رأس الخيمة بين جلال الجبال وفخامة السواحل. تقدم RMT UAE هياكل عالمية المستوى للإمارة الشمالية.',
-                mainBody: 'من المنتجعات الفاخرة في جزيرة المرجان إلى العقارات الخاصة في الحمراء ووسط المدينة النابض بالحياة، RMT UAE هي الشريك الموثوق في رأس الخيمة. نقدم خبرة 30 عاماً لمتطلبات الدفاع المدني في رأس الخيمة وحمولات الرياح الفريدة للساحل الشمالي.',
+                intro: 'يجمع موسم رمضان في رأس الخيمة بين جلال الجبال وفخامة السواحل. تقدم Tent Now هياكل عالمية المستوى للإمارة الشمالية.',
+                mainBody: 'من المنتجعات الفاخرة في جزيرة المرجان إلى العقارات الخاصة في الحمراء ووسط المدينة النابض بالحياة، Tent Now هي الشريك الموثوق في رأس الخيمة. نقدم خبرة 30 عاماً لمتطلبات الدفاع المدني في رأس الخيمة وحمولات الرياح الفريدة للساحل الشمالي.',
                 features: [
                     { title: 'مقاومة للرياح', body: 'هياكل هندسية خاصة لأنماط الرياح الساحلية والجبلية في رأس الخيمة.' },
                     { title: 'تشطيبات فاخرة', body: 'تصاميم داخلية ممتازة تتناسب مع جمالية المنتجعات الراقية في رأس الخيمة.' },
@@ -589,7 +589,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'iftar-tent-rental': {
                 title: 'حلول خيام الإفطار الكبرى في رأس الخيمة',
                 subtitle: 'بنية تحتية لضيافة الشركات والفنادق',
-                intro: 'شارك RMT UAE للحصول على أكثر تجهيزات الإفطار موثوقية في رأس الخيمة. نحن متخصصون في بنية الضيافة التحتية.',
+                intro: 'شارك Tent Now للحصول على أكثر تجهيزات الإفطار موثوقية في رأس الخيمة. نحن متخصصون في بنية الضيافة التحتية.',
                 mainBody: 'من خلال دعم قطاعات السياحة والشركات المزدهرة في رأس الخيمة، نوفر خيام إفطار عالية السعة تعزز الإيرادات وتفاعل الموظفين. هياكلنا موجودة في أرقى فنادق رأس الخيمة والمراكز الصناعية.',
                 features: [
                     { title: 'معايير الفنادق', body: 'تشطيبات داخلية 5 نجوم تتماشى مع سمعة علامتك التجارية.' },
@@ -615,7 +615,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان احترافية في الفجيرة',
                 subtitle: 'تجهيزات متينة وموثوقة للساحل الشرقي',
-                intro: 'تتطلب جغرافية الفجيرة الفريدة خبرة متخصصة في الخيام. تقدم RMT UAE هياكل شديدة التحمل تعمل في جميع الظروف.',
+                intro: 'تتطلب جغرافية الفجيرة الفريدة خبرة متخصصة في الخيام. تقدم Tent Now هياكل شديدة التحمل تعمل في جميع الظروف.',
                 mainBody: 'من وسط المدينة إلى دبا والشهداء، نوفر للفجيرة خيام رمضان متوافقة مع الدفاع المدني. هياكلنا مصممة للتعامل مع الهواء الساحلي الرطب ورياح الجبال القوية في الساحل الشرقي، مما يضمن السلامة والراحة طوال الشهر الفضيل.',
                 features: [
                     { title: 'قوة هندسية', body: 'هياكل مصممة للظروف البيئية الفريدة في الفجيرة.' },
@@ -640,7 +640,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'حلول خيام إفطار كبرى في الفجيرة',
                 subtitle: 'دعم لضيافة الشركات والمجتمع',
                 intro: 'بنية تحتية موثوقة لأكبر تجمعات الإفطار في الفجيرة. نحن متخصصون في البيئات الآمنة ذات السعة العالية.',
-                mainBody: 'من خلال توفير خيام الإفطار للمراكز المجتمعية وعمالقة الصناعة في الفجيرة، تركز RMT UAE على السلامة على نطاق واسع والانسيابية التشغيلية. هياكلنا هندسية لتناسب الحجم الكبير وقت الإفطار.',
+                mainBody: 'من خلال توفير خيام الإفطار للمراكز المجتمعية وعمالقة الصناعة في الفجيرة، تركز Tent Now على السلامة على نطاق واسع والانسيابية التشغيلية. هياكلنا هندسية لتناسب الحجم الكبير وقت الإفطار.',
                 features: [
                     { title: 'سعة عالية', body: 'خيام ذات مساحات واسعة توفر مناطق مفتوحة وغير معاقة للمئات.' },
                     { title: 'تكييف صناعي', body: 'أقوى أنظمة التبريد المتاحة في الإمارات الشمالية.' },
@@ -665,8 +665,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'تأجير خيام رمضان موثوقة في أم القيوين',
                 subtitle: 'تجهيزات تركز على المجتمع في السلامة وما وراءها',
-                intro: 'تقاليد رمضان في أم القيوين متجذرة بعمق. توفر RMT UAE البنية التحتية الاحترافية لدعم ضيافة الإمارة.',
-                mainBody: 'من المناطق السكنية المتنامية في السلامة إلى التطويرات الساحلية، تقدم RMT UAE أفضل قيمة وجودة في أم القيوين. نحن نتولى جميع موافقات الدفاع المدني والبلدية المحلية، لنسهل التجربة على العائلات والشركات على حد سواء.',
+                intro: 'تقاليد رمضان في أم القيوين متجذرة بعمق. توفر Tent Now البنية التحتية الاحترافية لدعم ضيافة الإمارة.',
+                mainBody: 'من المناطق السكنية المتنامية في السلامة إلى التطويرات الساحلية، تقدم Tent Now أفضل قيمة وجودة في أم القيوين. نحن نتولى جميع موافقات الدفاع المدني والبلدية المحلية، لنسهل التجربة على العائلات والشركات على حد سواء.',
                 features: [
                     { title: 'تركيب فعال', body: 'فرق نشر سريعة تضمن جاهزية خيمتك في الوقت المحدد.' },
                     { title: 'خبرة محلية', body: '30 عاماً من العمل مع لوائح أم القيوين وظروف الموقع الخاصة بها.' },

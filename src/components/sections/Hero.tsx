@@ -53,7 +53,7 @@ export default function Hero() {
               {t('cta.callback')}
             </button>
             <a
-              href="https://wa.me/971555101069"
+              href="https://wa.me/971501826969"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"

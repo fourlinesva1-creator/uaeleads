@@ -1,7 +1,7 @@
 {
-  "name": "rmt-uae",
+  "name": "tent-now",
   "version": "1.0.0",
-  "description": "RMT UAE - Ramadan Majlis Tent Solutions | Premium tent rental across UAE since 1984",
+  "description": "Tent Now - Premium Ramadan tent & Majlis rentals across UAE since 1994",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,7 +19,7 @@
     "iftar",
     "suhoor"
   ],
-  "author": "RMT UAE",
+  "author": "Tent Now",
   "license": "UNLICENSED",
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

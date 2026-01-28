@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 
-const WHATSAPP_NUMBER = '971555101069';
+const WHATSAPP_NUMBER = '971501826969';
 const WHATSAPP_MESSAGE = encodeURIComponent(
   'Hello! I am interested in your Ramadan Majlis tent services. Please provide more information.'
 );

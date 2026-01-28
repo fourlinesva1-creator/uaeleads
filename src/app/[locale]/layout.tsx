@@ -36,15 +36,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const baseUrl = 'https://rmtuae.com';
+  const baseUrl = 'https://tentnow.ae';
 
   return {
     title: {
-      template: '%s | RMT UAE',
+      template: '%s | Tent Now',
       default:
         locale === 'ar'
-          ? 'RMT UAE - ثلاثة عقود من التميز في خيام ومجالس رمضان'
-          : 'RMT UAE - Three Decades of Defining the Ramadan Majlis Experience',
+          ? 'Tent Now - ثلاثة عقود من التميز في خيام ومجالس رمضان'
+          : 'Tent Now - Three Decades of Defining the Ramadan Majlis Experience',
     },
     description:
       locale === 'ar'
@@ -58,9 +58,9 @@ export async function generateMetadata({
       'تأجير خيام رمضان دبي',
       'مجالس رمضان الإمارات',
     ],
-    authors: [{ name: 'RMT UAE' }],
-    creator: 'RMT UAE',
-    publisher: 'RMT UAE',
+    authors: [{ name: 'Tent Now' }],
+    creator: 'Tent Now',
+    publisher: 'Tent Now',
     formatDetection: {
       email: false,
       address: false,
@@ -77,14 +77,14 @@ export async function generateMetadata({
     openGraph: {
       title:
         locale === 'ar'
-          ? 'RMT UAE - حلول خيام ومجالس رمضان الفاخرة'
-          : 'RMT UAE - Premium Ramadan Majlis Tent Solutions',
+          ? 'Tent Now - حلول خيام ومجالس رمضان الفاخرة'
+          : 'Tent Now - Premium Ramadan Majlis Tent Solutions',
       description:
         locale === 'ar'
           ? '30 عاماً من التميز في تأجير خيام ومجالس رمضان'
           : '30 years of excellence in Ramadan tent & Majlis rentals',
       url: baseUrl,
-      siteName: 'RMT UAE',
+      siteName: 'Tent Now',
       locale: locale === 'ar' ? 'ar_AE' : 'en_AE',
       type: 'website',
       images: [
@@ -92,13 +92,13 @@ export async function generateMetadata({
           url: '/images/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: 'RMT UAE - Ramadan Majlis Tent Solutions',
+          alt: 'Tent Now - Premium Ramadan Majlis Tent Solutions',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'RMT UAE - Ramadan Majlis Tent Solutions',
+      title: 'Tent Now - Premium Ramadan Majlis Tent Solutions',
       description: 'Premium Ramadan tent & Majlis rentals across UAE since 1994',
       images: ['/images/og-image.jpg'],
     },

@@ -1,7 +1,7 @@
-# RMT UAE Website Context
+# Tent Now Website Context
 
 ## Project Overview
-A premium, luxury lead-generation website for **RMT UAE** (Ramadan Majlis Tent Solutions). The site targets high-end residential, hotel, and corporate clients in the UAE for the 2026 Ramadan season.
+A premium, luxury lead-generation website for **Tent Now** (tentnow.ae). The site targets high-end residential, hotel, and corporate clients in the UAE for the 2026 Ramadan season.
 
 ## Tech Stack
 - **Framework**: Next.js 16.1.6 (App Router)

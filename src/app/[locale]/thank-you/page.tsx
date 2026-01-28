@@ -36,7 +36,7 @@ function ThankYouContent() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 animate-fade-in" style={{ animationDelay: '400ms' }}>
                     <a
-                        href="https://wa.me/971555101069"
+                        href="https://wa.me/971501826969"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-3 p-6 bg-[#1a212e] border border-[#282e39] rounded-2xl text-white hover:border-[#D4AF37] transition-all group"
@@ -49,13 +49,13 @@ function ThankYouContent() {
                     </a>
 
                     <a
-                        href="tel:+971555101069"
+                        href="tel:+971501826969"
                         className="flex items-center justify-center gap-3 p-6 bg-[#1a212e] border border-[#282e39] rounded-2xl text-white hover:border-[#D4AF37] transition-all group"
                     >
                         <Phone className="text-[#D4AF37]" />
                         <div className="text-left">
                             <p className="text-sm text-[#9da6b9] uppercase tracking-wider font-display">Prefer a call?</p>
-                            <p className="font-bold">+971 55 510 1069</p>
+                            <p className="font-bold">+971 50 182 6969</p>
                         </div>
                     </a>
                 </div>

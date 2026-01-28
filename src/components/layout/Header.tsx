@@ -51,18 +51,14 @@ export default function Header() {
       <nav className="container-luxury">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-4 group">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-gold/30 shadow-lg group-hover:border-gold transition-colors">
+          <Link href="/" className="block group">
+            <div className="relative h-14 w-36 group-hover:opacity-90 transition-opacity">
               <Image
-                src="/images/RMT-Logo.png"
-                alt="RMT UAE"
+                src="/images/tent-now-logo.png"
+                alt="Tent Now"
                 fill
-                className="object-contain p-1"
+                className="object-contain"
               />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-white text-lg font-bold tracking-widest uppercase font-display">RMT UAE</span>
-              <span className="text-text-muted text-[10px] font-bold tracking-[0.2em] uppercase">{t('experience') || 'Ramadan Specialists'}</span>
             </div>
           </Link>
 

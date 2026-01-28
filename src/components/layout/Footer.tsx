@@ -33,19 +33,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
-              <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-gold/30">
-                  <Image
-                    src="/images/RMT-Logo.png"
-                    alt="RMT UAE"
-                    fill
-                    className="object-contain p-1"
-                  />
-                </div>
-                <div>
-                  <span className="text-xl font-bold text-white">RMT</span>
-                  <span className="text-xl font-bold text-gold"> UAE</span>
-                </div>
+              <div className="relative h-12 w-32">
+                <Image
+                  src="/images/tent-now-logo.png"
+                  alt="Tent Now"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </Link>
             <p className="text-text-muted text-sm leading-relaxed mb-6">
@@ -139,7 +133,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+971555101069"
+                  href="tel:+971501826969"
                   className="flex items-center gap-3 text-text-muted hover:text-gold transition-colors"
                 >
                   <svg className="w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +144,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/971555101069"
+                  href="https://wa.me/971501826969"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white text-sm font-medium rounded-lg hover:bg-[#20BD5A] transition-colors mt-2"

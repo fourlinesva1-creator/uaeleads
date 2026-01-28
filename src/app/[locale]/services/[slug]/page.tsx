@@ -70,7 +70,7 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                                 {common('requestQuote')}
                             </Link>
                             <a
-                                href="https://wa.me/971555101069"
+                                href="https://wa.me/971501826969"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-secondary px-8 py-4 rounded-xl font-display flex items-center gap-3"

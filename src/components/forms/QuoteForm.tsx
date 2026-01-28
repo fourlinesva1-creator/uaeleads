@@ -63,7 +63,7 @@ export default function QuoteForm() {
         setIsSubmitting(true);
 
         // Format the WhatsApp message
-        const waMessage = `*New Quote Request from RMT UAE Website*%0A` +
+        const waMessage = `*New Quote Request from Tent Now Website*%0A` +
             `--------------------------------%0A` +
             `*Name:* ${data.name}%0A` +
             `*Company:* ${data.company || 'N/A'}%0A` +
@@ -76,7 +76,7 @@ export default function QuoteForm() {
             `*Details:* ${data.message || 'N/A'}%0A` +
             `--------------------------------`;
 
-        const whatsappUrl = `https://wa.me/971555101069?text=${waMessage}`;
+        const whatsappUrl = `https://wa.me/971501826969?text=${waMessage}`;
 
         // Small delay to show loading state
         setTimeout(() => {
@@ -321,7 +321,7 @@ export default function QuoteForm() {
                                 <p className="text-sm text-[#9da6b9] mb-4">{tf('directCall')}</p>
                                 <p className="text-xs text-[#4b5563] mb-6 px-4">{tf('directCallBody')}</p>
                                 <a
-                                    href="tel:+971555101069"
+                                    href="tel:+971501826969"
                                     className="inline-flex items-center gap-2 text-gold hover:text-white transition-colors font-display text-lg"
                                 >
                                     <MessageSquare size={20} />

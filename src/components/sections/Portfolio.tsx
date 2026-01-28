@@ -44,7 +44,7 @@ export default function Portfolio() {
             >
               <Image
                 src={image}
-                alt={`RMT UAE Portfolio - Majlis Setup ${index + 1}`}
+                alt={`Tent Now Portfolio - Majlis Setup ${index + 1}`}
                 fill
                 className="object-cover"
                 sizes={index === 0 ? '(max-width: 768px) 50vw, 66vw' : '(max-width: 768px) 50vw, 33vw'}

@@ -53,10 +53,10 @@ function FAQContent() {
                         {t('ctaBody')}
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a href="tel:+971555101069" className="px-8 py-4 bg-[#101622] text-white rounded-xl font-display hover:scale-105 transition-transform">
+                        <a href="tel:+971501826969" className="px-8 py-4 bg-[#101622] text-white rounded-xl font-display hover:scale-105 transition-transform">
                             Call Support Now
                         </a>
-                        <a href="https://wa.me/971555101069" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#101622] rounded-xl font-display hover:scale-105 transition-transform">
+                        <a href="https://wa.me/971501826969" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#101622] rounded-xl font-display hover:scale-105 transition-transform">
                             WhatsApp Us
                         </a>
                     </div>
