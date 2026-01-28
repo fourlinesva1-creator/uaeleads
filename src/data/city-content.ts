@@ -152,102 +152,102 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
     en: {
         dubai: {
             'ramadan-tent-rental': {
-                title: 'Premium Ramadan Tent Rental in Dubai',
-                subtitle: '30 Years of Architectural Excellence across Jumeirah, DIFC, and Downtown Dubai',
-                intro: 'From the luxury villas of Jumeirah and Al Barsha to the high-profile corporate events in DIFC and Downtown, Tent Now has been the trusted name in Dubai for three decades. We don’t just rent tents; we engineer environments that honor tradition and define luxury.',
-                mainBody: 'Dubai’s Ramadan season is a unique blend of heritage and global sophistication. Whether you are hosting a private Iftar in Dubai Marina or a massive industrial catering setup in Jebel Ali or Dubai Investment Park (DIP), your choice of venue defines your hospitality. Tent Now brings thirty years of logistical mastery to the table, ensuring that your tent is not only beautiful but fully compliant with Dubai Civil Defense regulations and optimized for the unique humidity levels of February in the UAE.',
+                title: 'Ramadan Tent Rental Dubai 2026',
+                subtitle: 'Skip the AED 300/head hotel markup. Get the same quality for less.',
+                intro: 'Here\'s the reality: Dubai\'s top hotels charge AED 295-470 per person for their Ramadan tent experiences. Beautiful? Yes. Necessary? Not if you have your own space. We build the same caliber of structure—at your location, on your terms, for a fraction of the cost.',
+                mainBody: 'We\'ve been doing this in Dubai since before most of our competitors opened their doors. Thirty years of navigating Dubai Municipality permits, Civil Defense approvals, and IACAD requirements. We know that a tent in Dubai Marina needs different wind anchoring than one in Al Quoz. We know that February humidity on the coast is brutal on cheap materials. And we know that getting fined AED 500,000 for an unapproved structure isn\'t something you want to explain to your CFO. Every permit, every safety certification, every structural approval—handled before we start.',
                 features: [
-                    { title: 'Logistical Mastery', body: 'We know Dubai’s roads and regulations from Al Quoz to Deira. We handle all permits and logistics, ensuring zero stress for you.' },
-                    { title: 'Elite Design', body: 'Our themes are tailored for Dubai’s aesthetic—from ultra-modern minimalist white tents for DIFC to rich, traditional majlis setups for private villas.' },
-                    { title: 'Climate Control', body: 'Industrial-grade AC systems calculated specifically for Dubai’s volume and occupancy, guaranteeing a cool 21°C even at peak capacity.' }
+                    { title: 'Full Permit Package', body: 'Dubai Municipality, Civil Defense, IACAD—we handle the paperwork maze so you don\'t have to. Zero surprises on installation day.' },
+                    { title: 'Climate Engineering', body: 'February in Dubai is humid. Our AC systems are calculated for your specific tent volume and guest count—21°C guaranteed, even at full capacity.' },
+                    { title: 'Location Expertise', body: 'Jumeirah villas, DIFC terraces, DIP industrial sites, JBR hotel extensions—we\'ve installed in every corner of Dubai. We know what works where.' }
                 ],
-                cta: 'Secure Your Dubai Majlis'
+                cta: 'Get Your Custom Quote'
             },
             'majlis-tent-rental': {
-                title: 'Luxury Majlis Tent Rental in Dubai',
-                subtitle: 'Traditional Sophistication for Jumeirah and Emirates Hills Private Estates',
-                intro: 'A private Majlis is the heart of Ramadan. We specialize in creating intimate, high-end environments for Dubai’s most discerning families in Jumeirah, Emirates Hills, and beyond.',
-                mainBody: 'Our Majlis tent solutions in Dubai are designed to be an extension of your home or corporate headquarters. We focus on the details—from custom-made low-seating floor majlis to sophisticated wall paneling and ambient lighting. Whether it’s a tight villa courtyard in Jumeirah or a sprawling estate in Al Khawaneej, every installation is supervised by veteran project managers to ensure 5-star quality.',
+                title: 'Private Majlis Tent Rental in Dubai',
+                subtitle: 'Your home. Your guests. Your traditions—without the hotel middleman.',
+                intro: 'A Majlis isn\'t just seating—it\'s where Ramadan actually happens. The late-night conversations, the family gatherings, the moments that matter. We build private Majlis spaces that feel permanent, not like you rented something.',
+                mainBody: 'Most "Majlis rentals" in Dubai are wedding tent companies who swap the white draping for some cushions. That\'s not what we do. We\'ve spent 30 years understanding the difference between a generic tent and an authentic Majlis. The low-seating configurations. The fabric layering that actually insulates. The lighting that sets a mood without being theatrical. Whether you\'re working with a tight courtyard in Jumeirah or a sprawling garden in Emirates Hills, we design around your space—not the other way around. And yes, we handle the permits, because your home still needs Civil Defense approval for a temporary structure.',
                 features: [
-                    { title: 'Bespoke Interiors', body: 'Custom fabric selections and furniture layouts tailored to your guest count and aesthetic preferences.' },
-                    { title: 'Privacy Focused', body: 'Thoughtful spatial planning to ensure complete privacy for your family or guests, a core requirement for Dubai’s private Majalis.' },
-                    { title: 'Dubai Standards', body: 'Built to withstand February breezes and coastal humidity while maintaining a perfect internal climate.' }
+                    { title: 'Authentic Interiors', body: 'Custom floor majlis, traditional fabric selections, proper Sadu patterns—details that matter to people who know the difference.' },
+                    { title: 'Privacy by Design', body: 'Separate entrances, sight-line planning, acoustic layering. Your family gathering stays private.' },
+                    { title: 'Flexible Sizing', body: 'From intimate 20-person setups to 100+ guest configurations. We scale to your actual guest list, not a package tier.' }
                 ],
-                cta: 'Request Majlis Design'
+                cta: 'Design Your Majlis'
             },
             'iftar-tent-rental': {
-                title: 'Grand Iftar Tent Solutions in Dubai',
-                subtitle: 'Hospitality Infrastructure for Corporate DIFC and Industrial Jebel Ali',
-                intro: 'Hosting a large-scale Iftar in Dubai requires precision. We provide the infrastructure for mass hospitality from hotel terraces to industrial zones.',
-                mainBody: 'Tent Now specializes in high-capacity Iftar tents for Dubai’s corporate sector and community organizations. We design for flow—ensuring buffet lines, seating zones, and prayer areas work in harmony. Our structures in areas like Dubai Investment Park (DIP) and Al Quoz are engineered for maximum safety and comfort for hundreds of guests simultaneously.',
+                title: 'Corporate Iftar Tent Rental Dubai',
+                subtitle: 'Your staff Iftar shouldn\'t cost more than quarterly bonuses.',
+                intro: 'Corporate Iftars in Dubai have two options: book a hotel at AED 250+ per head, or build your own. If you have the space—your office grounds, a parking area, a corporate campus—we can give you the same experience at 15-25% less.',
+                mainBody: 'We work with companies across DIFC, Business Bay, Dubai Investment Park, and Jebel Ali every Ramadan season. The requirements are always the same: look impressive, feed a lot of people efficiently, stay within budget. Our Iftar structures are designed for flow—buffet lines that don\'t create bottlenecks, seating zones that fill and empty smoothly, prayer areas positioned correctly. We handle the Dubai Municipality food service approvals, the Civil Defense safety certifications, and the IACAD permits. Your facilities team doesn\'t need to become permit experts for one month.',
                 features: [
-                    { title: 'Rapid Deployment', body: 'Expert teams capable of installing large-scale structures in record time across Dubai Marina, DIFC, and Al Quoz.' },
-                    { title: 'Buffet Integration', body: 'Specific zones designed for food service with extra reinforced flooring and ventilation optimized for hot buffet stations.' },
-                    { title: 'Safe & Secure', body: 'Full compliance with Dubai Municipality hygiene and safety standards for all dining temporary structures.' }
+                    { title: 'Operational Flow', body: 'Buffet stations, seating zones, prayer areas, service corridors—designed so 500 people can eat without chaos.' },
+                    { title: 'Brand Integration', body: 'Custom flooring, subtle signage, lighting in your corporate colors. It\'s your event, not a generic rental.' },
+                    { title: 'Full Compliance', body: 'IACAD permits, Municipality hygiene standards, Civil Defense safety—all included. One vendor, zero compliance headaches.' }
                 ],
-                cta: 'Plan Your Iftar Setup'
+                cta: 'Plan Your Corporate Iftar'
             },
             'suhoor-tent-rental': {
-                title: 'Sophisticated Suhoor Tents in Dubai',
-                subtitle: 'Intimate Lounges for Late Night Gastronomy in Luxury Hotel Venues',
-                intro: 'Suhoor is about atmosphere. We create low-light, high-comfort lounge environments for the pre-dawn hours across Dubai’s top-tier hotels.',
-                mainBody: 'Our Suhoor tents in Dubai are the gold standard for luxury hotel partnerships in locations like Palm Jumeirah and DIFC. We move away from traditional seating towards modern lounge furniture, integrated audio-visual systems, and specific ventilation for shisha-permissible zones in full compliance with DCD.',
+                title: 'Suhoor Tent & Lounge Setup Dubai',
+                subtitle: 'The 2 AM crowd needs different energy. We build for that.',
+                intro: 'Suhoor isn\'t Iftar with different timing. It\'s a completely different vibe—lower lights, lounge seating, longer stays. Most tent companies don\'t understand this. We do.',
+                mainBody: 'We\'ve partnered with hotels on Palm Jumeirah, JBR, and DIFC for over two decades on their Suhoor offerings. The requirements are specific: modern lounge furniture instead of traditional seating, integrated AV for ambient music, proper ventilation for shisha-permissible zones (DCD-compliant, obviously). Smart lighting systems that can shift mood throughout the night. Acoustic considerations because your neighbors exist. This isn\'t a daytime tent with the lights dimmed—it\'s purpose-built for Dubai\'s late-night Ramadan culture.',
                 features: [
-                    { title: 'Lounge Aesthetic', body: 'Plush velvet sofas, marble tables, and contemporary Arabic decor tailored for Dubai’s nightlife aesthetic.' },
-                    { title: 'AV & Lighting', body: 'Customizable smart lighting and sound systems to set the perfect nocturnal mood for late-night gatherings.' },
-                    { title: 'Ventilation Experts', body: 'Certified smoke extraction systems for Suhoor lounges, ensuring fresh air flow even in high-density shisha areas.' }
+                    { title: 'Lounge Configuration', body: 'Velvet sofas, low tables, contemporary Arabic aesthetic. Designed for guests who stay until Fajr.' },
+                    { title: 'Shisha Ventilation', body: 'Certified smoke extraction systems. Fresh air flow even at peak capacity. Full DCD compliance.' },
+                    { title: 'Smart Ambiance', body: 'Programmable RGB lighting, integrated sound systems, dimmable zones. The mood shifts with the night.' }
                 ],
-                cta: 'Design Suhoor Lounge'
+                cta: 'Design Your Suhoor Space'
             }
         },
         'abu-dhabi': {
             'ramadan-tent-rental': {
-                title: 'Premium Ramadan Tent Rental in Abu Dhabi',
-                subtitle: 'Majestic Structures for the Corniche, Khalifa City, and Yas Island',
-                intro: 'In the capital, Ramadan is marked by a blend of grand state hospitality and intimate family heritage. Tent Now brings 30 years of engineering excellence to Abu Dhabi’s most prestigious locations.',
-                mainBody: 'From the iconic Corniche to the modern estates of Khalifa City and the corporate hubs of Yas Island, our Abu Dhabi team delivers unmatched quality. We understand the specific Abu Dhabi Civil Defense (ADCD) requirements and the need for structures that reflect the capital’s majestic aesthetic. Whether it’s a high-profile governmental Iftar or a private Majlis in Al Mushrif, we ensure every detail is perfect.',
+                title: 'Ramadan Tent Rental Abu Dhabi 2026',
+                subtitle: 'Emirates Palace quality without Emirates Palace pricing.',
+                intro: 'Abu Dhabi sets the bar high. The Emirates Palace tent is stunning—at AED 400+ per person. But if you need your own structure at your own location, you need someone who builds to that standard without the markup.',
+                mainBody: 'The capital\'s tent market is split between ultra-premium hotel venues and budget operators who cut corners on safety. We sit in the middle: the structural quality and aesthetic polish that Abu Dhabi expects, at prices that work for government budgets, corporate events, and private families. We\'ve been navigating DMT permits for 30 years. We understand that Abu Dhabi requires structures that integrate with the urban landscape—your tent can\'t look like a construction site on the Corniche. Every installation meets Department of Municipalities and Transport standards, Civil Defense requirements, and the unwritten aesthetic expectations of the capital.',
                 features: [
-                    { title: 'Capital Compliance', body: 'Full alignment with Abu Dhabi Civil Defense and Municipality safety standards for temporary structures.' },
-                    { title: 'Majestic Finishing', body: 'High-end interior designs that match the architectural grandeur of Abu Dhabi’s top venues.' },
-                    { title: 'Island Logistics', body: 'Specialized mobilization teams for Yas and Saadiyat Island installations, ensuring timely delivery.' }
+                    { title: 'DMT Compliance', body: 'Abu Dhabi\'s permit process is strict. We handle structural approvals, safety certifications, and aesthetic reviews—all before installation.' },
+                    { title: 'Capital Aesthetics', body: 'Earthy tones, classical Arabic arches, heritage patterns. Structures that look like they belong in Abu Dhabi, not imported from Dubai.' },
+                    { title: 'Island Logistics', body: 'Yas Island, Saadiyat, Al Reem—we have mobilization teams specialized for Abu Dhabi\'s island installations.' }
                 ],
-                cta: 'Request Abu Dhabi Proposal'
+                cta: 'Get Your Abu Dhabi Quote'
             },
             'majlis-tent-rental': {
-                title: 'Luxury Majlis Tent Rental in Abu Dhabi',
-                subtitle: 'Exquisite Tradition for Al Bateen and Saadiyat Residences',
-                intro: 'A Majlis in Abu Dhabi is a sanctuary of honor. We create high-end, private environments for the capital’s most distinguished families.',
-                mainBody: 'Our Majlis solutions in Abu Dhabi cater to the unique needs of residential estates in Al Bateen, Al Mushrif, and Saadiyat Island. We focus on premium flooring, intricate woodwork, and bespoke fabrics that honor Emirati heritage. Every Abu Dhabi Majlis is a masterpiece of comfort and privacy, engineered to withstand the coastal breeze of the capital.',
+                title: 'Private Majlis Rental Abu Dhabi',
+                subtitle: 'Palatial scale. Authentic tradition. Your private grounds.',
+                intro: 'A Majlis in Abu Dhabi often means covering spaces that run to 2,000 square meters. Palace courtyards, villa gardens, private compounds. We handle palatial dimensions with the finishing quality the capital expects.',
+                mainBody: 'Abu Dhabi\'s private Majlis requirements are different from Dubai. The scale is often larger. The protocol expectations are higher. The families involved often have specific requirements around Majlis Al Aali (VIP seating) versus general guest areas. We\'ve spent three decades learning these nuances. Authentic Gahwa stations positioned correctly. Mabkhara (incense) considerations for ventilation. Deep-seating majlis furniture that guests can actually sit in for hours. Seamless flooring that doesn\'t look temporary. Kandura racks at entrances. The details that separate a proper Abu Dhabi Majlis from a decorated tent.',
                 features: [
-                    { title: 'Heritage Design', body: 'Traditional Arabic motifs integrated with modern luxury materials.' },
-                    { title: 'VIP Seating', body: 'Custom-made floor majlis and lounge furniture designed for long evenings of hospitality.' },
-                    { title: 'Climate Control', body: 'Discreet, high-capacity cooling systems that maintain a perfect environment without noise disruption.' }
+                    { title: 'Palatial Scale', body: 'Up to 2,000 sqm of seamless coverage. Flooring, climate control, and finishing that works at mansion scale.' },
+                    { title: 'Protocol Ready', body: 'Majlis Al Aali configurations, separate entrances, VIP positioning—we understand Abu Dhabi\'s hospitality hierarchy.' },
+                    { title: 'Authentic Details', body: 'Gahwa stations, Mabkhara ventilation, traditional Sadu patterns, proper Arabian furnishings. Not decorations—function.' }
                 ],
-                cta: 'Book Your Private Majlis'
+                cta: 'Design Your Private Majlis'
             },
             'iftar-tent-rental': {
-                title: 'Grand Iftar Tent Solutions in Abu Dhabi',
-                subtitle: 'Hospitality Infrastructure for Corporate and Community Groups',
-                intro: 'Host the perfect break of fast with Abu Dhabi’s most reliable tent partners. We specialize in high-capacity setups for 50 to 5,000 guests.',
-                mainBody: 'Abu Dhabi’s corporate sector depends on Tent Now for seasonal Iftar tents that balance scale with elegance. Whether you are hosting staff Iftars in Musaffah or VIP gatherings in Al Reem, our structures are engineered for flow and safety. We integrate buffet stations, prayer areas, and guest zones into a single, seamless environment.',
+                title: 'Corporate & Government Iftar Tents Abu Dhabi',
+                subtitle: 'Government-standard execution at commercial prices.',
+                intro: 'Abu Dhabi\'s government and corporate sectors need Iftar infrastructure that meets high protocol standards—without the five-star hotel invoice. We deliver both.',
+                mainBody: 'We\'ve worked with ministries, semi-government entities, and corporations across Abu Dhabi for three decades. The requirements are consistent: structures that project institutional dignity, VIP configurations that respect hierarchy, flow designs that handle 500+ guests efficiently, and pricing that survives budget review. Our corporate Iftar tents include dedicated prayer areas, separate service zones, and layouts designed for protocol. DMT permits, Civil Defense approvals, ADAFSA food service compliance—all handled. Your admin team doesn\'t need to become temporary structure experts.',
                 features: [
-                    { title: 'Rapid Mobilization', body: 'Capable of deploying large-scale food-service structures anywhere in the Emirate.' },
-                    { title: 'Hygiene Standards', body: 'Built for compliance with Abu Dhabi Agriculture and Food Safety Authority (ADAFSA).' },
-                    { title: 'Heavy Duty Cooling', body: 'Massive AC arrays designed to keep guests cool even in high-occupancy environments.' }
+                    { title: 'Protocol Configurations', body: 'VIP entrances, dignitary seating, hierarchical layouts. We understand how Abu Dhabi institutions work.' },
+                    { title: 'Budget Accountability', body: 'Government and corporate budgets need justification. We provide the spec sheet that makes approval straightforward.' },
+                    { title: 'Rapid Deployment', body: 'Installation teams that work around your schedule. Ministries can\'t shut down for tent construction.' }
                 ],
-                cta: 'Plan Your Iftar Setup'
+                cta: 'Plan Your Institutional Iftar'
             },
             'suhoor-tent-rental': {
-                title: 'Sophisticated Suhoor Tents in Abu Dhabi',
-                subtitle: 'Intimate Lounges for the Pre-Dawn Hours',
-                intro: 'Suhoor in Abu Dhabi is an art form. We design the atmosphere that keeps guests comfortable until the first light of day.',
-                mainBody: 'From the luxury hotel terraces of Saadiyat to private estates in Khalifa City, our Suhoor tents offer a refined lounge experience. We specialize in mood lighting, acoustic insulation, and modern lounge aesthetics. Our Abu Dhabi Suhoor setups are the preferred choice for those seeking a tranquil, high-end environment for nighttime gatherings.',
+                title: 'Suhoor Lounge Setup Abu Dhabi',
+                subtitle: 'Refined atmosphere for the capital\'s late-night culture.',
+                intro: 'Suhoor in Abu Dhabi is quieter than Dubai\'s. More intimate, more conversational. We build spaces that match the capital\'s energy—sophisticated lounges that invite guests to stay.',
+                mainBody: 'Our Abu Dhabi Suhoor installations serve a different crowd than the Dubai party scene. Hotel terraces on Saadiyat that need revenue-generating capacity expansion. Private estates in Khalifa City hosting family and business associates. The requirements are consistent: refined lounge aesthetics, proper climate control for coastal humidity, mood lighting that doesn\'t feel like a nightclub, and ventilation for shisha zones that meets ADCD standards. We specialize in creating spaces where guests want to linger—comfortable enough to stay until Fajr, elegant enough to reflect well on the host.',
                 features: [
-                    { title: 'Lounge Luxury', body: 'Plush velvet seating and contemporary decor for a modern nocturnal vibe.' },
-                    { title: 'Smart Lighting', body: 'Dimmable, programmable RGB lighting systems to set the perfect mood.' },
-                    { title: 'Certified Ventilation', body: 'Advanced air extraction systems for shisha-permissible zones in full compliance with ADCD.' }
+                    { title: 'Capital Elegance', body: 'Plush seating, contemporary Arabic design, refined finishes. Abu Dhabi sophistication, not Dubai flash.' },
+                    { title: 'Climate Comfort', body: 'Coastal humidity handled properly. Temperature maintained until the pre-dawn hours.' },
+                    { title: 'ADCD Ventilation', body: 'Shisha-permissible zones with certified extraction systems. Full compliance, no shortcuts.' }
                 ],
-                cta: 'Design Suhoor Lounge'
+                cta: 'Design Your Suhoor Lounge'
             }
         },
         'sharjah': {
@@ -504,102 +504,102 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
     ar: {
         dubai: {
             'ramadan-tent-rental': {
-                title: 'تأجير خيام رمضان فخمة في دبي',
-                subtitle: '30 عاماً من التميز المعماري في جميرا، ومركز دبي المالي العالمي، وداون تاون',
-                intro: 'من الفلل الفاخرة في جميرا والبرشاء إلى فعاليات الشركات المرموقة في DIFC وداون تاون، كانت Tent Now الاسم الموثوق به في دبي لمدة ثلاثة عقود. نحن لا نكتفي بتأجير الخيام؛ بل نصمم بيئات تكرم التقاليد وتحدد الفخامة.',
-                mainBody: 'يعد موسم رمضان في دبي مزيجاً فريداً من التراث والرقي العالمي. سواء كنت تستضيف إفطاراً خاصاً في مرسى دبي أو تجهيزاً صناعياً ضخماً في جبل علي أو مجمع دبي للاستثمار (DIP)، فإن اختيارك للمكان يحدد ضيافتك. تقدم Tent Now ثلاثين عاماً من الإتقان اللوجستي، مما يضمن أن خيمتك متوافقة تماماً مع لوائح الدفاع المدني في دبي ومحسنة للتعامل مع مستويات الرطوبة في شهر فبراير.',
+                title: 'تأجير خيام رمضان دبي 2026',
+                subtitle: 'تجاوز رسوم الفنادق البالغة 300 درهم للشخص. احصل على نفس الجودة بأقل.',
+                intro: 'الواقع: فنادق دبي الراقية تتقاضى 295-470 درهم للشخص في تجارب خيام رمضان. جميلة؟ نعم. ضرورية؟ ليس إذا كان لديك مساحتك الخاصة. نحن نبني نفس مستوى الجودة—في موقعك، بشروطك، بجزء من التكلفة.',
+                mainBody: 'نحن نعمل في دبي منذ قبل أن يفتح معظم منافسينا أبوابهم. ثلاثون عاماً من التعامل مع تصاريح بلدية دبي وموافقات الدفاع المدني ومتطلبات IACAD. نعلم أن الخيمة في مرسى دبي تحتاج تثبيتاً مختلفاً عن القوز. نعلم أن رطوبة فبراير على الساحل قاسية على المواد الرخيصة. ونعلم أن غرامة 500,000 درهم على هيكل غير مرخص ليست شيئاً تريد شرحه لمديرك المالي. كل تصريح، كل شهادة سلامة، كل موافقة هيكلية—مُنجزة قبل أن نبدأ.',
                 features: [
-                    { title: 'إتقان لوجستي', body: 'نحن نعرف طرق ولوائح دبي من القوز إلى ديرة. نتولى جميع التصاريح والخدمات اللوجستية، مما يضمن لك راحة البال التامة.' },
-                    { title: 'تصميم النخبة', body: 'تصاميمنا مصممة خصيصاً لجماليات دبي - من الخيام البيضاء الحديثة لمركز دبي المالي العالمي إلى تجهيزات المجالس التقليدية للفلل الخاصة.' },
-                    { title: 'التحكم في المناخ', body: 'أنظمة تكييف من الدرجة الصناعية مصممة خصيصاً لحجم الخيمة وعدد الحضور، مما يضمن درجة حرارة مثالية تبلغ 21 درجة مئوية.' }
+                    { title: 'حزمة تصاريح كاملة', body: 'بلدية دبي، الدفاع المدني، IACAD—نتولى متاهة الأوراق حتى لا تضطر أنت. صفر مفاجآت يوم التركيب.' },
+                    { title: 'هندسة المناخ', body: 'فبراير في دبي رطب. أنظمة التكييف لدينا محسوبة لحجم خيمتك وعدد ضيوفك—21 درجة مضمونة حتى بالسعة الكاملة.' },
+                    { title: 'خبرة الموقع', body: 'فلل جميرا، تراسات DIFC، مواقع DIP الصناعية، توسعات فنادق JBR—ركّبنا في كل زاوية من دبي. نعرف ما يناسب أين.' }
                 ],
-                cta: 'احجز مجلسك في دبي'
+                cta: 'احصل على عرض أسعار مخصص'
             },
             'majlis-tent-rental': {
-                title: 'تأجير خيام مجالس فاخرة في دبي',
-                subtitle: 'رقي تقليدي مخصص لفلل جميرا وتلال الإمارات',
-                intro: 'المجلس الخاص هو قلب رمضان. نحن متخصصون في إنشاء بيئات حميمية وراقية للعائلات الأكثر تميزاً في جميرا، وتلال الإمارات، وما وراءها.',
-                mainBody: 'تم تصميم حلول خيام المجلس لدينا في دبي لتكون امتداداً لمنزلك أو مقر شركتك. نحن نركز على التفاصيل - من المجالس الأرضية المخصصة إلى الألواح الجدارية المتطورة. سواء كان فناء فيلا ضيقاً في جميرا أو عقاراً مترامياً في الخوانيج، يتم الإشراف على كل تركيب لضمان جودة 5 نجوم.',
+                title: 'تأجير خيمة مجلس خاص في دبي',
+                subtitle: 'منزلك. ضيوفك. تقاليدك—بدون وسيط الفندق.',
+                intro: 'المجلس ليس مجرد جلسات—إنه حيث يحدث رمضان فعلاً. السهرات المتأخرة، التجمعات العائلية، اللحظات المهمة. نحن نبني مساحات مجلس خاصة تبدو دائمة، لا كأنك استأجرت شيئاً.',
+                mainBody: 'معظم "تأجيرات المجالس" في دبي هي شركات خيام أعراس تستبدل الستائر البيضاء ببعض الوسائد. هذا ليس ما نفعله. قضينا 30 عاماً في فهم الفرق بين خيمة عادية ومجلس أصيل. تجهيزات الجلوس المنخفض. طبقات القماش التي تعزل فعلاً. الإضاءة التي تخلق أجواء دون مسرحية. سواء كنت تعمل مع فناء ضيق في جميرا أو حديقة واسعة في تلال الإمارات، نصمم حول مساحتك—لا العكس.',
                 features: [
-                    { title: 'تصميمات داخلية مخصصة', body: 'اختيارات أقمشة مخصصة وتوزيع أثاث مصمم ليتناسب مع عدد ضيوفك وتفضيلاتك الجمالية.' },
-                    { title: 'التركيز على الخصوصية', body: 'تخطيط مكاني مدروس لضمان الخصوصية الكاملة، وهي متطلب أساسي للمجالس الخاصة في دبي.' },
-                    { title: 'معايير دبي', body: 'بنيت لتتحمل نسائم شهر فبراير ورطوبة السواحل مع الحفاظ على مناخ داخلي مثالي.' }
+                    { title: 'تصاميم أصيلة', body: 'مجالس أرضية مخصصة، اختيارات أقمشة تقليدية، أنماط سدو أصيلة—تفاصيل تهم من يعرف الفرق.' },
+                    { title: 'خصوصية بالتصميم', body: 'مداخل منفصلة، تخطيط خطوط الرؤية، طبقات صوتية. تجمعك العائلي يبقى خاصاً.' },
+                    { title: 'أحجام مرنة', body: 'من تجهيزات 20 شخص الحميمة إلى تجهيزات 100+ ضيف. نتوسع حسب قائمة ضيوفك الفعلية، لا حسب فئة باقة.' }
                 ],
-                cta: 'اطلب تصميم المجلس'
+                cta: 'صمم مجلسك'
             },
             'iftar-tent-rental': {
-                title: 'حلول خيام الإفطار الكبرى في دبي',
-                subtitle: 'بنية تحتية للضيافة للشركات في DIFC والمناطق الصناعية في جبل علي',
-                intro: 'استضافة إفطار واسع النطاق في دبي تتطلب الدقة. نحن نوفر البنية التحتية لضيافة جماعية من تراسات الفنادق إلى المناطق الصناعية.',
-                mainBody: 'متخصصون في خيام الإفطار ذات السعة العالية لقطاع الشركات في دبي. نحن نصمم من أجل التدفق - لضمان عمل خطوط البوفيه ومناطق الجلوس في وئام. تم تصميم هياكلنا في مناطق مثل مجمع دبي للاستثمار (DIP) والقوز لتحقيق أقصى قدر من السلامة والراحة لمئات الضيوف.',
+                title: 'تأجير خيمة إفطار شركات دبي',
+                subtitle: 'إفطار موظفيك لا يجب أن يكلف أكثر من المكافآت الربعية.',
+                intro: 'إفطارات الشركات في دبي لها خياران: احجز فندقاً بـ 250+ درهم للشخص، أو ابنِ خيمتك. إذا كانت لديك المساحة—أرض مكتبك، موقف سيارات، حرم شركة—يمكننا إعطاءك نفس التجربة بـ 15-25% أقل.',
+                mainBody: 'نعمل مع شركات في DIFC وبزنس باي ومجمع دبي للاستثمار وجبل علي كل موسم رمضان. المتطلبات دائماً نفسها: مظهر مبهر، إطعام كثير من الناس بكفاءة، البقاء ضمن الميزانية. هياكل الإفطار لدينا مصممة للتدفق—خطوط بوفيه لا تخلق اختناقات، مناطق جلوس تمتلئ وتفرغ بسلاسة، مناطق صلاة موضوعة بشكل صحيح. نتولى موافقات بلدية دبي لخدمة الطعام، شهادات سلامة الدفاع المدني، وتصاريح IACAD.',
                 features: [
-                    { title: 'انتشار سريع', body: 'فرق خبراء قادرة على تركيب هياكل واسعة النطاق في وقت قياسي في مرسى دبي، ومركز دبي المالي العالمي، والقوز.' },
-                    { title: 'تكامل البوفيه', body: 'مناطق محددة مصممة لخدمة الطعام مع أرضيات معززة وتوية مثالية لمحطات البوفيه الساخنة.' },
-                    { title: 'آمن ومضمون', body: 'الالتزام الكامل بمعايير النظافة والسلامة ببلدية دبي لجميع هياكل الطعام المؤقتة.' }
+                    { title: 'تدفق تشغيلي', body: 'محطات بوفيه، مناطق جلوس، مناطق صلاة، ممرات خدمة—مصممة ليأكل 500 شخص بدون فوضى.' },
+                    { title: 'تكامل العلامة التجارية', body: 'أرضيات مخصصة، لافتات خفية، إضاءة بألوان شركتك. إنها فعاليتك، لا إيجار عام.' },
+                    { title: 'امتثال كامل', body: 'تصاريح IACAD، معايير نظافة البلدية، سلامة الدفاع المدني—كلها مشمولة. مورد واحد، صفر صداع امتثال.' }
                 ],
-                cta: 'خطط لتجهيز الإفطار'
+                cta: 'خطط لإفطار شركتك'
             },
             'suhoor-tent-rental': {
-                title: 'خيام سحور متطورة في دبي',
-                subtitle: 'صالات حميمية لتناول الطعام في فنادق دبي الفاخرة',
-                intro: 'السحور يدور حول الأجواء. نحن ننشئ بيئات صالة ذات إضاءة منخفضة وراحة عالية في أرقى فنادق دبي.',
-                mainBody: 'تعد خيام السحور الخاصة بنا في دبي المعيار الذهبي لشراكات الفنادق في مواقع مثل نخلة جميرا ومركز دبي المالي العالمي. نحن نوفر أثاث صالات حديث، وأنظمة صوت وصورة متكاملة، وتهوية مخصصة للشيشة وفقاً للدفاع المدني.',
+                title: 'تجهيز خيمة وصالة سحور دبي',
+                subtitle: 'جمهور الثانية صباحاً يحتاج طاقة مختلفة. نحن نبني لذلك.',
+                intro: 'السحور ليس إفطاراً بتوقيت مختلف. إنه أجواء مختلفة تماماً—إضاءة منخفضة، جلسات صالة، إقامات أطول. معظم شركات الخيام لا تفهم هذا. نحن نفهم.',
+                mainBody: 'شراكاتنا مع فنادق نخلة جميرا وJBR وDIFC لعروض السحور تمتد لأكثر من عقدين. المتطلبات محددة: أثاث صالات حديث بدلاً من الجلسات التقليدية، أنظمة صوت وصورة للموسيقى المحيطة، تهوية مناسبة لمناطق الشيشة (متوافقة مع الدفاع المدني طبعاً). أنظمة إضاءة ذكية يمكنها تغيير الأجواء طوال الليل. اعتبارات صوتية لأن جيرانك موجودون. هذه ليست خيمة نهارية بإضاءة خافتة—إنها مبنية خصيصاً لثقافة دبي الرمضانية الليلية.',
                 features: [
-                    { title: 'جماليات الصالة', body: 'أرائك مخملية فاخرة، طاولات رخامية، وديكور عربي معاصر يلائم الحياة الليلية في دبي.' },
-                    { title: 'الصوت والإضاءة', body: 'إضاءة ذكية وأنظمة صوت لتوفير الأجواء الليلية المثالية للتجمعات المتأخرة.' },
-                    { title: 'خبراء التهوية', body: 'أنظمة استخراج دخان معتمدة لصالات السحور، مما يضمن تدفق الهواء النقي حتى في المناطق المزدحمة.' }
+                    { title: 'تجهيز صالة', body: 'أرائك مخملية، طاولات منخفضة، جمالية عربية معاصرة. مصممة لضيوف يبقون حتى الفجر.' },
+                    { title: 'تهوية شيشة', body: 'أنظمة استخراج دخان معتمدة. تدفق هواء نقي حتى بالسعة الكاملة. امتثال كامل للدفاع المدني.' },
+                    { title: 'أجواء ذكية', body: 'إضاءة RGB قابلة للبرمجة، أنظمة صوت متكاملة، مناطق قابلة للتعتيم. الأجواء تتغير مع الليل.' }
                 ],
-                cta: 'صمم صالة السحور'
+                cta: 'صمم مساحة سحورك'
             }
         },
         'abu-dhabi': {
             'ramadan-tent-rental': {
-                title: 'تأجير خيام رمضان فخمة في أبوظبي',
-                subtitle: 'هياكل مهيبة للكورنيش ومدينة خليفة وجزيرة ياس',
-                intro: 'في العاصمة، يتميز رمضان بمزيج من كرم الضيافة الحكومية والتراث العائلي العريق. تقدم Tent Now 30 عاماً من التميز الهندسي في أرقى مواقع أبوظبي.',
-                mainBody: 'من الكورنيش الشهير إلى العقارات الحديثة في مدينة خليفة والمراكز التجارية في جزيرة ياس، يقدم فريقنا في أبوظبي جودة لا تضاهى. نحن نتفهم المتطلبات الخاصة للدفاع المدني في أبوظبي (ADCD) والحاجة إلى هياكل تعكس الجمالية المهيبة للعاصمة. سواء كان ذلك إفطاراً حكومياً رفيع المستوى أو مجلساً خاصاً في المشرف، فإننا نضمن أن تكون كل التفاصيل مثالية.',
+                title: 'تأجير خيام رمضان أبوظبي 2026',
+                subtitle: 'جودة قصر الإمارات بدون أسعار قصر الإمارات.',
+                intro: 'أبوظبي ترفع المعايير عالياً. خيمة قصر الإمارات مذهلة—بأكثر من 400 درهم للشخص. لكن إذا كنت تحتاج هيكلك الخاص في موقعك، فأنت تحتاج من يبني بذلك المعيار بدون الرسوم الإضافية.',
+                mainBody: 'سوق الخيام في العاصمة منقسم بين أماكن الفنادق الفائقة الفخامة والمشغلين الصغار الذين يتنازلون عن معايير السلامة. نحن في الوسط: الجودة الهيكلية والصقل الجمالي الذي تتوقعه أبوظبي، بأسعار تناسب ميزانيات الحكومة وفعاليات الشركات والعائلات الخاصة. نتعامل مع تصاريح DMT منذ 30 عاماً. نفهم أن أبوظبي تتطلب هياكل تتكامل مع المشهد الحضري—خيمتك لا يمكن أن تبدو كموقع بناء على الكورنيش.',
                 features: [
-                    { title: 'الامتثال للعاصمة', body: 'التوافق التام مع معايير السلامة في الدفاع المدني وبلدية أبوظبي للهياكل المؤقتة.' },
-                    { title: 'تشطيبات مهيبة', body: 'تصاميم داخلية راقية تضاهي العظمة المعمارية لأرقى الأماكن في أبوظبي.' },
-                    { title: 'لوجستيات الجزر', body: 'فرق تعبئة متخصصة لتركيبات جزيرة ياس والسعديات، مما يضمن التسليم في الوقت المحدد.' }
+                    { title: 'امتثال DMT', body: 'عملية تصاريح أبوظبي صارمة. نتولى الموافقات الهيكلية وشهادات السلامة والمراجعات الجمالية—كلها قبل التركيب.' },
+                    { title: 'جماليات العاصمة', body: 'ألوان ترابية، أقواس عربية كلاسيكية، أنماط تراثية. هياكل تبدو وكأنها تنتمي لأبوظبي، لا مستوردة من دبي.' },
+                    { title: 'لوجستيات الجزر', body: 'جزيرة ياس، السعديات، الريم—لدينا فرق تعبئة متخصصة لتركيبات جزر أبوظبي.' }
                 ],
-                cta: 'اطلب عرض أسعار أبوظبي'
+                cta: 'احصل على عرض أسعار أبوظبي'
             },
             'majlis-tent-rental': {
-                title: 'تأجير خيام مجالس فاخرة في أبوظبي',
-                subtitle: 'تراث رائع لسكان البطين والسعديات',
-                intro: 'المجلس في أبوظبي هو ملتقى التقدير والكرم. نحن ننشئ بيئات خاصة وراقية للعائلات الأكثر تميزاً في العاصمة.',
-                mainBody: 'تلبي حلول المجلس لدينا في أبوظبي الاحتياجات الفريدة للعقارات السكنية في البطين والمشرف وجزيرة السعديات. نحن نركز على الأرضيات الفاخرة، والأعمال الخشبية المعقدة، والأقمشة المخصصة التي تكرم التراث الإماراتي. كل مجلس في أبوظبي هو نسخة من الراحة والخصوصية، صممت لتتحمل نسيم البحر في العاصمة.',
+                title: 'تأجير مجلس خاص أبوظبي',
+                subtitle: 'مساحات ضخمة. تقاليد أصيلة. أرضك الخاصة.',
+                intro: 'المجلس في أبوظبي غالباً يعني تغطية مساحات تصل إلى 2,000 متر مربع. أفنية قصور، حدائق فلل، مجمعات خاصة. نتعامل مع الأبعاد الضخمة بجودة التشطيب التي تتوقعها العاصمة.',
+                mainBody: 'متطلبات المجالس الخاصة في أبوظبي مختلفة عن دبي. الحجم غالباً أكبر. توقعات البروتوكول أعلى. العائلات المعنية غالباً لديها متطلبات محددة حول مجلس الأعلى (جلسات كبار الشخصيات) مقابل مناطق الضيوف العامة. قضينا ثلاثة عقود في تعلم هذه الفروق. محطات القهوة العربية موضوعة بشكل صحيح. اعتبارات المبخرة للتهوية. أثاث مجالس عميق يمكن للضيوف الجلوس فيه لساعات. أرضيات متصلة لا تبدو مؤقتة. رفوف الكندورة عند المداخل.',
                 features: [
-                    { title: 'تصميم تراثي', body: 'زخارف عربية تقليدية مدمجة مع مواد فاخرة حديثة.' },
-                    { title: 'جلسات كبار الشخصيات', body: 'مجالس أرضية مصنعة خصيصاً وأثاث صالات مصمم لأمسيات ضيافة طويلة.' },
-                    { title: 'التحكم في المناخ', body: 'أنظمة تكييف هادئة ذات سعة عالية تحافظ على بيئة مثالية دون إزعاج.' }
+                    { title: 'مساحات ضخمة', body: 'حتى 2,000 متر مربع من التغطية المتصلة. أرضيات، تحكم في المناخ، وتشطيبات تعمل بمقياس القصور.' },
+                    { title: 'جاهز للبروتوكول', body: 'تجهيزات مجلس الأعلى، مداخل منفصلة، وضعية كبار الشخصيات—نفهم تسلسل الضيافة في أبوظبي.' },
+                    { title: 'تفاصيل أصيلة', body: 'محطات قهوة عربية، تهوية مبخرة، أنماط سدو تقليدية، مفروشات عربية أصيلة. ليست زينة—وظيفة.' }
                 ],
-                cta: 'احجز مجلسك الخاص'
+                cta: 'صمم مجلسك الخاص'
             },
             'iftar-tent-rental': {
-                title: 'حلول خيام الإفطار الكبرى في أبوظبي',
-                subtitle: 'بنية تحتية للضيافة للشركات والمجموعات المجتمعية',
-                intro: 'استضف الإفطار المثالي مع شركاء الخيام الأكثر موثوقية في أبوظبي. نحن متخصصون في التجهيزات ذات السعة الكبيرة من 50 إلى 5000 ضيف.',
-                mainBody: 'يعتمد قطاع الشركات في أبوظبي على Tent Now لخيام الإفطار الموسمية التي توازن بين الحجم والأناقة. سواء كنت تستضيف إفطاراً للموظفين في مصفح أو تجمعات كبار الشخصيات في الريم، فقد تم تصميم هياكلنا من أجل الانسيابية والسلامة. نحن ندمج محطات البوفيه ومناطق الصلاة ومناطق الضيوف في بيئة واحدة متكاملة.',
+                title: 'خيام إفطار شركات وحكومة أبوظبي',
+                subtitle: 'تنفيذ بمعايير حكومية بأسعار تجارية.',
+                intro: 'قطاعا الحكومة والشركات في أبوظبي يحتاجان بنية تحتية للإفطار تلبي معايير البروتوكول العالية—بدون فاتورة الفندق خمس نجوم. نحن نقدم الاثنين.',
+                mainBody: 'عملنا مع وزارات وجهات شبه حكومية وشركات في أبوظبي لثلاثة عقود. المتطلبات ثابتة: هياكل تعكس هيبة المؤسسة، تجهيزات كبار شخصيات تحترم التسلسل، تصاميم تدفق تتعامل مع 500+ ضيف بكفاءة، وأسعار تنجو من مراجعة الميزانية. خيام الإفطار للشركات لدينا تشمل مناطق صلاة مخصصة، مناطق خدمة منفصلة، وتخطيطات مصممة للبروتوكول.',
                 features: [
-                    { title: 'تعبئة سريعة', body: 'قادرون على نشر هياكل خدمة الطعام على نطاق واسع في أي مكان في الإمارة.' },
-                    { title: 'معايير النظافة', body: 'بنيت لتتوافق مع معايير هيئة أبوظبي للزراعة والسلامة الغذائية (ADAFSA).' },
-                    { title: 'تكييف شديد التحمل', body: 'مصفوفات تكييف ضخمة مصممة لإبقاء الضيوف في جو بارد حتى في البيئات المزدحمة.' }
+                    { title: 'تجهيزات بروتوكول', body: 'مداخل كبار شخصيات، جلسات كبار المسؤولين، تخطيطات هرمية. نفهم كيف تعمل مؤسسات أبوظبي.' },
+                    { title: 'مساءلة الميزانية', body: 'ميزانيات الحكومة والشركات تحتاج تبريراً. نقدم ورقة المواصفات التي تجعل الموافقة سهلة.' },
+                    { title: 'نشر سريع', body: 'فرق تركيب تعمل حسب جدولك. الوزارات لا تستطيع الإغلاق لبناء خيمة.' }
                 ],
-                cta: 'خطط لتجهيز الإفطار'
+                cta: 'خطط لإفطار مؤسستك'
             },
             'suhoor-tent-rental': {
-                title: 'خيام سحور متطورة في أبوظبي',
-                subtitle: 'صالات حميمية لساعات ما قبل الفجر',
-                intro: 'السحور في أبوظبي هو فن بحد ذاته. نحن نصمم الأجواء التي تجعل الضيوف يشعرون بالراحة حتى مطلع الفجر.',
-                mainBody: 'من تراسات الفنادق الفاخرة في السعديات إلى العقارات الخاصة في مدينة خليفة، توفر خيام السحور لدينا تجربة صالة راقية. نحن متخصصون في الإضاءة المحيطة، والعزل الصوتي، وجماليات الصالات الحديثة. تعد تجهيزات السحور لدينا في أبوظبي الخيار المفضل لمن يبحثون عن بيئة هادئة وراقية للتجمعات الليلية.',
+                title: 'تجهيز صالة سحور أبوظبي',
+                subtitle: 'أجواء راقية لثقافة العاصمة الليلية.',
+                intro: 'السحور في أبوظبي أهدأ من دبي. أكثر حميمية، أكثر محادثة. نحن نبني مساحات تناسب طاقة العاصمة—صالات راقية تدعو الضيوف للبقاء.',
+                mainBody: 'تركيبات السحور لدينا في أبوظبي تخدم جمهوراً مختلفاً عن مشهد دبي الصاخب. تراسات فنادق في السعديات تحتاج توسعة سعة مدرة للإيرادات. عقارات خاصة في مدينة خليفة تستضيف العائلة وشركاء الأعمال. المتطلبات ثابتة: جماليات صالة راقية، تحكم مناسب في المناخ للرطوبة الساحلية، إضاءة أجواء لا تشعر كنادي ليلي، وتهوية لمناطق الشيشة تلبي معايير ADCD.',
                 features: [
-                    { title: 'فخامة الصالة', body: 'جلسات مخملية فاخرة وديكور معاصر لجو ليلي حديث.' },
-                    { title: 'إضاءة ذكية', body: 'أنظمة إضاءة RGB قابلة للتعتيم والبرمجة لضبط الحالة المزاجية المثالية.' },
-                    { title: 'تهوية معتمدة', body: 'أنظمة استخراج هواء متطورة للمناطق المسموح فيها بالشيشة بالامتثال الكامل للدفاع المدني.' }
+                    { title: 'أناقة العاصمة', body: 'جلسات فاخرة، تصميم عربي معاصر، تشطيبات راقية. رقي أبوظبي، لا بهرجة دبي.' },
+                    { title: 'راحة المناخ', body: 'رطوبة الساحل مُعالجة بشكل صحيح. درجة الحرارة محافظ عليها حتى ساعات ما قبل الفجر.' },
+                    { title: 'تهوية ADCD', body: 'مناطق شيشة بأنظمة استخراج معتمدة. امتثال كامل، بدون اختصارات.' }
                 ],
-                cta: 'صمم صالة السحور'
+                cta: 'صمم صالة سحورك'
             }
         },
         'sharjah': {
