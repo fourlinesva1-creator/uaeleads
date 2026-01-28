@@ -18,11 +18,11 @@ const serviceMap: Record<string, string> = {
 };
 
 const imageMap: Record<string, string> = {
-    'hotel-majlis': '/images/WEB/WhatsApp-Image-2024-02-02-at-12.23.01_cba3d622.jpg',
-    'corporate-events': '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.42_90cd4d75.jpg',
-    'home-majlis': '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.56_0f854972.jpg',
-    'furniture-rental': '/images/Products/WhatsApp-Image-2024-02-01-at-17.13.06_ce17ea47.jpg',
-    'decor-lighting': '/images/Products/WhatsApp-Image-2024-02-01-at-17.13.43_0ff49097.jpg'
+    'hotel-majlis': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_f7b77c61.jpg',
+    'corporate-events': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_d085b4f3.jpg',
+    'home-majlis': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg',
+    'furniture-rental': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 14.38.09_8a40018e.jpg',
+    'decor-lighting': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_347a7ef2.jpg'
 };
 
 export async function generateStaticParams() {

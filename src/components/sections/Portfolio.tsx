@@ -10,7 +10,6 @@ const portfolioImages = [
   '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg',
   '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 14.38.09_8a40018e.jpg',
   '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_347a7ef2.jpg',
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_c2c01de9.jpg',
 ];
 
 export default function Portfolio() {
