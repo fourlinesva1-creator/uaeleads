@@ -35,7 +35,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-6">
               <div className="relative h-12 w-32">
                 <Image
-                  src="/images/tent-now-logo.png"
+                  src="/images/tent-now-logo.gif"
                   alt="Tent Now"
                   fill
                   className="object-contain"

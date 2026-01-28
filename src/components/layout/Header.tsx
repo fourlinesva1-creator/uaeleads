@@ -54,7 +54,7 @@ export default function Header() {
           <Link href="/" className="block group">
             <div className="relative h-14 w-36 group-hover:opacity-90 transition-opacity">
               <Image
-                src="/images/tent-now-logo.png"
+                src="/images/tent-now-logo.gif"
                 alt="Tent Now"
                 fill
                 className="object-contain"
