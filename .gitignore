@@ -37,8 +37,6 @@ yarn-error.log*
 # assets and references
 /images/
 /design-ref/
-/public/images/
-!/public/images/RMT-Logo.png
 nul
 
 # typescript
