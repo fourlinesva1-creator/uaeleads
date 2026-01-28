@@ -1,73 +1,37 @@
-# RMT UAE - Ramadan Majlis Tent Solutions
+# RMT UAE Website Context
 
 ## Project Overview
-A high-conversion, SEO-optimized bilingual (English + Arabic) lead generation website for Ramadan Majlis and tent rental services across UAE.
-
-## Brand Information
-- **Brand Name (Brief):** RMT UAE
-- **Brand Name (Full):** Ramadan Majlis Tent Solutions
-- **Established:** 1984 (40+ years of experience)
-- **Portfolio:** 5,000+ successful events
-- **Tagline:** "Crafting Timeless Gatherings — From Tradition to Celebration"
-
-## Contact Information
-- **Address:** SAIF Zone, Sharjah, UAE
-- **Phone/WhatsApp:** +971 55 510 1069
-- **WhatsApp Link:** https://wa.me/971555101069
+A premium, luxury lead-generation website for **RMT UAE** (Ramadan Majlis Tent Solutions). The site targets high-end residential, hotel, and corporate clients in the UAE for the 2026 Ramadan season.
 
 ## Tech Stack
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS v4
-- **i18n:** next-intl (English + Arabic with RTL support)
-- **Forms:** React Hook Form + Zod
-- **Hosting:** Vercel
+- **Framework**: Next.js 16.1.6 (App Router)
+- **i18n**: `next-intl` (EN/AR)
+- **Styling**: Tailwind CSS v4
+- **Components**: Lucide React, Framer Motion (planned)
+- **Forms**: React Hook Form + Zod
 
-## Project Structure
-```
-src/
-├── app/
-│   ├── [locale]/           # Bilingual routes
-│   │   ├── layout.tsx      # Root layout with RTL
-│   │   ├── page.tsx        # Homepage
-│   │   ├── services/       # Service pages
-│   │   ├── locations/      # City SEO pages
-│   │   └── get-quote/      # Lead capture form
-│   └── globals.css         # Design system
-├── components/
-│   ├── layout/             # Header, Footer
-│   ├── sections/           # Page sections
-│   └── ui/                 # Reusable UI components
-├── i18n/                   # Internationalization config
-├── messages/               # Translation files
-│   ├── en.json
-│   └── ar.json
-└── middleware.ts           # i18n middleware
-```
+## Design Tokens
+- **Background**: `#101622` (bg-dark)
+- **Gold**: `#D4AF37`
+- **Blue**: `#1152d4`
+- **Muted Text**: `#9da6b9`
 
-## Design System
-- **Primary Color (Gold):** #C9A227
-- **Secondary Color (Midnight):** #1A2A4A
-- **Accent Color (Olive):** #5C7A4A
-- **Fonts:** Cairo (display), Tajawal (Arabic), IBM Plex Sans Arabic (body)
+## Key Directories
+- `src/messages`: Translation files (JSON)
+- `src/components/layout`: Header, Footer
+- `src/components/sections`: UI Sections for home and generic pages
+- `src/data/city-content.ts`: Specialized SEO content for dynamic city/service routes
+- `src/app/[locale]/locations/[city]/[slug]`: Dynamic route for localized SEO pages
 
-## Key Features
-1. **Bilingual Support** - English and Arabic with full RTL
-2. **Lead Capture** - Multi-step quote form, WhatsApp integration
-3. **SEO Optimized** - City-specific landing pages, schema markup
-4. **Mobile First** - Responsive design with sticky CTAs
+## Development Rules
+- **Formatting**: Always use GitHub Flavored Markdown for documentation.
+- **RTL Support**: Ensure all components handle `dir="rtl"` for Arabic.
+- **Image Optimization**: Use `next/image` with proper `sizes` and `alt` tags.
+- **Naming**: Use PascalCase for components and camelCase for hooks/functions.
+- **SEO**: Dynamic pages must use `generateStaticParams` for SSG.
 
-## Commands
-```bash
-npm run dev        # Start development server
-npm run build      # Build for production
-npm run start      # Start production server
-npm run lint       # Run ESLint
-npm run type-check # TypeScript check
-```
-
-## Important Notes
-- Always use RTL-compatible Tailwind classes (ms-/me- instead of ml-/mr-)
-- Images are in `/public/images/`
-- Logo is at `/public/images/RMT-Logo.png`
-- WhatsApp number: 971555101069
+## Production Checklist
+- [x] Successful local build
+- [x] Check images in `public/images`
+- [x] Verify footer agency credit
+- [x] Complete all 7 Emirates SEO content
