@@ -55,6 +55,35 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             },
             areas: ['Jumeirah', 'DIFC', 'Downtown Dubai', 'Dubai Marina', 'Business Bay', 'Al Barsha', 'Emirates Hills', 'Dubai Investment Park', 'Jebel Ali', 'Al Quoz', 'Palm Jumeirah', 'JBR'],
             cta: 'Get Your Dubai Quote'
+        },
+        'abu-dhabi': {
+            title: 'Ramadan Tent & Majlis Rental in Abu Dhabi',
+            subtitle: 'The Capital\'s Trusted Partner for Government, Corporate & Private Gatherings',
+            intro: 'Abu Dhabi does Ramadan differently. This isn\'t about flash—it\'s about doing things properly. The capital expects a certain standard: structures that look like they belong, permits that are airtight, and vendors who understand protocol. We\'ve been serving Abu Dhabi for 30 years. We know how things work here.',
+            whyUs: 'Look, you could book a spot at Emirates Palace for AED 400+ per head. Beautiful tent, no question. But if you need your own setup—at your ministry compound, your hotel terrace, or your family\'s private grounds—you need someone who actually builds these things. We\'ve worked with government entities across the capital for three decades. We understand VIP configurations, separate entrances, security considerations. We handle the DMT permits. We know that Abu Dhabi\'s coastal humidity in February requires different climate engineering than inland. And we deliver all of this at rates that won\'t trigger an audit.',
+            audiences: [
+                {
+                    title: 'Government & Corporate',
+                    description: 'Public sector budgets don\'t allow for Emirates Palace pricing, but your Iftar still needs to reflect the dignity of your institution. We build protocol-ready structures with VIP sections, proper Majlis Al Aali configurations, and discrete service areas. Full DMT compliance included—no last-minute permit scrambles.',
+                    features: ['VIP and dignitary configurations', 'DMT permit management', 'Budget-conscious pricing', 'Rapid deployment teams']
+                },
+                {
+                    title: 'Hotels & Restaurants',
+                    description: 'Competing on the Corniche means your tent needs curb appeal. We build structures that draw eyes from the road—proper Arabic arches, heritage aesthetics, the kind of details that make people pull over. Climate-controlled, brand-integrated, and installed without disrupting your regular service.',
+                    features: ['High curb-appeal facades', 'Heritage Arabic design elements', 'Chandelier and lighting rigging', 'Seamless brand integration']
+                },
+                {
+                    title: 'Private & Family Majlis',
+                    description: 'A home Majlis in Abu Dhabi often means covering a palace courtyard or villa garden—spaces that can run to 2,000 square meters. We handle palatial dimensions with seamless flooring, authentic Gahwa stations, deep-seating majlis furniture, and the kind of finishing that doesn\'t look temporary.',
+                    features: ['Palatial scale (up to 2000 sqm)', 'Authentic Arabian furnishings', 'Traditional Gahwa & Mabkhara setups', 'Complete turnkey service']
+                }
+            ],
+            compliance: {
+                title: 'Abu Dhabi Permits: DMT & Safety Compliance',
+                body: 'Abu Dhabi\'s Department of Municipalities and Transport has specific requirements for temporary structures—and they actually enforce them. Your tent needs to complement the capital\'s urban aesthetic, not look like a construction site. We\'ve navigated DMT approvals hundreds of times. Structural certifications, fire safety, aesthetic integration—it\'s all handled before we break ground.'
+            },
+            areas: ['Corniche', 'Khalifa City', 'Al Bateen', 'Al Mushrif', 'Saadiyat Island', 'Yas Island', 'Al Reem Island', 'Al Maryah Island', 'Mohammed Bin Zayed City', 'Al Shamkha', 'Masdar City', 'Al Raha'],
+            cta: 'Get Your Abu Dhabi Quote'
         }
     },
     ar: {
@@ -86,6 +115,35 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             },
             areas: ['جميرا', 'DIFC', 'داون تاون دبي', 'مرسى دبي', 'بزنس باي', 'البرشاء', 'تلال الإمارات', 'مجمع دبي للاستثمار', 'جبل علي', 'القوز', 'نخلة جميرا', 'JBR'],
             cta: 'احصل على عرض أسعار دبي'
+        },
+        'abu-dhabi': {
+            title: 'تأجير خيام ومجالس رمضان في أبوظبي',
+            subtitle: 'الشريك الموثوق في العاصمة للجهات الحكومية والشركات والتجمعات الخاصة',
+            intro: 'أبوظبي تحتفل برمضان بطريقة مختلفة. الأمر لا يتعلق بالبهرجة—بل بإنجاز الأمور بالشكل الصحيح. العاصمة تتوقع معياراً معيناً: هياكل تبدو وكأنها تنتمي للمكان، تصاريح محكمة، ومورّدون يفهمون البروتوكول. نخدم أبوظبي منذ 30 عاماً. نحن نعرف كيف تسير الأمور هنا.',
+            whyUs: 'نعم، يمكنك حجز مكان في قصر الإمارات بأكثر من 400 درهم للشخص. خيمة جميلة، بلا شك. لكن إذا كنت تحتاج تجهيزاً خاصاً بك—في مقر وزارتك، أو تراس فندقك، أو أرض عائلتك الخاصة—فأنت تحتاج من يبني هذه الأشياء فعلاً. عملنا مع جهات حكومية في العاصمة لثلاثة عقود. نفهم تجهيزات كبار الشخصيات، المداخل المنفصلة، الاعتبارات الأمنية. نتولى تصاريح دائرة البلديات والنقل. ونقدم كل هذا بأسعار لن تثير تساؤلات.',
+            audiences: [
+                {
+                    title: 'الجهات الحكومية والشركات',
+                    description: 'ميزانيات القطاع العام لا تسمح بأسعار قصر الإمارات، لكن إفطارك يجب أن يعكس هيبة مؤسستك. نبني هياكل جاهزة للبروتوكول مع أقسام لكبار الشخصيات، وتجهيزات مجلس الأعلى المناسبة، ومناطق خدمة منفصلة. امتثال كامل لدائرة البلديات والنقل—بدون مفاجآت في اللحظة الأخيرة.',
+                    features: ['تجهيزات لكبار الشخصيات', 'إدارة تصاريح DMT', 'أسعار تراعي الميزانية', 'فرق نشر سريعة']
+                },
+                {
+                    title: 'الفنادق والمطاعم',
+                    description: 'المنافسة على الكورنيش تعني أن خيمتك تحتاج جاذبية من الشارع. نبني هياكل تلفت الأنظار من الطريق—أقواس عربية أصيلة، جماليات تراثية، تفاصيل تجعل الناس يتوقفون. مكيّفة، متكاملة مع علامتك التجارية، ومركّبة دون تعطيل خدمتك.',
+                    features: ['واجهات عالية الجاذبية', 'عناصر تصميم عربي تراثي', 'تركيب ثريات وإضاءة', 'تكامل سلس مع العلامة التجارية']
+                },
+                {
+                    title: 'المجالس الخاصة والعائلية',
+                    description: 'المجلس المنزلي في أبوظبي غالباً يعني تغطية فناء قصر أو حديقة فيلا—مساحات قد تصل إلى 2000 متر مربع. نتعامل مع الأبعاد الضخمة بأرضيات متصلة، ومحطات قهوة عربية أصيلة، وأثاث مجالس عميق، وتشطيبات لا تبدو مؤقتة.',
+                    features: ['مساحات ضخمة (حتى 2000 متر مربع)', 'مفروشات عربية أصيلة', 'تجهيزات قهوة ومبخرة تقليدية', 'خدمة شاملة متكاملة']
+                }
+            ],
+            compliance: {
+                title: 'تصاريح أبوظبي: امتثال DMT والسلامة',
+                body: 'دائرة البلديات والنقل في أبوظبي لديها متطلبات محددة للهياكل المؤقتة—وهم يطبقونها فعلاً. خيمتك يجب أن تكمل الجمالية الحضرية للعاصمة، لا أن تبدو كموقع بناء. تعاملنا مع موافقات DMT مئات المرات. الشهادات الهيكلية، السلامة من الحريق، التكامل الجمالي—كله مُنجز قبل أن نبدأ العمل.'
+            },
+            areas: ['الكورنيش', 'مدينة خليفة', 'البطين', 'المشرف', 'جزيرة السعديات', 'جزيرة ياس', 'جزيرة الريم', 'جزيرة الماريه', 'مدينة محمد بن زايد', 'الشامخة', 'مدينة مصدر', 'الراحة'],
+            cta: 'احصل على عرض أسعار أبوظبي'
         }
     }
 };
