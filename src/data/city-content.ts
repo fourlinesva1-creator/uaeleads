@@ -7,6 +7,89 @@ export interface SEOContent {
     cta: string;
 }
 
+export interface CityOverview {
+    title: string;
+    subtitle: string;
+    intro: string;
+    whyUs: string;
+    audiences: {
+        title: string;
+        description: string;
+        features: string[];
+    }[];
+    compliance: {
+        title: string;
+        body: string;
+    };
+    areas: string[];
+    cta: string;
+}
+
+export const cityOverviews: Record<string, Record<string, CityOverview>> = {
+    en: {
+        dubai: {
+            title: 'Ramadan Tent & Majlis Rental in Dubai',
+            subtitle: 'Three Decades of Building Dubai\'s Most Memorable Iftar Experiences',
+            intro: 'Ramadan 2026 runs from February 19th through mid-March. If you\'re reading this, you\'re already ahead of the curve. In Dubai, the best tent suppliers are booked out by January. The good news? We\'re still taking orders—and we\'ve been doing this longer than most of our competitors have been in business.',
+            whyUs: 'Here\'s the thing about the Dubai Ramadan tent market: you can pay AED 300+ per head at a hotel tent, or you can work with someone who actually understands your budget. We\'ve spent 30 years building relationships with Dubai Municipality, Civil Defense, and IACAD. We know the permit process inside out. We know which neighborhoods need extra wind anchoring. We know that February humidity in Dubai Marina is different from February humidity in Al Quoz. This isn\'t our first Ramadan—it\'s our thirtieth.',
+            audiences: [
+                {
+                    title: 'Corporate & HR Teams',
+                    description: 'Your staff Iftar shouldn\'t break the department budget. We work with companies across DIFC, Business Bay, and Dubai Investment Park to create setups that look impressive without the inflated price tag. Full branding integration, proper seating flow, and yes—we handle the permits.',
+                    features: ['Custom branded environments', 'Scalable from 50 to 500+ guests', 'Complete permit management', '15-20% below market rates']
+                },
+                {
+                    title: 'Hotels & Restaurants',
+                    description: 'Q1 is your biggest revenue quarter. You need capacity expansion that matches your brand standards without disrupting operations. We\'ve partnered with properties across Palm Jumeirah, JBR, and Downtown for over two decades. Quick install. Quick removal. Zero drama.',
+                    features: ['Seamless brand integration', 'Climate-controlled extensions', 'ADAFSA-compliant food service zones', 'Minimal operational disruption']
+                },
+                {
+                    title: 'Families & Private Gatherings',
+                    description: 'A home Majlis is the heart of Ramadan. Whether you\'re in a Jumeirah villa or an apartment in Al Barsha, we build intimate setups that feel like an extension of your living room. Traditional floor seating, proper climate control, and pricing that doesn\'t assume you\'re a hotel.',
+                    features: ['Setups from 20 to 100 guests', 'Traditional Majlis interiors', 'Full delivery and installation', 'Flexible rental terms']
+                }
+            ],
+            compliance: {
+                title: 'Dubai Permits: We Handle Everything',
+                body: 'Setting up an Iftar tent without proper approvals can cost you up to AED 500,000 in fines. That\'s not a typo. Dubai Municipality, Civil Defense, and IACAD all have specific requirements for temporary structures. We\'ve navigated this process hundreds of times. Your permit paperwork, structural approvals, and safety certifications are all included in our service—no surprises, no extras.'
+            },
+            areas: ['Jumeirah', 'DIFC', 'Downtown Dubai', 'Dubai Marina', 'Business Bay', 'Al Barsha', 'Emirates Hills', 'Dubai Investment Park', 'Jebel Ali', 'Al Quoz', 'Palm Jumeirah', 'JBR'],
+            cta: 'Get Your Dubai Quote'
+        }
+    },
+    ar: {
+        dubai: {
+            title: 'تأجير خيام ومجالس رمضان في دبي',
+            subtitle: 'ثلاثة عقود من بناء أفضل تجارب الإفطار في دبي',
+            intro: 'رمضان 2026 يبدأ من 19 فبراير حتى منتصف مارس. إذا كنت تقرأ هذا، فأنت متقدم بخطوة. في دبي، يتم حجز أفضل موردي الخيام بحلول يناير. الخبر السار؟ لا نزال نقبل الطلبات—ونحن نعمل في هذا المجال منذ فترة أطول من معظم منافسينا.',
+            whyUs: 'الحقيقة عن سوق خيام رمضان في دبي: يمكنك دفع أكثر من 300 درهم للشخص في خيمة فندق، أو يمكنك العمل مع من يفهم ميزانيتك. قضينا 30 عاماً في بناء علاقات مع بلدية دبي والدفاع المدني وIACAD. نعرف عملية التصاريح من الداخل. نعرف الأحياء التي تحتاج تثبيتاً إضافياً ضد الرياح. نعرف أن رطوبة فبراير في مرسى دبي مختلفة عن القوز. هذا ليس رمضاننا الأول—إنه الثلاثون.',
+            audiences: [
+                {
+                    title: 'الشركات وفرق الموارد البشرية',
+                    description: 'إفطار موظفيك لا يجب أن يستنزف ميزانية القسم. نعمل مع شركات في DIFC وبزنس باي ومجمع دبي للاستثمار لإنشاء تجهيزات مبهرة بدون أسعار مبالغ فيها. تكامل كامل للعلامة التجارية، تدفق جلوس مناسب، ونعم—نتولى التصاريح.',
+                    features: ['بيئات مخصصة بعلامتك التجارية', 'قابلة للتوسع من 50 إلى 500+ ضيف', 'إدارة تصاريح كاملة', '15-20% أقل من أسعار السوق']
+                },
+                {
+                    title: 'الفنادق والمطاعم',
+                    description: 'الربع الأول هو أكبر ربع إيراداتك. تحتاج توسعة سعة تتناسب مع معايير علامتك التجارية دون تعطيل العمليات. شراكاتنا مع منشآت في نخلة جميرا وJBR وداون تاون تمتد لأكثر من عقدين. تركيب سريع. إزالة سريعة. بدون مشاكل.',
+                    features: ['تكامل سلس مع العلامة التجارية', 'توسعات مكيفة', 'مناطق خدمة طعام متوافقة مع ADAFSA', 'أقل تأثير على العمليات']
+                },
+                {
+                    title: 'العائلات والتجمعات الخاصة',
+                    description: 'المجلس المنزلي هو قلب رمضان. سواء كنت في فيلا بجميرا أو شقة في البرشاء، نبني تجهيزات حميمية تشعرك بأنها امتداد لغرفة معيشتك. جلسات أرضية تقليدية، تحكم مناسب في المناخ، وأسعار لا تفترض أنك فندق.',
+                    features: ['تجهيزات من 20 إلى 100 ضيف', 'تصاميم مجالس تقليدية', 'توصيل وتركيب كامل', 'شروط إيجار مرنة']
+                }
+            ],
+            compliance: {
+                title: 'تصاريح دبي: نتولى كل شيء',
+                body: 'إقامة خيمة إفطار بدون الموافقات المناسبة قد يكلفك حتى 500,000 درهم غرامات. هذا ليس خطأ مطبعي. بلدية دبي والدفاع المدني وIACAD لديهم متطلبات محددة للهياكل المؤقتة. تعاملنا مع هذه العملية مئات المرات. أوراق التصاريح والموافقات الهيكلية وشهادات السلامة—كلها مشمولة في خدمتنا. بدون مفاجآت، بدون إضافات.'
+            },
+            areas: ['جميرا', 'DIFC', 'داون تاون دبي', 'مرسى دبي', 'بزنس باي', 'البرشاء', 'تلال الإمارات', 'مجمع دبي للاستثمار', 'جبل علي', 'القوز', 'نخلة جميرا', 'JBR'],
+            cta: 'احصل على عرض أسعار دبي'
+        }
+    }
+};
+
 export const cityContent: Record<string, Record<string, Record<string, SEOContent>>> = {
     en: {
         dubai: {
