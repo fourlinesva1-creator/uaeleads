@@ -145,6 +145,27 @@
         "detailedBody": "While Iftar is about abundance, Suhoor is about ambiance. We focus on mood lighting, lush furnishings, and sophisticated decor that invites guests to linger. We create enclaves of calm in the bustling city night.",
         "price": "Custom",
         "priceLabel": "Quote"
+      },
+      "iftar": {
+        "title": "Grand Iftar Tent Rentals",
+        "description": "High-capacity, climate-controlled tents designed for communal Iftar gatherings. Food-grade standards, elegant layouts, and efficient guest flow.",
+        "detailedBody": "Iftar is the pinnacle of Ramadan hospitality. Our grand Iftar tents are engineered for scale and sophistication. We provide large-span structures with no internal pillars, ensuring an open feeling and perfect views for all guests. Integrated AC systems, food-safety compliant catering zones, and luxury buffet layouts make us the choice for the UAE's largest public and private Iftars.",
+        "price": "AED 8,500",
+        "priceLabel": "Starting"
+      },
+      "suhoor": {
+        "title": "Premium Suhoor & Late Night Majlis",
+        "description": "Intimate, lounge-style environments perfect for late-night gatherings. Focused on comfort, mood lighting, and a relaxed cultural atmosphere.",
+        "detailedBody": "Suhoor is about quiet reflection and community. Our Suhoor setups prioritize comfort and atmosphere. Think low-ambient lighting, plush lounge seating, and dedicated shisha zones with high-performance ventilation. We create spaces where time slows down, allowing families and friends to enjoy the tranquility of the desert night in absolute luxury.",
+        "price": "AED 6,200",
+        "priceLabel": "Starting"
+      },
+      "sadu": {
+        "title": "Authentic Sadu & Heritage Tents",
+        "description": "Celebrate Emirati heritage with authentic Sadu-themed tents. Traditional Bedouin weaving patterns, rustic wood accents, and genuine cultural charm.",
+        "detailedBody": "Sadu is the soul of Emirati weaving heritage. Our Sadu tents bring the desert's history to your doorstep. Featuring the iconic red, black, and white geometric patterns across high-quality textiles, these tents offer an authentic Bedouin experience. Perfect for heritage villages, cultural events, or families who want to honor the roots of the UAE with modern structural safety.",
+        "price": "AED 4,500",
+        "priceLabel": "Per Day"
       }
     }
   },

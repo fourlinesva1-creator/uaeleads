@@ -10,6 +10,7 @@ import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import { ModalProvider } from '@/components/ui/ModalProvider';
 import CallbackModal from '@/components/ui/CallbackModal';
+import BusinessSchema from '@/components/seo/BusinessSchema';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -142,6 +143,7 @@ export default async function LocaleLayout({
     <html lang={locale} dir={direction} className={`${manrope.variable} ${tajawal.variable}`}>
       <body className="min-h-screen flex flex-col antialiased font-display">
         <NextIntlClientProvider messages={messages}>
+          <BusinessSchema />
           <ModalProvider>
             <Header />
             <main className="flex-1">{children}</main>

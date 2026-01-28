@@ -1,10 +1,22 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'experience' });
+
+    return {
+        title: t('ourStory.title'),
+        description: t('ourStory.subtitle'),
+    };
+}
 
 export default async function AboutPage({ params }: Props) {
     const { locale } = await params;

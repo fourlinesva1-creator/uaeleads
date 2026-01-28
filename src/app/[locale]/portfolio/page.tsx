@@ -1,10 +1,22 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'nav' });
+
+    return {
+        title: t('portfolio'),
+        description: 'Explore Tent Now\'s legacy of over 5,000 successful Ramadan Majlis and tent setups across the UAE since 1984.',
+    };
+}
 
 const galleryItems = [
     { id: 1, category: 'Traditional', image: '/images/Tent Now/majlis.jpg', title: 'Heritage Majlis' },

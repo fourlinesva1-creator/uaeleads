@@ -2,10 +2,22 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'services' });
+
+    return {
+        title: t('title'),
+        description: t('subtitle'),
+    };
+}
 
 export default async function ServicesPage({ params }: Props) {
     const { locale } = await params;
@@ -21,6 +33,9 @@ function ServicesContent() {
         { id: 'hotel', slug: 'hotel-majlis', image: '/images/Tent Now/hotel.jpg' },
         { id: 'corporate', slug: 'corporate-events', image: '/images/Tent Now/corporate.jpg' },
         { id: 'home', slug: 'home-majlis', image: '/images/Tent Now/home majis.jpg' },
+        { id: 'iftar', slug: 'iftar-tent-rental', image: '/images/Tent Now/iftar tents.jpg' },
+        { id: 'suhoor', slug: 'suhoor-tent-rental', image: '/images/Tent Now/home majis.jpg' },
+        { id: 'sadu', slug: 'sadu-tent-rental', image: '/images/Tent Now/sadu tents.jpg' },
         { id: 'furniture', slug: 'furniture-rental', image: '/images/Tent Now/furniture.jpg' },
         { id: 'decor', slug: 'decor-lighting', image: '/images/Tent Now/lighting and decor.jpg' }
     ];

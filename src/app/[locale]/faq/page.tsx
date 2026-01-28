@@ -1,10 +1,23 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import FAQSchema from '@/components/seo/FAQSchema';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'faq' });
+
+    return {
+        title: t('title'),
+        description: t('intro'),
+    };
+}
 
 export default async function FAQPage({ params }: Props) {
     const { locale } = await params;
@@ -16,8 +29,15 @@ export default async function FAQPage({ params }: Props) {
 function FAQContent() {
     const t = useTranslations('faq');
 
+    const faqKeys = ['when', 'howEarly', 'difference', 'permits', 'cooling', 'custom'];
+    const faqItems = faqKeys.map(key => ({
+        q: t(`items.${key}.q`),
+        a: t(`items.${key}.a`)
+    }));
+
     return (
         <div className="bg-[#101622]">
+            <FAQSchema items={faqItems} />
             {/* Hero Section */}
             <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
                 {/* Background Image */}
@@ -52,7 +72,7 @@ function FAQContent() {
 
                 {/* FAQ Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                    {['when', 'howEarly', 'difference', 'permits', 'cooling', 'custom'].map((item) => (
+                    {faqKeys.map((item) => (
                         <div key={item} className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-[#D4AF37]/50 transition-all duration-300">
                             <h3 className="text-xl font-display text-white mb-4 flex gap-4">
                                 <span className="text-[#D4AF37]">Q:</span>

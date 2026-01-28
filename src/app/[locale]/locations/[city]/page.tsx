@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { getLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -20,6 +21,22 @@ export async function generateStaticParams() {
         });
     });
     return params;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale, city } = await params;
+    const content = cityOverviews[locale]?.[city];
+    const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+    if (!content) return { title: `Ramadan Tent Rental in ${cityName}` };
+
+    return {
+        title: content.title,
+        description: content.intro,
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/locations/${city}`,
+        }
+    };
 }
 
 export default async function CityPage({ params }: Props) {

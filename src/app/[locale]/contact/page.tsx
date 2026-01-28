@@ -2,10 +2,22 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import Image from 'next/image';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'nav' });
+
+    return {
+        title: t('contact'),
+        description: 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE.',
+    };
+}
 
 export default async function ContactPage({ params }: Props) {
     const { locale } = await params;

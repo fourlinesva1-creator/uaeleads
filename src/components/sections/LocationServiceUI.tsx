@@ -6,6 +6,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { SEOContent } from '@/data/city-content';
+import ServiceSchema from '@/components/seo/ServiceSchema';
 
 interface Props {
     city: string;
@@ -32,9 +33,17 @@ const serviceImages: Record<string, string> = {
 
 export default function LocationServiceUI({ city, slug, content }: Props) {
     const { openCallback } = useModal();
+    const locale = useLocale();
+    const pageUrl = `https://tentnow.ae/${locale}/locations/${city}/${slug}`;
 
     return (
         <div className="bg-[#101622]">
+            <ServiceSchema
+                name={content.title}
+                description={content.intro}
+                url={pageUrl}
+                image={serviceImages[slug] || cityImages[city]}
+            />
             {/* Hero Section */}
             <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
                 {/* Background Image */}

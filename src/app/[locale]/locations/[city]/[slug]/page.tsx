@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { getLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -23,6 +24,21 @@ export async function generateStaticParams() {
         });
     });
     return params;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale, city, slug } = await params;
+    const content = cityContent[locale]?.[city]?.[slug];
+
+    if (!content) return { title: `${slug.replace(/-/g, ' ')} in ${city.replace(/-/g, ' ')}` };
+
+    return {
+        title: content.title,
+        description: content.intro,
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/locations/${city}/${slug}`,
+        }
+    };
 }
 
 export default async function LocationServicePage({ params }: Props) {
