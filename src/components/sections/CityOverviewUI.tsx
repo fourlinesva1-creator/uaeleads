@@ -3,14 +3,26 @@
 import { useModal } from '@/components/ui/ModalProvider';
 import { Link } from '@/i18n/navigation';
 import { CityOverview } from '@/data/city-content';
-import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home } from 'lucide-react';
+import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark } from 'lucide-react';
+import Image from 'next/image';
 
 interface Props {
     city: string;
     content: CityOverview;
 }
 
-const audienceIcons = [Building2, Users, Home];
+const audienceIcons = [Home, Landmark, Building2];
+
+// City background images mapping
+const cityImages: Record<string, string> = {
+    'dubai': '/images/Tent Now/dubai.jpg',
+    'abu-dhabi': '/images/Tent Now/abu dhabi.jpg',
+    'sharjah': '/images/Tent Now/sharjah.jpg',
+    'ajman': '/images/Tent Now/other cities.jpg',
+    'ras-al-khaimah': '/images/Tent Now/Ras al Khaimah.jpg',
+    'fujairah': '/images/Tent Now/other cities.jpg',
+    'umm-al-quwain': '/images/Tent Now/other cities.jpg',
+};
 
 export default function CityOverviewUI({ city, content }: Props) {
     const { openCallback } = useModal();
@@ -19,20 +31,32 @@ export default function CityOverviewUI({ city, content }: Props) {
     return (
         <div className="bg-[#101622]">
             {/* Hero Section */}
-            <section className="pt-32 lg:pt-40 pb-20">
-                <div className="container-luxury">
+            <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src={cityImages[city] || cityImages['sharjah']}
+                        alt={`${cityName} Ramadan Tent Services`}
+                        fill
+                        priority
+                        className="object-cover opacity-30 scale-105 group-hover:scale-110 transition-transform duration-[20s]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#101622]/80 via-[#101622] to-[#101622]" />
+                </div>
+
+                <div className="container-luxury relative z-10">
                     <div className="max-w-4xl animate-fade-in-up">
                         <div className="section-label mb-8">
-                            <span>30 Years Serving {cityName}</span>
+                            <span>Established Heritage in {cityName}</span>
                         </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
+                        <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
                             {content.title}
                         </h1>
-                        <div className="w-24 h-1 bg-gold mb-10" />
-                        <p className="text-xl md:text-2xl text-gold font-medium mb-8">
+                        <div className="w-24 h-1.5 bg-gold mb-12 shadow-[0_0_15px_rgba(212,175,55,0.5)]" />
+                        <p className="text-xl md:text-2xl text-gold font-medium mb-10 leading-relaxed italic">
                             {content.subtitle}
                         </p>
-                        <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-3xl">
+                        <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-3xl font-light">
                             {content.intro}
                         </p>
                     </div>

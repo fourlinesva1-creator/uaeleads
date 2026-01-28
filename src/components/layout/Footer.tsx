@@ -1,27 +1,32 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
-const quickLinks = [
-  { key: 'home', href: '/' },
-  { key: 'services', href: '/services' },
-  { key: 'portfolio', href: '/portfolio' },
-  { key: 'about', href: '/about' },
-  { key: 'contact', href: '/contact' },
+const cities = [
+  { key: 'dubai', href: '/locations/dubai', labelEn: 'Ramadan Tent Dubai', labelAr: 'خيمة رمضان دبي' },
+  { key: 'abuDhabi', href: '/locations/abu-dhabi', labelEn: 'Ramadan Tent Abu Dhabi', labelAr: 'خيمة رمضان أبوظبي' },
+  { key: 'sharjah', href: '/locations/sharjah', labelEn: 'Ramadan Tent Sharjah', labelAr: 'خيمة رمضان الشارقة' },
+  { key: 'ajman', href: '/locations/ajman', labelEn: 'Ramadan Tent Ajman', labelAr: 'خيمة رمضان عجمان' },
+  { key: 'rak', href: '/locations/ras-al-khaimah', labelEn: 'Ramadan Tent Ras Al Khaimah', labelAr: 'خيمة رمضان رأس الخيمة' },
+  { key: 'fujairah', href: '/locations/fujairah', labelEn: 'Ramadan Tent Fujairah', labelAr: 'خيمة رمضان الفجيرة' },
+  { key: 'uaq', href: '/locations/umm-al-quwain', labelEn: 'Ramadan Tent Umm Al Quwain', labelAr: 'خيمة رمضان أم القيوين' },
 ];
 
 const services = [
   { key: 'hotel', href: '/services/hotel-majlis' },
   { key: 'corporate', href: '/services/corporate-events' },
   { key: 'home', href: '/services/home-majlis' },
+  { key: 'furniture', href: '/services/furniture-rental' },
+  { key: 'decor', href: '/services/decor-lighting' },
 ];
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
   const tServices = useTranslations('services.items');
+  const locale = useLocale() as string;
 
   const currentYear = new Date().getFullYear();
 
@@ -80,19 +85,19 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* City Pages */}
           <div>
             <h3 className="text-white font-bold mb-6 text-sm tracking-widest uppercase">
-              {t('quickLinks')}
+              {t('cityPages')}
             </h3>
             <ul className="space-y-3">
-              {quickLinks.map((item) => (
+              {cities.map((item) => (
                 <li key={item.key}>
                   <Link
                     href={item.href}
                     className="text-text-muted hover:text-gold transition-colors text-sm"
                   >
-                    {tNav(item.key)}
+                    {locale === 'ar' ? item.labelAr : item.labelEn}
                   </Link>
                 </li>
               ))}
@@ -118,13 +123,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Company & Contact */}
           <div>
             <h3 className="text-white font-bold mb-6 text-sm tracking-widest uppercase">
               {t('contact')}
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              {/* Quick Links for Internal Linking */}
+              <li>
+                <Link href="/about" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  {tNav('about')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/portfolio" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  {tNav('portfolio')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  FAQ
+                </Link>
+              </li>
+              <li className="pt-2 flex items-start gap-3">
                 <svg className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />

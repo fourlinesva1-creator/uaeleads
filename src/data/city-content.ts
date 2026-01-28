@@ -84,6 +84,131 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             },
             areas: ['Corniche', 'Khalifa City', 'Al Bateen', 'Al Mushrif', 'Saadiyat Island', 'Yas Island', 'Al Reem Island', 'Al Maryah Island', 'Mohammed Bin Zayed City', 'Al Shamkha', 'Masdar City', 'Al Raha'],
             cta: 'Get Your Abu Dhabi Quote'
+        },
+        sharjah: {
+            title: 'Ramadan Tent & Majlis Rental in Sharjah',
+            subtitle: 'Traditional Excellence in the Cultural Heart of the UAE',
+            intro: 'Sharjah is where traditions are most deeply rooted. It\'s the UAE\'s cultural capital, and during Ramadan, the focus is on community, family, and heritage. We don\'t just bring tents to Sharjah—we bring structures that respect the Emirate\'s unique identity. Based in the SAIF Zone, we are Sharjah\'s local choice.',
+            whyUs: 'Being based in Sharjah gives us a home-court advantage. We don\'t charge "out-of-town" mobilization fees because we are already here. We know the specific requirements of the Sharjah Municipality and Civil Defense. We understand that a Majlis in Al Rahmaniya has different community expectations than a corporate Iftar in University City. With 30 years of local presence, we provide the fastest response times and a level of cultural understanding that Dubai-centric companies simply can\'t match. We are the local experts, serving our own neighborhood.',
+            audiences: [
+                {
+                    title: 'Community & Charity Organizations',
+                    description: 'Sharjah is known for its massive community Iftars. We work with local charities and mosques to provide high-capacity, safe, and air-conditioned environments for thousands of guests. Our structures are built for heavy rotation and easy maintenance, ensuring dignity for every guest.',
+                    features: ['High-capacity modular designs', 'Industrial-grade climate control', 'Sharjah Municipality compliance', 'Full-season technical support']
+                },
+                {
+                    title: 'University & Educational Blocks',
+                    description: 'Hosting University City\'s student and faculty Iftars requires a blend of modern efficiency and traditional hospitality. We build sophisticated structures that cater to Sharjah\'s academic community, featuring integrated AV for lectures and comfortable lounge areas.',
+                    features: ['Integrated AV & lighting', 'Modern interior finishing', 'Scalable for large student groups', 'Rapid setup in University City']
+                },
+                {
+                    title: 'Family & Residential Majlis',
+                    description: 'In residential areas like Al Khan, Al Suyoh, and Al Tai, the Majlis is the center of the household. We create private, heritage-focused spaces for Sharjah families that feel like a permanent part of the home. Authentic fabrics, traditional seating, and complete privacy.',
+                    features: ['Heritage-focused interiors', 'Traditional Sadu patterns', 'Privacy-first layouts', 'Quiet AC systems for homes']
+                }
+            ],
+            compliance: {
+                title: 'Sharjah Regulations: Local Expertise',
+                body: 'Sharjah Municipality and Sharjah Civil Defense have strict seasonal guidelines. From fire-retardant fabric certifications to structural stability checks in wind-prone areas like the waterfront, we handle every detail. Being locally based means we can resolve any inspection issues within the hour, not the next day.'
+            },
+            areas: ['Al Majaz', 'University City', 'Al Rahmaniya', 'Al Khan', 'Al Suyoh', 'Muwaileh', 'Al Tai', 'Al Nahda', 'Sharjah Waterfront', 'SAIF Zone'],
+            cta: 'Get Your Sharjah Quote'
+        },
+        ajman: {
+            title: 'Ramadan Tent & Majlis Rental in Ajman',
+            subtitle: 'Premium quality for Ajman\'s growing residential and business hub',
+            intro: 'Ajman is known for its close-knit community and traditional hospitality. As the Emirate grows, so does the demand for professional event infrastructure. We provide 5-star quality tent solutions tailored for Ajman\'s residential centers and bustling business districts.',
+            whyUs: 'We\'ve been serving Ajman for three decades, understanding that while it\'s close to Sharjah and Dubai, it has its own distinct market character. We handle all Ajman Municipality and Civil Defense permits, ensuring your seasonal setup is safe and compliant. Our Ajman teams focus on rapid mobilization and localized support, providing high-end aesthetics at rates that respect the Emirate\'s commercial reality.',
+            audiences: [
+                {
+                    title: 'Residential & Family',
+                    description: 'From Al Rawda to Al Mowaihat, the private Majlis is the center of Ramadan life. We create beautiful, climate-controlled environments for families that prioritize privacy and heritage.',
+                    features: ['Privacy-focused layouts', 'Traditional Majlis interiors', 'Quick home installation', 'Advanced cooling systems']
+                },
+                {
+                    title: 'Corporate & Hospitality',
+                    description: 'Ajman\'s hotels and businesses require capacity expansion that matches their brand standards. We build seamless extensions for Iftars and Suhoors on the Corniche and within the commercial centers.',
+                    features: ['Seamless brand integration', 'Industrial-grade AC', 'Scalable modular designs', 'Full permit management']
+                }
+            ],
+            compliance: {
+                title: 'Ajman Regulations: Complete Support',
+                body: 'We handle the entire approval process with Ajman Municipality and Civil Defense. From structural inspections to fire safety certifications, we ensure your tent is legally compliant and safe for all guests.'
+            },
+            areas: ['Al Jurf', 'Al Rawda', 'Ajman Corniche', 'Al Tallah', 'Al Mowaihat', 'Al Hamidiya', 'Al Helioma'],
+            cta: 'Get Your Ajman Quote'
+        },
+        'ras-al-khaimah': {
+            title: 'Ramadan Tent & Majlis Rental in Ras Al Khaimah',
+            subtitle: 'Iconic setups for Al Marjan Island and the Northern Coast',
+            intro: 'Ras Al Khaimah\'s Ramadan season combines mountain majesty with coastal luxury. As a premier tourism destination, RAK requires temporary structures that meet international hospitality standards.',
+            whyUs: 'Serving RAK requires understanding its unique environmental conditions—from coastal humidity on Al Marjan Island to mountain wind loads further inland. We bring 30 years of engineering expertise to the Northern Emirate, ensuring your tent is safe, stable, and stunningly beautiful. We handle all RAK Civil Defense and Municipality approvals, allowing resort managers and private owners to focus on their guests.',
+            audiences: [
+                {
+                    title: 'Resorts & Hotels',
+                    description: 'Q1 is a peak tourism season for RAK. We provide high-end, brand-integrated Iftar and Suhoor lounges for resorts on Al Marjan Island and the Al Hamra area.',
+                    features: ['Luxury interior finishing', 'High-capacity cooling', 'Sea-front structural stability', 'Seamless guest flow']
+                },
+                {
+                    title: 'Private Estates & Palaces',
+                    description: 'RAK\'s private residences often require large-scale Majlis setups for hundreds of guests. We specialize in palatial dimensions with authentic Emirati heritage aesthetics.',
+                    features: ['Authentic Arabian decor', 'Large-span structures', 'VIP dignitary sections', 'Full turnkey service']
+                }
+            ],
+            compliance: {
+                title: 'RAK Compliance: Safety & Aesthetics',
+                body: 'We coordinate with RAK Municipality and Civil Defense to ensure all seasonal structures meet the Emirate\'s safety and urban aesthetic codes. Certified fire-retardant materials and structural engineering come standard.'
+            },
+            areas: ['Al Marjan Island', 'Al Hamra', 'Khuzam', 'Al Dhait', 'Mina Al Arab', 'RAK City', 'Al Nakheel'],
+            cta: 'Get Your RAK Quote'
+        },
+        fujairah: {
+            title: 'Ramadan Tent & Majlis Rental in Fujairah',
+            subtitle: 'Rugged and reliable setups for the East Coast',
+            intro: 'Fujairah\'s unique geography requires specialized tent expertise. Between the Hajar Mountains and the Indian Ocean, temporary structures must be engineered for both humidity and high wind loads.',
+            whyUs: 'We are one of the few providers with specialized experience in the East Coast\'s environmental conditions. Whether it\'s a coastal Iftar in Dibba or a corporate setup in Fujairah City, our structures are built to perform. We handle all Fujairah Municipality and Civil Defense paperwork, providing a stress-free experience for the Emirate\'s residents and businesses.',
+            audiences: [
+                {
+                    title: 'Corporate & Industrial',
+                    description: 'Serving Fujairah\'s massive industrial and maritime workforce requires high-capacity, safe, and efficient Iftar environments. We build for scale and durability.',
+                    features: ['Industrial-scale cooling', 'Reinforced structural stability', 'High-volume safety planning', 'Rapid deployment']
+                },
+                {
+                    title: 'East Coast Families',
+                    description: 'Honoring Ramadan traditions in Fujairah means a bespoke private Majlis. We bring 30 years of traditional design expertise to homes across the Emirate.',
+                    features: ['Traditional heritage interiors', 'Mountain-wind reinforcement', 'Quick villa installation', 'Authentic Arabian finishing']
+                }
+            ],
+            compliance: {
+                title: 'Fujairah Permits: Local Knowledge',
+                body: 'Fujairah\'s safety regulations are practical and strict. We ensure every tent meets the local Civil Defense fire codes and Municipality structural guidelines for the East Coast terrain.'
+            },
+            areas: ['Fujairah City', 'Dibba', 'Al Faseel', 'Merbeih', 'Al Badiyah', 'Qidfa'],
+            cta: 'Get Your Fujairah Quote'
+        },
+        'umm-al-quwain': {
+            title: 'Ramadan Tent & Majlis Rental in Umm Al Quwain',
+            subtitle: 'Community-focused setups for the coastal Emirate',
+            intro: 'Umm Al Quwain\'s Ramadan traditions are deeply rooted in heritage. We provide the professional infrastructure to support UAQ\'s legendary hospitality and community spirit.',
+            whyUs: 'UAQ residents value quality and reliability. We\'ve been the trusted partner for UAQ families and businesses for three decades, providing 5-star tent solutions that respect the Emirate\'s quiet, traditional character. We handle all UAQ Civil Defense and Municipality permits, ensuring your Ramadan setup is handled with professional care from start to finish.',
+            audiences: [
+                {
+                    title: 'Community Hospitality',
+                    description: 'UAQ is known for its strong sense of community. We provide safe, air-conditioned spaces for community Iftars and charitable gatherings across the Emirate.',
+                    features: ['High-capacity modular designs', 'Efficient food-service layouts', 'Full permit management', 'Cost-effective solutions']
+                },
+                {
+                    title: 'Residential Majlis',
+                    description: 'For private homes in Al Salamah and beyond, we create heritage-focused Majlis spaces that feel like a natural extension of the family home.',
+                    features: ['Authentic Arabian decor', 'Quick and clean installation', 'Family-first privacy', 'Whisper-quiet climate control']
+                }
+            ],
+            compliance: {
+                title: 'UAQ Compliance: Local Expertise',
+                body: 'We ensure full compliance with UAQ Municipality and Civil Defense codes. From seasonal tent permits to electrical safety certifications, we handle every detail for a worry-free Ramadan.'
+            },
+            areas: ['Al Salamah', 'Al Ramlah', 'Al Raudah', 'UAQ Waterfront', 'Al Maqtaa'],
+            cta: 'Get Your UAQ Quote'
         }
     },
     ar: {
@@ -144,6 +269,131 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             },
             areas: ['الكورنيش', 'مدينة خليفة', 'البطين', 'المشرف', 'جزيرة السعديات', 'جزيرة ياس', 'جزيرة الريم', 'جزيرة الماريه', 'مدينة محمد بن زايد', 'الشامخة', 'مدينة مصدر', 'الراحة'],
             cta: 'احصل على عرض أسعار أبوظبي'
+        },
+        sharjah: {
+            title: 'تأجير خيام ومجالس رمضان في الشارقة',
+            subtitle: 'التميز التقليدي في القلب الثقافي لدولة الإمارات',
+            intro: 'الشارقة هي المكان الذي تتجذر فيه التقاليد بعمق. إنها العاصمة الثقافية لدولة الإمارات، وخلال شهر رمضان، ينصب التركيز على المجتمع والأسرة والتراث. نحن لا نجلب الخيام للشارقة فحسب، بل نجلب هياكل تحترم الهوية الفريدة للإمارة. يقع مقرنا في المنطقة الحرة لمطار الشارقة الدولي (SAIF Zone)، فنحن الخيار المحلي الأول.',
+            whyUs: 'وجودنا في الشارقة يمنحنا ميزة تنافسية محلية. نحن لا نفرض رسوم نقل "خارج المدينة" لأننا متواجدون هنا بالفعل. نحن نعرف المتطلبات المحددة لبلدية الشارقة والدفاع المدني. ندرك أن لمجلس في الرحمانية تطلعات مجتمعية مختلفة عن إفطار الشركات في المدينة الجامعية. مع 30 عاماً من الوجود المحلي، نقدم أسرع أوقات الاستجابة ومستوى من الفهم الثقافي الذي لا تستطيع الشركات المتمركزة في دبي مضاهاته. نحن الخبراء المحليون، نخدم منطقتنا.',
+            audiences: [
+                {
+                    title: 'المؤسسات المجتمعية والخيرية',
+                    description: 'تشتهر الشارقة بإفطاراتها المجتمعية الضخمة. نعمل مع الجمعيات الخيرية والمساجد المحلية لتوفير بيئات عالية السعة وآمنة ومكيفة لآلاف الضيوف. هياكلنا مصممة للاستخدام المكثف والصيانة السهلة، مما يضمن الكرامة لكل ضيف.',
+                    features: ['تصاميم وحدات عالية السعة', 'تحكم في المناخ بمستوى صناعي', 'امتثال لبلدية الشارقة', 'دعم فني طوال الموسم']
+                },
+                {
+                    title: 'القطاعات الجامعية والتعليمية',
+                    description: 'تتطلب استضافة إفطارات الطلاب وأعضاء التدريس في المدينة الجامعية مزيجاً من الكفاءة الحديثة والضيافة التقليدية. نبني هياكل متطورة تلبي احتياجات المجتمع الأكاديمي في الشارقة، وتتميز بأنظمة صوت وصورة متكاملة للمحاضرات ومناطق جلوس مريحة.',
+                    features: ['أنظمة صوت وصورة وإضاءة متكاملة', 'تشطيبات داخلية حديثة', 'قابلة للتوسع لمجموعات الطلاب الكبيرة', 'تركيب سريع في المدينة الجامعية']
+                },
+                {
+                    title: 'المجالس العائلية والسكنية',
+                    description: 'في المناطق السكنية مثل الخان والسيوح والطي، يعتبر المجلس مركز المنزل. نحن ننشئ مساحات خاصة تركز على التراث لعائلات الشارقة تشعر وكأنها جزء دائم من المنزل. أقمشة أصيلة، جلسات تقليدية، وخصوصية تامة.',
+                    features: ['تصاميم داخلية تراثية', 'أنماط "سدو" تقليدية', 'تخطيط يراعي الخصوصية', 'أنظمة تكييف هادئة للمنازل']
+                }
+            ],
+            compliance: {
+                title: 'لوائح الشارقة: خبرة محلية',
+                body: 'لدى بلدية الشارقة والدفاع المدني بالشارقة إرشادات موسمية صارمة. من شهادات الأقمشة المقاومة للحريق إلى فحوصات الاستقرار الهيكلي في المناطق المعرضة للرياح مثل الواجهة البحرية، نحن نتولى كل التفاصيل. كوننا مقيمين محلياً يعني أنه يمكننا حل أي مشكلات تفتيش في غضون ساعة، وليس في اليوم التالي.'
+            },
+            areas: ['المجاز', 'المدينة الجامعية', 'الرحمانية', 'الخان', 'السيوح', 'مويلح', 'الطي', 'النهدة', 'واجهة الشارقة المائية', 'منطقة سيف زون'],
+            cta: 'احصل على عرض أسعار الشارقة'
+        },
+        ajman: {
+            title: 'تأجير خيام ومجالس رمضان في عجمان',
+            subtitle: 'جودة ممتازة للمراكز السكنية والتجارية المتنامية في عجمان',
+            intro: 'تشتهر عجمان بمجتمعها المتماسك وضيافتها التقليدية. مع نمو الإمارة، يزداد الطلب على البنية التحتية المهنية للفعاليات. نحن نقدم حلول خيام بجودة 5 نجوم مصممة للمراكز السكنية في عجمان والمناطق التجارية النابضة بالحياة.',
+            whyUs: 'نحن نخدم عجمان منذ ثلاثة عقود، وندرك أنها رغم قربها من الشارقة ودبي، إلا أنها تتمتع بطابع سوق متميز خاص بها. نحن نتولى جميع تصاريح بلدية عجمان والدفاع المدني، مما يضمن أن يكون تجهيزك الموسمي آمناً ومتوافقاً. تركز فرقنا في عجمان على التعبئة السريعة والدعم المحلي، وتقديم جماليات راقية بأسعار تحترم الواقع التجاري للإمارة.',
+            audiences: [
+                {
+                    title: 'القطاع السكني والعائلي',
+                    description: 'من الروضة إلى المويهات، يعد المجلس الخاص مركز الحياة الرمضانية. نحن ننشئ بيئات جميلة ومكيفة للعائلات تعطي الأولوية للخصوصية والتراث.',
+                    features: ['تخطيطات تركز على الخصوصية', 'تصاميم داخلية للمجالس التقليدية', 'تركيب منزلي سريع', 'أنظمة تكييف متطورة']
+                },
+                {
+                    title: 'الشركات والضيافة',
+                    description: 'تتطلب فنادق وشركات عجمان توسعة في السعة تتناسب مع معايير علامتها التجارية. نبني توسعات سلسة للإفطار والسحور على الكورنيش وضمن المراكز التجارية.',
+                    features: ['تكامل سلس مع العلامة التجارية', 'تكييف بمستوى صناعي', 'تصاميم وحدات قابلة للتوسع', 'إدارة كاملة للتصاريح']
+                }
+            ],
+            compliance: {
+                title: 'لوائح عجمان: دعم كامل',
+                body: 'نحن نتولى عملية الموافقة الكاملة مع بلدية عجمان والدفاع المدني. من عمليات التفتيش الهيكلي إلى شهادات السلامة من الحرائق، نضمن أن خيمتك متوافقة قانونياً وآمنة لجميع الضيوف.'
+            },
+            areas: ['الجرف', 'الروضة', 'كورنيش عجمان', 'التلة', 'المويهات', 'الحميدية', 'الحليو'],
+            cta: 'احصل على عرض أسعار عجمان'
+        },
+        'ras-al-khaimah': {
+            title: 'تأجير خيام ومجالس رمضان في رأس الخيمة',
+            subtitle: 'تجهيزات أيقونية لجزيرة المرجان والساحل الشمالي',
+            intro: 'تجمع أجواء رمضان في رأس الخيمة بين جلال الجبال وفخامة السواحل. وباعتبارها وجهة سياحية رائدة، تتطلب رأس الخيمة هياكل مؤقتة تلبي معايير الضيافة الدولية.',
+            whyUs: 'تتطلب خدمة رأس الخيمة فهماً لظروفها البيئية الفريدة - من الرطوبة الساحلية في جزيرة المرجان إلى حمولات الرياح الجبلية في الداخل. نحن نقدم 30 عاماً من الخبرة الهندسية للإمارة الشمالية، مما يضمن أن خيمتك آمنة ومستقرة وجميلة بشكل مذهل. نحن نتولى جميع موافقات الدفاع المدني والبلدية في رأس الخيمة، مما يسمح لمديري المنتجعات والمالكين الخاصين بالتركيز على ضيوفهم.',
+            audiences: [
+                {
+                    title: 'المنتجعات والفنادق',
+                    description: 'الربع الأول هو ذروة الموسم السياحي في رأس الخيمة. نحن نوفر صالات إفطار وسحور فاخرة ومتكاملة مع العلامة التجارية للمنتجعات في جزيرة المرجان ومنطقة الحمراء.',
+                    features: ['تشطيبات داخلية فاخرة', 'تكييف عالي السعة', 'استقرار هيكلي في مواجهة البحر', 'انسيابية سلسة للضيوف']
+                },
+                {
+                    title: 'العقارات الخاصة والقصور',
+                    description: 'تتطلب المساكن الخاصة في رأس الخيمة غالباً تجهيزات مجلس واسعة لمئات الضيوف. نحن متخصصون في الأبعاد الضخمة مع جماليات التراث الإماراتي الأصيل.',
+                    features: ['ديكور عربي أصيل', 'هياكل ذات امتداد واسع', 'أقسام لكبار الشخصيات', 'خدمة شاملة متكاملة']
+                }
+            ],
+            compliance: {
+                title: 'امتثال رأس الخيمة: السلامة والجماليات',
+                body: 'نحن ننسق مع بلدية رأس الخيمة والدفاع المدني لضمان تلبية جميع الهياكل الموسمية لأكواد السلامة والجمالية الحضرية للإمارة. المواد المعتمدة المقاومة للحريق والهندسة الهيكلية هي معايير قياسية لدينا.'
+            },
+            areas: ['جزيرة المرجان', 'الحمراء', 'خزام', 'الظيت', 'ميناء العرب', 'مدينة رأس الخيمة', 'النخيل'],
+            cta: 'احصل على عرض أسعار رأس الخيمة'
+        },
+        fujairah: {
+            title: 'تأجير خيام ومجالس رمضان في فجيرة',
+            subtitle: 'تجهيزات قوية وموثوقة للساحل الشرقي',
+            intro: 'تتطلب الجغرافيا الفريدة للفجيرة خبرة متخصصة في الخيام. فبين جبال الحجر والمحيط الهندي، يجب تصميم الهياكل المؤقتة لتتحمل الرطوبة وحمولات الرياح العالية.',
+            whyUs: 'نحن من بين المزودين القلائل الذين يتمتعون بخبرة متخصصة في الظروف البيئية للساحل الشرقي. سواء كان إفطاراً ساحلياً في دبا أو تجهيزاً للشركات في مدينة الفجيرة، فإن هياكلنا مصممة للأداء العالي. نحن نتولى جميع الأوراق الخاصة ببلدية الفجيرة والدفاع المدني، مما يوفر تجربة خالية من التوتر لسكان وشركات الإمارة.',
+            audiences: [
+                {
+                    title: 'قطاع الشركات والصناعة',
+                    description: 'تتطلب خدمة القوى العاملة الصناعية والبحرية الضخمة في الفجيرة بيئات إفطار عالية السعة وآمنة وفعالة. نحن نبني من أجل الحجم والمتانة.',
+                    features: ['تكييف بمستوى صناعي', 'استقرار هيكلي معزز', 'تخطيط سلامة للحجم الكبير', 'نشر سريع']
+                },
+                {
+                    title: 'عائلات الساحل الشرقي',
+                    description: 'تكريم تقاليد رمضان في الفجيرة يعني مجلساً خاصاً مصمماً حسب الطلب. نحن نضع 30 عاماً من الخبرة في التصميم التقليدي لخدمة المنازل في جميع أنحاء الإمارة.',
+                    features: ['تصاميم داخلية تراثية تقليدية', 'تعزيز لمواجهة رياح الجبال', 'تركيب سريع في الفلل', 'تشطيبات عربية أصيلة']
+                }
+            ],
+            compliance: {
+                title: 'تصاريح الفجيرة: خبرة محلية',
+                body: 'لوائح السلامة في الفجيرة عملية وصارمة. نضمن تلبية كل خيمة لأكواد الدفاع المدني المحلية للحرائق وإرشادات البلدية الهيكلية لتضاريس الساحل الشرقي.'
+            },
+            areas: ['مدينة الفجيرة', 'دبا', 'الفصيل', 'مربح', 'البدية', 'قدفع'],
+            cta: 'احصل على عرض أسعار الفجيرة'
+        },
+        'umm-al-quwain': {
+            title: 'تأجير خيام ومجالس رمضان في أم القيوين',
+            subtitle: 'تجهيزات تركز على المجتمع للإمارة الساحلية',
+            intro: 'تتجذر تقاليد رمضان في أم القيوين بعمق في التراث. نحن نوفر البنية التحتية المهنية لدعم كرم الضيافة وروح المجتمع الأسطورية في الإمارة.',
+            whyUs: 'يقدر سكان أم القيوين الجودة والموثوقية. نحن الشريك الموثوق لعائلات وشركات أم القيوين لثلاثة عقود، ونقدم حلول خيام من فئة 5 نجوم تحترم الطابع التقليدي والهادئ للإمارة. نحن نتولى جميع تصاريح الدفاع المدني والبلدية في أم القيوين، مما يضمن التعامل مع تجهيز رمضان الخاص بك بعناية مهنية من البداية إلى النهاية.',
+            audiences: [
+                {
+                    title: 'الضيافة المجتمعية',
+                    description: 'تشتهر أم القيوين بحسها المجتمعي القوي. نحن نوفر مساحات آمنة ومكيفة لإفطارات المجتمع والتجمعات الخيرية في جميع أنحاء الإمارة.',
+                    features: ['تصاميم وحدات عالية السعة', 'تخطيطات فعالة لخدمة الطعام', 'إدارة كاملة للتصاريح', 'حلول فعالة من حيث التكلفة']
+                },
+                {
+                    title: 'المجالس السكنية',
+                    description: 'للمنازل الخاصة في السلمة وما وراءها، ننشئ مساحات مجلس تركز على التراث وتشعر وكأنها امتداد طبيعي لمنزل العائلة.',
+                    features: ['ديكور عربي أصيل', 'تركيب سريع ونظيف', 'خصوصية عائلية أولاً', 'تكييف هادئ للغاية']
+                }
+            ],
+            compliance: {
+                title: 'امتثال أم القيوين: خبرة محلية',
+                body: 'نضمن الامتثال الكامل لأكواد بلدية أم القيوين والدفاع المدني. من تصاريح الخيام الموسمية إلى شهادات السلامة الكهربائية، نحن نتولى كل التفاصيل من أجل رمضان خالي من القلق.'
+            },
+            areas: ['السلمة', 'الرملة', 'الروضة', 'واجهة أم القيوين المائية', 'المقطع'],
+            cta: 'احصل على عرض أسعار أم القيوين'
         }
     }
 };

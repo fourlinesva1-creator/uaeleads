@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { useModal } from '@/components/ui/ModalProvider';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { SEOContent } from '@/data/city-content';
 
@@ -12,22 +13,35 @@ interface Props {
     content: SEOContent;
 }
 
+const cityImages: Record<string, string> = {
+    'dubai': '/images/Tent Now/dubai.jpg',
+    'abu-dhabi': '/images/Tent Now/abu dhabi.jpg',
+    'sharjah': '/images/Tent Now/sharjah.jpg',
+    'ajman': '/images/Tent Now/other cities.jpg',
+    'ras-al-khaimah': '/images/Tent Now/Ras al Khaimah.jpg',
+    'fujairah': '/images/Tent Now/other cities.jpg',
+    'umm-al-quwain': '/images/Tent Now/other cities.jpg',
+};
+
 export default function LocationServiceUI({ city, slug, content }: Props) {
     const { openCallback } = useModal();
 
     return (
-        <div className="bg-[#101622] pt-32 lg:pt-40 pb-20">
+        <div className="bg-[#101622] pt-32 lg:pt-48 pb-20">
             <div className="container-luxury">
                 {/* Hero Section */}
-                <div className="max-w-4xl mb-20 animate-fade-in-up">
+                <div className="relative max-w-4xl mb-24 animate-fade-in-up">
+                    {/* Background decor (Optional) */}
+                    <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/5 blur-[120px] rounded-full -z-10" />
+
                     <div className="section-label mb-8">
                         <span>30 Years of Specialized Excellence</span>
                     </div>
                     <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
                         {content.title}
                     </h1>
-                    <div className="w-24 h-1 bg-gold mb-10" />
-                    <h2 className="text-xl md:text-2xl text-gold font-medium mb-8">
+                    <div className="w-24 h-1.5 bg-gold mb-12 shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
+                    <h2 className="text-xl md:text-2xl text-gold font-medium mb-10 italic">
                         {content.subtitle}
                     </h2>
                     <p className="text-xl md:text-2xl text-text-light font-light leading-relaxed max-w-3xl">
@@ -63,10 +77,10 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                                 <div className="max-w-xl text-center md:text-left">
                                     <h2 className="text-3xl md:text-4xl font-display text-[#101622] font-bold mb-4">
-                                        Let's Design Your {city.replace(/-/g, ' ')} Majlis
+                                        Let's Design Your {city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} Majlis
                                     </h2>
                                     <p className="text-[#101622]/80 font-medium">
-                                        Secure your inventory for the 2026 Ramadan season with Dubai's most veteran architectural team.
+                                        Secure your inventory for the 2026 Ramadan season with the UAE's most veteran architectural team.
                                     </p>
                                 </div>
                                 <button

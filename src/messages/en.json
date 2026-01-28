@@ -261,9 +261,11 @@
   },
   "footer": {
     "description": "Elevating events across the UAE with premium Majlis rentals and bespoke styling services since 1994.",
-    "quickLinks": "Explore",
-    "services": "Services",
+    "explore": "Explore",
+    "cityPages": "City Pages",
+    "services": "Our Services",
     "support": "Support",
+    "company": "Company",
     "contact": "Contact",
     "address": "SAIF Zone, Sharjah, UAE",
     "phone": "+971 50 182 6969",
