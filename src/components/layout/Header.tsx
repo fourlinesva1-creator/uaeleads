@@ -139,8 +139,13 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden fixed inset-0 top-[80px] bg-[#101622] z-40 transition-transform duration-500 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'
-          } ${locale === 'ar' ? (isOpen ? 'translate-x-0' : '-translate-x-full') : ''}`}>
+        <div
+          className={`lg:hidden fixed inset-0 top-[80px] bg-[#101622] z-[9999] transition-transform duration-500 ease-in-out transform ${isOpen
+              ? 'translate-x-0'
+              : (locale === 'ar' ? '-translate-x-full' : 'translate-x-full')
+            }`}
+          style={{ height: 'calc(100vh - 80px)' }}
+        >
           <div className="h-full overflow-y-auto p-6 flex flex-col gap-2">
             {navigation.map((item) => (
               <div key={item.key} className="flex flex-col border-b border-border/50">
