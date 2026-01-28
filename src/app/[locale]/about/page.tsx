@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -17,28 +18,46 @@ function AboutContent() {
     const brand = useTranslations('brand');
 
     return (
-        <div className="bg-[#101622] pt-32 pb-20">
-            <div className="container-luxury">
-                {/* Header Section */}
-                <div className="max-w-4xl mb-20 animate-fade-in-up">
-                    <div className="section-label mb-6">
-                        <span>{t('label')}</span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-display text-white mb-8 tracking-wide">
-                        {t('ourStory.title')}
-                    </h1>
-                    <p className="text-xl text-[#D4AF37] mb-8 font-medium italic">
-                        {t('ourStory.subtitle')}
-                    </p>
-                    <div className="prose prose-invert max-w-none">
-                        <p className="text-lg text-[#9da6b9] leading-relaxed mb-6">
-                            {t('ourStory.body')}
-                        </p>
-                        <p className="text-lg text-[#9da6b9] leading-relaxed">
-                            {t('ourStory.ethos')}
-                        </p>
+        <div className="bg-[#101622]">
+            {/* Hero Section */}
+            <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/Tent Now/hotel.jpg"
+                        alt="Tent Now Heritage"
+                        fill
+                        priority
+                        className="object-cover opacity-20 scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#101622]/80 via-[#101622] to-[#101622]" />
+                </div>
+
+                <div className="container-luxury relative z-10">
+                    <div className="max-w-4xl animate-fade-in-up">
+                        <div className="section-label mb-8">
+                            <span>{t('label')}</span>
+                        </div>
+                        <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
+                            {t('ourStory.title')}
+                        </h1>
+                        <div className="w-24 h-1.5 bg-gold mb-12 shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
+                        <h2 className="text-xl md:text-2xl text-gold font-medium mb-10 italic leading-relaxed">
+                            {t('ourStory.subtitle')}
+                        </h2>
+                        <div className="prose prose-invert max-w-none">
+                            <p className="text-lg text-[#9da6b9] leading-relaxed mb-6">
+                                {t('ourStory.body')}
+                            </p>
+                            <p className="text-lg text-[#9da6b9] leading-relaxed">
+                                {t('ourStory.ethos')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <div className="container-luxury py-20 relative z-10">
 
                 {/* Values Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">

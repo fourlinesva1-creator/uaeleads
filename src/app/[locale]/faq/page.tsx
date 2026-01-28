@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -16,20 +17,38 @@ function FAQContent() {
     const t = useTranslations('faq');
 
     return (
-        <div className="bg-[#101622] pt-32 pb-20">
-            <div className="container-luxury">
-                {/* Header Section */}
-                <div className="max-w-4xl mb-20 animate-fade-in-up">
-                    <div className="section-label mb-6">
-                        <span>30 Years of Expertise</span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-display text-white mb-8 tracking-wide">
-                        {t('title')}
-                    </h1>
-                    <p className="text-xl text-[#9da6b9] leading-relaxed">
-                        {t('intro')}
-                    </p>
+        <div className="bg-[#101622]">
+            {/* Hero Section */}
+            <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/Tent Now/home majis.jpg"
+                        alt="Tent Now Support"
+                        fill
+                        priority
+                        className="object-cover opacity-20 scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#101622]/80 via-[#101622] to-[#101622]" />
                 </div>
+
+                <div className="container-luxury relative z-10">
+                    <div className="max-w-4xl animate-fade-in-up">
+                        <div className="section-label mb-8">
+                            <span>30 Years of Expertise</span>
+                        </div>
+                        <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
+                            {t('title')}
+                        </h1>
+                        <div className="w-24 h-1.5 bg-gold mb-12 shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
+                        <p className="text-xl md:text-2xl text-text-light font-light leading-relaxed max-w-3xl">
+                            {t('intro')}
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div className="container-luxury py-20 relative z-10">
 
                 {/* FAQ Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">

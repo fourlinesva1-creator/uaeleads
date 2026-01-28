@@ -5,11 +5,11 @@ import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 const portfolioImages = [
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_f7b77c61.jpg',
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_d085b4f3.jpg',
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg',
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 14.38.09_8a40018e.jpg',
-  '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_347a7ef2.jpg',
+  '/images/Tent Now/majlis.jpg',
+  '/images/Tent Now/hotel.jpg',
+  '/images/Tent Now/iftar tents.jpg',
+  '/images/Tent Now/home majis.jpg',
+  '/images/Tent Now/corporate.jpg',
 ];
 
 export default function Portfolio() {
@@ -37,9 +37,8 @@ export default function Portfolio() {
           {portfolioImages.map((image, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-xl image-zoom-container ${
-                index === 0 ? 'md:col-span-2 md:row-span-2 aspect-square md:aspect-auto' : 'aspect-square'
-              }`}
+              className={`relative overflow-hidden rounded-xl image-zoom-container ${index === 0 ? 'md:col-span-2 md:row-span-2 aspect-square md:aspect-auto' : 'aspect-square'
+                }`}
             >
               <Image
                 src={image}

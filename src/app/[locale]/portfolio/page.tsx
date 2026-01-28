@@ -7,12 +7,12 @@ type Props = {
 };
 
 const galleryItems = [
-    { id: 1, category: 'Traditional', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.23.01_cba3d622.jpg', title: 'Heritage Majlis' },
-    { id: 2, category: 'Modern', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.42_90cd4d75.jpg', title: 'Contemporary Suite' },
-    { id: 3, category: 'Commercial', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.23.06_300bc714.jpg', title: 'Hotel Ramadan Tent' },
-    { id: 4, category: 'Traditional', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.56_0f854972.jpg', title: 'Royal Interior' },
-    { id: 5, category: 'Modern', image: '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg', title: 'Modern Minimalist' },
-    { id: 6, category: 'Commercial', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.23.08_25c6a1e5.jpg', title: 'Corporate Iftar' },
+    { id: 1, category: 'Traditional', image: '/images/Tent Now/majlis.jpg', title: 'Heritage Majlis' },
+    { id: 2, category: 'Modern', image: '/images/Tent Now/hotel.jpg', title: 'Contemporary Suite' },
+    { id: 3, category: 'Commercial', image: '/images/Tent Now/corporate.jpg', title: 'Hotel Ramadan Tent' },
+    { id: 4, category: 'Traditional', image: '/images/Tent Now/home majis.jpg', title: 'Royal Interior' },
+    { id: 5, category: 'Modern', image: '/images/Tent Now/lighting and decor.jpg', title: 'Modern Minimalist' },
+    { id: 6, category: 'Commercial', image: '/images/Tent Now/furniture.jpg', title: 'Corporate Iftar' },
 ];
 
 export default async function PortfolioPage({ params }: Props) {
@@ -26,19 +26,38 @@ function PortfolioContent() {
     const t = useTranslations('nav');
 
     return (
-        <div className="bg-[#101622] pt-32 pb-20">
-            <div className="container-luxury">
-                <div className="max-w-4xl mb-20 animate-fade-in-up">
-                    <div className="section-label mb-6">
-                        <span>Our Legacy</span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-display text-white mb-8 tracking-wide">
-                        Portfolio of Excellence
-                    </h1>
-                    <p className="text-xl text-[#9da6b9]">
-                        A showcase of over 5,000 successful events across the UAE since 1984.
-                    </p>
+        <div className="bg-[#101622]">
+            {/* Hero Section */}
+            <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/Tent Now/homepage hero section.jpg"
+                        alt="Tent Now Portfolio"
+                        fill
+                        priority
+                        className="object-cover opacity-20 scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#101622]/80 via-[#101622] to-[#101622]" />
                 </div>
+
+                <div className="container-luxury relative z-10">
+                    <div className="max-w-4xl animate-fade-in-up">
+                        <div className="section-label mb-8">
+                            <span>Our Legacy</span>
+                        </div>
+                        <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
+                            Portfolio of Excellence
+                        </h1>
+                        <div className="w-24 h-1.5 bg-gold mb-12 shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
+                        <p className="text-xl md:text-2xl text-text-light font-light leading-relaxed max-w-3xl">
+                            A showcase of over 5,000 successful events across the UAE since 1984.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div className="container-luxury py-20 relative z-10">
 
                 {/* Gallery Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

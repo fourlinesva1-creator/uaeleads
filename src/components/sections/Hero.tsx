@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Background Image with Zoom Effect */}
       <div className="absolute inset-0 z-0 group">
         <Image
-          src="/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_f7b77c61.jpg"
+          src="/images/Tent Now/homepage hero section.jpg"
           alt="Luxury Ramadan Majlis Setup"
           fill
           priority

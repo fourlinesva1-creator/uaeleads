@@ -18,11 +18,11 @@ function ServicesContent() {
     const t = useTranslations('services');
 
     const services = [
-        { id: 'hotel', slug: 'hotel-majlis', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.23.01_cba3d622.jpg' },
-        { id: 'corporate', slug: 'corporate-events', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.42_90cd4d75.jpg' },
-        { id: 'home', slug: 'home-majlis', image: '/images/WEB/WhatsApp-Image-2024-02-02-at-12.22.56_0f854972.jpg' },
-        { id: 'furniture', slug: 'furniture-rental', image: '/images/Products/WhatsApp-Image-2024-02-01-at-17.13.06_ce17ea47.jpg' },
-        { id: 'decor', slug: 'decor-lighting', image: '/images/Products/WhatsApp-Image-2024-02-01-at-17.13.43_0ff49097.jpg' }
+        { id: 'hotel', slug: 'hotel-majlis', image: '/images/Tent Now/hotel.jpg' },
+        { id: 'corporate', slug: 'corporate-events', image: '/images/Tent Now/corporate.jpg' },
+        { id: 'home', slug: 'home-majlis', image: '/images/Tent Now/home majis.jpg' },
+        { id: 'furniture', slug: 'furniture-rental', image: '/images/Tent Now/furniture.jpg' },
+        { id: 'decor', slug: 'decor-lighting', image: '/images/Tent Now/lighting and decor.jpg' }
     ];
 
     return (

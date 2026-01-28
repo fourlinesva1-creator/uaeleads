@@ -18,11 +18,11 @@ const serviceMap: Record<string, string> = {
 };
 
 const imageMap: Record<string, string> = {
-    'hotel-majlis': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_f7b77c61.jpg',
-    'corporate-events': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_d085b4f3.jpg',
-    'home-majlis': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg',
-    'furniture-rental': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 14.38.09_8a40018e.jpg',
-    'decor-lighting': '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_347a7ef2.jpg'
+    'hotel-majlis': '/images/Tent Now/hotel.jpg',
+    'corporate-events': '/images/Tent Now/corporate.jpg',
+    'home-majlis': '/images/Tent Now/home majis.jpg',
+    'furniture-rental': '/images/Tent Now/furniture.jpg',
+    'decor-lighting': '/images/Tent Now/lighting and decor.jpg'
 };
 
 export async function generateStaticParams() {
