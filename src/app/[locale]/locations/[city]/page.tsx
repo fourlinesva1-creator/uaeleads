@@ -9,6 +9,17 @@ type Props = {
 
 const cities = ['dubai', 'abu-dhabi', 'sharjah', 'ajman', 'ras-al-khaimah', 'fujairah', 'umm-al-quwain'];
 
+// Map URL slugs to translation keys
+const cityKeyMap: Record<string, string> = {
+    'dubai': 'dubai',
+    'abu-dhabi': 'abuDhabi',
+    'sharjah': 'sharjah',
+    'ajman': 'ajman',
+    'ras-al-khaimah': 'rak',
+    'fujairah': 'fujairah',
+    'umm-al-quwain': 'uaq'
+};
+
 export async function generateStaticParams() {
     const params: { locale: string; city: string }[] = [];
     routing.locales.forEach(locale => {
@@ -40,10 +51,10 @@ function CityContent({ city }: { city: string }) {
                         <span>Premium Majlis Rentals</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-display text-white mb-8 tracking-wide capitalize">
-                        {t(`cities.${city.replace('-', 'Dhabi').replace('ras-al-khaimah', 'rak')}`)} {t('title')}
+                        {t(`cities.${cityKeyMap[city]}`)} {t('title')}
                     </h1>
                     <p className="text-xl text-[#9da6b9]">
-                        {t('subtitle')} in {t(`cities.${city.replace('-', 'Dhabi').replace('ras-al-khaimah', 'rak')}`)}.
+                        {t('subtitle')} in {t(`cities.${cityKeyMap[city]}`)}.
                     </p>
                 </div>
 
