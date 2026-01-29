@@ -11,6 +11,7 @@ import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import { ModalProvider } from '@/components/ui/ModalProvider';
 import CallbackModal from '@/components/ui/CallbackModal';
 import BusinessSchema from '@/components/seo/BusinessSchema';
+import WebsiteSchema from '@/components/seo/WebsiteSchema';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -41,23 +42,27 @@ export async function generateMetadata({
 
   return {
     title: {
-      template: '%s | Tent Now',
+      template: '%s | Tent Now UAE',
       default:
         locale === 'ar'
-          ? 'Tent Now - ثلاثة عقود من التميز في خيام ومجالس رمضان'
-          : 'Tent Now - Three Decades of Defining the Ramadan Majlis Experience',
+          ? 'تأجير خيام رمضان ومجالس | دبي | أبوظبي | الشارقة | Tent Now'
+          : 'Ramadan Tent Rental & Majlis Supplier Dubai | Abu Dhabi | Sharjah | Tent Now',
     },
     description:
       locale === 'ar'
-        ? 'خبرة 30 عاماً في تأجير خيام ومجالس رمضان الفاخرة في الإمارات. حلول متكاملة للفنادق والشركات والعائلات في دبي وأبوظبي والشارقة.'
-        : "30 years of expertise in premium Ramadan tent & Majlis rentals across UAE. Complete solutions for hotels, corporates & families in Dubai, Abu Dhabi & Sharjah.",
+        ? '30 عاماً من الخبرة في توفير خيام رمضان الفاخرة وتجهيزات الإفطار والمجالس في جميع أنحاء الإمارات. حلول اقتصادية ومتوافقة وأصيلة لرمضان 2026. احصل على عرض سعر مجاني اليوم.'
+        : '30 years of expertise in premium Ramadan tents, Iftar setups, and Majlis for rent across UAE. Cost-effective, compliant, and authentic solutions for Ramadan 2026. Get a free quote today.',
     keywords: [
       'Ramadan tent rental Dubai',
       'Majlis rental UAE',
       'Iftar tent Dubai',
       'Corporate Ramadan tent',
+      'Ramadan tent supplier',
+      'Majlis for rent Dubai',
+      'Suhoor tent rental',
       'تأجير خيام رمضان دبي',
       'مجالس رمضان الإمارات',
+      'خيمة إفطار دبي',
     ],
     authors: [{ name: 'Tent Now' }],
     creator: 'Tent Now',
@@ -78,12 +83,12 @@ export async function generateMetadata({
     openGraph: {
       title:
         locale === 'ar'
-          ? 'Tent Now - حلول خيام ومجالس رمضان الفاخرة'
-          : 'Tent Now - Premium Ramadan Majlis Tent Solutions',
+          ? 'Tent Now - تأجير خيام رمضان ومجالس في دبي وأبوظبي والشارقة'
+          : 'Tent Now - Ramadan Tent Rental & Majlis Supplier in Dubai, Abu Dhabi, Sharjah',
       description:
         locale === 'ar'
-          ? '30 عاماً من التميز في تأجير خيام ومجالس رمضان'
-          : '30 years of excellence in Ramadan tent & Majlis rentals',
+          ? '30 عاماً من الخبرة في توفير خيام رمضان الفاخرة والمجالس. احصل على عرض سعر مجاني لرمضان 2026.'
+          : '30 years providing premium Ramadan tents, Iftar setups & Majlis for rent. Get a free quote for Ramadan 2026.',
       url: baseUrl,
       siteName: 'Tent Now',
       locale: locale === 'ar' ? 'ar_AE' : 'en_AE',
@@ -93,14 +98,14 @@ export async function generateMetadata({
           url: '/images/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: 'Tent Now - Premium Ramadan Majlis Tent Solutions',
+          alt: 'Tent Now - Ramadan Tent Rental & Majlis Supplier UAE',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Tent Now - Premium Ramadan Majlis Tent Solutions',
-      description: 'Premium Ramadan tent & Majlis rentals across UAE since 1994',
+      title: 'Tent Now - Ramadan Tent Rental Dubai | Abu Dhabi | Sharjah',
+      description: '30 years providing premium Ramadan tents & Majlis rentals across UAE. Get your free quote for 2026.',
       images: ['/images/og-image.jpg'],
     },
     robots: {
@@ -144,6 +149,7 @@ export default async function LocaleLayout({
       <body className="min-h-screen flex flex-col antialiased font-display">
         <NextIntlClientProvider messages={messages}>
           <BusinessSchema />
+          <WebsiteSchema />
           <ModalProvider>
             <Header />
             <main className="flex-1">{children}</main>

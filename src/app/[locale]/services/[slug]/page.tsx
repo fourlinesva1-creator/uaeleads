@@ -54,6 +54,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: t(`items.${serviceId}.title`),
         description: t(`items.${serviceId}.description`),
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/services/${slug}`,
+        },
     };
 }
 

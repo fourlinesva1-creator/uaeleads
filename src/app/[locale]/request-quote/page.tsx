@@ -1,10 +1,33 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
 import QuoteForm from '@/components/forms/QuoteForm';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'quote' });
+
+    const title = locale === 'ar'
+        ? 'طلب عرض سعر | خيام رمضان والمجالس الفاخرة في الإمارات'
+        : 'Request a Quote | Premium Ramadan Tent & Majlis Rentals UAE';
+
+    const description = locale === 'ar'
+        ? 'احصل على عرض سعر مخصص لخيمة رمضان أو مجلس الإفطار. خبرة 30 عاماً في خدمة دبي وأبوظبي والشارقة وجميع الإمارات.'
+        : 'Get a custom quote for your Ramadan tent or Iftar Majlis setup. 30 years of expertise serving Dubai, Abu Dhabi, Sharjah and all UAE Emirates.';
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/request-quote`,
+        },
+    };
+}
 
 export default async function RequestQuotePage({ params }: Props) {
     const { locale } = await params;

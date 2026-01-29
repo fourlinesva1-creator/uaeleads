@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { SEOContent } from '@/data/city-content';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 interface Props {
     city: string;
@@ -35,6 +36,8 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
     const { openCallback } = useModal();
     const locale = useLocale();
     const pageUrl = `https://tentnow.ae/${locale}/locations/${city}/${slug}`;
+    const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    const serviceName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
     return (
         <div className="bg-[#101622]">
@@ -43,6 +46,13 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                 description={content.intro}
                 url={pageUrl}
                 image={serviceImages[slug] || cityImages[city]}
+            />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Locations', href: '/locations' },
+                    { name: cityName, href: `/locations/${city}` },
+                    { name: serviceName, href: `/locations/${city}/${slug}` }
+                ]}
             />
             {/* Hero Section */}
             <section className="relative pt-32 lg:pt-48 pb-24 overflow-hidden">

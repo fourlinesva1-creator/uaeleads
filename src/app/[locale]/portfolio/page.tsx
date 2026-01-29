@@ -15,6 +15,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: `Our Event Portfolio | Premium Tent & Majlis Rentals UAE | ${t('portfolio')}`,
         description: 'Explore Tent Now\'s legacy of over 5,000 successful Ramadan Majlis, corporate Iftar tents, and industrial event setups across Dubai and the UAE.',
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/portfolio`,
+        },
     };
 }
 

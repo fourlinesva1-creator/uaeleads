@@ -16,6 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: t('contact'),
         description: 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE.',
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/contact`,
+        },
     };
 }
 

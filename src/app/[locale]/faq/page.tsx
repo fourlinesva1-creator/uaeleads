@@ -16,6 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: t('title'),
         description: t('intro'),
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/faq`,
+        },
     };
 }
 

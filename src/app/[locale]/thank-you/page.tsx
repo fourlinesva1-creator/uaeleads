@@ -2,10 +2,24 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { CheckCircle2, MessageSquare, Phone } from 'lucide-react';
+import { Metadata } from 'next';
 
 type Props = {
     params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+
+    return {
+        title: locale === 'ar' ? 'شكراً لك | Tent Now' : 'Thank You | Tent Now',
+        description: 'Your request has been received. Our team will contact you shortly.',
+        robots: {
+            index: false,
+            follow: false,
+        },
+    };
+}
 
 export default async function ThankYouPage({ params }: Props) {
     const { locale } = await params;
