@@ -119,6 +119,9 @@ export async function generateMetadata({
         'max-snippet': -1,
       },
     },
+    verification: {
+      google: 'iHU6ZGYxHQp5Ds7bltEhaeroA5MuhUuPrf8fyzy6enQ',
+    },
   };
 }
 
