@@ -15,20 +15,20 @@ interface Props {
 }
 
 const cityImages: Record<string, string> = {
-    'dubai': '/images/Tent Now/dubai.jpg',
-    'abu-dhabi': '/images/Tent Now/abu dhabi.jpg',
-    'sharjah': '/images/Tent Now/sharjah.jpg',
-    'ajman': '/images/Tent Now/other cities.jpg',
-    'ras-al-khaimah': '/images/Tent Now/Ras al Khaimah.jpg',
-    'fujairah': '/images/Tent Now/other cities.jpg',
-    'umm-al-quwain': '/images/Tent Now/other cities.jpg',
+    'dubai': '/images/tent-now/dubai.jpg',
+    'abu-dhabi': '/images/tent-now/abu-dhabi.jpg',
+    'sharjah': '/images/tent-now/sharjah.jpg',
+    'ajman': '/images/tent-now/other-cities.jpg',
+    'ras-al-khaimah': '/images/tent-now/ras-al-khaimah.jpg',
+    'fujairah': '/images/tent-now/other-cities.jpg',
+    'umm-al-quwain': '/images/tent-now/other-cities.jpg',
 };
 
 const serviceImages: Record<string, string> = {
-    'ramadan-tent-rental': '/images/Tent Now/iftar tents.jpg',
-    'majlis-tent-rental': '/images/Tent Now/majlis.jpg',
-    'iftar-tent-rental': '/images/Tent Now/iftar tents.jpg',
-    'suhoor-tent-rental': '/images/Tent Now/home majis.jpg',
+    'ramadan-tent-rental': '/images/tent-now/iftar-tents.jpg',
+    'majlis-tent-rental': '/images/tent-now/home-majlis.jpg',
+    'iftar-tent-rental': '/images/tent-now/iftar-tents.jpg',
+    'suhoor-tent-rental': '/images/tent-now/home-majlis.jpg',
 };
 
 export default function LocationServiceUI({ city, slug, content }: Props) {

@@ -30,14 +30,14 @@ function ServicesContent() {
     const t = useTranslations('services');
 
     const services = [
-        { id: 'hotel', slug: 'hotel-majlis', image: '/images/Tent Now/hotel.jpg' },
-        { id: 'corporate', slug: 'corporate-events', image: '/images/Tent Now/corporate.jpg' },
-        { id: 'home', slug: 'home-majlis', image: '/images/Tent Now/home majis.jpg' },
-        { id: 'iftar', slug: 'iftar-tent-rental', image: '/images/Tent Now/iftar tents.jpg' },
-        { id: 'suhoor', slug: 'suhoor-tent-rental', image: '/images/Tent Now/home majis.jpg' },
-        { id: 'sadu', slug: 'sadu-tent-rental', image: '/images/Tent Now/sadu tents.jpg' },
-        { id: 'furniture', slug: 'furniture-rental', image: '/images/Tent Now/furniture.jpg' },
-        { id: 'decor', slug: 'decor-lighting', image: '/images/Tent Now/lighting and decor.jpg' }
+        { id: 'hotel', slug: 'hotel-majlis', image: '/images/tent-now/hotel.jpg' },
+        { id: 'corporate', slug: 'corporate-events', image: '/images/tent-now/corporate.jpg' },
+        { id: 'home', slug: 'home-majlis', image: '/images/tent-now/home-majlis.jpg' },
+        { id: 'iftar', slug: 'iftar-tent-rental', image: '/images/tent-now/iftar-tents.jpg' },
+        { id: 'suhoor', slug: 'suhoor-tent-rental', image: '/images/tent-now/home-majlis.jpg' },
+        { id: 'sadu', slug: 'sadu-tent-rental', image: '/images/tent-now/sadu-tents.jpg' },
+        { id: 'furniture', slug: 'furniture-rental', image: '/images/tent-now/furniture.jpg' },
+        { id: 'decor', slug: 'decor-lighting', image: '/images/tent-now/lighting-and-decor.jpg' }
     ];
 
     return (

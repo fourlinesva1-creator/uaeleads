@@ -5,11 +5,11 @@ import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 const portfolioImages = [
-  '/images/Tent Now/majlis.jpg',
-  '/images/Tent Now/hotel.jpg',
-  '/images/Tent Now/iftar tents.jpg',
-  '/images/Tent Now/home majis.jpg',
-  '/images/Tent Now/corporate.jpg',
+  '/images/tent-now/home-majlis.jpg',
+  '/images/tent-now/hotel.jpg',
+  '/images/tent-now/iftar-tents.jpg',
+  '/images/tent-now/home-majlis.jpg',
+  '/images/tent-now/corporate.jpg',
 ];
 
 export default function Portfolio() {

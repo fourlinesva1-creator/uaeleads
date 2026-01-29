@@ -11,6 +11,8 @@ const serviceLinks = [
   { key: 'hotel', href: '/services/hotel-majlis' },
   { key: 'corporate', href: '/services/corporate-events' },
   { key: 'home', href: '/services/home-majlis' },
+  { key: 'iftar', href: '/services/iftar-tent-rental' },
+  { key: 'sadu', href: '/services/sadu-tent-rental' },
   { key: 'furniture', href: '/services/furniture-rental' },
   { key: 'decor', href: '/services/decor-lighting' },
 ];
@@ -137,8 +139,8 @@ export default function Header() {
         {/* Mobile Menu */}
         <div
           className={`lg:hidden fixed inset-0 top-[80px] bg-[#101622] z-[9999] transition-transform duration-500 ease-in-out transform ${isOpen
-              ? 'translate-x-0'
-              : (locale === 'ar' ? '-translate-x-full' : 'translate-x-full')
+            ? 'translate-x-0'
+            : (locale === 'ar' ? '-translate-x-full' : 'translate-x-full')
             }`}
           style={{ height: 'calc(100vh - 80px)' }}
         >

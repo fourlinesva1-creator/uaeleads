@@ -43,7 +43,7 @@ function FAQContent() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/Tent Now/home majis.jpg"
+                        src="/images/tent-now/home-majlis.jpg"
                         alt="Tent Now Support"
                         fill
                         priority

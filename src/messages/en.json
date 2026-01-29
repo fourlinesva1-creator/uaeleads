@@ -182,11 +182,6 @@
       "uaq": "Umm Al Quwain"
     }
   },
-  "portfolio": {
-    "title": "Our Portfolio",
-    "subtitle": "5,000+ successful events curated over three decades",
-    "viewMore": "View Full Portfolio"
-  },
   "cta": {
     "label": "Bespoke Services",
     "title": "TAILORED TO",
@@ -416,6 +411,62 @@
         "location": "Location is required",
         "purpose": "Purpose is required"
       }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio of ",
+    "titleGold": "Event Excellence",
+    "subtitle": "5,000+ successful events curated over three decades",
+    "viewMore": "View Full Portfolio",
+    "label": "Industry-Leading Infrastructure",
+    "description": "From high-profile brand launches to large-scale industrial Iftars, we define the standard for temporary structures and luxury Majlis rentals across the UAE.",
+    "sectionStoryTitle": "Proven Expertise Since 1994",
+    "sectionStoryBody1": "With over 30 years of experience, Tent Now has evolved alongside the UAE's hospitality landscape. Our portfolio showcases our versatility in delivering premium tent solutions for diverse sectors including corporate, industrial, hospitality, and private events.",
+    "sectionStoryBody2": "Whether it's a bespoke Majlis for a private villa or a high-capacity air-conditioned tent for a community festival, our commitment to quality and safety remains unmatched.",
+    "stats": {
+      "events": "Events Delivered",
+      "experience": "Years Experience",
+      "compliance": "DCD Compliant",
+      "emirates": "Emirates Served"
+    },
+    "items": {
+      "brandLaunch": {
+        "title": "Brand Launch Events",
+        "category": "Corporate"
+      },
+      "gulfFood": {
+        "title": "Exhibition & Trade Shows",
+        "category": "Commercial"
+      },
+      "festivals": {
+        "title": "Public Festivals",
+        "category": "Community"
+      },
+      "labourCamps": {
+        "title": "Large-Scale Staff Iftars",
+        "category": "Industrial"
+      },
+      "indoorEvents": {
+        "title": "Indoor Luxury Events",
+        "category": "Hospitality"
+      },
+      "weddingMarquee": {
+        "title": "Premium Wedding Marquees",
+        "category": "Private"
+      },
+      "heritageMajlis": {
+        "title": "Heritage Majlis Setup",
+        "category": "Traditional"
+      },
+      "hotelTents": {
+        "title": "Contemporary Hotel Tents",
+        "category": "Modern"
+      }
+    },
+    "cta": {
+      "title": "Ready to create your masterpiece?",
+      "body": "Consult with the region's veterans to bring your vision to life. From conceptual design to flawless execution, we are your trusted partner for Ramadan 2026.",
+      "btn": "Inquire About Your Project"
     }
   }
 }

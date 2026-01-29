@@ -448,6 +448,18 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Smart Ambiance', body: 'Programmable RGB lighting, integrated sound systems, dimmable zones. The mood shifts with the night.' }
                 ],
                 cta: 'Design Your Suhoor Space'
+            },
+            'sadu-tent-rental': {
+                title: 'Authentic Sadu & Heritage Tent Rental Dubai',
+                subtitle: 'Celebrate Emirati Culture with Premium Heritage-Themed Structures',
+                intro: 'Connect with the roots of the Emirates through our authentic Sadu-themed tents. Perfect for cultural events, private Majlis setups, or heritage-themed Ramadan gatherings in Dubai.',
+                mainBody: 'Our Sadu tents are more than just temporary shelters; they are immersive cultural experiences. We combine traditional Bedouin weaving patterns (Sadu) with modern, high-performance structured tents. This allows you to enjoy the authentic look and feel of a heritage Majlis while benefiting from modern climate control and structural safety. For 30 years, we have been Dubai\'s preferred partner for premium heritage setups that resonate with both locals and international guests who appreciate Emirati culture.',
+                features: [
+                    { title: 'Genuine Sadu Patterns', body: 'High-quality authentic weaving patterns that represent the true artistic heritage of the UAE Bedouin culture.' },
+                    { title: 'Heritage Aesthetics', body: 'Carefully curated wood accents, traditional floor seating, and cultural props that complete the authentic experience.' },
+                    { title: 'Modern Stability', body: 'Traditional looks backed by modern German-engineered structures that can withstand UAE wind loads and maintain perfect cooling.' }
+                ],
+                cta: 'Inquire About Sadu Tents'
             }
         },
         'abu-dhabi': {
@@ -498,6 +510,18 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'ADCD Ventilation', body: 'Shisha-permissible zones with certified extraction systems. Full compliance, no shortcuts.' }
                 ],
                 cta: 'Design Your Suhoor Lounge'
+            },
+            'sadu-tent-rental': {
+                title: 'Authentic Sadu & Heritage Tents Abu Dhabi',
+                subtitle: 'Traditional Bedouin Structures for the Capital\'s Most Prestigious Events',
+                intro: 'Abu Dhabi demands authenticity. Our Sadu-themed tents deliver the genuine spirit of Arabian heritage, engineered to the capital\'s highest safety and quality standards.',
+                mainBody: 'For three decades, we have provided heritage-themed infrastructure for government ministries, private palaces, and luxury resorts in Abu Dhabi. A Sadu tent in the capital is often used for high-protocol cultural gatherings where aesthetics must be flawless. We use genuine wool-blend fabrics with authentic Bedouin patterns, balanced with modern flooring and industrial-grade climate control. Whether it\'s a VIP Majlis on the Corniche or a cultural exhibition on Saadiyat Island, our Sadu setups project the dignity and tradition that Abu Dhabi demands.',
+                features: [
+                    { title: 'Protocol-Ready Layouts', body: 'Traditional heritage looks combined with VIP seating arrangements and separate dignitary entrances.' },
+                    { title: 'Heritage Engineering', body: 'Specifically designed to withstand the capital\'s coastal conditions while maintaining a rustic, authentic Bedouin appearance.' },
+                    { title: 'Turnkey Cultural Setup', body: 'Includes authentic Gahwa stations, traditional incense setups, and curated cultural artifacts.' }
+                ],
+                cta: 'Inquire About Sadu Tents'
             }
         },
         'sharjah': {
@@ -768,7 +792,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'majlis-tent-rental': {
                 title: 'تأجير خيمة مجلس خاص في دبي',
                 subtitle: 'منزلك. ضيوفك. تقاليدك—بدون وسيط الفندق.',
-                intro: 'المجلس ليس مجرد جلسات—إنه حيث يحدث رمضان فعلاً. السهرات المتأخرة، التجمعات العائلية، اللحظات المهمة. نحن نبني مساحات مجلس خاصة تبدو دائمة، لا كأنك استأجرت شيئاً.',
+                intro: 'المجلس ليس مجرد جلسات—إنه حيث يحدث رمضان فعلاً. السهرات المتأخرة، التجموات العائلية، اللحظات المهمة. نحن نبني مساحات مجلس خاصة تبدو دائمة، لا كأنك استأجرت شيئاً.',
                 mainBody: 'معظم "تأجيرات المجالس" في دبي هي شركات خيام أعراس تستبدل الستائر البيضاء ببعض الوسائد. هذا ليس ما نفعله. قضينا 30 عاماً في فهم الفرق بين خيمة عادية ومجلس أصيل. تجهيزات الجلوس المنخفض. طبقات القماش التي تعزل فعلاً. الإضاءة التي تخلق أجواء دون مسرحية. سواء كنت تعمل مع فناء ضيق في جميرا أو حديقة واسعة في تلال الإمارات، نصمم حول مساحتك—لا العكس.',
                 features: [
                     { title: 'تصاميم أصيلة', body: 'مجالس أرضية مخصصة، اختيارات أقمشة تقليدية، أنماط سدو أصيلة—تفاصيل تهم من يعرف الفرق.' },
@@ -791,15 +815,27 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             },
             'suhoor-tent-rental': {
                 title: 'تجهيز خيمة وصالة سحور دبي',
-                subtitle: 'جمهور الثانية صباحاً يحتاج طاقة مختلفة. نحن نبني لذلك.',
-                intro: 'السحور ليس إفطاراً بتوقيت مختلف. إنه أجواء مختلفة تماماً—إضاءة منخفضة، جلسات صالة، إقامات أطول. معظم شركات الخيام لا تفهم هذا. نحن نفهم.',
-                mainBody: 'شراكاتنا مع فنادق نخلة جميرا وJBR وDIFC لعروض السحور تمتد لأكثر من عقدين. المتطلبات محددة: أثاث صالات حديث بدلاً من الجلسات التقليدية، أنظمة صوت وصورة للموسيقى المحيطة، تهوية مناسبة لمناطق الشيشة (متوافقة مع الدفاع المدني طبعاً). أنظمة إضاءة ذكية يمكنها تغيير الأجواء طوال الليل. اعتبارات صوتية لأن جيرانك موجودون. هذه ليست خيمة نهارية بإضاءة خافتة—إنها مبنية خصيصاً لثقافة دبي الرمضانية الليلية.',
+                subtitle: 'جمهور الساعة 2 صباحاً يحتاج طاقة مختلفة. نحن نبني لذلك.',
+                intro: 'السحور ليس مجرد إفطار بتوقيت مختلف. إنه طابع مختلف تماماً - إضاءة خافتة، جلسات مريحة، وإقامات أطول. معظم شركات الخيام لا تفهم هذا. نحن نفعل.',
+                mainBody: 'لقد تعاونا مع فنادق في نخلة جميرا وJBR وDIFC لأكثر من عقدين في عروض السحور الخاصة بهم. المتطلبات محددة: أثاث صالة حديث بدلاً من الجلسات التقليدية، وسائط سمعية وبصرية متكاملة للموسيقى المحيطة، وتهوية مناسبة لمناطق الشيشة المسموح بها (متوافقة مع الدفاع المدني). أنظمة إضاءة ذكية يمكنها تغيير الأجواء طوال الليل. اعتبارات صوتية لأن جيرانك موجودون. هذه ليست خيمة نهاري بضوء خافت - إنها مصممة خصيصاً لثقافة رمضان الليلية في دبي.',
                 features: [
-                    { title: 'تجهيز صالة', body: 'أرائك مخملية، طاولات منخفضة، جمالية عربية معاصرة. مصممة لضيوف يبقون حتى الفجر.' },
-                    { title: 'تهوية شيشة', body: 'أنظمة استخراج دخان معتمدة. تدفق هواء نقي حتى بالسعة الكاملة. امتثال كامل للدفاع المدني.' },
-                    { title: 'أجواء ذكية', body: 'إضاءة RGB قابلة للبرمجة، أنظمة صوت متكاملة، مناطق قابلة للتعتيم. الأجواء تتغير مع الليل.' }
+                    { title: 'تكوين الصالة', body: 'أرائك مخملية، طاولات منخفضة، جمالية عربية معاصرة. مصممة للضيوف الذين يبقون حتى الفجر.' },
+                    { title: 'تهوية الشيشة', body: 'أنظمة استخراج دخان معتمدة. تدفق هواء نقي حتى في أقصى سعة. امتثال كامل للدفاع المدني.' },
+                    { title: 'أجواء ذكية', body: 'إضاءة RGB قابلة للبرمجة، أنظمة صوت مدمجة، مناطق قابلة للتعتيم. الحالة المزاجية تتغير مع الليل.' }
                 ],
                 cta: 'صمم مساحة سحورك'
+            },
+            'sadu-tent-rental': {
+                title: 'تأجير خيام سدو وتراثية أصيلة دبي',
+                subtitle: 'احتفل بالثقافة الإماراتية مع هياكل تراثية فاخرة',
+                intro: 'تواصل مع جذور الإمارات من خلال خيامنا الأصيلة بطابع السدو. مثالية للفعاليات الثقافية، تجهيزات المجلس الخاص، أو التجمعات الرمضانية ذات الطابع التراثي في دبي.',
+                mainBody: 'خيام السدو لدينا هي أكثر من مجرد ملاجئ مؤقتة؛ إنها تجارب ثقافية غامرة. نحن نجمع بين أنماط نسيج البدو التقليدية (السدو) والخيام الهيكلية الحديثة عالية الأداء. يتيح لك هذا الاستمتاع بالمظهر والمظهر الأصيل للمجلس التراثي مع الاستفادة من التحكم الحديث في المناخ والسلامة الهيكلية. لمدة 30 عاماً، كنا الشريك المفضل في دبي للتجهيزات التراثية المتميزة التي تلقى صدى لدى المواطنين والضيوف الدوليين على حد سواء.',
+                features: [
+                    { title: 'أنماط سدو حقيقية', body: 'أنماط نسيج أصيلة عالية الجودة تمثل التراث الفني الحقيقي لثقافة البدو في الإمارات.' },
+                    { title: 'جماليات التراث', body: 'لمسات خشبية منسقة بعناية، جلسات أرضية تقليدية، ومقتنيات ثقافية تكمل التجربة الأصيلة.' },
+                    { title: 'استقرار حديث', body: 'مظهر تقليدي مدعوم بهياكل حديثة هندسية تتحمل أحمال الرياح في الإمارات وتحافظ على تبريد مثالي.' }
+                ],
+                cta: 'استفسر عن خيام السدو'
             }
         },
         'abu-dhabi': {
@@ -850,6 +886,18 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'تهوية ADCD', body: 'مناطق شيشة بأنظمة استخراج معتمدة. امتثال كامل، بدون اختصارات.' }
                 ],
                 cta: 'صمم صالة سحورك'
+            },
+            'sadu-tent-rental': {
+                title: 'خيام سدو وتراثية أصيلة أبوظبي',
+                subtitle: 'هياكل بدوية تقليدية لأرقى الفعاليات في العاصمة',
+                intro: 'تتطلب أبوظبي الأصالة. تقدم خيامنا بطابع السدو الروح الحقيقية للتراث العربي، وهي مصممة وفقاً لأعلى معايير السلامة والجودة في العاصمة.',
+                mainBody: 'على مدى ثلاثة عقود، قدمنا بنية تحتية ذات طابع تراثي للوزارات الحكومية والقصور الخاصة والمنتجعات الفاخرة في أبوظبي. غالباً ما تستخدم خيمة السدو في العاصمة للتجمعات الثقافية رفيعة المستوى حيث يجب أن تكون الجماليات خالية من العيوب. نحن نستخدم أقمشة حقيقية بمزيج الصوف مع أنماط بدوية أصيلة، متوازنة مع أرضيات حديثة وتحكم في المناخ بمستوى صناعي. سواء كان مجلساً لكبار الشخصيات على الكورنيش أو معرضاً ثقافياً في جزيرة السعديات، فإن تجهيزات السدو لدينا تعكس الكرامة والتقاليد التي تتطلبها أبوظبي.',
+                features: [
+                    { title: 'تخطيطات جاهزة للبروتوكول', body: 'مظاهر تراثية تقليدية مدمجة مع ترتيبات جلوس لكبار الشخصيات ومداخل منفصلة للشخصيات المرموقة.' },
+                    { title: 'هندسة تراثية', body: 'مصممة خصيصاً لتحمل الظروف الساحلية للعاصمة مع الحفاظ على مظهر بدوي ريفي أصيل.' },
+                    { title: 'تجهيز ثقافي شامل', body: 'يشمل محطات قهوة عربية أصيلة، وتجهيزات بخور تقليدية، ومقتنيات ثقافية منسقة.' }
+                ],
+                cta: 'استفسر عن خيام السدو'
             }
         },
         'sharjah': {

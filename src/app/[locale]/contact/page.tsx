@@ -38,7 +38,7 @@ function ContactContent() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/Tent Now/corporate.jpg"
+                        src="/images/tent-now/corporate.jpg"
                         alt="Contact Tent Now"
                         fill
                         priority

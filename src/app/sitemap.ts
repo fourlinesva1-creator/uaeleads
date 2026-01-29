@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'majlis-tent-rental',
         'iftar-tent-rental',
         'suhoor-tent-rental',
+        'sadu-tent-rental',
     ];
 
     const mainPages = [
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about',
         '/contact',
         '/faq',
+        '/request-quote',
     ];
 
     const sitemapEntries: MetadataRoute.Sitemap = [];

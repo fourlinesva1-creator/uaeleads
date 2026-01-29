@@ -36,7 +36,7 @@ function AboutContent() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/Tent Now/hotel.jpg"
+                        src="/images/tent-now/hotel.jpg"
                         alt="Tent Now Heritage"
                         fill
                         priority

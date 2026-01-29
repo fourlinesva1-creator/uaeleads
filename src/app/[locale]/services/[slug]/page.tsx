@@ -24,14 +24,14 @@ const serviceMap: Record<string, string> = {
 };
 
 const imageMap: Record<string, string> = {
-    'hotel-majlis': '/images/Tent Now/hotel.jpg',
-    'corporate-events': '/images/Tent Now/corporate.jpg',
-    'home-majlis': '/images/Tent Now/home majis.jpg',
-    'iftar-tent-rental': '/images/Tent Now/iftar tents.jpg',
-    'suhoor-tent-rental': '/images/Tent Now/home majis.jpg',
-    'sadu-tent-rental': '/images/Tent Now/sadu tents.jpg',
-    'furniture-rental': '/images/Tent Now/furniture.jpg',
-    'decor-lighting': '/images/Tent Now/lighting and decor.jpg'
+    'hotel-majlis': '/images/tent-now/hotel.jpg',
+    'corporate-events': '/images/tent-now/corporate.jpg',
+    'home-majlis': '/images/tent-now/home-majlis.jpg',
+    'iftar-tent-rental': '/images/tent-now/iftar-tents.jpg',
+    'suhoor-tent-rental': '/images/tent-now/home-majlis.jpg',
+    'sadu-tent-rental': '/images/tent-now/sadu-tents.jpg',
+    'furniture-rental': '/images/tent-now/furniture.jpg',
+    'decor-lighting': '/images/tent-now/lighting-and-decor.jpg'
 };
 
 export async function generateStaticParams() {

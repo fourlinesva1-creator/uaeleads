@@ -12,7 +12,7 @@ type Props = {
 };
 
 const cities = ['dubai', 'abu-dhabi', 'sharjah', 'ajman', 'ras-al-khaimah', 'fujairah', 'umm-al-quwain'];
-const slugs = ['ramadan-tent-rental', 'majlis-tent-rental', 'iftar-tent-rental', 'suhoor-tent-rental'];
+const slugs = ['ramadan-tent-rental', 'majlis-tent-rental', 'iftar-tent-rental', 'suhoor-tent-rental', 'sadu-tent-rental'];
 
 export async function generateStaticParams() {
     const params: { locale: string; city: string; slug: string }[] = [];

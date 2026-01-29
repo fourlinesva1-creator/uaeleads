@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Background Image with Zoom Effect */}
       <div className="absolute inset-0 z-0 group">
         <Image
-          src="/images/Tent Now/homepage hero section.jpg"
+          src="/images/tent-now/homepage-hero.jpg"
           alt="Luxury Ramadan Majlis Setup"
           fill
           priority
