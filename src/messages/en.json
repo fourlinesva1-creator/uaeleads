@@ -16,6 +16,7 @@
     "locations": "Locations",
     "portfolio": "Portfolio",
     "about": "About",
+    "blog": "Blog",
     "contact": "Contact",
     "getQuote": "Inquire Now",
     "experience": "Ramadan Specialists"
@@ -470,5 +471,10 @@
       "body": "Consult with the region's veterans to bring your vision to life. From conceptual design to flawless execution, we are your trusted partner for Ramadan 2026.",
       "btn": "Inquire About Your Project"
     }
+  },
+  "blog": {
+    "title": "Ramadan Insights",
+    "subtitle": "Expert advice, event guides, and design inspiration for your Ramadan 2026 gatherings.",
+    "readMore": "Read Article"
   }
 }

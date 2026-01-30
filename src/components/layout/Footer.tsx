@@ -136,6 +136,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  {tNav('blog')}
+                </Link>
+              </li>
+              <li>
                 <Link href="/portfolio" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
                   {tNav('portfolio')}
                 </Link>
