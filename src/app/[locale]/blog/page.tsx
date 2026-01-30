@@ -2,29 +2,41 @@ import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 
 export const metadata: Metadata = {
     title: 'Ramadan 2026 Insights & Event Guide | Tent Now',
     description: 'Stay updated with the latest Ramadan 2026 events, tent rentals, and majlis design trends in Dubai and across the UAE.',
 };
 
-const blogPosts = [
-    {
-        slug: 'upcoming-ramadan-events-dubai-2026',
-        title: 'Ramadan 2026 in Dubai: The Definitive "Local\'s Guide"',
-        excerpt: 'Your insider guide to Hai Ramadan at Expo City, Karama Food Festival, and the best Iftar tents for 2026.',
-        image: '/images/blog/ramadan-dubai-skyline-2026.png',
-        date: 'February 1, 2026',
-        readTime: '5 min read',
-        category: 'Events'
-    }
-];
-
 export default function BlogPage() {
     const t = useTranslations('blog');
+    const locale = useLocale();
+
+    const blogPosts = locale === 'ar' ? [
+        {
+            slug: 'upcoming-ramadan-events-dubai-2026',
+            title: 'رمضان 2026 في دبي: دليلك المحلي الشامل',
+            excerpt: 'دليلك الداخلي لفعاليات حي رمضان في مدينة إكسبو، ومهرجان الكرامة للمأكولات، وأفضل خيام الإفطار لعام 2026.',
+            image: '/images/blog/ramadan-dubai-skyline-2026.png',
+            date: '1 فبراير 2026',
+            readTime: '5 دقائق قراءة',
+            category: 'فعاليات'
+        }
+    ] : [
+        {
+            slug: 'upcoming-ramadan-events-dubai-2026',
+            title: 'Ramadan 2026 in Dubai: The Definitive "Local\'s Guide"',
+            excerpt: 'Your insider guide to Hai Ramadan at Expo City, Karama Food Festival, and the best Iftar tents for 2026.',
+            image: '/images/blog/ramadan-dubai-skyline-2026.png',
+            date: 'February 1, 2026',
+            readTime: '5 min read',
+            category: 'Events'
+        }
+    ];
 
     return (
-        <main className="min-h-screen bg-bg-dark">
+        <main className="min-h-screen bg-bg-dark" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
             {/* Hero Section */}
             <section className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/images/pattern-dark.png')] opacity-10" />
@@ -68,7 +80,7 @@ export default function BlogPage() {
                                         {post.excerpt}
                                     </p>
                                     <span className="inline-flex items-center gap-2 text-gold text-sm font-bold uppercase tracking-wider group-hover:gap-3 transition-all">
-                                        {t('readMore')} <span className="text-lg">→</span>
+                                        {t('readMore')} <span className={`text-lg ${locale === 'ar' ? 'rotate-180' : ''}`}>→</span>
                                     </span>
                                 </div>
                             </Link>
