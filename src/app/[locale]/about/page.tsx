@@ -67,6 +67,9 @@ function AboutContent() {
                             <p className="text-lg text-[#9da6b9] leading-relaxed">
                                 {t('ourStory.ethos')}
                             </p>
+                            <p className="text-lg text-[#9da6b9] leading-relaxed mt-6">
+                                {t('ourStory.subsidiaryPre')} <a href="https://almumtaztents.com/" className="text-[#D4AF37] hover:text-white transition-colors" target="_blank">{t('ourStory.mumtazGroup')}</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
