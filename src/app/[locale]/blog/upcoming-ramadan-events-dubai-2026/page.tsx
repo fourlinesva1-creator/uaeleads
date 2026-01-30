@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import BlogSchema from '@/components/blog/BlogSchema';
+import ShareButtons from '@/components/blog/ShareButtons';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
     title: 'Ramadan 2026 in Dubai: The Definitive "Local\'s Guide"',
@@ -12,12 +15,31 @@ export const metadata: Metadata = {
         type: 'article',
         publishedTime: '2026-02-01T08:00:00.000Z',
         authors: ['Tent Now'],
+        section: 'Guide',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Ramadan 2026 in Dubai: The Definitive "Local\'s Guide"',
+        description: 'Discover the best upcoming Ramadan events in Dubai for 2026.',
+        images: ['/images/blog/ramadan-dubai-skyline-2026.png'],
     },
 };
 
 export default function ArticlePage() {
+    const articleUrl = `https://tentnow.com/blog/upcoming-ramadan-events-dubai-2026`;
+    const articleTitle = 'Ramadan 2026 in Dubai: The Definitive "Local\'s Guide"';
+
     return (
         <main className="min-h-screen bg-bg-dark text-white font-sans">
+            <BlogSchema
+                title='Ramadan 2026 in Dubai: The Definitive "Local\' s Guide"'
+            description='Discover the best upcoming Ramadan events in Dubai for 2026, from Hai Ramadan at Expo City to the secret street food festivals in Karama.'
+            image='/images/blog/ramadan-dubai-skyline-2026.png'
+            datePublished='2026-02-01T08:00:00.000Z'
+            author='Tent Now'
+            url={articleUrl}
+      />
+
             <article className="max-w-4xl mx-auto px-4 py-12 md:py-20">
                 {/* Header */}
                 <header className="mb-12 text-center">
@@ -31,17 +53,30 @@ export default function ArticlePage() {
                         />
                     </div>
                     <div className="flex items-center justify-center gap-4 text-sm text-gold font-bold uppercase tracking-wider mb-4">
+                        <span className="bg-gold/10 px-3 py-1 rounded-full text-gold border border-gold/20">Guide</span>
                         <span>February 1, 2026</span>
                         <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                        <span>Events</span>
+                        <span>5 min read</span>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-transparent bg-clip-text bg-gradient-to-r from-gold via-white to-gold mb-6 leading-tight">
                         Ramadan 2026 in Dubai: The Definitive "Local’s Guide" to What’s Actually Happening
                     </h1>
-                    <p className="text-xl text-text-muted italic max-w-2xl mx-auto">
-                        By Your Dubai Ramadan Insider
-                    </p>
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold">
+                            <Image src="/images/tent-now-logo.gif" alt="Tent Now" fill className="object-cover" />
+                        </div>
+                        <div className="text-left">
+                            <p className="text-white font-bold text-sm">Tent Now Team</p>
+                            <p className="text-text-muted text-xs">Ramadan Specialists</p>
+                        </div>
+                    </div>
                 </header>
+
+                {/* Share Buttons */}
+                <div className="mb-12 border-y border-border py-4 flex justify-between items-center">
+                    <span className="text-text-muted text-sm uppercase tracking-widest">Share this guide:</span>
+                    <ShareButtons url={articleUrl} title={articleTitle} />
+                </div>
 
                 {/* Content Body */}
                 <div className="prose prose-invert prose-lg max-w-none prose-headings:font-display prose-headings:text-gold prose-a:text-gold prose-strong:text-white">
@@ -153,9 +188,30 @@ export default function ArticlePage() {
                         </div>
                     </div>
 
-                    <p className="text-center italic text-text-muted mt-12">
+                    <p className="text-center italic text-text-muted mt-12 mb-12">
                         <strong>Ramadan 2026 is starting mid-February.</strong> The good venues book out, and honestly, so do our tents. Plan early, eat well, and Ramadan Kareem!
                     </p>
+
+                    {/* Comment Section Placeholder (Using Giscus or similar in future, currently static for MVP) */}
+                    <div className="border-t border-border pt-12">
+                        <h3 className="text-2xl font-display text-white mb-6">Comments</h3>
+                        <div className="bg-bg-elevated p-6 rounded-xl border border-border">
+                            <p className="text-text-muted text-sm mb-4">Join the discussion about Ramadan 2026 events!</p>
+                            <div className="flex gap-4">
+                                <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold font-bold">G</div>
+                                <div className="flex-1">
+                                    <textarea
+                                        className="w-full bg-bg-dark border border-border rounded-lg p-3 text-sm text-white focus:outline-none focus:border-gold transition-colors"
+                                        rows={3}
+                                        placeholder="Share your thoughts or ask a question..."
+                                    ></textarea>
+                                    <button className="mt-2 text-xs font-bold uppercase tracking-widest text-gold hover:text-white transition-colors">
+                                        Post Comment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </article>
