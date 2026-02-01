@@ -85,6 +85,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 priority: 0.7,
             });
         });
+
+        // Add blog pages
+        const blogPosts = [
+            'upcoming-ramadan-events-dubai-2026',
+            'ramadan-calendar-uae-2026'
+        ];
+
+        // Blog index page
+        sitemapEntries.push({
+            url: `${baseUrl}/${locale}/blog`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.7,
+        });
+
+        // Individual blog posts
+        blogPosts.forEach((post) => {
+            sitemapEntries.push({
+                url: `${baseUrl}/${locale}/blog/${post}`,
+                lastModified: new Date(),
+                changeFrequency: 'monthly',
+                priority: 0.6,
+            });
+        });
     });
 
     return sitemapEntries;
