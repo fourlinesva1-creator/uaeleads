@@ -18,7 +18,7 @@ export default function BlogPage() {
             slug: 'ramadan-calendar-uae-2026',
             title: 'تقويم رمضان الإمارات 2026: دليل شامل لمواقيت الصلاة والإفطار',
             excerpt: 'تقويم رمضان 2026 الكامل مع التواريخ المؤكدة، مواقيت الإفطار والسحور، وجداول الصلاة لدبي وأبوظبي والشارقة.',
-            image: '/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg',
+            image: '/images/blog/Dubai-Calendar-2026-Ramadan.jpg',
             date: '2 فبراير 2026',
             readTime: '8 دقائق قراءة',
             category: 'دليل'
@@ -37,7 +37,7 @@ export default function BlogPage() {
             slug: 'ramadan-calendar-uae-2026',
             title: 'Ramadan Calendar UAE 2026: Complete Guide to Prayer Times & Iftar Schedule',
             excerpt: 'Complete Ramadan 2026 calendar with confirmed dates, daily Iftar & Suhoor timings, and prayer schedules for Dubai, Abu Dhabi, and Sharjah.',
-            image: '/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg',
+            image: '/images/blog/Dubai-Calendar-2026-Ramadan.jpg',
             date: 'February 2, 2026',
             readTime: '8 min read',
             category: 'Guide'

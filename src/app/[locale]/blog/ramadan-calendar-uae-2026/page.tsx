@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg', width: 1200, height: 630 }],
+            images: [{ url: '/images/blog/Dubai-Calendar-2026-Ramadan.jpg', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-02-02T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg'],
+            images: ['/images/blog/Dubai-Calendar-2026-Ramadan.jpg'],
         },
         alternates: {
             languages: {
@@ -58,7 +58,7 @@ export default function RamadanCalendarPage() {
                 description={locale === 'ar'
                     ? 'تقويم رمضان 2026 الكامل للإمارات مع التواريخ المؤكدة، مواقيت الإفطار والسحور، وجداول الصلاة لدبي وأبوظبي والشارقة.'
                     : 'Complete Ramadan 2026 calendar for UAE with confirmed dates, daily Iftar & Suhoor timings, and prayer schedules for Dubai, Abu Dhabi, and Sharjah.'}
-                image='/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg'
+                image='/images/blog/Dubai-Calendar-2026-Ramadan.jpg'
                 datePublished='2026-02-02T08:00:00.000Z'
                 author='Tent Now'
                 url={articleUrl}
@@ -69,7 +69,7 @@ export default function RamadanCalendarPage() {
                 <header className="mb-12 text-center">
                     <div className="relative w-full aspect-video mb-8 rounded-2xl overflow-hidden shadow-2xl border border-border">
                         <Image
-                            src="/images/tent-now/Dubai-Calendar-2026-Ramadan.jpg"
+                            src="/images/blog/Dubai-Calendar-2026-Ramadan.jpg"
                             alt={locale === 'ar' ? 'تقويم رمضان 2026 دبي' : 'Ramadan 2026 Calendar Dubai'}
                             fill
                             className="object-cover"
