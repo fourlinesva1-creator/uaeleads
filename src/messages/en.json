@@ -476,5 +476,134 @@
     "title": "Ramadan Insights",
     "subtitle": "Expert advice, event guides, and design inspiration for your Ramadan 2026 gatherings.",
     "readMore": "Read Article"
+  },
+  "RamadanCalendar": {
+    "meta": {
+      "title": "Ramadan Calendar UAE 2026 | Prayer Times, Iftar & Suhoor Schedule Dubai, Abu Dhabi",
+      "description": "Complete Ramadan 2026 calendar for UAE with confirmed dates (Feb 19 - Mar 20), daily Iftar & Suhoor timings, prayer schedules for Dubai, Abu Dhabi, Sharjah. Plan your Ramadan tent rentals & events now.",
+      "keywords": "Ramadan 2026 UAE, Ramadan calendar Dubai 2026, Iftar times UAE, Suhoor timings Dubai, prayer times Ramadan 2026, Eid al-Fitr 2026, Ramadan tent rental Dubai, Ramadan dates Abu Dhabi, Ramadan schedule Sharjah 2026"
+    },
+    "hero": {
+      "title": "Ramadan Calendar UAE 2026: Complete Guide to Prayer Times & Iftar Schedule",
+      "subtitle": "Your comprehensive guide to Ramadan 2026 across Dubai, Abu Dhabi, and Sharjah",
+      "dates": "Ramadan 2026: February 19 - March 20 | Eid al-Fitr: March 20-22"
+    },
+    "intro": {
+      "text": "Ramadan 2026 in the United Arab Emirates is expected to commence on Thursday, February 19, 2026, and conclude around Thursday, March 19, with Eid al-Fitr celebrations beginning on Friday, March 20, 2026. This blessed month brings together millions across Dubai, Abu Dhabi, Sharjah, and the Northern Emirates in spiritual reflection, fasting, and community gatherings. With approximately 13 hours of daily fasting, proper planning of Iftar and Suhoor timings becomes essential for a blessed Ramadan experience."
+    },
+    "calendar": {
+      "alt": "Ramadan 2026 Calendar Dubai - Complete prayer times and Iftar schedule for UAE",
+      "caption": "Official Ramadan 2026 Calendar showing daily prayer times, Iftar, and Suhoor schedules across UAE"
+    },
+    "dates": {
+      "heading": "Ramadan 2026 Key Dates for UAE",
+      "start": {
+        "label": "Ramadan Begins",
+        "date": "February 19, 2026",
+        "day": "Thursday (Subject to Moon Sighting)"
+      },
+      "end": {
+        "label": "Ramadan Ends",
+        "date": "March 19, 2026",
+        "day": "Thursday (29/30 Days)"
+      },
+      "eid": {
+        "label": "Eid al-Fitr",
+        "date": "March 20-22, 2026",
+        "day": "3-Day Public Holiday"
+      },
+      "note": {
+        "title": "Important Note:",
+        "text": "Official Ramadan start date is subject to the sighting of the crescent moon by the UAE Moon Sighting Committee. The exact date may vary by one day."
+      }
+    },
+    "prayer": {
+      "heading": "Iftar & Suhoor Timings for Ramadan 2026",
+      "suhoor": {
+        "title": "Suhoor (Pre-Dawn Meal)",
+        "fajr": "Fajr Prayer",
+        "note": "Suhoor ends at Fajr prayer time. Times vary slightly across emirates and advance earlier as Ramadan progresses."
+      },
+      "iftar": {
+        "title": "Iftar (Breaking Fast)",
+        "maghrib": "Maghrib Prayer",
+        "note": "Iftar begins at Maghrib prayer time. Ramadan cannons fire to signal the exact moment across UAE cities."
+      },
+      "duration": {
+        "title": "Fasting Duration",
+        "text": "Average fasting hours during Ramadan 2026: approximately 13 hours and 2 minutes daily"
+      }
+    },
+    "traditions": {
+      "heading": "Ramadan Traditions in the UAE",
+      "iftar": {
+        "title": "Community Iftar Gatherings",
+        "text": "Breaking fast together is central to UAE Ramadan culture. From luxury hotel buffets to community tents and family Majlis, Iftar brings people together in the spirit of hospitality and generosity."
+      },
+      "prayers": {
+        "title": "Taraweeh & Night Prayers",
+        "text": "Mosques across UAE host special Taraweeh prayers after Isha throughout Ramadan. The Sheikh Zayed Grand Mosque in Abu Dhabi offers a particularly moving spiritual experience."
+      },
+      "charity": {
+        "title": "Charitable Giving & Zakat",
+        "text": "Ramadan emphasizes generosity. Public Iftar tents, corporate donation programs, and Zakat distribution are widespread across Dubai, Abu Dhabi, and all emirates."
+      },
+      "family": {
+        "title": "Family & Cultural Events",
+        "text": "From Hag Al Laila celebrations before Ramadan to nightly family Majlis gatherings and Suhoor get-togethers, Ramadan in UAE is rich with cultural traditions."
+      }
+    },
+    "tents": {
+      "heading": "Plan Your Ramadan Tent Rental for 2026",
+      "intro": "Whether hosting a corporate Iftar for 500 employees, a family Majlis for 50 guests, or a community Suhoor gathering, professional tent rental ensures comfort, compliance, and authenticity.",
+      "types": {
+        "corporate": "Corporate Iftar Tents for businesses and ministries",
+        "family": "Private Majlis & Family Ramadan Tents",
+        "events": "Hotel & Resort Ramadan Event Extensions",
+        "private": "Sadu Heritage Tents for Cultural Events"
+      },
+      "cta": "Request Free Ramadan Tent Quote",
+      "services": "View All Ramadan Services"
+    },
+    "cities": {
+      "heading": "Ramadan Across UAE Cities",
+      "dubai": {
+        "name": "Dubai Ramadan 2026",
+        "text": "Dubai's Ramadan scene features iconic tent experiences at Atlantis, Madinat Jumeirah, and Armani Hotel, alongside thousands of private Majlis setups across Jumeirah, DIFC, and Dubai Marina."
+      },
+      "abuDhabi": {
+        "name": "Abu Dhabi Ramadan 2026",
+        "text": "The capital offers refined Ramadan experiences at Emirates Palace, Sheikh Zayed Grand Mosque community Iftars, and government institution gatherings with strict protocol standards."
+      },
+      "sharjah": {
+        "name": "Sharjah Ramadan 2026",
+        "text": "Sharjah's culturally rich Ramadan includes Al Majaz Waterfront events, University City community Iftars, and traditional family-focused celebrations across residential areas."
+      },
+      "learnMore": "View City-Specific Services"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "moonSighting": {
+        "question": "How is the Ramadan start date confirmed in UAE?",
+        "answer": "The UAE Moon Sighting Committee, composed of religious scholars and astronomers, meets on the 29th of Sha'ban to sight the crescent moon. If sighted, Ramadan begins the next day. If not, Sha'ban completes 30 days, and Ramadan starts the following day. The official announcement is made after sunset on the sighting day."
+      },
+      "workHours": {
+        "question": "What are the work hours during Ramadan in UAE?",
+        "answer": "Both public and private sector working hours are reduced during Ramadan. Typically, work hours are shortened by 2 hours per day. Private sector companies often operate from 9 AM to 3 PM, while government offices may have different schedules. This applies to all employees, whether fasting or not."
+      },
+      "tourists": {
+        "question": "What should tourists and non-fasting residents know?",
+        "answer": "While UAE is tolerant and welcoming, respect for those fasting is expected. Avoid eating, drinking, or smoking in public during fasting hours (sunrise to sunset). Most malls and hotels have designated areas for dining. Dress modestly (shoulders and knees covered), keep music at respectful levels, and note that many restaurants are closed until Iftar time."
+      },
+      "booking": {
+        "question": "When should I book Ramadan tent rentals for 2026?",
+        "answer": "Popular dates and premium setups book 2-3 months in advance. For corporate events, government Iftars, or large family gatherings requiring permits and customization, we recommend booking by December 2025 or early January 2026. Last-minute bookings (February) are possible but have limited availability and options."
+      }
+    },
+    "conclusion": {
+      "heading": "Make Ramadan 2026 Unforgettable",
+      "text": "With proper planning and the right infrastructure, Ramadan 2026 can be your most memorable yet. From intimate family Majlis to grand corporate Iftar tents, Tent Now brings 30 years of UAE expertise to your doorstep.",
+      "cta": "Get Your Free Consultation"
+    }
   }
 }
