@@ -17,13 +17,13 @@ const audienceIcons = [Home, Landmark, Building2];
 
 // City background images mapping
 const cityImages: Record<string, string> = {
-    'dubai': '/images/tent-now/dubai.jpg',
-    'abu-dhabi': '/images/tent-now/abu-dhabi.jpg',
-    'sharjah': '/images/tent-now/sharjah.jpg',
-    'ajman': '/images/tent-now/other-cities.jpg',
-    'ras-al-khaimah': '/images/tent-now/ras-al-khaimah.jpg',
-    'fujairah': '/images/tent-now/other-cities.jpg',
-    'umm-al-quwain': '/images/tent-now/other-cities.jpg',
+    'dubai': '/images/locations/dubai.jpg',
+    'abu-dhabi': '/images/locations/abu-dhabi.jpg',
+    'sharjah': '/images/locations/sharjah.jpg',
+    'ajman': '/images/locations/other-cities.jpg',
+    'ras-al-khaimah': '/images/locations/ras-al-khaimah.jpg',
+    'fujairah': '/images/locations/other-cities.jpg',
+    'umm-al-quwain': '/images/locations/other-cities.jpg',
 };
 
 export default function CityOverviewUI({ city, content }: Props) {
