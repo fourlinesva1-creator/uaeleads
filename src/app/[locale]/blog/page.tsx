@@ -4,10 +4,33 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 
-export const metadata: Metadata = {
-    title: 'Ramadan 2026 Insights & Event Guide | Tent Now',
-    description: 'Stay updated with the latest Ramadan 2026 events, tent rentals, and majlis design trends in Dubai and across the UAE.',
+type Props = {
+    params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+
+    const title = locale === 'ar'
+        ? 'رؤى رمضان 2026 ودليل الفعاليات | Tent Now'
+        : 'Ramadan 2026 Insights & Event Guide | Tent Now';
+
+    const description = locale === 'ar'
+        ? 'ابق على اطلاع بأحدث فعاليات رمضان 2026، وتأجير الخيام، واتجاهات تصميم المجالس في دبي وجميع أنحاء الإمارات.'
+        : 'Stay updated with the latest Ramadan 2026 events, tent rentals, and majlis design trends in Dubai and across the UAE.';
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: `https://tentnow.ae/${locale}/blog`,
+            languages: {
+                'en': 'https://tentnow.ae/en/blog',
+                'ar': 'https://tentnow.ae/ar/blog',
+            },
+        },
+    };
+}
 
 export default function BlogPage() {
     const t = useTranslations('blog');

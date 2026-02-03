@@ -18,6 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: t('intro'),
         alternates: {
             canonical: `https://tentnow.ae/${locale}/faq`,
+            languages: {
+                'en': 'https://tentnow.ae/en/faq',
+                'ar': 'https://tentnow.ae/ar/faq',
+            },
         },
     };
 }

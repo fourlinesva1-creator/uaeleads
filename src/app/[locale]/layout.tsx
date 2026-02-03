@@ -53,6 +53,7 @@ export async function generateMetadata({
         ? '30 عاماً من الخبرة في توفير خيام رمضان الفاخرة وتجهيزات الإفطار والمجالس في جميع أنحاء الإمارات. حلول اقتصادية ومتوافقة وأصيلة لرمضان 2026. احصل على عرض سعر مجاني اليوم.'
         : '30 years of expertise in premium Ramadan tents, Iftar setups, and Majlis for rent across UAE. Cost-effective, compliant, and authentic solutions for Ramadan 2026. Get a free quote today.',
     keywords: [
+      // English keywords
       'Ramadan tent rental Dubai',
       'Majlis rental UAE',
       'Iftar tent Dubai',
@@ -60,6 +61,17 @@ export async function generateMetadata({
       'Ramadan tent supplier',
       'Majlis for rent Dubai',
       'Suhoor tent rental',
+      'tent rental sharjah',
+      'ramadan rental tents',
+      'ramadan tents 2026',
+      'majlis tents',
+      // Arabic keywords - from Search Console high impressions
+      'خيام فعاليات في دبي',
+      'تاجير خيام في ابوظبي',
+      'تاجير خيام في دبي',
+      'خيام للإيجار في دبي',
+      'خيام للإيجار في الشارقة',
+      'خيام الفعاليات في دبي',
       'تأجير خيام رمضان دبي',
       'مجالس رمضان الإمارات',
       'خيمة إفطار دبي',

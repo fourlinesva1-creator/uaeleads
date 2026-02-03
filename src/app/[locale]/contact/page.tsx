@@ -18,6 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE.',
         alternates: {
             canonical: `https://tentnow.ae/${locale}/contact`,
+            languages: {
+                'en': 'https://tentnow.ae/en/contact',
+                'ar': 'https://tentnow.ae/ar/contact',
+            },
         },
     };
 }
