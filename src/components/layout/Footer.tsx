@@ -22,6 +22,12 @@ const services = [
   { key: 'decor', href: '/services/decor-lighting' },
 ];
 
+const iftarPages = [
+  { href: '/services/ramadan-iftar-tent-setup', labelEn: 'Iftar Tent Setup UAE', labelAr: 'تجهيز خيام الإفطار' },
+  { href: '/services/iftar-tent-rental-abu-dhabi', labelEn: 'Iftar Tent Abu Dhabi', labelAr: 'خيام الإفطار أبوظبي' },
+  { href: '/services/iftar-tent-rental-sharjah', labelEn: 'Iftar Tent Sharjah', labelAr: 'خيام الإفطار الشارقة' },
+];
+
 export default function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
@@ -117,6 +123,21 @@ export default function Footer() {
                     className="text-text-muted hover:text-gold transition-colors text-sm"
                   >
                     {tServices(`${item.key}.title`)}
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-2 border-t border-border/50">
+                <span className="text-gold text-xs font-bold uppercase tracking-widest">
+                  {locale === 'ar' ? 'خيام الإفطار' : 'Iftar Tents'}
+                </span>
+              </li>
+              {iftarPages.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-text-muted hover:text-gold transition-colors text-sm"
+                  >
+                    {locale === 'ar' ? item.labelAr : item.labelEn}
                   </Link>
                 </li>
               ))}
