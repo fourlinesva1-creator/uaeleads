@@ -18,11 +18,101 @@ import {
     Users,
     Star,
     Phone,
-    CheckCircle2,
     ArrowRight,
 } from 'lucide-react';
 
-const content = {
+// ─── City-specific content ─────────────────────────────────────────────────────
+
+interface CityContent {
+    en: PageContent;
+    ar: PageContent;
+}
+
+interface PageContent {
+    badge: string;
+    h1: string;
+    h1Accent: string;
+    subtitle: string;
+    intro: string;
+    featuresLabel: string;
+    featuresTitle: string;
+    featuresSubtitle: string;
+    features: { icon: string; title: string; body: string }[];
+    contentTitle: string;
+    contentBody1: string;
+    contentBody2: string;
+    contentBody3: string;
+    audienceTitle: string;
+    audiences: { title: string; body: string }[];
+    statsLabel: string;
+    stats: { value: string; label: string }[];
+    processTitle: string;
+    processSteps: { step: string; title: string; body: string }[];
+    faqTitle: string;
+    faqs: { q: string; a: string }[];
+    ctaTitle: string;
+    ctaBody: string;
+    ctaButton: string;
+    ctaWhatsapp: string;
+    ctaNote: string;
+    breadcrumbServices: string;
+    breadcrumbPage: string;
+}
+
+// Shared features used across all city pages
+const sharedFeaturesEn = [
+    { icon: 'snowflake', title: 'Air-Conditioned Tents', body: 'Industrial-grade climate control systems maintain comfortable temperatures throughout the evening, even during the warmest Ramadan nights in the UAE.' },
+    { icon: 'doorOpen', title: 'Security Gates & Access Control', body: 'Professional entry and exit management with security screening, VIP access lanes, and crowd control barriers for safe, orderly guest flow.' },
+    { icon: 'shieldCheck', title: 'Safety Control Systems', body: 'Comprehensive safety infrastructure including emergency exits, first-aid stations, fire extinguishers, and 24/7 on-site safety personnel.' },
+    { icon: 'flame', title: 'Fire-Repellent Tent Fabric', body: 'All tent materials are certified fire-retardant and comply with UAE Civil Defense codes. Every installation includes a fire safety certificate.' },
+    { icon: 'utensils', title: 'Catering-Ready Interiors', body: 'Pre-wired for buffet stations, serving areas, and commercial kitchen connections. Integrated waste management and hygiene facilities.' },
+    { icon: 'armchair', title: 'Luxury Furniture & Carpeting', body: 'Premium Arabic-style seating, majlis floor cushions, dining tables, and plush carpeting — all coordinated with your chosen theme and colour palette.' },
+    { icon: 'lightbulb', title: 'Ambient Lighting & Decor', body: 'Atmospheric Ramadan lighting with traditional lantern accents, chandelier installations, and customizable mood lighting for an authentic ambiance.' },
+    { icon: 'clock', title: '24/7 Support & Maintenance', body: 'Round-the-clock technical support throughout the entire Ramadan season. On-call maintenance teams ensure zero downtime for your Iftar events.' },
+];
+
+const sharedFeaturesAr = [
+    { icon: 'snowflake', title: 'خيام مكيفة الهواء', body: 'أنظمة تكييف صناعية تحافظ على درجات حرارة مريحة طوال المساء، حتى في أكثر ليالي رمضان حرارة في الإمارات.' },
+    { icon: 'doorOpen', title: 'بوابات أمنية ونظام دخول', body: 'إدارة احترافية للدخول والخروج مع فحص أمني، ممرات VIP، وحواجز تنظيم الحشود لتدفق آمن ومنظم للضيوف.' },
+    { icon: 'shieldCheck', title: 'أنظمة تحكم بالسلامة', body: 'بنية تحتية شاملة للسلامة تشمل مخارج الطوارئ، محطات الإسعافات الأولية، طفايات الحريق، وفريق سلامة متواجد على مدار الساعة.' },
+    { icon: 'flame', title: 'قماش خيام مقاوم للحريق', body: 'جميع مواد الخيام معتمدة ومقاومة للحريق وتتوافق مع معايير الدفاع المدني الإماراتي. كل تركيب يتضمن شهادة سلامة من الحريق.' },
+    { icon: 'utensils', title: 'تصميم داخلي جاهز للتقديم', body: 'توصيلات مسبقة لمحطات البوفيه ومناطق التقديم والمطابخ التجارية. مرافق إدارة النفايات والنظافة المتكاملة.' },
+    { icon: 'armchair', title: 'أثاث فاخر وسجاد', body: 'جلسات عربية فاخرة، وسائد مجلس أرضية، طاولات طعام، وسجاد فخم — كلها منسقة مع الثيم واللوحة اللونية المختارة.' },
+    { icon: 'lightbulb', title: 'إضاءة وديكور رمضاني', body: 'إضاءة رمضانية ساحرة مع لمسات فوانيس تقليدية، تركيبات ثريات، وإضاءة مزاجية قابلة للتخصيص لأجواء أصيلة.' },
+    { icon: 'clock', title: 'دعم وصيانة على مدار الساعة', body: 'دعم فني على مدار الساعة طوال موسم رمضان بالكامل. فرق صيانة تحت الطلب تضمن عدم توقف فعاليات الإفطار.' },
+];
+
+const sharedProcessEn = [
+    { step: '01', title: 'Consultation', body: 'Share your vision, guest count, and venue details. Our team visits the site within 24 hours for a free assessment.' },
+    { step: '02', title: 'Design & Quote', body: 'Receive a detailed 3D layout, itemized quote, and timeline. We handle all municipality permits and Civil Defense approvals.' },
+    { step: '03', title: 'Installation', body: 'Our experienced crew installs your complete Iftar tent setup — structure, AC, furniture, lighting, and decor — before Ramadan begins.' },
+    { step: '04', title: 'Support & Removal', body: '24/7 maintenance throughout Ramadan. After Eid, we handle complete dismantling and site restoration at no extra charge.' },
+];
+
+const sharedProcessAr = [
+    { step: '٠١', title: 'الاستشارة', body: 'شاركنا رؤيتك وعدد الضيوف وتفاصيل الموقع. فريقنا يزور الموقع خلال 24 ساعة لتقييم مجاني.' },
+    { step: '٠٢', title: 'التصميم والعرض', body: 'احصل على تخطيط ثلاثي الأبعاد مفصل، عرض أسعار مفصّل، وجدول زمني. نتولى جميع تصاريح البلدية وموافقات الدفاع المدني.' },
+    { step: '٠٣', title: 'التركيب', body: 'فريقنا المحترف يركّب تجهيز خيمة الإفطار بالكامل — الهيكل، التكييف، الأثاث، الإضاءة، والديكور — قبل بداية رمضان.' },
+    { step: '٠٤', title: 'الدعم والإزالة', body: 'صيانة على مدار الساعة طوال رمضان. بعد العيد، نتولى التفكيك الكامل وإعادة الموقع بدون تكلفة إضافية.' },
+];
+
+const sharedStatsEn = [
+    { value: '30+', label: 'Years of Experience' },
+    { value: '5,000+', label: 'Tents Installed' },
+    { value: '7', label: 'Emirates Covered' },
+    { value: '24/7', label: 'Ramadan Support' },
+];
+
+const sharedStatsAr = [
+    { value: '+30', label: 'عامًا من الخبرة' },
+    { value: '+5,000', label: 'خيمة تم تركيبها' },
+    { value: '7', label: 'إمارات مغطاة' },
+    { value: '24/7', label: 'دعم رمضاني' },
+];
+
+// ─── UAE-wide (original) content ────────────────────────────────────────────────
+
+const uaeContent: CityContent = {
     en: {
         badge: '30+ Years of Iftar Excellence',
         h1: 'Ramadan Tent Setup for Iftar',
@@ -32,48 +122,7 @@ const content = {
         featuresLabel: 'Why Choose Tent Now',
         featuresTitle: 'Premium Features for Every Iftar Setup',
         featuresSubtitle: 'Every tent we install is engineered for the UAE climate and built to meet strict Civil Defense regulations — so you can focus on what matters: gathering together.',
-        features: [
-            {
-                icon: 'snowflake',
-                title: 'Air-Conditioned Tents',
-                body: 'Industrial-grade climate control systems maintain comfortable temperatures throughout the evening, even during the warmest Ramadan nights in the UAE.',
-            },
-            {
-                icon: 'doorOpen',
-                title: 'Security Gates & Access Control',
-                body: 'Professional entry and exit management with security screening, VIP access lanes, and crowd control barriers for safe, orderly guest flow.',
-            },
-            {
-                icon: 'shieldCheck',
-                title: 'Safety Control Systems',
-                body: 'Comprehensive safety infrastructure including emergency exits, first-aid stations, fire extinguishers, and 24/7 on-site safety personnel.',
-            },
-            {
-                icon: 'flame',
-                title: 'Fire-Repellent Tent Fabric',
-                body: 'All tent materials are certified fire-retardant and comply with UAE Civil Defense codes. Every installation includes a fire safety certificate.',
-            },
-            {
-                icon: 'utensils',
-                title: 'Catering-Ready Interiors',
-                body: 'Pre-wired for buffet stations, serving areas, and commercial kitchen connections. Integrated waste management and hygiene facilities.',
-            },
-            {
-                icon: 'armchair',
-                title: 'Luxury Furniture & Carpeting',
-                body: 'Premium Arabic-style seating, majlis floor cushions, dining tables, and plush carpeting — all coordinated with your chosen theme and colour palette.',
-            },
-            {
-                icon: 'lightbulb',
-                title: 'Ambient Lighting & Decor',
-                body: 'Atmospheric Ramadan lighting with traditional lantern accents, chandelier installations, and customizable mood lighting for an authentic ambiance.',
-            },
-            {
-                icon: 'clock',
-                title: '24/7 Support & Maintenance',
-                body: 'Round-the-clock technical support throughout the entire Ramadan season. On-call maintenance teams ensure zero downtime for your Iftar events.',
-            },
-        ],
+        features: sharedFeaturesEn,
         contentTitle: 'The Complete Iftar Tent Experience',
         contentBody1: 'An Iftar tent is more than a structure — it is the heart of Ramadan hospitality. Your tent\'s layout is designed for flow: from buffet stations to seating, prayer areas to queueing zones. Every detail matters — the gentle hum of cool air as guests arrive after a day of fasting, the warm glow of lanterns casting golden light across traditional carpets, cushions and floor seating that honour tradition alongside high-performance AC for evening temperatures.',
         contentBody2: 'Dubai\'s Ramadan tent culture is unique — it blends deep tradition with modern hospitality expectations. We know the UAE\'s neighbourhoods, climate challenges, and permit landscape inside out — from Marina humidity concerns to desert winds near Jebel Ali. Our setups aren\'t generic; they\'re adapted for local conditions and guest comfort. We serve areas including Downtown Dubai, Dubai Marina, Business Bay, Jumeirah, DIFC, Al Barsha, Emirates Hills, Silicon Oasis — and across Abu Dhabi, Sharjah, and all Northern Emirates.',
@@ -86,41 +135,16 @@ const content = {
             { title: 'Community & Charity', body: 'Provide dignified, comfortable Iftar spaces for charitable events and public community gatherings.' },
         ],
         statsLabel: 'By the Numbers',
-        stats: [
-            { value: '30+', label: 'Years of Experience' },
-            { value: '5,000+', label: 'Tents Installed' },
-            { value: '7', label: 'Emirates Covered' },
-            { value: '24/7', label: 'Ramadan Support' },
-        ],
+        stats: sharedStatsEn,
         processTitle: 'How It Works',
-        processSteps: [
-            { step: '01', title: 'Consultation', body: 'Share your vision, guest count, and venue details. Our team visits the site within 24 hours for a free assessment.' },
-            { step: '02', title: 'Design & Quote', body: 'Receive a detailed 3D layout, itemized quote, and timeline. We handle all municipality permits and Civil Defense approvals.' },
-            { step: '03', title: 'Installation', body: 'Our experienced crew installs your complete Iftar tent setup — structure, AC, furniture, lighting, and decor — before Ramadan begins.' },
-            { step: '04', title: 'Support & Removal', body: '24/7 maintenance throughout Ramadan. After Eid, we handle complete dismantling and site restoration at no extra charge.' },
-        ],
+        processSteps: sharedProcessEn,
         faqTitle: 'Frequently Asked Questions',
         faqs: [
-            {
-                q: 'How far in advance should I book an Iftar tent setup?',
-                a: 'We recommend booking 6-8 weeks before Ramadan for the best availability and pricing. Corporate and hotel clients typically secure their setups 2-3 months ahead. Last-minute bookings are possible but subject to availability.',
-            },
-            {
-                q: 'What sizes of Iftar tents are available?',
-                a: 'We offer tents from intimate 20-person family setups to grand 2,000+ guest corporate installations. Standard sizes include 10x10m, 15x20m, 20x30m, and 30x60m — or fully custom dimensions to fit any venue.',
-            },
-            {
-                q: 'Are the tents approved by UAE Civil Defense?',
-                a: 'Absolutely. Every tent we install uses fire-retardant fabric certified to UAE standards. We obtain all necessary Civil Defense permits and provide fire safety certificates for each installation.',
-            },
-            {
-                q: 'Can I customize the interior design and theme?',
-                a: 'Yes, we offer full interior customization — from traditional Emirati Sadu themes to modern minimalist designs. Choose your colour palette, furniture style, lighting scheme, and decorative elements.',
-            },
-            {
-                q: 'What is included in the rental price?',
-                a: 'Our packages include the tent structure, installation, air conditioning, basic lighting, carpeting, and removal after Ramadan. Furniture, premium decor, catering equipment, and security setups are available as add-ons.',
-            },
+            { q: 'How far in advance should I book an Iftar tent setup?', a: 'We recommend booking 6-8 weeks before Ramadan for the best availability and pricing. Corporate and hotel clients typically secure their setups 2-3 months ahead. Last-minute bookings are possible but subject to availability.' },
+            { q: 'What sizes of Iftar tents are available?', a: 'We offer tents from intimate 20-person family setups to grand 2,000+ guest corporate installations. Standard sizes include 10x10m, 15x20m, 20x30m, and 30x60m — or fully custom dimensions to fit any venue.' },
+            { q: 'Are the tents approved by UAE Civil Defense?', a: 'Absolutely. Every tent we install uses fire-retardant fabric certified to UAE standards. We obtain all necessary Civil Defense permits and provide fire safety certificates for each installation.' },
+            { q: 'Can I customize the interior design and theme?', a: 'Yes, we offer full interior customization — from traditional Emirati Sadu themes to modern minimalist designs. Choose your colour palette, furniture style, lighting scheme, and decorative elements.' },
+            { q: 'What is included in the rental price?', a: 'Our packages include the tent structure, installation, air conditioning, basic lighting, carpeting, and removal after Ramadan. Furniture, premium decor, catering equipment, and security setups are available as add-ons.' },
         ],
         ctaTitle: 'Ready to Set Up Your Iftar Tent?',
         ctaBody: 'Secure your preferred dates for Ramadan 2026. Our team is ready to design and install your perfect Iftar tent — anywhere in the UAE.',
@@ -139,48 +163,7 @@ const content = {
         featuresLabel: 'لماذا تختار Tent Now',
         featuresTitle: 'مميزات فاخرة لكل تجهيز إفطار',
         featuresSubtitle: 'كل خيمة نركّبها مصممة لمناخ الإمارات ومبنية لتلبي لوائح الدفاع المدني الصارمة — حتى تتفرغ لما يهم: التجمع معًا.',
-        features: [
-            {
-                icon: 'snowflake',
-                title: 'خيام مكيفة الهواء',
-                body: 'أنظمة تكييف صناعية تحافظ على درجات حرارة مريحة طوال المساء، حتى في أكثر ليالي رمضان حرارة في الإمارات.',
-            },
-            {
-                icon: 'doorOpen',
-                title: 'بوابات أمنية ونظام دخول',
-                body: 'إدارة احترافية للدخول والخروج مع فحص أمني، ممرات VIP، وحواجز تنظيم الحشود لتدفق آمن ومنظم للضيوف.',
-            },
-            {
-                icon: 'shieldCheck',
-                title: 'أنظمة تحكم بالسلامة',
-                body: 'بنية تحتية شاملة للسلامة تشمل مخارج الطوارئ، محطات الإسعافات الأولية، طفايات الحريق، وفريق سلامة متواجد على مدار الساعة.',
-            },
-            {
-                icon: 'flame',
-                title: 'قماش خيام مقاوم للحريق',
-                body: 'جميع مواد الخيام معتمدة ومقاومة للحريق وتتوافق مع معايير الدفاع المدني الإماراتي. كل تركيب يتضمن شهادة سلامة من الحريق.',
-            },
-            {
-                icon: 'utensils',
-                title: 'تصميم داخلي جاهز للتقديم',
-                body: 'توصيلات مسبقة لمحطات البوفيه ومناطق التقديم والمطابخ التجارية. مرافق إدارة النفايات والنظافة المتكاملة.',
-            },
-            {
-                icon: 'armchair',
-                title: 'أثاث فاخر وسجاد',
-                body: 'جلسات عربية فاخرة، وسائد مجلس أرضية، طاولات طعام، وسجاد فخم — كلها منسقة مع الثيم واللوحة اللونية المختارة.',
-            },
-            {
-                icon: 'lightbulb',
-                title: 'إضاءة وديكور رمضاني',
-                body: 'إضاءة رمضانية ساحرة مع لمسات فوانيس تقليدية، تركيبات ثريات، وإضاءة مزاجية قابلة للتخصيص لأجواء أصيلة.',
-            },
-            {
-                icon: 'clock',
-                title: 'دعم وصيانة على مدار الساعة',
-                body: 'دعم فني على مدار الساعة طوال موسم رمضان بالكامل. فرق صيانة تحت الطلب تضمن عدم توقف فعاليات الإفطار.',
-            },
-        ],
+        features: sharedFeaturesAr,
         contentTitle: 'تجربة خيمة الإفطار المتكاملة',
         contentBody1: 'خيمة الإفطار أكثر من مجرد هيكل — إنها قلب ضيافة رمضان. تصميم الخيمة مصمم للتدفق: من محطات البوفيه إلى الجلسات، ومناطق الصلاة إلى مناطق الانتظار. كل تفصيل مهم — همهمة الهواء البارد اللطيفة عند وصول الضيوف بعد يوم من الصيام، التوهج الدافئ للفوانيس التي تلقي ضوءها الذهبي على السجاد التقليدي، والوسائد والجلسات الأرضية التي تكرّم التقاليد مع تكييف عالي الأداء لدرجات حرارة المساء.',
         contentBody2: 'ثقافة خيام رمضان في دبي فريدة — تمزج بين التقاليد العريقة وتوقعات الضيافة العصرية. نعرف أحياء الإمارات وتحديات المناخ ومتطلبات التصاريح من الداخل — من مخاوف رطوبة المارينا إلى رياح الصحراء قرب جبل علي. تجهيزاتنا ليست عامة؛ إنها مكيفة للظروف المحلية وراحة الضيوف. نخدم مناطق تشمل وسط دبي، دبي مارينا، الخليج التجاري، جميرا، مركز دبي المالي، البرشاء، تلال الإمارات، واحة السيليكون — وعبر أبوظبي والشارقة وجميع الإمارات الشمالية.',
@@ -193,41 +176,16 @@ const content = {
             { title: 'المجتمعي والخيري', body: 'وفّر مساحات إفطار كريمة ومريحة للفعاليات الخيرية والتجمعات المجتمعية العامة.' },
         ],
         statsLabel: 'بالأرقام',
-        stats: [
-            { value: '+30', label: 'عامًا من الخبرة' },
-            { value: '+5,000', label: 'خيمة تم تركيبها' },
-            { value: '7', label: 'إمارات مغطاة' },
-            { value: '24/7', label: 'دعم رمضاني' },
-        ],
+        stats: sharedStatsAr,
         processTitle: 'كيف نعمل',
-        processSteps: [
-            { step: '٠١', title: 'الاستشارة', body: 'شاركنا رؤيتك وعدد الضيوف وتفاصيل الموقع. فريقنا يزور الموقع خلال 24 ساعة لتقييم مجاني.' },
-            { step: '٠٢', title: 'التصميم والعرض', body: 'احصل على تخطيط ثلاثي الأبعاد مفصل، عرض أسعار مفصّل، وجدول زمني. نتولى جميع تصاريح البلدية وموافقات الدفاع المدني.' },
-            { step: '٠٣', title: 'التركيب', body: 'فريقنا المحترف يركّب تجهيز خيمة الإفطار بالكامل — الهيكل، التكييف، الأثاث، الإضاءة، والديكور — قبل بداية رمضان.' },
-            { step: '٠٤', title: 'الدعم والإزالة', body: 'صيانة على مدار الساعة طوال رمضان. بعد العيد، نتولى التفكيك الكامل وإعادة الموقع بدون تكلفة إضافية.' },
-        ],
+        processSteps: sharedProcessAr,
         faqTitle: 'الأسئلة الشائعة',
         faqs: [
-            {
-                q: 'ما هو الوقت المناسب لحجز تجهيز خيمة الإفطار؟',
-                a: 'ننصح بالحجز قبل 6-8 أسابيع من رمضان لأفضل توفر وأسعار. عملاء الشركات والفنادق عادة يؤمنون تجهيزاتهم قبل 2-3 أشهر. الحجوزات المتأخرة ممكنة حسب التوفر.',
-            },
-            {
-                q: 'ما أحجام خيام الإفطار المتاحة؟',
-                a: 'نقدم خيام من تجهيزات عائلية لـ 20 شخصًا إلى تركيبات شركات كبرى لأكثر من 2,000 ضيف. الأحجام القياسية تشمل 10×10م، 15×20م، 20×30م، و30×60م — أو أبعاد مخصصة بالكامل.',
-            },
-            {
-                q: 'هل الخيام معتمدة من الدفاع المدني الإماراتي؟',
-                a: 'بالتأكيد. كل خيمة نركبها تستخدم قماشًا مقاومًا للحريق معتمدًا وفق المعايير الإماراتية. نحصل على جميع تصاريح الدفاع المدني ونوفر شهادات السلامة من الحريق لكل تركيب.',
-            },
-            {
-                q: 'هل يمكنني تخصيص التصميم الداخلي والثيم؟',
-                a: 'نعم، نقدم تخصيصًا كاملًا للداخل — من ثيمات السدو الإماراتية التقليدية إلى التصاميم العصرية البسيطة. اختر لوحة ألوانك، نمط الأثاث، مخطط الإضاءة، والعناصر الزخرفية.',
-            },
-            {
-                q: 'ماذا يشمل سعر الإيجار؟',
-                a: 'تشمل باقاتنا هيكل الخيمة، التركيب، التكييف، الإضاءة الأساسية، السجاد، والإزالة بعد رمضان. الأثاث، الديكور الفاخر، معدات التقديم، وتجهيزات الأمن متاحة كإضافات.',
-            },
+            { q: 'ما هو الوقت المناسب لحجز تجهيز خيمة الإفطار؟', a: 'ننصح بالحجز قبل 6-8 أسابيع من رمضان لأفضل توفر وأسعار. عملاء الشركات والفنادق عادة يؤمنون تجهيزاتهم قبل 2-3 أشهر. الحجوزات المتأخرة ممكنة حسب التوفر.' },
+            { q: 'ما أحجام خيام الإفطار المتاحة؟', a: 'نقدم خيام من تجهيزات عائلية لـ 20 شخصًا إلى تركيبات شركات كبرى لأكثر من 2,000 ضيف. الأحجام القياسية تشمل 10×10م، 15×20م، 20×30م، و30×60م — أو أبعاد مخصصة بالكامل.' },
+            { q: 'هل الخيام معتمدة من الدفاع المدني الإماراتي؟', a: 'بالتأكيد. كل خيمة نركبها تستخدم قماشًا مقاومًا للحريق معتمدًا وفق المعايير الإماراتية. نحصل على جميع تصاريح الدفاع المدني ونوفر شهادات السلامة من الحريق لكل تركيب.' },
+            { q: 'هل يمكنني تخصيص التصميم الداخلي والثيم؟', a: 'نعم، نقدم تخصيصًا كاملًا للداخل — من ثيمات السدو الإماراتية التقليدية إلى التصاميم العصرية البسيطة. اختر لوحة ألوانك، نمط الأثاث، مخطط الإضاءة، والعناصر الزخرفية.' },
+            { q: 'ماذا يشمل سعر الإيجار؟', a: 'تشمل باقاتنا هيكل الخيمة، التركيب، التكييف، الإضاءة الأساسية، السجاد، والإزالة بعد رمضان. الأثاث، الديكور الفاخر، معدات التقديم، وتجهيزات الأمن متاحة كإضافات.' },
         ],
         ctaTitle: 'جاهز لتجهيز خيمة الإفطار؟',
         ctaBody: 'احجز مواعيدك المفضلة لرمضان 2026. فريقنا جاهز لتصميم وتركيب خيمة الإفطار المثالية — في أي مكان في الإمارات.',
@@ -238,6 +196,190 @@ const content = {
         breadcrumbPage: 'تجهيز خيام الإفطار الرمضانية',
     },
 };
+
+// ─── Abu Dhabi content ──────────────────────────────────────────────────────────
+
+const abuDhabiContent: CityContent = {
+    en: {
+        badge: '30+ Years Serving Abu Dhabi',
+        h1: 'Iftar Tent Rental Abu Dhabi',
+        h1Accent: 'Ramadan Tent Setup & Majlis Solutions',
+        subtitle: 'Elevate your Abu Dhabi Iftar gatherings with premium, climate-controlled Ramadan tents — from government Iftars to private family Majlis across the capital.',
+        intro: 'Abu Dhabi holds a special place in Ramadan culture — as the capital of the UAE, it hosts some of the most prestigious Iftar events in the region, from grand government gatherings at Emirates Palace to community Iftars at Sheikh Zayed Grand Mosque\'s surroundings. At TentNow.ae, we\'ve been the trusted Iftar tent rental partner for Abu Dhabi\'s hotels, government entities, corporations, and families for over 30 years. Our deep understanding of Abu Dhabi Municipality regulations, Department of Municipalities and Transport (DMT) permit requirements, and the capital\'s unique climate conditions ensures every installation is flawless.',
+        featuresLabel: 'Why Abu Dhabi Clients Choose Us',
+        featuresTitle: 'Premium Features for Abu Dhabi Iftar Tents',
+        featuresSubtitle: 'Every tent we install in Abu Dhabi is engineered for the capital\'s climate and meets strict Abu Dhabi Civil Defense and DMT requirements.',
+        features: sharedFeaturesEn,
+        contentTitle: 'Abu Dhabi\'s Premier Iftar Tent Experience',
+        contentBody1: 'Abu Dhabi\'s Ramadan atmosphere is distinguished by its blend of governmental prestige, cultural authenticity, and community spirit. Whether you\'re hosting a ministerial Iftar for dignitaries, a corporate gathering at Yas Island, or a family Majlis in Khalifa City — the tent must reflect both modern sophistication and Emirati heritage. Our layouts are designed for seamless flow: from grand entrance to buffet stations, prayer corners to VIP seating areas.',
+        contentBody2: 'We serve all major areas across Abu Dhabi including Corniche, Al Reem Island, Saadiyat Island, Yas Island, Al Maryah Island, Khalifa City, Mohammed Bin Zayed City, Al Mushrif, Al Bateen, Al Shamkha, Masdar City, and Al Ain. Each installation is tailored to the specific venue — from beachfront hotel extensions to villa garden Majlis and government compound setups.',
+        contentBody3: 'Abu Dhabi\'s permit landscape is unique — requiring coordination with Abu Dhabi Municipality, DMT, and Civil Defense. We handle every approval, from structural permits to fire safety certificates and occupancy clearances. Our 30-year relationship with Abu Dhabi authorities means faster processing and zero compliance surprises for your Ramadan event.',
+        audienceTitle: 'Who We Serve in Abu Dhabi',
+        audiences: [
+            { title: 'Government & Diplomatic', body: 'Prestigious Iftar tent setups for ministries, embassies, and government entities — with protocol-level quality and security compliance.' },
+            { title: 'Hotels & Hospitality', body: 'Expand Ramadan capacity for properties on Saadiyat Island, Yas Island, Corniche, and across the capital with seamless luxury extensions.' },
+            { title: 'Corporate & Oil & Gas', body: 'Large-scale Iftar events for Abu Dhabi\'s leading corporations, energy companies, and financial institutions in ADGM, Masdar City, and business districts.' },
+            { title: 'Residential & Family', body: 'Private Ramadan Majlis setups for villas in Khalifa City, Al Raha, Saadiyat, and residential compounds across Abu Dhabi.' },
+        ],
+        statsLabel: 'By the Numbers',
+        stats: sharedStatsEn,
+        processTitle: 'How It Works in Abu Dhabi',
+        processSteps: sharedProcessEn,
+        faqTitle: 'Abu Dhabi Iftar Tent FAQs',
+        faqs: [
+            { q: 'What permits are needed for an Iftar tent in Abu Dhabi?', a: 'Abu Dhabi requires permits from the Department of Municipalities and Transport (DMT) and Abu Dhabi Civil Defense. We handle the entire permit process — from application to inspection — so you don\'t have to worry about compliance.' },
+            { q: 'Do you serve areas outside Abu Dhabi city?', a: 'Yes, we cover all of Abu Dhabi emirate including Al Ain, Al Dhafra region, Yas Island, Saadiyat Island, Reem Island, and all suburban communities. Delivery and installation are included in our pricing.' },
+            { q: 'How large can an Iftar tent be in Abu Dhabi?', a: 'We install tents from intimate 20-person family setups to grand 2,000+ capacity government and corporate installations. We\'ve successfully delivered major Iftar events across Abu Dhabi Corniche, Yas Island, and ADNEC.' },
+            { q: 'Can you match the hospitality standards of Abu Dhabi\'s luxury hotels?', a: 'Absolutely. We\'ve partnered with five-star properties across the capital. Our furniture, lighting, and decor options match the highest hospitality standards — from traditional Emirati elegance to contemporary luxury.' },
+            { q: 'What is the lead time for Abu Dhabi installations?', a: 'We recommend booking 6-8 weeks before Ramadan. Government and large corporate events should book 2-3 months ahead. Our Abu Dhabi team can handle expedited setups when needed, subject to permit timelines.' },
+        ],
+        ctaTitle: 'Plan Your Abu Dhabi Iftar Tent',
+        ctaBody: 'Secure your Ramadan 2026 dates in Abu Dhabi. From Corniche to Al Ain, our team delivers premium Iftar tent setups across the capital.',
+        ctaButton: 'Get a Free Quote',
+        ctaWhatsapp: 'WhatsApp Us',
+        ctaNote: 'Ramadan 2026 starts February 19th — Abu Dhabi bookings filling fast',
+        breadcrumbServices: 'Services',
+        breadcrumbPage: 'Iftar Tent Rental Abu Dhabi',
+    },
+    ar: {
+        badge: 'أكثر من 30 عامًا في خدمة أبوظبي',
+        h1: 'تأجير خيام الإفطار في أبوظبي',
+        h1Accent: 'تجهيز خيام رمضان وحلول المجالس',
+        subtitle: 'ارتقِ بتجمعات الإفطار في أبوظبي مع خيام رمضان الفاخرة والمكيفة — من إفطارات الجهات الحكومية إلى المجالس العائلية الخاصة في العاصمة.',
+        intro: 'تحتل أبوظبي مكانة خاصة في ثقافة رمضان — كعاصمة للإمارات، تستضيف بعض أرقى فعاليات الإفطار في المنطقة، من التجمعات الحكومية الكبرى في قصر الإمارات إلى الإفطارات المجتمعية حول جامع الشيخ زايد الكبير. في TentNow.ae، كنا الشريك الموثوق لتأجير خيام الإفطار لفنادق أبوظبي والجهات الحكومية والشركات والعائلات لأكثر من 30 عامًا. فهمنا العميق للوائح بلدية أبوظبي ومتطلبات تصاريح دائرة البلديات والنقل والظروف المناخية الفريدة للعاصمة يضمن أن كل تركيب يكون بلا عيوب.',
+        featuresLabel: 'لماذا يختارنا عملاء أبوظبي',
+        featuresTitle: 'مميزات فاخرة لخيام الإفطار في أبوظبي',
+        featuresSubtitle: 'كل خيمة نركبها في أبوظبي مصممة لمناخ العاصمة وتلبي متطلبات الدفاع المدني ودائرة البلديات والنقل الصارمة.',
+        features: sharedFeaturesAr,
+        contentTitle: 'تجربة خيمة الإفطار الأولى في أبوظبي',
+        contentBody1: 'أجواء رمضان في أبوظبي تتميز بمزيجها من الهيبة الحكومية والأصالة الثقافية والروح المجتمعية. سواء كنت تستضيف إفطارًا وزاريًا لكبار الشخصيات، أو تجمعًا للشركات في جزيرة ياس، أو مجلسًا عائليًا في مدينة خليفة — يجب أن تعكس الخيمة الرقي العصري والتراث الإماراتي. تصاميمنا مصممة للتدفق السلس: من المدخل الكبير إلى محطات البوفيه، وزوايا الصلاة إلى مناطق جلوس كبار الشخصيات.',
+        contentBody2: 'نخدم جميع المناطق الرئيسية في أبوظبي بما فيها الكورنيش، جزيرة الريم، جزيرة السعديات، جزيرة ياس، جزيرة المارية، مدينة خليفة، مدينة محمد بن زايد، المشرف، البطين، الشامخة، مدينة مصدر، والعين. كل تركيب مخصص للموقع المحدد — من امتدادات الفنادق على الشاطئ إلى مجالس حدائق الفلل وتجهيزات المجمعات الحكومية.',
+        contentBody3: 'بيئة التصاريح في أبوظبي فريدة — تتطلب التنسيق مع بلدية أبوظبي ودائرة البلديات والنقل والدفاع المدني. نتولى كل موافقة، من تصاريح الهياكل إلى شهادات السلامة من الحريق وتصاريح الإشغال. علاقتنا الممتدة 30 عامًا مع سلطات أبوظبي تعني معالجة أسرع وصفر مفاجآت في الامتثال لفعالية رمضان الخاصة بك.',
+        audienceTitle: 'من نخدم في أبوظبي',
+        audiences: [
+            { title: 'الحكومة والدبلوماسية', body: 'تجهيزات خيام إفطار مرموقة للوزارات والسفارات والجهات الحكومية — بجودة على مستوى البروتوكول والامتثال الأمني.' },
+            { title: 'الفنادق والضيافة', body: 'وسّع طاقة رمضان لممتلكاتك في جزيرة السعديات وجزيرة ياس والكورنيش وعبر العاصمة بامتدادات فاخرة سلسة.' },
+            { title: 'الشركات والنفط والغاز', body: 'فعاليات إفطار كبيرة لأبرز شركات أبوظبي وشركات الطاقة والمؤسسات المالية في سوق أبوظبي العالمي ومدينة مصدر والمناطق التجارية.' },
+            { title: 'السكني والعائلي', body: 'تجهيزات مجالس رمضانية خاصة للفلل في مدينة خليفة والراحة والسعديات والمجمعات السكنية عبر أبوظبي.' },
+        ],
+        statsLabel: 'بالأرقام',
+        stats: sharedStatsAr,
+        processTitle: 'كيف نعمل في أبوظبي',
+        processSteps: sharedProcessAr,
+        faqTitle: 'الأسئلة الشائعة عن خيام الإفطار في أبوظبي',
+        faqs: [
+            { q: 'ما التصاريح المطلوبة لخيمة إفطار في أبوظبي؟', a: 'تتطلب أبوظبي تصاريح من دائرة البلديات والنقل والدفاع المدني في أبوظبي. نتولى عملية التصاريح بالكامل — من التقديم إلى التفتيش — حتى لا تقلق بشأن الامتثال.' },
+            { q: 'هل تخدمون مناطق خارج مدينة أبوظبي؟', a: 'نعم، نغطي كامل إمارة أبوظبي بما فيها العين ومنطقة الظفرة وجزيرة ياس وجزيرة السعديات وجزيرة الريم وجميع المجتمعات الضواحي. التوصيل والتركيب مشمولان في أسعارنا.' },
+            { q: 'ما الحجم الأقصى لخيمة إفطار في أبوظبي؟', a: 'نركب خيام من تجهيزات عائلية لـ 20 شخصًا إلى تركيبات حكومية وشركات كبرى لأكثر من 2,000 شخص. نجحنا في تقديم فعاليات إفطار كبرى عبر كورنيش أبوظبي وجزيرة ياس وأدنيك.' },
+            { q: 'هل يمكنكم مطابقة معايير الضيافة لفنادق أبوظبي الفاخرة؟', a: 'بالتأكيد. تعاملنا مع فنادق خمس نجوم عبر العاصمة. خيارات الأثاث والإضاءة والديكور لدينا تطابق أعلى معايير الضيافة — من الأناقة الإماراتية التقليدية إلى الفخامة المعاصرة.' },
+            { q: 'ما المدة المطلوبة للتركيب في أبوظبي؟', a: 'ننصح بالحجز قبل 6-8 أسابيع من رمضان. الفعاليات الحكومية والشركات الكبيرة يجب أن تحجز قبل 2-3 أشهر. فريقنا في أبوظبي يمكنه التعامل مع التركيبات المستعجلة عند الحاجة، حسب جداول التصاريح.' },
+        ],
+        ctaTitle: 'خطط لخيمة الإفطار في أبوظبي',
+        ctaBody: 'احجز مواعيدك لرمضان 2026 في أبوظبي. من الكورنيش إلى العين، فريقنا يقدم تجهيزات خيام إفطار فاخرة عبر العاصمة.',
+        ctaButton: 'احصل على عرض أسعار مجاني',
+        ctaWhatsapp: 'تواصل عبر واتساب',
+        ctaNote: 'رمضان 2026 يبدأ 19 فبراير — حجوزات أبوظبي تمتلئ بسرعة',
+        breadcrumbServices: 'الخدمات',
+        breadcrumbPage: 'تأجير خيام الإفطار في أبوظبي',
+    },
+};
+
+// ─── Sharjah content ────────────────────────────────────────────────────────────
+
+const sharjahContent: CityContent = {
+    en: {
+        badge: '30+ Years Serving Sharjah',
+        h1: 'Iftar Tent Rental Sharjah',
+        h1Accent: 'Ramadan Tent Setup & Majlis Solutions',
+        subtitle: 'Honour Sharjah\'s rich Islamic heritage with beautifully crafted Iftar tents — from cultural district gatherings to residential Majlis and corporate Ramadan events.',
+        intro: 'Sharjah — the Cultural Capital of the Arab World — takes Ramadan more seriously than perhaps any other emirate. Known for its deep Islamic heritage, strict cultural values, and vibrant community spirit, Sharjah\'s Ramadan season features some of the UAE\'s most authentic Iftar experiences. At TentNow.ae, we\'ve been providing premium Iftar tent rental services across Sharjah for over 30 years. We understand Sharjah Municipality regulations, the emirate\'s unique urban planning requirements, and the cultural sensitivity that Sharjah Ramadan events demand.',
+        featuresLabel: 'Why Sharjah Clients Choose Us',
+        featuresTitle: 'Premium Features for Sharjah Iftar Tents',
+        featuresSubtitle: 'Every tent we install in Sharjah is designed with cultural authenticity in mind and built to meet Sharjah Civil Defense and Municipality standards.',
+        features: sharedFeaturesEn,
+        contentTitle: 'Sharjah\'s Authentic Iftar Tent Experience',
+        contentBody1: 'Sharjah\'s Ramadan is defined by its cultural depth. The emirate\'s Heart of Sharjah heritage district, its mosques, and its residential communities come alive with Iftar gatherings that prioritise tradition and community over spectacle. Our Iftar tent setups in Sharjah reflect this — with careful attention to authentic Emirati design elements, traditional seating arrangements, and decor that respects the emirate\'s cultural identity. From Sadu-inspired patterns to handcrafted lanterns and traditional carpets.',
+        contentBody2: 'We serve all areas across Sharjah including Al Majaz, Al Nahda, Al Qasimia, Al Khan, Al Taawun, University City, Muwaileh, Al Zahia, Sharjah Industrial Area, Sharjah Waterfront City — and extending to Kalba, Khor Fakkan, and Dibba Al Hisn on the East Coast. Each installation respects the local neighbourhood character while delivering modern comfort.',
+        contentBody3: 'Sharjah Municipality has specific requirements for temporary structures during Ramadan — including strict setback rules, noise considerations, and cultural compliance. We manage every permit and inspection, working closely with Sharjah Civil Defense and the municipality to ensure full compliance. Our 30-year presence in Sharjah means we know the regulatory landscape intimately, saving you time and avoiding costly delays.',
+        audienceTitle: 'Who We Serve in Sharjah',
+        audiences: [
+            { title: 'Cultural Institutions', body: 'Iftar tent setups for Sharjah\'s museums, cultural foundations, heritage sites, and Islamic arts organizations during Ramadan.' },
+            { title: 'Mosques & Community', body: 'Large-scale community Iftar tents near mosques and public spaces — comfortable, dignified spaces for charitable and community gatherings.' },
+            { title: 'Corporate & Industrial', body: 'Ramadan Iftar solutions for Sharjah\'s thriving business and industrial sectors — from free zones to corporate headquarters.' },
+            { title: 'Residential & Family', body: 'Private family Majlis tents for villas and compounds across Sharjah\'s residential neighbourhoods — honouring tradition in your own home.' },
+        ],
+        statsLabel: 'By the Numbers',
+        stats: sharedStatsEn,
+        processTitle: 'How It Works in Sharjah',
+        processSteps: sharedProcessEn,
+        faqTitle: 'Sharjah Iftar Tent FAQs',
+        faqs: [
+            { q: 'What makes Sharjah\'s Iftar tent requirements different?', a: 'Sharjah Municipality has specific cultural and zoning requirements for Ramadan structures. These include strict setback rules, noise regulations, and cultural sensitivity requirements. We handle all Sharjah-specific permits and ensure your setup fully complies with local regulations.' },
+            { q: 'Do you cover Sharjah\'s East Coast areas?', a: 'Yes, we serve all of Sharjah emirate including Kalba, Khor Fakkan, and Dibba Al Hisn. Our teams are equipped for East Coast installations with appropriate logistics and local permit coordination.' },
+            { q: 'Can you provide traditional Emirati-style Iftar tents in Sharjah?', a: 'Absolutely — this is our speciality. We offer authentic Sadu tents, traditional Arabic Majlis setups, heritage-inspired decor, and cultural design elements that align perfectly with Sharjah\'s identity as the Cultural Capital.' },
+            { q: 'How do Sharjah Iftar tent prices compare to Dubai?', a: 'Sharjah generally offers more competitive pricing due to different permit structures and venue costs. We provide transparent, itemized quotes tailored to Sharjah\'s market. Contact us for a free, no-obligation estimate.' },
+            { q: 'Can you set up near Sharjah\'s heritage areas?', a: 'Yes, we have extensive experience installing Iftar tents near Heart of Sharjah, Al Majaz Waterfront, and other heritage zones. We coordinate with relevant authorities to respect heritage preservation requirements while delivering premium Ramadan experiences.' },
+        ],
+        ctaTitle: 'Plan Your Sharjah Iftar Tent',
+        ctaBody: 'Secure your Ramadan 2026 dates in Sharjah. From Al Majaz to the East Coast, our team delivers culturally authentic Iftar tent setups.',
+        ctaButton: 'Get a Free Quote',
+        ctaWhatsapp: 'WhatsApp Us',
+        ctaNote: 'Ramadan 2026 starts February 19th — Sharjah bookings filling fast',
+        breadcrumbServices: 'Services',
+        breadcrumbPage: 'Iftar Tent Rental Sharjah',
+    },
+    ar: {
+        badge: 'أكثر من 30 عامًا في خدمة الشارقة',
+        h1: 'تأجير خيام الإفطار في الشارقة',
+        h1Accent: 'تجهيز خيام رمضان وحلول المجالس',
+        subtitle: 'كرّم تراث الشارقة الإسلامي الغني مع خيام إفطار مصممة بعناية — من تجمعات المناطق الثقافية إلى المجالس السكنية وفعاليات رمضان للشركات.',
+        intro: 'الشارقة — العاصمة الثقافية للعالم العربي — تأخذ رمضان بجدية أكبر من أي إمارة أخرى. تشتهر بتراثها الإسلامي العميق وقيمها الثقافية الراسخة وروحها المجتمعية النابضة، ويتميز موسم رمضان في الشارقة ببعض أكثر تجارب الإفطار أصالة في الإمارات. في TentNow.ae، نقدم خدمات تأجير خيام الإفطار الفاخرة في الشارقة منذ أكثر من 30 عامًا. نفهم لوائح بلدية الشارقة ومتطلبات التخطيط العمراني الفريدة للإمارة والحساسية الثقافية التي تتطلبها فعاليات رمضان في الشارقة.',
+        featuresLabel: 'لماذا يختارنا عملاء الشارقة',
+        featuresTitle: 'مميزات فاخرة لخيام الإفطار في الشارقة',
+        featuresSubtitle: 'كل خيمة نركبها في الشارقة مصممة مع مراعاة الأصالة الثقافية ومبنية لتلبي معايير الدفاع المدني وبلدية الشارقة.',
+        features: sharedFeaturesAr,
+        contentTitle: 'تجربة خيمة الإفطار الأصيلة في الشارقة',
+        contentBody1: 'رمضان في الشارقة يتميز بعمقه الثقافي. منطقة قلب الشارقة التراثية ومساجدها ومجتمعاتها السكنية تنبض بالحياة مع تجمعات الإفطار التي تعطي الأولوية للتقاليد والمجتمع. تجهيزات خيام الإفطار لدينا في الشارقة تعكس ذلك — مع اهتمام دقيق بعناصر التصميم الإماراتي الأصيل، وترتيبات الجلوس التقليدية، والديكور الذي يحترم الهوية الثقافية للإمارة. من أنماط السدو المستوحاة إلى الفوانيس المصنوعة يدويًا والسجاد التقليدي.',
+        contentBody2: 'نخدم جميع المناطق في الشارقة بما فيها المجاز، النهدة، القاسمية، الخان، التعاون، المدينة الجامعية، مويلح، الزاهية، المنطقة الصناعية في الشارقة، الشارقة الواجهة المائية — وامتدادًا إلى كلباء وخورفكان ودبا الحصن على الساحل الشرقي. كل تركيب يحترم طابع الحي المحلي مع تقديم الراحة العصرية.',
+        contentBody3: 'بلدية الشارقة لديها متطلبات محددة للهياكل المؤقتة خلال رمضان — تشمل قواعد ارتداد صارمة واعتبارات الضوضاء والامتثال الثقافي. نتولى كل تصريح وتفتيش، نعمل بشكل وثيق مع الدفاع المدني والبلدية في الشارقة لضمان الامتثال الكامل. وجودنا في الشارقة منذ 30 عامًا يعني أننا نعرف المشهد التنظيمي بعمق، مما يوفر لك الوقت ويتجنب التأخيرات المكلفة.',
+        audienceTitle: 'من نخدم في الشارقة',
+        audiences: [
+            { title: 'المؤسسات الثقافية', body: 'تجهيزات خيام إفطار لمتاحف الشارقة والمؤسسات الثقافية والمواقع التراثية ومنظمات الفنون الإسلامية خلال رمضان.' },
+            { title: 'المساجد والمجتمع', body: 'خيام إفطار مجتمعية كبيرة قرب المساجد والأماكن العامة — مساحات مريحة وكريمة للتجمعات الخيرية والمجتمعية.' },
+            { title: 'الشركات والصناعة', body: 'حلول إفطار رمضانية لقطاع الأعمال والصناعة المزدهر في الشارقة — من المناطق الحرة إلى مقرات الشركات.' },
+            { title: 'السكني والعائلي', body: 'خيام مجالس عائلية خاصة للفلل والمجمعات في أحياء الشارقة السكنية — تكريم التقاليد في منزلك.' },
+        ],
+        statsLabel: 'بالأرقام',
+        stats: sharedStatsAr,
+        processTitle: 'كيف نعمل في الشارقة',
+        processSteps: sharedProcessAr,
+        faqTitle: 'الأسئلة الشائعة عن خيام الإفطار في الشارقة',
+        faqs: [
+            { q: 'ما الذي يميز متطلبات خيام الإفطار في الشارقة؟', a: 'بلدية الشارقة لديها متطلبات ثقافية وتنظيمية محددة لهياكل رمضان. تشمل قواعد ارتداد صارمة ولوائح الضوضاء ومتطلبات الحساسية الثقافية. نتولى جميع التصاريح الخاصة بالشارقة ونضمن أن تجهيزك يمتثل بالكامل للوائح المحلية.' },
+            { q: 'هل تغطون مناطق الساحل الشرقي في الشارقة؟', a: 'نعم، نخدم كامل إمارة الشارقة بما فيها كلباء وخورفكان ودبا الحصن. فرقنا مجهزة لتركيبات الساحل الشرقي مع اللوجستيات المناسبة وتنسيق التصاريح المحلية.' },
+            { q: 'هل يمكنكم توفير خيام إفطار بالطراز الإماراتي التقليدي في الشارقة؟', a: 'بالتأكيد — هذا تخصصنا. نقدم خيام سدو أصيلة، تجهيزات مجالس عربية تقليدية، ديكور مستوحى من التراث، وعناصر تصميم ثقافية تتناسب تمامًا مع هوية الشارقة كعاصمة ثقافية.' },
+            { q: 'كيف تقارن أسعار خيام الإفطار في الشارقة بدبي؟', a: 'الشارقة عمومًا تقدم أسعارًا أكثر تنافسية بسبب هياكل تصاريح وتكاليف مواقع مختلفة. نقدم عروض أسعار شفافة ومفصلة مخصصة لسوق الشارقة. تواصل معنا للحصول على تقدير مجاني بدون التزام.' },
+            { q: 'هل يمكنكم التركيب قرب المناطق التراثية في الشارقة؟', a: 'نعم، لدينا خبرة واسعة في تركيب خيام الإفطار قرب قلب الشارقة وواجهة المجاز المائية ومناطق التراث الأخرى. ننسق مع الجهات المعنية لاحترام متطلبات حماية التراث مع تقديم تجارب رمضانية فاخرة.' },
+        ],
+        ctaTitle: 'خطط لخيمة الإفطار في الشارقة',
+        ctaBody: 'احجز مواعيدك لرمضان 2026 في الشارقة. من المجاز إلى الساحل الشرقي، فريقنا يقدم تجهيزات خيام إفطار أصيلة ثقافيًا.',
+        ctaButton: 'احصل على عرض أسعار مجاني',
+        ctaWhatsapp: 'تواصل عبر واتساب',
+        ctaNote: 'رمضان 2026 يبدأ 19 فبراير — حجوزات الشارقة تمتلئ بسرعة',
+        breadcrumbServices: 'الخدمات',
+        breadcrumbPage: 'تأجير خيام الإفطار في الشارقة',
+    },
+};
+
+// ─── Content registry ───────────────────────────────────────────────────────────
+
+export const cityContentMap: Record<string, CityContent> = {
+    'ramadan-iftar-tent-setup': uaeContent,
+    'iftar-tent-rental-abu-dhabi': abuDhabiContent,
+    'iftar-tent-rental-sharjah': sharjahContent,
+};
+
+// ─── Icon map ───────────────────────────────────────────────────────────────────
 
 const iconMap: Record<string, React.ComponentType<{ className?: string; size?: number; strokeWidth?: number }>> = {
     snowflake: Snowflake,
@@ -250,11 +392,24 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; size?: n
     clock: Clock,
 };
 
-export default function IftarTentSetupContent() {
+// ─── Reusable page component ────────────────────────────────────────────────────
+
+interface IftarTentSetupContentProps {
+    slug?: string;
+    heroImage?: string;
+    contentImage?: string;
+}
+
+export default function IftarTentSetupContent({
+    slug = 'ramadan-iftar-tent-setup',
+    heroImage = '/images/tent-now/ramadan-tents-for-rentals.jpg',
+    contentImage = '/images/tent-now/ramadan-tents.jpg',
+}: IftarTentSetupContentProps) {
     const locale = useLocale();
     const { openCallback } = useModal();
-    const t = locale === 'ar' ? content.ar : content.en;
-    const pageUrl = `https://tentnow.ae/${locale}/services/ramadan-iftar-tent-setup`;
+    const cityData = cityContentMap[slug] || uaeContent;
+    const t = locale === 'ar' ? cityData.ar : cityData.en;
+    const pageUrl = `https://tentnow.ae/${locale}/services/${slug}`;
 
     return (
         <main className="min-h-screen bg-bg-dark text-white font-sans" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
@@ -262,27 +417,23 @@ export default function IftarTentSetupContent() {
                 name={`${t.h1} ${t.h1Accent}`}
                 description={t.subtitle}
                 url={pageUrl}
-                image="/images/tent-now/ramadan-tents-for-rentals.jpg"
+                image={heroImage}
             />
             <BreadcrumbSchema
                 items={[
                     { name: t.breadcrumbServices, href: '/services' },
-                    { name: t.breadcrumbPage, href: '/services/ramadan-iftar-tent-setup' },
+                    { name: t.breadcrumbPage, href: `/services/${slug}` },
                 ]}
             />
 
-            {/* ============================================ */}
-            {/* HERO SECTION                                 */}
-            {/* ============================================ */}
+            {/* HERO SECTION */}
             <section className="relative pt-32 lg:pt-44 pb-20 lg:pb-28 overflow-hidden">
-                {/* Subtle background pattern */}
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(212,175,55,0.08),transparent)]" />
                 </div>
 
                 <div className="container-luxury relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                        {/* Text Column */}
                         <div className="animate-fade-in-up">
                             <div className="section-label mb-6">
                                 <span>{t.badge}</span>
@@ -315,12 +466,11 @@ export default function IftarTentSetupContent() {
                             </div>
                         </div>
 
-                        {/* Hero Image */}
                         <div className="relative animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-2xl">
                                 <Image
-                                    src="/images/tent-now/ramadan-tents-for-rentals.jpg"
-                                    alt={locale === 'ar' ? 'خيام رمضان للإيجار في الإمارات - Tent Now' : 'Ramadan tents for rental in UAE - Tent Now'}
+                                    src={heroImage}
+                                    alt={t.h1}
                                     fill
                                     priority
                                     className="object-cover"
@@ -328,7 +478,6 @@ export default function IftarTentSetupContent() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/40 via-transparent to-transparent" />
                             </div>
-                            {/* Decorative gold corner */}
                             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold/30 rounded-br-2xl rtl:-right-auto rtl:-left-4 rtl:border-r-0 rtl:border-l-2 rtl:rounded-br-none rtl:rounded-bl-2xl" />
                             <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold/30 rounded-tl-2xl rtl:-left-auto rtl:-right-4 rtl:border-l-0 rtl:border-r-2 rtl:rounded-tl-none rtl:rounded-tr-2xl" />
                         </div>
@@ -336,9 +485,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* STATS BAR                                    */}
-            {/* ============================================ */}
+            {/* STATS BAR */}
             <section className="relative z-10">
                 <div className="container-luxury">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border/50 rounded-2xl overflow-hidden border border-border">
@@ -352,9 +499,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* INTRO CONTENT                                */}
-            {/* ============================================ */}
+            {/* INTRO CONTENT */}
             <section className="py-20 lg:py-28">
                 <div className="container-luxury">
                     <div className="max-w-4xl mx-auto">
@@ -365,9 +510,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* KEY FEATURES GRID                            */}
-            {/* ============================================ */}
+            {/* KEY FEATURES GRID */}
             <section className="py-20 lg:py-28 bg-bg-darker">
                 <div className="container-luxury">
                     <div className="text-center mb-16">
@@ -406,18 +549,15 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* CONTENT + SECOND IMAGE                       */}
-            {/* ============================================ */}
+            {/* CONTENT + SECOND IMAGE */}
             <section className="py-20 lg:py-28">
                 <div className="container-luxury">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        {/* Image */}
                         <div className="relative order-2 lg:order-1">
                             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-xl">
                                 <Image
-                                    src="/images/tent-now/ramadan-tents.jpg"
-                                    alt={locale === 'ar' ? 'خيام رمضان الفاخرة - Tent Now' : 'Premium Ramadan tents - Tent Now'}
+                                    src={contentImage}
+                                    alt={t.contentTitle}
                                     fill
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -426,7 +566,6 @@ export default function IftarTentSetupContent() {
                             </div>
                         </div>
 
-                        {/* Text */}
                         <div className="order-1 lg:order-2">
                             <h2 className="text-3xl md:text-4xl font-display text-white mb-8 tracking-tight">
                                 {t.contentTitle}
@@ -441,9 +580,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* WHO WE SERVE                                 */}
-            {/* ============================================ */}
+            {/* WHO WE SERVE */}
             <section className="py-20 lg:py-28 bg-bg-darker">
                 <div className="container-luxury">
                     <div className="text-center mb-16">
@@ -465,9 +602,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* HOW IT WORKS                                 */}
-            {/* ============================================ */}
+            {/* HOW IT WORKS */}
             <section className="py-20 lg:py-28">
                 <div className="container-luxury">
                     <div className="text-center mb-16">
@@ -492,9 +627,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* FAQ SECTION                                  */}
-            {/* ============================================ */}
+            {/* FAQ SECTION */}
             <section className="py-20 lg:py-28 bg-bg-darker">
                 <div className="container-luxury">
                     <div className="max-w-3xl mx-auto">
@@ -518,13 +651,10 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* FINAL CTA                                    */}
-            {/* ============================================ */}
+            {/* FINAL CTA */}
             <section className="py-20 lg:py-28">
                 <div className="container-luxury">
                     <div className="relative p-12 lg:p-20 bg-gold rounded-3xl overflow-hidden group">
-                        {/* Background decorative element */}
                         <div className="absolute top-0 right-0 p-16 opacity-10 transform translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-700">
                             <Star size={300} strokeWidth={1} />
                         </div>
@@ -562,9 +692,7 @@ export default function IftarTentSetupContent() {
                 </div>
             </section>
 
-            {/* ============================================ */}
-            {/* FAQ SCHEMA (JSON-LD)                         */}
-            {/* ============================================ */}
+            {/* FAQ SCHEMA (JSON-LD) */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
