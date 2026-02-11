@@ -23,7 +23,7 @@ const services = [
 ];
 
 const iftarPages = [
-  { href: '/services/ramadan-iftar-tent-setup', labelEn: 'Iftar Tent Setup UAE', labelAr: 'تجهيز خيام الإفطار' },
+  { href: '/services/iftar-tent-rental-dubai', labelEn: 'Iftar Tent Dubai', labelAr: 'خيام الإفطار دبي' },
   { href: '/services/iftar-tent-rental-abu-dhabi', labelEn: 'Iftar Tent Abu Dhabi', labelAr: 'خيام الإفطار أبوظبي' },
   { href: '/services/iftar-tent-rental-sharjah', labelEn: 'Iftar Tent Sharjah', labelAr: 'خيام الإفطار الشارقة' },
 ];
