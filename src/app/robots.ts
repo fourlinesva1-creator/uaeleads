@@ -20,6 +20,8 @@ export default function robots(): MetadataRoute.Robots {
             `${baseUrl}/sitemap-index.xml`,
             `${baseUrl}/sitemap-en.xml`,
             `${baseUrl}/sitemap-ar.xml`,
+            `${baseUrl}/en/sitemap.xml`,
+            `${baseUrl}/ar/sitemap.xml`,
         ],
     };
 }
