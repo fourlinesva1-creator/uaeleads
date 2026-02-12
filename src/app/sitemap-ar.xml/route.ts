@@ -38,7 +38,11 @@ const standaloneServices = [
     'suhoor-tent-rental',
     'sadu-tent-rental',
     'furniture-rental',
-    'decor-lighting'
+    'decor-lighting',
+    'iftar-tent-rental-dubai',
+    'iftar-tent-rental-abu-dhabi',
+    'iftar-tent-rental-sharjah',
+    'ramadan-iftar-tent-setup',
 ];
 
 const blogPosts = [
