@@ -38,6 +38,24 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'top-tent-suppliers-uae-2026',
+            title: 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026',
+            excerpt: 'دليلك لأفضل شركاء فعاليات وخيام رمضان في دبي وأبوظبي والشارقة وجميع الإمارات.',
+            image: '/images/tent-now/ramadan-tents.jpg',
+            date: '12 فبراير 2026',
+            readTime: '6 دقائق قراءة',
+            category: 'دليل'
+        },
+        {
+            slug: 'ramadan-tent-pricing-guide-uae-2026',
+            title: 'أسعار تأجير خيام رمضان في الإمارات: دليل تقديري 2026',
+            excerpt: 'دليل شامل لأسعار تأجير خيام رمضان 2026 في الإمارات مع مقارنة بين الموردين ونصائح للميزانية.',
+            image: '/images/blog/ramadan-night-market.png',
+            date: '12 فبراير 2026',
+            readTime: '5 دقائق قراءة',
+            category: 'دليل'
+        },
+        {
             slug: 'ramadan-calendar-uae-2026',
             title: 'تقويم رمضان الإمارات 2026: دليل شامل لمواقيت الصلاة والإفطار',
             excerpt: 'تقويم رمضان 2026 الكامل مع التواريخ المؤكدة، مواقيت الإفطار والسحور، وجداول الصلاة لدبي وأبوظبي والشارقة.',
@@ -56,6 +74,24 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'top-tent-suppliers-uae-2026',
+            title: 'Top 10 Tent Rental & Supplier Companies in UAE for Ramadan 2026',
+            excerpt: 'Your guide to the best event and Ramadan tent partners across Dubai, Abu Dhabi, Sharjah, and all Emirates.',
+            image: '/images/tent-now/ramadan-tents.jpg',
+            date: 'February 12, 2026',
+            readTime: '6 min read',
+            category: 'Guide'
+        },
+        {
+            slug: 'ramadan-tent-pricing-guide-uae-2026',
+            title: 'Ramadan Tent Rental Pricing in UAE: 2026 Estimated Guide',
+            excerpt: 'Realistic pricing ranges for Ramadan 2026 tent rentals across the UAE with supplier comparison and budgeting tips.',
+            image: '/images/blog/ramadan-night-market.png',
+            date: 'February 12, 2026',
+            readTime: '5 min read',
+            category: 'Guide'
+        },
         {
             slug: 'ramadan-calendar-uae-2026',
             title: 'Ramadan Calendar UAE 2026: Complete Guide to Prayer Times & Iftar Schedule',
