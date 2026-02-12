@@ -228,8 +228,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">05</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">Professionals Tents & Shades LLC</h3>
-                                            <p className="text-text-muted text-sm">حلول مخصصة مناسبة لفعاليات رمضان، والوظائف المؤسسية في الهواء الطلق، ومشاريع الخيام المخصصة في جميع أنحاء الإمارات.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2"><a href="https://almumtaztents.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Mumtaz Tents</a></h3>
+                                            <p className="text-text-muted text-sm">من أكبر موردي الخيام في الإمارات، مقرها الشارقة وتخدم جميع الإمارات. تشتهر بالخيام العربية التقليدية والمجالس وهياكل الفعاليات الكبرى، وهي الشركة الأم لـ Tent Now مع عقود من الخبرة في السوق الإماراتي.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -241,8 +241,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">06</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">Central Tents</h3>
-                                            <p className="text-text-muted text-sm">مورد يركز على أبوظبي، معروف بالخدمة السريعة وخيارات التأجير المرنة لكل من الفعاليات المؤسسية والخاصة.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Professionals Tents & Shades LLC</h3>
+                                            <p className="text-text-muted text-sm">حلول مخصصة مناسبة لفعاليات رمضان، والوظائف المؤسسية في الهواء الطلق، ومشاريع الخيام المخصصة في جميع أنحاء الإمارات.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -254,8 +254,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">07</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">BA Tents</h3>
-                                            <p className="text-text-muted text-sm">مورد خيام فعاليات وصناعية فاخرة مع أكثر من 30 عاماً من الخبرة الإقليمية، مع تخصيص قوي لحفلات الزفاف والتجمعات وخيام رمضان.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Central Tents</h3>
+                                            <p className="text-text-muted text-sm">مورد يركز على أبوظبي، معروف بالخدمة السريعة وخيارات التأجير المرنة لكل من الفعاليات المؤسسية والخاصة.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,8 +267,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">08</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">BAT Tents</h3>
-                                            <p className="text-text-muted text-sm">مزود في الإمارات والشرق الأوسط متخصص في الخيام القابلة للتخصيص والهياكل الفاخرة للفعاليات الراقية وحفلات الزفاف والمناسبات المجتمعية.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">BA Tents</h3>
+                                            <p className="text-text-muted text-sm">مورد خيام فعاليات وصناعية فاخرة مع أكثر من 30 عاماً من الخبرة الإقليمية، مع تخصيص قوي لحفلات الزفاف والتجمعات وخيام رمضان.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -505,8 +505,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">05</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">Professionals Tents & Shades LLC</h3>
-                                            <p className="text-text-muted text-sm">Tailored solutions suitable for Ramadan events, outdoor corporate functions, and custom tent projects across the UAE.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2"><a href="https://almumtaztents.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Mumtaz Tents</a></h3>
+                                            <p className="text-text-muted text-sm">One of the largest tent suppliers in the UAE, based in Sharjah and serving all Emirates. Renowned for traditional Arabic tents, Majlis setups, and large-scale event structures, Mumtaz Tents is the parent company of Tent Now with decades of experience in the UAE market.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -518,8 +518,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">06</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">Central Tents</h3>
-                                            <p className="text-text-muted text-sm">Abu Dhabi-focused supplier known for responsive service and flexible rental options for both corporate and private events.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Professionals Tents & Shades LLC</h3>
+                                            <p className="text-text-muted text-sm">Tailored solutions suitable for Ramadan events, outdoor corporate functions, and custom tent projects across the UAE.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -531,8 +531,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">07</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">BA Tents</h3>
-                                            <p className="text-text-muted text-sm">Premium event and industrial tent supplier with over 30 years of regional experience, strong customization for weddings, gatherings, and Ramadan tents.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Central Tents</h3>
+                                            <p className="text-text-muted text-sm">Abu Dhabi-focused supplier known for responsive service and flexible rental options for both corporate and private events.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -544,8 +544,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">08</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2">BAT Tents</h3>
-                                            <p className="text-text-muted text-sm">UAE & Middle East provider specializing in customizable tents and premium event structures for high-end weddings and community events.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">BA Tents</h3>
+                                            <p className="text-text-muted text-sm">Premium event and industrial tent supplier with over 30 years of regional experience, strong customization for weddings, gatherings, and Ramadan tents.</p>
                                         </div>
                                     </div>
                                 </div>
