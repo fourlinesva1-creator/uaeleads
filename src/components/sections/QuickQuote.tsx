@@ -1,23 +1,75 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Send, Loader2 } from 'lucide-react';
 import { useRouter } from '@/i18n/navigation';
+import { useRecaptcha } from '@/hooks/useRecaptcha';
+
+const uaePhoneRegex = /^(?:\+971|00971|0)?(?:50|51|52|54|55|56|58|2|3|4|6|7|9)\d{7}$/;
+const WHATSAPP_NUMBER = '971501826969';
 
 export default function QuickQuote() {
     const t = useTranslations('quickQuote');
     const router = useRouter();
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [service, setService] = useState('hotel');
+    const [phoneError, setPhoneError] = useState('');
+    const [submitError, setSubmitError] = useState('');
+    const honeypotRef = useRef<HTMLInputElement>(null);
+    const { executeRecaptcha } = useRecaptcha();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setSubmitError('');
+
+        if (honeypotRef.current?.value) {
+            router.push('/thank-you');
+            return;
+        }
+
+        const cleanPhone = phone.replace(/\s/g, '');
+        if (!uaePhoneRegex.test(cleanPhone)) {
+            setPhoneError('Please enter a valid UAE phone number');
+            return;
+        }
+        setPhoneError('');
         setIsSubmitting(true);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        try {
+            const token = await executeRecaptcha('submit_quick_quote');
+            const res = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ token }),
+            });
+            if (!res.ok) {
+                const err = await res.json();
+                setSubmitError(err.error || 'Verification failed. Please try again.');
+                setIsSubmitting(false);
+                return;
+            }
+        } catch {
+            setSubmitError('Security check failed. Please try again.');
+            setIsSubmitting(false);
+            return;
+        }
 
+        const waMessage =
+            `*Quick Quote Request from Tent Now Website*%0A` +
+            `--------------------------------%0A` +
+            `*Name:* ${name}%0A` +
+            `*Phone:* ${phone}%0A` +
+            `*Service:* ${service}%0A` +
+            `--------------------------------`;
+
+        const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
+
+        await new Promise(resolve => setTimeout(resolve, 800));
         setIsSubmitting(false);
+        window.open(whatsappUrl, '_blank');
         router.push('/thank-you');
     };
 
@@ -56,11 +108,24 @@ export default function QuickQuote() {
                         <div className="absolute top-0 right-12 w-24 h-1 bg-[#D4AF37] rounded-full -translate-y-1/2" />
 
                         <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* Honeypot - hidden from real users, filled by bots */}
+                            <input
+                                ref={honeypotRef}
+                                type="text"
+                                name="website"
+                                tabIndex={-1}
+                                autoComplete="off"
+                                style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }}
+                                aria-hidden="true"
+                            />
+
                             <div className="space-y-2">
                                 <label className="text-sm text-[#9da6b9] ml-1">{t('fields.name')}</label>
                                 <input
                                     type="text"
                                     required
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                     placeholder={t('placeholders.name')}
                                     className="w-full bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all"
                                 />
@@ -72,13 +137,20 @@ export default function QuickQuote() {
                                     <input
                                         type="tel"
                                         required
+                                        value={phone}
+                                        onChange={(e) => { setPhone(e.target.value); setPhoneError(''); }}
                                         placeholder={t('placeholders.phone')}
-                                        className="w-full bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all"
+                                        className={`w-full bg-[#1a212e] border ${phoneError ? 'border-red-500' : 'border-[#282e39]'} rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all`}
                                     />
+                                    {phoneError && <p className="text-xs text-red-500 mt-1 ml-1">{phoneError}</p>}
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm text-[#9da6b9] ml-1">{t('fields.service')}</label>
-                                    <select className="w-full bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all appearance-none cursor-pointer">
+                                    <select
+                                        value={service}
+                                        onChange={(e) => setService(e.target.value)}
+                                        className="w-full bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all appearance-none cursor-pointer"
+                                    >
                                         <option value="hotel">{t('services.hotel')}</option>
                                         <option value="corporate">{t('services.corporate')}</option>
                                         <option value="private">{t('services.private')}</option>
@@ -87,6 +159,10 @@ export default function QuickQuote() {
                                     </select>
                                 </div>
                             </div>
+
+                            {submitError && (
+                                <p className="text-xs text-red-500 text-center">{submitError}</p>
+                            )}
 
                             <button
                                 type="submit"

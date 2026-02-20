@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
+import { useRecaptcha } from '@/hooks/useRecaptcha';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -19,6 +20,7 @@ const quoteSchema = z.object({
     serviceType: z.enum(['corporate', 'private', 'hotel', 'staff', 'suhoor', 'other']),
     locationStatus: z.enum(['yes', 'no']),
     guests: z.enum(['under50', '50-150', '150-500', '500-1000', '1000plus']),
+    budget: z.enum(['under5k', '5k-15k', '15k-50k', '50kplus']),
     date: z.string().optional(),
     message: z.string().optional(),
 });
@@ -32,6 +34,9 @@ export default function QuoteForm() {
     const router = useRouter();
     const [step, setStep] = useState(1);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitError, setSubmitError] = useState('');
+    const honeypotRef = useRef<HTMLInputElement>(null);
+    const { executeRecaptcha } = useRecaptcha();
 
     const {
         register,
@@ -45,13 +50,14 @@ export default function QuoteForm() {
             serviceType: 'corporate',
             locationStatus: 'yes',
             guests: '50-150',
+            budget: '5k-15k',
         },
     });
 
     const nextStep = async () => {
         let fieldsToValidate: (keyof QuoteFormData)[] = [];
         if (step === 1) fieldsToValidate = ['name', 'phone', 'email'];
-        if (step === 2) fieldsToValidate = ['serviceType', 'locationStatus', 'guests'];
+        if (step === 2) fieldsToValidate = ['serviceType', 'locationStatus', 'guests', 'budget'];
 
         const isValid = await trigger(fieldsToValidate);
         if (isValid) setStep(step + 1);
@@ -60,7 +66,40 @@ export default function QuoteForm() {
     const prevStep = () => setStep(step - 1);
 
     const onSubmit = async (data: QuoteFormData) => {
+        setSubmitError('');
+
+        if (honeypotRef.current?.value) {
+            router.push('/thank-you');
+            return;
+        }
+
         setIsSubmitting(true);
+
+        try {
+            const token = await executeRecaptcha('submit_quote');
+            const res = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ token }),
+            });
+            if (!res.ok) {
+                const err = await res.json();
+                setSubmitError(err.error || 'Verification failed. Please try again.');
+                setIsSubmitting(false);
+                return;
+            }
+        } catch {
+            setSubmitError('Security check failed. Please try again.');
+            setIsSubmitting(false);
+            return;
+        }
+
+        const budgetLabels: Record<string, string> = {
+            'under5k': 'Under AED 5,000',
+            '5k-15k': 'AED 5,000 – 15,000',
+            '15k-50k': 'AED 15,000 – 50,000',
+            '50kplus': 'AED 50,000+',
+        };
 
         // Format the WhatsApp message
         const waMessage = `*New Quote Request from Tent Now Website*%0A` +
@@ -70,6 +109,7 @@ export default function QuoteForm() {
             `*Phone:* ${data.phone}%0A` +
             `*Email:* ${data.email}%0A` +
             `*Service:* ${data.serviceType}%0A` +
+            `*Budget:* ${budgetLabels[data.budget]}%0A` +
             `*Guest Count:* ${data.guests}%0A` +
             `*Location Confirmed:* ${data.locationStatus}%0A` +
             `*Date:* ${data.date || 'N/A'}%0A` +
@@ -118,6 +158,16 @@ export default function QuoteForm() {
 
             {/* Form Content */}
             <form onSubmit={handleSubmit(onSubmit)} className="bg-[#1a212e] border border-[#282e39] rounded-[2rem] p-8 sm:p-12 shadow-2xl relative overflow-hidden group">
+                {/* Honeypot - hidden from real users, filled by bots */}
+                <input
+                    ref={honeypotRef}
+                    type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }}
+                    aria-hidden="true"
+                />
                 {/* Subtle background glow */}
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-gold/5 blur-[80px] group-hover:bg-gold/10 transition-colors" />
 
@@ -211,6 +261,19 @@ export default function QuoteForm() {
                                     <option value="1000plus">{tf('guestOptions.1000plus')}</option>
                                 </select>
                             </div>
+                        </div>
+
+                        <div className="space-y-2">
+                            <label className="text-sm font-medium text-[#9da6b9] ml-1">{tf('budget')}</label>
+                            <select
+                                {...register('budget')}
+                                className="w-full bg-[#101622] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all appearance-none cursor-pointer"
+                            >
+                                <option value="under5k">{tf('budgetOptions.under5k')}</option>
+                                <option value="5k-15k">{tf('budgetOptions.5k-15k')}</option>
+                                <option value="15k-50k">{tf('budgetOptions.15k-50k')}</option>
+                                <option value="50kplus">{tf('budgetOptions.50kplus')}</option>
+                            </select>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -311,6 +374,10 @@ export default function QuoteForm() {
                                 )}
                             </button>
                         </div>
+
+                        {submitError && (
+                            <p className="text-xs text-red-500 mt-2 text-center">{submitError}</p>
+                        )}
 
                         <div className="space-y-4 mt-8">
                             <p className="text-center text-[11px] text-[#4b5563] italic">

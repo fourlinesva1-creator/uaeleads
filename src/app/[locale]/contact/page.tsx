@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
+import ContactForm from '@/components/forms/ContactForm';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
@@ -123,28 +124,10 @@ function ContactContent() {
                     {/* Contact Map / Form Placeholder */}
                     <div className="lg:col-span-2">
                         <div className="h-full min-h-[400px] w-full bg-[#1a212e] border border-[#282e39] rounded-3xl relative overflow-hidden">
-                            {/* Simplified Contact Form */}
+                            {/* Contact Form */}
                             <div className="p-8 sm:p-12">
                                 <h2 className="text-3xl font-display text-white mb-8">Send a Message</h2>
-                                <form className="space-y-6">
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        <div className="space-y-2">
-                                            <label className="text-sm text-[#9da6b9]">Full Name</label>
-                                            <input type="text" className="w-full bg-[#101622] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-colors" placeholder="E.g. John Doe" />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label className="text-sm text-[#9da6b9]">Phone Number</label>
-                                            <input type="tel" className="w-full bg-[#101622] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-colors" placeholder="050 123 4567" />
-                                        </div>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label className="text-sm text-[#9da6b9]">Message</label>
-                                        <textarea rows={4} className="w-full bg-[#101622] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-colors resize-none" placeholder="How can we help you?"></textarea>
-                                    </div>
-                                    <button type="submit" className="btn-gold-fill w-full py-4 rounded-xl font-display text-lg">
-                                        Send Message
-                                    </button>
-                                </form>
+                                <ContactForm />
                             </div>
                         </div>
                     </div>

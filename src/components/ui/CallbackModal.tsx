@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { useModal } from './ModalProvider';
 import { X } from 'lucide-react';
 import { useRouter } from '@/i18n/navigation';
+import { useRecaptcha } from '@/hooks/useRecaptcha';
 
 export default function CallbackModal() {
     const t = useTranslations('callback');
@@ -23,6 +24,9 @@ export default function CallbackModal() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [errors, setErrors] = useState<Record<string, string>>({});
+    const [submitError, setSubmitError] = useState('');
+    const honeypotRef = useRef<HTMLInputElement>(null);
+    const { executeRecaptcha } = useRecaptcha();
 
     if (!isCallbackOpen) return null;
 
@@ -30,8 +34,8 @@ export default function CallbackModal() {
         const newErrors: Record<string, string> = {};
         if (!formData.name) newErrors.name = t('form.validation.name');
 
-        // UAE Phone validation (simple regex: starting with 05 or +971 5)
-        const uaePhoneRegex = /^(?:\+971|00971|0)?(?:50|52|54|55|56|58|2|3|4|6|7|9)\d{7}$/;
+        // UAE Phone validation
+        const uaePhoneRegex = /^(?:\+971|00971|0)?(?:50|51|52|54|55|56|58|2|3|4|6|7|9)\d{7}$/;
         if (!formData.phone) {
             newErrors.phone = t('form.validation.phone');
         } else if (!uaePhoneRegex.test(formData.phone.replace(/\s/g, ''))) {
@@ -47,16 +51,54 @@ export default function CallbackModal() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setSubmitError('');
         if (!validate()) return;
+
+        if (honeypotRef.current?.value) {
+            closeCallback();
+            router.push('/thank-you');
+            return;
+        }
 
         setIsSubmitting(true);
 
-        // Simulate API call
         try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            const token = await executeRecaptcha('submit_callback');
+            const res = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ token }),
+            });
+            if (!res.ok) {
+                const err = await res.json();
+                setSubmitError(err.error || 'Verification failed. Please try again.');
+                setIsSubmitting(false);
+                return;
+            }
+        } catch {
+            setSubmitError('Security check failed. Please try again.');
+            setIsSubmitting(false);
+            return;
+        }
+
+        const waMessage =
+            `*Callback Request from Tent Now Website*%0A` +
+            `--------------------------------%0A` +
+            `*Name:* ${formData.name}%0A` +
+            `*Phone:* ${formData.phone}%0A` +
+            `*Location:* ${formData.location}%0A` +
+            `*Purpose:* ${formData.purpose}%0A` +
+            `*Preferred Call Time:* ${formData.time || 'N/A'}%0A` +
+            `--------------------------------`;
+
+        const whatsappUrl = `https://wa.me/971501826969?text=${waMessage}`;
+
+        try {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            window.open(whatsappUrl, '_blank');
             closeCallback();
             router.push('/thank-you');
-            setFormData({ name: '', phone: '', location: '', purpose: '', time: '' }); // Reset form after successful submission and redirect
+            setFormData({ name: '', phone: '', location: '', purpose: '', time: '' });
         } catch (error) {
             console.error(error);
         } finally {
@@ -101,6 +143,16 @@ export default function CallbackModal() {
                             </div>
 
                             <form onSubmit={handleSubmit} className="space-y-4">
+                                {/* Honeypot - hidden from real users, filled by bots */}
+                                <input
+                                    ref={honeypotRef}
+                                    type="text"
+                                    name="website"
+                                    tabIndex={-1}
+                                    autoComplete="off"
+                                    style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }}
+                                    aria-hidden="true"
+                                />
                                 {/* Full Name */}
                                 <div>
                                     <label className="block text-sm font-medium text-[#9da6b9] mb-1.5">
@@ -178,6 +230,10 @@ export default function CallbackModal() {
                                         placeholder="E.g. Monday afternoon"
                                     />
                                 </div>
+
+                                {submitError && (
+                                    <p className="text-xs text-red-500 text-center">{submitError}</p>
+                                )}
 
                                 {/* Submit Button */}
                                 <button
