@@ -145,8 +145,9 @@ export default function QuickQuote() {
                                     {phoneError && <p className="text-xs text-red-500 mt-1 ml-1">{phoneError}</p>}
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm text-[#9da6b9] ml-1">{t('fields.service')}</label>
+                                    <label htmlFor="quick-service-type" className="text-sm text-[#9da6b9] ml-1">{t('fields.service')}</label>
                                     <select
+                                        id="quick-service-type"
                                         value={service}
                                         onChange={(e) => setService(e.target.value)}
                                         className="w-full bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-white focus:border-[#D4AF37] outline-none transition-all appearance-none cursor-pointer"

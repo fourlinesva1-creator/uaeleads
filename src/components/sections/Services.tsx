@@ -86,7 +86,7 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
                     {t(`items.${service.key}.title`)}
                   </h3>
-                  <p className="text-primary font-bold text-sm">
+                  <p className="text-gold font-bold text-sm">
                     {t(`items.${service.key}.price`)}{' '}
                     <span className="text-text-muted font-normal text-xs">
                       / {t(`items.${service.key}.priceLabel`)}

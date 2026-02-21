@@ -17,6 +17,7 @@ export default function Hero() {
           alt="Luxury Ramadan Majlis Setup"
           fill
           priority
+          quality={60}
           className="object-cover transition-transform duration-[20s] ease-in-out group-hover:scale-110"
           sizes="100vw"
         />

@@ -43,5 +43,13 @@
   "devDependencies": {
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.6"
-  }
+  },
+  "browserslist": [
+    "chrome >= 87",
+    "firefox >= 78",
+    "safari >= 14",
+    "edge >= 88",
+    "not IE > 0",
+    "not op_mini all"
+  ]
 }
