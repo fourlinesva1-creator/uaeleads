@@ -38,6 +38,15 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'tent-rental-uae',
+            title: 'تأجير خيام في الإمارات: الدليل الشامل لجميع أنواع الخيام 2026',
+            excerpt: 'من خيام رمضان والمجالس إلى خيام المستودعات والقباب—دليلك الكامل لكل ما تحتاج معرفته عن تأجير الخيام في الإمارات.',
+            image: '/images/blog/tent-uae-1.jpg',
+            date: '25 فبراير 2026',
+            readTime: '8 دقائق قراءة',
+            category: 'دليل'
+        },
+        {
             slug: 'top-tent-suppliers-uae-2026',
             title: 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026',
             excerpt: 'دليلك لأفضل شركاء فعاليات وخيام رمضان في دبي وأبوظبي والشارقة وجميع الإمارات.',
@@ -74,6 +83,15 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'tent-rental-uae',
+            title: 'Tent Rental in UAE: Complete Guide to Every Tent Type (2026)',
+            excerpt: 'From Ramadan Majlis and event tents to warehouse structures and architectural domes — your complete guide to tent hire across all 7 Emirates.',
+            image: '/images/blog/tent-uae-1.jpg',
+            date: 'February 25, 2026',
+            readTime: '8 min read',
+            category: 'Guide'
+        },
         {
             slug: 'top-tent-suppliers-uae-2026',
             title: 'Top 10 Tent Rental & Supplier Companies in UAE for Ramadan 2026',
