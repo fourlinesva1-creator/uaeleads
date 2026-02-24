@@ -400,6 +400,13 @@ interface IftarTentSetupContentProps {
     contentImage?: string;
 }
 
+// Derive the city slug from the service slug (e.g. 'iftar-tent-rental-dubai' → 'dubai')
+const serviceSlugToCitySlug: Record<string, string> = {
+    'iftar-tent-rental-dubai': 'dubai',
+    'iftar-tent-rental-abu-dhabi': 'abu-dhabi',
+    'iftar-tent-rental-sharjah': 'sharjah',
+};
+
 export default function IftarTentSetupContent({
     slug = 'iftar-tent-rental-dubai',
     heroImage = '/images/tent-now/ramadan-tents-for-rentals.jpg',
@@ -410,6 +417,8 @@ export default function IftarTentSetupContent({
     const cityData = cityContentMap[slug] || dubaiContent;
     const t = locale === 'ar' ? cityData.ar : cityData.en;
     const pageUrl = `https://tentnow.ae/${locale}/services/${slug}`;
+    const citySlug = serviceSlugToCitySlug[slug];
+    const cityName = citySlug ? citySlug.split('-').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '';
 
     return (
         <main className="min-h-screen bg-bg-dark text-white font-sans" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
@@ -650,6 +659,47 @@ export default function IftarTentSetupContent({
                     </div>
                 </div>
             </section>
+
+            {/* LOCATION CROSS-LINKS */}
+            {citySlug && (
+                <section className="py-20 lg:py-24 border-t border-border/30">
+                    <div className="container-luxury">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                            <h2 className="text-2xl font-display text-white">
+                                {locale === 'ar'
+                                    ? `استكشف جميع خدمات ${cityName}`
+                                    : `Explore All ${cityName} Tent Services`}
+                            </h2>
+                            <Link
+                                href={`/locations/${citySlug}`}
+                                className="text-gold hover:text-white transition-colors text-sm flex items-center gap-2 shrink-0"
+                            >
+                                {locale === 'ar' ? `نظرة عامة على ${cityName}` : `${cityName} Overview`}
+                                <ArrowRight size={16} />
+                            </Link>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            {[
+                                { slug: 'ramadan-tent-rental', labelEn: 'Ramadan Tent Rental', labelAr: 'تأجير خيام رمضان' },
+                                { slug: 'majlis-tent-rental', labelEn: 'Majlis Tent Rental', labelAr: 'تأجير خيام مجالس' },
+                                { slug: 'suhoor-tent-rental', labelEn: 'Suhoor Tent Setups', labelAr: 'خيام السحور' },
+                                { slug: 'sadu-tent-rental', labelEn: 'Sadu Tent Rental', labelAr: 'تأجير خيام سدو' },
+                            ].map(({ slug: serviceSlug, labelEn, labelAr }) => (
+                                <Link
+                                    key={serviceSlug}
+                                    href={`/locations/${citySlug}/${serviceSlug}`}
+                                    className="p-5 bg-bg-card border border-border rounded-xl hover:border-gold/40 transition-all group flex items-center justify-between"
+                                >
+                                    <span className="text-white text-sm font-display group-hover:text-gold transition-colors">
+                                        {locale === 'ar' ? labelAr : labelEn}
+                                    </span>
+                                    <ArrowRight className="text-gold opacity-0 group-hover:opacity-100 transition-opacity shrink-0" size={16} />
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* FINAL CTA */}
             <section className="py-20 lg:py-28">

@@ -22,10 +22,10 @@
     "experience": "Ramadan Specialists"
   },
   "hero": {
-    "label": "Ramadan Tent Specialists Since 1994",
-    "titleBold": "AUTHENTIC RAMADAN TENTS",
-    "titleLight": "& MAJLIS RENTALS",
-    "description": "From intimate family Majlis to grand corporate Iftar tents, we bring 30 years of UAE heritage to your doorstep. Premium quality, transparent pricing, and hassle-free compliance for Ramadan 2026.",
+    "label": "Ramadan 2026 Is Happening NOW — Act Fast",
+    "titleBold": "IFTAR & SUHOOR TENTS",
+    "titleLight": "STILL AVAILABLE",
+    "description": "25 days left in Ramadan. We still have Iftar and Suhoor tent slots — same-week setup possible. 30 years of UAE expertise, permits handled, AC included. Call or WhatsApp now for same-day pricing.",
     "introduction": {
       "hook": "In the UAE, Ramadan isn't just a month on the calendar—it is a season of soul, gathering, and heritage. For three decades, Tent Now has had the privilege of being part of your most cherished memories.",
       "body": "We understand that a tent is never just a structure—it is the place where families break fast after a long day, where businesses strengthen their bonds, and where communities come together in spirit. While others see canvas and steel, we see the Majlis where stories are shared, the Iftar table that brings colleagues together, and the Suhoor gatherings that last until dawn."
@@ -49,11 +49,11 @@
       }
     },
     "cta": {
-      "callback": "Request for call back",
-      "whatsapp": "WhatsApp Us",
+      "callback": "Get a Callback Today",
+      "whatsapp": "WhatsApp for Instant Quote",
       "call": "Call Now",
-      "secure": "Secure Your Dates Early",
-      "secureBody": "The best designs and the best prices vanish first. Let us customize a solution that fits your vision and your budget."
+      "secure": "Same-Week Setup Available",
+      "secureBody": "Don't miss Ramadan. We can mobilize within 48–72 hours. Call or WhatsApp us now for immediate availability."
     }
   },
   "stats": {
@@ -191,7 +191,9 @@
     "titleBold": "PERFECTION",
     "description": "Bespoke event styling services for weddings, corporate galas, and VIP gatherings. Let us curate your perfect evening with our signature touch of elegance.",
     "quote": "Book Consultation",
-    "brochure": "Download Brochure"
+    "brochure": "Download Brochure",
+    "whatsapp": "WhatsApp for Instant Quote",
+    "call": "Call Now: +971 50 182 6969"
   },
   "quote": {
     "title": "Let's Build Your Vision Together",

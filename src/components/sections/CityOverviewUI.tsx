@@ -5,7 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import { CityOverview } from '@/data/city-content';
 import ServiceSchema from '@/components/seo/ServiceSchema';
-import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark } from 'lucide-react';
+import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 interface Props {
@@ -14,6 +14,13 @@ interface Props {
 }
 
 const audienceIcons = [Home, Landmark, Building2];
+
+// City → dedicated service page slug (for cross-linking)
+const cityServiceSlugMap: Record<string, string> = {
+    'dubai': 'iftar-tent-rental-dubai',
+    'abu-dhabi': 'iftar-tent-rental-abu-dhabi',
+    'sharjah': 'iftar-tent-rental-sharjah',
+};
 
 // City background images mapping
 const cityImages: Record<string, string> = {
@@ -192,7 +199,8 @@ export default function CityOverviewUI({ city, content }: Props) {
                             { slug: 'ramadan-tent-rental', label: 'Ramadan Tent Rental' },
                             { slug: 'majlis-tent-rental', label: 'Majlis Tent Rental' },
                             { slug: 'iftar-tent-rental', label: 'Iftar Tent Solutions' },
-                            { slug: 'suhoor-tent-rental', label: 'Suhoor Tent Setups' }
+                            { slug: 'suhoor-tent-rental', label: 'Suhoor Tent Setups' },
+                            { slug: 'sadu-tent-rental', label: 'Sadu Tent Rental' },
                         ].map(({ slug, label }) => (
                             <Link
                                 key={slug}
@@ -211,6 +219,25 @@ export default function CityOverviewUI({ city, content }: Props) {
                             </Link>
                         ))}
                     </div>
+
+                    {/* Cross-link to city-specific service deep-dive page */}
+                    {cityServiceSlugMap[city] && (
+                        <div className="mt-8 p-6 bg-[#1a212e] border border-gold/20 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <p className="text-text-muted text-sm mb-1">Complete {cityName} Guide</p>
+                                <p className="text-white font-display">
+                                    Iftar Tent Rental {cityName} — Full Setup Guide, Pricing & FAQs
+                                </p>
+                            </div>
+                            <Link
+                                href={`/services/${cityServiceSlugMap[city]}`}
+                                className="shrink-0 flex items-center gap-2 px-6 py-3 border border-gold text-gold rounded-xl text-sm font-display hover:bg-gold hover:text-[#101622] transition-all"
+                            >
+                                View Guide
+                                <ExternalLink size={16} />
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </section>
 

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY!;
-const SCORE_THRESHOLD = 0.5;
+const SCORE_THRESHOLD = 0.3;
 
 // Rate limiting: max 5 requests per IP per 10 minutes
 const RATE_LIMIT_MAX = 5;

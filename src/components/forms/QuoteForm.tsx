@@ -36,7 +36,17 @@ export default function QuoteForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitError, setSubmitError] = useState('');
     const honeypotRef = useRef<HTMLInputElement>(null);
+    const hasCapturedRef = useRef(false); // prevent duplicate partial captures
     const { executeRecaptcha } = useRecaptcha();
+
+    const captureToSheet = (payload: Record<string, unknown>) => {
+        // Fire-and-forget — never blocks the user flow
+        fetch('/api/capture-lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        }).catch(() => { /* silently ignore */ });
+    };
 
     const {
         register,
@@ -60,7 +70,22 @@ export default function QuoteForm() {
         if (step === 2) fieldsToValidate = ['serviceType', 'locationStatus', 'guests', 'budget'];
 
         const isValid = await trigger(fieldsToValidate);
-        if (isValid) setStep(step + 1);
+        if (isValid) {
+            // Capture contact details the moment Step 1 is valid — before user can abandon
+            if (step === 1 && !hasCapturedRef.current) {
+                hasCapturedRef.current = true;
+                const v = watch();
+                captureToSheet({
+                    formType: 'quote',
+                    formStep: 'partial',
+                    name: v.name,
+                    phone: v.phone,
+                    email: v.email,
+                    company: v.company || '',
+                });
+            }
+            setStep(step + 1);
+        }
     };
 
     const prevStep = () => setStep(step - 1);
@@ -73,6 +98,22 @@ export default function QuoteForm() {
             return;
         }
 
+        // Capture full lead immediately — before reCAPTCHA or WhatsApp can fail
+        captureToSheet({
+            formType: 'quote',
+            formStep: 'complete',
+            name: data.name,
+            phone: data.phone,
+            email: data.email,
+            company: data.company || '',
+            serviceType: data.serviceType,
+            guests: data.guests,
+            budget: data.budget,
+            date: data.date || '',
+            message: data.message || '',
+            locationStatus: data.locationStatus,
+        });
+
         setIsSubmitting(true);
 
         try {
@@ -82,16 +123,16 @@ export default function QuoteForm() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token }),
             });
-            if (!res.ok) {
+            // Only hard-block on rate limit — low reCAPTCHA scores still proceed
+            // (form outputs to WhatsApp, not a database, so risk is minimal)
+            if (res.status === 429) {
                 const err = await res.json();
-                setSubmitError(err.error || 'Verification failed. Please try again.');
+                setSubmitError(err.error || 'Too many requests. Please wait a few minutes and try again.');
                 setIsSubmitting(false);
                 return;
             }
         } catch {
-            setSubmitError('Security check failed. Please try again.');
-            setIsSubmitting(false);
-            return;
+            // reCAPTCHA not loaded or network error — proceed anyway
         }
 
         const budgetLabels: Record<string, string> = {

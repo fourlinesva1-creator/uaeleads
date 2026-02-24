@@ -108,6 +108,44 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                             </div>
                         </div>
 
+                        {/* Related City Services */}
+                        <div className="mt-20 pt-16 border-t border-border/30">
+                            <div className="flex items-center justify-between mb-8">
+                                <h2 className="text-2xl font-display text-white">
+                                    More {cityName} Services
+                                </h2>
+                                <Link
+                                    href={`/locations/${city}`}
+                                    className="text-gold hover:text-white transition-colors text-sm flex items-center gap-2"
+                                >
+                                    <ArrowRight size={16} className="rotate-180" />
+                                    All {cityName} Services
+                                </Link>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    { slug: 'ramadan-tent-rental', label: 'Ramadan Tent Rental' },
+                                    { slug: 'majlis-tent-rental', label: 'Majlis Tent Rental' },
+                                    { slug: 'iftar-tent-rental', label: 'Iftar Tent Solutions' },
+                                    { slug: 'suhoor-tent-rental', label: 'Suhoor Tent Setups' },
+                                    { slug: 'sadu-tent-rental', label: 'Sadu Tent Rental' },
+                                ]
+                                    .filter(s => s.slug !== slug)
+                                    .map(({ slug: siblingSlug, label }) => (
+                                        <Link
+                                            key={siblingSlug}
+                                            href={`/locations/${city}/${siblingSlug}`}
+                                            className="p-5 bg-[#1a212e] border border-border/50 rounded-xl hover:border-gold/40 transition-all group flex items-center justify-between"
+                                        >
+                                            <span className="text-white font-display group-hover:text-gold transition-colors text-sm">
+                                                {label} in {cityName}
+                                            </span>
+                                            <ArrowRight className="text-gold opacity-0 group-hover:opacity-100 transition-opacity shrink-0" size={18} />
+                                        </Link>
+                                    ))}
+                            </div>
+                        </div>
+
                         {/* Sticky CTA Bar / Final Call */}
                         <div className="mt-20 p-12 lg:p-16 bg-[#D4AF37] rounded-3xl relative overflow-hidden group">
                             <div className="absolute top-0 right-0 p-16 opacity-10 transform translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-700">

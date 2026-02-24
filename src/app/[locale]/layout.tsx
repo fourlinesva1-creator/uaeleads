@@ -11,6 +11,7 @@ import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import { ModalProvider } from '@/components/ui/ModalProvider';
 import CallbackModal from '@/components/ui/CallbackModal';
+import UrgencyBanner from '@/components/ui/UrgencyBanner';
 import BusinessSchema from '@/components/seo/BusinessSchema';
 import WebsiteSchema from '@/components/seo/WebsiteSchema';
 
@@ -170,6 +171,7 @@ export default async function LocaleLayout({
           <BusinessSchema />
           <WebsiteSchema />
           <ModalProvider>
+            <UrgencyBanner />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />

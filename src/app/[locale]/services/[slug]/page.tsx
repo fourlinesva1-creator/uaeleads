@@ -126,6 +126,44 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                         </div>
                     </div>
 
+                    {/* City-specific deep-dive pages for iftar-tent-rental */}
+                    {slug === 'iftar-tent-rental' && (
+                        <div className="mt-16 pt-12 border-t border-[#282e39]">
+                            <h2 className="text-2xl font-display text-white mb-2">City-Specific Iftar Tent Guides</h2>
+                            <p className="text-[#9da6b9] text-sm mb-8">
+                                Detailed pricing, permit requirements, and setup guides for each emirate.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {[
+                                    { city: 'Dubai', citySlug: 'iftar-tent-rental-dubai', locationSlug: 'dubai', note: 'Municipality & Civil Defense permits handled' },
+                                    { city: 'Abu Dhabi', citySlug: 'iftar-tent-rental-abu-dhabi', locationSlug: 'abu-dhabi', note: 'DMT & Abu Dhabi Civil Defense approvals' },
+                                    { city: 'Sharjah', citySlug: 'iftar-tent-rental-sharjah', locationSlug: 'sharjah', note: 'Cultural Capital — authentic Emirati setups' },
+                                ].map(({ city, citySlug, locationSlug, note }) => (
+                                    <div key={citySlug} className="p-6 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-[#D4AF37]/40 transition-all group">
+                                        <h3 className="text-white font-display mb-1 group-hover:text-[#D4AF37] transition-colors">
+                                            Iftar Tents in {city}
+                                        </h3>
+                                        <p className="text-[#9da6b9] text-xs mb-4">{note}</p>
+                                        <div className="flex flex-col gap-2">
+                                            <Link
+                                                href={`/services/${citySlug}`}
+                                                className="text-[#D4AF37] text-sm hover:underline"
+                                            >
+                                                Full {city} Guide →
+                                            </Link>
+                                            <Link
+                                                href={`/locations/${locationSlug}`}
+                                                className="text-[#9da6b9] text-sm hover:text-white transition-colors"
+                                            >
+                                                {city} Service Hub →
+                                            </Link>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
                     {/* Value Propositions */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
                         <div className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl">

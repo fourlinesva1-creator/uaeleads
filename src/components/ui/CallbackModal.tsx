@@ -28,6 +28,14 @@ export default function CallbackModal() {
     const honeypotRef = useRef<HTMLInputElement>(null);
     const { executeRecaptcha } = useRecaptcha();
 
+    const captureToSheet = (payload: Record<string, unknown>) => {
+        fetch('/api/capture-lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        }).catch(() => { /* silently ignore */ });
+    };
+
     if (!isCallbackOpen) return null;
 
     const validate = () => {
@@ -60,6 +68,17 @@ export default function CallbackModal() {
             return;
         }
 
+        // Capture lead immediately — before reCAPTCHA or WhatsApp can fail
+        captureToSheet({
+            formType: 'callback',
+            formStep: 'complete',
+            name: formData.name,
+            phone: formData.phone,
+            location: formData.location,
+            purpose: formData.purpose,
+            preferredTime: formData.time || '',
+        });
+
         setIsSubmitting(true);
 
         try {
@@ -69,16 +88,15 @@ export default function CallbackModal() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token }),
             });
-            if (!res.ok) {
+            // Only hard-block on rate limit — low reCAPTCHA scores still proceed
+            if (res.status === 429) {
                 const err = await res.json();
-                setSubmitError(err.error || 'Verification failed. Please try again.');
+                setSubmitError(err.error || 'Too many requests. Please wait a few minutes and try again.');
                 setIsSubmitting(false);
                 return;
             }
         } catch {
-            setSubmitError('Security check failed. Please try again.');
-            setIsSubmitting(false);
-            return;
+            // reCAPTCHA not loaded or network error — proceed anyway
         }
 
         const waMessage =
