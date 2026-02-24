@@ -5,7 +5,8 @@ import { Link } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import { CityOverview } from '@/data/city-content';
 import ServiceSchema from '@/components/seo/ServiceSchema';
-import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark, ExternalLink } from 'lucide-react';
+import FAQSchema from '@/components/seo/FAQSchema';
+import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark, ExternalLink, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 
 interface Props {
@@ -240,6 +241,41 @@ export default function CityOverviewUI({ city, content }: Props) {
                     )}
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            {content.faqs && content.faqs.length > 0 && (
+                <section className="py-20 border-t border-border/30">
+                    <FAQSchema items={content.faqs} />
+                    <div className="container-luxury">
+                        <h2 className="text-2xl md:text-3xl font-display text-white mb-10">
+                            {locale === 'ar' ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
+                        </h2>
+                        <div className="space-y-4 max-w-3xl">
+                            {content.faqs.map((faq, idx) => (
+                                <details
+                                    key={idx}
+                                    className="group bg-[#1a212e] border border-border/50 rounded-2xl overflow-hidden hover:border-gold/30 transition-colors"
+                                >
+                                    <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+                                        <h3 className="text-white font-display text-base md:text-lg leading-snug">
+                                            {faq.q}
+                                        </h3>
+                                        <ChevronDown
+                                            className="text-gold shrink-0 transition-transform group-open:rotate-180"
+                                            size={20}
+                                        />
+                                    </summary>
+                                    <div className="px-6 pb-5">
+                                        <p className="text-text-muted leading-relaxed text-sm md:text-base">
+                                            {faq.a}
+                                        </p>
+                                    </div>
+                                </details>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* Final CTA */}
             <section className="py-20">

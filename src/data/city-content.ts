@@ -4,6 +4,7 @@ export interface SEOContent {
     intro: string;
     mainBody: string;
     features: { title: string; body: string }[];
+    faqs?: { q: string; a: string }[];
     cta: string;
 }
 
@@ -22,6 +23,7 @@ export interface CityOverview {
         body: string;
     };
     areas: string[];
+    faqs?: { q: string; a: string }[];
     cta: string;
 }
 
@@ -54,6 +56,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'Setting up an Iftar tent without proper approvals can cost you up to AED 500,000 in fines. That\'s not a typo. Dubai Municipality, Civil Defense, and IACAD all have specific requirements for temporary structures. We\'ve navigated this process hundreds of times. Your permit paperwork, structural approvals, and safety certifications are all included in our service—no surprises, no extras.'
             },
             areas: ['Jumeirah', 'DIFC', 'Downtown Dubai', 'Dubai Marina', 'Business Bay', 'Al Barsha', 'Emirates Hills', 'Dubai Investment Park', 'Jebel Ali', 'Al Quoz', 'Palm Jumeirah', 'JBR'],
+            faqs: [
+                { q: 'What is the best Ramadan tent rental company in Dubai?', a: 'Tent Now has 30+ years of experience in Dubai tent rental, with full permits management across Dubai Municipality, Civil Defense, and IACAD. We serve all Dubai areas including Jumeirah, DIFC, Business Bay, Palm Jumeirah, and Dubai Marina—and we\'re still accepting Ramadan 2026 orders.' },
+                { q: 'How much does event tent rental cost in Dubai?', a: 'Event tent rental in Dubai is typically 15-25% below hotel venue pricing (which runs AED 295-470 per person). Our pricing depends on size, duration, and specs. Contact us for a custom quote—we work with corporate, hotel, and private family budgets.' },
+                { q: 'Do tent rentals in Dubai require permits?', a: 'Yes. Dubai Municipality, Civil Defense, and IACAD approval is mandatory for any temporary structure. Fines for unapproved structures can reach AED 500,000. All permits are fully included in our service—no surprises on installation day.' },
+                { q: 'How quickly can you set up a tent in Dubai for Ramadan?', a: 'Standard setups take 1-2 days depending on size. For urgent Ramadan 2026 requests, we offer 48-72 hour emergency deployment. Contact us now—slots are filling fast.' },
+            ],
             cta: 'Get Your Dubai Quote'
         },
         'abu-dhabi': {
@@ -83,6 +91,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'Abu Dhabi\'s Department of Municipalities and Transport has specific requirements for temporary structures—and they actually enforce them. Your tent needs to complement the capital\'s urban aesthetic, not look like a construction site. We\'ve navigated DMT approvals hundreds of times. Structural certifications, fire safety, aesthetic integration—it\'s all handled before we break ground.'
             },
             areas: ['Corniche', 'Khalifa City', 'Al Bateen', 'Al Mushrif', 'Saadiyat Island', 'Yas Island', 'Al Reem Island', 'Al Maryah Island', 'Mohammed Bin Zayed City', 'Al Shamkha', 'Masdar City', 'Al Raha'],
+            faqs: [
+                { q: 'How much does tent rental cost in Abu Dhabi?', a: 'Tent rental pricing in Abu Dhabi depends on size, duration, and specifications. We offer competitive options for government entities, corporate clients, and private families—significantly below Emirates Palace pricing. Contact us for a custom quote.' },
+                { q: 'Which tent rental companies serve Abu Dhabi?', a: 'Tent Now has operated in Abu Dhabi for 30+ years, handling all DMT and Civil Defense permits. We serve the Corniche, Khalifa City, Yas Island, Saadiyat Island, Al Reem Island, and all other areas of the capital.' },
+                { q: 'Do Abu Dhabi tent rentals require DMT permits?', a: 'Yes. The Department of Municipalities and Transport (DMT) has strict requirements for temporary structures in Abu Dhabi. We have navigated this process hundreds of times—all structural approvals, safety certifications, and aesthetic reviews are included in our service.' },
+                { q: 'Can you install tents on Abu Dhabi\'s islands?', a: 'Yes. We have specialized mobilization teams for Yas Island, Saadiyat Island, Al Reem Island, and Al Maryah Island installations.' },
+            ],
             cta: 'Get Your Abu Dhabi Quote'
         },
         sharjah: {
@@ -112,6 +126,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'Sharjah Municipality and Sharjah Civil Defense have strict seasonal guidelines. From fire-retardant fabric certifications to structural stability checks in wind-prone areas like the waterfront, we handle every detail. Being locally based means we can resolve any inspection issues within the hour, not the next day.'
             },
             areas: ['Al Majaz', 'University City', 'Al Rahmaniya', 'Al Khan', 'Al Suyoh', 'Muwaileh', 'Al Tai', 'Al Nahda', 'Sharjah Waterfront', 'SAIF Zone'],
+            faqs: [
+                { q: 'What is the best tent rental company in Sharjah?', a: 'Tent Now is based in Sharjah\'s SAIF Zone—we are the local experts, not a Dubai company visiting your Emirate. 30 years of Sharjah Municipality and Civil Defense permits, with no out-of-town mobilization fees.' },
+                { q: 'How much do tents for rent cost in Sharjah?', a: 'Tent rental in Sharjah is among the most competitive in the UAE precisely because we are locally based. No transport markup. Pricing depends on size and duration—contact us for a custom quote.' },
+                { q: 'How quickly can you install a tent in Sharjah?', a: 'Being based in Sharjah means faster deployment than any other company. For urgent requests, we can mobilize and install within 24-48 hours. Standard setups take 1 day.' },
+                { q: 'Do you serve University City and residential areas in Sharjah?', a: 'Yes. We serve all Sharjah areas including University City, Al Rahmaniya, Al Majaz, Al Khan, Al Suyoh, Muwaileh, Al Tai, Al Nahda, and the Sharjah Waterfront.' },
+            ],
             cta: 'Get Your Sharjah Quote'
         },
         ajman: {
@@ -239,6 +259,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'إقامة خيمة إفطار بدون الموافقات المناسبة قد يكلفك حتى 500,000 درهم غرامات. هذا ليس خطأ مطبعي. بلدية دبي والدفاع المدني وIACAD لديهم متطلبات محددة للهياكل المؤقتة. تعاملنا مع هذه العملية مئات المرات. أوراق التصاريح والموافقات الهيكلية وشهادات السلامة—كلها مشمولة في خدمتنا. بدون مفاجآت، بدون إضافات.'
             },
             areas: ['جميرا', 'DIFC', 'داون تاون دبي', 'مرسى دبي', 'بزنس باي', 'البرشاء', 'تلال الإمارات', 'مجمع دبي للاستثمار', 'جبل علي', 'القوز', 'نخلة جميرا', 'JBR'],
+            faqs: [
+                { q: 'ما هي أفضل شركة تأجير خيام في دبي؟', a: 'Tent Now من أقدم وأكثر شركات تأجير الخيام خبرة في دبي، بأكثر من 30 عاماً في السوق. نتولى جميع تصاريح بلدية دبي والدفاع المدني وIACAD. نخدم جميع مناطق دبي بما فيها جميرا وDIFC وبزنس باي ونخلة جميرا ومرسى دبي.' },
+                { q: 'كم تكلفة خيام فعاليات في دبي؟', a: 'تأجير خيام الفعاليات في دبي أقل بـ15-25% من أسعار الفنادق التي تتراوح بين 295-470 درهم للشخص. التكلفة تعتمد على الحجم والمدة والتجهيزات. تواصل معنا للحصول على عرض أسعار مخصص.' },
+                { q: 'هل تأجير خيام دبي يحتاج تصاريح؟', a: 'نعم. موافقة بلدية دبي والدفاع المدني وIACAD إلزامية لأي هيكل مؤقت. الغرامات على الهياكل غير المرخصة تصل إلى 500,000 درهم. جميع التصاريح مشمولة في خدمتنا بدون أي رسوم إضافية.' },
+                { q: 'كم من الوقت يستغرق تركيب خيمة في دبي؟', a: 'التجهيزات العادية تستغرق 1-2 يوم. لطلبات رمضان 2026 العاجلة، نقدم خدمة تركيب سريع خلال 48-72 ساعة. تواصل معنا الآن—المواعيد المتاحة محدودة.' },
+            ],
             cta: 'احصل على عرض أسعار دبي'
         },
         'abu-dhabi': {
@@ -268,6 +294,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'دائرة البلديات والنقل في أبوظبي لديها متطلبات محددة للهياكل المؤقتة—وهم يطبقونها فعلاً. خيمتك يجب أن تكمل الجمالية الحضرية للعاصمة، لا أن تبدو كموقع بناء. تعاملنا مع موافقات DMT مئات المرات. الشهادات الهيكلية، السلامة من الحريق، التكامل الجمالي—كله مُنجز قبل أن نبدأ العمل.'
             },
             areas: ['الكورنيش', 'مدينة خليفة', 'البطين', 'المشرف', 'جزيرة السعديات', 'جزيرة ياس', 'جزيرة الريم', 'جزيرة الماريه', 'مدينة محمد بن زايد', 'الشامخة', 'مدينة مصدر', 'الراحة'],
+            faqs: [
+                { q: 'ما هي أسعار تاجير خيام في ابوظبي؟', a: 'أسعار تأجير الخيام في أبوظبي تعتمد على الحجم والمدة والتجهيزات. نقدم خيارات تنافسية للجهات الحكومية والشركات والعائلات الخاصة—جميعها أقل بكثير من أسعار الفنادق مثل قصر الإمارات. تواصل معنا للحصول على عرض أسعار مخصص.' },
+                { q: 'هل تصاريح خيام أبوظبي مشمولة في الخدمة؟', a: 'نعم. نتولى جميع موافقات دائرة البلديات والنقل (DMT) ومتطلبات الدفاع المدني. 30 عاماً من خبرة التصاريح في أبوظبي تضمن الحصول عليها بدون تأخير أو مفاجآت.' },
+                { q: 'هل تخدمون جزر أبوظبي كياس والسعديات والريم؟', a: 'نعم، لدينا فرق تعبئة متخصصة لتركيبات الجزر في أبوظبي بما فيها جزيرة ياس وجزيرة السعديات وجزيرة الريم وجزيرة الماريه.' },
+                { q: 'كم من الوقت يستغرق تركيب خيمة في أبوظبي؟', a: 'التجهيزات العادية تستغرق 1-2 يوم. لطلبات الرمضان العاجلة نقدم تعبئة سريعة خلال 48-72 ساعة. لا يزال لدينا مواعيد متاحة لموسم 2026.' },
+            ],
             cta: 'احصل على عرض أسعار أبوظبي'
         },
         sharjah: {
@@ -297,6 +329,12 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 body: 'لدى بلدية الشارقة والدفاع المدني بالشارقة إرشادات موسمية صارمة. من شهادات الأقمشة المقاومة للحريق إلى فحوصات الاستقرار الهيكلي في المناطق المعرضة للرياح مثل الواجهة البحرية، نحن نتولى كل التفاصيل. كوننا مقيمين محلياً يعني أنه يمكننا حل أي مشكلات تفتيش في غضون ساعة، وليس في اليوم التالي.'
             },
             areas: ['المجاز', 'المدينة الجامعية', 'الرحمانية', 'الخان', 'السيوح', 'مويلح', 'الطي', 'النهدة', 'واجهة الشارقة المائية', 'منطقة سيف زون'],
+            faqs: [
+                { q: 'ما أسعار خيام للإيجار في الشارقة؟', a: 'أسعار الخيام للإيجار في الشارقة من الأكثر تنافسية في الإمارات—مقرنا في منطقة SAIF Zone لذا لا نفرض رسوم نقل. نقدم خيارات للمؤسسات المجتمعية والشركات والعائلات. تواصل معنا للحصول على عرض أسعار مخصص.' },
+                { q: 'ما هي أفضل شركة خيام في الشارقة؟', a: 'Tent Now هي الشركة المحلية الوحيدة للخيام في الشارقة، متمركزة في منطقة SAIF Zone منذ أكثر من 30 عاماً. نعرف متطلبات بلدية الشارقة والدفاع المدني أفضل من أي شركة أخرى.' },
+                { q: 'هل تقدمون خيام رمضان في المدينة الجامعية والرحمانية؟', a: 'نعم، نخدم جميع مناطق الشارقة: المدينة الجامعية، الرحمانية، المجاز، الخان، السيوح، مويلح، الطي، النهدة، وواجهة الشارقة المائية.' },
+                { q: 'كم من الوقت يستغرق تركيب خيمة في الشارقة؟', a: 'كوننا متمركزين في الشارقة، نستطيع التعبئة والتركيب أسرع من أي شركة أخرى. التجهيزات العادية تستغرق يوماً واحداً. في الحالات العاجلة يمكننا التركيب خلال 24-48 ساعة.' },
+            ],
             cta: 'احصل على عرض أسعار الشارقة'
         },
         ajman: {
@@ -411,6 +449,13 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Climate Engineering', body: 'February in Dubai is humid. Our AC systems are calculated for your specific tent volume and guest count—21°C guaranteed, even at full capacity.' },
                     { title: 'Location Expertise', body: 'Jumeirah villas, DIFC terraces, DIP industrial sites, JBR hotel extensions—we\'ve installed in every corner of Dubai. We know what works where.' }
                 ],
+                faqs: [
+                    { q: 'How much does Ramadan tent rental cost in Dubai?', a: 'Ramadan tent rental in Dubai runs 15-25% below hotel pricing (AED 295-470/person). Our pricing depends on size, duration, and specifications. Contact us for a custom quote—we work with all budgets from family setups to large corporate Iftars.' },
+                    { q: 'Which companies provide Ramadan tent rental in Dubai?', a: 'Tent Now has 30+ years in UAE Ramadan tent rental. We are based in Sharjah\'s SAIF Zone and serve all seven Emirates including Dubai, handling all Municipality, Civil Defense, and IACAD permits.' },
+                    { q: 'Does Ramadan tent rental in Dubai include air conditioning?', a: 'Yes. All our structures include climate-engineered AC systems calculated for your specific tent volume and guest count—21°C guaranteed even at full capacity in Dubai\'s February humidity.' },
+                    { q: 'How far in advance should I book a Ramadan tent in Dubai?', a: 'January is ideal, but we are still accepting Ramadan 2026 bookings and can mobilize within 48-72 hours for urgent requests. Contact us now—available slots are limited.' },
+                    { q: 'What areas of Dubai do you serve for Ramadan tent rental?', a: 'We install in all Dubai areas: Jumeirah, DIFC, Dubai Marina, Business Bay, Palm Jumeirah, Al Barsha, Emirates Hills, Downtown Dubai, Dubai Investment Park, Al Quoz, and Jebel Ali.' },
+                ],
                 cta: 'Get Your Custom Quote'
             },
             'majlis-tent-rental': {
@@ -422,6 +467,13 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Authentic Interiors', body: 'Custom floor majlis, traditional fabric selections, proper Sadu patterns—details that matter to people who know the difference.' },
                     { title: 'Privacy by Design', body: 'Separate entrances, sight-line planning, acoustic layering. Your family gathering stays private.' },
                     { title: 'Flexible Sizing', body: 'From intimate 20-person setups to 100+ guest configurations. We scale to your actual guest list, not a package tier.' }
+                ],
+                faqs: [
+                    { q: 'How much does Majlis tent rental cost in Dubai?', a: 'Majlis tent rental in Dubai is typically 15-25% below comparable hotel setups. Pricing depends on size, duration, and specifications—from intimate 20-person setups to 100+ guest configurations. Contact us for a custom quote tailored to your space and guest list.' },
+                    { q: 'Does Majlis tent rental in Dubai include permits?', a: 'Yes. All Dubai Municipality, Civil Defense, and IACAD permits are fully included. We have navigated this process hundreds of times—zero surprises on installation day, and no risk of the AED 500,000 fine for unapproved structures.' },
+                    { q: 'How quickly can you install a Majlis tent in Dubai?', a: 'Standard Majlis setups take one day. Larger projects over 500 sqm may take two days. For urgent Ramadan 2026 requests, we offer 48-72 hour emergency deployment.' },
+                    { q: 'What Dubai areas do you serve for Majlis tent rental?', a: 'We cover all Dubai areas: Jumeirah, Dubai Marina, DIFC, Business Bay, Palm Jumeirah, Emirates Hills, Al Barsha, Downtown Dubai, Jebel Ali, Al Quoz, and more.' },
+                    { q: 'What is the difference between a Majlis tent and an Iftar tent?', a: 'A Majlis tent is designed for intimate traditional gatherings with low floor seating, heritage fabrics, and private ambiance. An Iftar tent is optimized for larger groups with efficient buffet flow and corporate branding. Both can be customized for your exact needs.' },
                 ],
                 cta: 'Design Your Majlis'
             },
@@ -473,6 +525,12 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Capital Aesthetics', body: 'Earthy tones, classical Arabic arches, heritage patterns. Structures that look like they belong in Abu Dhabi, not imported from Dubai.' },
                     { title: 'Island Logistics', body: 'Yas Island, Saadiyat, Al Reem—we have mobilization teams specialized for Abu Dhabi\'s island installations.' }
                 ],
+                faqs: [
+                    { q: 'How much does Ramadan tent rental cost in Abu Dhabi?', a: 'Ramadan tent rental in Abu Dhabi is priced well below hotel venues like Emirates Palace (AED 400+/person). We offer government, corporate, and family pricing. Contact us for a custom quote based on your location, size, and duration.' },
+                    { q: 'Which tent rental companies serve Abu Dhabi?', a: 'Tent Now has 30+ years of Abu Dhabi experience, with specialized DMT permit management and dedicated island installation teams for Yas Island, Saadiyat, and Al Reem.' },
+                    { q: 'Do Ramadan tents in Abu Dhabi require DMT permits?', a: 'Yes. The Department of Municipalities and Transport (DMT) requires structural approvals, safety certifications, and aesthetic integration reviews. All permits are included in our service.' },
+                    { q: 'What areas of Abu Dhabi do you serve?', a: 'We serve all Abu Dhabi areas: Corniche, Khalifa City, Yas Island, Saadiyat Island, Al Reem Island, Al Maryah Island, Al Bateen, Al Mushrif, Mohammed Bin Zayed City, and more.' },
+                ],
                 cta: 'Get Your Abu Dhabi Quote'
             },
             'majlis-tent-rental': {
@@ -484,6 +542,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Palatial Scale', body: 'Up to 2,000 sqm of seamless coverage. Flooring, climate control, and finishing that works at mansion scale.' },
                     { title: 'Protocol Ready', body: 'Majlis Al Aali configurations, separate entrances, VIP positioning—we understand Abu Dhabi\'s hospitality hierarchy.' },
                     { title: 'Authentic Details', body: 'Gahwa stations, Mabkhara ventilation, traditional Sadu patterns, proper Arabian furnishings. Not decorations—function.' }
+                ],
+                faqs: [
+                    { q: 'How much does Majlis tent rental cost in Abu Dhabi?', a: 'Majlis tent rental in Abu Dhabi depends on scale—we handle everything from private family setups to 2,000 sqm palace courtyards. Pricing is significantly below comparable hotel experiences. Contact us for a custom quote.' },
+                    { q: 'Can you handle large-scale Majlis setups in Abu Dhabi?', a: 'Yes. We specialize in palatial-scale Majlis setups up to 2,000 sqm, including seamless flooring, climate control, Majlis Al Aali VIP sections, and authentic furnishings like Gahwa stations and Mabkhara.' },
+                    { q: 'Do Abu Dhabi Majlis tent rentals include permits?', a: 'Yes. All Department of Municipalities and Transport (DMT) permits and Civil Defense approvals are included. We\'ve handled these for private palaces, government compounds, and luxury hotels across the capital.' },
                 ],
                 cta: 'Design Your Private Majlis'
             },
@@ -528,35 +591,46 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Professional Ramadan Tent Rental in Sharjah',
                 subtitle: '30 Years of Presence in the Cultural Heart of the UAE',
-                intro: 'Based right here in Sharjah, Tent Now is the local expert for the Emirate’s Ramadan traditions. We understand Sharjah’s unique community spirit.',
-                mainBody: 'Operating out of SAIF Zone, we have been Sharjah’s premier tent supplier for three decades. From the family-focused suburbs of Al Rahmaniya to the bustling Al Majaz Waterfront and University City, our Sharjah team provides rapid, reliable, and respectful setups. We pride ourselves on being the local choice, offering the best logistics and prices since we are right in your neighborhood.',
+                intro: "Based right here in Sharjah, Tent Now is the local expert for the Emirate's Ramadan traditions. We understand Sharjah's unique community spirit.",
+                mainBody: "Operating out of SAIF Zone, we have been Sharjah's premier tent supplier for three decades. From the family-focused suburbs of Al Rahmaniya to the bustling Al Majaz Waterfront and University City, our Sharjah team provides rapid, reliable, and respectful setups. We pride ourselves on being the local choice, offering the best logistics and prices since we are right in your neighborhood.",
                 features: [
                     { title: 'Local Logistics', body: 'Being Sharjah-based means zero-delay delivery and immediate on-site technical support.' },
-                    { title: 'Community Focused', body: 'Designs that respect the cultural and traditional values of Sharjah’s residents.' },
+                    { title: 'Community Focused', body: "Designs that respect the cultural and traditional values of Sharjah's residents." },
                     { title: 'Sharjah Standards', body: 'Full compliance with Sharjah Civil Defense and Municipality regulations for seasonal tents.' }
+                ],
+                faqs: [
+                    { q: 'How much does Ramadan tent rental cost in Sharjah?', a: 'Ramadan tent rental in Sharjah is the most competitively priced in the UAE—we are based in SAIF Zone with no out-of-town mobilization fees. Contact us for a custom quote based on size and duration.' },
+                    { q: 'Which tent companies are based in Sharjah?', a: 'Tent Now is headquartered in Sharjah\'s SAIF Zone, making us the only true local tent company in the Emirate. 30 years of Sharjah Municipality and Civil Defense experience.' },
+                    { q: 'How quickly can you install a Ramadan tent in Sharjah?', a: 'Faster than any competitor—we are already here. Standard setups take 1 day. Emergency requests can be fulfilled in 24-48 hours.' },
+                    { q: 'What areas of Sharjah do you serve?', a: 'We serve all Sharjah areas: Al Majaz, University City, Al Rahmaniya, Al Khan, Al Suyoh, Muwaileh, Al Tai, Al Nahda, Sharjah Waterfront, and SAIF Zone.' },
                 ],
                 cta: 'Request Sharjah Quote'
             },
             'majlis-tent-rental': {
                 title: 'Traditional Majlis Tent Rental in Sharjah',
                 subtitle: 'Authentic Heritage for Al Khan and Al Suyoh Residences',
-                intro: 'The Majlis is the center of Sharjah’s family life. We specialize in creating high-quality, durable, and beautiful Majlis tents for Sharjah homes.',
-                mainBody: 'Our Sharjah Majlis setups are known for their authenticity and quality. Whether you need a small Majlis for your villa garden in Al Khan or a large-scale family tent in Al Suyoh, we provide the best interiors, from traditional carpets to custom wall paneling. We handle everything from Sharjah Municipality permits to final finishing, so you can focus on your guests.',
+                intro: "The Majlis is the center of Sharjah's family life. We specialize in creating high-quality, durable, and beautiful Majlis tents for Sharjah homes.",
+                mainBody: "Our Sharjah Majlis setups are known for their authenticity and quality. Whether you need a small Majlis for your villa garden in Al Khan or a large-scale family tent in Al Suyoh, we provide the best interiors, from traditional carpets to custom wall paneling. We handle everything from Sharjah Municipality permits to final finishing, so you can focus on your guests.",
                 features: [
-                    { title: 'Cultural Design', body: 'Authentic Arabic themes that perfectly complement Sharjah’s architectural heritage.' },
+                    { title: 'Cultural Design', body: "Authentic Arabic themes that perfectly complement Sharjah's architectural heritage." },
                     { title: 'Family Seating', body: 'Spacious and comfortable traditional seating arrangements for various guest sizes.' },
-                    { title: 'Quick Install', body: 'Efficient setup teams who respect your home’s privacy and complete the work on time.' }
+                    { title: 'Quick Install', body: "Efficient setup teams who respect your home's privacy and complete the work on time." }
+                ],
+                faqs: [
+                    { q: 'How much does Majlis tent rental cost in Sharjah?', a: 'Majlis tent rental in Sharjah is competitively priced with no out-of-town transport fees since we are locally based in SAIF Zone. We serve Al Khan, Al Suyoh, Al Rahmaniya, and all Sharjah areas. Contact us for a custom quote.' },
+                    { q: 'What makes a Sharjah Majlis different from a Dubai Majlis?', a: 'Sharjah Majlis setups emphasize heritage authenticity and community values more than Dubai\'s corporate style. We design with traditional Sadu patterns, privacy-first layouts, and quiet AC systems that suit the residential character of Sharjah neighborhoods.' },
+                    { q: 'Do Sharjah Majlis tents need permits?', a: 'Yes. Sharjah Municipality and Civil Defense permits are required for all temporary structures. As a Sharjah-based company, we handle these faster than any competitor from outside the Emirate.' },
                 ],
                 cta: 'Consult Our Experts'
             },
             'iftar-tent-rental': {
                 title: 'Grand Iftar Tent Solutions in Sharjah',
                 subtitle: 'Community and Corporate setups in Al Majaz and University City',
-                intro: 'Hosting a community Iftar in Sharjah requires reliable infrastructure. We are the trusted partners for Sharjah’s largest gatherings.',
-                mainBody: 'From charitable Iftars across Sharjah’s residential areas to corporate break-of-fast events in University City and SAIF Zone, our tents are built for hospitality. We focus on operational efficiency, ensuring that food service is smooth and the environment remains cool and comfortable for every guest.',
+                intro: "Hosting a community Iftar in Sharjah requires reliable infrastructure. We are the trusted partners for Sharjah's largest gatherings.",
+                mainBody: "From charitable Iftars across Sharjah's residential areas to corporate break-of-fast events in University City and SAIF Zone, our tents are built for hospitality. We focus on operational efficiency, ensuring that food service is smooth and the environment remains cool and comfortable for every guest.",
                 features: [
                     { title: 'High Capacity', body: 'Structures engineered to accommodate hundreds of guests safely and efficiently.' },
-                    { title: 'Industrial Grade AC', body: 'Powerful cooling systems that guarantee comfort during Sharjah’s humid evenings.' },
+                    { title: 'Industrial Grade AC', body: "Powerful cooling systems that guarantee comfort during Sharjah's humid evenings." },
                     { title: 'Safety First', body: 'Strict adherence to Sharjah Civil Defense fire safety and structure regulations.' }
                 ],
                 cta: 'Plan Iftar Setup'
@@ -564,7 +638,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'suhoor-tent-rental': {
                 title: 'Atmospheric Suhoor Tents in Sharjah',
                 subtitle: 'Refined Nightly Retreats for Family and Friends',
-                intro: 'Suhoor is a time for connection. We create the perfect, tranquil environment for Sharjah’s pre-dawn social gatherings.',
+                intro: "Suhoor is a time for connection. We create the perfect, tranquil environment for Sharjah's pre-dawn social gatherings.",
                 mainBody: 'Our Suhoor tents in Sharjah offer a sanctuary of calm. We use atmospheric lighting and comfortable lounge-style seating to create a space where guests can relax until the morning prayer. Whether for a specialized cafe setup at Al Majaz or a private gathering in Al Tai, we deliver a premium experience.',
                 features: [
                     { title: 'Acoustic Comfort', body: 'Layered draping to ensure a quiet, intimate environment for conversation.' },
@@ -578,11 +652,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Quality Ramadan Tent Rental in Ajman',
                 subtitle: 'Reliable Service for Al Jurf, Al Rawda, and Ajman Corniche',
-                intro: 'Ajman’s Ramadan is defined by close-knit community ties and traditional hospitality. We provide professional tent solutions tailored for Ajman’s residential and commercial hubs.',
+                intro: "Ajman's Ramadan is defined by close-knit community ties and traditional hospitality. We provide professional tent solutions tailored for Ajman's residential and commercial hubs.",
                 mainBody: 'From the suburban homes of Al Rawda to the corporate offices in Al Jurf and the leisure spots along Ajman Corniche, Tent Now offers rapid deployment and 5-star quality. We handle all Ajman Municipality and Civil Defense approvals, ensuring your seasonal setup is safe, compliant, and beautifully executed.',
                 features: [
                     { title: 'Rapid Install', body: 'Local mobilization teams ensuring your tent is ready well before the Holy Month.' },
-                    { title: 'Community Design', body: 'Classic Arabic themes that resonate with Ajman’s rich cultural heritage.' },
+                    { title: 'Community Design', body: "Classic Arabic themes that resonate with Ajman's rich cultural heritage." },
                     { title: 'Climate Control', body: 'Powerful AC systems designed to handle the coastal humidity of Ajman.' }
                 ],
                 cta: 'Get Ajman Quote'
@@ -603,7 +677,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 title: 'Seamless Iftar Tent Solutions in Ajman',
                 subtitle: 'Scale and Efficiency for Community Break-of-Fast',
                 intro: 'Host your community or staff Iftar with confidence. We provide the infrastructure for mass hospitality in Ajman.',
-                mainBody: 'Tent Now designs Iftar tents for Ajman’s charitable organizations and corporations, focusing on flow, safety, and hygiene. Our structures in areas like industrial Ajman and Corniche are built to accommodate large crowds with ease.',
+                mainBody: "Tent Now designs Iftar tents for Ajman's charitable organizations and corporations, focusing on flow, safety, and hygiene. Our structures in areas like industrial Ajman and Corniche are built to accommodate large crowds with ease.",
                 features: [
                     { title: 'High Capacity', body: 'Modular designs that can be scaled to fit any guest count.' },
                     { title: 'Safe Design', body: 'Strict adherence to all safety regulations for large-scale dining.' },
@@ -614,7 +688,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'suhoor-tent-rental': {
                 title: 'Relaxing Suhoor Tents in Ajman',
                 subtitle: 'Atmospheric Social Hubs for Pre-Dawn Gatherings',
-                intro: 'Suhoor is a time for relaxation. We create the perfect nightly retreat across Ajman’s top residential spots.',
+                intro: "Suhoor is a time for relaxation. We create the perfect nightly retreat across Ajman's top residential spots.",
                 mainBody: 'Our Suhoor tents in Ajman provide a tranquil environment for late-night gatherings. With soft lighting and comfortable lounge seating, we create an enclave of calm. Perfect for villa courtyards and hospitality venues in Ajman.',
                 features: [
                     { title: 'Lounge Vibe', body: 'Modern furniture and lighting for a refined social experience.' },
@@ -628,11 +702,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Premium Ramadan Tent Rental in Ras Al Khaimah',
                 subtitle: 'Iconic Setups for Al Marjan Island and Al Hamra',
-                intro: 'RAK’s Ramadan season combines mountain majesty with coastal luxury. Tent Now delivers world-class structures to the northernmost Emirate.',
-                mainBody: 'From the luxury resorts of Al Marjan Island to the private estates of Al Hamra and the bustling city center, Tent Now is RAK’s trusted partner. We bring 30 years of experience to the intricate requirements of RAK Civil Defense and the unique wind-loads of the northern coast.',
+                intro: "RAK's Ramadan season combines mountain majesty with coastal luxury. Tent Now delivers world-class structures to the northernmost Emirate.",
+                mainBody: "From the luxury resorts of Al Marjan Island to the private estates of Al Hamra and the bustling city center, Tent Now is RAK's trusted partner. We bring 30 years of experience to the intricate requirements of RAK Civil Defense and the unique wind-loads of the northern coast.",
                 features: [
-                    { title: 'Wind Resistant', body: 'Specifically engineered structures for RAK’s coastal and mountainous wind patterns.' },
-                    { title: 'Luxury Finishes', body: 'Premium interiors that match RAK’s high-end resort aesthetic.' },
+                    { title: 'Wind Resistant', body: "Specifically engineered structures for RAK's coastal and mountainous wind patterns." },
+                    { title: 'Luxury Finishes', body: "Premium interiors that match RAK's high-end resort aesthetic." },
                     { title: 'Full Compliance', body: 'Handling all RAK Municipality and Civil Defense structural approvals.' }
                 ],
                 cta: 'Request RAK Quote'
@@ -645,17 +719,17 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 features: [
                     { title: 'Heritage Focus', body: 'Authentic Arabic themes with high-quality traditional furnishings.' },
                     { title: 'Private Sanctuary', body: 'Thoughtful spatial planning for complete privacy and comfort.' },
-                    { title: 'All-Weather', body: 'Built to withstand RAK’s unique micro-climates during the Ramadan season.' }
+                    { title: 'All-Weather', body: "Built to withstand RAK's unique micro-climates during the Ramadan season." }
                 ],
                 cta: 'Design Your Majlis'
             },
             'iftar-tent-rental': {
                 title: 'Grand Iftar Tent Solutions in RAK',
                 subtitle: 'Infrastructure for Corporate Hospitality and Hotels',
-                intro: 'Partner with Tent Now for RAK’s most reliable Iftar setups. We specialize in hospitality infrastructure for hotels and businesses.',
-                mainBody: 'Supporting RAK’s thriving tourism and corporate sectors, we provide high-capacity Iftar tents that drive revenue and employee engagement. Our structures are found at RAK’s top hotels and industrial hubs.',
+                intro: "Partner with Tent Now for RAK's most reliable Iftar setups. We specialize in hospitality infrastructure for hotels and businesses.",
+                mainBody: "Supporting RAK's thriving tourism and corporate sectors, we provide high-capacity Iftar tents that drive revenue and employee engagement. Our structures are found at RAK's top hotels and industrial hubs.",
                 features: [
-                    { title: 'Hotel Standards', body: '5-star interior finishing that aligns with your brand’s reputation.' },
+                    { title: 'Hotel Standards', body: "5-star interior finishing that aligns with your brand's reputation." },
                     { title: 'Rapid Setup', body: 'Efficient mobilization teams for large-scale resort and industrial installations.' },
                     { title: 'Full Technical Support', body: '24/7 on-site maintenance for climate and power systems.' }
                 ],
@@ -664,8 +738,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'suhoor-tent-rental': {
                 title: 'Modern Suhoor Tents in Ras Al Khaimah',
                 subtitle: 'Atmospheric Nightlife Lounges for Resort and Villa Guests',
-                intro: 'Suhoor in RAK is about ambiance. We create the region’s most stunning pre-dawn lounge environments.',
-                mainBody: 'Our Suhoor setups on Al Marjan Island and across RAK’s residential areas define late-night luxury. We feature modern lounge seating, smart lighting, and specialized ventilation for the perfect social atmosphere.',
+                intro: "Suhoor in RAK is about ambiance. We create the region's most stunning pre-dawn lounge environments.",
+                mainBody: "Our Suhoor setups on Al Marjan Island and across RAK's residential areas define late-night luxury. We feature modern lounge seating, smart lighting, and specialized ventilation for the perfect social atmosphere.",
                 features: [
                     { title: 'Resort Style', body: 'Contemporary decor and furnishings tailored for a high-end lounge feel.' },
                     { title: 'Smart Ambience', body: 'Integrated lighting and sound for a fully immersive guest experience.' },
@@ -678,10 +752,10 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Professional Ramadan Tent Rental in Fujairah',
                 subtitle: 'Rugged and Reliable Setups for the East Coast',
-                intro: 'Fujairah’s unique geography requires specialized tent expertise. Tent Now delivers heavy-duty structures that perform under any conditions.',
+                intro: "Fujairah's unique geography requires specialized tent expertise. Tent Now delivers heavy-duty structures that perform under any conditions.",
                 mainBody: 'From the city center to Dibba and Al Shohadaa, we provide Fujairah with Civil Defense compliant Ramadan tents. Our structures are built to handle the humid coastal air and the strong mountain winds of the East Coast, ensuring safety and comfort throughout the Holy Month.',
                 features: [
-                    { title: 'Engineered Strength', body: 'Structures designed for Fujairah’s unique environmental conditions.' },
+                    { title: 'Engineered Strength', body: "Structures designed for Fujairah's unique environmental conditions." },
                     { title: 'Local Presence', body: 'Mobilization teams ready for deployment across the entire Emirate.' },
                     { title: 'Full Permits', body: 'We handle all Fujairah Municipality and Civil Defense paperwork.' }
                 ],
@@ -690,10 +764,10 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'majlis-tent-rental': {
                 title: 'Authentic Majlis Tent Rental in Fujairah',
                 subtitle: 'Traditional Heritage for East Coast Families',
-                intro: 'Honor the traditions of Ramadan with a bespoke Majlis. We bring the heart of the home to Fujairah’s villas.',
+                intro: "Honor the traditions of Ramadan with a bespoke Majlis. We bring the heart of the home to Fujairah's villas.",
                 mainBody: 'Our Majlis designs in Fujairah combine traditional aesthetics with modern cooling technology. We create intimate spaces for families in Al Faseel, Merbeih, and beyond, ensuring a perfect environment for hospitality.',
                 features: [
-                    { title: 'Heritage Sourcing', body: 'Traditional Arabic carpets and seating that reflect Fujairah’s culture.' },
+                    { title: 'Heritage Sourcing', body: "Traditional Arabic carpets and seating that reflect Fujairah's culture." },
                     { title: 'Comfort Focus', body: 'Advanced climate control for those humid Fujairah evenings.' },
                     { title: 'Quick Turnaround', body: 'Fast and efficient installation with minimal disruption to your home.' }
                 ],
@@ -702,19 +776,19 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'iftar-tent-rental': {
                 title: 'Grand Iftar Tent Solutions in Fujairah',
                 subtitle: 'Support for Corporate and Community Hospitality',
-                intro: 'Reliable infrastructure for Fujairah’s largest Iftar gatherings. We specialize in high-capacity, safe environments.',
-                mainBody: 'Providing Iftar tents for Fujairah’s community centers and industrial giants, Tent Now focuses on large-scale safety and operational flow. Our structures are engineered for the high volume of the break-of-fast.',
+                intro: "Reliable infrastructure for Fujairah's largest Iftar gatherings. We specialize in high-capacity, safe environments.",
+                mainBody: "Providing Iftar tents for Fujairah's community centers and industrial giants, Tent Now focuses on large-scale safety and operational flow. Our structures are engineered for the high volume of the break-of-fast.",
                 features: [
                     { title: 'High Capacity', body: 'Large span tents that provide open, unobstructed spaces for hundreds.' },
                     { title: 'Industrial AC', body: 'The most powerful cooling systems available in the Northern Emirates.' },
-                    { title: 'Certified Safe', body: 'Meeting all requirements of Fujairah’s safety and health authorities.' }
+                    { title: 'Certified Safe', body: "Meeting all requirements of Fujairah's safety and health authorities." }
                 ],
                 cta: 'Plan Iftar Gathering'
             },
             'suhoor-tent-rental': {
                 title: 'Tranquil Suhoor Tents in Fujairah',
                 subtitle: 'Late-Night Sanctuaries for Social Connection',
-                intro: 'Suhoor is for meditation and conversation. We create the peaceful atmosphere Fujairah’s residents cherish.',
+                intro: "Suhoor is for meditation and conversation. We create the peaceful atmosphere Fujairah's residents cherish.",
                 mainBody: 'Our Suhoor tents in Fujairah offer a refined social experience with comfortable seating and peaceful decor. We specialize in creating a mood that encourages guests to enjoy the pre-dawn hours together.',
                 features: [
                     { title: 'Intimate Vibe', body: 'Softer lighting and acoustic padding for a tranquil social space.' },
@@ -728,19 +802,19 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Reliable Ramadan Tent Rental in Umm Al Quwain',
                 subtitle: 'Community-Focused Setups for Al Salamah and Beyond',
-                intro: 'Umm Al Quwain’s Ramadan traditions are deeply rooted. Tent Now provides the professional infrastructure to support UAQ’s hospitality.',
-                mainBody: 'From the growing residential areas of Al Salamah to the coastal developments, Tent Now offers UAQ’s best value and quality. We handle all local UAQ Civil Defense and Municipality approvals, providing a stress-free experience for families and businesses alike.',
+                intro: "Umm Al Quwain's Ramadan traditions are deeply rooted. Tent Now provides the professional infrastructure to support UAQ's hospitality.",
+                mainBody: "From the growing residential areas of Al Salamah to the coastal developments, Tent Now offers UAQ's best value and quality. We handle all local UAQ Civil Defense and Municipality approvals, providing a stress-free experience for families and businesses alike.",
                 features: [
                     { title: 'Efficient Install', body: 'Quick deployment teams ensuring your tent is ready on schedule.' },
-                    { title: 'Local Know-How', body: '30 years of navigating UAQ’s specific regulations and site conditions.' },
-                    { title: 'Climate Comfort', body: 'High-capacity cooling solutions tailored for UAQ’s coastal weather.' }
+                    { title: 'Local Know-How', body: "30 years of navigating UAQ's specific regulations and site conditions." },
+                    { title: 'Climate Comfort', body: "High-capacity cooling solutions tailored for UAQ's coastal weather." }
                 ],
                 cta: 'Request UAQ Quote'
             },
             'majlis-tent-rental': {
                 title: 'Traditional Majlis Tent Rental in UAQ',
                 subtitle: 'Honoring Heritage in Your Private Home',
-                intro: 'Build a Majlis that reflects your family’s hospitality. We specialize in traditional setups for UAQ residences.',
+                intro: "Build a Majlis that reflects your family's hospitality. We specialize in traditional setups for UAQ residences.",
                 mainBody: 'Our UAQ Majlis solutions focus on authenticity and quality. We create beautiful, climate-controlled environments for families in Al Ramlah, Al Raudah, and across the Emirate, utilizing traditional designs that never go out of style.',
                 features: [
                     { title: 'Heritage Interiors', body: 'Authentic Arabic carpets and seating themes.' },
@@ -752,8 +826,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'iftar-tent-rental': {
                 title: 'Grand Iftar Tent Solutions in UAQ',
                 subtitle: 'Hospitality Infrastructure for Large-Scale Gatherings',
-                intro: 'Host your Iftar with UAQ’s most trusted technical partner. We provide the scale you need for community hospitality.',
-                mainBody: 'Specializing in large-scale Iftar setups for UAQ’s mosques and corporations, we focus on safe crowd management and operational flow. Our structures are designed for maximum safety and comfort during the peak hours of fast-breaking.',
+                intro: "Host your Iftar with UAQ's most trusted technical partner. We provide the scale you need for community hospitality.",
+                mainBody: "Specializing in large-scale Iftar setups for UAQ's mosques and corporations, we focus on safe crowd management and operational flow. Our structures are designed for maximum safety and comfort during the peak hours of fast-breaking.",
                 features: [
                     { title: 'Large Scale', body: 'Structures capable of hosting hundreds of guests simultaneously.' },
                     { title: 'Safety Regulated', body: 'Built in full compliance with UAQ Civil Defense fire and safety codes.' },
@@ -764,7 +838,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'suhoor-tent-rental': {
                 title: 'Atmospheric Suhoor Tents in Umm Al Quwain',
                 subtitle: 'Peaceful Lounges for Late-Night Socializing',
-                intro: 'Suhoor is about connection. We design the perfect social environments for UAQ’s nightly social circles.',
+                intro: "Suhoor is about connection. We design the perfect social environments for UAQ's nightly social circles.",
                 mainBody: 'Our Suhoor tents in UAQ offer a refined experience for pre-dawn social gatherings. With atmospheric lighting and plush lounge seating, we create an enclave of hospitality that invites guests to stay until morning.',
                 features: [
                     { title: 'Lounge Aesthetic', body: 'Modern furniture combined with traditional UAQ cultural touches.' },
@@ -787,6 +861,13 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'هندسة المناخ', body: 'فبراير في دبي رطب. أنظمة التكييف لدينا محسوبة لحجم خيمتك وعدد ضيوفك—21 درجة مضمونة حتى بالسعة الكاملة.' },
                     { title: 'خبرة الموقع', body: 'فلل جميرا، تراسات DIFC، مواقع DIP الصناعية، توسعات فنادق JBR—ركّبنا في كل زاوية من دبي. نعرف ما يناسب أين.' }
                 ],
+                faqs: [
+                    { q: 'كم تكلفة تأجير خيام رمضان في دبي؟', a: 'أسعار تأجير خيام رمضان في دبي أقل بـ15-25% من أسعار الفنادق (295-470 درهم للشخص). التكلفة تعتمد على الحجم والمدة والتجهيزات—من التجمعات العائلية الصغيرة للإفطارات الكبيرة للشركات. تواصل معنا للحصول على عرض مخصص لموقعك.' },
+                    { q: 'ما هي شركات خيام رمضان المعتمدة في الإمارات؟', a: 'Tent Now من أقدم وأكثر شركات تأجير خيام رمضان خبرة في الإمارات، بأكثر من 30 عاماً في السوق. مقرنا في منطقة SAIF Zone بالشارقة ونخدم جميع الإمارات.' },
+                    { q: 'هل خيام رمضان في دبي مكيفة؟', a: 'نعم، جميع خيامنا مزودة بأنظمة تكييف هندسية محسوبة لحجم الخيمة وعدد الضيوف—21 درجة مضمونة حتى بالسعة الكاملة في رطوبة فبراير بدبي.' },
+                    { q: 'متى يجب حجز خيمة رمضان في دبي؟', a: 'كلما كان مبكراً أفضل—يناير هو الوقت المثالي. لكننا لا نزال نقبل حجوزات موسم رمضان 2026 ويمكننا التعبئة خلال 48-72 ساعة للطلبات العاجلة. تواصل معنا الآن—المواعيد المتاحة محدودة.' },
+                    { q: 'ما مناطق دبي التي تخدمونها لتأجير خيام رمضان؟', a: 'نركب في جميع مناطق دبي: جميرا، DIFC، مرسى دبي، بزنس باي، نخلة جميرا، البرشاء، تلال الإمارات، داون تاون دبي، مجمع دبي للاستثمار، القوز، وجبل علي.' },
+                ],
                 cta: 'احصل على عرض أسعار مخصص'
             },
             'majlis-tent-rental': {
@@ -798,6 +879,13 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'تصاميم أصيلة', body: 'مجالس أرضية مخصصة، اختيارات أقمشة تقليدية، أنماط سدو أصيلة—تفاصيل تهم من يعرف الفرق.' },
                     { title: 'خصوصية بالتصميم', body: 'مداخل منفصلة، تخطيط خطوط الرؤية، طبقات صوتية. تجمعك العائلي يبقى خاصاً.' },
                     { title: 'أحجام مرنة', body: 'من تجهيزات 20 شخص الحميمة إلى تجهيزات 100+ ضيف. نتوسع حسب قائمة ضيوفك الفعلية، لا حسب فئة باقة.' }
+                ],
+                faqs: [
+                    { q: 'كم تكلفة تاجير خيمة مجلس في دبي؟', a: 'أسعار تأجير خيمة المجلس في دبي أقل بـ15-25% من التجهيزات الفندقية المماثلة. التكلفة تعتمد على الحجم والمدة—من تجهيزات 20 شخص الحميمة إلى 100+ ضيف. تواصل معنا للحصول على عرض أسعار مخصص لمساحتك وعدد ضيوفك.' },
+                    { q: 'هل تاجير خيمة مجلس في دبي يشمل التصاريح؟', a: 'نعم، جميع تصاريح بلدية دبي والدفاع المدني وIACAD مشمولة في خدمتنا. تعاملنا مع هذه العملية مئات المرات—لا مفاجآت يوم التركيب، ولا خطر غرامة 500,000 درهم على هيكل غير مرخص.' },
+                    { q: 'كم من الوقت يستغرق تركيب خيمة المجلس في دبي؟', a: 'التجهيزات العادية تستغرق يوماً واحداً. المشاريع الأكبر التي تتجاوز 500 متر مربع قد تحتاج يومين. لطلبات رمضان العاجلة نقدم خدمة تركيب سريع خلال 48-72 ساعة.' },
+                    { q: 'ما المناطق التي تخدمونها لخيام المجلس في دبي؟', a: 'نخدم جميع مناطق دبي: جميرا، مرسى دبي، DIFC، بزنس باي، نخلة جميرا، تلال الإمارات، البرشاء، داون تاون دبي، جبل علي، والقوز.' },
+                    { q: 'هل تقدمون خيام فعاليات في دبي للمناسبات الخاصة؟', a: 'نعم، نقدم خيام فعاليات ومجالس رمضانية لجميع المناسبات في دبي—تجمعات عائلية، إفطارات خاصة، مجالس ليلية. كل خيمة مخصصة حسب موقعك واحتياجاتك.' },
                 ],
                 cta: 'صمم مجلسك'
             },
@@ -849,6 +937,12 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'جماليات العاصمة', body: 'ألوان ترابية، أقواس عربية كلاسيكية، أنماط تراثية. هياكل تبدو وكأنها تنتمي لأبوظبي، لا مستوردة من دبي.' },
                     { title: 'لوجستيات الجزر', body: 'جزيرة ياس، السعديات، الريم—لدينا فرق تعبئة متخصصة لتركيبات جزر أبوظبي.' }
                 ],
+                faqs: [
+                    { q: 'كم تكلفة تاجير خيام في ابوظبي؟', a: 'أسعار تأجير الخيام في أبوظبي أقل بكثير من الفنادق مثل قصر الإمارات (400+ درهم للشخص). نقدم خيارات للجهات الحكومية والشركات والعائلات الخاصة. تواصل معنا للحصول على عرض أسعار مخصص لموقعك وحجمك.' },
+                    { q: 'ما هي شركات خيام رمضان في الإمارات التي تخدم أبوظبي؟', a: 'Tent Now لها 30+ عاماً من الخبرة في أبوظبي، مع فرق متخصصة لإدارة تصاريح DMT وتركيبات الجزر في ياس والسعديات والريم.' },
+                    { q: 'هل تصاريح DMT مشمولة في خدمة أبوظبي؟', a: 'نعم. نتولى جميع موافقات دائرة البلديات والنقل وشهادات السلامة والمراجعات الجمالية. تعاملنا مع هذه العملية مئات المرات في أبوظبي.' },
+                    { q: 'ما المناطق التي تخدمونها في أبوظبي؟', a: 'نخدم جميع مناطق أبوظبي: الكورنيش، مدينة خليفة، جزيرة ياس، جزيرة السعديات، جزيرة الريم، جزيرة الماريه، البطين، المشرف، ومدينة محمد بن زايد.' },
+                ],
                 cta: 'احصل على عرض أسعار أبوظبي'
             },
             'majlis-tent-rental': {
@@ -860,6 +954,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'مساحات ضخمة', body: 'حتى 2,000 متر مربع من التغطية المتصلة. أرضيات، تحكم في المناخ، وتشطيبات تعمل بمقياس القصور.' },
                     { title: 'جاهز للبروتوكول', body: 'تجهيزات مجلس الأعلى، مداخل منفصلة، وضعية كبار الشخصيات—نفهم تسلسل الضيافة في أبوظبي.' },
                     { title: 'تفاصيل أصيلة', body: 'محطات قهوة عربية، تهوية مبخرة، أنماط سدو تقليدية، مفروشات عربية أصيلة. ليست زينة—وظيفة.' }
+                ],
+                faqs: [
+                    { q: 'كم تكلفة تأجير مجلس خاص في أبوظبي؟', a: 'تأجير المجالس الخاصة في أبوظبي يعتمد على الحجم—نتعامل مع كل شيء من التجهيزات الصغيرة حتى أفنية القصور التي تصل إلى 2,000 متر مربع. الأسعار أقل بكثير من الفنادق المماثلة. تواصل معنا للحصول على عرض أسعار.' },
+                    { q: 'هل يمكنكم تغطية مساحات كبيرة في أبوظبي؟', a: 'نعم، نتخصص في المجالس الضخمة حتى 2,000 متر مربع، مع أرضيات متصلة، تحكم في المناخ، تجهيزات مجلس الأعلى، ومفروشات أصيلة كمحطات القهوة العربية والمبخرة.' },
+                    { q: 'هل تصاريح مجلس أبوظبي مشمولة في الخدمة؟', a: 'نعم. جميع موافقات دائرة البلديات والنقل (DMT) وشهادات الدفاع المدني مشمولة. تعاملنا مع هذه التصاريح للقصور الخاصة والمجمعات الحكومية والفنادق الفاخرة في أبوظبي.' },
                 ],
                 cta: 'صمم مجلسك الخاص'
             },
@@ -911,6 +1010,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'تركيز مجتمعي', body: 'تصاميم تحترم القيم الثقافية والتقليدية لسكان الشارقة.' },
                     { title: 'معايير الشارقة', body: 'التزام كامل بلوائح الدفاع المدني وبلدية الشارقة للخيام الموسمية.' }
                 ],
+                faqs: [
+                    { q: 'كم تكلفة تأجير خيام رمضان في الشارقة؟', a: 'تأجير خيام رمضان في الشارقة من الأكثر تنافسية—مقرنا في SAIF Zone بدون رسوم نقل إضافية. تواصل معنا للحصول على عرض أسعار مخصص لحجمك وموقعك.' },
+                    { q: 'ما هي أفضل شركة خيام محلية في الشارقة؟', a: 'Tent Now هي الشركة المحلية الوحيدة للخيام في الشارقة، متمركزة في SAIF Zone منذ أكثر من 30 عاماً. نعرف متطلبات بلدية الشارقة والدفاع المدني أفضل من أي شركة زائرة من دبي.' },
+                    { q: 'هل تخدمون جميع مناطق الشارقة؟', a: 'نعم، نخدم جميع مناطق الشارقة: المدينة الجامعية، الرحمانية، المجاز، الخان، السيوح، مويلح، الطي، النهدة، وواجهة الشارقة المائية.' },
+                ],
                 cta: 'اطلب عرض أسعار الشارقة'
             },
             'majlis-tent-rental': {
@@ -922,6 +1026,11 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'تصميم ثقافي', body: 'سمات عربية أصيلة تكمل بامتياز التراث المعماري للشارقة.' },
                     { title: 'جلسات عائلية', body: 'ترتيبات جلوس تقليدية واسعة ومريحة لمختلف أعداد الضيوف.' },
                     { title: 'تركيب سريع', body: 'فرق تركيب فعالة تحترم خصوصية منزلك وتنجز العمل في الوقت المحدد.' }
+                ],
+                faqs: [
+                    { q: 'كم تكلفة خيام للإيجار في الشارقة للمجالس؟', a: 'أسعار خيام المجالس للإيجار في الشارقة تنافسية جداً لأننا المورد المحلي. لا رسوم نقل. نخدم الخان والسيوح والرحمانية وجميع مناطق الشارقة. تواصل معنا للحصول على عرض أسعار.' },
+                    { q: 'هل مجالس الشارقة تحتاج تصاريح؟', a: 'نعم. بلدية الشارقة والدفاع المدني يطلبان تصاريح لجميع الهياكل المؤقتة. بوجودنا المحلي في SAIF Zone نتولى هذه التصاريح أسرع من أي شركة أخرى.' },
+                    { q: 'هل تقدمون خيام مجلس خاص للعائلات في الشارقة؟', a: 'نعم، نتخصص في مجالس العائلات السكنية في الشارقة مع تصاميم تراثية، أنماط سدو تقليدية، وتخطيطات تراعي الخصوصية.' },
                 ],
                 cta: 'استشر خبيرنا'
             },
