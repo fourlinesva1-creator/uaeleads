@@ -6,9 +6,9 @@ export default function BusinessSchema() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Tent Now",
-        "image": "https://tentnow.ae/images/og-image.jpg",
-        "@id": "https://tentnow.ae",
-        "url": "https://tentnow.ae",
+        "image": "https://www.tentnow.ae/images/og-image.jpg",
+        "@id": "https://www.tentnow.ae",
+        "url": "https://www.tentnow.ae",
         "telephone": "+971501826969",
         "address": {
             "@type": "PostalAddress",

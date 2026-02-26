@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function RamadanCalendarPage() {
     const locale = useLocale();
-    const articleUrl = `https://tentnow.ae/${locale}/blog/ramadan-calendar-uae-2026`;
+    const articleUrl = `https://www.tentnow.ae/${locale}/blog/ramadan-calendar-uae-2026`;
     const articleTitle = locale === 'ar'
         ? 'تقويم رمضان الإمارات 2026: دليل شامل لمواقيت الصلاة وجدول الإفطار'
         : 'Ramadan Calendar UAE 2026: Complete Guide to Prayer Times & Iftar Schedule';

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title,
         description,
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/request-quote`,
+            canonical: `https://www.tentnow.ae/${locale}/request-quote`,
         },
     };
 }

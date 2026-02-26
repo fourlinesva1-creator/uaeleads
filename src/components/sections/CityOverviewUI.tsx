@@ -38,7 +38,7 @@ export default function CityOverviewUI({ city, content }: Props) {
     const { openCallback } = useModal();
     const locale = useLocale();
     const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    const pageUrl = `https://tentnow.ae/${locale}/locations/${city}`;
+    const pageUrl = `https://www.tentnow.ae/${locale}/locations/${city}`;
 
     return (
         <div className="bg-[#101622]">

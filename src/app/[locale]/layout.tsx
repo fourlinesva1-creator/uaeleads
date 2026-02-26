@@ -40,7 +40,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const baseUrl = 'https://tentnow.ae';
+  const baseUrl = 'https://www.tentnow.ae';
 
   return {
     title: {

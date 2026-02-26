@@ -36,10 +36,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             images: ['/images/blog/tent-uae-1.jpg'],
         },
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/blog/tent-rental-uae`,
+            canonical: `https://www.tentnow.ae/${locale}/blog/tent-rental-uae`,
             languages: {
-                'en': 'https://tentnow.ae/en/blog/tent-rental-uae',
-                'ar': 'https://tentnow.ae/ar/blog/tent-rental-uae',
+                'en': 'https://www.tentnow.ae/en/blog/tent-rental-uae',
+                'ar': 'https://www.tentnow.ae/ar/blog/tent-rental-uae',
             },
         },
     };
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function TentRentalUAEPage() {
     const locale = useLocale();
-    const articleUrl = `https://tentnow.ae/${locale}/blog/tent-rental-uae`;
+    const articleUrl = `https://www.tentnow.ae/${locale}/blog/tent-rental-uae`;
     const articleTitle = locale === 'ar'
         ? 'تأجير خيام في الإمارات: الدليل الشامل لجميع أنواع الخيام 2026'
         : 'Tent Rental in UAE: Complete Guide to Every Tent Type (2026)';

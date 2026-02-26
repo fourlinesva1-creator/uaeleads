@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: t(`items.${serviceId}.title`),
         description: t(`items.${serviceId}.description`),
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/services/${slug}`,
+            canonical: `https://www.tentnow.ae/${locale}/services/${slug}`,
         },
     };
 }
@@ -73,7 +73,7 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
     const t = useTranslations('services');
     const common = useTranslations('common');
     const locale = useLocale(); // Need useLocale
-    const pageUrl = `https://tentnow.ae/${locale}/services/${slug}`;
+    const pageUrl = `https://www.tentnow.ae/${locale}/services/${slug}`;
 
     return (
         <div className="bg-[#101622]">

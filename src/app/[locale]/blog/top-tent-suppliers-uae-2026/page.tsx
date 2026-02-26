@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function TopTentSuppliersPage() {
     const locale = useLocale();
-    const articleUrl = `https://tentnow.ae/${locale}/blog/top-tent-suppliers-uae-2026`;
+    const articleUrl = `https://www.tentnow.ae/${locale}/blog/top-tent-suppliers-uae-2026`;
     const articleTitle = locale === 'ar'
         ? 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026'
         : 'Top 10 Tent Rental & Supplier Companies in UAE for Ramadan 2026';

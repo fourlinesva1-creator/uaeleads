@@ -40,10 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             images: ['/images/tent-now/ramadan-tents-for-rentals.jpg'],
         },
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/services/iftar-tent-rental-dubai`,
+            canonical: `https://www.tentnow.ae/${locale}/services/iftar-tent-rental-dubai`,
             languages: {
-                'en': 'https://tentnow.ae/en/services/iftar-tent-rental-dubai',
-                'ar': 'https://tentnow.ae/ar/services/iftar-tent-rental-dubai',
+                'en': 'https://www.tentnow.ae/en/services/iftar-tent-rental-dubai',
+                'ar': 'https://www.tentnow.ae/ar/services/iftar-tent-rental-dubai',
             },
         },
     };

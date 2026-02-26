@@ -416,7 +416,7 @@ export default function IftarTentSetupContent({
     const { openCallback } = useModal();
     const cityData = cityContentMap[slug] || dubaiContent;
     const t = locale === 'ar' ? cityData.ar : cityData.en;
-    const pageUrl = `https://tentnow.ae/${locale}/services/${slug}`;
+    const pageUrl = `https://www.tentnow.ae/${locale}/services/${slug}`;
     const citySlug = serviceSlugToCitySlug[slug];
     const cityName = citySlug ? citySlug.split('-').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '';
 

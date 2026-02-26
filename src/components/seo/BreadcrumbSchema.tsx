@@ -15,7 +15,7 @@ interface BreadcrumbSchemaProps {
 
 export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     const locale = useLocale();
-    const baseUrl = 'https://tentnow.ae';
+    const baseUrl = 'https://www.tentnow.ae';
 
     const schema = {
         "@context": "https://schema.org",

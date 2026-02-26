@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function RamadanTentPricingGuidePage() {
     const locale = useLocale();
-    const articleUrl = `https://tentnow.ae/${locale}/blog/ramadan-tent-pricing-guide-uae-2026`;
+    const articleUrl = `https://www.tentnow.ae/${locale}/blog/ramadan-tent-pricing-guide-uae-2026`;
     const articleTitle = locale === 'ar'
         ? 'أسعار تأجير خيام رمضان في الإمارات: دليل تقديري 2026'
         : 'Ramadan Tent Rental Pricing in UAE: 2026 Estimated Guide';

@@ -17,10 +17,10 @@ export default function ServiceSchema({ name, description, url, image }: Service
         "provider": {
             "@type": "LocalBusiness",
             "name": "Tent Now",
-            "url": "https://tentnow.ae"
+            "url": "https://www.tentnow.ae"
         },
         "url": url,
-        "image": image || "https://tentnow.ae/images/og-image.jpg"
+        "image": image || "https://www.tentnow.ae/images/og-image.jpg"
     };
 
     return <JsonLd data={schema} />;

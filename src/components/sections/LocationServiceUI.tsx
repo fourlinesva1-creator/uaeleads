@@ -36,7 +36,7 @@ const serviceImages: Record<string, string> = {
 export default function LocationServiceUI({ city, slug, content }: Props) {
     const { openCallback } = useModal();
     const locale = useLocale();
-    const pageUrl = `https://tentnow.ae/${locale}/locations/${city}/${slug}`;
+    const pageUrl = `https://www.tentnow.ae/${locale}/locations/${city}/${slug}`;
     const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     const serviceName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 

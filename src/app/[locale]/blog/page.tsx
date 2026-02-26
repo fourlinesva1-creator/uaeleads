@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title,
         description,
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/blog`,
+            canonical: `https://www.tentnow.ae/${locale}/blog`,
             languages: {
-                'en': 'https://tentnow.ae/en/blog',
-                'ar': 'https://tentnow.ae/ar/blog',
+                'en': 'https://www.tentnow.ae/en/blog',
+                'ar': 'https://www.tentnow.ae/ar/blog',
             },
         },
     };

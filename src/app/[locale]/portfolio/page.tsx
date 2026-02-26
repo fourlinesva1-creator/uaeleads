@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Our Event Portfolio | Premium Tent & Majlis Rentals UAE | ${t('portfolio')}`,
         description: 'Explore Tent Now\'s legacy of over 5,000 successful Ramadan Majlis, corporate Iftar tents, and industrial event setups across Dubai and the UAE.',
         alternates: {
-            canonical: `https://tentnow.ae/${locale}/portfolio`,
+            canonical: `https://www.tentnow.ae/${locale}/portfolio`,
             languages: {
-                'en': 'https://tentnow.ae/en/portfolio',
-                'ar': 'https://tentnow.ae/ar/portfolio',
+                'en': 'https://www.tentnow.ae/en/portfolio',
+                'ar': 'https://www.tentnow.ae/ar/portfolio',
             },
         },
     };
