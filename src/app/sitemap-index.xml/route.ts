@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const baseUrl = 'https://tentnow.ae';
+const baseUrl = 'https://www.tentnow.ae';
 
 export async function GET() {
     const lastMod = new Date().toISOString().split('T')[0];

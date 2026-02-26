@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const baseUrl = 'https://tentnow.ae';
+const baseUrl = 'https://www.tentnow.ae';
 
 const cities = [
     'dubai',
