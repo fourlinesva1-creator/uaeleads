@@ -429,6 +429,7 @@ export default function IftarTentSetupContent({
                 image={heroImage}
             />
             <BreadcrumbSchema
+                locale={locale}
                 items={[
                     { name: t.breadcrumbServices, href: '/services' },
                     { name: t.breadcrumbPage, href: `/services/${slug}` },

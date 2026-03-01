@@ -49,6 +49,7 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                 image={serviceImages[slug] || cityImages[city]}
             />
             <BreadcrumbSchema
+                locale={locale}
                 items={[
                     { name: 'Locations', href: '/locations' },
                     { name: cityName, href: `/locations/${city}` },

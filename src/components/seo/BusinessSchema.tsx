@@ -37,8 +37,20 @@ export default function BusinessSchema() {
             "closes": "23:59"
         },
         "sameAs": [
-            // Add social media links here if available
+            "https://www.facebook.com/tentnow",
+            "https://x.com/tentnowae",
+            "https://wa.me/971501826969"
         ],
+        "areaServed": [
+            "Dubai",
+            "Abu Dhabi",
+            "Sharjah",
+            "Ajman",
+            "Ras Al Khaimah",
+            "Fujairah",
+            "Umm Al Quwain"
+        ],
+        "description": "30 years of expertise in premium Ramadan tents, Iftar setups, and Majlis for rent across all 7 Emirates of the UAE. Civil Defense approved structures for hotels, corporates, and families.",
         "priceRange": "$$$"
     };
 

@@ -5,11 +5,12 @@ interface BlogSchemaProps {
     description: string;
     image: string;
     datePublished: string;
+    dateModified?: string;
     author: string;
     url: string;
 }
 
-export default function BlogSchema({ title, description, image, datePublished, author, url }: BlogSchemaProps) {
+export default function BlogSchema({ title, description, image, datePublished, dateModified, author, url }: BlogSchemaProps) {
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
@@ -17,17 +18,20 @@ export default function BlogSchema({ title, description, image, datePublished, a
         description: description,
         image: image,
         datePublished: datePublished,
+        dateModified: dateModified || datePublished,
         author: {
-            '@type': 'Organization',
+            '@type': 'Person',
             name: author,
-            url: 'https://tentnow.com'
+            url: 'https://www.tentnow.ae/en/about',
+            sameAs: ['https://www.facebook.com/tentnow', 'https://x.com/tentnowae']
         },
         publisher: {
             '@type': 'Organization',
             name: 'Tent Now',
+            url: 'https://www.tentnow.ae',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://tentnow.com/images/tent-now-logo.gif'
+                url: 'https://www.tentnow.ae/images/tent-now-logo.gif'
             }
         },
         mainEntityOfPage: {

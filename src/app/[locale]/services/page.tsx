@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { ArrowRight } from 'lucide-react';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -98,6 +99,66 @@ function ServicesContent() {
                             </div>
                         </Link>
                     ))}
+                </div>
+
+                {/* Storage & Industrial Solutions */}
+                <div className="mt-20 pt-16 border-t border-[#1a212e]">
+                    <div className="max-w-2xl mb-10">
+                        <div className="section-label mb-4">
+                            <span>Industrial & Commercial Solutions</span>
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
+                            Storage Tent Solutions for UAE Projects
+                        </h2>
+                        <p className="text-[#9da6b9]">
+                            Civil Defence-approved clear span, warehouse frame, and industrial tent structures for construction, logistics, oil & gas, and manufacturing.
+                        </p>
+                    </div>
+                    <div className="bg-[#1a212e] border border-[#282e39] rounded-3xl overflow-hidden">
+                        <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <div className="aspect-[16/9] lg:aspect-auto relative overflow-hidden min-h-[280px]">
+                                <Image
+                                    src="/images/storage-tents/storage-tent-hero.jpg"
+                                    alt="Industrial storage tent structures UAE"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a212e] hidden lg:block" />
+                            </div>
+                            <div className="p-10 lg:p-12 flex flex-col justify-center">
+                                <div className="text-gold text-sm font-bold uppercase tracking-widest mb-4">
+                                    AED 15–40 / sqm / month
+                                </div>
+                                <h3 className="text-3xl font-display text-white mb-4">
+                                    Industrial Storage Tents
+                                </h3>
+                                <p className="text-[#9da6b9] mb-8 leading-relaxed">
+                                    UAE warehousing vacancy is at 3% and industrial rents are up 33%. Deploy Civil Defence-approved storage structures within days — not months — at 50–70% less than permanent construction.
+                                </p>
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                                    {[
+                                        { label: 'Clear Span', href: '/services/storage-tents/clear-span-tents' },
+                                        { label: 'Warehouse', href: '/services/storage-tents/warehouse-tents' },
+                                        { label: 'Industrial', href: '/services/storage-tents/industrial-tents' },
+                                    ].map(({ label, href }) => (
+                                        <Link
+                                            key={href}
+                                            href={href}
+                                            className="px-4 py-2.5 bg-[#101622] border border-[#282e39] rounded-lg text-center text-[#9da6b9] text-sm hover:border-[#D4AF37]/40 hover:text-white transition-all"
+                                        >
+                                            {label}
+                                        </Link>
+                                    ))}
+                                </div>
+                                <Link
+                                    href="/services/storage-tents"
+                                    className="flex items-center gap-2 text-[#D4AF37] font-bold hover:gap-4 transition-all"
+                                >
+                                    Explore Storage Solutions <ArrowRight size={18} />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

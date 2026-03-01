@@ -1,8 +1,5 @@
-'use client';
-
 import React from 'react';
 import JsonLd from './JsonLd';
-import { useLocale } from 'next-intl';
 
 interface BreadcrumbItem {
     name: string;
@@ -11,10 +8,10 @@ interface BreadcrumbItem {
 
 interface BreadcrumbSchemaProps {
     items: BreadcrumbItem[];
+    locale: string;
 }
 
-export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
-    const locale = useLocale();
+export default function BreadcrumbSchema({ items, locale }: BreadcrumbSchemaProps) {
     const baseUrl = 'https://www.tentnow.ae';
 
     const schema = {
