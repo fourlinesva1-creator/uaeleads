@@ -38,6 +38,15 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'industrial-storage-tent-rental-uae-2026',
+            title: 'تأجير خيام التخزين الصناعية في الإمارات: الدليل الكامل للتكاليف والتصاريح 2026',
+            excerpt: 'معدل شغور مستودعات دبي 3% والإيجارات ارتفعت 33%. اكتشف كيف تحل الشركات الإماراتية أزمة التخزين بخيام صناعية معتمدة بتوفير يصل 70%.',
+            image: '/images/storage-tents/storage-tent-hero.jpg',
+            date: '1 مارس 2026',
+            readTime: '9 دقائق قراءة',
+            category: 'دليل صناعي'
+        },
+        {
             slug: 'tent-rental-uae',
             title: 'تأجير خيام في الإمارات: الدليل الشامل لجميع أنواع الخيام 2026',
             excerpt: 'من خيام رمضان والمجالس إلى خيام المستودعات والقباب—دليلك الكامل لكل ما تحتاج معرفته عن تأجير الخيام في الإمارات.',
@@ -83,6 +92,15 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'industrial-storage-tent-rental-uae-2026',
+            title: 'Industrial Storage Tent Rental UAE: Complete Cost & Permit Guide 2026',
+            excerpt: "Dubai warehouse vacancy is 3% and industrial rents are up 33%. Here's how UAE businesses are solving the storage crisis with Civil Defence-approved industrial tents — at 50–70% less than permanent construction.",
+            image: '/images/storage-tents/storage-tent-hero.jpg',
+            date: 'March 1, 2026',
+            readTime: '9 min read',
+            category: 'Industry Guide'
+        },
         {
             slug: 'tent-rental-uae',
             title: 'Tent Rental in UAE: Complete Guide to Every Tent Type (2026)',

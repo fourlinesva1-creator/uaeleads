@@ -5,9 +5,18 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import Image from 'next/image';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react';
 
-const serviceLinks = [
+type SubLink = { key: string; href: string };
+type ServiceLink = { key: string; href: string; children?: SubLink[] };
+
+const storageSubLinks: SubLink[] = [
+  { key: 'clearSpan', href: '/services/storage-tents/clear-span-tents' },
+  { key: 'warehouse', href: '/services/storage-tents/warehouse-tents' },
+  { key: 'industrial', href: '/services/storage-tents/industrial-tents' },
+];
+
+const serviceLinks: ServiceLink[] = [
   { key: 'hotel', href: '/services/hotel-majlis' },
   { key: 'corporate', href: '/services/corporate-events' },
   { key: 'home', href: '/services/home-majlis' },
@@ -15,7 +24,7 @@ const serviceLinks = [
   { key: 'sadu', href: '/services/sadu-tent-rental' },
   { key: 'furniture', href: '/services/furniture-rental' },
   { key: 'decor', href: '/services/decor-lighting' },
-  { key: 'storage', href: '/services/storage-tents' },
+  { key: 'storage', href: '/services/storage-tents', children: storageSubLinks },
 ];
 
 const navigation = [
@@ -93,21 +102,57 @@ export default function Header() {
                 {/* Desktop Dropdown */}
                 {item.children && (
                   <div className="absolute top-full left-0 pt-4 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-300 transform translate-y-2 group-hover/nav:translate-y-0 z-50">
-                    <div className="w-64 bg-[#1a212e] border border-[#282e39] rounded-2xl shadow-2xl overflow-hidden p-2">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.key}
-                          href={child.href}
-                          className="flex flex-col px-4 py-3 rounded-xl hover:bg-[#D4AF37]/5 transition-colors group/child"
-                        >
-                          <span className="text-white text-sm font-bold group-hover/child:text-[#D4AF37] transition-colors">
-                            {ts(`items.${child.key}.title`)}
-                          </span>
-                          <span className="text-[10px] text-text-muted uppercase tracking-wider mt-0.5">
-                            {ts(`items.${child.key}.priceLabel`)} {ts(`items.${child.key}.price`)}
-                          </span>
-                        </Link>
-                      ))}
+                    <div className="w-64 bg-[#1a212e] border border-[#282e39] rounded-2xl shadow-2xl p-2">
+                      {item.children.map((child) =>
+                        child.children ? (
+                          /* Storage Tents — item with nested flyout */
+                          <div key={child.key} className="relative group/storage">
+                            <Link
+                              href={child.href}
+                              className="flex items-center justify-between px-4 py-3 rounded-xl hover:bg-[#D4AF37]/5 transition-colors group/child"
+                            >
+                              <div className="flex flex-col">
+                                <span className="text-white text-sm font-bold group-hover/child:text-[#D4AF37] transition-colors">
+                                  {ts(`items.${child.key}.title`)}
+                                </span>
+                                <span className="text-[10px] text-text-muted uppercase tracking-wider mt-0.5">
+                                  {ts(`items.${child.key}.priceLabel`)} {ts(`items.${child.key}.price`)}
+                                </span>
+                              </div>
+                              <ChevronRight size={12} className="text-text-muted group-hover/child:text-[#D4AF37] transition-colors shrink-0" />
+                            </Link>
+                            {/* Nested flyout */}
+                            <div className="absolute left-full top-0 pl-2 opacity-0 invisible group-hover/storage:opacity-100 group-hover/storage:visible transition-all duration-200 z-50">
+                              <div className="w-52 bg-[#1a212e] border border-[#282e39] rounded-2xl shadow-2xl p-2">
+                                {child.children.map((sub) => (
+                                  <Link
+                                    key={sub.key}
+                                    href={sub.href}
+                                    className="flex px-4 py-3 rounded-xl hover:bg-[#D4AF37]/5 transition-colors group/sub"
+                                  >
+                                    <span className="text-white text-sm font-bold group-hover/sub:text-[#D4AF37] transition-colors">
+                                      {ts(`storageSubs.${sub.key}`)}
+                                    </span>
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          <Link
+                            key={child.key}
+                            href={child.href}
+                            className="flex flex-col px-4 py-3 rounded-xl hover:bg-[#D4AF37]/5 transition-colors group/child"
+                          >
+                            <span className="text-white text-sm font-bold group-hover/child:text-[#D4AF37] transition-colors">
+                              {ts(`items.${child.key}.title`)}
+                            </span>
+                            <span className="text-[10px] text-text-muted uppercase tracking-wider mt-0.5">
+                              {ts(`items.${child.key}.priceLabel`)} {ts(`items.${child.key}.price`)}
+                            </span>
+                          </Link>
+                        )
+                      )}
                     </div>
                   </div>
                 )}
@@ -160,19 +205,32 @@ export default function Header() {
                       {t(item.key)}
                       <ChevronDown className={`transition-transform duration-300 ${activeSubmenu === item.key ? 'rotate-180' : ''}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${activeSubmenu === item.key ? 'max-h-96 opacity-100 pb-4' : 'max-h-0 opacity-0'
+                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${activeSubmenu === item.key ? 'max-h-[560px] opacity-100 pb-4' : 'max-h-0 opacity-0'
                       }`}>
                       {item.children.map((child) => (
-                        <Link
-                          key={child.key}
-                          href={child.href}
-                          onClick={() => setIsOpen(false)}
-                          className="flex flex-col px-8 py-3 hover:bg-gold/5 rounded-xl"
-                        >
-                          <span className="text-white text-sm font-bold">
-                            {ts(`items.${child.key}.title`)}
-                          </span>
-                        </Link>
+                        <div key={child.key}>
+                          <Link
+                            href={child.href}
+                            onClick={() => setIsOpen(false)}
+                            className="flex flex-col px-8 py-3 hover:bg-gold/5 rounded-xl"
+                          >
+                            <span className="text-white text-sm font-bold">
+                              {ts(`items.${child.key}.title`)}
+                            </span>
+                          </Link>
+                          {child.children && child.children.map((sub) => (
+                            <Link
+                              key={sub.key}
+                              href={sub.href}
+                              onClick={() => setIsOpen(false)}
+                              className="flex px-12 py-2 hover:bg-gold/5 rounded-xl"
+                            >
+                              <span className="text-text-muted text-xs font-medium">
+                                {ts(`storageSubs.${sub.key}`)}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
                       ))}
                     </div>
                   </>

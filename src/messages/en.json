@@ -177,6 +177,11 @@
         "price": "AED 15",
         "priceLabel": "Per sqm/month"
       }
+    },
+    "storageSubs": {
+      "clearSpan": "Clear Span Tents",
+      "warehouse": "Warehouse Frame Tents",
+      "industrial": "Industrial Tents"
     }
   },
   "locations": {

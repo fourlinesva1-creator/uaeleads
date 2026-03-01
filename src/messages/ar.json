@@ -177,6 +177,11 @@
         "price": "15 درهم",
         "priceLabel": "لكل م²/شهر"
       }
+    },
+    "storageSubs": {
+      "clearSpan": "خيام الامتداد الحر",
+      "warehouse": "خيام المستودعات",
+      "industrial": "الخيام الصناعية"
     }
   },
   "locations": {

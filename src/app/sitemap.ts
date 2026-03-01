@@ -23,6 +23,7 @@ const slugs = [
 const mainPages = [
     '',
     '/services',
+    '/locations',
     '/portfolio',
     '/about',
     '/contact',
@@ -46,6 +47,7 @@ const standaloneServices = [
 ];
 
 const blogPosts = [
+    'industrial-storage-tent-rental-uae-2026',
     'tent-rental-uae',
     'upcoming-ramadan-events-dubai-2026',
     'ramadan-calendar-uae-2026',

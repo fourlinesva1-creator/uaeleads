@@ -23,6 +23,7 @@ const slugs = [
 const mainPages = [
     '',
     '/services',
+    '/locations',
     '/portfolio',
     '/about',
     '/contact',
@@ -46,6 +47,8 @@ const standaloneServices = [
 ];
 
 const blogPosts = [
+    'industrial-storage-tent-rental-uae-2026',
+    'tent-rental-uae',
     'upcoming-ramadan-events-dubai-2026',
     'ramadan-calendar-uae-2026',
     'top-tent-suppliers-uae-2026',
@@ -98,6 +101,24 @@ function generateSitemapXml(locale: string): string {
         <lastmod>${lastMod}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>`);
+    });
+
+    // Storage tent hub and sub-pages
+    const storageTentPages = [
+        '/services/storage-tents',
+        '/services/storage-tents/clear-span-tents',
+        '/services/storage-tents/warehouse-tents',
+        '/services/storage-tents/industrial-tents',
+    ];
+    storageTentPages.forEach((page) => {
+        const priority = page === '/services/storage-tents' ? '0.8' : '0.7';
+        urls.push(`
+    <url>
+        <loc>${baseUrl}/${locale}${page}</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>${priority}</priority>
     </url>`);
     });
 
