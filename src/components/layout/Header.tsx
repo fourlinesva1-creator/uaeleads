@@ -15,6 +15,7 @@ const serviceLinks = [
   { key: 'sadu', href: '/services/sadu-tent-rental' },
   { key: 'furniture', href: '/services/furniture-rental' },
   { key: 'decor', href: '/services/decor-lighting' },
+  { key: 'storage', href: '/services/storage-tents' },
 ];
 
 const navigation = [

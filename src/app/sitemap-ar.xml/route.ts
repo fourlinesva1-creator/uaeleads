@@ -46,10 +46,18 @@ const standaloneServices = [
 ];
 
 const blogPosts = [
+    'tent-rental-uae',
     'upcoming-ramadan-events-dubai-2026',
     'ramadan-calendar-uae-2026',
     'top-tent-suppliers-uae-2026',
     'ramadan-tent-pricing-guide-uae-2026',
+];
+
+const storageTentPages = [
+    '/services/storage-tents',
+    '/services/storage-tents/clear-span-tents',
+    '/services/storage-tents/warehouse-tents',
+    '/services/storage-tents/industrial-tents',
 ];
 
 function generateSitemapXml(locale: string): string {
@@ -118,6 +126,17 @@ function generateSitemapXml(locale: string): string {
         <lastmod>${lastMod}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>`);
+    });
+
+    // Storage tent pages
+    storageTentPages.forEach((page) => {
+        urls.push(`
+    <url>
+        <loc>${baseUrl}/${locale}${page}</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>${page === '/services/storage-tents' ? '0.8' : '0.7'}</priority>
     </url>`);
     });
 
