@@ -38,6 +38,15 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'uae-drone-missile-survival-guide-2026',
+            title: 'دليل البقاء في الإمارات: ماذا تفعل عند هجوم بالطائرات المسيّرة أو الصواريخ',
+            excerpt: 'دليل عملي للمقيمين والزوار في الإمارات — خطوات فورية مثبتة، أفضل أماكن الإيواء، الإسعافات الأولية، وأرقام الطوارئ. مبني على بروتوكولات نسما والدفاع المدني.',
+            image: '/images/blog/uae-survival-guide-hero.jpg',
+            date: '3 مارس 2026',
+            readTime: '10 دقائق قراءة',
+            category: 'السلامة العامة'
+        },
+        {
             slug: 'industrial-storage-tent-rental-uae-2026',
             title: 'تأجير خيام التخزين الصناعية في الإمارات: الدليل الكامل للتكاليف والتصاريح 2026',
             excerpt: 'معدل شغور مستودعات دبي 3% والإيجارات ارتفعت 33%. اكتشف كيف تحل الشركات الإماراتية أزمة التخزين بخيام صناعية معتمدة بتوفير يصل 70%.',
@@ -92,6 +101,15 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'uae-drone-missile-survival-guide-2026',
+            title: 'UAE Survival Guide: What To Do During a Drone or Missile Attack',
+            excerpt: 'A practical guide for UAE residents and visitors — proven immediate steps, best shelter locations, first aid basics, and emergency contacts. Based on NCEMA and UAE Civil Defence protocols.',
+            image: '/images/blog/uae-survival-guide-hero.jpg',
+            date: 'March 3, 2026',
+            readTime: '10 min read',
+            category: 'Public Safety'
+        },
         {
             slug: 'industrial-storage-tent-rental-uae-2026',
             title: 'Industrial Storage Tent Rental UAE: Complete Cost & Permit Guide 2026',
