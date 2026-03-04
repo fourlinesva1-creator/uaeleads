@@ -97,6 +97,41 @@ export default function UAESurvivalGuidePage() {
 
                     <ShareButtons url={articleUrl} title={articleTitle} />
 
+                    {/* ⚠️ Disclaimer Box — AR */}
+                    <div className="bg-amber-950/60 border-2 border-amber-400 rounded-2xl p-6 mb-8 mt-6">
+                        <div className="flex items-start gap-3 mb-4">
+                            <span className="text-3xl leading-none mt-0.5">⚠️</span>
+                            <p className="text-amber-300 font-black text-xl uppercase tracking-wide leading-snug">
+                                تنبيه مهم — يُرجى القراءة قبل التواصل معنا
+                            </p>
+                        </div>
+                        <div className="space-y-3 text-white/90 text-base leading-relaxed pr-9">
+                            <p className="font-bold text-white text-lg border-b border-amber-400/30 pb-3">
+                                Tent Now شركة متخصصة في <span className="text-amber-300">تأجير الخيام للفعاليات</span> — مجالس رمضانية، أفراح، ومعارض تجارية.
+                            </p>
+                            <p className="font-black text-amber-300 text-base uppercase">
+                                نحن لا نقدم ولن نقدم أياً من الخدمات التالية:
+                            </p>
+                            <ul className="space-y-1.5 text-white/85">
+                                <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> ملاجئ أو بنكرات طوارئ</li>
+                                <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> مخيمات إيواء أو مناطق حماية</li>
+                                <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> مجموعات واتساب للطوارئ أو السلامة</li>
+                                <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> أي استشارة أو خدمة تتعلق بالأزمات أو الدفاع المدني</li>
+                            </ul>
+                            <p className="font-bold text-white/90 pt-1">
+                                هذا المقال نُشر <span className="text-amber-300 font-black">لأغراض توعوية فقط</span>، استناداً إلى بروتوكولات الدفاع المدني الإماراتي الرسمية.
+                            </p>
+                            <div className="bg-red-900/40 border border-red-500/50 rounded-xl p-4 mt-3">
+                                <p className="text-red-300 font-black text-base text-center">
+                                    🚫 يُرجى عدم الاتصال بنا أو مراسلتنا بشأن أي طارئ أو ملجأ أو بنكر أو أي موضوع ذُكر في هذا المقال
+                                </p>
+                                <p className="text-white/70 text-sm text-center mt-2">
+                                    للطوارئ الفعلية: اتصل بـ الشرطة <strong className="text-white">999</strong> · الإسعاف <strong className="text-white">998</strong> · الدفاع المدني <strong className="text-white">997</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Alert Box */}
                     <div className="bg-red-900/30 border border-red-500/40 rounded-2xl p-6 mb-10 text-center">
                         <p className="text-red-300 font-bold text-lg mb-2">في حالة الطوارئ الفورية</p>
@@ -492,6 +527,41 @@ export default function UAESurvivalGuidePage() {
                 </header>
 
                 <ShareButtons url={articleUrl} title={articleTitle} />
+
+                {/* ⚠️ Disclaimer Box — EN */}
+                <div className="bg-amber-950/60 border-2 border-amber-400 rounded-2xl p-6 mb-8 mt-6">
+                    <div className="flex items-start gap-3 mb-4">
+                        <span className="text-3xl leading-none mt-0.5">⚠️</span>
+                        <p className="text-amber-300 font-black text-xl uppercase tracking-wide leading-snug">
+                            Important Disclaimer — Please Read Before Contacting Us
+                        </p>
+                    </div>
+                    <div className="space-y-3 text-white/90 text-base leading-relaxed pl-9">
+                        <p className="font-bold text-white text-lg border-b border-amber-400/30 pb-3">
+                            Tent Now is a <span className="text-amber-300">premium event tent rental company</span> — we provide Ramadan majlis tents, wedding marquees, and commercial tent solutions across the UAE.
+                        </p>
+                        <p className="font-black text-amber-300 text-base uppercase">
+                            We do not and cannot provide any of the following:
+                        </p>
+                        <ul className="space-y-1.5 text-white/85">
+                            <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> Bunkers or bomb shelters of any kind</li>
+                            <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> Emergency shelters or safe zones</li>
+                            <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> WhatsApp safety/emergency groups</li>
+                            <li className="flex items-center gap-2"><span className="text-red-400 font-black text-lg">✗</span> Civil defence guidance or crisis response services</li>
+                        </ul>
+                        <p className="font-bold text-white/90 pt-1">
+                            This article is published <span className="text-amber-300 font-black">for informational purposes only</span>, based on official UAE Civil Defence and NCEMA protocols.
+                        </p>
+                        <div className="bg-red-900/40 border border-red-500/50 rounded-xl p-4 mt-3">
+                            <p className="text-red-300 font-black text-base text-center">
+                                🚫 Please do NOT call, WhatsApp, or email us about emergencies, shelters, bunkers, or anything described in this article
+                            </p>
+                            <p className="text-white/70 text-sm text-center mt-2">
+                                For real emergencies, call: Police <strong className="text-white">999</strong> · Ambulance <strong className="text-white">998</strong> · Civil Defence <strong className="text-white">997</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Emergency Alert Box */}
                 <div className="bg-red-900/30 border border-red-500/40 rounded-2xl p-6 mb-10 text-center">
