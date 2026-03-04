@@ -14,6 +14,7 @@ import CallbackModal from '@/components/ui/CallbackModal';
 import UrgencyBanner from '@/components/ui/UrgencyBanner';
 import BusinessSchema from '@/components/seo/BusinessSchema';
 import WebsiteSchema from '@/components/seo/WebsiteSchema';
+import AggregateRatingSchema from '@/components/seo/AggregateRatingSchema';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -171,6 +172,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <BusinessSchema />
           <WebsiteSchema />
+          <AggregateRatingSchema />
           <ModalProvider>
             <UrgencyBanner />
             <Header />

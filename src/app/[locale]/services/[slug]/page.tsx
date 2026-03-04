@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import FAQSchema from '@/components/seo/FAQSchema';
 
 type Props = {
     params: Promise<{ locale: string; slug: string }>;
@@ -69,11 +70,74 @@ export default async function ServiceDetailPage({ params }: Props) {
     return <ServiceDetailContent serviceId={serviceMap[slug]} slug={slug} />;
 }
 
+const serviceFaqsBySlug: Record<string, { en: { q: string; a: string }[]; ar: { q: string; a: string }[] }> = {
+    'hotel-majlis': {
+        en: [
+            { q: 'What sizes are available for hotel Ramadan majlis tents?', a: 'We supply hotel majlis tents from 50 to over 1,000 sqm. Most 5-star hotel properties in the UAE use our 200–500 sqm setups, accommodating 100–400 guests in a premium seated arrangement.' },
+            { q: 'Do you handle hotel municipality permits for Ramadan tent setups?', a: 'Yes. We manage Dubai Municipality, Abu Dhabi City Municipality, and Civil Defence approvals for hotel properties. We have established approval workflows with major hotel groups.' },
+            { q: 'How long does a hotel majlis tent installation take?', a: 'For hotel properties we typically mobilise within 3–5 days. Complex multi-zone setups with full decor and AC may require up to 7 days. We work around hotel operations to minimise disruption.' },
+            { q: 'What is included in a hotel majlis package?', a: 'Standard hotel packages include the tent structure, flooring, air conditioning, Arabic majlis seating, lighting, and sadu or luxury fabric finishes. Full catering tent annexes are available separately.' },
+        ],
+        ar: [
+            { q: 'ما الأحجام المتاحة لخيام مجالس رمضان الفندقية؟', a: 'نوفر خيام مجالس فندقية من 50 متر مربع وحتى أكثر من 1,000 متر مربع. معظم فنادق الدرجة الأولى في الإمارات تستخدم إعداداتنا من 200–500 متر مربع لاستيعاب 100–400 ضيف.' },
+            { q: 'هل تتولون استخراج تصاريح البلدية للفنادق؟', a: 'نعم. نتولى موافقات بلدية دبي وأبوظبي والدفاع المدني للمنشآت الفندقية، ولدينا مسارات موافقة راسخة مع كبرى المجموعات الفندقية.' },
+            { q: 'كم يستغرق تركيب خيمة المجلس الفندقي؟', a: 'للمنشآت الفندقية نتحرك عادةً خلال 3–5 أيام. الإعدادات المعقدة متعددة المناطق مع ديكور وتكييف قد تحتاج حتى 7 أيام.' },
+            { q: 'ماذا يشمل باقة المجلس الفندقي؟', a: 'تشمل الباقات القياسية: الهيكل، الأرضيات، التكييف، الجلسات العربية، الإضاءة، وأقمشة السدو الفاخرة. خيام الضيافة المرفقة متاحة بشكل منفصل.' },
+        ],
+    },
+    'iftar-tent-rental': {
+        en: [
+            { q: 'How much does an iftar tent rental cost in Dubai?', a: 'Iftar tent rental in Dubai ranges from AED 5,000 for a compact 20-person setup to AED 50,000+ for large corporate or hotel events. Price depends on size, duration, decor level, and AC requirements. Request a quote for exact pricing.' },
+            { q: 'Can I rent an iftar tent for just one night?', a: 'We can arrange single-night rentals but minimum engagement is typically 3 days due to setup and teardown logistics. Ramadan-long rentals (30 days) offer the best value.' },
+            { q: 'Do iftar tents come with air conditioning?', a: 'Yes. All our iftar tent packages include industrial-grade air conditioning units suitable for UAE temperatures. We size the AC load appropriately for your guest count and tent dimensions.' },
+            { q: 'What is the minimum size iftar tent available?', a: 'Our smallest iftar tent setups start at 4m x 6m (24 sqm), suitable for 15–20 guests. We scale up to large multi-section structures for 1,000+ guests.' },
+        ],
+        ar: [
+            { q: 'كم تكلفة تأجير خيمة إفطار في دبي؟', a: 'تتراوح تكلفة تأجير خيمة الإفطار في دبي من 5,000 درهم لإعداد 20 شخصاً إلى 50,000 درهم وأكثر للفعاليات المؤسسية والفندقية الكبرى. اطلب عرض سعر للحصول على تسعيرة دقيقة.' },
+            { q: 'هل يمكنني استئجار خيمة إفطار لليلة واحدة؟', a: 'يمكن ترتيب ذلك، لكن الحد الأدنى عادةً 3 أيام نظراً لمتطلبات التركيب والتفكيك. الإيجار لشهر رمضان كامل يوفر أفضل قيمة.' },
+            { q: 'هل تشمل خيام الإفطار التكييف؟', a: 'نعم. جميع باقات خيام الإفطار تشمل وحدات تكييف صناعية مناسبة لمناخ الإمارات.' },
+            { q: 'ما هو أصغر حجم لخيمة إفطار متاحة؟', a: 'تبدأ أصغر إعداداتنا من 4م × 6م (24 متر مربع) وتناسب 15–20 ضيفاً، وتصل هياكلنا إلى أكثر من 1,000 ضيف.' },
+        ],
+    },
+    'corporate-events': {
+        en: [
+            { q: 'Can Tent Now handle corporate Ramadan events for 500+ guests?', a: 'Yes. We regularly execute corporate iftar and Ramadan events for 200–1,500 guests. We provide full turnkey solutions including tent, furniture, decor, lighting, flooring, and permit management.' },
+            { q: 'What corporate sectors do you serve most?', a: 'We work with banking and finance, real estate, hospitality, logistics, oil and gas, and government entities across the UAE. We understand the protocol requirements for high-profile corporate events.' },
+            { q: 'Do you have references from corporate clients?', a: 'Yes. Our client list includes UAE-based multinationals, government departments, and major hospitality groups. References are available upon request during the quotation process.' },
+            { q: 'Can we customise the tent with our brand colours and logo?', a: 'Absolutely. We offer branded tent structures, custom printed backdrops, logo panels, and full custom decor theming to match your brand identity.' },
+        ],
+        ar: [
+            { q: 'هل تتعامل Tent Now مع فعاليات مؤسسية لأكثر من 500 ضيف؟', a: 'نعم. ننجز بانتظام فعاليات إفطار مؤسسية لـ 200–1,500 ضيف، بحلول متكاملة تشمل الخيمة والأثاث والديكور والإضاءة والتصاريح.' },
+            { q: 'ما القطاعات التي تخدمونها؟', a: 'نخدم قطاعات البنوك والعقارات والضيافة واللوجستيات والنفط والغاز والجهات الحكومية في الإمارات.' },
+            { q: 'هل يمكن تخصيص الخيمة بألوان وشعار الشركة؟', a: 'بالتأكيد. نوفر هياكل خيام بشعارات مطبوعة ولوحات مخصصة وديكور متكامل يتناسب مع هوية علامتك التجارية.' },
+            { q: 'هل لديكم مراجع من عملاء مؤسسيين؟', a: 'نعم. قائمة عملائنا تشمل شركات متعددة الجنسيات ودوائر حكومية ومجموعات ضيافة كبرى. المراجع متاحة عند الطلب أثناء عملية تقديم العرض.' },
+        ],
+    },
+};
+
+const defaultFaqs = {
+    en: [
+        { q: 'How do I get a quote for tent rental?', a: 'Request a quote via tentnow.ae/request-quote, WhatsApp +971 50 182 6969, or call us directly. We respond within 24 hours with a full proposal.' },
+        { q: 'Do you serve all Emirates?', a: 'Yes. Tent Now covers all 7 UAE Emirates: Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain.' },
+        { q: 'How quickly can you install a tent?', a: 'Standard installations are completed within 48–72 hours. Larger or more complex setups may take 3–7 days.' },
+        { q: 'Are your structures Civil Defence approved?', a: 'Yes. All Tent Now structures are Civil Defence approved and meet UAE fire safety standards. We handle all approvals on your behalf.' },
+    ],
+    ar: [
+        { q: 'كيف أحصل على عرض سعر؟', a: 'اطلب عرضاً عبر tentnow.ae/request-quote أو واتساب 971501826969+ أو اتصل مباشرة. نرد خلال 24 ساعة.' },
+        { q: 'هل تغطون جميع الإمارات؟', a: 'نعم. تغطي Tent Now جميع الإمارات السبع.' },
+        { q: 'ما هو وقت التركيب؟', a: 'التركيبات القياسية خلال 48–72 ساعة. الإعدادات الكبيرة قد تستغرق 3–7 أيام.' },
+        { q: 'هل هياكلكم معتمدة من الدفاع المدني؟', a: 'نعم. جميع هياكلنا معتمدة من الدفاع المدني وتلتزم بمعايير السلامة الإماراتية.' },
+    ],
+};
+
 function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: string }) {
     const t = useTranslations('services');
     const common = useTranslations('common');
     const locale = useLocale(); // Need useLocale
+    const isAr = locale === 'ar';
     const pageUrl = `https://www.tentnow.ae/${locale}/services/${slug}`;
+    const faqData = serviceFaqsBySlug[slug] ?? defaultFaqs;
+    const faqs = isAr ? faqData.ar : faqData.en;
 
     return (
         <div className="bg-[#101622]">
@@ -83,6 +147,7 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                 url={pageUrl}
                 image={imageMap[slug]}
             />
+            <FAQSchema items={faqs} />
             <div className="pt-32 pb-20">
                 <div className="container-luxury">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20 animate-fade-in-up">
@@ -167,16 +232,45 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                     {/* Value Propositions */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
                         <div className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl">
-                            <h3 className="text-xl font-display text-white mb-4">Logistical Mastery</h3>
-                            <p className="text-[#9da6b9]">Precise, punctual, and respectful installation teams who know the roads and regulations.</p>
+                            <h3 className="text-xl font-display text-white mb-4">{isAr ? 'إتقان اللوجستيات' : 'Logistical Mastery'}</h3>
+                            <p className="text-[#9da6b9]">{isAr ? 'فرق تركيب دقيقة ومحترمة تعرف الطرق واللوائح.' : 'Precise, punctual, and respectful installation teams who know the roads and regulations.'}</p>
                         </div>
                         <div className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl">
-                            <h3 className="text-xl font-display text-white mb-4">Design Intelligence</h3>
-                            <p className="text-[#9da6b9]">Unique themes that resonate with Emirati heritage and modern luxury, not just templates.</p>
+                            <h3 className="text-xl font-display text-white mb-4">{isAr ? 'ذكاء التصميم' : 'Design Intelligence'}</h3>
+                            <p className="text-[#9da6b9]">{isAr ? 'تصاميم فريدة تعكس التراث الإماراتي والفخامة العصرية.' : 'Unique themes that resonate with Emirati heritage and modern luxury, not just templates.'}</p>
                         </div>
                         <div className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl">
-                            <h3 className="text-xl font-display text-white mb-4">Civil Defense Approved</h3>
-                            <p className="text-[#9da6b9]">All structures meet strict UAE fire and safety codes for your complete peace of mind.</p>
+                            <h3 className="text-xl font-display text-white mb-4">{isAr ? 'معتمد من الدفاع المدني' : 'Civil Defense Approved'}</h3>
+                            <p className="text-[#9da6b9]">{isAr ? 'جميع الهياكل تستوفي اشتراطات السلامة والحريق الإماراتية.' : 'All structures meet strict UAE fire and safety codes for your complete peace of mind.'}</p>
+                        </div>
+                    </div>
+
+                    {/* FAQ Section */}
+                    <div className="mt-24 pt-16 border-t border-[#1a212e]">
+                        <h2 className="text-3xl font-display text-white mb-2">
+                            {isAr ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
+                        </h2>
+                        <p className="text-[#9da6b9] mb-10">
+                            {isAr ? 'أسئلة يطرحها عملاؤنا قبل الحجز.' : 'What our clients ask before booking.'}
+                        </p>
+                        <div className="space-y-4">
+                            {faqs.map((faq, i) => (
+                                <details key={i} className="group bg-[#1a212e] border border-[#282e39] rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none hover:bg-[#1e2736] transition-colors">
+                                        <span className="text-white font-semibold">{faq.q}</span>
+                                        <span className="text-[#D4AF37] flex-shrink-0 text-xl transition-transform group-open:rotate-45">+</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-[#9da6b9] leading-relaxed">{faq.a}</div>
+                                </details>
+                            ))}
+                        </div>
+                        <div className="mt-8 flex flex-wrap gap-4">
+                            <Link href="/request-quote" className="bg-[#D4AF37] text-[#101622] px-6 py-3 rounded-xl font-bold text-sm hover:bg-yellow-400 transition-colors">
+                                {isAr ? 'احصل على عرض سعر مجاني' : 'Get a Free Quote'}
+                            </Link>
+                            <a href="https://wa.me/971501826969" target="_blank" rel="noopener noreferrer" className="border border-[#D4AF37]/40 text-[#D4AF37] px-6 py-3 rounded-xl font-bold text-sm hover:border-[#D4AF37] transition-colors">
+                                {isAr ? 'واتساب للحصول على سعر فوري' : 'WhatsApp for Instant Quote'}
+                            </a>
                         </div>
                     </div>
                 </div>

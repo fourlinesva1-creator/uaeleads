@@ -38,6 +38,33 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'iftar-tent-rental-checklist-uae-2026',
+            title: 'قائمة مراجعة تأجير خيمة الإفطار: 12 نقطة يجب تأكيدها قبل الحجز',
+            excerpt: 'احجز بثقة — هذه القائمة تحميك من المفاجآت وتضمن فعالية ناجحة. التصاريح، التكييف، الحجم، الديكور، والتكلفة.',
+            image: '/images/tent-now/iftar-tents.jpg',
+            date: '5 مارس 2026',
+            readTime: '7 دقائق قراءة',
+            category: 'دليل الحجز'
+        },
+        {
+            slug: 'hotel-majlis-setup-guide-uae-2026',
+            title: 'دليل إعداد مجلس الفنادق الرمضاني: ما الذي تتوقعه من شركة تأجير الخيام',
+            excerpt: 'الدليل الشامل لمديري الفنادق حول إعداد مجالس رمضان — من الجداول الزمنية للتركيب إلى مواصفات المناطق والأسئلة الأساسية.',
+            image: '/images/tent-now/hotel.jpg',
+            date: '5 مارس 2026',
+            readTime: '9 دقائق قراءة',
+            category: 'دليل الفنادق'
+        },
+        {
+            slug: 'how-to-choose-tent-rental-company-uae',
+            title: 'كيف تختار شركة تأجير خيام في الإمارات: 7 معايير أساسية',
+            excerpt: 'الدليل العملي لاختيار شركة تأجير الخيام المناسبة — لا تقتصر على السعر. تحقق من التصاريح والخبرة والمحفظة والدعم الميداني.',
+            image: '/images/tent-now/ramadan-tents.jpg',
+            date: '5 مارس 2026',
+            readTime: '6 دقائق قراءة',
+            category: 'دليل الشراء'
+        },
+        {
             slug: 'uae-drone-missile-survival-guide-2026',
             title: 'دليل البقاء في الإمارات: ماذا تفعل عند هجوم بالطائرات المسيّرة أو الصواريخ',
             excerpt: 'دليل عملي للمقيمين والزوار في الإمارات — خطوات فورية مثبتة، أفضل أماكن الإيواء، الإسعافات الأولية، وأرقام الطوارئ. مبني على بروتوكولات نسما والدفاع المدني.',
@@ -101,6 +128,33 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'iftar-tent-rental-checklist-uae-2026',
+            title: 'Iftar Tent Rental Checklist: 12 Things to Confirm Before Booking',
+            excerpt: 'Book with confidence — this checklist protects you from surprises and ensures a successful event. Permits, AC, sizing, decor, and cost all covered.',
+            image: '/images/tent-now/iftar-tents.jpg',
+            date: 'March 5, 2026',
+            readTime: '7 min read',
+            category: 'Booking Guide'
+        },
+        {
+            slug: 'hotel-majlis-setup-guide-uae-2026',
+            title: 'Hotel Ramadan Majlis Setup Guide: What to Expect From a Tent Rental Company',
+            excerpt: 'The complete guide for hotel managers on setting up Ramadan majlis — from installation timelines to zone planning, technical specs, and the right questions to ask.',
+            image: '/images/tent-now/hotel.jpg',
+            date: 'March 5, 2026',
+            readTime: '9 min read',
+            category: 'Hotel Guide'
+        },
+        {
+            slug: 'how-to-choose-tent-rental-company-uae',
+            title: 'How to Choose a Tent Rental Company in UAE: 7 Must-Check Criteria',
+            excerpt: 'The practical guide to selecting the right tent rental company — don\'t go on price alone. Check permits, experience, portfolio, field support, and emergency policy.',
+            image: '/images/tent-now/ramadan-tents.jpg',
+            date: 'March 5, 2026',
+            readTime: '6 min read',
+            category: 'Buyer\'s Guide'
+        },
         {
             slug: 'uae-drone-missile-survival-guide-2026',
             title: 'UAE Survival Guide: What To Do During a Drone or Missile Attack',

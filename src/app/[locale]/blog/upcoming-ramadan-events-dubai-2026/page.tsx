@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import BlogSchema from '@/components/blog/BlogSchema';
 import ShareButtons from '@/components/blog/ShareButtons';
+import BlogServiceCTA from '@/components/blog/BlogServiceCTA';
 import Script from 'next/script';
 import { notFound } from 'next/navigation';
 
@@ -347,6 +348,8 @@ export default function ArticlePage() {
                             </p>
                         </>
                     )}
+
+                    <BlogServiceCTA variant="ramadan" />
 
                     {/* Comment Section Placeholder (Using Giscus or similar in future, currently static for MVP) */}
                     <div className="border-t border-border pt-12">

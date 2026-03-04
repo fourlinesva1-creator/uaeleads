@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import BlogSchema from '@/components/blog/BlogSchema';
 import ShareButtons from '@/components/blog/ShareButtons';
+import BlogServiceCTA from '@/components/blog/BlogServiceCTA';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
@@ -923,6 +924,8 @@ export default function TentRentalUAEPage() {
                             </div>
                         </>
                     )}
+
+                    <BlogServiceCTA variant="general" />
 
                     {/* Comments placeholder */}
                     <div className="border-t border-border pt-12">
