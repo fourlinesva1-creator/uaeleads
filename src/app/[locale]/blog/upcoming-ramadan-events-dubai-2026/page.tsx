@@ -39,9 +39,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             images: ['/images/blog/ramadan-dubai-skyline-2026.png'],
         },
         alternates: {
+            canonical: `https://www.tentnow.ae/${locale}/blog/upcoming-ramadan-events-dubai-2026`,
             languages: {
-                'en': '/en/blog/upcoming-ramadan-events-dubai-2026',
-                'ar': '/ar/blog/upcoming-ramadan-events-dubai-2026',
+                'en': 'https://www.tentnow.ae/en/blog/upcoming-ramadan-events-dubai-2026',
+                'ar': 'https://www.tentnow.ae/ar/blog/upcoming-ramadan-events-dubai-2026',
             },
         },
     };

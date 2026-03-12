@@ -37,9 +37,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             images: ['/images/blog/ramadan-night-market.png'],
         },
         alternates: {
+            canonical: `https://www.tentnow.ae/${locale}/blog/ramadan-tent-pricing-guide-uae-2026`,
             languages: {
-                'en': '/en/blog/ramadan-tent-pricing-guide-uae-2026',
-                'ar': '/ar/blog/ramadan-tent-pricing-guide-uae-2026',
+                'en': 'https://www.tentnow.ae/en/blog/ramadan-tent-pricing-guide-uae-2026',
+                'ar': 'https://www.tentnow.ae/ar/blog/ramadan-tent-pricing-guide-uae-2026',
             },
         },
     };

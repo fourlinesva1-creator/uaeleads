@@ -37,9 +37,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             images: ['/images/blog/Dubai-Calendar-2026-Ramadan.jpg'],
         },
         alternates: {
+            canonical: `https://www.tentnow.ae/${locale}/blog/ramadan-calendar-uae-2026`,
             languages: {
-                'en': '/en/blog/ramadan-calendar-uae-2026',
-                'ar': '/ar/blog/ramadan-calendar-uae-2026',
+                'en': 'https://www.tentnow.ae/en/blog/ramadan-calendar-uae-2026',
+                'ar': 'https://www.tentnow.ae/ar/blog/ramadan-calendar-uae-2026',
             },
         },
     };

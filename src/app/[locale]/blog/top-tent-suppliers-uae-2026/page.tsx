@@ -37,9 +37,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             images: ['/images/tent-now/ramadan-tents.jpg'],
         },
         alternates: {
+            canonical: `https://www.tentnow.ae/${locale}/blog/top-tent-suppliers-uae-2026`,
             languages: {
-                'en': '/en/blog/top-tent-suppliers-uae-2026',
-                'ar': '/ar/blog/top-tent-suppliers-uae-2026',
+                'en': 'https://www.tentnow.ae/en/blog/top-tent-suppliers-uae-2026',
+                'ar': 'https://www.tentnow.ae/ar/blog/top-tent-suppliers-uae-2026',
             },
         },
     };

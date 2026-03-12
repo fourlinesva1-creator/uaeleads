@@ -49,6 +49,9 @@ const standaloneServices = [
 const blogPosts = [
     'uae-drone-missile-survival-guide-2026',
     'industrial-storage-tent-rental-uae-2026',
+    'iftar-tent-rental-checklist-uae-2026',
+    'hotel-majlis-setup-guide-uae-2026',
+    'how-to-choose-tent-rental-company-uae',
     'tent-rental-uae',
     'upcoming-ramadan-events-dubai-2026',
     'ramadan-calendar-uae-2026',
