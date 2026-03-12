@@ -58,6 +58,7 @@ const blogPosts = [
     'ramadan-calendar-uae-2026',
     'top-tent-suppliers-uae-2026',
     'ramadan-tent-pricing-guide-uae-2026',
+    'corporate-event-tents-dubai-2026',
 ];
 
 export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap {
