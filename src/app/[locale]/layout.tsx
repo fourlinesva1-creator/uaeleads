@@ -174,7 +174,7 @@ export default async function LocaleLayout({
           <WebsiteSchema />
           <AggregateRatingSchema />
           <ModalProvider>
-            <UrgencyBanner />
+            {/* <UrgencyBanner /> */}
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
