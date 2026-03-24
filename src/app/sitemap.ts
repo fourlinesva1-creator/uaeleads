@@ -18,6 +18,9 @@ const slugs = [
     'iftar-tent-rental',
     'suhoor-tent-rental',
     'sadu-tent-rental',
+    'storage-tent-rental',
+    'warehouse-tent-rental',
+    'labor-accommodation-tents',
 ];
 
 const mainPages = [

@@ -7,19 +7,19 @@ import Image from 'next/image';
 const services = [
   {
     key: 'hotel',
-    href: '/services/hotel-majlis',
+    href: '/services/storage-tents/clear-span-tents',
     image: '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.32_9e63a6c4.jpg',
     popular: true,
   },
   {
     key: 'corporate',
-    href: '/services/corporate-events',
+    href: '/services/storage-tents/industrial-tents',
     image: '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 14.38.09_8a40018e.jpg',
     popular: false,
   },
   {
     key: 'home',
-    href: '/services/home-majlis',
+    href: '/services/storage-tents/warehouse-tents',
     image: '/images/WEB/New folder/WhatsApp Image 2024-02-02 at 12.22.31_347a7ef2.jpg',
     popular: false,
   },
