@@ -38,6 +38,33 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'tarpaulin-vs-storage-tent-uae',
+            title: 'مشمع أم خيمة تخزين؟ كيف يختار المقاولون الإماراتيون الحل الصحيح',
+            excerpt: 'الدليل الشامل لاختيار بين مشمع PE والخيمة الصناعية لمشاريع الإمارات. جدول مقارنة، تحليل التكاليف، ودليل القرار حسب نوع المشروع.',
+            image: '/images/tarpaulins/tarpaulin-uses.png',
+            date: '2 أبريل 2026',
+            readTime: '11 دقيقة قراءة',
+            category: 'دليل القرار'
+        },
+        {
+            slug: 'tarpaulin-price-guide-uae-2026',
+            title: 'دليل أسعار المشمع في الإمارات 2026: PE مقابل PVC، تقييمات GSM، ودليل الشراء',
+            excerpt: 'دليل شامل لأسعار المشمع في الإمارات 2026. مقارنة PE مقابل PVC مقابل HDPE، فهم تقييمات GSM، جدول الأسعار الكامل بالدرهم.',
+            image: '/images/tarpaulins/tarpaulin-main.png',
+            date: '2 أبريل 2026',
+            readTime: '10 دقائق قراءة',
+            category: 'دليل شراء'
+        },
+        {
+            slug: 'corporate-event-tents-dubai-2026',
+            title: 'خيام الفعاليات المؤسسية: إنشاء أماكن خارجية احترافية في دبي',
+            excerpt: 'الدليل الشامل لكيفية إحداث خيام الفعاليات المؤسسية ثورة في صناعة الفعاليات في دبي، مع رؤى قابلة للتنفيذ لزيادة عائد استثمار فعاليتك لعام 2026.',
+            image: '/images/tent-now/corporate.jpg',
+            date: '20 مارس 2026',
+            readTime: '8 دقائق قراءة',
+            category: 'فعاليات مؤسسية'
+        },
+        {
             slug: 'iftar-tent-rental-checklist-uae-2026',
             title: 'قائمة مراجعة تأجير خيمة الإفطار: 12 نقطة يجب تأكيدها قبل الحجز',
             excerpt: 'احجز بثقة — هذه القائمة تحميك من المفاجآت وتضمن فعالية ناجحة. التصاريح، التكييف، الحجم، الديكور، والتكلفة.',
@@ -128,6 +155,33 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'tarpaulin-vs-storage-tent-uae',
+            title: 'Tarpaulin or Storage Tent? How UAE Contractors Choose the Right Site Cover',
+            excerpt: 'The definitive guide to choosing between PE tarpaulins and industrial storage tents for UAE projects. Comparison table, cost analysis, and decision guide by project type.',
+            image: '/images/tarpaulins/tarpaulin-uses.png',
+            date: 'April 2, 2026',
+            readTime: '11 min read',
+            category: 'Decision Guide'
+        },
+        {
+            slug: 'tarpaulin-price-guide-uae-2026',
+            title: 'Tarpaulin Price Guide UAE 2026: PE vs PVC, GSM Ratings & What to Buy',
+            excerpt: 'Complete UAE tarpaulin buyer\'s guide for 2026. PE vs PVC vs HDPE comparison, GSM rating explained, full AED price table, and how to choose the right tarp.',
+            image: '/images/tarpaulins/tarpaulin-main.png',
+            date: 'April 2, 2026',
+            readTime: '10 min read',
+            category: 'Buyer\'s Guide'
+        },
+        {
+            slug: 'corporate-event-tents-dubai-2026',
+            title: 'Corporate Event Tents: Creating Professional Outdoor Venues in Dubai',
+            excerpt: 'The comprehensive guide on how corporate event tents are revolutionizing the events industry in Dubai, with actionable insights for maximizing your event investment in 2026.',
+            image: '/images/tent-now/corporate.jpg',
+            date: 'March 20, 2026',
+            readTime: '8 min read',
+            category: 'Corporate Events'
+        },
         {
             slug: 'iftar-tent-rental-checklist-uae-2026',
             title: 'Iftar Tent Rental Checklist: 12 Things to Confirm Before Booking',
