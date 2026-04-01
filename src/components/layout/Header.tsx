@@ -25,6 +25,7 @@ const serviceLinks: ServiceLink[] = [
   { key: 'furniture', href: '/services/furniture-rental' },
   { key: 'decor', href: '/services/decor-lighting' },
   { key: 'storage', href: '/services/storage-tents', children: storageSubLinks },
+  { key: 'tarpaulins', href: '/services/tarpaulins' },
 ];
 
 const navigation = [

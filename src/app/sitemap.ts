@@ -48,6 +48,7 @@ const standaloneServices = [
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
     'ramadan-iftar-tent-setup',
+    'tarpaulins',
 ];
 
 const blogPosts = [
@@ -62,6 +63,8 @@ const blogPosts = [
     'top-tent-suppliers-uae-2026',
     'ramadan-tent-pricing-guide-uae-2026',
     'corporate-event-tents-dubai-2026',
+    'tarpaulin-price-guide-uae-2026',
+    'tarpaulin-vs-storage-tent-uae',
 ];
 
 export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap {

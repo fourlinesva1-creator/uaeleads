@@ -176,6 +176,13 @@
         "detailedBody": "UAE warehousing vacancy is at 3% and industrial rents are up 33%. Tent Now deploys Civil Defence-approved storage structures within days — at 50–70% less than permanent construction. Clear span tents from 3m to 50m+, warehouse frame tents on any hard surface, and industrial-spec structures for cold storage, oil & gas, and labour accommodation.",
         "price": "AED 15",
         "priceLabel": "Per sqm/month"
+      },
+      "tarpaulins": {
+        "title": "PE Tarpaulins",
+        "description": "Dutarp PE200 reinforced 200gsm tarpaulins — UV-stabilised, waterproof, 16 standard sizes. For construction, logistics, agriculture and industrial use across the UAE.",
+        "detailedBody": "Heavy-duty 200gsm HDPE fabric with LDPE lamination on both sides. UV-stabilised (ASTM 653/93), min 600 N tensile strength, aluminium eyelets every 100 cm. Available in Silver/Orange, Silver/Green, Blue/White and Camouflage. 16 standard sheet sizes plus roll supply (4M×50M, 2M×100M).",
+        "price": "From AED 25.92",
+        "priceLabel": "Price guide"
       }
     },
     "storageSubs": {
