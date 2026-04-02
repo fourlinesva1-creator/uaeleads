@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/blog/tent-uae-1.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/blog/tent-uae-1.jpg', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-02-25T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/blog/tent-uae-1.jpg'],
+            images: ['https://www.tentnow.ae/images/blog/tent-uae-1.jpg'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/tent-rental-uae`,

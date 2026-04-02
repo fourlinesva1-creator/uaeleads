@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/tent-now/ramadan-tents.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/tent-now/ramadan-tents.jpg', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-02-12T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/tent-now/ramadan-tents.jpg'],
+            images: ['https://www.tentnow.ae/images/tent-now/ramadan-tents.jpg'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/top-tent-suppliers-uae-2026`,

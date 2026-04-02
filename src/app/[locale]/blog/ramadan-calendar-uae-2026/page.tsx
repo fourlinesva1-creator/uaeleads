@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/blog/Dubai-Calendar-2026-Ramadan.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/blog/Dubai-Calendar-2026-Ramadan.jpg', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-02-02T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/blog/Dubai-Calendar-2026-Ramadan.jpg'],
+            images: ['https://www.tentnow.ae/images/blog/Dubai-Calendar-2026-Ramadan.jpg'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/ramadan-calendar-uae-2026`,

@@ -39,8 +39,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/tent-now/corporate.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/tent-now/corporate.jpg', width: 1200, height: 630, alt: isAr ? 'خيام الفعاليات المؤسسية في دبي' : 'Corporate Event Tents Dubai' }],
             type: 'article',
+            publishedTime: '2026-03-12T10:00:00.000Z',
+            authors: ['Tent Now'],
+            section: isAr ? 'فعاليات مؤسسية' : 'Corporate Events',
+            locale: isAr ? 'ar_AE' : 'en_US',
+            alternateLocale: isAr ? ['en_US'] : ['ar_AE'],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: ['https://www.tentnow.ae/images/tent-now/corporate.jpg'],
         },
     };
 }
@@ -60,9 +71,9 @@ export default function CorporateEventTents() {
                 description={isAr
                     ? 'الدليل الشامل لكيفية إحداث خيام الفعاليات المؤسسية ثورة في صناعة الفعاليات في دبي.'
                     : 'The comprehensive guide on how corporate event tents are revolutionizing the events industry in Dubai.'}
-                image="/images/tent-now/corporate.jpg"
+                image="https://www.tentnow.ae/images/tent-now/corporate.jpg"
                 datePublished="2026-03-12T10:00:00.000Z"
-                author="TentNow Business Analyst"
+                author="Tent Now"
                 url={articleUrl}
             />
 

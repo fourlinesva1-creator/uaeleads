@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/blog/ramadan-dubai-skyline-2026.png', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/blog/ramadan-dubai-skyline-2026.png', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-02-01T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/blog/ramadan-dubai-skyline-2026.png'],
+            images: ['https://www.tentnow.ae/images/blog/ramadan-dubai-skyline-2026.png'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/upcoming-ramadan-events-dubai-2026`,

@@ -10,24 +10,42 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
+    const isAr = locale === 'ar';
 
-    const title = locale === 'ar'
-        ? 'رؤى رمضان 2026 ودليل الفعاليات | Tent Now'
-        : 'Ramadan 2026 Insights & Event Guide | Tent Now';
+    const title = isAr
+        ? 'مدونة Tent Now — خيام التخزين الصناعية والفعاليات المؤسسية في الإمارات'
+        : 'Tent Now Blog — Industrial Storage Tents, Corporate Events & UAE Guides';
 
-    const description = locale === 'ar'
-        ? 'ابق على اطلاع بأحدث فعاليات رمضان 2026، وتأجير الخيام، واتجاهات تصميم المجالس في دبي وجميع أنحاء الإمارات.'
-        : 'Stay updated with the latest Ramadan 2026 events, tent rentals, and majlis design trends in Dubai and across the UAE.';
+    const description = isAr
+        ? 'أدلة متخصصة لخيام التخزين الصناعية، الفعاليات المؤسسية، المشامع، والحلول اللوجستية في الإمارات. موارد احترافية للمقاولين والشركات ومديري الفعاليات.'
+        : 'Expert guides on industrial storage tents, corporate event tents, tarpaulins, and logistics solutions across the UAE. Professional resources for contractors, businesses, and event managers.';
 
     return {
         title,
         description,
+        keywords: isAr
+            ? ['خيام تخزين صناعية الإمارات', 'خيام فعاليات مؤسسية دبي', 'تأجير خيام كبيرة الإمارات', 'مشمع للبيع الإمارات', 'خيام مستودعات دبي', 'حلول تخزين مؤقتة الإمارات', 'خيام رمضان', 'تأجير خيام الإمارات']
+            : ['industrial storage tents UAE', 'corporate event tents Dubai', 'large tent rental UAE', 'warehouse tent UAE', 'tarpaulin supplier UAE', 'temporary storage UAE', 'tent rental UAE', 'storage tent cost UAE'],
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog`,
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog',
                 'ar': 'https://www.tentnow.ae/ar/blog',
             },
+        },
+        openGraph: {
+            title,
+            description,
+            type: 'website',
+            locale: isAr ? 'ar_AE' : 'en_US',
+            alternateLocale: isAr ? ['en_US'] : ['ar_AE'],
+            images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg', width: 1200, height: 630, alt: isAr ? 'خيام التخزين الصناعية والفعاليات في الإمارات' : 'Industrial Storage Tents & Corporate Events UAE' }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: ['https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg'],
         },
     };
 }

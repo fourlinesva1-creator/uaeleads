@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/blog/uae-survival-guide-hero.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/blog/uae-survival-guide-hero.jpg', width: 1200, height: 630 }],
             type: 'article',
             publishedTime: '2026-03-03T08:00:00.000Z',
             authors: ['Tent Now'],
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/blog/uae-survival-guide-hero.jpg'],
+            images: ['https://www.tentnow.ae/images/blog/uae-survival-guide-hero.jpg'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/uae-drone-missile-survival-guide-2026`,

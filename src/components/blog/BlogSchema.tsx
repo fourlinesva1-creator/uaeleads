@@ -10,13 +10,16 @@ interface BlogSchemaProps {
     url: string;
 }
 
+const BASE_URL = 'https://www.tentnow.ae';
+
 export default function BlogSchema({ title, description, image, datePublished, dateModified, author, url }: BlogSchemaProps) {
+    const absoluteImage = image.startsWith('/') ? `${BASE_URL}${image}` : image;
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         headline: title,
         description: description,
-        image: image,
+        image: absoluteImage,
         datePublished: datePublished,
         dateModified: dateModified || datePublished,
         author: {

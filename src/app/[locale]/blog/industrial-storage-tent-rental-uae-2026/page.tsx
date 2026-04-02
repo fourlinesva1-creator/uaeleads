@@ -30,18 +30,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/storage-tents/storage-tent-hero.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg', width: 1200, height: 630, alt: locale === 'ar' ? 'خيام التخزين الصناعية في الإمارات' : 'Industrial Storage Tent Rental UAE' }],
             type: 'article',
             publishedTime: '2026-03-01T08:00:00.000Z',
             authors: ['Tent Now'],
             section: locale === 'ar' ? 'دليل صناعي' : 'Industry Guide',
             locale: locale === 'ar' ? 'ar_AE' : 'en_US',
+            alternateLocale: locale === 'ar' ? ['en_US'] : ['ar_AE'],
         },
         twitter: {
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/storage-tents/storage-tent-hero.jpg'],
+            images: ['https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg'],
         },
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/blog/industrial-storage-tent-rental-uae-2026`,
@@ -67,7 +68,7 @@ export default function IndustrialStorageTentBlogPage() {
                 description={locale === 'ar'
                     ? 'دليل شامل لتأجير خيام التخزين الصناعية في الإمارات: الأسعار والأنواع والتصاريح واستخدامات القطاعات.'
                     : 'Complete guide to industrial storage tent rental in UAE: costs, types, permits, and industry applications.'}
-                image='/images/storage-tents/storage-tent-hero.jpg'
+                image='https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg'
                 datePublished='2026-03-01T08:00:00.000Z'
                 author='Tent Now'
                 url={articleUrl}

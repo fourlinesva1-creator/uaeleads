@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         openGraph: {
             title,
             description,
-            images: [{ url: '/images/tent-now/ramadan-tents.jpg', width: 1200, height: 630 }],
+            images: [{ url: 'https://www.tentnow.ae/images/tent-now/ramadan-tents.jpg', width: 1200, height: 630 }],
             type: 'article',
         },
     };
