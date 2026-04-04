@@ -29,6 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : 'Modular warehouse frame tents that install on any hard surface — no staking, no excavation. Ideal for logistics, e-commerce fulfilment, and port overflow storage across UAE. AED 15–40/sqm/month.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/warehouse-tents`,
+            languages: {
+                'en': 'https://www.tentnow.ae/en/services/storage-tents/warehouse-tents',
+                'ar': 'https://www.tentnow.ae/ar/services/storage-tents/warehouse-tents',
+                'x-default': 'https://www.tentnow.ae/en/services/storage-tents/warehouse-tents',
+            },
         },
         openGraph: {
             title: 'Warehouse Tent & Frame Structure Rental UAE | Tent Now',

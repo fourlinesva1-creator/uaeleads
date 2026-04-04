@@ -44,6 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             languages: {
                 'en': 'https://www.tentnow.ae/en/services/iftar-tent-rental-abu-dhabi',
                 'ar': 'https://www.tentnow.ae/ar/services/iftar-tent-rental-abu-dhabi',
+                'x-default': 'https://www.tentnow.ae/en/services/iftar-tent-rental-abu-dhabi',
             },
         },
     };

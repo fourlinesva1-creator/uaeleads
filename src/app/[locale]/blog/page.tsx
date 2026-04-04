@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog',
                 'ar': 'https://www.tentnow.ae/ar/blog',
+                'x-default': 'https://www.tentnow.ae/en/blog',
             },
         },
         openGraph: {

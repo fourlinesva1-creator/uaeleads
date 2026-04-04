@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             languages: {
                 'en': 'https://www.tentnow.ae/en/locations',
                 'ar': 'https://www.tentnow.ae/ar/locations',
+                'x-default': 'https://www.tentnow.ae/en/locations',
             },
         },
     };

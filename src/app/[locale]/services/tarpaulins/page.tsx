@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             languages: {
                 'en': 'https://www.tentnow.ae/en/services/tarpaulins',
                 'ar': 'https://www.tentnow.ae/ar/services/tarpaulins',
+                'x-default': 'https://www.tentnow.ae/en/services/tarpaulins',
             },
         },
         openGraph: {

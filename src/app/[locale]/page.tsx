@@ -8,17 +8,35 @@ import QuickQuote from '@/components/sections/QuickQuote';
 import Locations from '@/components/sections/Locations';
 import Portfolio from '@/components/sections/Portfolio';
 import CTA from '@/components/sections/CTA';
+import FAQSchema from '@/components/seo/FAQSchema';
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
+const homeFaqsEn = [
+  { q: 'How much does Ramadan tent rental cost in the UAE?', a: 'Ramadan tent rental in the UAE ranges from AED 3,000 for small home majlis setups to AED 50,000+ for large hotel or corporate iftar events. Pricing depends on tent size, duration, decor package, and emirate. Contact Tent Now for a free custom quote.' },
+  { q: 'How far in advance should I book a Ramadan tent?', a: 'We recommend booking 4–8 weeks before Ramadan begins. Premium hotel and corporate setups with full décor often book out 10–12 weeks ahead. Early booking also ensures the best structure selections and permits are processed in time.' },
+  { q: 'Do Ramadan tent structures require Civil Defence approval?', a: 'Yes. All temporary structures in the UAE require Civil Defence approval and municipality permits. Tent Now handles all permitting as part of the service — including Dubai Municipality, Abu Dhabi DMT, Sharjah, and all other emirates.' },
+  { q: 'Does Tent Now provide tent rental across all 7 Emirates?', a: 'Yes. Tent Now serves all 7 UAE Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain — with local teams and logistics for fast deployment across the country.' },
+];
+
+const homeFaqsAr = [
+  { q: 'ما تكلفة تأجير خيمة رمضان في الإمارات؟', a: 'تتراوح أسعار تأجير خيام رمضان في الإمارات من 3,000 درهم للمجالس المنزلية الصغيرة إلى أكثر من 50,000 درهم للفعاليات الفندقية والشركاتية الكبيرة. تواصل مع Tent Now للحصول على عرض مجاني مخصص.' },
+  { q: 'متى يجب حجز خيمة رمضان؟', a: 'نوصي بالحجز قبل 4-8 أسابيع من بداية رمضان. الإعدادات الفندقية والشركاتية الكبيرة غالباً ما تُحجز قبل 10-12 أسبوعاً. الحجز المبكر يضمن أفضل الخيارات وإتمام إجراءات التصاريح في الوقت المناسب.' },
+  { q: 'هل تحتاج خيام رمضان إلى موافقة الدفاع المدني؟', a: 'نعم. جميع المنشآت المؤقتة في الإمارات تتطلب موافقة الدفاع المدني وتصاريح البلدية. Tent Now تتولى جميع التصاريح كجزء من الخدمة — بما في ذلك بلدية دبي وDMT أبوظبي والشارقة وسائر الإمارات.' },
+  { q: 'هل تقدم Tent Now خدماتها في جميع إمارات الدولة السبع؟', a: 'نعم. Tent Now تخدم جميع الإمارات السبع — دبي وأبوظبي والشارقة وعجمان ورأس الخيمة والفجيرة وأم القيوين — مع فرق محلية ولوجستيات للنشر السريع.' },
+];
+
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const faqs = locale === 'ar' ? homeFaqsAr : homeFaqsEn;
+
   return (
     <>
+      <FAQSchema items={faqs} />
       <Hero />
       <TrustBar />
       <Experience />

@@ -29,6 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : 'Clear span storage tents from 3m to 50m+ width across the UAE. Zero interior columns — maximise your usable floor area for construction staging, vehicle storage, and heavy equipment. Civil Defence approved.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/clear-span-tents`,
+            languages: {
+                'en': 'https://www.tentnow.ae/en/services/storage-tents/clear-span-tents',
+                'ar': 'https://www.tentnow.ae/ar/services/storage-tents/clear-span-tents',
+                'x-default': 'https://www.tentnow.ae/en/services/storage-tents/clear-span-tents',
+            },
         },
         openGraph: {
             title: 'Clear Span Storage Tent Rental UAE | Tent Now',

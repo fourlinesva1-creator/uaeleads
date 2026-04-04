@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/industrial-storage-tent-rental-uae-2026',
                 'ar': 'https://www.tentnow.ae/ar/blog/industrial-storage-tent-rental-uae-2026',
+                'x-default': 'https://www.tentnow.ae/en/blog/industrial-storage-tent-rental-uae-2026',
             },
         },
     };

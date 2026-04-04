@@ -10,6 +10,7 @@ export interface SEOContent {
 
 export interface CityOverview {
     title: string;
+    metaDescription: string;
     subtitle: string;
     intro: string;
     whyUs: string;
@@ -31,6 +32,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     en: {
         dubai: {
             title: 'Storage Tent Rental Dubai | Industrial & Warehouse Tents',
+            metaDescription: 'Civil Defence-approved storage tent rental in Dubai. Clear span 3–50m+ deployed in 72 hrs. JAFZA, Dubai South, Al Quoz. All permits included. Free quote →',
             subtitle: 'Serving JAFZA, Dubai Industrial City, Dubai South, DIP and Al Quoz Since 1994',
             intro: 'Dubai\'s industrial and logistics sector is under pressure. Warehouse vacancy is at 3% and rents rose 33% in 2024. Construction projects across Jebel Ali, Dubai South, and the Northern Corridor need covered storage from day one. Tent Now has been solving this problem since 1994 — deploying Civil Defence-approved clear span structures in days, not months, at 50–70% less than permanent construction.',
             whyUs: 'Thirty years of industrial tent deployments across JAFZA, Dubai Industrial City, Dubai Investment Park, and major construction sites throughout the Emirate. We know the Dubai Municipality permit process for temporary structures (Article 13), Civil Defence fire safety requirements, and which free zone authorities require separate approvals. We know that Al Quoz needs different anchoring than a concrete pad in DIP. We know that a 45°C July in Jebel Ali is brutal on low-grade materials. And we know that a compliance failure on your construction site costs far more than the right supplier costs upfront. Every permit, every safety certification, every structural report — handled before we start.',
@@ -66,6 +68,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'abu-dhabi': {
             title: 'Storage Tent Rental Abu Dhabi | Industrial & Warehouse Tents',
+            metaDescription: 'Industrial tent rental Abu Dhabi. Serving KIZAD, Mussafah & ICAD. DMT + Civil Defence permits handled. 72-hr deployment. 30 years experience. Free quote today.',
             subtitle: 'Serving KIZAD, Mussafah, ICAD, and Abu Dhabi Industrial Areas Since 1994',
             intro: 'Abu Dhabi\'s industrial base is the foundation of the UAE economy. KIZAD hosts the world\'s third-largest free zone. Mussafah accommodates over 1,000 industrial companies. ADNOC\'s operations span the emirate and beyond. These sectors don\'t wait for permanent construction — they need deployable, compliant industrial structures that can be operational from day one of a project.',
             whyUs: 'Three decades of industrial tent deployments in Abu Dhabi, navigating the Department of Municipalities and Transport (DMT) permit process, Civil Defence approvals, and Abu Dhabi Ports authority requirements. We understand that Abu Dhabi\'s industrial standards are different from Dubai\'s — specifications are stricter, documentation requirements are heavier, and the expectation is that your supplier has everything in order before arrival. We do. Our structures are certified, our crews are trained, and our permit packages are complete before the first post goes in the ground.',
@@ -101,6 +104,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         sharjah: {
             title: 'Storage Tent Rental Sharjah | Industrial & Warehouse Tents',
+            metaDescription: 'Sharjah\'s local storage tent specialist — based in SAIF Zone. No out-of-town fees, same-day site visits, 48-hr deployment. All permits included. Free quote.',
             subtitle: 'Based in SAIF Zone — Sharjah\'s Industrial Tent Specialists Since 1994',
             intro: 'Tent Now is headquartered in Sharjah\'s SAIF Zone. We are not a Dubai company serving Sharjah — we are Sharjah\'s local industrial tent specialist. The Hamriyah Free Zone, Sharjah\'s 18 industrial areas, and the Sharjah Airport International Free Zone are on our doorstep. No out-of-town mobilization fees. Same-day site visits. Faster deployment than any competitor in the market.',
             whyUs: 'Thirty years operating from SAIF Zone means we know Sharjah\'s industrial regulatory environment better than anyone. Sharjah Municipality permit requirements, Sharjah Civil Defence standards, SAIF Zone and Hamriyah Free Zone authority approvals — we handle all of these as routine operations. Our Sharjah industrial clients benefit from the lowest mobilization costs, fastest response times, and a team that understands the specific conditions of Sharjah\'s industrial areas — from the coastal humidity of Hamriyah to the inland heat of the industrial zones.',
@@ -135,7 +139,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Sharjah Industrial Quote'
         },
         ajman: {
-            title: 'Storage Tent Rental Ajman | Industrial & Warehouse Tents',
+            title: 'Storage & Warehouse Tent Rental Ajman | Tent Now UAE',
+            metaDescription: 'Storage tent rental Ajman. Ajman Free Zone, Al Jurf & Ajman Port. 30 yrs experience, all municipality permits included, 3–5 day deployment. Get a free quote.',
             subtitle: 'Serving Ajman Free Zone, Al Jurf Industrial Area, and Ajman Port',
             intro: 'Ajman is one of the UAE\'s fastest-growing industrial and manufacturing hubs. The Ajman Free Zone hosts over 9,000 companies. Al Jurf Industrial Area is expanding rapidly. Ajman Port connects the emirate to global trade routes. All of this industrial activity creates demand for fast, compliant covered storage — and Tent Now has been meeting that demand across Ajman for 30 years.',
             whyUs: 'Our proximity to Ajman from SAIF Zone Sharjah means low mobilization costs and fast response times. We\'ve navigated Ajman Municipality and Civil Defence permit requirements for industrial structures many times over. Ajman Free Zone authority approvals are part of our routine service. We understand the specific conditions of Ajman\'s coastal industrial areas and the wind load requirements that apply.',
@@ -171,6 +176,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'ras-al-khaimah': {
             title: 'Storage Tent Rental Ras Al Khaimah | Industrial & Warehouse Tents',
+            metaDescription: 'Industrial tent rental Ras Al Khaimah. RAK Free Trade Zone & Maritime City. Engineered for RAK wind loads. All permits included. 30 years UAE experience. Free quote.',
             subtitle: 'Serving RAK Free Trade Zone, RAK Maritime City, and Industrial Zones',
             intro: 'Ras Al Khaimah is one of the UAE\'s most active manufacturing and industrial emirates. The RAK Free Trade Zone hosts over 14,000 companies across ceramics, pharmaceuticals, steel, and logistics. RAK Maritime City is expanding its industrial footprint. The emirate\'s manufacturing output is growing — and with it, the demand for flexible, compliant covered infrastructure.',
             whyUs: 'We\'ve been serving RAK\'s industrial sector for three decades. RAK\'s geographic and climatic conditions — coastal humidity on one side, mountainous terrain and stronger winds on the other — require specific structural engineering. Our RAK deployments account for the emirate\'s unique wind load requirements and the temperature differentials between coastal and inland sites. We handle RAK Municipality and Civil Defence permits and RAK Free Trade Zone authority approvals as routine operations.',
@@ -206,6 +212,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         fujairah: {
             title: 'Storage Tent Rental Fujairah | Industrial & Warehouse Tents',
+            metaDescription: 'Storage tent rental Fujairah. Serving Fujairah Port, FOIZ & Free Zone. Engineered for east coast conditions. All permits included. 30 yrs experience. Free quote.',
             subtitle: 'Serving Fujairah Free Zone, Fujairah Port, and East Coast Industrial Areas',
             intro: 'Fujairah is the UAE\'s east coast industrial and energy hub. Fujairah Port is one of the world\'s busiest bunkering stations and handles significant dry cargo. The Fujairah Oil Industry Zone (FOIZ) hosts major oil storage and bunkering infrastructure. The Fujairah Free Zone serves manufacturing and trading companies. All of this industrial activity requires deployable, compliant covered infrastructure from an experienced specialist.',
             whyUs: 'Fujairah\'s east coast geography creates unique structural requirements. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions that differ significantly from the western UAE coast. We have 30 years of Fujairah deployments and understand these conditions. We handle Fujairah Municipality and Civil Defence permits and Fujairah Free Zone authority approvals as standard operational practice.',
@@ -241,6 +248,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'umm-al-quwain': {
             title: 'Storage Tent Rental Umm Al Quwain | Industrial & Warehouse Tents',
+            metaDescription: 'Storage tent rental Umm Al Quwain. UAQ Free Trade Zone & industrial areas. Competitive pricing, all permits included, fast deployment. 30 years UAE experience. Free quote.',
             subtitle: 'Serving UAQ Free Trade Zone, UAQ Port, and Industrial Areas',
             intro: 'Umm Al Quwain is an emerging industrial and logistics hub with significant growth momentum. The UAQ Free Trade Zone is attracting manufacturing, logistics, and trading companies. UAQ Port handles growing cargo volumes. The emirate\'s lower land costs and strategic northern location make it increasingly attractive for industrial operations that need cost-effective, deployable covered infrastructure.',
             whyUs: 'Our SAIF Zone base in Sharjah gives us efficient access to UAQ with minimal mobilization costs. We handle UAQ Municipality and Civil Defence permits and UAQ Free Trade Zone authority approvals as part of our standard service. 30 years of UAE-wide deployments means we bring the same engineering standards and compliance knowledge to UAQ that we bring to Dubai and Abu Dhabi — at pricing that reflects the emirate\'s cost-conscious industrial market.',
@@ -278,6 +286,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     ar: {
         dubai: {
             title: 'تأجير خيام تخزين دبي | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام تخزين صناعية في دبي. هياكل الامتداد الواضح معتمدة من الدفاع المدني. نشر خلال 72 ساعة. جافزا، دبي ساوث، القوز. جميع التصاريح مشمولة. احصل على عرض.',
             subtitle: 'خدمة جافزا ومدينة دبي الصناعية ودبي ساوث منذ 1994',
             intro: 'قطاع الخدمات اللوجستية والصناعية في دبي تحت ضغط. معدل شغور المستودعات عند 3% وارتفعت الإيجارات 33% في 2024. مشاريع البناء عبر جبل علي ودبي ساوث تحتاج مخازن مغطاة من اليوم الأول. Tent Now تحل هذه المشكلة منذ 1994 — نشر هياكل الامتداد الواضح المعتمدة من الدفاع المدني في أيام وليس أشهراً، بتوفير 50-70% مقارنة بالبناء الدائم.',
             whyUs: 'ثلاثون عاماً من نشر الخيام الصناعية في جافزا ومدينة دبي الصناعية ومجمع دبي للاستثمار ومواقع البناء الكبرى في الإمارة. نعرف عملية تصريح بلدية دبي للمنشآت المؤقتة (المادة 13)، ومتطلبات سلامة الدفاع المدني، والمناطق الحرة التي تتطلب موافقات منفصلة.',
@@ -313,6 +322,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'abu-dhabi': {
             title: 'تأجير خيام تخزين أبوظبي | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام صناعية في أبوظبي. خدمة KIZAD ومصفح وMICAD. تصاريح DMT والدفاع المدني مشمولة. نشر خلال 72 ساعة. 30 عاماً خبرة. احصل على عرض مجاني.',
             subtitle: 'خدمة KIZAD ومصفح وMICAD وأبوظبي الصناعية منذ 1994',
             intro: 'القاعدة الصناعية في أبوظبي هي أساس الاقتصاد الإماراتي. KIZAD يستضيف ثالث أكبر منطقة حرة في العالم. مصفح يضم أكثر من 1,000 شركة صناعية. عمليات أدنوك تمتد عبر الإمارة وما وراءها. هذه القطاعات لا تنتظر البناء الدائم.',
             whyUs: 'ثلاثة عقود من نشر الخيام الصناعية في أبوظبي، بالتعامل مع عملية تصريح دائرة البلديات والنقل (DMT)، وموافقات الدفاع المدني، ومتطلبات مينائي أبوظبي. نفهم أن معايير أبوظبي الصناعية مختلفة عن دبي — المواصفات أكثر صرامة، ومتطلبات التوثيق أثقل.',
@@ -348,6 +358,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         sharjah: {
             title: 'تأجير خيام تخزين الشارقة | خيام صناعية ومستودعات',
+            metaDescription: 'متخصصو الخيام الصناعية في الشارقة — مقرنا في منطقة SAIF. بدون رسوم نقل، تقييم في نفس اليوم، نشر خلال 48 ساعة. جميع التصاريح مشمولة. احصل على عرض.',
             subtitle: 'مقرنا في منطقة SAIF — متخصصون في الخيام الصناعية بالشارقة منذ 1994',
             intro: 'Tent Now مقرها في منطقة SAIF بالشارقة. نحن لسنا شركة دبي تخدم الشارقة — نحن متخصصو الخيام الصناعية المحليون في الشارقة. منطقة SAIF وبرامج المنطقة الحرة للشارقة والمناطق الصناعية الـ18 في متناول يدنا.',
             whyUs: 'ثلاثون عاماً من منطقة SAIF تعني أننا نعرف البيئة التنظيمية الصناعية في الشارقة أفضل من أي أحد آخر. متطلبات تصاريح بلدية الشارقة، معايير الدفاع المدني، موافقات منطقة SAIF وميناء حمرية الحرة — نتعامل معها جميعاً كعمليات روتينية.',
@@ -383,6 +394,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         ajman: {
             title: 'تأجير خيام تخزين عجمان | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام تخزين في عجمان. المنطقة الحرة عجمان والجرف الصناعي. جميع التصاريح مشمولة، نشر خلال 3-5 أيام، 30 عاماً خبرة. احصل على عرض مجاني اليوم.',
             subtitle: 'خدمة المنطقة الحرة عجمان والجرف الصناعي وميناء عجمان',
             intro: 'عجمان واحدة من أسرع المراكز الصناعية والتصنيعية نمواً في الإمارات. المنطقة الحرة بعجمان تستضيف أكثر من 9,000 شركة. منطقة الجرف الصناعية في توسع سريع. ميناء عجمان يربط الإمارة بمسارات التجارة العالمية.',
             whyUs: 'قربنا من عجمان من قاعدة SAIF في الشارقة يعني تكاليف تنقل منخفضة وأوقات استجابة سريعة. نتولى تصاريح بلدية عجمان والدفاع المدني وسلطة المنطقة الحرة بعجمان ضمن خدمتنا القياسية.',
@@ -418,6 +430,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'ras-al-khaimah': {
             title: 'تأجير خيام تخزين رأس الخيمة | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام صناعية في رأس الخيمة. المنطقة الحرة والمدينة البحرية. مهندسة لأحمال رياح رأس الخيمة. جميع التصاريح مشمولة. 30 عاماً خبرة. احصل على عرض.',
             subtitle: 'خدمة المنطقة الحرة برأس الخيمة ومدينة رأس الخيمة البحرية والمناطق الصناعية',
             intro: 'رأس الخيمة واحدة من أكثر إمارات الإمارات نشاطاً في التصنيع والصناعة. المنطقة الحرة برأس الخيمة تستضيف أكثر من 14,000 شركة في السيراميك والأدوية والصلب والخدمات اللوجستية.',
             whyUs: 'خدمنا القطاع الصناعي برأس الخيمة لثلاثة عقود. الظروف الجغرافية والمناخية في رأس الخيمة — الرطوبة الساحلية من جهة، والتضاريس الجبلية والرياح الأقوى من الجهة الأخرى — تتطلب هندسة هيكلية محددة. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة ضمن العمليات الروتينية.',
@@ -453,6 +466,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         fujairah: {
             title: 'تأجير خيام تخزين الفجيرة | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام تخزين في الفجيرة. خدمة ميناء الفجيرة وFOIZ والمنطقة الحرة. متخصصون في الساحل الشرقي. جميع التصاريح مشمولة. 30 عاماً خبرة. احصل على عرض.',
             subtitle: 'خدمة المنطقة الحرة بالفجيرة وميناء الفجيرة ومناطق الساحل الشرقي الصناعية',
             intro: 'الفجيرة مركز الطاقة والصناعة على الساحل الشرقي للإمارات. ميناء الفجيرة واحد من أكثر محطات التزود بالوقود ازدحاماً في العالم. منطقة صناعة النفط بالفجيرة (FOIZ) تستضيف بنية تحتية كبيرة لتخزين وتزويد النفط.',
             whyUs: 'الجغرافيا الساحلية الشرقية في الفجيرة تخلق متطلبات هيكلية فريدة. لدينا 30 عاماً من النشر في الفجيرة ونفهم هذه الظروف. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة ضمن الممارسة التشغيلية القياسية.',
@@ -488,6 +502,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
         },
         'umm-al-quwain': {
             title: 'تأجير خيام تخزين أم القيوين | خيام صناعية ومستودعات',
+            metaDescription: 'تأجير خيام تخزين في أم القيوين. المنطقة الحرة والمناطق الصناعية. أسعار تنافسية، جميع التصاريح مشمولة، نشر سريع. 30 عاماً خبرة. احصل على عرض مجاني.',
             subtitle: 'خدمة منطقة أم القيوين الحرة وميناء أم القيوين والمناطق الصناعية',
             intro: 'أم القيوين مركز صناعي ولوجستي ناشئ بزخم نمو كبير. المنطقة الحرة لأم القيوين تجذب شركات التصنيع والخدمات اللوجستية والتجارة. ميناء أم القيوين يتعامل مع حجوم شحن متزايدة.',
             whyUs: 'قاعدتنا في منطقة SAIF بالشارقة تمنحنا وصولاً فعالاً لأم القيوين بتكاليف تنقل منخفضة. نتولى تصاريح بلدية أم القيوين والدفاع المدني وسلطة المنطقة الحرة ضمن خدمتنا القياسية.',

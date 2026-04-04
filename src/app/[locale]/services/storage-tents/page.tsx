@@ -29,6 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : 'Industrial-grade storage tent solutions for construction, logistics, oil & gas, and manufacturing across the UAE. Save 50–70% vs permanent construction. Fast deployment. Civil Defence approved.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents`,
+            languages: {
+                'en': 'https://www.tentnow.ae/en/services/storage-tents',
+                'ar': 'https://www.tentnow.ae/ar/services/storage-tents',
+                'x-default': 'https://www.tentnow.ae/en/services/storage-tents',
+            },
         },
         openGraph: {
             title: 'Industrial Storage Tent Rental UAE | Tent Now',

@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/pricing',
                 'ar': 'https://www.tentnow.ae/ar/pricing',
+                'x-default': 'https://www.tentnow.ae/en/pricing',
             },
         },
         openGraph: {

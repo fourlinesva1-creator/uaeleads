@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/tent-rental-uae',
                 'ar': 'https://www.tentnow.ae/ar/blog/tent-rental-uae',
+                'x-default': 'https://www.tentnow.ae/en/blog/tent-rental-uae',
             },
         },
     };

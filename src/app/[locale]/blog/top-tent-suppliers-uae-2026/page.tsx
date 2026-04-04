@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/top-tent-suppliers-uae-2026',
                 'ar': 'https://www.tentnow.ae/ar/blog/top-tent-suppliers-uae-2026',
+                'x-default': 'https://www.tentnow.ae/en/blog/top-tent-suppliers-uae-2026',
             },
         },
     };

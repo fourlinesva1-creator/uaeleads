@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
-import { getLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { cityContent } from '@/data/city-content';
 import { Link } from '@/i18n/navigation';
 import LocationServiceUI from '@/components/sections/LocationServiceUI';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import ServiceSchema from '@/components/seo/ServiceSchema';
 
 type Props = {
     params: Promise<{ locale: string; city: string; slug: string }>;
@@ -32,16 +33,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!content) return { title: `${slug.replace(/-/g, ' ')} in ${city.replace(/-/g, ' ')}` };
 
+    const description = content.intro.length > 160
+        ? content.intro.substring(0, 157) + '…'
+        : content.intro;
+
     return {
         title: content.title,
-        description: content.intro,
+        description,
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/locations/${city}/${slug}`,
             languages: {
                 'en': `https://www.tentnow.ae/en/locations/${city}/${slug}`,
                 'ar': `https://www.tentnow.ae/ar/locations/${city}/${slug}`,
+                'x-default': `https://www.tentnow.ae/en/locations/${city}/${slug}`,
             },
-        }
+        },
+        openGraph: {
+            title: content.title,
+            description,
+            url: `https://www.tentnow.ae/${locale}/locations/${city}/${slug}`,
+            siteName: 'Tent Now',
+            locale: locale === 'ar' ? 'ar_AE' : 'en_AE',
+            type: 'website',
+            images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: content.title }],
+        },
     };
 }
 
@@ -66,5 +81,26 @@ export default async function LocationServicePage({ params }: Props) {
         );
     }
 
-    return <LocationServiceUI city={city} slug={slug} content={content} />;
+    const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    const slugLabel = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    const pageUrl = `https://www.tentnow.ae/${locale}/locations/${city}/${slug}`;
+
+    return (
+        <>
+            <BreadcrumbSchema
+                locale={locale}
+                items={[
+                    { name: locale === 'ar' ? 'المواقع' : 'Locations', href: '/locations' },
+                    { name: cityName, href: `/locations/${city}` },
+                    { name: slugLabel, href: `/locations/${city}/${slug}` },
+                ]}
+            />
+            <ServiceSchema
+                name={content.title}
+                description={content.intro.substring(0, 200)}
+                url={pageUrl}
+            />
+            <LocationServiceUI city={city} slug={slug} content={content} />
+        </>
+    );
 }

@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/tarpaulin-vs-storage-tent-uae',
                 'ar': 'https://www.tentnow.ae/ar/blog/tarpaulin-vs-storage-tent-uae',
+                'x-default': 'https://www.tentnow.ae/en/blog/tarpaulin-vs-storage-tent-uae',
             },
         },
     };

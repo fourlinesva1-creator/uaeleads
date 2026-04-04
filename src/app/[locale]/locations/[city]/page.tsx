@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
-import { getLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { cityOverviews } from '@/data/city-content';
 import { Link } from '@/i18n/navigation';
 import CityOverviewUI from '@/components/sections/CityOverviewUI';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 type Props = {
     params: Promise<{ locale: string; city: string }>;
@@ -30,16 +30,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!content) return { title: `Ramadan Tent Rental in ${cityName}` };
 
+    const description = content.metaDescription || content.intro.substring(0, 155);
+
     return {
         title: content.title,
-        description: content.intro,
+        description,
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/locations/${city}`,
             languages: {
                 'en': `https://www.tentnow.ae/en/locations/${city}`,
                 'ar': `https://www.tentnow.ae/ar/locations/${city}`,
+                'x-default': `https://www.tentnow.ae/en/locations/${city}`,
             },
-        }
+        },
+        openGraph: {
+            title: content.title,
+            description,
+            url: `https://www.tentnow.ae/${locale}/locations/${city}`,
+            siteName: 'Tent Now',
+            locale: locale === 'ar' ? 'ar_AE' : 'en_AE',
+            type: 'website',
+            images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: content.title }],
+        },
     };
 }
 
@@ -56,7 +68,20 @@ export default async function CityPage({ params }: Props) {
         return <FallbackContent city={city} locale={locale} />;
     }
 
-    return <CityOverviewUI city={city} content={content} />;
+    const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+    return (
+        <>
+            <BreadcrumbSchema
+                locale={locale}
+                items={[
+                    { name: locale === 'ar' ? 'المواقع' : 'Locations', href: '/locations' },
+                    { name: cityName, href: `/locations/${city}` },
+                ]}
+            />
+            <CityOverviewUI city={city} content={content} />
+        </>
+    );
 }
 
 function FallbackContent({ city, locale }: { city: string; locale: string }) {

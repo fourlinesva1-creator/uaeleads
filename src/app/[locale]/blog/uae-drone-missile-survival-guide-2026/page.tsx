@@ -47,6 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/uae-drone-missile-survival-guide-2026',
                 'ar': 'https://www.tentnow.ae/ar/blog/uae-drone-missile-survival-guide-2026',
+                'x-default': 'https://www.tentnow.ae/en/blog/uae-drone-missile-survival-guide-2026',
             },
         },
     };

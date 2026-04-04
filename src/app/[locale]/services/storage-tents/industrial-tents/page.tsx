@@ -29,6 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : 'Purpose-engineered industrial tent structures for cold storage, oil & gas operations, hazardous containment, and labour accommodation across UAE. Civil Defence approved. Operating range –20°C to +55°C.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/industrial-tents`,
+            languages: {
+                'en': 'https://www.tentnow.ae/en/services/storage-tents/industrial-tents',
+                'ar': 'https://www.tentnow.ae/ar/services/storage-tents/industrial-tents',
+                'x-default': 'https://www.tentnow.ae/en/services/storage-tents/industrial-tents',
+            },
         },
         openGraph: {
             title: 'Industrial Tent Structures UAE — Cold Storage, Oil & Gas | Tent Now',

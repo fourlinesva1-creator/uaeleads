@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             languages: {
                 'en': 'https://www.tentnow.ae/en/blog/how-to-choose-tent-rental-company-uae',
                 'ar': 'https://www.tentnow.ae/ar/blog/how-to-choose-tent-rental-company-uae',
+                'x-default': 'https://www.tentnow.ae/en/blog/how-to-choose-tent-rental-company-uae',
             },
         },
         openGraph: {

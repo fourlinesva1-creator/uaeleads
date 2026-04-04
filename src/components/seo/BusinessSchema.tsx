@@ -4,17 +4,24 @@ import JsonLd from './JsonLd';
 export default function BusinessSchema() {
     const schema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "EventVenue"],
+        "@id": "https://www.tentnow.ae/#business",
         "name": "Tent Now",
-        "image": "https://www.tentnow.ae/images/og-image.jpg",
-        "@id": "https://www.tentnow.ae",
+        "legalName": "Tent Now UAE",
+        "image": [
+            "https://www.tentnow.ae/images/og-image.jpg",
+            "https://www.tentnow.ae/images/tent-now/home-majlis.jpg"
+        ],
         "url": "https://www.tentnow.ae",
         "telephone": "+971501826969",
+        "email": "info@tentnow.ae",
+        "foundingDate": "1994",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "SAIF Zone",
             "addressLocality": "Sharjah",
             "addressRegion": "Sharjah",
+            "postalCode": "0000",
             "addressCountry": "AE"
         },
         "geo": {
@@ -42,16 +49,62 @@ export default function BusinessSchema() {
             "https://wa.me/971501826969"
         ],
         "areaServed": [
-            "Dubai",
-            "Abu Dhabi",
-            "Sharjah",
-            "Ajman",
-            "Ras Al Khaimah",
-            "Fujairah",
-            "Umm Al Quwain"
+            { "@type": "City", "name": "Dubai" },
+            { "@type": "City", "name": "Abu Dhabi" },
+            { "@type": "City", "name": "Sharjah" },
+            { "@type": "City", "name": "Ajman" },
+            { "@type": "City", "name": "Ras Al Khaimah" },
+            { "@type": "City", "name": "Fujairah" },
+            { "@type": "City", "name": "Umm Al Quwain" }
         ],
-        "description": "30 years of expertise in premium Ramadan tents, Iftar setups, and Majlis for rent across all 7 Emirates of the UAE. Civil Defense approved structures for hotels, corporates, and families.",
-        "priceRange": "$$$"
+        "description": "30 years of expertise in premium Ramadan tents, Majlis, Iftar setups, and industrial storage tents across all 7 Emirates. Civil Defence-approved structures. Free quote.",
+        "priceRange": "AED 15–40/sqm/month",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Tent Rental Services UAE",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Ramadan Tent Rental",
+                        "description": "Premium Ramadan tent rental for hotels, corporates, and families across UAE"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Majlis Rental UAE",
+                        "description": "Authentic sadu-fabric Majlis setups for Ramadan and events across all Emirates"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Industrial Storage Tent Rental",
+                        "description": "Civil Defence-approved clear span warehouse tents for construction, logistics, and industrial sectors"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Iftar Tent Rental",
+                        "description": "Corporate and hotel Iftar tent setups with complete decor and furniture packages"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tarpaulin Supply UAE",
+                        "description": "PE200 heavy-duty tarpaulins for construction, agriculture, and industrial use across UAE"
+                    }
+                }
+            ]
+        }
     };
 
     return <JsonLd data={schema} />;

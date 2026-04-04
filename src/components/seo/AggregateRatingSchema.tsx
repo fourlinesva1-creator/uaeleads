@@ -11,8 +11,10 @@ export default function AggregateRatingSchema() {
         image: 'https://www.tentnow.ae/images/og-image.jpg',
         address: {
             '@type': 'PostalAddress',
+            streetAddress: 'SAIF Zone',
+            addressLocality: 'Sharjah',
             addressCountry: 'AE',
-            addressRegion: 'Dubai',
+            addressRegion: 'Sharjah',
         },
         aggregateRating: {
             '@type': 'AggregateRating',
