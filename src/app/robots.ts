@@ -10,10 +10,22 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
                 disallow: ['/api/'],
             },
+            // AI crawlers explicitly allowed for brand visibility in AI search
+            // (ChatGPT, Perplexity, Claude, Gemini, Copilot)
             {
-                userAgent: ['GPTBot', 'ChatGPT-User', 'CCBot', 'anthropic-ai', 'Claude-Web', 'Google-Extended'],
+                userAgent: [
+                    'GPTBot',
+                    'ChatGPT-User',
+                    'CCBot',
+                    'anthropic-ai',
+                    'Claude-Web',
+                    'ClaudeBot',
+                    'PerplexityBot',
+                    'Google-Extended',
+                    'Bytespider',
+                ],
                 allow: '/',
-            }
+            },
         ],
         sitemap: [
             `${baseUrl}/sitemap.xml`,

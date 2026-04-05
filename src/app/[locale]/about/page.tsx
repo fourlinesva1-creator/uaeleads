@@ -1,8 +1,9 @@
 import { setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -36,6 +37,8 @@ export default async function AboutPage({ params }: Props) {
 function AboutContent() {
     const t = useTranslations('experience');
     const brand = useTranslations('brand');
+    const locale = useLocale();
+    const isAr = locale === 'ar';
 
     return (
         <div className="bg-[#101622]">
@@ -116,6 +119,46 @@ function AboutContent() {
                             <p className="text-4xl font-display text-white mb-2">24/7</p>
                             <p className="text-sm text-[#D4AF37] uppercase tracking-widest">Support</p>
                         </div>
+                    </div>
+                </div>
+
+                {/* Internal links CTA */}
+                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl flex flex-col justify-between gap-6">
+                        <div>
+                            <h2 className="text-2xl font-display text-white mb-3">
+                                {isAr ? 'استكشف خدماتنا' : 'Explore Our Services'}
+                            </h2>
+                            <p className="text-[#9da6b9] text-sm leading-relaxed">
+                                {isAr
+                                    ? 'من مجالس رمضان الفاخرة إلى خيام التخزين الصناعية — حلول متكاملة لكل متطلباتك.'
+                                    : 'From luxury Ramadan Majlis to industrial storage tents — full solutions for every requirement.'}
+                            </p>
+                        </div>
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center gap-2 text-gold font-bold hover:gap-4 transition-all text-sm uppercase tracking-widest"
+                        >
+                            {isAr ? 'عرض جميع الخدمات ←' : 'View All Services →'}
+                        </Link>
+                    </div>
+                    <div className="p-8 bg-gold rounded-2xl flex flex-col justify-between gap-6">
+                        <div>
+                            <h2 className="text-2xl font-display text-[#101622] mb-3">
+                                {isAr ? 'احصل على عرض سعر' : 'Get a Free Quote'}
+                            </h2>
+                            <p className="text-[#101622]/80 text-sm leading-relaxed">
+                                {isAr
+                                    ? 'أخبرنا عن مشروعك ونوفر لك تسعيرة دقيقة خلال 24 ساعة.'
+                                    : 'Tell us about your project and we\'ll provide exact pricing within 24 hours.'}
+                            </p>
+                        </div>
+                        <Link
+                            href="/request-quote"
+                            className="inline-flex items-center gap-2 text-[#101622] font-bold hover:gap-4 transition-all text-sm uppercase tracking-widest"
+                        >
+                            {isAr ? 'طلب عرض سعر ←' : 'Request Quote →'}
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -65,7 +65,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                 <div className="container-luxury relative z-10">
                     <div className="max-w-4xl animate-fade-in-up">
                         <div className="section-label mb-8">
-                            <span>Established Heritage in {cityName}</span>
+                            <span>{locale === 'ar' ? `تراث راسخ في ${cityName}` : `Established Heritage in ${cityName}`}</span>
                         </div>
                         <h1 className="text-4xl md:text-7xl font-display text-white mb-10 tracking-tight leading-[1.1]">
                             {content.title}
@@ -87,7 +87,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                         <div className="lg:col-span-5">
                             <h2 className="text-3xl md:text-4xl font-display text-white mb-6">
-                                Why Work With Us
+                                {locale === 'ar' ? 'لماذا نحن؟' : 'Why Work With Us'}
                             </h2>
                             <div className="w-16 h-1 bg-gold" />
                         </div>
@@ -105,10 +105,12 @@ export default function CityOverviewUI({ city, content }: Props) {
                 <div className="container-luxury">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
-                            Who We Serve
+                            {locale === 'ar' ? 'من نخدم؟' : 'Who We Serve'}
                         </h2>
                         <p className="text-text-muted max-w-2xl mx-auto">
-                            Three decades of experience means we understand what different clients actually need.
+                            {locale === 'ar'
+                                ? 'ثلاثة عقود من الخبرة تعني أننا نفهم ما يحتاجه كل عميل فعلاً.'
+                                : 'Three decades of experience means we understand what different clients actually need.'}
                         </p>
                     </div>
 
@@ -173,7 +175,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                     <div className="flex items-center gap-4 mb-10">
                         <MapPin className="text-gold" size={24} />
                         <h2 className="text-2xl font-display text-white">
-                            Areas We Serve in {cityName}
+                            {locale === 'ar' ? `المناطق التي نخدمها في ${cityName}` : `Areas We Serve in ${cityName}`}
                         </h2>
                     </div>
                     <div className="flex flex-wrap gap-3">
@@ -193,16 +195,22 @@ export default function CityOverviewUI({ city, content }: Props) {
             <section className="py-20 bg-[#0c1119]">
                 <div className="container-luxury">
                     <h2 className="text-2xl md:text-3xl font-display text-white mb-10">
-                        Our {cityName} Services
+                        {locale === 'ar' ? `خدماتنا في ${cityName}` : `Our ${cityName} Services`}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {[
+                        {(locale === 'ar' ? [
+                            { slug: 'ramadan-tent-rental', label: 'تأجير خيام رمضان' },
+                            { slug: 'majlis-tent-rental', label: 'تأجير خيام المجالس' },
+                            { slug: 'iftar-tent-rental', label: 'خيام الإفطار' },
+                            { slug: 'suhoor-tent-rental', label: 'خيام السحور' },
+                            { slug: 'sadu-tent-rental', label: 'خيام السدو' },
+                        ] : [
                             { slug: 'ramadan-tent-rental', label: 'Ramadan Tent Rental' },
                             { slug: 'majlis-tent-rental', label: 'Majlis Tent Rental' },
                             { slug: 'iftar-tent-rental', label: 'Iftar Tent Solutions' },
                             { slug: 'suhoor-tent-rental', label: 'Suhoor Tent Setups' },
                             { slug: 'sadu-tent-rental', label: 'Sadu Tent Rental' },
-                        ].map(({ slug, label }) => (
+                        ]).map(({ slug, label }) => (
                             <Link
                                 key={slug}
                                 href={`/locations/${city}/${slug}`}
@@ -213,7 +221,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                                         {label}
                                     </h3>
                                     <p className="text-text-muted text-sm">
-                                        Professional {label.toLowerCase()} in {cityName}
+                                        {locale === 'ar' ? `${label} في ${cityName}` : `Professional ${label.toLowerCase()} in ${cityName}`}
                                     </p>
                                 </div>
                                 <ArrowRight className="text-gold opacity-0 group-hover:opacity-100 transition-opacity" size={24} />
@@ -225,16 +233,20 @@ export default function CityOverviewUI({ city, content }: Props) {
                     {cityServiceSlugMap[city] && (
                         <div className="mt-8 p-6 bg-[#1a212e] border border-gold/20 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                             <div>
-                                <p className="text-text-muted text-sm mb-1">Complete {cityName} Guide</p>
+                                <p className="text-text-muted text-sm mb-1">
+                                    {locale === 'ar' ? `دليل ${cityName} الشامل` : `Complete ${cityName} Guide`}
+                                </p>
                                 <p className="text-white font-display">
-                                    Iftar Tent Rental {cityName} — Full Setup Guide, Pricing & FAQs
+                                    {locale === 'ar'
+                                        ? `تأجير خيام الإفطار ${cityName} — دليل كامل، أسعار، وأسئلة شائعة`
+                                        : `Iftar Tent Rental ${cityName} — Full Setup Guide, Pricing & FAQs`}
                                 </p>
                             </div>
                             <Link
                                 href={`/services/${cityServiceSlugMap[city]}`}
                                 className="shrink-0 flex items-center gap-2 px-6 py-3 border border-gold text-gold rounded-xl text-sm font-display hover:bg-gold hover:text-[#101622] transition-all"
                             >
-                                View Guide
+                                {locale === 'ar' ? 'عرض الدليل' : 'View Guide'}
                                 <ExternalLink size={16} />
                             </Link>
                         </div>
@@ -286,10 +298,12 @@ export default function CityOverviewUI({ city, content }: Props) {
                         </div>
                         <div className="relative z-10 max-w-3xl">
                             <h2 className="text-3xl md:text-5xl font-display text-[#101622] mb-6">
-                                Ready to Talk?
+                                {locale === 'ar' ? 'هل أنت مستعد؟' : 'Ready to Talk?'}
                             </h2>
                             <p className="text-[#101622]/80 text-lg mb-10 leading-relaxed">
-                                Get a detailed quote for your {cityName} Ramadan setup. No generic pricing—we'll scope your exact requirements and give you real numbers within 24 hours.
+                                {locale === 'ar'
+                                    ? `احصل على عرض سعر تفصيلي لإعداد رمضانك في ${cityName}. لا أسعار عامة — نحدد متطلباتك الدقيقة ونعطيك أرقاماً حقيقية خلال 24 ساعة.`
+                                    : `Get a detailed quote for your ${cityName} Ramadan setup. No generic pricing—we'll scope your exact requirements and give you real numbers within 24 hours.`}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button
@@ -304,7 +318,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                                     rel="noopener noreferrer"
                                     className="px-10 py-5 bg-transparent border-2 border-[#101622] text-[#101622] rounded-xl font-display tracking-wide hover:bg-[#101622]/10 transition-colors text-center"
                                 >
-                                    WhatsApp Us
+                                    {locale === 'ar' ? 'واتساب' : 'WhatsApp Us'}
                                 </a>
                             </div>
                         </div>

@@ -13,19 +13,14 @@ export default function WebsiteSchema() {
         "publisher": {
             "@type": "Organization",
             "name": "Tent Now",
+            "@id": "https://www.tentnow.ae/#business",
             "url": "https://www.tentnow.ae",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.tentnow.ae/images/tent-now-logo.gif"
+                "url": "https://www.tentnow.ae/images/og-image.jpg",
+                "width": 1200,
+                "height": 630
             }
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://www.tentnow.ae/en?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
         }
     };
 

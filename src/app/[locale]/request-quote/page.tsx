@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
+import Script from 'next/script';
 import QuoteForm from '@/components/forms/QuoteForm';
 
 type Props = {
@@ -25,6 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description,
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/request-quote`,
+            languages: {
+                'en': 'https://www.tentnow.ae/en/request-quote',
+                'ar': 'https://www.tentnow.ae/ar/request-quote',
+                'x-default': 'https://www.tentnow.ae/en/request-quote',
+            },
         },
     };
 }
@@ -33,7 +39,15 @@ export default async function RequestQuotePage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
 
-    return <RequestQuoteContent />;
+    return (
+        <>
+            <Script
+                src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+                strategy="afterInteractive"
+            />
+            <RequestQuoteContent />
+        </>
+    );
 }
 
 function RequestQuoteContent() {

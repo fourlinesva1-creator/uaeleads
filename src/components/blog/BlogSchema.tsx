@@ -1,4 +1,4 @@
-import Script from 'next/script';
+import JsonLd from '@/components/seo/JsonLd';
 
 interface BlogSchemaProps {
     title: string;
@@ -23,18 +23,20 @@ export default function BlogSchema({ title, description, image, datePublished, d
         datePublished: datePublished,
         dateModified: dateModified || datePublished,
         author: {
-            '@type': 'Person',
-            name: author,
-            url: 'https://www.tentnow.ae/en/about',
+            '@type': 'Organization',
+            name: 'Tent Now',
+            url: BASE_URL,
             sameAs: ['https://www.facebook.com/tentnow', 'https://x.com/tentnowae']
         },
         publisher: {
             '@type': 'Organization',
             name: 'Tent Now',
-            url: 'https://www.tentnow.ae',
+            url: BASE_URL,
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.tentnow.ae/images/tent-now-logo.gif'
+                url: `${BASE_URL}/images/og-image.jpg`,
+                width: 1200,
+                height: 630
             }
         },
         mainEntityOfPage: {
@@ -43,11 +45,5 @@ export default function BlogSchema({ title, description, image, datePublished, d
         }
     };
 
-    return (
-        <Script
-            id="blog-schema"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-    );
+    return <JsonLd data={schema} />;
 }

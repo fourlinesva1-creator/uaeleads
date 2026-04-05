@@ -5,13 +5,13 @@ import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 const cities = [
-  { key: 'dubai', href: '/locations/dubai', labelEn: 'Ramadan Tent Dubai', labelAr: 'خيمة رمضان دبي' },
-  { key: 'abuDhabi', href: '/locations/abu-dhabi', labelEn: 'Ramadan Tent Abu Dhabi', labelAr: 'خيمة رمضان أبوظبي' },
-  { key: 'sharjah', href: '/locations/sharjah', labelEn: 'Ramadan Tent Sharjah', labelAr: 'خيمة رمضان الشارقة' },
-  { key: 'ajman', href: '/locations/ajman', labelEn: 'Ramadan Tent Ajman', labelAr: 'خيمة رمضان عجمان' },
-  { key: 'rak', href: '/locations/ras-al-khaimah', labelEn: 'Ramadan Tent Ras Al Khaimah', labelAr: 'خيمة رمضان رأس الخيمة' },
-  { key: 'fujairah', href: '/locations/fujairah', labelEn: 'Ramadan Tent Fujairah', labelAr: 'خيمة رمضان الفجيرة' },
-  { key: 'uaq', href: '/locations/umm-al-quwain', labelEn: 'Ramadan Tent Umm Al Quwain', labelAr: 'خيمة رمضان أم القيوين' },
+  { key: 'dubai', href: '/locations/dubai/ramadan-tent-rental', labelEn: 'Ramadan Tent Dubai', labelAr: 'خيمة رمضان دبي' },
+  { key: 'abuDhabi', href: '/locations/abu-dhabi/ramadan-tent-rental', labelEn: 'Ramadan Tent Abu Dhabi', labelAr: 'خيمة رمضان أبوظبي' },
+  { key: 'sharjah', href: '/locations/sharjah/ramadan-tent-rental', labelEn: 'Ramadan Tent Sharjah', labelAr: 'خيمة رمضان الشارقة' },
+  { key: 'ajman', href: '/locations/ajman/ramadan-tent-rental', labelEn: 'Ramadan Tent Ajman', labelAr: 'خيمة رمضان عجمان' },
+  { key: 'rak', href: '/locations/ras-al-khaimah/ramadan-tent-rental', labelEn: 'Ramadan Tent Ras Al Khaimah', labelAr: 'خيمة رمضان رأس الخيمة' },
+  { key: 'fujairah', href: '/locations/fujairah/ramadan-tent-rental', labelEn: 'Ramadan Tent Fujairah', labelAr: 'خيمة رمضان الفجيرة' },
+  { key: 'uaq', href: '/locations/umm-al-quwain/ramadan-tent-rental', labelEn: 'Ramadan Tent Umm Al Quwain', labelAr: 'خيمة رمضان أم القيوين' },
 ];
 
 const services = [
@@ -206,9 +206,11 @@ export default function Footer() {
             <p className="text-text-muted text-sm">
               {t('copyright').replace('{year}', currentYear.toString())}
             </p>
-            <p className="text-text-muted text-sm">
-              {t('tagline')}
-            </p>
+            <div className="flex items-center gap-4">
+              <Link href="/privacy" className="text-text-muted text-sm hover:text-gold transition-colors">
+                {locale === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}
+              </Link>
+            </div>
             <a
               href="https://reachxl.com/"
               target="_blank"

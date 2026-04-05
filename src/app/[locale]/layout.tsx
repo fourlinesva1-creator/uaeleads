@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Script from 'next/script';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -14,7 +13,6 @@ import CallbackModal from '@/components/ui/CallbackModal';
 import UrgencyBanner from '@/components/ui/UrgencyBanner';
 import BusinessSchema from '@/components/seo/BusinessSchema';
 import WebsiteSchema from '@/components/seo/WebsiteSchema';
-import AggregateRatingSchema from '@/components/seo/AggregateRatingSchema';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -173,7 +171,6 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <BusinessSchema />
           <WebsiteSchema />
-          <AggregateRatingSchema />
           <ModalProvider>
             {/* <UrgencyBanner /> */}
             <Header />
@@ -183,10 +180,6 @@ export default async function LocaleLayout({
             <CallbackModal />
           </ModalProvider>
         </NextIntlClientProvider>
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

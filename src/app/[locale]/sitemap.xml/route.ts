@@ -26,12 +26,14 @@ const slugs = [
 const mainPages = [
     '',
     '/services',
+    '/pricing',
     '/locations',
     '/portfolio',
     '/about',
     '/contact',
     '/faq',
     '/request-quote',
+    '/privacy',
 ];
 
 const standaloneServices = [
@@ -46,7 +48,6 @@ const standaloneServices = [
     'iftar-tent-rental-dubai',
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
-    'ramadan-iftar-tent-setup',
     'tarpaulins',
 ];
 

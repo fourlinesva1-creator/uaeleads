@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 type Props = {
     params: Promise<{ locale: string; slug: string }>;
@@ -146,6 +147,13 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
 
     return (
         <div className="bg-[#101622]">
+            <BreadcrumbSchema
+                locale={locale}
+                items={[
+                    { name: isAr ? 'الخدمات' : 'Services', href: '/services' },
+                    { name: t(`items.${serviceId}.title`), href: `/services/${slug}` },
+                ]}
+            />
             <ServiceSchema
                 name={t(`items.${serviceId}.title`)}
                 description={t(`items.${serviceId}.description`)}
@@ -191,6 +199,8 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                                 src={imageMap[slug]}
                                 alt={t(`items.${serviceId}.title`)}
                                 fill
+                                priority
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="object-cover"
                             />
                         </div>

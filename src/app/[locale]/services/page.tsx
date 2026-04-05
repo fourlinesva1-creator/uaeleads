@@ -80,7 +80,7 @@ function ServicesContent() {
             <div className="container-luxury">
                 <div className="max-w-4xl mb-20 animate-fade-in-up">
                     <div className="section-label mb-6">
-                        <span>Our Expertise</span>
+                        <span>{isAr ? 'خدماتنا' : 'Our Expertise'}</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-display text-white mb-8 tracking-wide">
                         {t('title')}
@@ -134,13 +134,15 @@ function ServicesContent() {
                 <div className="mt-20 pt-16 border-t border-[#1a212e]">
                     <div className="max-w-2xl mb-10">
                         <div className="section-label mb-4">
-                            <span>Industrial & Commercial Solutions</span>
+                            <span>{isAr ? 'الحلول الصناعية والتجارية' : 'Industrial & Commercial Solutions'}</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
-                            Storage Tent Solutions for UAE Projects
+                            {isAr ? 'حلول خيام التخزين لمشاريع الإمارات' : 'Storage Tent Solutions for UAE Projects'}
                         </h2>
                         <p className="text-[#9da6b9]">
-                            Civil Defence-approved clear span, warehouse frame, and industrial tent structures for construction, logistics, oil & gas, and manufacturing.
+                            {isAr
+                                ? 'هياكل خيام صناعية معتمدة من الدفاع المدني للإنشاء واللوجستيات والنفط والغاز والتصنيع.'
+                                : 'Civil Defence-approved clear span, warehouse frame, and industrial tent structures for construction, logistics, oil & gas, and manufacturing.'}
                         </p>
                     </div>
                     <div className="bg-[#1a212e] border border-[#282e39] rounded-3xl overflow-hidden">
@@ -156,20 +158,26 @@ function ServicesContent() {
                             </div>
                             <div className="p-10 lg:p-12 flex flex-col justify-center">
                                 <div className="text-gold text-sm font-bold uppercase tracking-widest mb-4">
-                                    AED 15–40 / sqm / month
+                                    {isAr ? 'درهم 15–40 / متر مربع / شهر' : 'AED 15–40 / sqm / month'}
                                 </div>
                                 <h3 className="text-3xl font-display text-white mb-4">
-                                    Industrial Storage Tents
+                                    {isAr ? 'خيام التخزين الصناعية' : 'Industrial Storage Tents'}
                                 </h3>
                                 <p className="text-[#9da6b9] mb-8 leading-relaxed">
-                                    UAE warehousing vacancy is at 3% and industrial rents are up 33%. Deploy Civil Defence-approved storage structures within days — not months — at 50–70% less than permanent construction.
+                                    {isAr
+                                        ? 'نسبة شغور المستودعات في دبي 3% وإيجارات الصناعة ارتفعت 33%. نشّر هياكل تخزين معتمدة من الدفاع المدني خلال أيام — بتكلفة أقل 50–70% من البناء الدائم.'
+                                        : 'UAE warehousing vacancy is at 3% and industrial rents are up 33%. Deploy Civil Defence-approved storage structures within days — not months — at 50–70% less than permanent construction.'}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-                                    {[
+                                    {(isAr ? [
+                                        { label: 'كلير سبان', href: '/services/storage-tents/clear-span-tents' },
+                                        { label: 'مستودعات', href: '/services/storage-tents/warehouse-tents' },
+                                        { label: 'صناعية', href: '/services/storage-tents/industrial-tents' },
+                                    ] : [
                                         { label: 'Clear Span', href: '/services/storage-tents/clear-span-tents' },
                                         { label: 'Warehouse', href: '/services/storage-tents/warehouse-tents' },
                                         { label: 'Industrial', href: '/services/storage-tents/industrial-tents' },
-                                    ].map(({ label, href }) => (
+                                    ]).map(({ label, href }) => (
                                         <Link
                                             key={href}
                                             href={href}
@@ -183,7 +191,7 @@ function ServicesContent() {
                                     href="/services/storage-tents"
                                     className="flex items-center gap-2 text-[#D4AF37] font-bold hover:gap-4 transition-all"
                                 >
-                                    Explore Storage Solutions <ArrowRight size={18} />
+                                    {isAr ? 'استكشف حلول التخزين' : 'Explore Storage Solutions'} <ArrowRight size={18} />
                                 </Link>
                             </div>
                         </div>

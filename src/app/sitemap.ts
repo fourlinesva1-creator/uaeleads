@@ -33,6 +33,7 @@ const mainPages = [
     '/contact',
     '/faq',
     '/request-quote',
+    '/privacy',
 ];
 
 const standaloneServices = [
@@ -47,7 +48,6 @@ const standaloneServices = [
     'iftar-tent-rental-dubai',
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
-    'ramadan-iftar-tent-setup',
     'tarpaulins',
 ];
 
@@ -147,10 +147,43 @@ export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap 
     return sitemapEntries;
 }
 
+// Key service images for image sitemap
+const serviceImages: MetadataRoute.Sitemap = [
+    {
+        url: 'https://www.tentnow.ae/en/services/hotel-majlis',
+        images: ['https://www.tentnow.ae/images/tent-now/hotel.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/services/corporate-events',
+        images: ['https://www.tentnow.ae/images/tent-now/corporate.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/services/home-majlis',
+        images: ['https://www.tentnow.ae/images/tent-now/home-majlis.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/services/iftar-tent-rental',
+        images: ['https://www.tentnow.ae/images/tent-now/iftar-tents.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/services/storage-tents',
+        images: ['https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/services/tarpaulins',
+        images: ['https://www.tentnow.ae/images/tarpaulins/tarpaulin-main.png'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en',
+        images: ['https://www.tentnow.ae/images/og-image.jpg'],
+    },
+];
+
 // Default sitemap (combined - for backward compatibility)
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         ...generateSitemapForLocale('en'),
         ...generateSitemapForLocale('ar'),
+        ...serviceImages,
     ];
 }

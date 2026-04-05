@@ -13,6 +13,7 @@ interface BreadcrumbSchemaProps {
 
 export default function BreadcrumbSchema({ items, locale }: BreadcrumbSchemaProps) {
     const baseUrl = 'https://www.tentnow.ae';
+    const homeName = locale === 'ar' ? 'الرئيسية' : 'Home';
 
     const schema = {
         "@context": "https://schema.org",
@@ -21,7 +22,7 @@ export default function BreadcrumbSchema({ items, locale }: BreadcrumbSchemaProp
             {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "Home",
+                "name": homeName,
                 "item": `${baseUrl}/${locale}`
             },
             ...items.map((item, index) => ({

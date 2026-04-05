@@ -14,9 +14,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'nav' });
 
+    const isAr = locale === 'ar';
     return {
         title: t('contact'),
-        description: 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE.',
+        description: isAr
+            ? 'تواصل مع Tent Now لتأجير خيام رمضان والمجالس الفاخرة في دبي وأبوظبي وجميع أنحاء الإمارات. رد خلال 24 ساعة.'
+            : 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE. Response within 24 hours.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/contact`,
             languages: {

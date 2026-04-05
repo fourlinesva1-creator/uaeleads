@@ -1,33 +1,23 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from '@/i18n/navigation';
-import { useTransition } from 'react';
+import { usePathname, Link } from '@/i18n/navigation';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
-
-  const toggleLocale = () => {
-    const newLocale = locale === 'en' ? 'ar' : 'en';
-    startTransition(() => {
-      router.replace(pathname, { locale: newLocale });
-    });
-  };
+  const targetLocale = locale === 'en' ? 'ar' : 'en';
 
   return (
-    <button
-      onClick={toggleLocale}
-      disabled={isPending}
+    <Link
+      href={pathname}
+      locale={targetLocale}
       className="
         flex items-center gap-2 px-3 py-2 rounded-lg
         border border-border bg-bg-card
         text-sm font-medium text-text-muted
         transition-all duration-200
         hover:border-gold hover:text-gold
-        disabled:opacity-50 disabled:cursor-wait
       "
       aria-label={locale === 'en' ? 'Switch to Arabic' : 'Switch to English'}
     >
@@ -45,6 +35,6 @@ export default function LanguageSwitcher() {
         />
       </svg>
       <span>{locale === 'en' ? 'العربية' : 'English'}</span>
-    </button>
+    </Link>
   );
 }
