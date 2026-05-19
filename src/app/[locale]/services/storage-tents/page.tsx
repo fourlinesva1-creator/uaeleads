@@ -8,6 +8,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { storageTentHubContent } from '@/data/storage-tent-content';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -22,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير وبيع خيام التخزين الصناعية في الإمارات | تنت ناو'
-            : 'Industrial Storage Tent Rental & Sale UAE | Tent Now',
+            ? 'تأجير خيام التخزين في الإمارات | خيام صناعية ومستودعات | تنت ناو'
+            : 'Storage Tent Rental UAE | Industrial & Warehouse Tents | Tent Now',
         description: isAr
-            ? 'حلول خيام التخزين المتكاملة للمشاريع الصناعية والخدمات اللوجستية والنفط والغاز في الإمارات. توفير 50-70% مقارنة بالإنشاءات الدائمة. اتصل بنا الآن.'
-            : 'Industrial-grade storage tent solutions for construction, logistics, oil & gas, and manufacturing across the UAE. Save 50–70% vs permanent construction. Fast deployment. Civil Defence approved.',
+            ? 'تأجير خيام التخزين للمشاريع الصناعية والخدمات اللوجستية والنفط والغاز في الإمارات. توفير 50-70% مقارنة بالإنشاءات الدائمة. من 15 درهم/م² شهرياً. معتمدة من الدفاع المدني.'
+            : 'Storage tent rental UAE from AED 15–40/sqm/month. Industrial, warehouse, and clear span tent structures for construction, logistics, oil & gas, and manufacturing. Civil Defence approved. Deployed in days.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents`,
             languages: {
@@ -217,6 +218,7 @@ export default async function StorageTentsPage({ params }: Props) {
 
             {/* FAQ */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <PricingNote locale={locale} className="mb-10" />
                 <h2 className="text-3xl md:text-4xl font-display text-white mb-12">{c.faqTitle}</h2>
                 <div className="space-y-4 max-w-3xl">
                     {c.faqs.map((faq, idx) => (

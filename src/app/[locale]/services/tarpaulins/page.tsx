@@ -17,6 +17,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { tarpaulinContent, tarpaulinSizes } from '@/data/tarpaulin-content';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -409,6 +410,7 @@ export default async function TarpaulinsPage({ params }: Props) {
 
             {/* ── FAQ ── */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <PricingNote locale={locale} className="mb-10" />
                 <h2 className="text-3xl md:text-4xl font-display text-white mb-12">{c.faqTitle}</h2>
                 <div className="space-y-4 max-w-3xl">
                     {c.faqs.map((faq, idx) => (

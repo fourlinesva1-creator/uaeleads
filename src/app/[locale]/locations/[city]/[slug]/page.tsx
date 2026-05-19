@@ -20,7 +20,9 @@ export async function generateStaticParams() {
     routing.locales.forEach(locale => {
         cities.forEach(city => {
             slugs.forEach(slug => {
-                params.push({ locale, city, slug });
+                if (cityContent['en']?.[city]?.[slug]) {
+                    params.push({ locale, city, slug });
+                }
             });
         });
     });

@@ -8,6 +8,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { warehouseContent } from '@/data/storage-tent-content';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -22,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير خيام المستودعات في الإمارات | هياكل تخزين بالإطار | تنت ناو'
-            : 'Warehouse Tent Rental UAE | Frame Structure Storage | Tent Now',
+            ? 'تأجير خيام المستودعات في الإمارات | هياكل إطارية جاهزة | تنت ناو'
+            : 'Warehouse Tent Rental UAE | Frame Structures | Tent Now',
         description: isAr
-            ? 'خيام مستودعات معيارية تُركَّب على أي سطح صلب — بدون تثبيت أرضي أو حفريات. مثالية للخدمات اللوجستية والتجارة الإلكترونية وتخزين الموانئ في الإمارات.'
-            : 'Modular warehouse frame tents that install on any hard surface — no staking, no excavation. Ideal for logistics, e-commerce fulfilment, and port overflow storage across UAE. AED 15–40/sqm/month.',
+            ? 'خيام مستودعات معيارية تُركَّب على أي سطح صلب في الإمارات — بدون تثبيت أرضي أو حفريات. مثالية للخدمات اللوجستية والتجارة الإلكترونية وتخزين الموانئ. من 15 درهم/م² شهرياً.'
+            : 'Warehouse tent rental UAE from AED 15–40/sqm/month. Modular frame tents installed on any hard surface — no staking, no excavation. Warehouse tents UAE logistics, e-commerce, and port operators trust. Deployed in 5–8 days.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/warehouse-tents`,
             languages: {
@@ -154,6 +155,7 @@ export default async function WarehouseTentsPage({ params }: Props) {
 
             {/* FAQ */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <PricingNote locale={locale} className="mb-10" />
                 <h2 className="text-3xl font-display text-white mb-12">{c.faqTitle}</h2>
                 <div className="space-y-4 max-w-3xl">
                     {c.faqs.map((faq, idx) => (

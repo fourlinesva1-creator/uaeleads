@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { ArrowRight } from 'lucide-react';
 import FAQSchema from '@/components/seo/FAQSchema';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -200,6 +201,7 @@ function ServicesContent() {
 
                 {/* FAQ Section */}
                 <div className="mt-24 pt-16 border-t border-[#1a212e]">
+                    <PricingNote locale={isAr ? 'ar' : 'en'} className="mb-10" />
                     <div className="max-w-3xl mb-12">
                         <div className="section-label mb-4">
                             <span>{isAr ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}</span>

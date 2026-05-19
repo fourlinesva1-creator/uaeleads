@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         : 'How to Choose a Tent Rental Company in UAE: 7 Must-Check Criteria | Tent Now';
 
     const description = isAr
-        ? 'الدليل العملي لاختيار شركة تأجير الخيام المناسبة في الإمارات — لا تقتصر على السعر. تحقق من التصاريح والخبرة والمحفظة والدعم الميداني وسياسة الطوارئ.'
-        : 'The practical guide to selecting the right tent rental company in UAE — don\'t go on price alone. Check permits, experience, portfolio, field support, and emergency policy.';
+        ? 'تجاهل التصاريح قد يُكلفك غرامة تصل إلى 500,000 درهم في الإمارات. تحقق من 7 معايير حاسمة — الخبرة والتصاريح والمحفظة والدعم الميداني — قبل توقيع أي عقد مع شركة خيام.'
+        : 'Ignoring permits can cost you AED 500,000 in fines in the UAE. Check these 7 criteria — experience, permits, portfolio, field support — before signing any tent rental contract.';
 
     return {
         title,

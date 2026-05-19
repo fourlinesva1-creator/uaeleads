@@ -5,17 +5,22 @@ import { Link } from '@/i18n/navigation';
 import BlogSchema from '@/components/blog/BlogSchema';
 import ShareButtons from '@/components/blog/ShareButtons';
 import BlogServiceCTA from '@/components/blog/BlogServiceCTA';
+import { routing } from '@/i18n/routing';
+
+export async function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تقويم رمضان الإمارات 2026 | مواقيت الصلاة والإفطار والسحور - دبي وأبوظبي'
-        : 'Ramadan Calendar UAE 2026 | Prayer Times, Iftar & Suhoor Schedule Dubai, Abu Dhabi';
+        ? 'تقويم رمضان 2026 الإمارات + قائمة التحقق لتخطيط خيمة الإفطار | Tent Now'
+        : 'Ramadan 2026 UAE Calendar + Iftar Tent Planning Checklist | Tent Now';
 
     const description = locale === 'ar'
-        ? 'تقويم رمضان 2026 الكامل للإمارات مع التواريخ المؤكدة (19 فبراير - 20 مارس)، مواقيت الإفطار والسحور اليومية، جداول الصلاة لدبي وأبوظبي والشارقة. خطط لتأجير خيام رمضان الآن.'
-        : 'Complete Ramadan 2026 calendar for UAE with confirmed dates (Feb 19 - Mar 20), daily Iftar & Suhoor timings, prayer schedules for Dubai, Abu Dhabi, Sharjah. Plan your Ramadan tent rentals now.';
+        ? 'تواريخ رمضان 2026 المؤكدة: 19 فبراير – 20 مارس. مواقيت الإفطار والسحور لدبي وأبوظبي والشارقة — بالإضافة إلى قائمة تحقق عملية لحجز خيمة الإفطار في الوقت المناسب.'
+        : 'Confirmed Ramadan 2026 dates: Feb 19 – Mar 20. Iftar & Suhoor timings for Dubai, Abu Dhabi, Sharjah — plus an actionable checklist for booking your iftar tent before slots run out.';
 
     return {
         title,

@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'خيام الفعاليات المؤسسية: إنشاء أماكن خارجية احترافية في دبي | Tent Now'
-        : 'Corporate Event Tents: Creating Professional Outdoor Venues in Dubai | Tent Now';
+        ? 'تأجير خيام إفطار الشركات دبي 2026: خدمة متكاملة من AED 15,000 | Tent Now'
+        : 'Corporate Iftar Tent Rental Dubai 2026: Full-Turnkey from AED 15,000 | Tent Now';
 
     const description = isAr
-        ? 'الدليل الشامل لكيفية إحداث خيام الفعاليات المؤسسية ثورة في صناعة الفعاليات في دبي، مع رؤى قابلة للتنفيذ لزيادة عائد استثمار فعاليتك لعام 2026.'
-        : 'The comprehensive guide on how corporate event tents are revolutionizing the events industry in Dubai, providing actionable insights for maximizing your event investment in 2026.';
+        ? 'خيام إفطار مؤسسية احترافية في دبي لموسم رمضان 2026 — تشمل التركيب والتكييف والتصاريح. مناسبة للشركات والوزارات والفنادق. احجز مبكراً قبل نفاد المواعيد.'
+        : 'Professional corporate iftar tents in Dubai for Ramadan 2026 — installation, AC and permits included. Ideal for companies, ministries and hotels. Book early before dates fill up.';
 
     return {
         title,

@@ -8,6 +8,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { clearSpanContent } from '@/data/storage-tent-content';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -149,6 +150,7 @@ export default async function ClearSpanTentsPage({ params }: Props) {
 
             {/* FAQ */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <PricingNote locale={locale} className="mb-10" />
                 <h2 className="text-3xl font-display text-white mb-12">{c.faqTitle}</h2>
                 <div className="space-y-4 max-w-3xl">
                     {c.faqs.map((faq, idx) => (

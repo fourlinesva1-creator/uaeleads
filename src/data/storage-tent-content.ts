@@ -128,8 +128,8 @@ export interface IndustrialContent {
 export const storageTentHubContent: Record<string, StorageTentHubContent> = {
     en: {
         heroLabel: 'UAE Warehousing Market — AED 11.1 Billion by 2030',
-        heroTitle: 'Storage Tent Solutions for Industrial UAE Projects',
-        heroBody: 'When UAE warehousing vacancy sits at 3% and Dubai logistics demand has surged 225%, waiting for permanent construction is not an option. Tent Now deploys Civil Defence-approved storage structures within days — not months.',
+        heroTitle: 'Storage Tent Rental for Industrial UAE Projects',
+        heroBody: 'When UAE warehousing vacancy sits at 3% and Dubai logistics demand has surged 225%, waiting for permanent construction is not an option. Tent Now provides storage tent rental UAE businesses rely on — Civil Defence-approved structures deployed within days. From temporary storage tent rental UAE for short-term overflows to long-term industrial and warehouse complexes, we scale to your requirement.',
         ctaPrimary: 'Get a Free Site Assessment',
         ctaSecondary: 'Request a Quote',
         stats: [
@@ -167,6 +167,9 @@ export const storageTentHubContent: Record<string, StorageTentHubContent> = {
             { q: 'What sizes of storage tents are available?', a: 'We offer clear span tents from 3 metres to over 50 metres in width with unlimited length configurations, providing column-free interiors up to 15,000 sqm and beyond. Custom widths and heights are engineered to your project specifications.' },
             { q: 'Can storage tents withstand UAE weather conditions?', a: 'Yes. Our tent covers use 850 gsm PVC-coated polyester fabric engineered for UV resistance, sand, and wind loads common in the UAE and GCC. Structures are engineered for local climatic conditions including Shamal winds.' },
             { q: 'What industries use storage tents in the UAE?', a: 'Storage tents serve construction contractors, logistics and e-commerce operators, oil and gas companies, manufacturing facilities, event infrastructure, and government projects. With Dubai logistics demand up 225% and warehousing vacancy at 3%, temporary structures are increasingly mission-critical.' },
+            { q: 'What is temporary storage tent rental UAE businesses use for short-term projects?', a: 'Temporary storage tent rental UAE projects use most often includes ballast-anchored frame tents for construction material staging, clear span tents for equipment storage during site fit-outs, and modular units for seasonal e-commerce overflow. Rental terms start from one month, with no permanent ground penetration required — making temporary structures the fastest compliant solution when permanent space is unavailable.' },
+            { q: 'What makes a warehouse tent UAE different from a standard storage tent?', a: 'A warehouse tent UAE specification includes roller-shutter loading doors, high-bay LED lighting, industrial HVAC, and optional 3-phase electrical distribution — turning a frame tent into a functional warehouse facility. Standard storage tents are simpler enclosures for goods protection. Tent Now supplies both, with turnkey warehouse tent fitouts available across Dubai, Abu Dhabi, Sharjah, and all other UAE emirates.' },
+            { q: 'Can industrial storage tent UAE structures meet oil and gas and hazardous area requirements?', a: 'Yes. Industrial storage tent UAE structures for oil and gas applications use non-sparking aluminium frames, ATEX-rated electrical components, and anti-static fabric liners. Chemical containment variants include bunded impermeable floors. Every structure is delivered with UAE Civil Defence documentation and, where required, ATEX certification for classified hazardous areas on oil fields across the UAE and wider GCC.' },
         ],
         ctaTitle: 'Need Storage Space in the UAE — Fast?',
         ctaBody: 'Our team assesses your site, proposes the right structure, and can have you operational in under two weeks. Free consultation, no obligation.',
@@ -328,8 +331,8 @@ export const clearSpanContent: Record<string, ClearSpanContent> = {
 export const warehouseContent: Record<string, WarehouseContent> = {
     en: {
         heroLabel: 'Warehouse Frame Tents — No Ground Penetration Required',
-        heroTitle: 'Warehouse Tents for UAE Logistics & Storage',
-        heroBody: 'Dubai warehousing vacancy is 3%. Industrial rents are up 33%. E-commerce logistics demand has risen 225%. If you need warehouse space now — not in 18 months — a ballast-anchored frame tent on your existing concrete is the answer.',
+        heroTitle: 'Warehouse Tent Rental UAE | Logistics & Storage',
+        heroBody: 'Dubai warehousing vacancy is 3%. Industrial rents are up 33%. E-commerce logistics demand has risen 225%. If you need warehouse tent rental UAE-wide — deployed in days, not months — a ballast-anchored frame tent on your existing concrete is the answer. Warehouse tents UAE operators trust are operational in 5–8 days with no ground excavation required.',
         ctaPrimary: 'Get Free Site Assessment',
         ctaBack: 'All Storage Tent Types',
         stats: [
@@ -373,6 +376,7 @@ export const warehouseContent: Record<string, WarehouseContent> = {
             { q: 'What is the maximum size warehouse tent available?', a: 'Standard frame tent widths range from 6 metres to 30 metres in single-span configurations. Multi-span systems connect modules side by side to deliver 60+ metre-wide integrated warehouse spaces. Length is unlimited — bays extend in 5-metre increments. Tent Now has supplied warehouse tent complexes exceeding 8,000 sqm for logistics operators in Dubai and Abu Dhabi.' },
             { q: 'Are warehouse tents suitable for e-commerce and fulfillment operations?', a: 'Yes. Warehouse tents are routinely used by e-commerce operators to handle seasonal demand spikes and as permanent-equivalent overflow facilities. With Dubai\'s e-commerce logistics demand up 225% and warehousing vacancy at 3%, frame tents provide the speed and flexibility that conventional real estate cannot. Internal fits including racking, lighting, HVAC, and flooring are fully integrated.' },
             { q: 'What ancillary fitments can be added to a warehouse tent?', a: 'Tent Now integrates loading dock levellers, roller-shutter doors (single and double-width), personnel access doors, PVC strip curtains, LED high-bay lighting, industrial HVAC and evaporative cooling units, polycarbonate ridge lighting panels, and hardwood or interlocking floor systems. We deliver a turnkey warehouse solution, not a bare tent.' },
+            { q: 'What does warehouse tent rental UAE cost per month?', a: 'Warehouse tent rental UAE pricing starts from AED 15 per sqm per month for a standard frame tent on a hard-standing surface. Turnkey fitouts including roller-shutter doors, high-bay lighting, HVAC, and flooring typically range from AED 25 to AED 40 per sqm per month. Tent Now provides itemised quotations within 24 hours of receiving your site dimensions — no hidden fees, no minimum commitment period beyond one month.' },
         ],
         relatedTitle: 'Other Storage Tent Types',
         related: [
@@ -447,8 +451,8 @@ export const warehouseContent: Record<string, WarehouseContent> = {
 export const industrialContent: Record<string, IndustrialContent> = {
     en: {
         heroLabel: 'Industrial & Specialised Tent Structures UAE',
-        heroTitle: 'Industrial Tents for Demanding UAE Environments',
-        heroBody: 'When the environment is extreme — sub-zero cold chains, oil field hazardous zones, or remote desert worksites — standard tent structures are not sufficient. Tent Now engineers industrial-specification structures for the UAE\'s most demanding project conditions.',
+        heroTitle: 'Industrial Tent Rental UAE | Engineered for Demanding Environments',
+        heroBody: 'Industrial tents UAE projects rely on must do more than keep out the weather. When the environment is extreme — sub-zero cold chains, oil field hazardous zones, or remote desert worksites — standard tent structures are not sufficient. Tent Now engineers industrial tent rental UAE solutions built to specification: ATEX-rated, Civil Defence-approved, and operational in days.',
         ctaPrimary: 'Discuss Your Project',
         ctaBack: 'All Storage Tent Types',
         stats: [
@@ -493,6 +497,8 @@ export const industrialContent: Record<string, IndustrialContent> = {
             { q: 'Are industrial tents Civil Defence approved in the UAE?', a: 'All Tent Now industrial structures meet UAE Civil Defence requirements. Fabric covers carry DIN 4102 B1, NFPA 701, and BS 7837 fire classifications. Structural engineering calculations are stamped by UAE-registered engineers. Full Civil Defence documentation packages are provided with every installation — essential for project-site and free-zone permit compliance.' },
             { q: 'How long does it take to set up a labour accommodation tent camp?', a: 'A modular labour accommodation tent complex for 100–500 workers typically installs in 10–21 days, including sleeping bays, ablution blocks, dining facilities, and site office modules. Pre-fabricated insulated panels, steel-frame substructures, and flat-pack MEP modules reduce on-site labour to a minimum. Tent Now coordinates all ancillary services including electrical connection, water supply, and waste management.' },
             { q: 'What is the cost of industrial tent rental in the UAE?', a: 'Industrial tent rental pricing depends on the specification required: standard insulated industrial tents range from AED 25 to AED 55 per sqm per month. Cold storage modules are priced on refrigeration capacity and temperature setpoint. Oil & gas field structures carry an additional premium for ATEX and anti-static specifications. All quotes include a free site visit and engineering consultation.' },
+            { q: 'What are industrial tents UAE operators use most commonly for?', a: 'Industrial tents UAE operators deploy most frequently for: cold storage and refrigerated distribution hubs, oil and gas field workshops in Abu Dhabi and beyond, hazardous goods containment on construction and chemical sites, and modular labour accommodation camps. The common requirement is a structure that goes beyond basic weather protection — industrial tents UAE projects depend on must meet regulatory, thermal, and safety specifications that standard event or storage tents cannot satisfy.' },
+            { q: 'How quickly can industrial tent rental UAE be arranged for an urgent project?', a: 'Industrial tent rental UAE turnaround depends on specification. A standard insulated industrial frame tent can be assessed, quoted, and mobilised within 7–14 days for most UAE locations. Highly specialised structures such as ATEX-rated oil field workshops or cold store modules with integrated refrigeration typically require 2–4 weeks from order to commissioning. Tent Now maintains a GCC-wide supply chain for specialist components, minimising lead times for urgent industrial tent rental UAE requests.' },
         ],
         relatedTitle: 'Other Storage Tent Types',
         related: [

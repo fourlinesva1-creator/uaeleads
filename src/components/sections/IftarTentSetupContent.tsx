@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import PricingNote from '@/components/ui/PricingNote';
 import {
     Snowflake,
     ShieldCheck,
@@ -641,6 +642,7 @@ export default function IftarTentSetupContent({
             <section className="py-20 lg:py-28 bg-bg-darker">
                 <div className="container-luxury">
                     <div className="max-w-3xl mx-auto">
+                        <PricingNote locale={locale} className="mb-10" />
                         <h2 className="text-3xl md:text-4xl font-display text-white mb-12 text-center tracking-tight">
                             {t.faqTitle}
                         </h2>

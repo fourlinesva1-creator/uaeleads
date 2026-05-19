@@ -8,6 +8,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark, ExternalLink, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
+import PricingNote from '@/components/ui/PricingNote';
 
 interface Props {
     city: string;
@@ -259,6 +260,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                 <section className="py-20 border-t border-border/30">
                     <FAQSchema items={content.faqs} />
                     <div className="container-luxury">
+                        <PricingNote locale={locale} className="mb-10" />
                         <h2 className="text-2xl md:text-3xl font-display text-white mb-10">
                             {locale === 'ar' ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
                         </h2>

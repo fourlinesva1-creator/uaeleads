@@ -31,11 +31,11 @@ export interface CityOverview {
 export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     en: {
         dubai: {
-            title: 'Storage Tent Rental Dubai | Industrial & Warehouse Tents',
-            metaDescription: 'Civil Defence-approved storage tent rental in Dubai. Clear span 3–50m+ deployed in 72 hrs. JAFZA, Dubai South, Al Quoz. All permits included. Free quote →',
-            subtitle: 'Serving JAFZA, Dubai Industrial City, Dubai South, DIP and Al Quoz Since 1994',
-            intro: 'Dubai\'s industrial and logistics sector is under pressure. Warehouse vacancy is at 3% and rents rose 33% in 2024. Construction projects across Jebel Ali, Dubai South, and the Northern Corridor need covered storage from day one. Tent Now has been solving this problem since 1994 — deploying Civil Defence-approved clear span structures in days, not months, at 50–70% less than permanent construction.',
-            whyUs: 'Thirty years of industrial tent deployments across JAFZA, Dubai Industrial City, Dubai Investment Park, and major construction sites throughout the Emirate. We know the Dubai Municipality permit process for temporary structures (Article 13), Civil Defence fire safety requirements, and which free zone authorities require separate approvals. We know that Al Quoz needs different anchoring than a concrete pad in DIP. We know that a 45°C July in Jebel Ali is brutal on low-grade materials. And we know that a compliance failure on your construction site costs far more than the right supplier costs upfront. Every permit, every safety certification, every structural report — handled before we start.',
+            title: 'Tent Rental in Dubai | Ramadan, Majlis & Industrial Tents',
+            metaDescription: 'Tent rental in Dubai — iftar tent rental Dubai, majlis tent setup, Ramadan tent hire 2026. IACAD permits included. JAFZA, Business Bay, DIFC, Jumeirah. Civil Defence-approved. Free quote →',
+            subtitle: 'Dubai\'s Trusted Tent Hire Specialists — Ramadan, Majlis, Iftar & Industrial Since 1994',
+            intro: 'Looking for tent rental in Dubai? Whether you need iftar tent rental Dubai for corporate hospitality, a private majlis tent rental Dubai for family Ramadan gatherings, or covered industrial storage across JAFZA and Dubai South, Tent Now has been delivering tent rental in Dubai since 1994. Dubai is the UAE\'s most competitive market — and our 30 years of experience means we know every permit requirement, every event zone, and every installation challenge. From Ramadan tent hire Dubai setups in Jumeirah villa gardens to corporate iftar tent setup in Dubai at Business Bay offices, DIFC terraces, and Downtown Dubai hotels, we handle the full scope. Dubai Creek, Old Dubai, and Al Fahidi cultural district locations have their own heritage area requirements — we know those too. IACAD (Islamic Affairs and Charitable Activities Department) permits are mandatory for all Ramadan tent setups in Dubai; we manage these as a routine service alongside Civil Defence and Dubai Municipality approvals.',
+            whyUs: 'Thirty years of tent rental in Dubai — industrial and Ramadan alike. We know the Dubai Municipality permit process for temporary structures (Article 13), IACAD requirements specific to Dubai, Civil Defence fire safety approvals, and which free zone authorities require separate sign-offs. We know that Jumeirah villa gardens need different anchoring than a DIFC terrace. We know that February humidity on the coast is brutal on cheap materials. We know that a non-compliant majlis tent setup in Dubai carries serious risk. Every permit, every safety certification, every structural report — handled before we start.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -57,21 +57,23 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'Dubai Industrial Tent Permits: We Handle Everything',
                 body: 'Dubai Municipality requires permits for all temporary structures under Article 13 — fines for unauthorized installations reach AED 10,000. Civil Defence approval is mandatory for occupied structures. JAFZA, Dubai South, and DIP each have their own free zone authority approvals separate from the Municipality. We have navigated all of these processes hundreds of times. Structural drawings, fire safety plans, site plans, and safety certifications — all submitted and approved before we break ground. No surprises on installation day.'
             },
-            areas: ['JAFZA (Jebel Ali Free Zone)', 'Dubai Industrial City', 'Dubai South', 'Dubai Investment Park', 'Al Quoz Industrial', 'Jebel Ali', 'Business Bay', 'DIFC', 'Dubai Marina', 'Meydan', 'Ras Al Khor', 'Silicon Oasis'],
+            areas: ['Jumeirah', 'Business Bay', 'DIFC', 'Downtown Dubai', 'Palm Jumeirah', 'Dubai Creek / Al Fahidi', 'JLT (Jumeirah Lake Towers)', 'Dubai Marina', 'JAFZA (Jebel Ali Free Zone)', 'Dubai Industrial City', 'Dubai South', 'Dubai Investment Park', 'Al Quoz Industrial', 'Meydan', 'Silicon Oasis'],
             faqs: [
-                { q: 'What is the best storage tent rental company in Dubai?', a: 'Tent Now has 30+ years deploying industrial storage tents across Dubai — from JAFZA to Dubai South and Dubai Investment Park. We handle all Dubai Municipality, Civil Defence, and free zone authority permits. Clear span widths from 3m to 50m+, deployed within 72 hours.' },
-                { q: 'How much does industrial tent rental cost in Dubai?', a: 'Rental pricing typically ranges from AED 15–40 per sqm per month depending on specifications, size, and installation requirements. Sale pricing for clear span structures starts from AED 200 per sqm. Contact us for a custom quote — we work with construction, logistics, and industrial budgets.' },
-                { q: 'Do storage tents in Dubai require permits?', a: 'Yes. Dubai Municipality requires permits under Article 13, with fines up to AED 10,000 for unauthorized structures. Civil Defence approval is needed for occupied structures. JAFZA and other free zones have separate authority approvals. All permits are fully included in our service.' },
-                { q: 'How quickly can you deploy a storage tent in Dubai?', a: 'Standard clear span structures are operational within 3–7 days. For urgent requirements, we offer 72-hour deployment for pre-engineered configurations. Permit processing runs in parallel to avoid delays.' },
+                { q: 'What is the best tent rental company in Dubai?', a: 'Tent Now has 30+ years delivering tent rental in Dubai — from iftar tent setups in Jumeirah and DIFC to industrial storage structures in JAFZA and Dubai South. We handle all IACAD, Dubai Municipality, Civil Defence, and free zone authority permits. Contact us for a custom quote.' },
+                { q: 'How much does tent rental cost in Dubai?', a: 'Tent rental in Dubai varies by type and size. Ramadan and majlis tent hire Dubai runs 15–25% below comparable hotel packages. Industrial tent rental starts from AED 15–40 per sqm per month. Contact us for a custom quote based on your specific requirements.' },
+                { q: 'Who provides iftar tent for rent in Dubai?', a: 'Tent Now provides iftar tent rental Dubai for corporate and community events. We set up iftar tents at Business Bay offices, DIFC terraces, Jumeirah villa compounds, and hotel extensions across Dubai. All IACAD permits and Civil Defence approvals are fully managed.' },
+                { q: 'Do Ramadan tents in Dubai need IACAD permits?', a: 'Yes. IACAD (Islamic Affairs and Charitable Activities Department) approval is required for all Ramadan tent setups in Dubai, in addition to Dubai Municipality Article 13 permits and Civil Defence approvals. Non-compliant structures risk fines of AED 500,000. Tent Now handles all permit streams.' },
+                { q: 'How much is majlis tent hire in Dubai?', a: 'Majlis tent hire Dubai is priced based on size, duration, interior specifications, and location. Intimate 20-person family majlis setups to 100+ guest corporate configurations are all available. Contact Tent Now for a custom quote — we work with all budgets.' },
+                { q: 'What areas do you cover for tent rental in Dubai?', a: 'We cover all Dubai areas for tent rental: Jumeirah, Business Bay, DIFC, Downtown Dubai, Palm Jumeirah, Dubai Creek, Dubai Marina, JLT, Al Barsha, Emirates Hills, Meydan, JAFZA, Dubai South, and all industrial and free zone areas.' },
             ],
-            cta: 'Get Your Dubai Industrial Quote'
+            cta: 'Get Your Dubai Tent Rental Quote'
         },
         'abu-dhabi': {
-            title: 'Storage Tent Rental Abu Dhabi | Industrial & Warehouse Tents',
-            metaDescription: 'Industrial tent rental Abu Dhabi. Serving KIZAD, Mussafah & ICAD. DMT + Civil Defence permits handled. 72-hr deployment. 30 years experience. Free quote today.',
-            subtitle: 'Serving KIZAD, Mussafah, ICAD, and Abu Dhabi Industrial Areas Since 1994',
-            intro: 'Abu Dhabi\'s industrial base is the foundation of the UAE economy. KIZAD hosts the world\'s third-largest free zone. Mussafah accommodates over 1,000 industrial companies. ADNOC\'s operations span the emirate and beyond. These sectors don\'t wait for permanent construction — they need deployable, compliant industrial structures that can be operational from day one of a project.',
-            whyUs: 'Three decades of industrial tent deployments in Abu Dhabi, navigating the Department of Municipalities and Transport (DMT) permit process, Civil Defence approvals, and Abu Dhabi Ports authority requirements. We understand that Abu Dhabi\'s industrial standards are different from Dubai\'s — specifications are stricter, documentation requirements are heavier, and the expectation is that your supplier has everything in order before arrival. We do. Our structures are certified, our crews are trained, and our permit packages are complete before the first post goes in the ground.',
+            title: 'Tent Rental Abu Dhabi | Industrial & Warehouse Tents',
+            metaDescription: 'Tent rental Abu Dhabi — KIZAD, Mussafah & ICAD specialists. DMT + Civil Defence permits handled. 72-hr deployment. Iftar tent & Ramadan tent setup 2026. Free quote.',
+            subtitle: 'Serving KIZAD, Mussafah, ICAD, Yas Island, and Abu Dhabi Industrial Areas Since 1994',
+            intro: 'When it comes to tent rental Abu Dhabi, the demands are unlike any other emirate. Abu Dhabi\'s industrial base is the foundation of the UAE economy — KIZAD hosts the world\'s third-largest free zone, Mussafah accommodates over 1,000 industrial companies, and ADNOC\'s operations span the emirate and beyond. From Yas Island event setups to Saadiyat Island cultural district constructions and Corniche waterfront occasions, the need for deployable, compliant tent structures is constant. Tent Now delivers full-service tent rental Abu Dhabi — from industrial warehousing to Ramadan iftar tents — with Abu Dhabi Municipality (ADM) permits and Civil Defence approvals fully managed. Where competitors benchmark themselves against Emirates Palace-level service, we deliver it.',
+            whyUs: 'Three decades of industrial and event tent deployments in Abu Dhabi, navigating the Abu Dhabi Municipality (ADM) permit process, Civil Defence approvals, Abu Dhabi Ports authority requirements, and — for major events — Abu Dhabi National Events Committee (ADNEC) clearances. We understand that Abu Dhabi\'s standards are different from Dubai\'s — specifications are stricter, documentation requirements are heavier, and the expectation is that your supplier has everything in order before arrival. ADNOC area deployments require specific HSE packages; Corniche and Yas Island locations have their own aesthetic requirements. We know all of it. Our structures are certified, our crews are trained, and our permit packages are complete before the first post goes in the ground.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -90,24 +92,26 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 }
             ],
             compliance: {
-                title: 'Abu Dhabi Industrial Tent Permits: DMT & Civil Defence',
-                body: 'Abu Dhabi\'s Department of Municipalities and Transport (DMT) requires permits for all temporary structures, with strict requirements for structural certification and aesthetic integration. Civil Defence approval is mandatory for occupied structures. Abu Dhabi Ports and KIZAD authority have their own approval processes. We have managed all of these permit streams for 30 years — structural drawings, fire safety plans, and compliance documentation are all handled upfront so your project is never delayed by regulatory issues.'
+                title: 'Abu Dhabi Tent Permits: ADM, Civil Defence & ADNEC',
+                body: 'Abu Dhabi\'s Department of Municipalities and Transport (DMT/ADM) requires permits for all temporary structures, with strict requirements for structural certification and aesthetic integration. Civil Defence approval is mandatory for occupied structures. Abu Dhabi Ports and KIZAD authority have their own approval processes. For public spaces and major event venues, the Abu Dhabi National Events Committee (ADNEC) may have additional requirements. ADNOC area tent setups carry their own HSE documentation requirements. We have managed all of these permit streams for 30 years — structural drawings, fire safety plans, and compliance documentation handled upfront so your project is never delayed.'
             },
-            areas: ['KIZAD (Khalifa Industrial Zone)', 'Mussafah Industrial Area', 'ICAD (Industrial City Abu Dhabi)', 'Khalifa Port', 'Masdar City', 'Abu Dhabi Industrial Area', 'Saadiyat Island', 'Yas Island', 'Al Reem Island', 'Mohammed Bin Zayed City', 'Al Shamkha', 'Al Raha'],
+            areas: ['KIZAD (Khalifa Industrial Zone)', 'Mussafah Industrial Area', 'ICAD (Industrial City Abu Dhabi)', 'Khalifa Port', 'Masdar City', 'Yas Island', 'Saadiyat Island', 'Abu Dhabi Corniche', 'Al Reem Island', 'Mohammed Bin Zayed City', 'ADNOC Area', 'Al Raha Beach'],
             faqs: [
-                { q: 'What industrial tent companies serve Abu Dhabi?', a: 'Tent Now has 30+ years in Abu Dhabi, with dedicated DMT permit management and specialized deployment capability for KIZAD, Mussafah, ICAD, and island locations including Yas Island and Saadiyat Island.' },
-                { q: 'How much does storage tent rental cost in Abu Dhabi?', a: 'Rental pricing ranges from AED 15–40 per sqm per month depending on specifications. Sale pricing starts from AED 200 per sqm for clear span structures. Contact us for a custom quote based on your site, size, and duration.' },
-                { q: 'Do storage tents require DMT permits in Abu Dhabi?', a: 'Yes. Abu Dhabi\'s DMT requires structural approvals, safety certifications, and for visible sites, aesthetic reviews. Civil Defence approval is needed for occupied structures. KIZAD and Abu Dhabi Ports have separate authority processes. All permits are fully included in our service.' },
-                { q: 'Can you deploy storage tents in remote Abu Dhabi locations?', a: 'Yes. We have mobilization capability for remote oil field sites, desert construction projects, and island installations across the emirate. Ground anchoring systems are available for unpaved sites.' },
+                { q: 'What is the best tent rental company in Abu Dhabi?', a: 'Tent Now has 30+ years in Abu Dhabi, with dedicated DMT permit management and deployment capability across KIZAD, Mussafah, ICAD, Yas Island, Saadiyat Island, and Corniche locations. We are trusted by industrial operators, construction companies, and event organisers across the capital.' },
+                { q: 'How much does tent for rent in Abu Dhabi cost?', a: 'Tent for rent in Abu Dhabi with Tent Now starts from AED 15–40 per sqm per month for industrial structures, with event and Ramadan tent configurations priced based on size, duration, and fit-out requirements. Contact us for a custom quote — Abu Dhabi pricing reflects the emirate\'s higher permit and logistics demands.' },
+                { q: 'What are tents in Abu Dhabi available for — events or industrial use?', a: 'Tent Now covers both. Tents in Abu Dhabi for industrial use include clear span warehouse structures for KIZAD, Mussafah, and ADNOC area operations. For events, we supply Ramadan iftar tents, corporate hospitality structures, and exhibition canopies across Yas Island, Saadiyat Island, and Abu Dhabi Corniche.' },
+                { q: 'How does Ramadan tent rental Abu Dhabi 2026 work?', a: 'Ramadan tent rental Abu Dhabi 2026 requires ADM (Abu Dhabi Municipality) permit approval — Tent Now manages this process end-to-end, including structural drawings and Civil Defence sign-off. Book early as Ramadan 2026 capacity fills from October 2025 onwards. Contact Tent Now now to secure your dates.' },
+                { q: 'Can you set up an iftar tent in Abu Dhabi?', a: 'Yes. Iftar tent setup in Abu Dhabi is a core Ramadan service for Tent Now — from hotel grounds near the Corniche to private villa compounds, corporate campuses, and public spaces approved by ADM. We handle the full setup, from permit to final decoration coordination.' },
+                { q: 'Do you handle ADM and ADNEC permits for Abu Dhabi tents?', a: 'Yes. Abu Dhabi\'s ADM requires structural approvals and aesthetic sign-off for visible locations. ADNEC venues have additional requirements for public-facing events. KIZAD and Abu Dhabi Ports have separate authority processes. All permit streams are fully included in our service.' },
             ],
-            cta: 'Get Your Abu Dhabi Industrial Quote'
+            cta: 'Get Your Abu Dhabi Tent Rental Quote'
         },
         sharjah: {
-            title: 'Storage Tent Rental Sharjah | Industrial & Warehouse Tents',
-            metaDescription: 'Sharjah\'s local storage tent specialist — based in SAIF Zone. No out-of-town fees, same-day site visits, 48-hr deployment. All permits included. Free quote.',
-            subtitle: 'Based in SAIF Zone — Sharjah\'s Industrial Tent Specialists Since 1994',
-            intro: 'Tent Now is headquartered in Sharjah\'s SAIF Zone. We are not a Dubai company serving Sharjah — we are Sharjah\'s local industrial tent specialist. The Hamriyah Free Zone, Sharjah\'s 18 industrial areas, and the Sharjah Airport International Free Zone are on our doorstep. No out-of-town mobilization fees. Same-day site visits. Faster deployment than any competitor in the market.',
-            whyUs: 'Thirty years operating from SAIF Zone means we know Sharjah\'s industrial regulatory environment better than anyone. Sharjah Municipality permit requirements, Sharjah Civil Defence standards, SAIF Zone and Hamriyah Free Zone authority approvals — we handle all of these as routine operations. Our Sharjah industrial clients benefit from the lowest mobilization costs, fastest response times, and a team that understands the specific conditions of Sharjah\'s industrial areas — from the coastal humidity of Hamriyah to the inland heat of the industrial zones.',
+            title: 'Tent Rental in Sharjah | Industrial & Warehouse Tents',
+            metaDescription: 'Tent rental in Sharjah — locally based in SAIF Zone. No out-of-town fees, same-day site visits, 48-hr deployment. Sharjah Municipality permits included. Free quote.',
+            subtitle: 'Based in SAIF Zone — Sharjah\'s Local Tent Hire Specialists Since 1994',
+            intro: 'Looking for tent rental in Sharjah? Tent Now is headquartered right here in Sharjah\'s SAIF Zone — making us the fastest and most cost-effective Sharjah tent hire provider in the UAE. We are not a Dubai company serving Sharjah as an afterthought. The Hamriyah Free Zone, Sharjah\'s 18 industrial areas, the Blue Souk area, Al Majaz Waterfront, University City, and the Sharjah Airport International Free Zone are all on our doorstep. No out-of-town mobilization fees. Same-day site visits. Faster tent for rent in Sharjah than any competitor in the market.',
+            whyUs: 'Thirty years operating from SAIF Zone means we know Sharjah\'s industrial regulatory environment better than anyone. Sharjah Municipality permit requirements (including their notably faster approval process compared to Dubai), Sharjah Civil Defence standards, SAIF Zone and Hamriyah Free Zone authority approvals — we handle all of these as routine operations. Our Sharjah industrial clients benefit from the lowest mobilization costs, fastest response times, and a team that understands the specific conditions of Sharjah\'s industrial areas — from the coastal humidity of Hamriyah to the inland heat of the industrial zones. Ramadan tent setup in Sharjah is a core part of our seasonal offering — from Al Majaz Waterfront to private villa compounds in Muwaileh.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -129,21 +133,22 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'Sharjah Industrial Permits: Local Authority Expertise',
                 body: 'Sharjah Municipality, Sharjah Civil Defence, SAIF Zone, and Hamriyah Free Zone each have distinct permit requirements for temporary structures. As a 30-year resident of SAIF Zone, we manage all of these simultaneously — structural drawings, fire safety documentation, site plans, and authority submissions. Being locally based means permit issues are resolved within hours, not days. Your project timeline is never held up by regulatory delays.'
             },
-            areas: ['SAIF Zone', 'Hamriyah Free Zone', 'Industrial Area 1–18', 'Sharjah Airport Free Zone', 'Al Sajaa Industrial', 'Sharjah Waterfront', 'Al Majaz', 'University City', 'Muwaileh Commercial', 'Al Rahmaniya'],
+            areas: ['SAIF Zone', 'Hamriyah Free Zone', 'Industrial Area 1–18', 'Sharjah Airport Free Zone', 'Al Sajaa Industrial', 'Al Majaz Waterfront', 'Blue Souk Area', 'University City', 'Muwaileh Commercial', 'Al Rahmaniya'],
             faqs: [
-                { q: 'What is the best industrial tent company in Sharjah?', a: 'Tent Now is headquartered in SAIF Zone, Sharjah. We are the only industrial tent specialist based in the emirate — 30 years of Sharjah Municipality, Civil Defence, SAIF Zone, and Hamriyah authority permits, with no out-of-town fees.' },
-                { q: 'How much does storage tent rental cost in Sharjah?', a: 'Sharjah storage tent rental is the most competitively priced in the UAE — no out-of-town transport markup since we are locally based. Rental from AED 15 per sqm/month. Contact us for a custom quote.' },
-                { q: 'Can you deploy storage tents in SAIF Zone and Hamriyah Free Zone?', a: 'Yes — these are our home territories. We manage SAIF Zone and Hamriyah Free Zone authority approvals as part of our standard service. Same-day site assessments available.' },
-                { q: 'How quickly can you install a storage tent in Sharjah?', a: 'Faster than any competitor in the market. Being based in SAIF Zone means we can mobilize same-day for assessments and typically install within 48–72 hours for standard structures.' },
+                { q: 'What is the best tent rental company in Sharjah?', a: 'Tent Now is headquartered in SAIF Zone, Sharjah — making us the only industrial and event tent rental specialist based in the emirate. 30 years of Sharjah Municipality, Civil Defence, SAIF Zone, and Hamriyah authority permits, with no out-of-town fees and same-day response.' },
+                { q: 'How much does tent rental in Sharjah cost?', a: 'Tent rental in Sharjah with Tent Now starts from AED 15 per sqm/month for industrial structures, with competitive pricing on event and Ramadan tent hire. Being locally based means no out-of-town transport markup — contact us for a custom quote tailored to your site and duration.' },
+                { q: 'Is there a tent for rent in Sharjah for events and Ramadan?', a: 'Yes — Tent Now provides tent for rent in Sharjah for industrial, corporate, and Ramadan purposes. We serve locations across the emirate including Al Majaz Waterfront, University City, and Blue Souk area venues, with rapid setup within 48–72 hours.' },
+                { q: 'How does the Ramadan tent setup process work in Sharjah?', a: 'Ramadan tent setup in Sharjah involves Sharjah Municipality permit approval, which is typically faster than in Dubai. Tent Now handles the full permit process, structure installation, and fit-out coordination — contact us early in the season as Ramadan 2026 bookings fill quickly.' },
+                { q: 'Can you deploy storage tents in SAIF Zone and Hamriyah Free Zone?', a: 'Yes — these are our home territories. We manage SAIF Zone and Hamriyah Free Zone authority approvals as part of our standard service, with same-day site assessments available from our on-site base.' },
             ],
-            cta: 'Get Your Sharjah Industrial Quote'
+            cta: 'Get Your Sharjah Tent Hire Quote'
         },
         ajman: {
-            title: 'Storage & Warehouse Tent Rental Ajman | Tent Now UAE',
-            metaDescription: 'Storage tent rental Ajman. Ajman Free Zone, Al Jurf & Ajman Port. 30 yrs experience, all municipality permits included, 3–5 day deployment. Get a free quote.',
-            subtitle: 'Serving Ajman Free Zone, Al Jurf Industrial Area, and Ajman Port',
-            intro: 'Ajman is one of the UAE\'s fastest-growing industrial and manufacturing hubs. The Ajman Free Zone hosts over 9,000 companies. Al Jurf Industrial Area is expanding rapidly. Ajman Port connects the emirate to global trade routes. All of this industrial activity creates demand for fast, compliant covered storage — and Tent Now has been meeting that demand across Ajman for 30 years.',
-            whyUs: 'Our proximity to Ajman from SAIF Zone Sharjah means low mobilization costs and fast response times. We\'ve navigated Ajman Municipality and Civil Defence permit requirements for industrial structures many times over. Ajman Free Zone authority approvals are part of our routine service. We understand the specific conditions of Ajman\'s coastal industrial areas and the wind load requirements that apply.',
+            title: 'Tent Rental in Ajman | Ramadan, Majlis & Industrial Tents',
+            metaDescription: 'Tent rental in Ajman — Ramadan tent hire, majlis tent setup, iftar tent for rent in Ajman. Ajman Municipality permits faster and cheaper than Dubai. Free quote today.',
+            subtitle: 'Ajman Tent Hire Specialists — Ramadan, Majlis & Industrial Structures',
+            intro: 'Looking for tent rental in Ajman? Whether it\'s a Ramadan iftar tent, a private majlis setup, or industrial warehouse coverage, Tent Now delivers tent rental in Ajman with speed and full compliance. Ajman tent hire is one of the best-value options in the UAE — Ajman Municipality\'s permit process is both quicker and more affordable than Dubai\'s, making it the smart choice for businesses and families planning events. We serve the Industrial Area, Al Jurf, Al Bustan, and Corniche Ajman for events, as well as Ajman Free Zone and Ajman Port for industrial needs. The Ajman Free Zone hosts over 9,000 companies, making it one of the UAE\'s most active commercial hubs — and our 30 years of tent for rent in Ajman experience means we know every approval requirement inside out.',
+            whyUs: 'Our proximity to Ajman from SAIF Zone Sharjah means low mobilization costs and fast response times. We\'ve navigated Ajman Municipality and Civil Defence permit requirements for industrial structures and Ramadan tents many times over. Ajman Free Zone authority approvals are part of our routine service. We understand the specific conditions of Ajman\'s coastal industrial areas and the wind load requirements that apply.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -165,21 +170,22 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'Ajman Industrial Tent Permits',
                 body: 'Ajman Municipality and Ajman Civil Defence require permits for all temporary structures. Ajman Free Zone has its own authority approval process. We handle all permit applications, structural drawings, and safety certifications as part of our standard service. 30 years of navigating UAE regulatory environments means your project is never delayed by compliance issues.'
             },
-            areas: ['Ajman Free Zone', 'Al Jurf Industrial Area', 'Ajman Port', 'Al Rawda', 'Al Tallah', 'Al Jurf', 'Al Mowaihat', 'Emirates City', 'Al Hamidiya', 'Ajman Corniche'],
+            areas: ['Ajman Free Zone', 'Al Jurf Industrial Area', 'Al Bustan', 'Ajman Corniche', 'Ajman Port', 'Al Rawda', 'Al Tallah', 'Al Jurf', 'Al Mowaihat', 'Emirates City', 'Al Hamidiya'],
             faqs: [
-                { q: 'What storage tent companies serve Ajman?', a: 'Tent Now serves Ajman from our SAIF Zone base in Sharjah — low mobilization costs, fast deployment, and full Ajman Municipality, Civil Defence, and Ajman Free Zone authority permits included.' },
-                { q: 'How much does industrial tent rental cost in Ajman?', a: 'Industrial tent rental in Ajman is competitively priced given our proximity. Rental from AED 15 per sqm/month. Contact us for a custom quote based on your site and requirements.' },
+                { q: 'What tent rental companies serve Ajman?', a: 'Tent Now serves Ajman from our SAIF Zone base in Sharjah — low mobilization costs, fast deployment, and full Ajman Municipality, Civil Defence, and Ajman Free Zone authority permits included. We cover Ramadan tents, majlis hire, and industrial storage.' },
+                { q: 'How much does tent rental in Ajman cost compared to Dubai?', a: 'Tent for rent in Ajman is typically more cost-effective than Dubai due to lower permit fees and our proximity from SAIF Zone. Ajman Municipality\'s approval process is also faster. Contact us for a custom quote — both event and industrial tent hire Ajman available.' },
+                { q: 'Can you set up a Ramadan tent or iftar tent in Ajman?', a: 'Yes. Tent Now provides Ramadan and iftar tent rental in Ajman for residential, corporate, and community events. We serve Al Bustan, Al Rawda, Ajman Corniche, and all residential and commercial areas. All Ajman Municipality permits included.' },
                 { q: 'Can you install storage tents in Ajman Free Zone?', a: 'Yes. We manage Ajman Free Zone authority permits as part of our standard service. Warehouse frame tents install on existing concrete surfaces without ground penetration — ideal for developed free zone plots.' },
-                { q: 'How quickly can you deploy a storage tent in Ajman?', a: 'Standard structures operational within 3–5 days from Ajman. Urgent requirements can be met within 72 hours for pre-engineered configurations.' },
+                { q: 'How quickly can you deploy a tent in Ajman?', a: 'Standard structures operational within 3–5 days from Ajman. Urgent requirements can be met within 72 hours for pre-engineered configurations. Ramadan setups typically take 1–2 days.' },
             ],
-            cta: 'Get Your Ajman Industrial Quote'
+            cta: 'Get Your Ajman Tent Rental Quote'
         },
         'ras-al-khaimah': {
-            title: 'Storage Tent Rental Ras Al Khaimah | Industrial & Warehouse Tents',
-            metaDescription: 'Industrial tent rental Ras Al Khaimah. RAK Free Trade Zone & Maritime City. Engineered for RAK wind loads. All permits included. 30 years UAE experience. Free quote.',
-            subtitle: 'Serving RAK Free Trade Zone, RAK Maritime City, and Industrial Zones',
-            intro: 'Ras Al Khaimah is one of the UAE\'s most active manufacturing and industrial emirates. The RAK Free Trade Zone hosts over 14,000 companies across ceramics, pharmaceuticals, steel, and logistics. RAK Maritime City is expanding its industrial footprint. The emirate\'s manufacturing output is growing — and with it, the demand for flexible, compliant covered infrastructure.',
-            whyUs: 'We\'ve been serving RAK\'s industrial sector for three decades. RAK\'s geographic and climatic conditions — coastal humidity on one side, mountainous terrain and stronger winds on the other — require specific structural engineering. Our RAK deployments account for the emirate\'s unique wind load requirements and the temperature differentials between coastal and inland sites. We handle RAK Municipality and Civil Defence permits and RAK Free Trade Zone authority approvals as routine operations.',
+            title: 'Tent Rental in Ras Al Khaimah | Ramadan & Industrial Tents',
+            metaDescription: 'Tent rental in Ras Al Khaimah — Ramadan tent hire RAK, majlis setup, warehouse tents. Al Hamra, Mina Al Arab, RAK Free Zone. RAK Municipality permits included. Free quote.',
+            subtitle: 'RAK Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
+            intro: 'Looking for tent rental in Ras Al Khaimah? Tent Now provides tent hire Ras Al Khaimah for Ramadan events, private majlis setups, corporate hospitality, and industrial warehousing across the emirate. RAK\'s diverse geography — from the luxury resorts of Al Hamra and Mina Al Arab to the industrial corridors of RAK Free Trade Zone — means every tent rental in RAK requires specialist knowledge. We have 30 years of deployments across this emirate. Al Hamra Villa gardens, Al Marjan Island hotel extensions, and Mina Al Arab waterfront venues are all within our regular coverage. RAK Municipality permit specifics differ from Dubai and Abu Dhabi — the process is generally more streamlined, and our long-standing relationships with RAK authorities mean faster approvals. The RAK Free Trade Zone hosts over 14,000 companies, and RAK Maritime City is expanding rapidly — our industrial tent deployments here are engineered for the emirate\'s specific coastal and mountain wind load requirements.',
+            whyUs: 'We\'ve been serving RAK\'s industrial and events sector for three decades. RAK\'s geographic and climatic conditions — coastal humidity on one side, mountainous terrain and stronger winds on the other — require specific structural engineering. Our RAK deployments account for the emirate\'s unique wind load requirements and the temperature differentials between coastal and inland sites. We handle RAK Municipality and Civil Defence permits and RAK Free Trade Zone authority approvals as routine operations.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -201,20 +207,20 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'RAK Industrial Tent Permits',
                 body: 'RAK Municipality and RAK Civil Defence require permits for temporary structures. RAK Free Trade Zone and RAK Maritime City have their own authority approval processes. Our structures are engineered to meet the specific wind load requirements of RAK\'s coastal and inland environments. All permits, structural certifications, and safety documentation are handled by our team before installation begins.'
             },
-            areas: ['RAK Free Trade Zone', 'RAK Maritime City', 'Al Hamra Industrial Zone', 'Al Jazeera Al Hamra', 'Al Dhait', 'Khuzam', 'Nakheel', 'RAK Corniche', 'Wadi Shah', 'Ras Al Khaimah City'],
+            areas: ['Al Hamra', 'Mina Al Arab', 'Al Marjan Island', 'RAK Free Trade Zone', 'RAK Maritime City', 'Al Hamra Industrial Zone', 'Al Jazeera Al Hamra', 'Al Dhait', 'Khuzam', 'Nakheel', 'RAK Corniche', 'Ras Al Khaimah City'],
             faqs: [
-                { q: 'What industrial tent companies serve Ras Al Khaimah?', a: 'Tent Now has served RAK\'s industrial sector for 30+ years. We handle RAK Municipality, Civil Defence, RAK Free Trade Zone, and RAK Maritime City permits. Our structures are engineered for RAK\'s specific wind load conditions.' },
-                { q: 'How much does storage tent rental cost in RAK?', a: 'Industrial tent rental in RAK starts from AED 15 per sqm/month depending on specifications and duration. Contact us for a custom quote based on your site location and requirements.' },
-                { q: 'Can you deploy storage tents in RAK Free Trade Zone?', a: 'Yes. We manage RAK Free Trade Zone authority approvals as part of our standard service. Warehouse frame tents install on existing surfaces without ground disturbance.' },
-                { q: 'Are your structures rated for RAK\'s wind conditions?', a: 'Yes. Our clear span and warehouse frame structures are engineered for 100+ km/h wind loads using 6061-T6 aluminum frames and 850 gsm PVC fabric — appropriate for both RAK\'s coastal and inland wind patterns.' },
+                { q: 'What tent rental companies serve Ras Al Khaimah?', a: 'Tent Now has served RAK for 30+ years — Ramadan tent hire, majlis setups, corporate iftar tents, and industrial storage. We handle RAK Municipality, Civil Defence, RAK Free Trade Zone, and RAK Maritime City permits. Our structures are engineered for RAK\'s specific wind load conditions.' },
+                { q: 'How much does tent rental in RAK cost?', a: 'Tent rental in Ras Al Khaimah varies by type. Ramadan and event tents are priced competitively below Dubai rates. Industrial tent hire RAK starts from AED 15 per sqm/month. Contact us for a custom quote based on your location and requirements.' },
+                { q: 'Can you set up a Ramadan or majlis tent in RAK?', a: 'Yes. We provide Ramadan tent rental in Ras Al Khaimah for private villas, hotel extensions, and corporate campuses across Al Hamra, Mina Al Arab, Al Marjan Island, and all RAK areas. All RAK Municipality and Civil Defence permits included.' },
+                { q: 'Are your RAK structures rated for the local wind conditions?', a: 'Yes. Our clear span and warehouse frame structures are engineered for 100+ km/h wind loads using 6061-T6 aluminum frames and 850 gsm PVC fabric — appropriate for both RAK\'s exposed coastal and mountain-adjacent wind patterns.' },
             ],
-            cta: 'Get Your RAK Industrial Quote'
+            cta: 'Get Your RAK Tent Rental Quote'
         },
         fujairah: {
-            title: 'Storage Tent Rental Fujairah | Industrial & Warehouse Tents',
-            metaDescription: 'Storage tent rental Fujairah. Serving Fujairah Port, FOIZ & Free Zone. Engineered for east coast conditions. All permits included. 30 yrs experience. Free quote.',
-            subtitle: 'Serving Fujairah Free Zone, Fujairah Port, and East Coast Industrial Areas',
-            intro: 'Fujairah is the UAE\'s east coast industrial and energy hub. Fujairah Port is one of the world\'s busiest bunkering stations and handles significant dry cargo. The Fujairah Oil Industry Zone (FOIZ) hosts major oil storage and bunkering infrastructure. The Fujairah Free Zone serves manufacturing and trading companies. All of this industrial activity requires deployable, compliant covered infrastructure from an experienced specialist.',
+            title: 'Tent Rental in Fujairah | Ramadan, Majlis & Industrial Tents',
+            metaDescription: 'Tent rental in Fujairah — Ramadan tent hire, majlis setup, iftar tent Fujairah. Fujairah Fort area, Corniche, free zone industrial. All permits included. Free quote.',
+            subtitle: 'Fujairah Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
+            intro: 'Tent rental in Fujairah demands specialist knowledge of the east coast\'s unique geography and regulatory environment. Tent Now provides Fujairah tent hire for Ramadan events, private majlis setups, and industrial storage across the emirate. The area near Fujairah Fort and the Old Town is one of the emirate\'s most scenic event locations; the Fujairah Corniche waterfront is popular for corporate and community iftar tent setups; and the free zone industrial areas support ongoing industrial tent deployments. Fujairah tent hire also serves the growing residential areas near the city centre where families seek private Ramadan tent rental in Fujairah for their home gardens. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions — our structures are engineered for these east coast conditions. Fujairah Municipality permits for temporary structures are part of our routine service, alongside Fujairah Free Zone and Civil Defence approvals.',
             whyUs: 'Fujairah\'s east coast geography creates unique structural requirements. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions that differ significantly from the western UAE coast. We have 30 years of Fujairah deployments and understand these conditions. We handle Fujairah Municipality and Civil Defence permits and Fujairah Free Zone authority approvals as standard operational practice.',
             audiences: [
                 {
@@ -237,21 +243,21 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'Fujairah Industrial Tent Permits',
                 body: 'Fujairah Municipality and Fujairah Civil Defence require permits for all temporary structures. Fujairah Free Zone and Fujairah Port authorities have their own approval processes for on-site installations. Our structures are specifically engineered for Fujairah\'s east coast wind and humidity conditions — 850 gsm UV-stabilised fabric and 6061-T6 aluminum frames rated to 100+ km/h. All permits, structural certifications, and compliance documentation are handled by our team.'
             },
-            areas: ['Fujairah Free Zone', 'Fujairah Port', 'FOIZ (Fujairah Oil Industry Zone)', 'Dibba Industrial Area', 'Al Faseel', 'Merbeih', 'Al Shohadaa', 'Qidfa', 'Khor Fakkan', 'Fujairah City'],
+            areas: ['Fujairah Fort Area', 'Fujairah Corniche', 'Fujairah City Centre', 'Fujairah Free Zone', 'Fujairah Port', 'FOIZ (Fujairah Oil Industry Zone)', 'Dibba Industrial Area', 'Al Faseel', 'Merbeih', 'Al Shohadaa', 'Qidfa', 'Khor Fakkan'],
             faqs: [
-                { q: 'What industrial tent companies serve Fujairah?', a: 'Tent Now has served Fujairah\'s industrial and oil sector for 30+ years. We handle Fujairah Municipality, Civil Defence, Fujairah Free Zone, and Fujairah Port authority permits. Our structures are engineered for east coast conditions.' },
-                { q: 'Do you serve the Fujairah oil industry zone?', a: 'Yes. Our oil and gas tent configurations carry NFPA 701 and DIN 4102 B1 fire ratings with chemical-resistant coatings and explosion-proof electrical options — meeting the HSE requirements of Fujairah\'s energy sector.' },
-                { q: 'How much does storage tent rental cost in Fujairah?', a: 'Industrial tent rental in Fujairah is priced competitively. Rental from AED 15 per sqm/month, contact us for a custom quote based on your location, size, and specifications.' },
-                { q: 'How quickly can you deploy a storage tent in Fujairah?', a: 'Standard structures operational within 5–7 days for east coast deployments. Urgent requirements can be accommodated — contact us to discuss your timeline.' },
+                { q: 'What tent rental companies serve Fujairah?', a: 'Tent Now has served Fujairah for 30+ years — Ramadan tent rental in Fujairah, majlis setups, corporate iftar tents, and industrial storage. We handle Fujairah Municipality, Civil Defence, Fujairah Free Zone, and Fujairah Port authority permits. Our structures are engineered for east coast conditions.' },
+                { q: 'How much does tent rental in Fujairah cost?', a: 'Tent rental in Fujairah is competitively priced. Ramadan and majlis tents are available for family and corporate budgets. Industrial tent hire from AED 15 per sqm/month. Contact us for a custom quote based on your location, size, and requirements.' },
+                { q: 'Can you set up a Ramadan tent near Fujairah Fort?', a: 'Yes. The area near Fujairah Fort and the Old Town is a popular setting for heritage-themed Ramadan tent and majlis setups. We handle all Fujairah Municipality permits for these locations as part of our standard service.' },
+                { q: 'How quickly can you deploy a tent in Fujairah?', a: 'Ramadan and majlis tents typically deploy in 1–2 days. Industrial storage structures are operational within 5–7 days for east coast deployments. Urgent requirements can be accommodated — contact us to discuss your timeline.' },
             ],
-            cta: 'Get Your Fujairah Industrial Quote'
+            cta: 'Get Your Fujairah Tent Rental Quote'
         },
         'umm-al-quwain': {
-            title: 'Storage Tent Rental Umm Al Quwain | Industrial & Warehouse Tents',
-            metaDescription: 'Storage tent rental Umm Al Quwain. UAQ Free Trade Zone & industrial areas. Competitive pricing, all permits included, fast deployment. 30 years UAE experience. Free quote.',
-            subtitle: 'Serving UAQ Free Trade Zone, UAQ Port, and Industrial Areas',
-            intro: 'Umm Al Quwain is an emerging industrial and logistics hub with significant growth momentum. The UAQ Free Trade Zone is attracting manufacturing, logistics, and trading companies. UAQ Port handles growing cargo volumes. The emirate\'s lower land costs and strategic northern location make it increasingly attractive for industrial operations that need cost-effective, deployable covered infrastructure.',
-            whyUs: 'Our SAIF Zone base in Sharjah gives us efficient access to UAQ with minimal mobilization costs. We handle UAQ Municipality and Civil Defence permits and UAQ Free Trade Zone authority approvals as part of our standard service. 30 years of UAE-wide deployments means we bring the same engineering standards and compliance knowledge to UAQ that we bring to Dubai and Abu Dhabi — at pricing that reflects the emirate\'s cost-conscious industrial market.',
+            title: 'Tent Rental in Umm Al Quwain | Ramadan & Industrial Tents',
+            metaDescription: 'Tent rental in Umm Al Quwain — Ramadan tent hire, majlis setup, warehouse tent rental UAQ. UAQ Free Zone & industrial estates. All permits included. Free quote.',
+            subtitle: 'UAQ Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
+            intro: 'Tent rental in Umm Al Quwain covers a wide range of needs — from Ramadan majlis setups for UAQ\'s close-knit residential communities to industrial warehouse tent rental for the growing UAQ Free Trade Zone and the emirate\'s expanding industrial estates. Tent rental in Umm Al Quwain is particularly cost-competitive: UAQ\'s lower land costs and accessible permit process make it one of the most affordable tent hire destinations in the UAE. The UAQ Free Trade Zone warehouse tent rental segment is showing strong demand — our Arabic-language warehouse tent page here is already at position 3 on Google, reflecting how well this market is developing. UAQ\'s industrial estates and free zones are attracting manufacturing and logistics operators who need flexible, compliant covered infrastructure without the premium pricing of Dubai or Abu Dhabi.',
+            whyUs: 'Our SAIF Zone base in Sharjah gives us efficient access to UAQ with minimal mobilization costs. We handle UAQ Municipality and Civil Defence permits and UAQ Free Trade Zone authority approvals as part of our standard service. 30 years of UAE-wide deployments means we bring the same engineering standards and compliance knowledge to UAQ that we bring to Dubai and Abu Dhabi — at pricing that reflects the emirate\'s cost-conscious market.',
             audiences: [
                 {
                     title: 'Construction & Contracting',
@@ -273,23 +279,23 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'UAQ Industrial Tent Permits',
                 body: 'UAQ Municipality and UAQ Civil Defence require permits for temporary structures. UAQ Free Trade Zone has its own authority approval process. All permit applications, structural documentation, and safety certifications are handled by our team as part of the standard service. Our 30 years of UAE regulatory experience means compliance is never a barrier to your project timeline.'
             },
-            areas: ['UAQ Free Trade Zone', 'UAQ Port', 'UAQ Industrial Area', 'Al Salamah', 'Al Ramlah', 'Al Raudah', 'Al Khor', 'Umm Al Quwain City', 'Al Sinniyah Island', 'Falaj Al Mualla'],
+            areas: ['UAQ Free Trade Zone', 'UAQ Industrial Estates', 'UAQ Port', 'UAQ Industrial Area', 'Al Salamah', 'Al Ramlah', 'Al Raudah', 'Al Khor', 'Umm Al Quwain City', 'Al Sinniyah Island', 'Falaj Al Mualla'],
             faqs: [
-                { q: 'What storage tent companies serve Umm Al Quwain?', a: 'Tent Now serves UAQ from our SAIF Zone base in Sharjah — competitive mobilization costs, full UAQ Municipality, Civil Defence, and UAQ Free Trade Zone permits included.' },
-                { q: 'How much does industrial tent rental cost in UAQ?', a: 'Industrial tent rental in UAQ is competitively priced. Rental from AED 15 per sqm/month. Contact us for a custom quote based on your site and requirements.' },
-                { q: 'Can you install storage tents in UAQ Free Trade Zone?', a: 'Yes. We manage UAQ Free Trade Zone authority approvals as part of our standard service. Warehouse frame tents install on existing surfaces without ground work.' },
-                { q: 'How quickly can you deploy a storage tent in UAQ?', a: 'Standard structures are operational within 3–5 days from our Sharjah base. Urgent requirements can be accommodated within 72 hours for pre-engineered configurations.' },
+                { q: 'What tent rental companies serve Umm Al Quwain?', a: 'Tent Now serves UAQ from our SAIF Zone base in Sharjah — competitive mobilization costs, full UAQ Municipality, Civil Defence, and UAQ Free Trade Zone permits included. We cover Ramadan tents, majlis setups, and industrial/warehouse tent rental.' },
+                { q: 'How much does tent rental cost in Umm Al Quwain?', a: 'Tent rental in Umm Al Quwain is among the most affordable in the UAE. Ramadan and majlis tents are priced competitively. Industrial tent hire starts from AED 15 per sqm/month. Contact us for a custom quote.' },
+                { q: 'Can you set up a Ramadan or warehouse tent in UAQ?', a: 'Yes. We provide both Ramadan tent rental and warehouse tent rental in Umm Al Quwain. Our UAQ Free Trade Zone warehouse tent service is in high demand — all permits and authority approvals fully included.' },
+                { q: 'How quickly can you deploy a tent in UAQ?', a: 'Ramadan and majlis setups take 1–2 days. Industrial and warehouse structures are operational within 3–5 days from our Sharjah base. Urgent requirements can be accommodated within 72 hours for pre-engineered configurations.' },
             ],
-            cta: 'Get Your UAQ Industrial Quote'
+            cta: 'Get Your UAQ Tent Rental Quote'
         }
     },
     ar: {
         dubai: {
-            title: 'تأجير خيام تخزين دبي | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام تخزين صناعية في دبي. هياكل الامتداد الواضح معتمدة من الدفاع المدني. نشر خلال 72 ساعة. جافزا، دبي ساوث، القوز. جميع التصاريح مشمولة. احصل على عرض.',
-            subtitle: 'خدمة جافزا ومدينة دبي الصناعية ودبي ساوث منذ 1994',
-            intro: 'قطاع الخدمات اللوجستية والصناعية في دبي تحت ضغط. معدل شغور المستودعات عند 3% وارتفعت الإيجارات 33% في 2024. مشاريع البناء عبر جبل علي ودبي ساوث تحتاج مخازن مغطاة من اليوم الأول. Tent Now تحل هذه المشكلة منذ 1994 — نشر هياكل الامتداد الواضح المعتمدة من الدفاع المدني في أيام وليس أشهراً، بتوفير 50-70% مقارنة بالبناء الدائم.',
-            whyUs: 'ثلاثون عاماً من نشر الخيام الصناعية في جافزا ومدينة دبي الصناعية ومجمع دبي للاستثمار ومواقع البناء الكبرى في الإمارة. نعرف عملية تصريح بلدية دبي للمنشآت المؤقتة (المادة 13)، ومتطلبات سلامة الدفاع المدني، والمناطق الحرة التي تتطلب موافقات منفصلة.',
+            title: 'تأجير خيام في دبي | خيام رمضان ومجالس وإفطار وخيام صناعية',
+            metaDescription: 'خيام للإيجار في دبي — خيام إفطار رمضان دبي، تأجير خيمة مجلس، خيام الإفطار الشركات. تصاريح IACAD مشمولة. جميرا، بزنس باي، DIFC. احصل على عرض مجاني.',
+            subtitle: 'متخصصو تأجير الخيام في دبي — رمضان ومجالس وإفطار وخيام صناعية منذ 1994',
+            intro: 'هل تبحث عن خيام للإيجار في دبي؟ سواء كنت تحتاج خيمة إفطار رمضان في دبي لضيافة الشركات، أو تأجير خيمة مجلس خاصة لتجمعات العائلة الرمضانية، أو مخازن صناعية مغطاة في جافزا ودبي ساوث، فإن Tent Now توفر تأجير الخيام في دبي منذ 1994. دبي هي السوق الأكثر تنافسية في الإمارات — وخبرتنا الممتدة 30 عاماً تعني معرفة كل متطلبات التصاريح وكل منطقة فعاليات وكل تحدٍّ للتركيب. من إعداد خيام الإفطار الرمضانية في فلل جميرا إلى خيام الإفطار المؤسسية في بزنس باي وتراسات DIFC وفنادق داون تاون دبي — نتولى كل النطاق. خور دبي والأحياء القديمة ومنطقة الفهيدي التاريخية لها متطلبات خاصة بمناطق التراث — ونعرفها جيداً. تصاريح IACAD (دائرة الشؤون الإسلامية والعمل الخيري) إلزامية لجميع خيام رمضان في دبي؛ ونتولى إدارتها ضمن خدمتنا الروتينية بجانب موافقات الدفاع المدني وبلدية دبي.',
+            whyUs: 'ثلاثون عاماً من تأجير الخيام في دبي — صناعية ورمضانية على حدٍّ سواء. نعرف عملية تصريح بلدية دبي للمنشآت المؤقتة (المادة 13)، ومتطلبات IACAD الخاصة بدبي، وموافقات سلامة الدفاع المدني، والمناطق الحرة التي تتطلب موافقات منفصلة. نعرف أن حدائق فلل جميرا تحتاج تثبيتاً مختلفاً عن تراسات DIFC. نعلم أن رطوبة فبراير على الساحل قاسية على المواد الرخيصة. كل تصريح، كل شهادة سلامة، كل موافقة هيكلية — تُنجز قبل أن نبدأ.',
             audiences: [
                 {
                     title: 'قطاع البناء والمقاولات',
@@ -311,20 +317,22 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية في دبي: نتولى كل شيء',
                 body: 'تتطلب بلدية دبي تصاريح لجميع المنشآت المؤقتة بموجب المادة 13 — والغرامات على التركيبات غير المرخصة تصل إلى 10,000 درهم. موافقة الدفاع المدني إلزامية للمنشآت المأهولة. جافزا ودبي ساوث ومجمع دبي للاستثمار لكل منها موافقات سلطة المنطقة الحرة المنفصلة. نحن نتولى جميع هذه العمليات ضمن خدمتنا القياسية.'
             },
-            areas: ['جافزا (منطقة جبل علي الحرة)', 'مدينة دبي الصناعية', 'دبي ساوث', 'مجمع دبي للاستثمار', 'القوز الصناعية', 'جبل علي', 'بزنس باي', 'DIFC', 'مرسى دبي', 'ميدان', 'رأس الخور', 'سيليكون أواسيس'],
+            areas: ['جميرا', 'بزنس باي', 'DIFC', 'داون تاون دبي', 'نخلة جميرا', 'خور دبي / الفهيدي', 'JLT (أبراج بحيرات جميرا)', 'مرسى دبي', 'جافزا', 'مدينة دبي الصناعية', 'دبي ساوث', 'مجمع دبي للاستثمار', 'القوز الصناعية', 'ميدان', 'سيليكون أواسيس'],
             faqs: [
-                { q: 'ما أفضل شركة خيام صناعية في دبي؟', a: 'Tent Now لها أكثر من 30 عاماً في نشر الخيام الصناعية عبر دبي — من جافزا إلى دبي ساوث ومجمع دبي للاستثمار. نتولى جميع تصاريح بلدية دبي والدفاع المدني وسلطات المناطق الحرة.' },
-                { q: 'كم تكلفة تأجير خيام التخزين في دبي؟', a: 'تتراوح الأسعار بين 15-40 درهم لكل متر مربع شهرياً حسب المواصفات والحجم. أسعار البيع للهياكل الامتداد الواضح تبدأ من 200 درهم للمتر المربع. تواصل معنا للحصول على عرض مخصص.' },
-                { q: 'هل تحتاج خيام التخزين في دبي تصاريح؟', a: 'نعم. تتطلب بلدية دبي تصاريح بموجب المادة 13، والغرامات تصل إلى 10,000 درهم. جميع التصاريح مشمولة في خدمتنا.' },
-                { q: 'ما سرعة نشر خيمة تخزين في دبي؟', a: 'الهياكل القياسية تعمل خلال 3-7 أيام. للمتطلبات العاجلة، نقدم نشراً خلال 72 ساعة للتجهيزات المهندسة مسبقاً.' },
+                { q: 'ما أفضل شركة لتأجير الخيام في دبي؟', a: 'Tent Now لها أكثر من 30 عاماً في تأجير الخيام في دبي — من خيام الإفطار الرمضانية في جميرا وDIFC إلى الخيام الصناعية في جافزا ودبي ساوث. نتولى جميع تصاريح IACAD وبلدية دبي والدفاع المدني وسلطات المناطق الحرة. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'كم تكلفة تأجير الخيام في دبي؟', a: 'تأجير الخيام في دبي يتفاوت حسب النوع والحجم. خيام رمضان والمجالس أقل بـ15-25% من الحزم الفندقية المماثلة. خيام التخزين الصناعية تبدأ من 15-40 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'من يوفر خيمة إفطار للإيجار في دبي؟', a: 'Tent Now توفر تأجير خيمة الإفطار في دبي للفعاليات المؤسسية والمجتمعية. نجهز خيام الإفطار في مكاتب بزنس باي وتراسات DIFC ومجمعات فلل جميرا وامتدادات فنادق دبي. جميع تصاريح IACAD وموافقات الدفاع المدني مُدارة بالكامل.' },
+                { q: 'هل خيام رمضان في دبي تحتاج تصاريح IACAD؟', a: 'نعم. موافقة IACAD (دائرة الشؤون الإسلامية والعمل الخيري) مطلوبة لجميع خيام رمضان في دبي، إضافةً إلى تصاريح المادة 13 من بلدية دبي وموافقات الدفاع المدني. الهياكل غير المرخصة عرضة لغرامات تصل لـ500,000 درهم. Tent Now تتولى جميع مسارات التصاريح.' },
+                { q: 'كم تكلفة تأجير خيمة مجلس في دبي؟', a: 'تأجير خيمة المجلس في دبي يُسعَّر حسب الحجم والمدة والتجهيزات الداخلية والموقع. تجهيزات 20 شخص للعائلات الصغيرة وحتى 100+ ضيف للمؤسسات — جميعها متاحة. تواصل مع Tent Now للحصول على عرض مخصص.' },
+                { q: 'ما المناطق التي تغطونها لتأجير الخيام في دبي؟', a: 'نغطي جميع مناطق دبي لتأجير الخيام: جميرا وبزنس باي وDIFC وداون تاون دبي ونخلة جميرا وخور دبي ومرسى دبي وJLT والبرشاء وتلال الإمارات وميدان وجافزا ودبي ساوث وجميع المناطق الصناعية.' },
             ],
-            cta: 'احصل على عرض صناعي لدبي'
+            cta: 'احصل على عرض تأجير الخيام في دبي'
         },
         'abu-dhabi': {
-            title: 'تأجير خيام تخزين أبوظبي | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام صناعية في أبوظبي. خدمة KIZAD ومصفح وMICAD. تصاريح DMT والدفاع المدني مشمولة. نشر خلال 72 ساعة. 30 عاماً خبرة. احصل على عرض مجاني.',
-            subtitle: 'خدمة KIZAD ومصفح وMICAD وأبوظبي الصناعية منذ 1994',
-            intro: 'القاعدة الصناعية في أبوظبي هي أساس الاقتصاد الإماراتي. KIZAD يستضيف ثالث أكبر منطقة حرة في العالم. مصفح يضم أكثر من 1,000 شركة صناعية. عمليات أدنوك تمتد عبر الإمارة وما وراءها. هذه القطاعات لا تنتظر البناء الدائم.',
+            title: 'تأجير خيام في أبوظبي | خيام صناعية وفعاليات رمضان',
+            metaDescription: 'تأجير خيام في أبوظبي — KIZAD ومصفح وجزيرة ياس والكورنيش. تصاريح ADM والدفاع المدني مشمولة. خيام إفطار رمضان 2026. نشر خلال 72 ساعة. احصل على عرض.',
+            subtitle: 'خدمة KIZAD ومصفح وجزيرة ياس والسعديات وأبوظبي الصناعية منذ 1994',
+            intro: 'تأجير الخيام في أبوظبي له متطلبات فريدة تختلف عن سائر الإمارات. القاعدة الصناعية في أبوظبي هي أساس الاقتصاد الإماراتي — KIZAD يستضيف ثالث أكبر منطقة حرة في العالم، ومصفح يضم أكثر من 1,000 شركة صناعية، وعمليات أدنوك تمتد عبر الإمارة. من إعداد الفعاليات في جزيرة ياس إلى مشاريع البناء في جزيرة السعديات ومناسبات الكورنيش، الحاجة لخيام قابلة للنشر ومتوافقة مع الأنظمة أمر دائم. Tent Now تقدم تأجير خيام في أبوظبي لجميع الأغراض — من المستودعات الصناعية إلى خيام الإفطار الرمضانية — مع إدارة كاملة لتصاريح بلدية أبوظبي (ADM) والدفاع المدني.',
             whyUs: 'ثلاثة عقود من نشر الخيام الصناعية في أبوظبي، بالتعامل مع عملية تصريح دائرة البلديات والنقل (DMT)، وموافقات الدفاع المدني، ومتطلبات مينائي أبوظبي. نفهم أن معايير أبوظبي الصناعية مختلفة عن دبي — المواصفات أكثر صرامة، ومتطلبات التوثيق أثقل.',
             audiences: [
                 {
@@ -344,24 +352,26 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 }
             ],
             compliance: {
-                title: 'تصاريح الخيام الصناعية في أبوظبي: DMT والدفاع المدني',
-                body: 'تتطلب دائرة البلديات والنقل (DMT) في أبوظبي تصاريح لجميع المنشآت المؤقتة. موافقة الدفاع المدني إلزامية للمنشآت المأهولة. KIZAD وأبوظبي بورت لها عمليات موافقة خاصة. نتولى جميع هذه الأنواع من التصاريح منذ 30 عاماً.'
+                title: 'تصاريح الخيام في أبوظبي: ADM والدفاع المدني وADNEC',
+                body: 'تتطلب دائرة البلديات والنقل (ADM) في أبوظبي تصاريح لجميع المنشآت المؤقتة، مع اشتراطات صارمة للشهادات الهيكلية والتكامل الجمالي. موافقة الدفاع المدني إلزامية للمنشآت المأهولة. للأماكن العامة والفعاليات الكبرى، قد تكون هناك متطلبات إضافية من لجنة أبوظبي الوطنية للفعاليات (ADNEC). إعداد الخيام في مناطق أدنوك يتطلب توثيق HSE خاصاً. نتولى جميع هذه الأنواع من التصاريح منذ 30 عاماً.'
             },
-            areas: ['KIZAD (منطقة خليفة الصناعية)', 'مصفح الصناعية', 'ICAD (المدينة الصناعية)', 'ميناء خليفة', 'مدينة مصدر', 'المنطقة الصناعية أبوظبي', 'جزيرة السعديات', 'جزيرة ياس', 'جزيرة الريم', 'مدينة محمد بن زايد'],
+            areas: ['KIZAD (منطقة خليفة الصناعية)', 'مصفح الصناعية', 'ICAD (المدينة الصناعية)', 'ميناء خليفة', 'جزيرة ياس', 'جزيرة السعديات', 'كورنيش أبوظبي', 'جزيرة الريم', 'منطقة أدنوك', 'مدينة محمد بن زايد', 'مدينة مصدر', 'شاطئ الراحة'],
             faqs: [
-                { q: 'ما شركات الخيام الصناعية التي تخدم أبوظبي؟', a: 'Tent Now لها 30+ عاماً في أبوظبي، مع إدارة تصاريح DMT المتخصصة وقدرة النشر في KIZAD ومصفح وMICAD والجزر.' },
-                { q: 'كم تكلفة تأجير خيام التخزين في أبوظبي؟', a: 'أسعار الإيجار تتراوح بين 15-40 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
-                { q: 'هل تتطلب خيام التخزين تصاريح DMT في أبوظبي؟', a: 'نعم. تتطلب DMT الموافقات الهيكلية وشهادات السلامة. جميع التصاريح مشمولة في خدمتنا.' },
-                { q: 'هل يمكنكم النشر في مواقع أبوظبي النائية؟', a: 'نعم. لدينا قدرة تنقل للمواقع النائية وحقول النفط والجزر عبر الإمارة.' },
+                { q: 'ما أفضل شركة لتأجير الخيام في أبوظبي؟', a: 'Tent Now لها 30+ عاماً في أبوظبي، مع إدارة تصاريح ADM المتخصصة وقدرة النشر في KIZAD ومصفح وMICAD وجزيرة ياس وجزيرة السعديات ومواقع الكورنيش. نحن موثوق بنا من قِبل المشغلين الصناعيين وشركات البناء ومنظمي الفعاليات في العاصمة.' },
+                { q: 'كم تكلفة تأجير الخيام في أبوظبي؟', a: 'تأجير الخيام في أبوظبي مع Tent Now يبدأ من 15-40 درهم للمتر المربع شهرياً للهياكل الصناعية، مع تسعير خيام الفعاليات ورمضان حسب الحجم والمدة ومتطلبات التجهيز. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل تتوفر خيام للإيجار في أبوظبي للفعاليات والاستخدام الصناعي؟', a: 'Tent Now تغطي كليهما. الخيام الصناعية في أبوظبي تشمل هياكل المستودعات لعمليات KIZAD ومصفح ومناطق أدنوك. للفعاليات، نوفر خيام إفطار رمضان وهياكل ضيافة مؤسسية وأجنحة المعارض في جزيرة ياس والسعديات وكورنيش أبوظبي.' },
+                { q: 'كيف يعمل تأجير خيام رمضان في أبوظبي 2026؟', a: 'تأجير خيام رمضان في أبوظبي 2026 يتطلب الحصول على موافقة ADM — Tent Now تتولى هذه العملية من الألف إلى الياء، بما في ذلك الرسومات الهيكلية وموافقة الدفاع المدني. احجز مبكراً حيث تمتلئ طاقة رمضان 2026 اعتباراً من أكتوبر 2025.' },
+                { q: 'هل يمكنكم إعداد خيمة إفطار في أبوظبي؟', a: 'نعم. إعداد خيام الإفطار في أبوظبي هو خدمة رمضانية أساسية من Tent Now — من أراضي الفنادق قرب الكورنيش إلى مجمعات الفلل الخاصة والحرم المؤسسية والمساحات العامة المعتمدة من ADM.' },
+                { q: 'هل تتولون تصاريح ADM وADNEC لخيام أبوظبي؟', a: 'نعم. تتطلب ADM الموافقات الهيكلية ومراجعة الجمالية للمواقع المرئية. تستلزم فعاليات ADNEC متطلبات إضافية. KIZAD وأبوظبي بورت لهما عمليات سلطة منفصلة. جميع مسارات التصاريح مشمولة بالكامل في خدمتنا.' },
             ],
-            cta: 'احصل على عرض صناعي لأبوظبي'
+            cta: 'احصل على عرض تأجير الخيام في أبوظبي'
         },
         sharjah: {
-            title: 'تأجير خيام تخزين الشارقة | خيام صناعية ومستودعات',
-            metaDescription: 'متخصصو الخيام الصناعية في الشارقة — مقرنا في منطقة SAIF. بدون رسوم نقل، تقييم في نفس اليوم، نشر خلال 48 ساعة. جميع التصاريح مشمولة. احصل على عرض.',
-            subtitle: 'مقرنا في منطقة SAIF — متخصصون في الخيام الصناعية بالشارقة منذ 1994',
-            intro: 'Tent Now مقرها في منطقة SAIF بالشارقة. نحن لسنا شركة دبي تخدم الشارقة — نحن متخصصو الخيام الصناعية المحليون في الشارقة. منطقة SAIF وبرامج المنطقة الحرة للشارقة والمناطق الصناعية الـ18 في متناول يدنا.',
-            whyUs: 'ثلاثون عاماً من منطقة SAIF تعني أننا نعرف البيئة التنظيمية الصناعية في الشارقة أفضل من أي أحد آخر. متطلبات تصاريح بلدية الشارقة، معايير الدفاع المدني، موافقات منطقة SAIF وميناء حمرية الحرة — نتعامل معها جميعاً كعمليات روتينية.',
+            title: 'تأجير خيام في الشارقة | خيام صناعية وفعاليات',
+            metaDescription: 'خيام للإيجار في الشارقة — مقرنا في منطقة SAIF. بدون رسوم نقل، تقييم في نفس اليوم، نشر خلال 48 ساعة. تصاريح بلدية الشارقة مشمولة. احصل على عرض.',
+            subtitle: 'مقرنا في منطقة SAIF — متخصصو تأجير الخيام المحليون في الشارقة منذ 1994',
+            intro: 'تبحث عن خيام للإيجار في الشارقة؟ Tent Now مقرها في منطقة SAIF بالشارقة مباشرةً — مما يجعلنا أسرع وأكثر كفاءة من حيث التكلفة لتأجير الخيام في الشارقة. نحن لسنا شركة دبي تخدم الشارقة — نحن المتخصصون المحليون. منطقة SAIF ومنطقة البلو سوك وواجهة المجاز المائية ومدينة الجامعات والمناطق الصناعية الـ18 في متناول يدنا. بدون رسوم نقل خارج المدينة، وتقييم الموقع في نفس اليوم.',
+            whyUs: 'ثلاثون عاماً من منطقة SAIF تعني أننا نعرف البيئة التنظيمية في الشارقة أفضل من أي أحد آخر. متطلبات تصاريح بلدية الشارقة (التي تتميز بسرعة أعلى في الموافقة مقارنةً بدبي)، معايير الدفاع المدني، موافقات منطقة SAIF وميناء حمرية الحرة — نتعامل معها جميعاً كعمليات روتينية. إعداد خيام رمضان في الشارقة هو جزء أساسي من عروضنا الموسمية — من واجهة المجاز إلى مجمعات الفلل الخاصة في مويلح.',
             audiences: [
                 {
                     title: 'قطاع البناء والمقاولات',
@@ -383,21 +393,22 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية في الشارقة: خبرة السلطة المحلية',
                 body: 'كل من بلدية الشارقة والدفاع المدني ومنطقة SAIF وميناء حمرية الحرة لديها متطلبات تصريح مختلفة للمنشآت المؤقتة. بصفتنا مقيمين منذ 30 عاماً في منطقة SAIF، نتولى كل هذه المتطلبات في وقت واحد.'
             },
-            areas: ['منطقة SAIF', 'ميناء حمرية الحرة', 'المناطق الصناعية 1-18', 'منطقة مطار الشارقة الحرة', 'السجعة الصناعية', 'الشارقة الواجهة المائية', 'الحيرة', 'المجاز', 'مويلح التجارية', 'الرحمانية'],
+            areas: ['منطقة SAIF', 'ميناء حمرية الحرة', 'المناطق الصناعية 1-18', 'منطقة مطار الشارقة الحرة', 'السجعة الصناعية', 'واجهة المجاز المائية', 'منطقة البلو سوك', 'مدينة الجامعات', 'مويلح التجارية', 'الرحمانية'],
             faqs: [
-                { q: 'ما أفضل شركة خيام صناعية في الشارقة؟', a: 'Tent Now مقرها في منطقة SAIF بالشارقة — 30 عاماً من تصاريح بلدية الشارقة والدفاع المدني ومنطقة SAIF وميناء حمرية، بدون رسوم نقل.' },
-                { q: 'كم تكلفة تأجير خيام التخزين في الشارقة؟', a: 'تأجير الخيام الصناعية في الشارقة هو الأكثر تنافسية في الإمارات نظراً لقاعدتنا المحلية. الإيجار من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض.' },
-                { q: 'هل يمكنكم نشر خيام تخزين في منطقة SAIF وميناء حمرية؟', a: 'نعم — هذه أراضينا. نتولى موافقات منطقة SAIF وميناء حمرية ضمن خدمتنا القياسية. تقييمات الموقع في نفس اليوم متاحة.' },
-                { q: 'ما سرعة تركيب خيمة تخزين في الشارقة؟', a: 'أسرع من أي منافس في السوق. وجودنا في منطقة SAIF يعني التحرك في نفس اليوم للتقييمات والتركيب عادةً خلال 48-72 ساعة.' },
+                { q: 'ما أفضل شركة لتأجير الخيام في الشارقة؟', a: 'Tent Now مقرها في منطقة SAIF بالشارقة — 30 عاماً من تصاريح بلدية الشارقة والدفاع المدني ومنطقة SAIF وميناء حمرية، بدون رسوم نقل خارج المدينة واستجابة في نفس اليوم.' },
+                { q: 'كم تكلفة تأجير الخيام في الشارقة؟', a: 'خيام للإيجار في الشارقة مع Tent Now تبدأ من 15 درهم للمتر المربع شهرياً للهياكل الصناعية، مع أسعار تنافسية لخيام الفعاليات ورمضان. وجودنا المحلي يعني عدم وجود رسوم نقل — تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل يوجد خيام للإيجار في الشارقة للفعاليات ورمضان؟', a: 'نعم — Tent Now تقدم خيام للإيجار في الشارقة للأغراض الصناعية والمؤسسية ورمضان. نخدم المواقع في جميع أنحاء الإمارة بما في ذلك واجهة المجاز المائية ومدينة الجامعات ومنطقة البلو سوك، مع إعداد سريع خلال 48-72 ساعة.' },
+                { q: 'كيف تسير عملية إعداد خيام رمضان في الشارقة؟', a: 'إعداد خيام رمضان في الشارقة يتضمن الحصول على موافقة تصريح بلدية الشارقة، والتي تتميز عادةً بسرعة أعلى مقارنةً بدبي. Tent Now تتولى عملية التصريح الكاملة وتركيب الهيكل وتنسيق التجهيز الداخلي.' },
+                { q: 'هل يمكنكم نشر خيام في منطقة SAIF وميناء حمرية؟', a: 'نعم — هذه أراضينا. نتولى موافقات منطقة SAIF وميناء حمرية ضمن خدمتنا القياسية، مع تقييمات الموقع في نفس اليوم من قاعدتنا الموقعية.' },
             ],
-            cta: 'احصل على عرض صناعي للشارقة'
+            cta: 'احصل على عرض تأجير الخيام في الشارقة'
         },
         ajman: {
-            title: 'تأجير خيام تخزين عجمان | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام تخزين في عجمان. المنطقة الحرة عجمان والجرف الصناعي. جميع التصاريح مشمولة، نشر خلال 3-5 أيام، 30 عاماً خبرة. احصل على عرض مجاني اليوم.',
-            subtitle: 'خدمة المنطقة الحرة عجمان والجرف الصناعي وميناء عجمان',
-            intro: 'عجمان واحدة من أسرع المراكز الصناعية والتصنيعية نمواً في الإمارات. المنطقة الحرة بعجمان تستضيف أكثر من 9,000 شركة. منطقة الجرف الصناعية في توسع سريع. ميناء عجمان يربط الإمارة بمسارات التجارة العالمية.',
-            whyUs: 'قربنا من عجمان من قاعدة SAIF في الشارقة يعني تكاليف تنقل منخفضة وأوقات استجابة سريعة. نتولى تصاريح بلدية عجمان والدفاع المدني وسلطة المنطقة الحرة بعجمان ضمن خدمتنا القياسية.',
+            title: 'تأجير خيام في عجمان | خيام رمضان ومجالس وخيام صناعية',
+            metaDescription: 'خيام للإيجار في عجمان — تأجير خيمة رمضان وإفطار في عجمان، إيجار خيام بأسعار أفضل من دبي. تصاريح بلدية عجمان أسرع وأوفر. احصل على عرض مجاني.',
+            subtitle: 'متخصصو تأجير الخيام في عجمان — رمضان ومجالس وخيام صناعية',
+            intro: 'هل تبحث عن خيام للإيجار في عجمان؟ Tent Now توفر تأجير خيمة رمضان وإفطار ومجلس في عجمان للمناسبات السكنية والمؤسسية، إضافةً إلى خيام التخزين الصناعية للمنطقة الحرة والجرف. تأجير الخيام في عجمان من أفضل الخيارات في الإمارات من حيث التكلفة — إجراء بلدية عجمان للتصاريح أسرع وأرخص من دبي، مما يجعله الخيار الذكي للأسر والشركات. نخدم المنطقة الصناعية والجرف والبستان وكورنيش عجمان للفعاليات، والمنطقة الحرة وميناء عجمان للاحتياجات الصناعية. المنطقة الحرة بعجمان تستضيف أكثر من 9,000 شركة، وخبرتنا الممتدة 30 عاماً في خيام للإيجار في عجمان تعني معرفة كل متطلبات الموافقة من الداخل.',
+            whyUs: 'قربنا من عجمان من قاعدة SAIF في الشارقة يعني تكاليف تنقل منخفضة وأوقات استجابة سريعة. نتولى تصاريح بلدية عجمان والدفاع المدني وسلطة المنطقة الحرة بعجمان للخيام الرمضانية والصناعية ضمن خدمتنا القياسية.',
             audiences: [
                 {
                     title: 'قطاع البناء والمقاولات',
@@ -419,21 +430,22 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية في عجمان',
                 body: 'تتطلب بلدية عجمان والدفاع المدني تصاريح لجميع المنشآت المؤقتة. المنطقة الحرة بعجمان لها عملية موافقة السلطة الخاصة بها. نتولى جميع طلبات التصاريح والوثائق الهيكلية وشهادات السلامة ضمن خدمتنا القياسية.'
             },
-            areas: ['المنطقة الحرة عجمان', 'منطقة الجرف الصناعية', 'ميناء عجمان', 'الروضة', 'الطلة', 'الجرف', 'المويهات', 'مدينة الإمارات', 'الحميدية', 'كورنيش عجمان'],
+            areas: ['المنطقة الحرة عجمان', 'منطقة الجرف الصناعية', 'البستان', 'كورنيش عجمان', 'ميناء عجمان', 'الروضة', 'الطلة', 'الجرف', 'المويهات', 'مدينة الإمارات', 'الحميدية'],
             faqs: [
-                { q: 'ما شركات خيام التخزين التي تخدم عجمان؟', a: 'Tent Now تخدم عجمان من قاعدتنا في منطقة SAIF بالشارقة — تكاليف تنقل تنافسية، وتصاريح كاملة من بلدية عجمان والدفاع المدني والمنطقة الحرة.' },
-                { q: 'كم تكلفة تأجير الخيام الصناعية في عجمان؟', a: 'إيجار الخيام الصناعية في عجمان تنافسي. الإيجار من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض.' },
-                { q: 'هل يمكنكم تركيب خيام تخزين في المنطقة الحرة بعجمان؟', a: 'نعم. نتولى موافقات سلطة المنطقة الحرة بعجمان ضمن خدمتنا القياسية.' },
-                { q: 'ما سرعة نشر خيمة تخزين في عجمان؟', a: 'الهياكل القياسية تعمل خلال 3-5 أيام من عجمان. يمكن تلبية المتطلبات العاجلة خلال 72 ساعة.' },
+                { q: 'ما شركات تأجير الخيام التي تخدم عجمان؟', a: 'Tent Now تخدم عجمان من قاعدتنا في منطقة SAIF بالشارقة — تكاليف تنقل تنافسية، وتصاريح كاملة من بلدية عجمان والدفاع المدني والمنطقة الحرة. نغطي خيام رمضان والمجالس والتخزين الصناعي.' },
+                { q: 'كم تكلفة تأجير الخيام في عجمان مقارنةً بدبي؟', a: 'خيام للإيجار في عجمان أكثر اقتصادية عادةً من دبي بسبب انخفاض رسوم التصاريح وقربنا من منطقة SAIF. إجراء بلدية عجمان أيضاً أسرع. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل يمكنكم تجهيز خيمة رمضان أو إفطار في عجمان؟', a: 'نعم. Tent Now توفر تأجير خيام رمضان والإفطار في عجمان للفعاليات السكنية والمؤسسية والمجتمعية. نخدم البستان والروضة وكورنيش عجمان وجميع المناطق. جميع تصاريح بلدية عجمان مشمولة.' },
+                { q: 'هل يمكنكم تركيب خيام في المنطقة الحرة بعجمان؟', a: 'نعم. نتولى موافقات سلطة المنطقة الحرة بعجمان ضمن خدمتنا القياسية لكل من خيام الفعاليات والخيام الصناعية.' },
+                { q: 'ما سرعة نشر خيمة في عجمان؟', a: 'خيام رمضان والمجالس تُنصب عادةً في يوم إلى يومين. الهياكل الصناعية القياسية تعمل خلال 3-5 أيام. يمكن تلبية المتطلبات العاجلة خلال 72 ساعة.' },
             ],
-            cta: 'احصل على عرض صناعي لعجمان'
+            cta: 'احصل على عرض تأجير الخيام في عجمان'
         },
         'ras-al-khaimah': {
-            title: 'تأجير خيام تخزين رأس الخيمة | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام صناعية في رأس الخيمة. المنطقة الحرة والمدينة البحرية. مهندسة لأحمال رياح رأس الخيمة. جميع التصاريح مشمولة. 30 عاماً خبرة. احصل على عرض.',
-            subtitle: 'خدمة المنطقة الحرة برأس الخيمة ومدينة رأس الخيمة البحرية والمناطق الصناعية',
-            intro: 'رأس الخيمة واحدة من أكثر إمارات الإمارات نشاطاً في التصنيع والصناعة. المنطقة الحرة برأس الخيمة تستضيف أكثر من 14,000 شركة في السيراميك والأدوية والصلب والخدمات اللوجستية.',
-            whyUs: 'خدمنا القطاع الصناعي برأس الخيمة لثلاثة عقود. الظروف الجغرافية والمناخية في رأس الخيمة — الرطوبة الساحلية من جهة، والتضاريس الجبلية والرياح الأقوى من الجهة الأخرى — تتطلب هندسة هيكلية محددة. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة ضمن العمليات الروتينية.',
+            title: 'تأجير خيام في رأس الخيمة | خيام رمضان وخيام صناعية',
+            metaDescription: 'تأجير خيام في رأس الخيمة — خيام رمضان وإيجار مجالس وخيام مستودعات. الحمراء وميناء العرب والمنطقة الحرة. تصاريح بلدية رأس الخيمة مشمولة. احصل على عرض.',
+            subtitle: 'متخصصو تأجير الخيام في رأس الخيمة — رمضان وفعاليات وخيام صناعية منذ 1994',
+            intro: 'هل تبحث عن تأجير خيام في رأس الخيمة؟ Tent Now توفر خيام للإيجار في رأس الخيمة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والضيافة المؤسسية والتخزين الصناعي في جميع أنحاء الإمارة. الجغرافيا المتنوعة في رأس الخيمة — من منتجعات الحمراء الفاخرة وميناء العرب وجزيرة مرجان إلى الممرات الصناعية في المنطقة الحرة — تعني أن كل تأجير خيام في رأس الخيمة يتطلب معرفة متخصصة. لدينا 30 عاماً من النشر في هذه الإمارة. حدائق فلل الحمراء وامتدادات فنادق جزيرة مرجان ومواقع الواجهة البحرية في ميناء العرب كلها ضمن تغطيتنا المنتظمة. متطلبات تصاريح بلدية رأس الخيمة للمنشآت المؤقتة تختلف عن دبي وأبوظبي — عادةً أكثر انسيابية، وعلاقاتنا الراسخة مع سلطات رأس الخيمة تعني موافقات أسرع.',
+            whyUs: 'خدمنا القطاع الصناعي والفعاليات في رأس الخيمة لثلاثة عقود. الظروف الجغرافية والمناخية في رأس الخيمة — الرطوبة الساحلية من جهة، والتضاريس الجبلية والرياح الأقوى من الجهة الأخرى — تتطلب هندسة هيكلية محددة. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة ضمن العمليات الروتينية.',
             audiences: [
                 {
                     title: 'قطاع البناء والمقاولات',
@@ -455,21 +467,21 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية برأس الخيمة',
                 body: 'تتطلب بلدية رأس الخيمة والدفاع المدني تصاريح للمنشآت المؤقتة. المنطقة الحرة برأس الخيمة ومدينة رأس الخيمة البحرية لهما عمليات موافقة خاصة. هياكلنا مهندسة لتلبية متطلبات حمل الرياح الخاصة ببيئات رأس الخيمة الساحلية والداخلية.'
             },
-            areas: ['المنطقة الحرة برأس الخيمة', 'مدينة رأس الخيمة البحرية', 'منطقة الحمرا الصناعية', 'الجزيرة الحمراء', 'الضيت', 'خزام', 'نخيل', 'كورنيش رأس الخيمة', 'وادي الصفا', 'مدينة رأس الخيمة'],
+            areas: ['الحمراء', 'ميناء العرب', 'جزيرة مرجان', 'المنطقة الحرة برأس الخيمة', 'مدينة رأس الخيمة البحرية', 'منطقة الحمرا الصناعية', 'الجزيرة الحمراء', 'الضيت', 'خزام', 'نخيل', 'كورنيش رأس الخيمة', 'مدينة رأس الخيمة'],
             faqs: [
-                { q: 'ما شركات الخيام الصناعية التي تخدم رأس الخيمة؟', a: 'Tent Now خدمت القطاع الصناعي برأس الخيمة لأكثر من 30 عاماً. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة ومدينة رأس الخيمة البحرية.' },
-                { q: 'كم تكلفة تأجير خيام التخزين برأس الخيمة؟', a: 'إيجار الخيام الصناعية برأس الخيمة يبدأ من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
-                { q: 'هل هياكلكم مقيّمة لظروف رياح رأس الخيمة؟', a: 'نعم. هياكلنا مهندسة لأحمال رياح تزيد عن 100 كيلومتر/ساعة باستخدام إطارات ألومنيوم 6061-T6 وأقمشة PVC بوزن 850 جم/م² — مناسبة لأنماط رياح رأس الخيمة الساحلية والداخلية.' },
-                { q: 'ما سرعة نشر خيمة تخزين برأس الخيمة؟', a: 'الهياكل القياسية تعمل خلال 5-7 أيام. يمكن تلبية المتطلبات العاجلة — تواصل معنا لمناقشة الجدول الزمني.' },
+                { q: 'ما شركات تأجير الخيام التي تخدم رأس الخيمة؟', a: 'Tent Now خدمت رأس الخيمة لأكثر من 30 عاماً — خيام رمضان وتأجير مجالس وخيام إفطار مؤسسية وتخزين صناعي. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة. هياكلنا مهندسة لأحمال الرياح الخاصة برأس الخيمة.' },
+                { q: 'كم تكلفة تأجير الخيام في رأس الخيمة؟', a: 'تأجير الخيام في رأس الخيمة متنوع حسب النوع. خيام رمضان والفعاليات بأسعار تنافسية دون أسعار دبي. خيام التأجير الصناعية تبدأ من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل يمكنكم تجهيز خيمة رمضان أو مجلس في رأس الخيمة؟', a: 'نعم. نوفر تأجير خيام رمضان في رأس الخيمة للفلل الخاصة وامتدادات الفنادق والحرم المؤسسية في الحمراء وميناء العرب وجزيرة مرجان وجميع مناطق رأس الخيمة. جميع تصاريح البلدية والدفاع المدني مشمولة.' },
+                { q: 'هل هياكلكم مقيّمة لظروف رياح رأس الخيمة؟', a: 'نعم. هياكلنا مهندسة لأحمال رياح تزيد عن 100 كيلومتر/ساعة باستخدام إطارات ألومنيوم 6061-T6 وأقمشة PVC بوزن 850 جم/م² — مناسبة لأنماط رياح رأس الخيمة الساحلية والجبلية.' },
             ],
-            cta: 'احصل على عرض صناعي لرأس الخيمة'
+            cta: 'احصل على عرض تأجير الخيام في رأس الخيمة'
         },
         fujairah: {
-            title: 'تأجير خيام تخزين الفجيرة | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام تخزين في الفجيرة. خدمة ميناء الفجيرة وFOIZ والمنطقة الحرة. متخصصون في الساحل الشرقي. جميع التصاريح مشمولة. 30 عاماً خبرة. احصل على عرض.',
-            subtitle: 'خدمة المنطقة الحرة بالفجيرة وميناء الفجيرة ومناطق الساحل الشرقي الصناعية',
-            intro: 'الفجيرة مركز الطاقة والصناعة على الساحل الشرقي للإمارات. ميناء الفجيرة واحد من أكثر محطات التزود بالوقود ازدحاماً في العالم. منطقة صناعة النفط بالفجيرة (FOIZ) تستضيف بنية تحتية كبيرة لتخزين وتزويد النفط.',
-            whyUs: 'الجغرافيا الساحلية الشرقية في الفجيرة تخلق متطلبات هيكلية فريدة. لدينا 30 عاماً من النشر في الفجيرة ونفهم هذه الظروف. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة ضمن الممارسة التشغيلية القياسية.',
+            title: 'تأجير خيام في الفجيرة | خيام رمضان ومجالس وخيام صناعية',
+            metaDescription: 'تأجير خيام في الفجيرة — خيام رمضان وإفطار في الفجيرة، إيجار مجالس، خيام صناعية. منطقة قلعة الفجيرة، الكورنيش، المنطقة الحرة. جميع التصاريح مشمولة. احصل على عرض.',
+            subtitle: 'متخصصو تأجير الخيام في الفجيرة — رمضان وفعاليات وخيام صناعية منذ 1994',
+            intro: 'يتطلب تأجير الخيام في الفجيرة معرفة متخصصة بالجغرافيا الفريدة للساحل الشرقي وبيئته التنظيمية. Tent Now توفر تأجير خيام في الفجيرة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والتخزين الصناعي في جميع أنحاء الإمارة. المنطقة المحيطة بقلعة الفجيرة والمدينة القديمة من أجمل مواقع الفعاليات في الإمارة؛ وكورنيش الفجيرة يحظى بشعبية لتجهيزات خيام الإفطار المؤسسية والمجتمعية. تأجير خيام رمضان في الفجيرة يخدم أيضاً المناطق السكنية المتنامية قرب المدينة حيث تسعى الأسر لتجهيزات مجلس خاصة في حدائق منازلها. جبال الحجر غرباً وخليج عُمان شرقاً يخلقان أنماط رياح ورطوبة خاصة — هياكلنا مهندسة لهذه الظروف. تصاريح بلدية الفجيرة للمنشآت المؤقتة جزء من خدمتنا الروتينية.',
+            whyUs: 'الجغرافيا الساحلية الشرقية في الفجيرة تخلق متطلبات هيكلية فريدة. لدينا 30 عاماً من النشر في الفجيرة ونفهم هذه الظروف جيداً. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة ضمن الممارسة التشغيلية القياسية.',
             audiences: [
                 {
                     title: 'قطاع البناء وعمليات الميناء',
@@ -491,21 +503,21 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية في الفجيرة',
                 body: 'تتطلب بلدية الفجيرة والدفاع المدني تصاريح لجميع المنشآت المؤقتة. للمنطقة الحرة بالفجيرة وميناء الفجيرة عمليات موافقة السلطة الخاصة بهما. هياكلنا مهندسة للظروف الساحلية لخليج عُمان.'
             },
-            areas: ['المنطقة الحرة بالفجيرة', 'ميناء الفجيرة', 'FOIZ (منطقة صناعة النفط)', 'المنطقة الصناعية دبا', 'الفصيل', 'ميربه', 'الشهداء', 'قدفا', 'خورفكان', 'مدينة الفجيرة'],
+            areas: ['منطقة قلعة الفجيرة', 'كورنيش الفجيرة', 'مركز مدينة الفجيرة', 'المنطقة الحرة بالفجيرة', 'ميناء الفجيرة', 'FOIZ (منطقة صناعة النفط)', 'المنطقة الصناعية دبا', 'الفصيل', 'ميربه', 'الشهداء', 'قدفا', 'خورفكان'],
             faqs: [
-                { q: 'ما شركات الخيام الصناعية التي تخدم الفجيرة؟', a: 'Tent Now خدمت القطاع الصناعي والنفطي بالفجيرة لأكثر من 30 عاماً. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة وميناء الفجيرة.' },
-                { q: 'هل تخدمون منطقة صناعة النفط بالفجيرة؟', a: 'نعم. تجهيزات الخيام للنفط والغاز لدينا تحمل تقييمات NFPA 701 وDIN 4102 B1 مع طلاءات مقاومة للمواد الكيميائية وخيارات كهربائية مضادة للانفجار.' },
-                { q: 'كم تكلفة تأجير خيام التخزين في الفجيرة؟', a: 'إيجار الخيام الصناعية في الفجيرة تنافسي. الإيجار من 15 درهم للمتر المربع شهرياً.' },
-                { q: 'ما سرعة نشر خيمة تخزين في الفجيرة؟', a: 'الهياكل القياسية تعمل خلال 5-7 أيام لعمليات نشر الساحل الشرقي. يمكن تلبية المتطلبات العاجلة — تواصل معنا.' },
+                { q: 'ما شركات تأجير الخيام التي تخدم الفجيرة؟', a: 'Tent Now خدمت الفجيرة لأكثر من 30 عاماً — تأجير خيام رمضان في الفجيرة وتجهيزات المجالس وخيام الإفطار المؤسسية والتخزين الصناعي. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة وميناء الفجيرة. هياكلنا مهندسة لظروف الساحل الشرقي.' },
+                { q: 'كم تكلفة تأجير الخيام في الفجيرة؟', a: 'تأجير الخيام في الفجيرة بأسعار تنافسية. خيام رمضان والمجالس متاحة لميزانيات العائلات والشركات. الإيجار الصناعي يبدأ من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل يمكنكم تجهيز خيمة رمضان بالقرب من قلعة الفجيرة؟', a: 'نعم. المنطقة المحيطة بقلعة الفجيرة والمدينة القديمة موقع شهير للخيام الرمضانية ذات الطابع التراثي وتجهيزات المجالس. نتولى جميع تصاريح بلدية الفجيرة لهذه المواقع ضمن خدمتنا القياسية.' },
+                { q: 'ما سرعة نشر خيمة في الفجيرة؟', a: 'خيام رمضان والمجالس تُنصب عادةً في يوم إلى يومين. الهياكل الصناعية القياسية تعمل خلال 5-7 أيام لنشريات الساحل الشرقي. المتطلبات العاجلة قابلة للتلبية — تواصل معنا.' },
             ],
-            cta: 'احصل على عرض صناعي للفجيرة'
+            cta: 'احصل على عرض تأجير الخيام في الفجيرة'
         },
         'umm-al-quwain': {
-            title: 'تأجير خيام تخزين أم القيوين | خيام صناعية ومستودعات',
-            metaDescription: 'تأجير خيام تخزين في أم القيوين. المنطقة الحرة والمناطق الصناعية. أسعار تنافسية، جميع التصاريح مشمولة، نشر سريع. 30 عاماً خبرة. احصل على عرض مجاني.',
-            subtitle: 'خدمة منطقة أم القيوين الحرة وميناء أم القيوين والمناطق الصناعية',
-            intro: 'أم القيوين مركز صناعي ولوجستي ناشئ بزخم نمو كبير. المنطقة الحرة لأم القيوين تجذب شركات التصنيع والخدمات اللوجستية والتجارة. ميناء أم القيوين يتعامل مع حجوم شحن متزايدة.',
-            whyUs: 'قاعدتنا في منطقة SAIF بالشارقة تمنحنا وصولاً فعالاً لأم القيوين بتكاليف تنقل منخفضة. نتولى تصاريح بلدية أم القيوين والدفاع المدني وسلطة المنطقة الحرة ضمن خدمتنا القياسية.',
+            title: 'تأجير خيام في أم القيوين | خيام رمضان وخيام صناعية',
+            metaDescription: 'تأجير خيام في أم القيوين — خيام رمضان ومجالس وخيام مستودعات. المنطقة الحرة والمناطق الصناعية في أم القيوين. جميع التصاريح مشمولة. احصل على عرض مجاني.',
+            subtitle: 'متخصصو تأجير الخيام في أم القيوين — رمضان وخيام صناعية منذ 1994',
+            intro: 'تأجير الخيام في أم القيوين يشمل احتياجات متنوعة — من تجهيزات مجالس رمضان للمجتمعات السكنية المتلاحمة في أم القيوين إلى تأجير خيام المستودعات الصناعية للمنطقة الحرة المتنامية والمناطق الصناعية في الإمارة. تأجير الخيام في أم القيوين تنافسي بشكل خاص: انخفاض تكاليف الأراضي وسهولة إجراءات التصاريح تجعلها من أوفر وجهات تأجير الخيام في الإمارات. قطاع تأجير خيام المستودعات الصناعية في أم القيوين يشهد طلباً متنامياً — صفحتنا العربية لخيام المستودعات هنا وصلت بالفعل للمرتبة 3 على جوجل، مما يعكس تطور هذا السوق بشكل ملحوظ. المناطق الصناعية والمناطق الحرة في أم القيوين تستقطب مشغلي التصنيع واللوجستيات الباحثين عن بنية تحتية مغطاة متوافقة ومرنة دون الأسعار المرتفعة في دبي أو أبوظبي.',
+            whyUs: 'قاعدتنا في منطقة SAIF بالشارقة تمنحنا وصولاً فعالاً لأم القيوين بتكاليف تنقل منخفضة. نتولى تصاريح بلدية أم القيوين والدفاع المدني وسلطة المنطقة الحرة للخيام الرمضانية والصناعية ضمن خدمتنا القياسية.',
             audiences: [
                 {
                     title: 'قطاع البناء والمقاولات',
@@ -527,14 +539,14 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
                 title: 'تصاريح الخيام الصناعية في أم القيوين',
                 body: 'تتطلب بلدية أم القيوين والدفاع المدني تصاريح للمنشآت المؤقتة. المنطقة الحرة بأم القيوين لها عملية موافقة السلطة الخاصة بها. جميع طلبات التصاريح والتوثيق الهيكلي وشهادات السلامة تتولاها فرقتنا ضمن الخدمة القياسية.'
             },
-            areas: ['المنطقة الحرة بأم القيوين', 'ميناء أم القيوين', 'منطقة أم القيوين الصناعية', 'السلامة', 'الرملة', 'الروضة', 'الخور', 'مدينة أم القيوين', 'جزيرة السنية', 'فلج المعلا'],
+            areas: ['المنطقة الحرة بأم القيوين', 'المناطق الصناعية في أم القيوين', 'ميناء أم القيوين', 'منطقة أم القيوين الصناعية', 'السلامة', 'الرملة', 'الروضة', 'الخور', 'مدينة أم القيوين', 'جزيرة السنية', 'فلج المعلا'],
             faqs: [
-                { q: 'ما شركات خيام التخزين التي تخدم أم القيوين؟', a: 'Tent Now تخدم أم القيوين من قاعدتنا في منطقة SAIF بالشارقة — تكاليف تنقل تنافسية، وتصاريح كاملة من بلدية أم القيوين والدفاع المدني والمنطقة الحرة.' },
-                { q: 'كم تكلفة تأجير الخيام الصناعية في أم القيوين؟', a: 'إيجار الخيام الصناعية في أم القيوين تنافسي. الإيجار من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض.' },
-                { q: 'هل يمكنكم تركيب خيام تخزين في المنطقة الحرة بأم القيوين؟', a: 'نعم. نتولى موافقات سلطة المنطقة الحرة بأم القيوين ضمن خدمتنا القياسية.' },
-                { q: 'ما سرعة نشر خيمة تخزين في أم القيوين؟', a: 'الهياكل القياسية تعمل خلال 3-5 أيام من قاعدتنا في الشارقة. يمكن تلبية المتطلبات العاجلة خلال 72 ساعة.' },
+                { q: 'ما شركات تأجير الخيام التي تخدم أم القيوين؟', a: 'Tent Now تخدم أم القيوين من قاعدتنا في منطقة SAIF بالشارقة — تكاليف تنقل تنافسية، وتصاريح كاملة من بلدية أم القيوين والدفاع المدني والمنطقة الحرة. نغطي خيام رمضان والمجالس وتأجير خيام المستودعات الصناعية.' },
+                { q: 'كم تكلفة تأجير الخيام في أم القيوين؟', a: 'تأجير الخيام في أم القيوين من الأوفر في الإمارات. خيام رمضان والمجالس بأسعار تنافسية. الإيجار الصناعي يبدأ من 15 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض مخصص.' },
+                { q: 'هل يمكنكم تجهيز خيمة رمضان أو خيمة مستودع في أم القيوين؟', a: 'نعم. نوفر تأجير خيام رمضان وتأجير خيام المستودعات في أم القيوين على حدٍّ سواء. خدمة خيام مستودعات المنطقة الحرة لدينا في طلب متزايد — جميع التصاريح وموافقات السلطات مشمولة بالكامل.' },
+                { q: 'ما سرعة نشر خيمة في أم القيوين؟', a: 'خيام رمضان والمجالس تُنصب في يوم إلى يومين. الهياكل الصناعية القياسية تعمل خلال 3-5 أيام من قاعدتنا في الشارقة. يمكن تلبية المتطلبات العاجلة خلال 72 ساعة.' },
             ],
-            cta: 'احصل على عرض صناعي لأم القيوين'
+            cta: 'احصل على عرض تأجير الخيام في أم القيوين'
         }
     }
 };
@@ -563,21 +575,22 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get Your Custom Quote'
             },
             'majlis-tent-rental': {
-                title: 'Private Majlis Tent Rental in Dubai',
+                title: 'Majlis Tent Rental in Dubai | Traditional Ramadan Majlis Setup',
                 subtitle: 'Your home. Your guests. Your traditions—without the hotel middleman.',
-                intro: 'A Majlis isn\'t just seating—it\'s where Ramadan actually happens. The late-night conversations, the family gatherings, the moments that matter. We build private Majlis spaces that feel permanent, not like you rented something.',
-                mainBody: 'Most "Majlis rentals" in Dubai are wedding tent companies who swap the white draping for some cushions. That\'s not what we do. We\'ve spent 30 years understanding the difference between a generic tent and an authentic Majlis. The low-seating configurations. The fabric layering that actually insulates. The lighting that sets a mood without being theatrical. Whether you\'re working with a tight courtyard in Jumeirah or a sprawling garden in Emirates Hills, we design around your space—not the other way around. And yes, we handle the permits, because your home still needs Civil Defense approval for a temporary structure.',
+                intro: 'Majlis tent rental Dubai is one of the most searched Ramadan services in the city — and for good reason. A Majlis isn\'t just seating; it\'s where Ramadan actually happens. The late-night conversations, the family gatherings, the moments that matter. We build majlis tent rental Dubai setups that feel permanent, not like you rented something. From Jumeirah villa courtyards to DIFC corporate majlis spaces and Old Dubai\'s Al Fahidi historical district, we know every type of Dubai location.',
+                mainBody: 'Most "Majlis rentals" in Dubai are wedding tent companies who swap the white draping for some cushions. That\'s not what we do. We\'ve spent 30 years understanding the difference between a generic tent and an authentic Majlis in Dubai. The low-seating configurations. The fabric layering that actually insulates. The lighting that sets a mood without being theatrical. Jumeirah villas with tight courtyards, sprawling gardens in Emirates Hills, rooftop terraces in Business Bay, and corporate majlis tent Dubai setups in DIFC offices — we design around your space, not the other way around. For traditional majlis tent rental Dubai clients, we source authentic Sadu patterns and low-seating furniture that reflects genuine Emirati heritage. IACAD permits, Dubai Municipality Article 13 approvals, and Civil Defence certifications — all handled before we start.',
                 features: [
-                    { title: 'Authentic Interiors', body: 'Custom floor majlis, traditional fabric selections, proper Sadu patterns—details that matter to people who know the difference.' },
-                    { title: 'Privacy by Design', body: 'Separate entrances, sight-line planning, acoustic layering. Your family gathering stays private.' },
-                    { title: 'Flexible Sizing', body: 'From intimate 20-person setups to 100+ guest configurations. We scale to your actual guest list, not a package tier.' }
+                    { title: 'Authentic Majlis Interiors', body: 'Custom floor majlis, traditional Sadu fabric selections, proper heritage furnishings—details that matter to people who know the difference between a genuine majlis and a decorated tent.' },
+                    { title: 'Privacy by Design', body: 'Separate entrances, sight-line planning, acoustic layering. Your family gathering or corporate majlis stays private.' },
+                    { title: 'All Dubai Locations', body: 'Jumeirah villas, DIFC terraces, Business Bay offices, Old Dubai Al Fahidi district, Palm Jumeirah estates — we\'ve installed majlis tent setups across every corner of Dubai.' }
                 ],
                 faqs: [
-                    { q: 'How much does Majlis tent rental cost in Dubai?', a: 'Majlis tent rental in Dubai is typically 15-25% below comparable hotel setups. Pricing depends on size, duration, and specifications—from intimate 20-person setups to 100+ guest configurations. Contact us for a custom quote tailored to your space and guest list.' },
-                    { q: 'Does Majlis tent rental in Dubai include permits?', a: 'Yes. All Dubai Municipality, Civil Defense, and IACAD permits are fully included. We have navigated this process hundreds of times—zero surprises on installation day, and no risk of the AED 500,000 fine for unapproved structures.' },
-                    { q: 'How quickly can you install a Majlis tent in Dubai?', a: 'Standard Majlis setups take one day. Larger projects over 500 sqm may take two days. For urgent Ramadan 2026 requests, we offer 48-72 hour emergency deployment.' },
-                    { q: 'What Dubai areas do you serve for Majlis tent rental?', a: 'We cover all Dubai areas: Jumeirah, Dubai Marina, DIFC, Business Bay, Palm Jumeirah, Emirates Hills, Al Barsha, Downtown Dubai, Jebel Ali, Al Quoz, and more.' },
-                    { q: 'What is the difference between a Majlis tent and an Iftar tent?', a: 'A Majlis tent is designed for intimate traditional gatherings with low floor seating, heritage fabrics, and private ambiance. An Iftar tent is optimized for larger groups with efficient buffet flow and corporate branding. Both can be customized for your exact needs.' },
+                    { q: 'How much does majlis tent rental in Dubai cost?', a: 'Majlis tent rental in Dubai is typically 15-25% below comparable hotel setups. Pricing depends on size, duration, and specifications — from intimate 20-person family setups to 100+ guest corporate majlis configurations. Contact Tent Now for a custom quote tailored to your space.' },
+                    { q: 'How much is traditional Arabic majlis setup in Dubai?', a: 'Traditional Arabic majlis setup in Dubai varies by size and specifications. We provide authentic Sadu patterns, low-floor seating, heritage fabrics, and proper mood lighting. Pricing is significantly below hotel majlis packages. Contact us for a custom quote.' },
+                    { q: 'Does majlis tent rental in Dubai include permits?', a: 'Yes. All IACAD, Dubai Municipality (Article 13), and Civil Defence permits are fully included. We have managed this process hundreds of times in Dubai — zero surprises on installation day, no risk of the AED 500,000 fine for unapproved structures.' },
+                    { q: 'Can you set up a corporate majlis tent in Dubai DIFC?', a: 'Yes. Corporate majlis tent Dubai setups in DIFC, Business Bay, Downtown Dubai, and across the emirate are a core service. We handle all IACAD corporate event permits and Civil Defence approvals.' },
+                    { q: 'How quickly can you install a majlis tent in Dubai?', a: 'Standard Majlis setups take one day. Larger projects over 500 sqm may take two days. For urgent Ramadan 2026 requests, we offer 48-72 hour emergency deployment in all Dubai areas.' },
+                    { q: 'What Dubai areas do you serve for majlis tent rental?', a: 'We cover all Dubai areas for majlis tent rental: Jumeirah, DIFC, Business Bay, Dubai Marina, Palm Jumeirah, Emirates Hills, Al Barsha, Downtown Dubai, Old Dubai / Al Fahidi, Dubai Creek, and all other residential and commercial areas.' },
                 ],
                 cta: 'Design Your Majlis'
             },
@@ -1109,16 +1122,22 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
         },
         'fujairah': {
             'ramadan-tent-rental': {
-                title: 'Professional Ramadan Tent Rental in Fujairah',
-                subtitle: 'Rugged and Reliable Setups for the East Coast',
-                intro: "Fujairah's unique geography requires specialized tent expertise. Tent Now delivers heavy-duty structures that perform under any conditions.",
-                mainBody: 'From the city center to Dibba and Al Shohadaa, we provide Fujairah with Civil Defense compliant Ramadan tents. Our structures are built to handle the humid coastal air and the strong mountain winds of the East Coast, ensuring safety and comfort throughout the Holy Month.',
+                title: 'Ramadan Tent Rental in Fujairah 2026',
+                subtitle: 'East Coast Expertise — Engineered for Fujairah\'s Unique Conditions',
+                intro: 'Ramadan tent rental in Fujairah demands more than a standard setup. Tent Now has been providing Ramadan tent rental in Fujairah for 30 years, understanding the specific demands of east coast humidity, mountain winds, and Fujairah Municipality permit requirements. From the city centre near Fujairah Fort to Dibba, Al Shohadaa, and Khor Fakkan, we serve the full length of Fujairah\'s coastline with Ramadan iftar tent Fujairah setups that are engineered to perform all month.',
+                mainBody: 'Ramadan tent rental in Fujairah is different from the western UAE — the environment is more demanding. Higher humidity from the Gulf of Oman, stronger and less predictable winds from the Hajar Mountain range, and the specific permit requirements of Fujairah Municipality all require a supplier who knows this market. We do. Our Ramadan decoration tent Fujairah setups use 850 gsm UV-stabilised PVC fabric, marine-grade structural fittings, and climate engineering that accounts for the coastal humidity differential. Tent setup near Fujairah Fort and the Old Town area requires specific site assessment — we handle this as part of our standard service. All Fujairah Municipality approvals and Civil Defence certifications are included.',
                 features: [
-                    { title: 'Engineered Strength', body: "Structures designed for Fujairah's unique environmental conditions." },
-                    { title: 'Local Presence', body: 'Mobilization teams ready for deployment across the entire Emirate.' },
-                    { title: 'Full Permits', body: 'We handle all Fujairah Municipality and Civil Defense paperwork.' }
+                    { title: 'East Coast Engineering', body: 'Structures specifically engineered for Fujairah\'s coastal humidity, mountain winds, and UV exposure — not inland UAE configurations.' },
+                    { title: 'Full Fujairah Coverage', body: 'Fujairah city, Dibba, Khor Fakkan, Al Shohadaa — mobilization teams covering the entire east coast emirate.' },
+                    { title: 'Full Permits Included', body: 'Fujairah Municipality approval and Civil Defence certification handled as part of the standard service.' }
                 ],
-                cta: 'Get Fujairah Quote'
+                faqs: [
+                    { q: 'How much does Ramadan tent rental in Fujairah cost?', a: 'Ramadan tent rental in Fujairah is competitively priced, typically below equivalent Dubai setups. Pricing depends on size, duration, and specifications. Contact Tent Now for a custom quote based on your Fujairah location.' },
+                    { q: 'Can you set up a Ramadan iftar tent near Fujairah Fort?', a: 'Yes. The area near Fujairah Fort and the city centre is a popular location for heritage-themed Ramadan iftar tent setups. We handle all Fujairah Municipality permits for these locations.' },
+                    { q: 'What areas in Fujairah do you cover for Ramadan tent rental?', a: 'We cover the full east coast emirate: Fujairah city centre, Fujairah Fort area, Dibba, Khor Fakkan, Al Shohadaa, Al Faseel, Qidfa, Merbeih, and all residential and commercial areas.' },
+                    { q: 'How quickly can you set up a Ramadan decoration tent in Fujairah?', a: 'Standard Ramadan tent setups in Fujairah take 1–2 days. For urgent requests we can mobilize within 48–72 hours. Contact us to confirm availability for Ramadan 2026.' },
+                ],
+                cta: 'Get Your Fujairah Ramadan Quote'
             },
             'majlis-tent-rental': {
                 title: 'Authentic Majlis Tent Rental in Fujairah',
@@ -1332,21 +1351,22 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'احصل على عرض أسعار مخصص'
             },
             'majlis-tent-rental': {
-                title: 'تأجير خيمة مجلس خاص في دبي',
-                subtitle: 'منزلك. ضيوفك. تقاليدك—بدون وسيط الفندق.',
-                intro: 'المجلس ليس مجرد جلسات—إنه حيث يحدث رمضان فعلاً. السهرات المتأخرة، التجموات العائلية، اللحظات المهمة. نحن نبني مساحات مجلس خاصة تبدو دائمة، لا كأنك استأجرت شيئاً.',
-                mainBody: 'معظم "تأجيرات المجالس" في دبي هي شركات خيام أعراس تستبدل الستائر البيضاء ببعض الوسائد. هذا ليس ما نفعله. قضينا 30 عاماً في فهم الفرق بين خيمة عادية ومجلس أصيل. تجهيزات الجلوس المنخفض. طبقات القماش التي تعزل فعلاً. الإضاءة التي تخلق أجواء دون مسرحية. سواء كنت تعمل مع فناء ضيق في جميرا أو حديقة واسعة في تلال الإمارات، نصمم حول مساحتك—لا العكس.',
+                title: 'تأجير خيمة مجلس في دبي | تجهيز مجلس رمضان التقليدي',
+                subtitle: 'منزلك. ضيوفك. تقاليدك — بدون وسيط الفندق.',
+                intro: 'تأجير خيمة مجلس في دبي من أكثر خدمات رمضان طلباً في المدينة. المجلس ليس مجرد جلسات — إنه حيث يحدث رمضان فعلاً. السهرات المتأخرة، التجمعات العائلية، اللحظات المهمة. نحن نبني تجهيزات تأجير خيمة المجلس في دبي لتبدو دائمة، لا كأنك استأجرت شيئاً. من فناءات فلل جميرا إلى مساحات المجالس المؤسسية في DIFC وحي الفهيدي التاريخي في دبي القديمة — نعرف كل نوع من مواقع دبي.',
+                mainBody: 'معظم "تأجيرات المجالس" في دبي هي شركات خيام أعراس تستبدل الستائر البيضاء ببعض الوسائد. هذا ليس ما نفعله. قضينا 30 عاماً في فهم الفرق بين خيمة عادية ومجلس أصيل في دبي. تجهيزات الجلوس المنخفض. طبقات القماش التي تعزل فعلاً. الإضاءة التي تخلق أجواء دون مسرحية. فلل جميرا بفناءاتها الضيقة، والحدائق الواسعة في تلال الإمارات، وتراسات الأسطح في بزنس باي، وتجهيزات مجلس الشركات في مكاتب DIFC — نصمم حول مساحتك لا العكس. لعملاء تأجير المجالس التقليدية في دبي، نحرص على تأمين أنماط سدو أصيلة وأثاث جلوس منخفض يعكس التراث الإماراتي الحقيقي. تصاريح IACAD وموافقات المادة 13 من بلدية دبي وشهادات الدفاع المدني — كلها تُنجز قبل أن نبدأ.',
                 features: [
-                    { title: 'تصاميم أصيلة', body: 'مجالس أرضية مخصصة، اختيارات أقمشة تقليدية، أنماط سدو أصيلة—تفاصيل تهم من يعرف الفرق.' },
-                    { title: 'خصوصية بالتصميم', body: 'مداخل منفصلة، تخطيط خطوط الرؤية، طبقات صوتية. تجمعك العائلي يبقى خاصاً.' },
-                    { title: 'أحجام مرنة', body: 'من تجهيزات 20 شخص الحميمة إلى تجهيزات 100+ ضيف. نتوسع حسب قائمة ضيوفك الفعلية، لا حسب فئة باقة.' }
+                    { title: 'تصاميم مجلس أصيلة', body: 'مجالس أرضية مخصصة، أقمشة سدو تقليدية، مفروشات تراثية أصيلة — تفاصيل تهم من يعرف الفرق بين المجلس الحقيقي والخيمة المزيّنة.' },
+                    { title: 'خصوصية بالتصميم', body: 'مداخل منفصلة، تخطيط خطوط الرؤية، طبقات صوتية. تجمعك العائلي أو مجلس شركتك يبقى خاصاً.' },
+                    { title: 'جميع مناطق دبي', body: 'فلل جميرا، تراسات DIFC، مكاتب بزنس باي، حي الفهيدي في دبي القديمة، قصور نخلة جميرا — نجهّز مجالس في كل زاوية من دبي.' }
                 ],
                 faqs: [
-                    { q: 'كم تكلفة تاجير خيمة مجلس في دبي؟', a: 'أسعار تأجير خيمة المجلس في دبي أقل بـ15-25% من التجهيزات الفندقية المماثلة. التكلفة تعتمد على الحجم والمدة—من تجهيزات 20 شخص الحميمة إلى 100+ ضيف. تواصل معنا للحصول على عرض أسعار مخصص لمساحتك وعدد ضيوفك.' },
-                    { q: 'هل تاجير خيمة مجلس في دبي يشمل التصاريح؟', a: 'نعم، جميع تصاريح بلدية دبي والدفاع المدني وIACAD مشمولة في خدمتنا. تعاملنا مع هذه العملية مئات المرات—لا مفاجآت يوم التركيب، ولا خطر غرامة 500,000 درهم على هيكل غير مرخص.' },
-                    { q: 'كم من الوقت يستغرق تركيب خيمة المجلس في دبي؟', a: 'التجهيزات العادية تستغرق يوماً واحداً. المشاريع الأكبر التي تتجاوز 500 متر مربع قد تحتاج يومين. لطلبات رمضان العاجلة نقدم خدمة تركيب سريع خلال 48-72 ساعة.' },
-                    { q: 'ما المناطق التي تخدمونها لخيام المجلس في دبي؟', a: 'نخدم جميع مناطق دبي: جميرا، مرسى دبي، DIFC، بزنس باي، نخلة جميرا، تلال الإمارات، البرشاء، داون تاون دبي، جبل علي، والقوز.' },
-                    { q: 'هل تقدمون خيام فعاليات في دبي للمناسبات الخاصة؟', a: 'نعم، نقدم خيام فعاليات ومجالس رمضانية لجميع المناسبات في دبي—تجمعات عائلية، إفطارات خاصة، مجالس ليلية. كل خيمة مخصصة حسب موقعك واحتياجاتك.' },
+                    { q: 'كم تكلفة تأجير خيمة مجلس في دبي؟', a: 'تأجير خيمة المجلس في دبي أقل بـ15-25% عادةً من التجهيزات الفندقية المماثلة. التكلفة تعتمد على الحجم والمدة والمواصفات — من تجهيزات 20 شخص للعائلات إلى 100+ ضيف للمجالس المؤسسية. تواصل مع Tent Now للحصول على عرض مخصص.' },
+                    { q: 'كم يكلف تجهيز مجلس عربي تقليدي في دبي؟', a: 'تجهيز المجلس العربي التقليدي في دبي يتفاوت حسب الحجم والمواصفات. نوفر أنماط سدو أصيلة، وجلسات أرضية منخفضة، وأقمشة تراثية، وإضاءة أجواء مناسبة. الأسعار أقل بكثير من حزم مجالس الفنادق. تواصل معنا للحصول على عرض.' },
+                    { q: 'هل تأجير خيمة المجلس في دبي يشمل التصاريح؟', a: 'نعم. جميع تصاريح IACAD وبلدية دبي (المادة 13) والدفاع المدني مشمولة بالكامل. تعاملنا مع هذه العملية مئات المرات في دبي — لا مفاجآت يوم التركيب، ولا خطر غرامة 500,000 درهم على هيكل غير مرخص.' },
+                    { q: 'هل يمكنكم تجهيز مجلس مؤسسي في DIFC دبي؟', a: 'نعم. تجهيزات مجلس الشركات في DIFC وبزنس باي وداون تاون دبي وعموم الإمارة خدمة أساسية لدينا. نتولى جميع تصاريح IACAD للفعاليات المؤسسية وموافقات الدفاع المدني.' },
+                    { q: 'كم يستغرق تركيب خيمة المجلس في دبي؟', a: 'التجهيزات العادية تستغرق يوماً واحداً. المشاريع الأكبر التي تتجاوز 500 متر مربع قد تحتاج يومين. لطلبات رمضان 2026 العاجلة نقدم تركيباً سريعاً خلال 48-72 ساعة في جميع مناطق دبي.' },
+                    { q: 'ما المناطق التي تخدمونها لتأجير خيمة المجلس في دبي؟', a: 'نخدم جميع مناطق دبي لتأجير خيمة المجلس: جميرا، DIFC، بزنس باي، مرسى دبي، نخلة جميرا، تلال الإمارات، البرشاء، داون تاون دبي، دبي القديمة / الفهيدي، خور دبي، وجميع المناطق السكنية والتجارية الأخرى.' },
                 ],
                 cta: 'صمم مجلسك'
             },
@@ -1877,16 +1897,22 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
         },
         'fujairah': {
             'ramadan-tent-rental': {
-                title: 'تأجير خيام رمضان احترافية في الفجيرة',
-                subtitle: 'تجهيزات متينة وموثوقة للساحل الشرقي',
-                intro: 'تتطلب جغرافية الفجيرة الفريدة خبرة متخصصة في الخيام. تقدم Tent Now هياكل شديدة التحمل تعمل في جميع الظروف.',
-                mainBody: 'من وسط المدينة إلى دبا والشهداء، نوفر للفجيرة خيام رمضان متوافقة مع الدفاع المدني. هياكلنا مصممة للتعامل مع الهواء الساحلي الرطب ورياح الجبال القوية في الساحل الشرقي، مما يضمن السلامة والراحة طوال الشهر الفضيل.',
+                title: 'تأجير خيام رمضان في الفجيرة 2026',
+                subtitle: 'خبرة الساحل الشرقي — هياكل مهندسة لظروف الفجيرة الفريدة',
+                intro: 'يتطلب تأجير خيام رمضان في الفجيرة أكثر من تجهيز قياسي. Tent Now تقدم تأجير خيام رمضان في الفجيرة منذ 30 عاماً، مع فهم عميق للمتطلبات الخاصة برطوبة الساحل الشرقي ورياح الجبال ومتطلبات تصاريح بلدية الفجيرة. من مركز المدينة بالقرب من قلعة الفجيرة إلى دبا والشهداء وخور فكان، نخدم ساحل الفجيرة بأكمله بتجهيزات خيام إفطار رمضان في الفجيرة مهندسة للأداء طوال الشهر.',
+                mainBody: 'تأجير خيام رمضان في الفجيرة يختلف عن الإمارات الغربية — البيئة أكثر تطلباً. رطوبة أعلى من خليج عُمان، رياح أقوى وأقل قابلية للتنبؤ من جبال الحجر، ومتطلبات تصاريح خاصة ببلدية الفجيرة — كل ذلك يتطلب مورداً يعرف هذا السوق جيداً. نحن نعرفه. تجهيزات خيام زينة رمضان في الفجيرة لدينا تستخدم أقمشة PVC مقاومة للأشعة فوق البنفسجية بوزن 850 جم/م²، ووصلات هيكلية بحرية المستوى، وهندسة مناخية تأخذ بعين الاعتبار فارق الرطوبة الساحلية. تجهيز الخيام بالقرب من قلعة الفجيرة والمدينة القديمة يتطلب تقييم موقع خاص — نتولاه ضمن خدمتنا القياسية. جميع موافقات بلدية الفجيرة وشهادات الدفاع المدني مشمولة.',
                 features: [
-                    { title: 'قوة هندسية', body: 'هياكل مصممة للظروف البيئية الفريدة في الفجيرة.' },
-                    { title: 'تواجد محلي', body: 'فرق تعبئة جاهزة للنشر في جميع أنحاء الإمارة.' },
-                    { title: 'تصاريح كاملة', body: 'نتولى جميع معاملات بلدية الفجيرة والدفاع المدني.' }
+                    { title: 'هندسة الساحل الشرقي', body: 'هياكل مهندسة خصيصاً لرطوبة الفجيرة الساحلية ورياح الجبال والأشعة فوق البنفسجية — لا تكوينات الإمارات الداخلية.' },
+                    { title: 'تغطية كاملة للفجيرة', body: 'مدينة الفجيرة ودبا وخور فكان والشهداء — فرق تعبئة تغطي إمارة الساحل الشرقي بأكملها.' },
+                    { title: 'تصاريح كاملة مشمولة', body: 'موافقة بلدية الفجيرة وشهادة الدفاع المدني مُعالجتان ضمن الخدمة القياسية.' }
                 ],
-                cta: 'احصل على عرض أسعار الفجيرة'
+                faqs: [
+                    { q: 'كم تكلفة تأجير خيام رمضان في الفجيرة؟', a: 'تأجير خيام رمضان في الفجيرة بأسعار تنافسية، عادةً أقل من تجهيزات دبي المماثلة. التكلفة تعتمد على الحجم والمدة والمواصفات. تواصل مع Tent Now للحصول على عرض مخصص لموقعك في الفجيرة.' },
+                    { q: 'هل يمكنكم تجهيز خيمة إفطار رمضان بالقرب من قلعة الفجيرة؟', a: 'نعم. المنطقة المحيطة بقلعة الفجيرة ومركز المدينة موقع شهير لتجهيزات خيام إفطار رمضان ذات الطابع التراثي. نتولى جميع تصاريح بلدية الفجيرة لهذه المواقع.' },
+                    { q: 'ما المناطق في الفجيرة التي تغطونها لتأجير خيام رمضان؟', a: 'نغطي إمارة الساحل الشرقي بأكملها: مركز مدينة الفجيرة ومنطقة القلعة ودبا وخور فكان والشهداء والفصيل وقدفا وميربه وجميع المناطق السكنية والتجارية.' },
+                    { q: 'كم يستغرق تجهيز خيمة زينة رمضان في الفجيرة؟', a: 'تجهيزات خيام رمضان القياسية في الفجيرة تستغرق يوماً إلى يومين. للطلبات العاجلة يمكننا التعبئة خلال 48-72 ساعة. تواصل معنا للتأكد من التوافر لرمضان 2026.' },
+                ],
+                cta: 'احصل على عرض أسعار رمضان في الفجيرة'
             },
             'majlis-tent-rental': {
                 title: 'تأجير خيمة مجلس أصيلة في الفجيرة',

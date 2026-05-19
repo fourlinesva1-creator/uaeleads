@@ -8,6 +8,7 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { industrialContent } from '@/data/storage-tent-content';
+import PricingNote from '@/components/ui/PricingNote';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -22,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير الخيام الصناعية في الإمارات | التخزين المبرد، النفط والغاز، مخيمات العمال | تنت ناو'
-            : 'Industrial Tent Rental UAE | Cold Storage, Oil & Gas, Labour Camps | Tent Now',
+            ? 'تأجير الخيام الصناعية في الإمارات | النفط والغاز، التبريد، مخيمات العمال | تنت ناو'
+            : 'Industrial Tent Rental UAE | Oil & Gas, Manufacturing, Cold Storage | Tent Now',
         description: isAr
-            ? 'هياكل خيام صناعية متخصصة للتخزين المبرد وعمليات النفط والغاز واحتواء الخطر وإقامة العمال في الإمارات. معتمدة من الدفاع المدني. نطاق تشغيل من –20°م إلى +55°م.'
-            : 'Purpose-engineered industrial tent structures for cold storage, oil & gas operations, hazardous containment, and labour accommodation across UAE. Civil Defence approved. Operating range –20°C to +55°C.',
+            ? 'تأجير خيام صناعية في الإمارات للتخزين المبرد وعمليات النفط والغاز واحتواء الخطر وإقامة العمال. معتمدة من الدفاع المدني. خيام صناعية في الإمارات تعمل من –20°م إلى +55°م. من 25 درهم/م² شهرياً.'
+            : 'Industrial tent rental UAE from AED 25–55/sqm/month. Industrial tents UAE for oil & gas, manufacturing, cold storage, and hazardous containment. Civil Defence approved. ATEX-rated options available.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/industrial-tents`,
             languages: {
@@ -176,6 +177,7 @@ export default async function IndustrialTentsPage({ params }: Props) {
 
             {/* FAQ */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <PricingNote locale={locale} className="mb-10" />
                 <h2 className="text-3xl font-display text-white mb-12">{c.faqTitle}</h2>
                 <div className="space-y-4 max-w-3xl">
                     {c.faqs.map((faq, idx) => (

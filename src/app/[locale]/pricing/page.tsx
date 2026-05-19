@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import JsonLd from '@/components/seo/JsonLd';
 import FAQSchema from '@/components/seo/FAQSchema';
+import PricingNote from '@/components/ui/PricingNote';
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -199,12 +200,7 @@ export default function PricingPage() {
             {/* Disclaimer */}
             <section className="py-4">
                 <div className="container-luxury">
-                    <div className="bg-[#1a212e] border border-[#282e39] rounded-xl p-4 text-sm text-[#9da6b9]">
-                        <strong className="text-white">{isAr ? 'ملاحظة:' : 'Note:'}</strong>{' '}
-                        {isAr
-                            ? 'الأسعار المذكورة هي نطاقات تقريرية لعام 2026 وتتفاوت حسب الحجم والمدة ومتطلبات الموقع والإمارة. اطلب عرض سعر مخصص للتسعير الدقيق.'
-                            : 'Prices shown are estimated ranges for 2026 and vary by size, duration, site requirements, and emirate. Request a custom quote for exact pricing.'}
-                    </div>
+                    <PricingNote locale={locale} className="text-sm py-4 px-5" />
                 </div>
             </section>
 

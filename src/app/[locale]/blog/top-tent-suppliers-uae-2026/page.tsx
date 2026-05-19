@@ -5,17 +5,22 @@ import { Link } from '@/i18n/navigation';
 import BlogSchema from '@/components/blog/BlogSchema';
 import ShareButtons from '@/components/blog/ShareButtons';
 import BlogServiceCTA from '@/components/blog/BlogServiceCTA';
+import { routing } from '@/i18n/routing';
+
+export async function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026 | Tent Now'
-        : 'Top 10 Tent Rental & Supplier Companies in UAE for Ramadan 2026 | Tent Now';
+        ? 'دليل تأجير الخيام في الإمارات 2026: كيف تتعرف على المورد الاحترافي | Tent Now'
+        : 'UAE Tent Rental Guide 2026: How to Spot a Professional Supplier | Tent Now';
 
     const description = locale === 'ar'
-        ? 'دليلك لأفضل شركاء فعاليات وخيام رمضان في دبي وأبوظبي والشارقة وجميع الإمارات. قارن بين أفضل 10 موردين للخيام في الإمارات لموسم رمضان 2026.'
-        : 'Your guide to the best event and Ramadan tent partners across Dubai, Abu Dhabi, Sharjah, and all Emirates. Compare the top 10 tent suppliers in UAE for Ramadan 2026 season.';
+        ? '5 معايير أساسية يستخدمها المحترفون لاختيار موردي الخيام في دبي وأبوظبي والشارقة — تجنب الأخطاء المكلفة وابحث عن التصاريح والخبرة والدعم الميداني قبل التوقيع.'
+        : '5 criteria professionals use to vet tent suppliers in Dubai, Abu Dhabi and Sharjah — avoid costly mistakes by checking permits, 30+ yr experience, and field support before you sign.';
 
     return {
         title,

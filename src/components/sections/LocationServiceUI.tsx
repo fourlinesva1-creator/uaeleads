@@ -9,6 +9,7 @@ import { SEOContent } from '@/data/city-content';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
+import PricingNote from '@/components/ui/PricingNote';
 
 interface Props {
     city: string;
@@ -115,6 +116,7 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                             <>
                                 <FAQSchema items={content.faqs} />
                                 <div className="mt-20 pt-16 border-t border-border/30">
+                                    <PricingNote locale={locale} className="mb-10" />
                                     <h2 className="text-2xl md:text-3xl font-display text-white mb-10">
                                         {locale === 'ar' ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
                                     </h2>

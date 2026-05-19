@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { cityContent } from '@/data/city-content';
 
 const baseUrl = 'https://www.tentnow.ae';
 
@@ -49,6 +50,16 @@ const standaloneServices = [
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
     'tarpaulins',
+    'shade-structures',
+    'walkway-shades',
+    'play-area-shades',
+    'pool-shades',
+    'garden-shades',
+    'parking-shades',
+    'parking-shades-dubai',
+    'parking-shades-abu-dhabi',
+    'parking-shades-sharjah',
+    'parking-shades-ajman',
 ];
 
 const blogPosts = [
@@ -93,15 +104,17 @@ function generateSitemapXml(locale: string): string {
         <priority>0.7</priority>
     </url>`);
 
-        // Service pages for each city
+        // Service pages for each city (only where real content exists)
         slugs.forEach((slug) => {
-            urls.push(`
+            if (cityContent['en']?.[city]?.[slug]) {
+                urls.push(`
     <url>
         <loc>${baseUrl}/${locale}/locations/${city}/${slug}</loc>
         <lastmod>${lastMod}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>`);
+            }
         });
     });
 

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { cityContent } from '@/data/city-content';
 
 const baseUrl = 'https://www.tentnow.ae';
 
@@ -49,6 +50,16 @@ const standaloneServices = [
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
     'tarpaulins',
+    'shade-structures',
+    'walkway-shades',
+    'play-area-shades',
+    'pool-shades',
+    'garden-shades',
+    'parking-shades',
+    'parking-shades-dubai',
+    'parking-shades-abu-dhabi',
+    'parking-shades-sharjah',
+    'parking-shades-ajman',
 ];
 
 const blogPosts = [
@@ -89,14 +100,16 @@ export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap 
             priority: 0.7,
         });
 
-        // Add service pages for each city
+        // Add service pages for each city (only where real content exists)
         slugs.forEach((slug) => {
-            sitemapEntries.push({
-                url: `${baseUrl}/${locale}/locations/${city}/${slug}`,
-                lastModified: new Date(),
-                changeFrequency: 'weekly',
-                priority: 0.6,
-            });
+            if (cityContent['en']?.[city]?.[slug]) {
+                sitemapEntries.push({
+                    url: `${baseUrl}/${locale}/locations/${city}/${slug}`,
+                    lastModified: new Date(),
+                    changeFrequency: 'weekly',
+                    priority: 0.6,
+                });
+            }
         });
     });
 
