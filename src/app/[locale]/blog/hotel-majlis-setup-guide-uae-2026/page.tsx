@@ -241,6 +241,16 @@ export default function HotelMajlisGuide() {
                         </ol>
                     </section>
 
+                    {/* In-body service link */}
+                    <section>
+                        <p className="text-white/85 leading-relaxed">
+                            {isAr
+                                ? <>إذا كنت مديراً لفندق وتريد فهم ما يميز الإعداد الاحترافي، اطّلع على خدمات <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">تأجير مجلس الفنادق الفاخر</Link> التي نقدمها لتأسيس مجالس رمضانية تعكس معايير ضيافتك.</>
+                                : <>If you are a hotel manager looking to understand what professional setup entails, explore our <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">hotel majlis tent rental</Link> service — built specifically to match the standards of premium UAE properties.</>
+                            }
+                        </p>
+                    </section>
+
                     {/* Tent Now advantage */}
                     <section>
                         <div className="bg-[#1a212e] border border-[#282e39] rounded-2xl p-8">
@@ -274,6 +284,45 @@ export default function HotelMajlisGuide() {
                 </div>
 
                 <BlogServiceCTA variant="ramadan" />
+
+                {/* Related Articles */}
+                <div className="mt-12 pt-10 border-t border-white/10">
+                    <h3 className="text-xl font-display text-gold mb-6">
+                        {isAr ? 'مقالات ذات صلة' : 'Related Articles'}
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {[
+                            {
+                                href: '/blog/ramadan-tent-pricing-guide-uae-2026',
+                                en: 'Ramadan Tent Pricing Guide UAE 2026',
+                                ar: 'دليل أسعار خيام رمضان الإمارات 2026',
+                            },
+                            {
+                                href: '/blog/top-tent-suppliers-uae-2026',
+                                en: 'Top Tent Suppliers UAE 2026',
+                                ar: 'أفضل موردي الخيام في الإمارات 2026',
+                            },
+                            {
+                                href: '/blog/iftar-tent-rental-checklist-uae-2026',
+                                en: 'Iftar Tent Rental Checklist UAE 2026',
+                                ar: 'قائمة مراجعة تأجير خيمة الإفطار 2026',
+                            },
+                        ].map((article) => (
+                            <Link
+                                key={article.href}
+                                href={article.href}
+                                className="block p-5 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-gold/40 transition-colors group"
+                            >
+                                <p className="text-white/90 font-semibold text-sm leading-snug group-hover:text-gold transition-colors">
+                                    {isAr ? article.ar : article.en}
+                                </p>
+                                <span className="mt-3 inline-block text-xs text-gold font-bold uppercase tracking-wider">
+                                    {isAr ? 'اقرأ المزيد ←' : 'Read more →'}
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
 
                 <div className="mt-8 pt-8 border-t border-white/10 text-center">
                     <Link href="/blog" className="text-gold hover:underline text-sm font-bold">

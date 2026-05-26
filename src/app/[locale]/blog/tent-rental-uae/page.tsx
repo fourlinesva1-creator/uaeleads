@@ -510,10 +510,10 @@ export default function TentRentalUAEPage() {
                         <>
                             {/* ===== ENGLISH CONTENT ===== */}
                             <p>
-                                The UAE is home to some of the world's most spectacular temporary structures. From intimate Ramadan Majlis tents in Jumeirah villas to 5,000-capacity corporate event marquees in Abu Dhabi and industrial warehouse tents spanning thousands of square metres in Sharjah's industrial zones — tent rental in the UAE is a mature, sophisticated market.
+                                The UAE is home to some of the world&apos;s most spectacular temporary structures. From intimate Ramadan Majlis tents in Jumeirah villas to 5,000-capacity <Link href="/services/corporate-events" className="text-gold hover:underline">corporate events</Link> marquees in Abu Dhabi, temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link> spanning thousands of square metres in Sharjah&apos;s industrial zones, and <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> extensions — tent rental in the UAE is a mature, sophisticated market.
                             </p>
                             <p>
-                                At Tent Now, backed by the expertise of <strong>Mumtaz Group</strong>, we bring over <strong>30 years of combined industry knowledge</strong> across all seven Emirates. This is your complete guide to every tent type we offer, the full-service support behind each one, and how to choose the right structure for your needs.
+                                At Tent Now, backed by the expertise of <strong>Mumtaz Group</strong>, we bring over <strong>30 years of combined industry knowledge</strong> across all seven Emirates. Whether you need <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> for Ramadan or a large event structure, this is your complete guide to every tent type we offer, the full-service support behind each one, and how to choose the right structure for your needs.
                             </p>
 
                             {/* Quick Stats */}
@@ -928,6 +928,27 @@ export default function TentRentalUAEPage() {
                             </div>
                         </>
                     )}
+
+                    {/* Related Articles */}
+                    <div className="not-prose mt-16 pt-10 border-t border-border">
+                        <h2 className="text-2xl font-display text-[#D4AF37] mb-8">
+                            {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <Link href="/blog/top-tent-suppliers-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Top Tent Suppliers UAE 2026</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/how-to-choose-tent-rental-company-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">How to Choose a Tent Rental Company in UAE</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/ramadan-tent-pricing-guide-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Ramadan Tent Pricing Guide UAE 2026</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                        </div>
+                    </div>
 
                     <BlogServiceCTA variant="general" />
 

@@ -269,6 +269,128 @@ export default async function ShadeStructuresPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* ── Parking Shade Solutions by City ───────────────────────────────── */}
+            <section className="py-24 bg-[#0d1219] border-t border-[#1a212e]">
+                <div className="container-luxury">
+                    <div className="max-w-2xl mb-12">
+                        <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
+                            {isRtl ? 'مظلات مواقف السيارات حسب المدينة' : 'Parking Shade Solutions by City'}
+                        </h2>
+                        <p className="text-[#9da6b9]">
+                            {isRtl
+                                ? 'نقدم خدمات مظلات مواقف السيارات المتخصصة بالإضافة إلى تصاريح البلدية لكل إمارة عبر الإمارات العربية المتحدة.'
+                                : 'We deliver specialist parking shade services with emirate-specific municipality permits across the UAE.'}
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            {
+                                href: '/services/parking-shades-dubai',
+                                labelEn: 'Parking Shades Dubai',
+                                labelAr: 'مظلات مواقف دبي',
+                                descEn: 'DM-approved cantilever, tensile, and polycarbonate shades for Dubai villas and commercial car parks.',
+                                descAr: 'مظلات معتمدة من بلدية دبي للفلل ومواقف السيارات التجارية.',
+                            },
+                            {
+                                href: '/services/parking-shades-abu-dhabi',
+                                labelEn: 'Parking Shades Abu Dhabi',
+                                labelAr: 'مظلات مواقف أبوظبي',
+                                descEn: 'ADM-permit shade structures for Abu Dhabi villas, government buildings, and island developments.',
+                                descAr: 'هياكل مظلات بتصاريح بلدية أبوظبي للفلل والمباني الحكومية وتطوير الجزر.',
+                            },
+                            {
+                                href: '/services/parking-shades-sharjah',
+                                labelEn: 'Parking Shades Sharjah',
+                                labelAr: 'مظلات مواقف الشارقة',
+                                descEn: 'Most competitively priced UAE parking shades — mosque car parks, schools, industrial areas, and villas.',
+                                descAr: 'أكثر مظلات المواقف تنافسية في الإمارات — مساجد ومدارس ومناطق صناعية وفلل.',
+                            },
+                            {
+                                href: '/services/parking-shades-ajman',
+                                labelEn: 'Parking Shades Ajman',
+                                labelAr: 'مظلات مواقف عجمان',
+                                descEn: 'Affordable Ajman Municipality approved shade structures for villas, industrial estates, and commercial buildings.',
+                                descAr: 'مظلات بأسعار ميسورة معتمدة من بلدية عجمان للفلل والمناطق الصناعية والمباني التجارية.',
+                            },
+                        ].map((city) => (
+                            <Link
+                                key={city.href}
+                                href={city.href}
+                                className="group p-7 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-gold/40 transition-all flex flex-col"
+                            >
+                                <h3 className="text-white text-base font-bold mb-3 group-hover:text-gold transition-colors">
+                                    {isRtl ? city.labelAr : city.labelEn}
+                                </h3>
+                                <p className="text-[#9da6b9] text-sm leading-relaxed flex-1">
+                                    {isRtl ? city.descAr : city.descEn}
+                                </p>
+                                <div className="mt-5 flex items-center gap-2 text-gold text-sm font-bold">
+                                    {isRtl ? 'اعرف المزيد' : 'Learn More'}
+                                    <ArrowRight size={14} className={isRtl ? 'rotate-180' : ''} />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ── From Our Blog ──────────────────────────────────────────────────── */}
+            <section className="py-24 container-luxury border-t border-[#1a212e]">
+                <div className="max-w-2xl mb-12">
+                    <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
+                        {isRtl ? 'من مدونتنا' : 'From Our Blog'}
+                    </h2>
+                    <p className="text-[#9da6b9]">
+                        {isRtl
+                            ? 'أدلة وموارد مفيدة لمساعدتك في اختيار حلول التظليل المناسبة في الإمارات.'
+                            : 'Guides and resources to help you choose the right shading solution in the UAE.'}
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {[
+                        {
+                            href: '/blog/tent-rental-uae',
+                            titleEn: 'Tent Rental UAE: Complete Guide',
+                            titleAr: 'استئجار خيام الإمارات: الدليل الشامل',
+                            descEn: 'Everything you need to know about tent rental across the UAE — types, costs, permits, and top suppliers.',
+                            descAr: 'كل ما تحتاج معرفته عن استئجار الخيام في الإمارات — الأنواع والتكاليف والتصاريح وأبرز الموردين.',
+                        },
+                        {
+                            href: '/blog/how-to-choose-tent-rental-company-uae',
+                            titleEn: 'How to Choose a Tent Rental Company in UAE',
+                            titleAr: 'كيف تختار شركة استئجار خيام في الإمارات',
+                            descEn: 'Key criteria for selecting a reliable tent and shade structure supplier — from permits to after-sales support.',
+                            descAr: 'المعايير الرئيسية لاختيار مورد موثوق للخيام وهياكل الظل — من التصاريح إلى دعم ما بعد البيع.',
+                        },
+                        {
+                            href: '/blog/top-tent-suppliers-uae-2026',
+                            titleEn: 'Top Tent Suppliers UAE 2026',
+                            titleAr: 'أبرز موردي الخيام في الإمارات 2026',
+                            descEn: 'A ranked review of the leading tent and shade structure suppliers operating across the UAE in 2026.',
+                            descAr: 'مراجعة مرتبة لأبرز موردي الخيام وهياكل الظل العاملين عبر الإمارات في 2026.',
+                        },
+                    ].map((post) => (
+                        <Link
+                            key={post.href}
+                            href={post.href}
+                            className="group p-8 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-gold/40 transition-all flex flex-col"
+                        >
+                            <div className="w-8 h-0.5 bg-gold mb-5" />
+                            <h3 className="text-white text-base font-bold mb-3 group-hover:text-gold transition-colors leading-snug">
+                                {isRtl ? post.titleAr : post.titleEn}
+                            </h3>
+                            <p className="text-[#9da6b9] text-sm leading-relaxed flex-1">
+                                {isRtl ? post.descAr : post.descEn}
+                            </p>
+                            <div className="mt-6 flex items-center gap-2 text-gold text-sm font-bold">
+                                {isRtl ? 'اقرأ المقال' : 'Read Article'}
+                                <ArrowRight size={14} className={isRtl ? 'rotate-180' : ''} />
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+            </section>
+
             {/* ── FAQ ────────────────────────────────────────────────────────────── */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
                 <PricingNote locale={locale} className="mb-10" />

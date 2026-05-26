@@ -135,7 +135,7 @@ export default function ArticlePage() {
 
                             <h2>1. الحدث الأبرز: حي رمضان في مدينة إكسبو</h2>
                             <p>
-                                هل تذكرون إكسبو 2020؟ بالطبع تذكرونه. حسناً، إنه يعود للحياة مرة أخرى من خلال <strong>"حي رمضان".</strong>
+                                هل تذكرون إكسبو 2020؟ بالطبع تذكرونه. حسناً، إنه يعود للحياة مرة أخرى من خلال <strong>"حي رمضان".</strong> وإذا كنتم تبحثون عن تنظيم فعالية خاصة، فاطّلعوا على خدمات <Link href="/services/corporate-events" className="text-gold hover:underline font-semibold">خيام الفعاليات المؤسسية</Link> أو <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">مجالس الفنادق الفاخرة</Link> لدينا.
                             </p>
                             <ul>
                                 <li><strong>الأجواء:</strong> تخيلوا "سوبر ماركت الجدة" (نعم، هذا شيء حقيقي هناك للأطفال)، ورواية القصص التقليدية، وأجواء تشبه قرية بدوية عصرية. إنه مكان ضخم، في الهواء الطلق، ومليء بالحنين.</li>
@@ -250,7 +250,9 @@ export default function ArticlePage() {
 
                             <h2>1. The Heavy Hitter: Hai Ramadan at Expo City</h2>
                             <p>
-                                Remember Expo 2020? Of course you do. Well, it comes alive again for <strong>"Hai Ramadan."</strong>
+                                Remember Expo 2020? Of course you do. Well, it comes alive again for <strong>"Hai Ramadan."</strong> And if you are looking to host your own event, explore our{' '}
+                                <Link href="/services/corporate-events" className="text-gold hover:underline font-semibold">corporate event tents</Link> or{' '}
+                                <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">hotel majlis tents</Link> built for the UAE&apos;s most demanding events.
                             </p>
                             <ul>
                                 <li><strong>The Vibe:</strong> Think "Grandmother’s Supermarket" (literally, that’s a thing there for kids), traditional storytelling, and a vibe that feels like a modern-day Bedouin village. It’s huge, it’s outdoors, and it’s nostalgic.</li>
@@ -350,6 +352,45 @@ export default function ArticlePage() {
                             </p>
                         </>
                     )}
+
+                    {/* Related Articles */}
+                    <div className="mt-12 pt-10 border-t border-white/10 not-prose">
+                        <h3 className="text-xl font-display text-gold mb-6">
+                            {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            {[
+                                {
+                                    href: '/blog/ramadan-calendar-uae-2026',
+                                    en: 'Ramadan Calendar UAE 2026',
+                                    ar: 'تقويم رمضان الإمارات 2026',
+                                },
+                                {
+                                    href: '/blog/corporate-event-tents-dubai-2026',
+                                    en: 'Corporate Event Tents Dubai 2026',
+                                    ar: 'خيام الفعاليات المؤسسية دبي 2026',
+                                },
+                                {
+                                    href: '/blog/how-to-choose-tent-rental-company-uae',
+                                    en: 'How to Choose a Tent Rental Company in UAE',
+                                    ar: 'كيف تختار شركة تأجير خيام في الإمارات',
+                                },
+                            ].map((article) => (
+                                <Link
+                                    key={article.href}
+                                    href={article.href}
+                                    className="block p-5 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-gold/40 transition-colors group"
+                                >
+                                    <p className="text-white/90 font-semibold text-sm leading-snug group-hover:text-gold transition-colors">
+                                        {locale === 'ar' ? article.ar : article.en}
+                                    </p>
+                                    <span className="mt-3 inline-block text-xs text-gold font-bold uppercase tracking-wider">
+                                        {locale === 'ar' ? 'اقرأ المزيد ←' : 'Read more →'}
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
 
                     <BlogServiceCTA variant="ramadan" />
 

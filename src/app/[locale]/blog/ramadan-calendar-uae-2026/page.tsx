@@ -130,7 +130,7 @@ export default function RamadanCalendarPage() {
                                 من المتوقع أن يبدأ شهر رمضان المبارك 2026 في دولة الإمارات العربية المتحدة يوم <strong>الخميس 19 فبراير 2026</strong>، وينتهي حوالي يوم الخميس 19 مارس، مع بداية عيد الفطر المبارك يوم الجمعة 20 مارس 2026.
                             </p>
                             <p>
-                                يجمع هذا الشهر الكريم الملايين في دبي وأبوظبي والشارقة والإمارات الشمالية في التأمل الروحي والصيام والتجمعات المجتمعية. مع ما يقرب من 13 ساعة صيام يومياً، يصبح التخطيط السليم لمواقيت الإفطار والسحور ضرورياً لتجربة رمضانية مباركة.
+                                يجمع هذا الشهر الكريم الملايين في دبي وأبوظبي والشارقة والإمارات الشمالية في التأمل الروحي والصيام والتجمعات المجتمعية. سواء كنت تبحث عن <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">تأجير خيمة إفطار</Link> لفعالية شركتك، أو <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">خيام مجالس الفنادق</Link>، أو حتى <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">إعداد مجلس منزلي</Link> عائلي، فإن التخطيط المبكر هو مفتاح تجربة رمضانية مباركة.
                             </p>
 
                             <hr className="border-border my-12" />
@@ -331,7 +331,10 @@ export default function RamadanCalendarPage() {
                                 Ramadan 2026 in the United Arab Emirates is expected to commence on <strong>Thursday, February 19, 2026</strong>, and conclude around Thursday, March 19, with Eid al-Fitr celebrations beginning on Friday, March 20, 2026.
                             </p>
                             <p>
-                                This blessed month brings together millions across Dubai, Abu Dhabi, Sharjah, and the Northern Emirates in spiritual reflection, fasting, and community gatherings. With approximately 13 hours of daily fasting, proper planning of Iftar and Suhoor timings becomes essential for a blessed Ramadan experience.
+                                This blessed month brings together millions across Dubai, Abu Dhabi, Sharjah, and the Northern Emirates in spiritual reflection, fasting, and community gatherings. Whether you are planning{' '}
+                                <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">iftar tent rental</Link> for a corporate event,{' '}
+                                <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">hotel majlis tents</Link> for your property, or a{' '}
+                                <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">home majlis setup</Link> for family gatherings, early planning is essential for a blessed Ramadan experience.
                             </p>
 
                             <hr className="border-border my-12" />
@@ -527,6 +530,45 @@ export default function RamadanCalendarPage() {
                             </p>
                         </>
                     )}
+
+                    {/* Related Articles */}
+                    <div className="mt-12 pt-10 border-t border-white/10 not-prose">
+                        <h3 className="text-xl font-display text-gold mb-6">
+                            {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            {[
+                                {
+                                    href: '/blog/upcoming-ramadan-events-dubai-2026',
+                                    en: 'Upcoming Ramadan Events Dubai 2026',
+                                    ar: 'فعاليات رمضان القادمة في دبي 2026',
+                                },
+                                {
+                                    href: '/blog/iftar-tent-rental-checklist-uae-2026',
+                                    en: 'Iftar Tent Rental Checklist UAE 2026',
+                                    ar: 'قائمة مراجعة تأجير خيمة الإفطار 2026',
+                                },
+                                {
+                                    href: '/blog/ramadan-tent-pricing-guide-uae-2026',
+                                    en: 'Ramadan Tent Pricing Guide UAE 2026',
+                                    ar: 'دليل أسعار خيام رمضان الإمارات 2026',
+                                },
+                            ].map((article) => (
+                                <Link
+                                    key={article.href}
+                                    href={article.href}
+                                    className="block p-5 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-gold/40 transition-colors group"
+                                >
+                                    <p className="text-white/90 font-semibold text-sm leading-snug group-hover:text-gold transition-colors">
+                                        {locale === 'ar' ? article.ar : article.en}
+                                    </p>
+                                    <span className="mt-3 inline-block text-xs text-gold font-bold uppercase tracking-wider">
+                                        {locale === 'ar' ? 'اقرأ المزيد ←' : 'Read more →'}
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
 
                     <BlogServiceCTA variant="ramadan" />
 

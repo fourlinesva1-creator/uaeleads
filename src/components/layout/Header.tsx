@@ -8,12 +8,20 @@ import LanguageSwitcher from '../ui/LanguageSwitcher';
 import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react';
 
 type SubLink = { key: string; href: string };
-type ServiceLink = { key: string; href: string; children?: SubLink[] };
+type ServiceLink = { key: string; href: string; children?: SubLink[]; subsNamespace?: string };
 
 const storageSubLinks: SubLink[] = [
   { key: 'clearSpan', href: '/services/storage-tents/clear-span-tents' },
   { key: 'warehouse', href: '/services/storage-tents/warehouse-tents' },
   { key: 'industrial', href: '/services/storage-tents/industrial-tents' },
+];
+
+const shadeSubLinks: SubLink[] = [
+  { key: 'parkingShades', href: '/services/parking-shades' },
+  { key: 'poolShades', href: '/services/pool-shades' },
+  { key: 'walkwayShades', href: '/services/walkway-shades' },
+  { key: 'gardenShades', href: '/services/garden-shades' },
+  { key: 'playAreaShades', href: '/services/play-area-shades' },
 ];
 
 const serviceLinks: ServiceLink[] = [
@@ -24,8 +32,9 @@ const serviceLinks: ServiceLink[] = [
   { key: 'sadu', href: '/services/sadu-tent-rental' },
   { key: 'furniture', href: '/services/furniture-rental' },
   { key: 'decor', href: '/services/decor-lighting' },
-  { key: 'storage', href: '/services/storage-tents', children: storageSubLinks },
+  { key: 'storage', href: '/services/storage-tents', children: storageSubLinks, subsNamespace: 'storageSubs' },
   { key: 'tarpaulins', href: '/services/tarpaulins' },
+  { key: 'shadeStructures', href: '/services/shade-structures', children: shadeSubLinks, subsNamespace: 'shadeSubs' },
 ];
 
 const navigation = [
@@ -132,7 +141,7 @@ export default function Header() {
                                     className="flex px-4 py-3 rounded-xl hover:bg-[#D4AF37]/5 transition-colors group/sub"
                                   >
                                     <span className="text-white text-sm font-bold group-hover/sub:text-[#D4AF37] transition-colors">
-                                      {ts(`storageSubs.${sub.key}`)}
+                                      {ts(`${child.subsNamespace ?? 'storageSubs'}.${sub.key}`)}
                                     </span>
                                   </Link>
                                 ))}
@@ -227,7 +236,7 @@ export default function Header() {
                               className="flex px-12 py-2 hover:bg-gold/5 rounded-xl"
                             >
                               <span className="text-text-muted text-xs font-medium">
-                                {ts(`storageSubs.${sub.key}`)}
+                                {ts(`${child.subsNamespace ?? 'storageSubs'}.${sub.key}`)}
                               </span>
                             </Link>
                           ))}

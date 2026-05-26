@@ -73,7 +73,8 @@ function ServicesContent() {
         { id: 'suhoor', slug: 'suhoor-tent-rental', image: '/images/tent-now/home-majlis.jpg' },
         { id: 'sadu', slug: 'sadu-tent-rental', image: '/images/tent-now/sadu-tents.jpg' },
         { id: 'furniture', slug: 'furniture-rental', image: '/images/tent-now/furniture.jpg' },
-        { id: 'decor', slug: 'decor-lighting', image: '/images/tent-now/lighting-and-decor.jpg' }
+        { id: 'decor', slug: 'decor-lighting', image: '/images/tent-now/lighting-and-decor.jpg' },
+        { id: 'shadeStructures', slug: 'shade-structures', image: '/images/tent-now/home-majlis.jpg' }
     ];
 
     return (

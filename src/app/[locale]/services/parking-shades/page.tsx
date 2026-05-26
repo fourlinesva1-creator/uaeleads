@@ -193,6 +193,71 @@ export default async function ParkingShadesPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* ── Available Across UAE ──────────────────────────────────────────── */}
+            <section className="py-24 bg-[#0d1219] border-t border-[#1a212e]">
+                <div className="container-luxury">
+                    <div className="max-w-2xl mb-12">
+                        <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
+                            {isRtl ? 'متوفر في جميع أنحاء الإمارات' : 'Available Across UAE'}
+                        </h2>
+                        <p className="text-[#9da6b9]">
+                            {isRtl
+                                ? 'نقدم خدمات مظلات مواقف السيارات مع تصاريح البلديات المحلية في جميع إمارات دولة الإمارات العربية المتحدة.'
+                                : 'We deliver parking shade structures with local municipality permits across all UAE emirates.'}
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            {
+                                href: '/services/parking-shades-dubai',
+                                labelEn: 'Parking Shades Dubai',
+                                labelAr: 'مظلات مواقف دبي',
+                                descEn: 'Dubai Municipality approved. Covering Jumeirah, JLT, Business Bay, Al Quoz, and all Dubai communities.',
+                                descAr: 'معتمد من بلدية دبي. يغطي جميرا وجي إل تي والخليج التجاري والقوز وجميع مجتمعات دبي.',
+                            },
+                            {
+                                href: '/services/parking-shades-abu-dhabi',
+                                labelEn: 'Parking Shades Abu Dhabi',
+                                labelAr: 'مظلات مواقف أبوظبي',
+                                descEn: 'Abu Dhabi Municipality (ADM) permits handled. Covering Abu Dhabi City, Al Ain, Yas Island, and Al Dhafra.',
+                                descAr: 'تصاريح بلدية أبوظبي مُدارة. يغطي مدينة أبوظبي والعين وجزيرة ياس ومنطقة الظفرة.',
+                            },
+                            {
+                                href: '/services/parking-shades-sharjah',
+                                labelEn: 'Parking Shades Sharjah',
+                                labelAr: 'مظلات مواقف الشارقة',
+                                descEn: 'Most competitively priced in UAE. Serving Sharjah city, Industrial Areas 1–18, and Hamriyah Free Zone.',
+                                descAr: 'أكثر تنافسية في الإمارات. يخدم مدينة الشارقة والمناطق الصناعية 1–18 والمنطقة الحرة بالحمرية.',
+                            },
+                            {
+                                href: '/services/parking-shades-ajman',
+                                labelEn: 'Parking Shades Ajman',
+                                labelAr: 'مظلات مواقف عجمان',
+                                descEn: 'Ajman Municipality approved. Affordable rates for villas, industrial estates, and commercial buildings.',
+                                descAr: 'معتمد من بلدية عجمان. أسعار ميسورة للفلل والمناطق الصناعية والمباني التجارية.',
+                            },
+                        ].map((city) => (
+                            <Link
+                                key={city.href}
+                                href={city.href}
+                                className="group p-7 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-gold/40 transition-all flex flex-col"
+                            >
+                                <h3 className="text-white text-base font-bold mb-3 group-hover:text-gold transition-colors">
+                                    {isRtl ? city.labelAr : city.labelEn}
+                                </h3>
+                                <p className="text-[#9da6b9] text-sm leading-relaxed flex-1">
+                                    {isRtl ? city.descAr : city.descEn}
+                                </p>
+                                <div className="mt-5 flex items-center gap-2 text-gold text-sm font-bold">
+                                    {isRtl ? 'اعرف المزيد' : 'Learn More'}
+                                    <ArrowRight size={14} className={isRtl ? 'rotate-180' : ''} />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* ── FAQ ───────────────────────────────────────────────────────────── */}
             <section className="py-24 container-luxury border-t border-[#1a212e]">
                 <PricingNote locale={locale} className="mb-10" />

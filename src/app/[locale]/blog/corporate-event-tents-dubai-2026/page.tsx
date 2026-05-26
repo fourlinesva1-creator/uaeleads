@@ -115,12 +115,12 @@ export default function CorporateEventTents() {
                         <p>
                             {isAr
                                 ? 'شهد مشهد الفعاليات المؤسسية في دبي تحولاً ملحوظاً في السنوات الأخيرة، حيث أصبحت الأماكن الخارجية الخيار المفضل بشكل متزايد للشركات التي تسعى إلى خلق تجارب لا تُنسى. مع ترسيخ الإمارة لمكانتها كمركز الأعمال الرائد في الشرق الأوسط، نما الطلب على مساحات الفعاليات المؤسسية المتطورة بشكل كبير.'
-                                : 'Dubai\'s corporate event landscape has undergone a remarkable transformation in recent years, with outdoor venues increasingly becoming the preferred choice for businesses seeking to create memorable experiences. As the emirate solidifies its position as the Middle East\'s premier business hub, the demand for sophisticated corporate event spaces has grown exponentially.'}
+                                : <>Dubai&apos;s corporate event landscape has undergone a remarkable transformation in recent years, with outdoor venues increasingly becoming the preferred choice for businesses seeking to create memorable experiences. Whether you need <Link href="/services/corporate-events" className="text-gold hover:underline">corporate event tent rental Dubai</Link> or a luxury <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis tents</Link> setup, solutions are available to match every scale and budget. As the emirate solidifies its position as the Middle East&apos;s premier business hub, the demand for sophisticated corporate event spaces has grown exponentially.</>}
                         </p>
                         <p className="mt-4">
                             {isAr
                                 ? 'تمتد المزايا الاستراتيجية للفعاليات المؤسسية الخارجية إلى ما هو أبعد من الجاذبية الجمالية. تشير الأبحاث إلى أن الشركات التي تستضيف فعاليات في أماكن خارجية فريدة تُبلغ عن معدلات تفاعل أعلى بكثير للحضور.'
-                                : 'The strategic advantages of outdoor corporate events extend far beyond aesthetic appeal. Research indicates that companies hosting events in unique outdoor settings report significantly higher attendee engagement rates, improved brand recall, and enhanced networking outcomes.'}
+                                : <>The strategic advantages of outdoor corporate events extend far beyond aesthetic appeal. Research indicates that companies arranging <Link href="/locations/dubai/ramadan-tent-rental" className="text-gold hover:underline">tent rental in Dubai</Link> for unique outdoor settings report significantly higher attendee engagement rates, improved brand recall, and enhanced networking outcomes.</>}
                         </p>
                     </section>
 
@@ -277,6 +277,27 @@ export default function CorporateEventTents() {
                             </Link>
                         </div>
                     </section>
+                </div>
+
+                {/* Related Articles */}
+                <div className="mt-16 pt-10 border-t border-white/10">
+                    <h2 className="text-2xl font-display text-[#D4AF37] mb-8">
+                        {isAr ? 'مقالات ذات صلة' : 'Related Articles'}
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <Link href="/blog/hotel-majlis-setup-guide-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Hotel Majlis Setup Guide UAE 2026</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                        <Link href="/blog/upcoming-ramadan-events-dubai-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Upcoming Ramadan Events Dubai 2026</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                        <Link href="/blog/how-to-choose-tent-rental-company-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">How to Choose a Tent Rental Company in UAE</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                    </div>
                 </div>
 
                 <BlogServiceCTA variant="general" />

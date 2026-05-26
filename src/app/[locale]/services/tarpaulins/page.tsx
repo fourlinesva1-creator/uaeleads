@@ -430,6 +430,38 @@ export default async function TarpaulinsPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* ── From Our Blog ── */}
+            <section className="py-20 border-t border-[#1a212e]">
+                <div className="container-luxury">
+                    <h2 className="text-2xl md:text-3xl font-display text-[#D4AF37] mb-2">
+                        {isRtl ? 'من مدونتنا' : 'From Our Blog'}
+                    </h2>
+                    <p className="text-[#9da6b9] text-sm mb-8">
+                        {isRtl ? 'مقالات وأدلة ذات صلة بالمشمع والتخزين.' : 'Guides and insights related to tarpaulins and site coverage.'}
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        {[
+                            { slug: 'tarpaulin-price-guide-uae-2026', title: 'Tarpaulin Price Guide UAE 2026' },
+                            { slug: 'tarpaulin-vs-storage-tent-uae', title: 'Tarpaulin vs Storage Tent UAE: Which to Choose?' },
+                            { slug: 'industrial-storage-tent-rental-uae-2026', title: 'Industrial Storage Tent Rental UAE 2026' },
+                        ].map(({ slug, title }) => (
+                            <Link
+                                key={slug}
+                                href={`/blog/${slug}`}
+                                className="group flex flex-col justify-between p-6 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-gold/40 transition-all"
+                            >
+                                <p className="text-white font-semibold leading-snug group-hover:text-gold transition-colors mb-4">
+                                    {title}
+                                </p>
+                                <span className="text-gold text-sm font-bold flex items-center gap-1">
+                                    {isRtl ? 'اقرأ المقال' : 'Read article'} <ArrowRight size={14} />
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* ── CTA ── */}
             <section className="container-luxury pb-24">
                 <div className="p-12 lg:p-16 bg-gold rounded-3xl relative overflow-hidden group">

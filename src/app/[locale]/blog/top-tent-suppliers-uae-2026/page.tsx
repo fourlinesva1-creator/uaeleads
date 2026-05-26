@@ -415,10 +415,10 @@ export default function TopTentSuppliersPage() {
                     ) : (
                         <>
                             <p>
-                                Ramadan is one of the most significant seasons for families, communities, and businesses across the UAE — a time of gathering, generosity, and celebration. Whether you are planning large-scale corporate iftars, intimate family Majlis tents, or VIP Ramadan experiences, choosing the right tent supplier can make all the difference in comfort, compliance, and aesthetics.
+                                Ramadan is one of the most significant seasons for families, communities, and businesses across the UAE — a time of gathering, generosity, and celebration. Whether you are planning large-scale corporate iftars, intimate family Majlis tents, or VIP Ramadan experiences, choosing the right tent supplier can make all the difference in comfort, compliance, and aesthetics. Explore our full range of <Link href="/services" className="text-gold hover:underline">tent rental services in UAE</Link> to find the right fit.
                             </p>
                             <p>
-                                We have compiled the <strong>top 10 tent rental and supplier companies in the UAE</strong> to help you make the best choice for the Ramadan 2026 season.
+                                From <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> setups and <Link href="/services/corporate-events" className="text-gold hover:underline">corporate events</Link> to <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> and temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link>, we have compiled the <strong>top 10 tent rental and supplier companies in the UAE</strong> to help you make the best choice for the Ramadan 2026 season.
                             </p>
 
                             <hr className="border-border my-12" />
@@ -690,6 +690,27 @@ export default function TopTentSuppliersPage() {
                             </div>
                         </>
                     )}
+
+                    {/* Related Articles */}
+                    <div className="not-prose mt-16 pt-10 border-t border-border">
+                        <h2 className="text-2xl font-display text-[#D4AF37] mb-8">
+                            {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <Link href="/blog/how-to-choose-tent-rental-company-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">How to Choose a Tent Rental Company in UAE</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/ramadan-tent-pricing-guide-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Ramadan Tent Pricing Guide UAE 2026</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/tent-rental-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Tent Rental UAE: Complete Guide</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                        </div>
+                    </div>
 
                     <BlogServiceCTA variant="ramadan" />
 

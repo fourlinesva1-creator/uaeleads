@@ -581,6 +581,17 @@ export default function UAESurvivalGuidePage() {
                         <p>
                             With escalating regional tensions involving Iran, Israel, and the US, the UAE has experienced repeated aerial threats from drones and missiles. <strong className="text-white">The good news:</strong> the UAE&apos;s air defence system is among the most advanced in the world and intercepts the vast majority of incoming threats before they hit. <strong className="text-white">The real remaining danger</strong> is debris from these interceptions — shrapnel and fragments raining down on residential areas, roads, and rooftops.
                         </p>
+
+                        {/* Subtle service callout */}
+                        <div className="my-6 bg-[#101622] border border-[#D4AF37]/20 rounded-xl p-5 text-sm">
+                            <p className="text-white/80 leading-relaxed">
+                                Planning a safe outdoor gathering or event space? Tent Now provides premium tent structures for events across UAE.{' '}
+                                <Link href="/services" className="text-[#D4AF37] hover:underline font-semibold">View our services</Link>
+                                {' '}or{' '}
+                                <Link href="/request-quote" className="text-[#D4AF37] hover:underline font-semibold">get a free quote</Link>.
+                            </p>
+                        </div>
+
                         <p className="mt-4">
                             Most recorded injuries in recent UAE incidents were not from direct explosions — they came from <strong className="text-white">shattered glass and falling debris</strong>. This means taking the right actions can genuinely save your life. Read this guide, save the emergency numbers, and act with calm purpose.
                         </p>
@@ -912,6 +923,42 @@ export default function UAESurvivalGuidePage() {
 
                 <div className="mt-10">
                     <ShareButtons url={articleUrl} title={articleTitle} />
+                </div>
+
+                {/* Service links section */}
+                <div className="mt-12 bg-[#101622] border border-[#D4AF37]/20 rounded-2xl p-8">
+                    <h2 className="text-xl font-display text-[#D4AF37] mb-3">Looking for Premium Tent Structures in UAE?</h2>
+                    <p className="text-[#9da6b9] text-sm mb-6">Tent Now provides professional event tent solutions across all seven Emirates — from Ramadan Majlis to corporate event structures.</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <Link href="/services/corporate-events" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">
+                            Corporate Event Tents
+                        </Link>
+                        <Link href="/services/iftar-tent-rental" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">
+                            Iftar Tent Rental
+                        </Link>
+                        <Link href="/services/hotel-majlis" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">
+                            Hotel Majlis Tents
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Related Articles */}
+                <div className="mt-12 pt-10 border-t border-white/10">
+                    <h2 className="text-2xl font-display text-[#D4AF37] mb-8">Related Articles</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <Link href="/blog/tent-rental-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Tent Rental UAE: Complete Guide</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                        <Link href="/blog/top-tent-suppliers-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Top Tent Suppliers UAE 2026</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                        <Link href="/blog/how-to-choose-tent-rental-company-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                            <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">How to Choose a Tent Rental Company in UAE</p>
+                            <p className="text-[#9da6b9] text-xs mt-2">Read article →</p>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-white/10 text-center">

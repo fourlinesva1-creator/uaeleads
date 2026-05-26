@@ -168,8 +168,9 @@ export default function HowToChooseTentCompany() {
                 <div className="mt-10 bg-[#1a212e] border border-[#282e39] rounded-2xl p-6 mb-10">
                     <p className="text-white/85 leading-relaxed">
                         {isAr
-                            ? 'بعد 30 عاماً في سوق تأجير الخيام الإماراتي، نعرف تماماً لماذا يندم بعض العملاء على اختياراتهم. ليس بسبب الأسعار — بل بسبب الوعود غير المُنجزة، والتصاريح المفقودة، والتكييف غير الكافي، والدعم الغائب وقت الحاجة. هذا الدليل مكتوب بصدق تام — حتى لو اخترت شركة غيرنا في النهاية.'
-                            : 'After 30 years in the UAE tent rental market, we know exactly why some clients end up regretting their choices. Not because of price — but because of unkept promises, missing permits, insufficient AC, and absent support when needed. This guide is written with full honesty — even if you choose a different company in the end.'}
+                            ? <>بعد 30 عاماً في سوق تأجير الخيام الإماراتي، نعرف تماماً لماذا يندم بعض العملاء على اختياراتهم. ليس بسبب الأسعار — بل بسبب الوعود غير المُنجزة، والتصاريح المفقودة، والتكييف غير الكافي، والدعم الغائب وقت الحاجة. سواء كنت تبحث عن خدمات <Link href="/services" className="text-gold hover:underline font-semibold">تأجير الخيام</Link>، أو تحتاج إلى معرفة المزيد عن <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">خيام الإفطار</Link> و<Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">المجالس المنزلية</Link>، هذا الدليل مكتوب بصدق تام — حتى لو اخترت شركة غيرنا في النهاية.</>
+                            : <>After 30 years in the UAE tent rental market, we know exactly why some clients end up regretting their choices. Not because of price — but because of unkept promises, missing permits, insufficient AC, and absent support when needed. Whether you are exploring our full range of <Link href="/services" className="text-gold hover:underline font-semibold">tent rental services</Link>, or comparing options for <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">iftar tent rental</Link> or a <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">home majlis setup</Link>, this guide is written with full honesty — even if you choose a different company in the end.</>
+                        }
                     </p>
                 </div>
 
@@ -204,6 +205,45 @@ export default function HowToChooseTentCompany() {
                 </div>
 
                 <BlogServiceCTA variant="general" />
+
+                {/* Related Articles */}
+                <div className="mt-12 pt-10 border-t border-white/10">
+                    <h3 className="text-xl font-display text-gold mb-6">
+                        {isAr ? 'مقالات ذات صلة' : 'Related Articles'}
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {[
+                            {
+                                href: '/blog/top-tent-suppliers-uae-2026',
+                                en: 'Top Tent Suppliers UAE 2026',
+                                ar: 'أفضل موردي الخيام في الإمارات 2026',
+                            },
+                            {
+                                href: '/blog/ramadan-tent-pricing-guide-uae-2026',
+                                en: 'Ramadan Tent Pricing Guide UAE 2026',
+                                ar: 'دليل أسعار خيام رمضان الإمارات 2026',
+                            },
+                            {
+                                href: '/blog/tent-rental-uae',
+                                en: 'Tent Rental UAE: Complete Guide',
+                                ar: 'تأجير الخيام في الإمارات: دليل شامل',
+                            },
+                        ].map((article) => (
+                            <Link
+                                key={article.href}
+                                href={article.href}
+                                className="block p-5 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-gold/40 transition-colors group"
+                            >
+                                <p className="text-white/90 font-semibold text-sm leading-snug group-hover:text-gold transition-colors">
+                                    {isAr ? article.ar : article.en}
+                                </p>
+                                <span className="mt-3 inline-block text-xs text-gold font-bold uppercase tracking-wider">
+                                    {isAr ? 'اقرأ المزيد ←' : 'Read more →'}
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
 
                 <div className="mt-8 pt-8 border-t border-white/10 text-center">
                     <Link href="/blog" className="text-gold hover:underline text-sm font-bold">

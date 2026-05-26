@@ -868,6 +868,27 @@ export default function RamadanTentPricingGuidePage() {
                         </>
                     )}
 
+                    {/* Related Articles */}
+                    <div className="not-prose mt-16 pt-10 border-t border-border">
+                        <h2 className="text-2xl font-display text-[#D4AF37] mb-8">
+                            {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <Link href="/blog/top-tent-suppliers-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Top Tent Suppliers UAE 2026</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/how-to-choose-tent-rental-company-uae" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">How to Choose a Tent Rental Company in UAE</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                            <Link href="/blog/iftar-tent-rental-checklist-uae-2026" className="block bg-[#101622] border border-white/10 rounded-xl p-5 hover:border-[#D4AF37]/40 transition-colors group">
+                                <p className="text-white font-semibold group-hover:text-[#D4AF37] transition-colors leading-snug">Iftar Tent Rental Checklist UAE 2026</p>
+                                <p className="text-[#9da6b9] text-xs mt-2">{locale === 'ar' ? 'اقرأ المقال ←' : 'Read article →'}</p>
+                            </Link>
+                        </div>
+                    </div>
+
                     <BlogServiceCTA variant="ramadan" />
 
                     {/* Comment Section Placeholder */}

@@ -320,6 +320,66 @@ export default async function ParkingShadesAbuDhabiPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* HUB LINK + OTHER LOCATIONS */}
+            <section className="py-20 lg:py-24 bg-[#0d1219]">
+                <div className="container-luxury">
+                    <div className="mb-10">
+                        <Link
+                            href="/services/parking-shades"
+                            className="inline-flex items-center gap-2 text-[#D4AF37] font-bold text-sm uppercase tracking-widest hover:opacity-80 transition-opacity"
+                        >
+                            <ArrowRight size={16} className={isAr ? 'rotate-180' : ''} />
+                            {isAr ? 'عرض جميع خدمات مظلات المواقف' : 'View All Parking Shade Services'}
+                        </Link>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-display text-white mb-8 tracking-tight">
+                        {isAr ? 'مواقع أخرى' : 'Other Locations'}
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                        {[
+                            {
+                                href: '/services/parking-shades-dubai',
+                                labelEn: 'Parking Shades Dubai',
+                                labelAr: 'مظلات مواقف دبي',
+                                descEn: 'DM-approved cantilever, tensile, and polycarbonate shades for Dubai villas and commercial car parks.',
+                                descAr: 'مظلات معتمدة من بلدية دبي للفلل ومواقف السيارات التجارية.',
+                            },
+                            {
+                                href: '/services/parking-shades-sharjah',
+                                labelEn: 'Parking Shades Sharjah',
+                                labelAr: 'مظلات مواقف الشارقة',
+                                descEn: 'Most competitively priced UAE parking shades — mosques, schools, industrial areas, and villas.',
+                                descAr: 'أكثر مظلات المواقف تنافسية في الإمارات — مساجد ومدارس ومناطق صناعية وفلل.',
+                            },
+                            {
+                                href: '/services/parking-shades-ajman',
+                                labelEn: 'Parking Shades Ajman',
+                                labelAr: 'مظلات مواقف عجمان',
+                                descEn: 'Affordable Ajman Municipality approved shades for villas, industrial estates, and commercial buildings.',
+                                descAr: 'مظلات معتمدة من بلدية عجمان بأسعار ميسورة للفلل والمناطق الصناعية والمباني التجارية.',
+                            },
+                        ].map((city) => (
+                            <Link
+                                key={city.href}
+                                href={city.href}
+                                className="group p-6 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-[#D4AF37]/40 transition-all flex flex-col"
+                            >
+                                <h3 className="text-white text-base font-bold mb-2 group-hover:text-[#D4AF37] transition-colors">
+                                    {isAr ? city.labelAr : city.labelEn}
+                                </h3>
+                                <p className="text-[#9da6b9] text-sm leading-relaxed flex-1">
+                                    {isAr ? city.descAr : city.descEn}
+                                </p>
+                                <div className="mt-4 flex items-center gap-2 text-[#D4AF37] text-xs font-bold uppercase tracking-wide">
+                                    {isAr ? 'اعرف المزيد' : 'Learn More'}
+                                    <ArrowRight size={12} className={isAr ? 'rotate-180' : ''} />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* FINAL CTA */}
             <section className="py-20 lg:py-28">
                 <div className="container-luxury">

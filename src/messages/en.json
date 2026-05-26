@@ -183,12 +183,26 @@
         "detailedBody": "Heavy-duty 200gsm HDPE fabric with LDPE lamination on both sides. UV-stabilised (ASTM 653/93), min 600 N tensile strength, aluminium eyelets every 100 cm. Available in Silver/Orange, Silver/Green, Blue/White and Camouflage. 16 standard sheet sizes plus roll supply (4M×50M, 2M×100M).",
         "price": "From AED 25.92",
         "priceLabel": "Price guide"
+      },
+      "shadeStructures": {
+        "title": "Shade Structures",
+        "description": "Permanent and semi-permanent shade canopies for car parks, walkways, pools, gardens, play areas and sports courts across the UAE. Municipality permits included.",
+        "detailedBody": "Tent Now designs, supplies and installs shade structures for residential, commercial, and institutional clients across all seven Emirates. From single cantilever car park shades to large tensile fabric canopies over walkways and play areas, every structure is Civil Defence approved and comes with full municipality permit handling.",
+        "price": "Custom",
+        "priceLabel": "Quote"
       }
     },
     "storageSubs": {
       "clearSpan": "Clear Span Tents",
       "warehouse": "Warehouse Frame Tents",
       "industrial": "Industrial Tents"
+    },
+    "shadeSubs": {
+      "parkingShades": "Parking Shades",
+      "poolShades": "Pool Shades",
+      "walkwayShades": "Walkway Shades",
+      "gardenShades": "Garden Shades",
+      "playAreaShades": "Play Area Shades"
     }
   },
   "locations": {

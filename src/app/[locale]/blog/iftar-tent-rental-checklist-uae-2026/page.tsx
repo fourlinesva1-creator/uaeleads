@@ -220,8 +220,9 @@ export default function IftarTentChecklistPage() {
                 <div className="bg-[#1a212e] border border-[#282e39] rounded-2xl p-6 mb-10">
                     <p className="text-white/85 leading-relaxed">
                         {isAr
-                            ? 'بعد 30 عاماً من تنظيم فعاليات رمضان في الإمارات، سمعنا كل شيء — من إعدادات تأخرت ساعات قبل الإفطار، إلى خيام بدون تصاريح أوقفها الدفاع المدني. هذه القائمة تعكس كل ما تعلمناه حتى لا تمر بأي من هذه التجارب.'
-                            : 'After 30 years of delivering Ramadan events across the UAE, we\'ve seen everything — from setups delayed hours before iftar to tents stopped by Civil Defence for missing permits. This checklist reflects everything we\'ve learned so you don\'t experience any of it.'}
+                            ? <>بعد 30 عاماً من تنظيم فعاليات رمضان في الإمارات، سمعنا كل شيء — من إعدادات تأخرت ساعات قبل الإفطار، إلى خيام بدون تصاريح أوقفها الدفاع المدني. سواء كنت تبحث عن <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">تأجير خيمة إفطار</Link> أو <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">إعداد مجلس منزلي</Link>، هذه القائمة تعكس كل ما تعلمناه حتى لا تمر بأي من هذه التجارب.</>
+                            : <>After 30 years of delivering Ramadan events across the UAE, we&apos;ve seen everything — from setups delayed hours before iftar to tents stopped by Civil Defence for missing permits. Whether you are booking an <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">iftar tent rental</Link> or a <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">home majlis setup</Link>, this checklist reflects everything we&apos;ve learned so you don&apos;t experience any of it.</>
+                        }
                     </p>
                 </div>
 
@@ -262,6 +263,45 @@ export default function IftarTentChecklistPage() {
 
                 {/* Tent Now CTA */}
                 <BlogServiceCTA variant="ramadan" />
+
+                {/* Related Articles */}
+                <div className="mt-12 pt-10 border-t border-white/10">
+                    <h3 className="text-xl font-display text-gold mb-6">
+                        {isAr ? 'مقالات ذات صلة' : 'Related Articles'}
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {[
+                            {
+                                href: '/blog/ramadan-calendar-uae-2026',
+                                en: 'Ramadan Calendar UAE 2026',
+                                ar: 'تقويم رمضان الإمارات 2026',
+                            },
+                            {
+                                href: '/blog/hotel-majlis-setup-guide-uae-2026',
+                                en: 'Hotel Majlis Setup Guide UAE 2026',
+                                ar: 'دليل إعداد مجلس الفنادق 2026',
+                            },
+                            {
+                                href: '/blog/ramadan-tent-pricing-guide-uae-2026',
+                                en: 'Ramadan Tent Pricing Guide UAE 2026',
+                                ar: 'دليل أسعار خيام رمضان الإمارات 2026',
+                            },
+                        ].map((article) => (
+                            <Link
+                                key={article.href}
+                                href={article.href}
+                                className="block p-5 bg-[#1a212e] border border-[#282e39] rounded-xl hover:border-gold/40 transition-colors group"
+                            >
+                                <p className="text-white/90 font-semibold text-sm leading-snug group-hover:text-gold transition-colors">
+                                    {isAr ? article.ar : article.en}
+                                </p>
+                                <span className="mt-3 inline-block text-xs text-gold font-bold uppercase tracking-wider">
+                                    {isAr ? 'اقرأ المزيد ←' : 'Read more →'}
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
 
                 {/* Back to blog */}
                 <div className="mt-8 pt-8 border-t border-white/10 text-center">

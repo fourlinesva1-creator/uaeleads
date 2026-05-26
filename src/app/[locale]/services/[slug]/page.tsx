@@ -25,6 +25,29 @@ const serviceMap: Record<string, string> = {
     'decor-lighting': 'decor'
 };
 
+const blogPostTitles: Record<string, string> = {
+    'hotel-majlis-setup-guide-uae-2026': 'Hotel Majlis Setup Guide UAE 2026',
+    'corporate-event-tents-dubai-2026': 'Corporate Event Tents Dubai 2026',
+    'how-to-choose-tent-rental-company-uae': 'How to Choose a Tent Rental Company in UAE',
+    'iftar-tent-rental-checklist-uae-2026': 'Iftar Tent Rental Checklist UAE 2026',
+    'ramadan-calendar-uae-2026': 'Ramadan Calendar UAE 2026',
+    'ramadan-tent-pricing-guide-uae-2026': 'Ramadan Tent Pricing Guide UAE 2026',
+    'top-tent-suppliers-uae-2026': 'Top Tent Suppliers UAE 2026',
+    'upcoming-ramadan-events-dubai-2026': 'Upcoming Ramadan Events Dubai 2026',
+    'tent-rental-uae': 'Tent Rental UAE: Complete Guide',
+};
+
+const relatedPostsBySlug: Record<string, string[]> = {
+    'hotel-majlis': ['hotel-majlis-setup-guide-uae-2026', 'ramadan-tent-pricing-guide-uae-2026', 'top-tent-suppliers-uae-2026'],
+    'corporate-events': ['corporate-event-tents-dubai-2026', 'how-to-choose-tent-rental-company-uae', 'top-tent-suppliers-uae-2026'],
+    'home-majlis': ['iftar-tent-rental-checklist-uae-2026', 'ramadan-calendar-uae-2026', 'ramadan-tent-pricing-guide-uae-2026'],
+    'iftar-tent-rental': ['iftar-tent-rental-checklist-uae-2026', 'ramadan-calendar-uae-2026', 'ramadan-tent-pricing-guide-uae-2026'],
+    'suhoor-tent-rental': ['ramadan-calendar-uae-2026', 'iftar-tent-rental-checklist-uae-2026', 'upcoming-ramadan-events-dubai-2026'],
+    'sadu-tent-rental': ['top-tent-suppliers-uae-2026', 'how-to-choose-tent-rental-company-uae', 'tent-rental-uae'],
+    'furniture-rental': ['hotel-majlis-setup-guide-uae-2026', 'corporate-event-tents-dubai-2026', 'top-tent-suppliers-uae-2026'],
+    'decor-lighting': ['hotel-majlis-setup-guide-uae-2026', 'upcoming-ramadan-events-dubai-2026', 'corporate-event-tents-dubai-2026'],
+};
+
 const imageMap: Record<string, string> = {
     'hotel-majlis': '/images/tent-now/hotel.jpg',
     'corporate-events': '/images/tent-now/corporate.jpg',
@@ -288,6 +311,34 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                             </a>
                         </div>
                     </div>
+
+                    {/* From Our Blog */}
+                    {relatedPostsBySlug[slug] && (
+                        <div className="mt-20 pt-12 border-t border-[#282e39]">
+                            <h2 className="text-2xl font-display text-[#D4AF37] mb-2">
+                                {isAr ? 'من مدونتنا' : 'From Our Blog'}
+                            </h2>
+                            <p className="text-[#9da6b9] text-sm mb-8">
+                                {isAr ? 'رؤى ومقالات ذات صلة بهذه الخدمة.' : 'Insights and guides related to this service.'}
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {relatedPostsBySlug[slug].map((postSlug) => (
+                                    <Link
+                                        key={postSlug}
+                                        href={`/blog/${postSlug}`}
+                                        className="group flex flex-col justify-between p-6 bg-[#1a212e] border border-[#282e39] rounded-2xl hover:border-[#D4AF37]/40 transition-all"
+                                    >
+                                        <p className="text-white font-semibold leading-snug group-hover:text-[#D4AF37] transition-colors mb-4">
+                                            {blogPostTitles[postSlug]}
+                                        </p>
+                                        <span className="text-[#D4AF37] text-sm font-bold flex items-center gap-1">
+                                            {isAr ? 'اقرأ المقال' : 'Read article'} →
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
