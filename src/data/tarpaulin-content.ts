@@ -121,7 +121,7 @@ export const tarpaulinContent: Record<string, TarpaulinContent> = {
         pricingDisclaimer:
             '⚠ Prices shown are indicative and subject to change based on material costs, market conditions, and order quantity. Contact us for current confirmed pricing before placing your order.',
         pricingVatNote: '5% VAT is charged extra on all prices.',
-        pricingRateNote: 'Rate: AED 0.18 per sq ft',
+        pricingRateNote: 'Tentative rates based on December 2025 data — contact us for current pricing',
         tableHeaders: {
             size: 'Size (Feet)',
             metric: 'Size (Metric)',
@@ -170,7 +170,7 @@ export const tarpaulinContent: Record<string, TarpaulinContent> = {
             },
             {
                 q: 'How accurate are the listed prices? Will they change?',
-                a: 'Prices listed are indicative based on a rate of AED 0.18 per sq ft. Tarpaulin raw material (polyethylene) prices are directly linked to oil and petroleum feedstock markets, which fluctuate. Geopolitical factors in the Middle East region can also affect supply chain costs. We strongly recommend WhatsApping or calling us for confirmed current pricing before placing any order.',
+                a: 'Prices listed are tentative estimates based on December 2025 market data. Tarpaulin raw material (polyethylene) prices are directly linked to oil and petroleum feedstock markets, which fluctuate. We strongly recommend WhatsApping or calling us for confirmed current pricing before placing any order.',
             },
             {
                 q: 'What colours are available and can I order specific colours?',
@@ -250,7 +250,7 @@ export const tarpaulinContent: Record<string, TarpaulinContent> = {
         pricingDisclaimer:
             '⚠ الأسعار المعروضة استرشادية وقابلة للتغيير بناءً على تكاليف المواد وظروف السوق وكمية الطلب. تواصل معنا للحصول على أسعار مؤكدة قبل تقديم طلبك.',
         pricingVatNote: 'يُضاف 5% ضريبة قيمة مضافة على جميع الأسعار.',
-        pricingRateNote: 'السعر: 0.18 درهم إماراتي لكل قدم مربعة',
+        pricingRateNote: 'أسعار تقديرية بناءً على بيانات ديسمبر 2025 — تواصل معنا للحصول على السعر الحالي',
         tableHeaders: {
             size: 'المقاس (قدم)',
             metric: 'المقاس (متري)',
@@ -299,7 +299,7 @@ export const tarpaulinContent: Record<string, TarpaulinContent> = {
             },
             {
                 q: 'ما مدى دقة الأسعار المدرجة؟ هل ستتغير؟',
-                a: 'الأسعار المدرجة استرشادية وتستند إلى سعر 0.18 درهم لكل قدم مربعة. أسعار المادة الخام (البولي إيثيلين) مرتبطة مباشرة بأسواق النفط ومشتقاته البترولية والتي تتقلب. العوامل الجيوسياسية في منطقة الشرق الأوسط يمكن أن تؤثر أيضاً على تكاليف سلسلة الإمداد. نوصي بالتواصل عبر واتساب أو الاتصال بنا للحصول على أسعار مؤكدة قبل تقديم أي طلب.',
+                a: 'الأسعار المدرجة تقديرية استناداً إلى بيانات ديسمبر 2025. أسعار المادة الخام (البولي إيثيلين) مرتبطة مباشرة بأسواق النفط وتتقلب بانتظام. نوصي بالتواصل عبر واتساب أو الاتصال بنا للحصول على أسعار مؤكدة قبل تقديم أي طلب.',
             },
             {
                 q: 'ما الألوان المتاحة وهل يمكنني طلب ألوان محددة؟',

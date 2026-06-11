@@ -714,6 +714,12 @@ export default function UAESurvivalGuidePage() {
                                 </tbody>
                             </table>
                         </div>
+
+                        <p className="text-white/70 text-sm mt-4">
+                            If your business or site requires a robust temporary structure for storage or operational continuity, <Link href="/services/storage-tents" className="text-gold hover:underline font-semibold">Tent Now&apos;s heavy-duty storage tents</Link> are available for rapid deployment across{' '}
+                            <Link href="/locations/dubai" className="text-gold hover:underline font-semibold">Dubai</Link>,{' '}
+                            <Link href="/locations/abu-dhabi" className="text-gold hover:underline font-semibold">Abu Dhabi</Link>, and all seven Emirates.
+                        </p>
                     </section>
 
                     {/* Section 4: Outdoors / Vehicle */}
@@ -915,6 +921,14 @@ export default function UAESurvivalGuidePage() {
                             ))}
                         </div>
                     </section>
+
+                    <p className="text-white/70 text-sm text-center">
+                        For emergency shelter solutions in UAE,{' '}
+                        <Link href="/services/storage-tents" className="text-gold hover:underline font-semibold">
+                            Tent Now offers rapid-deployment storage tents
+                        </Link>{' '}
+                        across all seven emirates.
+                    </p>
 
                     <p className="text-white/40 text-xs text-center border-t border-white/10 pt-6">
                         This article is prepared for public awareness purposes based on UAE Civil Defence (NCEMA) protocols and internationally validated emergency management best practices. In all emergency situations, always follow the official guidance issued by NCEMA and relevant UAE government authorities.

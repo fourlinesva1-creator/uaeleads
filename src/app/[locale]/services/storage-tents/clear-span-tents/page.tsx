@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير خيام الامتداد الحر في الإمارات | تخزين صناعي بدون أعمدة | تنت ناو'
-            : 'Clear Span Tent Rental UAE | Column-Free Industrial Storage | Tent Now',
+            ? 'تأجير خيام الامتداد الحر في الإمارات | هياكل تخزين بدون أعمدة | تنت ناو'
+            : 'Clear Span Tent Rental UAE | Column-Free Storage Structures | Tent Now',
         description: isAr
-            ? 'خيام تخزين ذات امتداد حر بعرض من 3م إلى أكثر من 50م في الإمارات. بدون أعمدة داخلية — تعظيم مساحتك الأرضية القابلة للاستخدام. معتمدة من الدفاع المدني.'
-            : 'Clear span storage tents from 3m to 50m+ width across the UAE. Zero interior columns — maximise your usable floor area for construction staging, vehicle storage, and heavy equipment. Civil Defence approved.',
+            ? 'تأجير خيام الامتداد الحر في الإمارات — هياكل ألومنيوم بدون أعمدة بعرض حتى 50م. مثالية للتخزين والمعارض والفعاليات. معتمدة من الدفاع المدني.'
+            : 'Clear span tent rental UAE — column-free aluminum structures up to 50m wide. Perfect for warehousing, exhibitions & events. Civil Defence approved.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/clear-span-tents`,
             languages: {
@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Clear Span Storage Tent Rental UAE | Tent Now',
-            description: 'Column-free clear span tents for industrial UAE projects. 3m–50m+ widths. Operational in under 10 days. AED 15–40/sqm/month.',
+            title: 'Clear Span Tent Rental UAE | Column-Free Storage Structures | Tent Now',
+            description: 'Clear span tent rental UAE — column-free aluminum structures up to 50m wide. Perfect for warehousing, exhibitions & events. Civil Defence approved.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-1.jpeg' }],
         },
     };

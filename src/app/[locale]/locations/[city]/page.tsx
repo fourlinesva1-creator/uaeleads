@@ -6,6 +6,7 @@ import { cityOverviews } from '@/data/city-content';
 import { Link } from '@/i18n/navigation';
 import CityOverviewUI from '@/components/sections/CityOverviewUI';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import CityLocalBusinessSchema from '@/components/seo/CityLocalBusinessSchema';
 
 type Props = {
     params: Promise<{ locale: string; city: string }>;
@@ -70,6 +71,9 @@ export default async function CityPage({ params }: Props) {
 
     const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
+    const pageUrl = `https://www.tentnow.ae/${locale}/locations/${city}`;
+    const description = content.metaDescription || content.intro.substring(0, 155);
+
     return (
         <>
             <BreadcrumbSchema
@@ -78,6 +82,12 @@ export default async function CityPage({ params }: Props) {
                     { name: locale === 'ar' ? 'المواقع' : 'Locations', href: '/locations' },
                     { name: cityName, href: `/locations/${city}` },
                 ]}
+            />
+            <CityLocalBusinessSchema
+                city={city}
+                locale={locale}
+                pageUrl={pageUrl}
+                description={description}
             />
             <CityOverviewUI city={city} content={content} />
         </>

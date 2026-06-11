@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام التخزين الصناعية في الإمارات: الدليل الكامل للتكاليف والتصاريح 2026 | Tent Now'
-        : 'Industrial Storage Tent Rental UAE: Complete Cost & Permit Guide 2026 | Tent Now';
+        ? 'تأجير خيام التخزين الصناعية في الإمارات | توفير 70% مقارنة بالمستودعات التقليدية | Tent Now'
+        : 'Industrial Storage Tent Rental UAE | Save 70% vs Traditional Warehouses | Tent Now';
 
     const description = locale === 'ar'
-        ? 'معدل شغور مستودعات دبي 3% والإيجارات ارتفعت 33%. اكتشف كيف تختار الشركات الإماراتية خيام التخزين الصناعية بتوفير 50–70% مقارنة بالبناء الدائم — مع مقارنة الأنواع والأسعار وإجراءات الدفاع المدني.'
-        : "Dubai warehouse vacancy is 3% and rents are up 33%. Discover why UAE businesses are turning to industrial storage tent rental — saving 50–70% vs permanent construction. Full cost breakdown, permit guide, and type comparison.";
+        ? 'خيام تخزين صناعية معتمدة دفاع مدني في الإمارات — تُنصب خلال أيام بتكلفة AED 15/م² شهرياً. تصاريح شاملة لدبي وأبوظبي وجميع الإمارات. اطلب عرضاً في 24 ساعة.'
+        : 'Civil Defence-approved industrial storage tents in UAE — deployed in days from AED 15/m²/month. Permits handled for Dubai, Abu Dhabi and all Emirates.';
 
     return {
         title,

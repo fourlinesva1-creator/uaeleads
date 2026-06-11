@@ -109,7 +109,7 @@ const content: Record<string, GardenShadeContent> = {
         faqs: [
             {
                 q: 'How much does a garden pergola or shade sail cost in UAE?',
-                a: 'An aluminium pergola for a standard villa patio (4×6 m) typically costs AED 8,000–20,000. Shade sails for a garden seating area start from AED 3,000–8,000. Larger tensile canopies for outdoor dining or terrace areas range from AED 15,000–60,000. Contact Tent Now for a free site survey.',
+                a: 'Garden shade structure pricing depends on size, material, and complexity. Contact Tent Now for a free site survey and itemised quote tailored to your garden or patio.',
             },
             {
                 q: 'Do garden shade structures require a permit in UAE?',
@@ -180,7 +180,7 @@ const content: Record<string, GardenShadeContent> = {
         faqs: [
             {
                 q: 'كم تكلفة برجولة حديقة أو شراع ظل في الإمارات؟',
-                a: 'برجولة ألمنيوم لفِناء فيلا قياسي (4×6 م) تتراوح عادةً بين 8,000–20,000 درهم. أشرعة الظل لمنطقة جلوس في الحديقة تبدأ من 3,000–8,000 درهم. مظلات شد أكبر لمناطق الطعام الخارجية أو الشرفات تتراوح بين 15,000–60,000 درهم. تواصل مع تنت ناو للحصول على مسح موقعي مجاني.',
+                a: 'تكلفة مظلات الحدائق تعتمد على الحجم والمواد والتعقيد الإنشائي. تواصل مع تنت ناو للحصول على مسح موقعي مجاني وعرض سعر مفصّل.',
             },
             {
                 q: 'هل تتطلب مظلات الحدائق تصريحاً في الإمارات؟',

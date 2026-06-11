@@ -109,7 +109,7 @@ const content: Record<string, PoolShadeContent> = {
         faqs: [
             {
                 q: 'How much does a pool shade structure cost in UAE?',
-                a: 'A shade sail for a standard villa pool (5×10 m) typically costs AED 4,000–12,000. Larger polycarbonate canopies for hotel or community pools range from AED 25,000–150,000 depending on size, material, and structural complexity. Contact Tent Now for a free site survey and itemised quote.',
+                a: 'Pool shade structure pricing depends on size, material, and structural complexity. Contact Tent Now for a free site survey and itemised quote tailored to your pool area.',
             },
             {
                 q: 'Do pool shade structures require a municipality permit in UAE?',
@@ -180,7 +180,7 @@ const content: Record<string, PoolShadeContent> = {
         faqs: [
             {
                 q: 'كم تكلفة هيكل مظلة مسبح في الإمارات؟',
-                a: 'شراع مسبح فيلا قياسي (5×10 م) يتراوح سعره عادةً بين 4,000–12,000 درهم. المظلات الكبيرة للفنادق أو مسابح المجمعات تتراوح بين 25,000–150,000 درهم حسب الحجم والمواد والتعقيد الإنشائي. تواصل مع تنت ناو للحصول على مسح موقعي مجاني وعرض سعر مفصّل.',
+                a: 'تكلفة مظلات المسابح تعتمد على الحجم والمواد والتعقيد الإنشائي. تواصل مع تنت ناو للحصول على مسح موقعي مجاني وعرض سعر مفصّل.',
             },
             {
                 q: 'هل تتطلب مظلات المسابح تصريح بلدية في الإمارات؟',

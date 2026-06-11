@@ -170,11 +170,11 @@ export default function TarpaulinPriceGuideBlogPage() {
                                     </thead>
                                     <tbody>
                                         {[
-                                            ['PE (بولي إيثيلين)', '1–2 سنة', '0.35–1.50 دولار', 'البناء، النقل، الاستخدام العام', 'خفيف'],
-                                            ['HDPE (PE عالي الكثافة)', '3–5 سنوات', '0.50–1.80 دولار', 'الزراعة، الأحواض، السقالات', 'متوسط'],
-                                            ['PVC (بولي فينيل كلوريد)', 'حتى 10 سنوات', '1.50–2.88 دولار', 'أغطية الشاحنات، الخيام الصناعية، البحرية', 'ثقيل'],
-                                            ['قماش قطني', '2–5 سنوات', '2.00–5.00 دولار', 'الاستخدام العسكري، الصناعي الثقيل', 'ثقيل'],
-                                            ['شبكة/ظل', '3–7 سنوات', '0.30–1.20 دولار', 'الزراعة، مواقف السيارات، الظلة', 'خفيف جداً'],
+                                            ['PE (بولي إيثيلين)', '1–2 سنة', '0.40–1.73 دولار', 'البناء، النقل، الاستخدام العام', 'خفيف'],
+                                            ['HDPE (PE عالي الكثافة)', '3–5 سنوات', '0.58–2.07 دولار', 'الزراعة، الأحواض، السقالات', 'متوسط'],
+                                            ['PVC (بولي فينيل كلوريد)', 'حتى 10 سنوات', '1.73–3.31 دولار', 'أغطية الشاحنات، الخيام الصناعية، البحرية', 'ثقيل'],
+                                            ['قماش قطني', '2–5 سنوات', '2.30–5.75 دولار', 'الاستخدام العسكري، الصناعي الثقيل', 'ثقيل'],
+                                            ['شبكة/ظل', '3–7 سنوات', '0.35–1.38 دولار', 'الزراعة، مواقف السيارات، الظلة', 'خفيف جداً'],
                                         ].map((row, i) => (
                                             <tr key={i} className={i % 2 === 0 ? 'bg-bg-dark/40' : 'bg-bg-elevated/40'}>
                                                 {row.map((cell, j) => (
@@ -215,28 +215,28 @@ export default function TarpaulinPriceGuideBlogPage() {
 
                             <h2>دليل الأسعار الكامل: مشمع PE 200 جرام في الإمارات</h2>
                             <p>
-                                الأسعار أدناه مبنية على سعر <strong>0.18 درهم لكل قدم مربعة</strong> بالإضافة إلى 5% ضريبة قيمة مضافة. <strong>تنبيه مهم: أسعار المشمع مرتبطة بأسواق النفط وتتقلب.</strong> هذه الأسعار استرشادية — تواصل معنا دائماً للحصول على السعر المؤكد قبل الطلب.
+                                الأسعار أدناه تقديرية استناداً إلى <strong>بيانات ديسمبر 2025</strong>، بسعر مرجعي <strong>0.21 درهم لكل قدم مربعة</strong> بالإضافة إلى 5% ضريبة قيمة مضافة. <strong>تنبيه مهم: أسعار المشمع مرتبطة بأسواق النفط وتتقلب.</strong> تواصل معنا دائماً للحصول على السعر المؤكد الحالي قبل الطلب.
                             </p>
 
                             <div className="overflow-x-auto my-8 not-prose">
                                 <table className="w-full text-sm border border-border rounded-xl overflow-hidden min-w-[480px]">
                                     <thead className="bg-bg-elevated">
                                         <tr>
-                                            {['المقاس (قدم)', 'المقاس (متري)', 'الوزن', 'السعر (درهم) + 5% VAT'].map((h) => (
+                                            {['المقاس (قدم)', 'المقاس (متري)', 'الوزن', 'السعر التقديري (درهم) + 5% VAT'].map((h) => (
                                                 <th key={h} className="px-4 py-3 text-gold text-xs font-bold uppercase tracking-wider text-right border-b border-border">{h}</th>
                                             ))}
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {[
-                                            ['12 × 12 قدم', '3.6 × 3.6 م', '2.59 كجم', '25.92'],
-                                            ['12 × 18 قدم', '3.6 × 5.4 م', '3.90 كجم', '38.88'],
-                                            ['20 × 20 قدم', '6.0 × 6.0 م', '7.20 كجم', '72.00'],
-                                            ['20 × 30 قدم', '6.0 × 9.0 م', '10.80 كجم', '108.00'],
-                                            ['30 × 30 قدم', '9.0 × 9.0 م', '16.20 كجم', '162.00'],
-                                            ['30 × 40 قدم', '9.0 × 12 م', '21.60 كجم', '216.00'],
-                                            ['40 × 60 قدم', '12 × 18 م', '43.20 كجم', '432.00'],
-                                            ['60 × 60 قدم', '18 × 18 م', '64.80 كجم', '648.00'],
+                                            ['12 × 12 قدم', '3.6 × 3.6 م', '2.59 كجم', '29.81'],
+                                            ['12 × 18 قدم', '3.6 × 5.4 م', '3.90 كجم', '44.71'],
+                                            ['20 × 20 قدم', '6.0 × 6.0 م', '7.20 كجم', '82.80'],
+                                            ['20 × 30 قدم', '6.0 × 9.0 م', '10.80 كجم', '124.20'],
+                                            ['30 × 30 قدم', '9.0 × 9.0 م', '16.20 كجم', '186.30'],
+                                            ['30 × 40 قدم', '9.0 × 12 م', '21.60 كجم', '248.40'],
+                                            ['40 × 60 قدم', '12 × 18 م', '43.20 كجم', '496.80'],
+                                            ['60 × 60 قدم', '18 × 18 م', '64.80 كجم', '745.20'],
                                         ].map((row, i) => (
                                             <tr key={i} className={i % 2 === 0 ? 'bg-bg-dark/40' : 'bg-bg-elevated/40'}>
                                                 <td className="px-4 py-3 text-white font-mono border-b border-border/50 text-right">{row[0]}</td>
@@ -247,7 +247,7 @@ export default function TarpaulinPriceGuideBlogPage() {
                                         ))}
                                     </tbody>
                                 </table>
-                                <p className="text-text-muted text-xs mt-3 text-right">* يُضاف 5% VAT على جميع الأسعار. ±5% تسامح في المقاسات النهائية. جميع المقاسات الـ 16 متوفرة في <Link href="/services/tarpaulins" className="text-gold hover:underline">صفحة منتج المشمع</Link>.</p>
+                                <p className="text-text-muted text-xs mt-3 text-right">* أسعار تقديرية بناءً على بيانات ديسمبر 2025. يُضاف 5% VAT على جميع الأسعار. ±5% تسامح في المقاسات النهائية. تواصل معنا للحصول على السعر المؤكد — جميع المقاسات الـ 16 في <Link href="/services/tarpaulins" className="text-gold hover:underline">صفحة منتج المشمع</Link>.</p>
                             </div>
 
                             <h2>التطبيقات الرئيسية: ماذا يشتري كل قطاع؟</h2>
@@ -420,11 +420,11 @@ export default function TarpaulinPriceGuideBlogPage() {
                                     </thead>
                                     <tbody>
                                         {[
-                                            ['PE (Polyethylene)', '1–2 years', 'USD 0.35–1.50', 'Construction, transport, general purpose', 'Light'],
-                                            ['HDPE (High-Density PE)', '3–5 years', 'USD 0.50–1.80', 'Agriculture, pond lining, scaffolding', 'Medium'],
-                                            ['PVC (Polyvinyl Chloride)', 'Up to 10 years', 'USD 1.50–2.88', 'Truck curtains, industrial tents, marine', 'Heavy'],
-                                            ['Canvas (Cotton)', '2–5 years', 'USD 2.00–5.00', 'Military, heavy-duty industrial', 'Heavy'],
-                                            ['Mesh / Shade Net', '3–7 years', 'USD 0.30–1.20', 'Agriculture, parking shade, UV filtering', 'Very Light'],
+                                            ['PE (Polyethylene)', '1–2 years', 'USD 0.40–1.73', 'Construction, transport, general purpose', 'Light'],
+                                            ['HDPE (High-Density PE)', '3–5 years', 'USD 0.58–2.07', 'Agriculture, pond lining, scaffolding', 'Medium'],
+                                            ['PVC (Polyvinyl Chloride)', 'Up to 10 years', 'USD 1.73–3.31', 'Truck curtains, industrial tents, marine', 'Heavy'],
+                                            ['Canvas (Cotton)', '2–5 years', 'USD 2.30–5.75', 'Military, heavy-duty industrial', 'Heavy'],
+                                            ['Mesh / Shade Net', '3–7 years', 'USD 0.35–1.38', 'Agriculture, parking shade, UV filtering', 'Very Light'],
                                         ].map((row, i) => (
                                             <tr key={i} className={i % 2 === 0 ? 'bg-bg-dark/40' : 'bg-bg-elevated/40'}>
                                                 {row.map((cell, j) => (
@@ -463,30 +463,30 @@ export default function TarpaulinPriceGuideBlogPage() {
                                 ))}
                             </div>
 
-                            <h2>Full Price Guide: PE Tarpaulin 200 gsm in UAE (AED)</h2>
+                            <h2>Tentative Price Guide: PE Tarpaulin 200 gsm in UAE (AED)</h2>
                             <p>
-                                Prices below are based on a rate of <strong>AED 0.18 per sq ft</strong> plus 5% VAT. <strong>Important: tarpaulin prices are linked to oil markets and fluctuate.</strong> These figures are indicative — always confirm pricing before ordering.
+                                Prices below are tentative estimates based on <strong>December 2025 market data</strong>, at a reference rate of <strong>AED 0.21 per sq ft</strong> plus 5% VAT. <strong>Important: tarpaulin prices are linked to oil markets and fluctuate.</strong> Always confirm current pricing before ordering.
                             </p>
 
                             <div className="overflow-x-auto my-8 not-prose">
                                 <table className="w-full text-sm border border-border rounded-xl overflow-hidden min-w-[480px]">
                                     <thead className="bg-bg-elevated">
                                         <tr>
-                                            {['Size (Feet)', 'Size (Metric)', 'Weight', 'Price (AED) + 5% VAT'].map((h) => (
+                                            {['Size (Feet)', 'Size (Metric)', 'Weight', 'Est. Price (AED) + 5% VAT'].map((h) => (
                                                 <th key={h} className="px-4 py-3 text-gold text-xs font-bold uppercase tracking-wider text-left border-b border-border">{h}</th>
                                             ))}
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {[
-                                            ['12 × 12 ft', '3.6 × 3.6 m', '2.59 kg', '25.92'],
-                                            ['12 × 18 ft', '3.6 × 5.4 m', '3.90 kg', '38.88'],
-                                            ['20 × 20 ft', '6.0 × 6.0 m', '7.20 kg', '72.00'],
-                                            ['20 × 30 ft', '6.0 × 9.0 m', '10.80 kg', '108.00'],
-                                            ['30 × 30 ft', '9.0 × 9.0 m', '16.20 kg', '162.00'],
-                                            ['30 × 40 ft', '9.0 × 12.0 m', '21.60 kg', '216.00'],
-                                            ['40 × 60 ft', '12.0 × 18.0 m', '43.20 kg', '432.00'],
-                                            ['60 × 60 ft', '18.0 × 18.0 m', '64.80 kg', '648.00'],
+                                            ['12 × 12 ft', '3.6 × 3.6 m', '2.59 kg', '29.81'],
+                                            ['12 × 18 ft', '3.6 × 5.4 m', '3.90 kg', '44.71'],
+                                            ['20 × 20 ft', '6.0 × 6.0 m', '7.20 kg', '82.80'],
+                                            ['20 × 30 ft', '6.0 × 9.0 m', '10.80 kg', '124.20'],
+                                            ['30 × 30 ft', '9.0 × 9.0 m', '16.20 kg', '186.30'],
+                                            ['30 × 40 ft', '9.0 × 12.0 m', '21.60 kg', '248.40'],
+                                            ['40 × 60 ft', '12.0 × 18.0 m', '43.20 kg', '496.80'],
+                                            ['60 × 60 ft', '18.0 × 18.0 m', '64.80 kg', '745.20'],
                                         ].map((row, i) => (
                                             <tr key={i} className={i % 2 === 0 ? 'bg-bg-dark/40' : 'bg-bg-elevated/40'}>
                                                 <td className="px-4 py-3 text-white font-mono border-b border-border/50">{row[0]}</td>
@@ -497,7 +497,7 @@ export default function TarpaulinPriceGuideBlogPage() {
                                         ))}
                                     </tbody>
                                 </table>
-                                <p className="text-text-muted text-xs mt-3">* 5% VAT charged additionally. ±5% size tolerance in finished sheets. All 16 sizes available on our <Link href="/services/tarpaulins" className="text-gold hover:underline">PE Tarpaulin product page</Link>.</p>
+                                <p className="text-text-muted text-xs mt-3">* Tentative prices based on December 2025 data. 5% VAT charged additionally. ±5% size tolerance in finished sheets. Contact us for current confirmed pricing — all 16 sizes on our <Link href="/services/tarpaulins" className="text-gold hover:underline">PE Tarpaulin page</Link>.</p>
                             </div>
 
                             <h2>Applications by Industry: What Each Sector Buys</h2>

@@ -7,7 +7,6 @@ import {
     CheckCircle2,
     ArrowRight,
     ChevronDown,
-    AlertTriangle,
     Package,
     Warehouse,
     ShieldCheck,
@@ -265,36 +264,23 @@ export default async function TarpaulinsPage({ params }: Props) {
                 </div>
             </section>
 
-            {/* ── Pricing ── */}
+            {/* ── Size Reference ── */}
             <section className="py-24 border-t border-[#1a212e]">
                 <div className="container-luxury">
                     <div className="max-w-3xl mb-8">
-                        <div className="section-label mb-6">
-                            <span>{isRtl ? 'السعر: 0.18 درهم/قدم²' : 'Rate: AED 0.18 per sq ft'}</span>
-                        </div>
                         <h2 className="text-3xl md:text-4xl font-display text-white mb-4">{c.pricingTitle}</h2>
                         <p className="text-[#9da6b9] text-lg leading-relaxed">{c.pricingSubtitle}</p>
                     </div>
 
-                    {/* Price change disclaimer */}
-                    <div className="flex gap-4 items-start p-5 mb-8 bg-amber-950/30 border border-amber-600/30 rounded-xl max-w-3xl">
-                        <AlertTriangle className="text-amber-400 shrink-0 mt-0.5" size={20} />
-                        <div>
-                            <p className="text-amber-200 text-sm leading-relaxed">{c.pricingDisclaimer}</p>
-                            <p className="text-amber-300/70 text-xs mt-2">{c.pricingVatNote}</p>
-                        </div>
-                    </div>
-
-                    {/* Pricing table */}
+                    {/* Size table without prices */}
                     <div className="overflow-x-auto rounded-2xl border border-[#282e39]">
-                        <table className="w-full text-sm min-w-[540px]">
+                        <table className="w-full text-sm min-w-[400px]">
                             <thead>
                                 <tr className="bg-[#1a212e] border-b border-[#282e39]">
                                     <th className="px-5 py-4 text-left text-gold font-bold text-xs uppercase tracking-widest">#</th>
                                     <th className="px-5 py-4 text-left text-gold font-bold text-xs uppercase tracking-widest">{c.tableHeaders.size}</th>
                                     <th className="px-5 py-4 text-left text-gold font-bold text-xs uppercase tracking-widest">{c.tableHeaders.metric}</th>
                                     <th className="px-5 py-4 text-left text-gold font-bold text-xs uppercase tracking-widest">{c.tableHeaders.weight}</th>
-                                    <th className="px-5 py-4 text-right text-gold font-bold text-xs uppercase tracking-widest">{c.tableHeaders.price}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -307,22 +293,32 @@ export default async function TarpaulinsPage({ params }: Props) {
                                         <td className="px-5 py-3.5 text-white font-mono font-medium">{row.feet}</td>
                                         <td className="px-5 py-3.5 text-[#9da6b9] font-mono">{row.meters}</td>
                                         <td className="px-5 py-3.5 text-[#9da6b9]">{row.weight}</td>
-                                        <td className="px-5 py-3.5 text-right">
-                                            <span className="text-gold font-bold font-mono">
-                                                AED {row.price.toFixed(2)}
-                                            </span>
-                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
-                            <tfoot>
-                                <tr className="bg-[#1a212e] border-t border-[#282e39]">
-                                    <td colSpan={5} className="px-5 py-3 text-[#9da6b9] text-xs">
-                                        * {c.pricingVatNote} &nbsp;·&nbsp; {c.pricingRateNote} &nbsp;·&nbsp; {isRtl ? 'التسامح ±5% مقبول في المقاسات النهائية' : '±5% size tolerance acceptable'}
-                                    </td>
-                                </tr>
-                            </tfoot>
                         </table>
+                    </div>
+
+                    {/* Contact for pricing CTA */}
+                    <div className="mt-8 p-6 bg-gold/10 border border-gold/30 rounded-2xl max-w-3xl flex flex-col sm:flex-row items-center gap-6">
+                        <div className="flex-1">
+                            <p className="text-white font-bold text-lg mb-1">
+                                {isRtl ? 'تواصل معنا للحصول على أسعار اليوم' : 'Contact us for current pricing'}
+                            </p>
+                            <p className="text-[#9da6b9] text-sm">
+                                {isRtl
+                                    ? 'أسعار المشمع مرتبطة بأسواق النفط وتتغير بانتظام. اطلب سعراً محدّثاً قبل الطلب.'
+                                    : 'Tarpaulin prices are linked to oil markets and change regularly. Request an updated quote before ordering.'}
+                            </p>
+                        </div>
+                        <a
+                            href="https://wa.me/971501826969"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-gold text-bg-dark font-bold rounded-xl text-sm hover:bg-gold/90 transition-colors"
+                        >
+                            {isRtl ? 'واتساب لسعر اليوم' : 'WhatsApp for Today\'s Price'}
+                        </a>
                     </div>
                 </div>
             </section>

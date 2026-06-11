@@ -110,37 +110,37 @@
     "cta": "View Our Capabilities"
   },
   "services": {
-    "title": "INDUSTRIAL TENT SOLUTIONS",
-    "subtitle": "Engineering-grade temporary structures for construction, logistics, oil & gas, manufacturing, and corporate operations across the UAE.",
+    "title": "TENT RENTAL SERVICES IN UAE",
+    "subtitle": "Tent rental services in UAE — storage tents, event structures, shade systems & tarpaulins. Premium solutions for residential, corporate & industrial clients.",
     "viewAll": "View All Services",
     "items": {
       "hotel": {
         "title": "Clear Span Storage Tents",
         "description": "Column-free structures from 3m to 50m+ wide. Deploy on concrete, asphalt, or compacted soil. No interior poles to restrict forklift or vehicle movement.",
         "detailedBody": "Clear span tents are the workhorse of industrial storage in the UAE. The absence of interior columns maximises usable floor area and allows unrestricted movement of forklifts, trucks, and heavy equipment. High-strength 6061-T6 aluminum frames support 850 gsm PVC fabric covers rated to 100+ km/h wind loads. Widths from 3m to 50m+, any length, with eave heights up to 8m+ for high-rack storage systems.",
-        "price": "AED 200",
-        "priceLabel": "Per sqm (sale)"
+        "price": "",
+        "priceLabel": ""
       },
       "corporate": {
         "title": "Labor Accommodation Tents",
         "description": "UAE-compliant workforce housing for construction sites and industrial facilities. Air-conditioned, ventilated, and meeting the 3 sqm per worker regulatory standard.",
         "detailedBody": "UAE labor accommodation regulations require minimum 3 sqm per worker, proper ventilation, and air conditioning — our structures meet these standards from day one. Labor tents include integrated electrical distribution, ventilation systems, and Civil Defence-approved fire safety provisions. Used by major contractors across the UAE for construction camps, project workforce housing, and industrial facility support accommodation.",
-        "price": "AED 15",
-        "priceLabel": "Per sqm/month"
+        "price": "",
+        "priceLabel": ""
       },
       "home": {
         "title": "Warehouse Frame Tents",
         "description": "Install on any hard surface — concrete, asphalt, rooftops — without ground penetration. Wind-rated to 100+ km/h. Ideal for free zones and developed industrial sites.",
         "detailedBody": "Warehouse frame tents solve a specific problem: deploying covered storage on fully developed surfaces where ground staking is prohibited. The self-supporting frame system installs via ballast weights or expansion bolts on concrete. Used extensively in UAE free zones, port facilities, and logistics parks. Available with roller shutter doors, skylight panels, fire suppression integration, and climate control.",
-        "price": "AED 20",
-        "priceLabel": "Per sqm/month"
+        "price": "",
+        "priceLabel": ""
       },
       "furniture": {
         "title": "Premium Furniture Rental",
         "description": "Arabian low-seating, dining sets, lounge furniture, and decor. Meticulously maintained assets that define the quality of your gathering.",
         "detailedBody": "The tent is the shell; the furniture is the experience. We hold the largest inventory of event-specific furniture in the region. Every cushion, table, and rug is inspected, cleaned, and maintained to ensure a 5-star experience.",
-        "price": "AED 250",
-        "priceLabel": "Per Day"
+        "price": "",
+        "priceLabel": ""
       },
       "decor": {
         "title": "Cold Storage Tents",
@@ -153,36 +153,36 @@
         "title": "Construction Site Storage",
         "description": "Protect AED millions in materials from UAE heat, sand, and rain. On-site storage deployed within your construction footprint — minimising material handling distances.",
         "detailedBody": "Construction material loss from weather exposure is a major cost on UAE sites. Cement, steel reinforcement, electrical components, and finishing materials require protected storage from day one. Our construction site tents deploy within the project footprint, minimise material handling distances, and protect assets from the UAE's extreme heat, sandstorms, and seasonal rainfall.",
-        "price": "AED 8,500",
-        "priceLabel": "Starting"
+        "price": "",
+        "priceLabel": ""
       },
       "suhoor": {
         "title": "Oil & Gas Industrial Tents",
         "description": "Specialized structures for UAE and GCC oil field operations. Fire-resistant fabrics, explosion-proof electrical, chemical-resistant coatings. Field-deployable.",
         "detailedBody": "Oil and gas applications demand specialized specifications. Our structures feature fire-resistant fabric meeting DIN 4102 B1 and NFPA 701, explosion-proof electrical installations, chemical-resistant coatings against petroleum product exposure, and structural integrity for remote desert and coastal conditions. Used for equipment storage, maintenance workshops, personnel facilities, and command centers at UAE and GCC operational sites.",
-        "price": "AED 6,200",
-        "priceLabel": "Starting"
+        "price": "",
+        "priceLabel": ""
       },
       "sadu": {
         "title": "Corporate Event Tents",
         "description": "Clear-span event structures for product launches, exhibitions, corporate gatherings, and seasonal events. Professional finishes, climate-controlled, and fully compliant.",
         "detailedBody": "Corporate events and exhibitions require the same structural engineering as industrial applications — clear spans, climate control, full compliance — with a professional aesthetic. Our corporate event tents serve product launches, trade show pavilions, corporate Iftars, and seasonal hospitality venues. Available with branded facades, custom flooring, and full AV integration. Dubai Municipality and Civil Defence approved.",
-        "price": "AED 4,500",
-        "priceLabel": "Per Day"
+        "price": "",
+        "priceLabel": ""
       },
       "storage": {
         "title": "Industrial Storage Tents",
         "description": "Civil Defence-approved clear span, warehouse frame, and industrial tent structures for construction, logistics, oil & gas, and manufacturing across the UAE.",
         "detailedBody": "UAE warehousing vacancy is at 3% and industrial rents are up 33%. Tent Now deploys Civil Defence-approved storage structures within days — at 50–70% less than permanent construction. Clear span tents from 3m to 50m+, warehouse frame tents on any hard surface, and industrial-spec structures for cold storage, oil & gas, and labour accommodation.",
-        "price": "AED 15",
-        "priceLabel": "Per sqm/month"
+        "price": "",
+        "priceLabel": ""
       },
       "tarpaulins": {
         "title": "PE Tarpaulins",
         "description": "Dutarp PE200 reinforced 200gsm tarpaulins — UV-stabilised, waterproof, 16 standard sizes. For construction, logistics, agriculture and industrial use across the UAE.",
         "detailedBody": "Heavy-duty 200gsm HDPE fabric with LDPE lamination on both sides. UV-stabilised (ASTM 653/93), min 600 N tensile strength, aluminium eyelets every 100 cm. Available in Silver/Orange, Silver/Green, Blue/White and Camouflage. 16 standard sheet sizes plus roll supply (4M×50M, 2M×100M).",
-        "price": "From AED 25.92",
-        "priceLabel": "Price guide"
+        "price": "",
+        "priceLabel": ""
       },
       "shadeStructures": {
         "title": "Shade Structures",

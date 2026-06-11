@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام في الإمارات: الدليل الشامل لجميع أنواع الخيام 2026 | Tent Now'
-        : 'Tent Rental in UAE: Complete Guide to Every Tent Type (2026) | Tent Now';
+        ? 'تأجير خيام في الإمارات | دليل شامل لجميع أنواع الخيام ودبي وأبوظبي 2026 | Tent Now'
+        : 'Tent Rental UAE | Complete Guide to All Tent Types, Prices & All 7 Emirates | Tent Now';
 
     const description = locale === 'ar'
-        ? 'كل ما تحتاج معرفته عن تأجير الخيام في الإمارات—من خيام رمضان والمجالس إلى خيام المستودعات والفعاليات الكبرى. تغطية كاملة لجميع أنواع الخيام مع الأسعار والمناطق المخدومة.'
-        : 'Everything you need to know about tent rental in UAE — from Ramadan Majlis and event tents to warehouse and dome structures. Full coverage of tent types, pricing guidance, and all 7 Emirates.';
+        ? 'كل ما تحتاج معرفته عن تأجير الخيام في الإمارات — خيام رمضان والمجالس والفعاليات والتخزين الصناعي. أسعار ومناطق شاملة. استشارة مجانية من خبراء Tent Now.'
+        : 'Complete UAE tent rental guide: Ramadan majlis, corporate events & industrial storage. Pricing, permits & all 7 Emirates covered. Free consultation.';
 
     return {
         title,

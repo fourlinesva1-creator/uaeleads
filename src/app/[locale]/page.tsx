@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Hero from '@/components/sections/Hero';
 import TrustBar from '@/components/sections/TrustBar';
@@ -13,6 +14,48 @@ import FAQSchema from '@/components/seo/FAQSchema';
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const title = locale === 'ar'
+    ? 'تأجير خيام الإمارات | خيام تخزين وفعاليات | Tent Now'
+    : 'Tent Rental UAE | Storage & Event Tents | Tent Now';
+
+  const description = locale === 'ar'
+    ? 'تأجير خيام احترافي في الإمارات — خيام تخزين، إعدادات فعاليات ومنشآت مخصصة في دبي وأبوظبي والشارقة. احصل على عرض سعر مجاني خلال ساعتين.'
+    : 'Premium tent rental in UAE — storage tents, event setups & custom structures for Dubai, Abu Dhabi & Sharjah. Get a free quote within 2 hours.';
+
+  return {
+    title,
+    description,
+    keywords: locale === 'ar'
+      ? ['تأجير خيام الإمارات', 'خيام تخزين', 'خيام فعاليات', 'مجالس رمضان', 'خيام دبي', 'خيام أبوظبي', 'تنت ناو']
+      : ['tent rental UAE', 'storage tents UAE', 'event tents UAE', 'Ramadan majlis tent', 'tent rental Dubai', 'tent rental Abu Dhabi', 'Tent Now'],
+    openGraph: {
+      title,
+      description,
+      url: `https://www.tentnow.ae/${locale}`,
+      siteName: 'Tent Now',
+      images: [{ url: 'https://www.tentnow.ae/images/og-homepage.jpg', width: 1200, height: 630 }],
+      type: 'website',
+      locale: locale === 'ar' ? 'ar_AE' : 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+    alternates: {
+      canonical: `https://www.tentnow.ae/${locale}`,
+      languages: {
+        'en': 'https://www.tentnow.ae/en',
+        'ar': 'https://www.tentnow.ae/ar',
+        'x-default': 'https://www.tentnow.ae/en',
+      },
+    },
+  };
+}
 
 const homeFaqsEn = [
   { q: 'How much does Ramadan tent rental cost in the UAE?', a: 'Ramadan tent rental in the UAE ranges from AED 3,000 for small home majlis setups to AED 50,000+ for large hotel or corporate iftar events. Pricing depends on tent size, duration, decor package, and emirate. Contact Tent Now for a free custom quote.' },

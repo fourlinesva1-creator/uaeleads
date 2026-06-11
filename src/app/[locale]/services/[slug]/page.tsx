@@ -116,13 +116,13 @@ const serviceFaqsBySlug: Record<string, { en: { q: string; a: string }[]; ar: { 
     },
     'iftar-tent-rental': {
         en: [
-            { q: 'How much does an iftar tent rental cost in Dubai?', a: 'Iftar tent rental in Dubai ranges from AED 5,000 for a compact 20-person setup to AED 50,000+ for large corporate or hotel events. Price depends on size, duration, decor level, and AC requirements. Request a quote for exact pricing.' },
+            { q: 'How much does an iftar tent rental cost in Dubai?', a: 'Iftar tent rental pricing in Dubai depends on size, duration, decor level, and AC requirements. Request a custom quote for exact pricing — we work with all budgets from intimate family gatherings to large corporate Iftar events.' },
             { q: 'Can I rent an iftar tent for just one night?', a: 'We can arrange single-night rentals but minimum engagement is typically 3 days due to setup and teardown logistics. Ramadan-long rentals (30 days) offer the best value.' },
             { q: 'Do iftar tents come with air conditioning?', a: 'Yes. All our iftar tent packages include industrial-grade air conditioning units suitable for UAE temperatures. We size the AC load appropriately for your guest count and tent dimensions.' },
             { q: 'What is the minimum size iftar tent available?', a: 'Our smallest iftar tent setups start at 4m x 6m (24 sqm), suitable for 15–20 guests. We scale up to large multi-section structures for 1,000+ guests.' },
         ],
         ar: [
-            { q: 'كم تكلفة تأجير خيمة إفطار في دبي؟', a: 'تتراوح تكلفة تأجير خيمة الإفطار في دبي من 5,000 درهم لإعداد 20 شخصاً إلى 50,000 درهم وأكثر للفعاليات المؤسسية والفندقية الكبرى. اطلب عرض سعر للحصول على تسعيرة دقيقة.' },
+            { q: 'كم تكلفة تأجير خيمة إفطار في دبي؟', a: 'تكلفة تأجير خيمة الإفطار في دبي تعتمد على الحجم والمدة ومستوى الديكور ومتطلبات التكييف. اطلب عرض سعر مخصص للحصول على تسعيرة دقيقة.' },
             { q: 'هل يمكنني استئجار خيمة إفطار لليلة واحدة؟', a: 'يمكن ترتيب ذلك، لكن الحد الأدنى عادةً 3 أيام نظراً لمتطلبات التركيب والتفكيك. الإيجار لشهر رمضان كامل يوفر أفضل قيمة.' },
             { q: 'هل تشمل خيام الإفطار التكييف؟', a: 'نعم. جميع باقات خيام الإفطار تشمل وحدات تكييف صناعية مناسبة لمناخ الإمارات.' },
             { q: 'ما هو أصغر حجم لخيمة إفطار متاحة؟', a: 'تبدأ أصغر إعداداتنا من 4م × 6م (24 متر مربع) وتناسب 15–20 ضيفاً، وتصل هياكلنا إلى أكثر من 1,000 ضيف.' },

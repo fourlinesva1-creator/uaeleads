@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'كيف تختار شركة تأجير خيام في الإمارات: 7 معايير أساسية | Tent Now'
-        : 'How to Choose a Tent Rental Company in UAE: 7 Must-Check Criteria | Tent Now';
+        ? 'كيف تختار أفضل شركة تأجير خيام في الإمارات ودبي: 7 معايير أساسية | Tent Now'
+        : 'How to Choose the Best Tent Rental Company in UAE & Dubai: 7 Must-Check Criteria | Tent Now';
 
     const description = isAr
-        ? 'تجاهل التصاريح قد يُكلفك غرامة تصل إلى 500,000 درهم في الإمارات. تحقق من 7 معايير حاسمة — الخبرة والتصاريح والمحفظة والدعم الميداني — قبل توقيع أي عقد مع شركة خيام.'
-        : 'Ignoring permits can cost you AED 500,000 in fines in the UAE. Check these 7 criteria — experience, permits, portfolio, field support — before signing any tent rental contract.';
+        ? 'تجاهل التصاريح قد يُكلفك غرامة باهظة في الإمارات. تحقق من 7 معايير — الخبرة والتصاريح والمحفظة والدعم — قبل توقيع عقد. استشر شركة خيام موثوقة الآن.'
+        : 'Avoid costly fines — check these 7 criteria before choosing a tent rental company in UAE: experience, permits, portfolio & field support. Free quote.';
 
     return {
         title,

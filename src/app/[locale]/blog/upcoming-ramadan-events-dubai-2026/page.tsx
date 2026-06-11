@@ -257,7 +257,7 @@ export default function ArticlePage() {
                             <ul>
                                 <li><strong>The Vibe:</strong> Think "Grandmother’s Supermarket" (literally, that’s a thing there for kids), traditional storytelling, and a vibe that feels like a modern-day Bedouin village. It’s huge, it’s outdoors, and it’s nostalgic.</li>
                                 <li><strong>Why Go:</strong> It’s not just about eating; it’s about the <em>scene</em>. They usually have a massive cannon firing at sunset which scares the life out of you even when you know it’s coming.</li>
-                                <li><strong>Wallet Watch:</strong> Entry is usually cheap (around AED 20), but you’ll spend your budget on the artisanal food stalls.</li>
+                                <li><strong>Wallet Watch:</strong> Entry is usually affordable (around AED 23, tentative as of December 2025), but you’ll spend your budget on the artisanal food stalls.</li>
                             </ul>
 
                             <h2>2. The "Foodie's Secret": Ramadan Street Food Festival in Karama</h2>
@@ -311,7 +311,7 @@ export default function ArticlePage() {
                             <h2>The "I'm Feeling Fancy" Section (Iftars & Suhoors)</h2>
                             <p>Okay, we can’t ignore the classics. If you want to dress up and spend some cash:</p>
                             <ul>
-                                <li><strong>Asateer Tent (Atlantis):</strong> The celebrity of tents. Expensive (~AED 295+), crowded, but absolutely stunning.</li>
+                                <li><strong>Asateer Tent (Atlantis):</strong> The celebrity of tents. Expensive (~AED 339+, tentative as of December 2025), crowded, but absolutely stunning.</li>
                                 <li><strong>Madinat Jumeirah:</strong> The "Old Dubai" charm with world-class AC. Great for business meetings where you want to impress but also actually hear the person talking.</li>
                                 <li><strong>The Desert Escape (Bab Al Shams / Camel Uschi Farm):</strong> Drive out of the city. Break your fast under the stars. Realize how quiet the desert is. It’s a vibe reset.</li>
                             </ul>

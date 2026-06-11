@@ -86,12 +86,6 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
                     {t(`items.${service.key}.title`)}
                   </h3>
-                  <p className="text-gold font-bold text-sm">
-                    {t(`items.${service.key}.price`)}{' '}
-                    <span className="text-text-muted font-normal text-xs">
-                      / {t(`items.${service.key}.priceLabel`)}
-                    </span>
-                  </p>
                 </div>
                 <p className="text-text-muted text-sm mt-2 line-clamp-2">
                   {t(`items.${service.key}.description`)}

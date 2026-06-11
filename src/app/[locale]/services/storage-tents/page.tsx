@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير خيام التخزين في الإمارات | خيام صناعية ومستودعات | تنت ناو'
-            : 'Storage Tent Rental UAE | Industrial & Warehouse Tents | Tent Now',
+            ? 'تأجير خيام التخزين في الإمارات | خيام المستودعات والصناعة | تنت ناو'
+            : 'Storage Tent Rental UAE | Warehouse & Industrial Tents | Tent Now',
         description: isAr
-            ? 'تأجير خيام التخزين للمشاريع الصناعية والخدمات اللوجستية والنفط والغاز في الإمارات. توفير 50-70% مقارنة بالإنشاءات الدائمة. من 15 درهم/م² شهرياً. معتمدة من الدفاع المدني.'
-            : 'Storage tent rental UAE from AED 15–40/sqm/month. Industrial, warehouse, and clear span tent structures for construction, logistics, oil & gas, and manufacturing. Civil Defence approved. Deployed in days.',
+            ? 'تأجير خيام التخزين في جميع أنحاء الإمارات — خيام مستودعات، كلير سبان وهياكل صناعية. معتمدة من الدفاع المدني. تخدم دبي وأبوظبي والشارقة وجميع الإمارات السبع.'
+            : 'Storage tent rental across UAE — warehouse tents, clear span & industrial structures. Civil Defence approved. Serving Dubai, Abu Dhabi, Sharjah & all 7 emirates.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents`,
             languages: {
@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Industrial Storage Tent Rental UAE | Tent Now',
-            description: 'UAE warehousing demand is at a 3% vacancy rate. Secure temporary and permanent-grade storage with our clear span, warehouse, and industrial tent structures.',
+            title: 'Storage Tent Rental UAE | Warehouse & Industrial Tents | Tent Now',
+            description: 'Storage tent rental across UAE — warehouse tents, clear span & industrial structures. Civil Defence approved. Serving Dubai, Abu Dhabi, Sharjah & all 7 emirates.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg' }],
         },
     };

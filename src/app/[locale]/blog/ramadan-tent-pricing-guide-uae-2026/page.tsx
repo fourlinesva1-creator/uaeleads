@@ -137,7 +137,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">خيمة مجلس عائلي صغير</div>
                                     <div className="text-sm text-text-muted mb-3">50-80 ضيفاً | 100-200 متر مربع</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 8,000 - 18,000</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 9,200 - 20,700</div>
                                     <div className="text-sm text-text-muted">
                                         يشمل: سجاد أساسي، جلسات، إضاءة
                                     </div>
@@ -146,7 +146,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">خيمة إفطار شركات متوسطة</div>
                                     <div className="text-sm text-text-muted mb-3">100-250 ضيفاً | 250-500 متر مربع</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 25,000 - 75,000</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 28,750 - 86,250</div>
                                     <div className="text-sm text-text-muted">
                                         يشمل: تكييف، مسرح، تجهيز بوفيه، إضاءة، أرضيات
                                     </div>
@@ -155,7 +155,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">خيمة رمضان فندقية فاخرة</div>
                                     <div className="text-sm text-text-muted mb-3">300-800+ ضيف | 600-1,500+ متر مربع</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 120,000 - 450,000+</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 138,000 - 517,500+</div>
                                     <div className="text-sm text-text-muted">
                                         يشمل: ديكور مخصص، ثريات، نظام تكييف مركزي، هوية بصرية، حواجز
                                     </div>
@@ -164,7 +164,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">تجهيز حكومي / مجتمعي ضخم</div>
                                     <div className="text-sm text-text-muted mb-3">1,500-5,000 متر مربع</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 500,000+</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 575,000+</div>
                                     <div className="text-sm text-text-muted">
                                         يشمل: هندسة كاملة، موافقات الدفاع المدني، تكييف شديد التحمل، شاشات LED
                                     </div>
@@ -173,7 +173,7 @@ export default function RamadanTentPricingGuidePage() {
 
                             <div className="bg-blue-900/20 border-r-4 border-blue-500 p-4 rounded-r my-6 not-prose">
                                 <p className="text-sm text-blue-200">
-                                    <strong>ملاحظة:</strong> الأسعار تقديرية بناءً على اتجاهات سوق الإمارات لعام 2026. تختلف التكاليف الفعلية حسب الموقع والموسمية ومتطلبات التخصيص. <Link href="/request-quote" className="text-gold underline">اطلب عرض أسعار مخصص</Link> للحصول على تسعير دقيق.
+                                    <strong>ملاحظة:</strong> هذه أسعار تقديرية استناداً إلى بيانات سوق ديسمبر 2025. تختلف التكاليف الفعلية حسب الموقع والموسمية ومتطلبات التخصيص. <Link href="/request-quote" className="text-gold underline">اطلب عرض أسعار مخصص</Link> للحصول على تسعير دقيق ومحدّث.
                                 </p>
                             </div>
 
@@ -507,7 +507,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">Small Family Majlis Tent</div>
                                     <div className="text-sm text-text-muted mb-3">50-80 Guests | 100-200 sqm</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 8,000 - 18,000</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 9,200 - 20,700</div>
                                     <div className="text-sm text-text-muted">
                                         Includes: Basic carpeting, seating, lighting
                                     </div>
@@ -516,7 +516,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">Medium Corporate Iftar Tent</div>
                                     <div className="text-sm text-text-muted mb-3">100-250 Guests | 250-500 sqm</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 25,000 - 75,000</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 28,750 - 86,250</div>
                                     <div className="text-sm text-text-muted">
                                         Includes: AC, stage, buffet setup, lighting, flooring
                                     </div>
@@ -525,7 +525,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">Premium Hotel Ramadan Tent</div>
                                     <div className="text-sm text-text-muted mb-3">300-800+ Guests | 600-1,500+ sqm</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 120,000 - 450,000+</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 138,000 - 517,500+</div>
                                     <div className="text-sm text-text-muted">
                                         Includes: Custom decor, chandeliers, HVAC system, branding, partitions
                                     </div>
@@ -534,7 +534,7 @@ export default function RamadanTentPricingGuidePage() {
                                 <div className="bg-bg-elevated rounded-xl p-6 border border-gold/20">
                                     <div className="text-gold font-semibold mb-2 text-sm uppercase tracking-wider">Government / Community Mega Setup</div>
                                     <div className="text-sm text-text-muted mb-3">1,500-5,000 sqm</div>
-                                    <div className="text-3xl font-bold text-gold mb-3">AED 500,000+</div>
+                                    <div className="text-3xl font-bold text-gold mb-3">AED 575,000+</div>
                                     <div className="text-sm text-text-muted">
                                         Includes: Full engineering, civil defense approvals, heavy-duty AC, LED walls
                                     </div>
@@ -543,7 +543,7 @@ export default function RamadanTentPricingGuidePage() {
 
                             <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-l my-6 not-prose">
                                 <p className="text-sm text-blue-200">
-                                    <strong>Note:</strong> Prices are estimates based on 2026 UAE market trends. Actual costs vary by location, seasonality, and customization requirements. <Link href="/request-quote" className="text-gold underline">Request a custom quote</Link> for accurate pricing.
+                                    <strong>Note:</strong> These are tentative price estimates based on December 2025 market data. Actual costs vary by location, seasonality, and customization requirements. <Link href="/request-quote" className="text-gold underline">Request a custom quote</Link> for accurate current pricing.
                                 </p>
                             </div>
 

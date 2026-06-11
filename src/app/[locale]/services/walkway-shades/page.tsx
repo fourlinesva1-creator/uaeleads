@@ -111,7 +111,7 @@ const content: Record<string, WalkwayContent> = {
         faqs: [
             {
                 q: 'How much does a covered walkway shade cost in UAE?',
-                a: 'Pricing depends on width, length, and material. HDPE flat-frame walkways start from AED 350–600 per linear metre. Polycarbonate covered walkways start from AED 600–1,000 per linear metre. Contact Tent Now for a free site survey and full quotation.',
+                a: 'Walkway shade pricing depends on width, length, and material selected. Contact Tent Now for a free site survey and full quotation.',
             },
             {
                 q: 'Do walkway shades require municipality permits in UAE?',
@@ -179,7 +179,7 @@ const content: Record<string, WalkwayContent> = {
         faqs: [
             {
                 q: 'كم تكلفة مظلة ممشى مسقوفة في الإمارات؟',
-                a: 'تعتمد الأسعار على العرض والطول والمادة. ممشيات HDPE بإطار مسطح تبدأ من 350–600 درهم للمتر الطولي. الممشيات المسقوفة بالبولي كربونات تبدأ من 600–1,000 درهم للمتر الطولي. تواصل مع تنت ناو للحصول على مسح موقعي مجاني وعرض سعر شامل.',
+                a: 'تكلفة مظلات الممشيات تعتمد على العرض والطول والمادة المختارة. تواصل مع تنت ناو للحصول على مسح موقعي مجاني وعرض سعر شامل.',
             },
             {
                 q: 'هل تتطلب مظلات الممشى تصاريح بلدية في الإمارات؟',

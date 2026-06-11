@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'دليل تأجير الخيام في الإمارات 2026: كيف تتعرف على المورد الاحترافي | Tent Now'
-        : 'UAE Tent Rental Guide 2026: How to Spot a Professional Supplier | Tent Now';
+        ? 'أفضل موردي الخيام في الإمارات 2026 | مقارنة شركات تأجير الخيام في دبي وأبوظبي | Tent Now'
+        : 'Top Tent Suppliers UAE 2026 | Best Tent Rental Companies in Dubai & Abu Dhabi | Tent Now';
 
     const description = locale === 'ar'
-        ? '5 معايير أساسية يستخدمها المحترفون لاختيار موردي الخيام في دبي وأبوظبي والشارقة — تجنب الأخطاء المكلفة وابحث عن التصاريح والخبرة والدعم الميداني قبل التوقيع.'
-        : '5 criteria professionals use to vet tent suppliers in Dubai, Abu Dhabi and Sharjah — avoid costly mistakes by checking permits, 30+ yr experience, and field support before you sign.';
+        ? 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026 — مقارنة معتمدة تشمل الخبرة والأسعار والتصاريح والتغطية الجغرافية. احجز مبكراً قبل امتلاء المواعيد.'
+        : 'Top 10 tent rental companies in UAE for Ramadan 2026 — compared by experience, pricing & permits. Dubai, Abu Dhabi, Sharjah & all Emirates. Book early.';
 
     return {
         title,

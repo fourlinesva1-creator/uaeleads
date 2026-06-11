@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير الخيام الصناعية في الإمارات | النفط والغاز، التبريد، مخيمات العمال | تنت ناو'
-            : 'Industrial Tent Rental UAE | Oil & Gas, Manufacturing, Cold Storage | Tent Now',
+            ? 'تأجير الخيام الصناعية في الإمارات | هياكل تخزين ثقيلة التحمل | تنت ناو'
+            : 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures | Tent Now',
         description: isAr
-            ? 'تأجير خيام صناعية في الإمارات للتخزين المبرد وعمليات النفط والغاز واحتواء الخطر وإقامة العمال. معتمدة من الدفاع المدني. خيام صناعية في الإمارات تعمل من –20°م إلى +55°م. من 25 درهم/م² شهرياً.'
-            : 'Industrial tent rental UAE from AED 25–55/sqm/month. Industrial tents UAE for oil & gas, manufacturing, cold storage, and hazardous containment. Civil Defence approved. ATEX-rated options available.',
+            ? 'تأجير خيام صناعية في الإمارات — هياكل ثقيلة التحمل للنفط والغاز والإنشاء والتصنيع. مقاومة للعوامل الجوية ومتوافقة مع الدفاع المدني. احصل على عرض سعر.'
+            : 'Industrial tent rental UAE — heavy-duty structures for oil & gas, construction & manufacturing. Weather-resistant, Civil Defence compliant. Get a quote.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/industrial-tents`,
             languages: {
@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Industrial Tent Structures UAE — Cold Storage, Oil & Gas | Tent Now',
-            description: 'Specialised industrial tents engineered for demanding UAE environments. Temperature-controlled cold stores, hazardous containment, oil field workshops, and labour accommodation.',
+            title: 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures | Tent Now',
+            description: 'Industrial tent rental UAE — heavy-duty structures for oil & gas, construction & manufacturing. Weather-resistant, Civil Defence compliant. Get a quote.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-3.jpeg' }],
         },
     };

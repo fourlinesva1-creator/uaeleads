@@ -94,7 +94,7 @@ const content = {
         faqs: [
             {
                 q: 'How much does a parking shade cost in Dubai?',
-                a: 'From AED 800 per bay for HDPE cantilever to AED 2,500+ for polycarbonate. Large commercial projects quoted on site survey. Dubai Municipality permit fees included.',
+                a: 'Parking shade pricing depends on bay count, material, and structural type. Large commercial projects are quoted on site survey. Dubai Municipality permit fees included. Contact Tent Now for a free quote.',
             },
             {
                 q: 'Does Dubai Municipality require a permit for a parking shade?',
@@ -155,7 +155,7 @@ const content = {
         faqs: [
             {
                 q: 'كم تكلفة مظلة موقف سيارة في دبي؟',
-                a: 'من 800 درهم لكل بوابة لمظلات HDPE المتدلية إلى 2500 درهم وأكثر لمظلات البولي كربونات. المشاريع التجارية الكبيرة تُقتبس بعد المسح الميداني. رسوم تصاريح بلدية دبي مشمولة.',
+                a: 'تكلفة مظلات مواقف السيارات في دبي تعتمد على عدد المواقف والمواد ونوع الهيكل. المشاريع التجارية الكبيرة تُقتبس بعد المسح الميداني. رسوم تصاريح بلدية دبي مشمولة.',
             },
             {
                 q: 'هل تشترط بلدية دبي تصريحاً لمظلة الموقف؟',

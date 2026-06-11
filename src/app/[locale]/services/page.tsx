@@ -38,7 +38,7 @@ export default async function ServicesPage({ params }: Props) {
 }
 
 const serviceFaqsEn = [
-    { q: 'How much does tent rental cost in UAE?', a: 'Tent rental prices in the UAE vary by type and duration. Ramadan majlis and iftar tents start from AED 3,000–5,000 for a basic home setup, while hotel and corporate event tents range from AED 15,000–80,000+. Industrial storage tents are priced from AED 15–40 per sqm per month. Contact Tent Now for a custom quote.' },
+    { q: 'How much does tent rental cost in UAE?', a: 'Tent rental prices in the UAE vary by type, size, and duration. Contact Tent Now for a custom quote — we work with all budgets from family home setups to large corporate and hotel events.' },
     { q: 'How quickly can Tent Now set up a tent?', a: 'Tent Now offers same-week setup in most cases. For standard Ramadan and event tents, we can typically mobilise within 48–72 hours. Industrial storage structures require 3–7 days depending on size and site conditions.' },
     { q: 'Does Tent Now handle permits and Civil Defence approvals?', a: 'Yes. Tent Now manages all required permits including Dubai Municipality, Abu Dhabi City Municipality, Civil Defence approvals, and free zone authority clearances. You do not need to follow up on any paperwork.' },
     { q: 'What areas do you serve in the UAE?', a: 'Tent Now serves all 7 Emirates: Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain. We have established relationships with the relevant authorities in each emirate.' },
@@ -49,7 +49,7 @@ const serviceFaqsEn = [
 ];
 
 const serviceFaqsAr = [
-    { q: 'كم تبلغ تكلفة تأجير الخيام في الإمارات؟', a: 'تتفاوت أسعار تأجير الخيام حسب النوع والمدة. تبدأ خيام المجالس والإفطار الرمضانية من 3,000–5,000 درهم للإعدادات المنزلية البسيطة، بينما تتراوح خيام الفنادق والفعاليات المؤسسية بين 15,000–80,000 درهم وأكثر. خيام التخزين الصناعية تبدأ من 15–40 درهم للمتر المربع شهرياً. تواصل معنا للحصول على عرض سعر مخصص.' },
+    { q: 'كم تبلغ تكلفة تأجير الخيام في الإمارات؟', a: 'تتفاوت أسعار تأجير الخيام حسب النوع والحجم والمدة. تواصل مع Tent Now للحصول على عرض سعر مخصص — نتعامل مع جميع الميزانيات من الإعدادات المنزلية البسيطة إلى الفعاليات المؤسسية والفندقية الكبرى.' },
     { q: 'ما هو وقت تركيب الخيمة لدى Tent Now؟', a: 'يمكننا التركيب خلال الأسبوع نفسه في معظم الحالات. للخيام الرمضانية العادية نتحرك خلال 48–72 ساعة. أما الهياكل الصناعية فتستغرق 3–7 أيام حسب الحجم وظروف الموقع.' },
     { q: 'هل تتولى Tent Now استخراج التصاريح والموافقات؟', a: 'نعم. نتولى جميع التصاريح اللازمة بما فيها بلدية دبي، بلدية أبوظبي، موافقات الدفاع المدني، وسلطات المناطق الحرة. لا تحتاج إلى متابعة أي أوراق.' },
     { q: 'ما المناطق التي تغطيها في الإمارات؟', a: 'تغطي Tent Now جميع الإمارات السبع: دبي، أبوظبي، الشارقة، عجمان، رأس الخيمة، الفجيرة، وأم القيوين.' },
@@ -160,7 +160,7 @@ function ServicesContent() {
                             </div>
                             <div className="p-10 lg:p-12 flex flex-col justify-center">
                                 <div className="text-gold text-sm font-bold uppercase tracking-widest mb-4">
-                                    {isAr ? 'درهم 15–40 / متر مربع / شهر' : 'AED 15–40 / sqm / month'}
+                                    {isAr ? 'هياكل صناعية معتمدة' : 'Civil Defence Approved Structures'}
                                 </div>
                                 <h3 className="text-3xl font-display text-white mb-4">
                                     {isAr ? 'خيام التخزين الصناعية' : 'Industrial Storage Tents'}

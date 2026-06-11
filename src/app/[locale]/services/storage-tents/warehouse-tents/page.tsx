@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير خيام المستودعات في الإمارات | هياكل إطارية جاهزة | تنت ناو'
-            : 'Warehouse Tent Rental UAE | Frame Structures | Tent Now',
+            ? 'تأجير خيام المستودعات | هياكل التخزين الصناعي في الإمارات | Tent Now'
+            : 'Warehouse Tent Rental UAE | Industrial Storage Tents | Tent Now',
         description: isAr
-            ? 'خيام مستودعات معيارية تُركَّب على أي سطح صلب في الإمارات — بدون تثبيت أرضي أو حفريات. مثالية للخدمات اللوجستية والتجارة الإلكترونية وتخزين الموانئ. من 15 درهم/م² شهرياً.'
-            : 'Warehouse tent rental UAE from AED 15–40/sqm/month. Modular frame tents installed on any hard surface — no staking, no excavation. Warehouse tents UAE logistics, e-commerce, and port operators trust. Deployed in 5–8 days.',
+            ? 'تأجير خيام المستودعات في الإمارات — هياكل فولاذية من 10×10م إلى 50×100م. معتمدة من الدفاع المدني، توصيل سريع. عرض سعر مجاني خلال ساعتين.'
+            : 'Warehouse tent rental across UAE — steel-frame structures from 10×10m to 50×100m. Civil Defence approved, fast delivery. Free quote within 2 hours.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/services/storage-tents/warehouse-tents`,
             languages: {
@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Warehouse Tent & Frame Structure Rental UAE | Tent Now',
-            description: 'Ballast-anchored frame tents on concrete or asphalt — no ground penetration. Dubai logistics demand up 225%. Deploy warehouse space in 5–10 days.',
+            title: 'Warehouse Tent Rental UAE | Industrial Storage Tents | Tent Now',
+            description: 'Warehouse tent rental across UAE — steel-frame structures from 10×10m to 50×100m. Civil Defence approved, fast delivery. Free quote within 2 hours.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-2.jpeg' }],
         },
     };

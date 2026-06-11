@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تقويم رمضان 2026 الإمارات + قائمة التحقق لتخطيط خيمة الإفطار | Tent Now'
-        : 'Ramadan 2026 UAE Calendar + Iftar Tent Planning Checklist | Tent Now';
+        ? 'تقويم رمضان 2026 الإمارات | التواريخ وأوقات الصلاة ودليل إعداد خيمة المجلس | Tent Now'
+        : 'Ramadan 2026 UAE Calendar | Dates, Timing & Tent Setup Guide | Tent Now';
 
     const description = locale === 'ar'
-        ? 'تواريخ رمضان 2026 المؤكدة: 19 فبراير – 20 مارس. مواقيت الإفطار والسحور لدبي وأبوظبي والشارقة — بالإضافة إلى قائمة تحقق عملية لحجز خيمة الإفطار في الوقت المناسب.'
-        : 'Confirmed Ramadan 2026 dates: Feb 19 – Mar 20. Iftar & Suhoor timings for Dubai, Abu Dhabi, Sharjah — plus an actionable checklist for booking your iftar tent before slots run out.';
+        ? 'تقويم رمضان 2026 الكامل للإمارات مع أوقات الصلاة وجداول الإفطار والسحور وكيفية إعداد مجلس خيمة خاص. خطط لموسم 2027 مبكراً للحصول على أفضل الأسعار.'
+        : 'Complete Ramadan 2026 UAE calendar with prayer times, iftar/suhoor schedules, and how to set up a private majlis tent. Plan your 2027 season early.';
 
     return {
         title,
@@ -129,6 +129,15 @@ export default function RamadanCalendarPage() {
                             <p>
                                 من المتوقع أن يبدأ شهر رمضان المبارك 2026 في دولة الإمارات العربية المتحدة يوم <strong>الخميس 19 فبراير 2026</strong>، وينتهي حوالي يوم الخميس 19 مارس، مع بداية عيد الفطر المبارك يوم الجمعة 20 مارس 2026.
                             </p>
+
+                            <div className="bg-gold/10 border border-gold/30 rounded-xl p-4 my-6 not-prose flex items-start gap-3">
+                                <span className="text-gold text-lg flex-shrink-0">★</span>
+                                <p className="text-sm text-white/90">
+                                    <strong className="text-gold">تخطط لرمضان 2027؟</strong> احجز مبكراً للحصول على أفضل الأسعار وضمان التوفر.{' '}
+                                    <Link href="/contact" className="text-gold underline hover:text-white font-semibold">تواصل معنا الآن</Link> لتأمين إعداد خيمتك لموسم 2027.
+                                </p>
+                            </div>
+
                             <p>
                                 يجمع هذا الشهر الكريم الملايين في دبي وأبوظبي والشارقة والإمارات الشمالية في التأمل الروحي والصيام والتجمعات المجتمعية. سواء كنت تبحث عن <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">تأجير خيمة إفطار</Link> لفعالية شركتك، أو <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">خيام مجالس الفنادق</Link>، أو حتى <Link href="/services/home-majlis" className="text-gold hover:underline font-semibold">إعداد مجلس منزلي</Link> عائلي، فإن التخطيط المبكر هو مفتاح تجربة رمضانية مباركة.
                             </p>
@@ -330,6 +339,15 @@ export default function RamadanCalendarPage() {
                             <p>
                                 Ramadan 2026 in the United Arab Emirates is expected to commence on <strong>Thursday, February 19, 2026</strong>, and conclude around Thursday, March 19, with Eid al-Fitr celebrations beginning on Friday, March 20, 2026.
                             </p>
+
+                            <div className="bg-gold/10 border border-gold/30 rounded-xl p-4 my-6 not-prose flex items-start gap-3">
+                                <span className="text-gold text-lg flex-shrink-0">★</span>
+                                <p className="text-sm text-white/90">
+                                    <strong className="text-gold">Looking ahead to Ramadan 2027?</strong> Book early for the best rates and guaranteed availability.{' '}
+                                    <Link href="/contact" className="text-gold underline hover:text-white font-semibold">Contact us now</Link> to secure your 2027 tent setup.
+                                </p>
+                            </div>
+
                             <p>
                                 This blessed month brings together millions across Dubai, Abu Dhabi, Sharjah, and the Northern Emirates in spiritual reflection, fasting, and community gatherings. Whether you are planning{' '}
                                 <Link href="/services/iftar-tent-rental" className="text-gold hover:underline font-semibold">iftar tent rental</Link> for a corporate event,{' '}

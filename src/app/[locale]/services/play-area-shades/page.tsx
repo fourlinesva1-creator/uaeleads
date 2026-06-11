@@ -111,7 +111,7 @@ const content: Record<string, PlayAreaContent> = {
         faqs: [
             {
                 q: 'How much does a playground shade cost in UAE?',
-                a: 'Play area shade sails for a residential play zone start from AED 3,000–8,000. School playground frame shades covering 100–500 sqm range from AED 15,000–80,000 depending on structure type and materials. Contact us for a free site survey.',
+                a: 'Play area shade pricing depends on size, structure type, and materials. Contact us for a free site survey and customised quotation.',
             },
             {
                 q: 'What UV protection do play area shades provide?',
@@ -179,7 +179,7 @@ const content: Record<string, PlayAreaContent> = {
         faqs: [
             {
                 q: 'كم تكلفة مظلة ملعب أطفال في الإمارات؟',
-                a: 'أشرعة مناطق اللعب السكنية تبدأ من 3,000–8,000 درهم. مظلات إطارية لملاعب مدارس بمساحة 100–500 متر مربع تتراوح بين 15,000–80,000 درهم حسب نوع الهيكل والمواد. تواصل معنا للحصول على مسح موقعي مجاني.',
+                a: 'تكلفة مظلات مناطق اللعب تعتمد على الحجم ونوع الهيكل والمواد. تواصل معنا للحصول على مسح موقعي مجاني وعرض سعر مخصص.',
             },
             {
                 q: 'ما مستوى الحماية من الأشعة فوق البنفسجية التي توفرها مظلات مناطق اللعب؟',

@@ -31,8 +31,8 @@ export interface CityOverview {
 export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     en: {
         dubai: {
-            title: 'Tent Rental in Dubai | Ramadan, Majlis & Industrial Tents',
-            metaDescription: 'Tent rental in Dubai — iftar tent rental Dubai, majlis tent setup, Ramadan tent hire 2026. IACAD permits included. JAFZA, Business Bay, DIFC, Jumeirah. Civil Defence-approved. Free quote →',
+            title: 'Tent Rental Dubai | Ramadan, Majlis & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Dubai — Civil Defence-approved Ramadan tents, majlis & storage. IACAD permits included. JAFZA, DIFC, Jumeirah. Same-day response. Free quote.',
             subtitle: 'Dubai\'s Trusted Tent Hire Specialists — Ramadan, Majlis, Iftar & Industrial Since 1994',
             intro: 'Looking for tent rental in Dubai? Whether you need iftar tent rental Dubai for corporate hospitality, a private majlis tent rental Dubai for family Ramadan gatherings, or covered industrial storage across JAFZA and Dubai South, Tent Now has been delivering tent rental in Dubai since 1994. Dubai is the UAE\'s most competitive market — and our 30 years of experience means we know every permit requirement, every event zone, and every installation challenge. From Ramadan tent hire Dubai setups in Jumeirah villa gardens to corporate iftar tent setup in Dubai at Business Bay offices, DIFC terraces, and Downtown Dubai hotels, we handle the full scope. Dubai Creek, Old Dubai, and Al Fahidi cultural district locations have their own heritage area requirements — we know those too. IACAD (Islamic Affairs and Charitable Activities Department) permits are mandatory for all Ramadan tent setups in Dubai; we manage these as a routine service alongside Civil Defence and Dubai Municipality approvals.',
             whyUs: 'Thirty years of tent rental in Dubai — industrial and Ramadan alike. We know the Dubai Municipality permit process for temporary structures (Article 13), IACAD requirements specific to Dubai, Civil Defence fire safety approvals, and which free zone authorities require separate sign-offs. We know that Jumeirah villa gardens need different anchoring than a DIFC terrace. We know that February humidity on the coast is brutal on cheap materials. We know that a non-compliant majlis tent setup in Dubai carries serious risk. Every permit, every safety certification, every structural report — handled before we start.',
@@ -60,7 +60,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['Jumeirah', 'Business Bay', 'DIFC', 'Downtown Dubai', 'Palm Jumeirah', 'Dubai Creek / Al Fahidi', 'JLT (Jumeirah Lake Towers)', 'Dubai Marina', 'JAFZA (Jebel Ali Free Zone)', 'Dubai Industrial City', 'Dubai South', 'Dubai Investment Park', 'Al Quoz Industrial', 'Meydan', 'Silicon Oasis'],
             faqs: [
                 { q: 'What is the best tent rental company in Dubai?', a: 'Tent Now has 30+ years delivering tent rental in Dubai — from iftar tent setups in Jumeirah and DIFC to industrial storage structures in JAFZA and Dubai South. We handle all IACAD, Dubai Municipality, Civil Defence, and free zone authority permits. Contact us for a custom quote.' },
-                { q: 'How much does tent rental cost in Dubai?', a: 'Tent rental in Dubai varies by type and size. Ramadan and majlis tent hire Dubai runs 15–25% below comparable hotel packages. Industrial tent rental starts from AED 15–40 per sqm per month. Contact us for a custom quote based on your specific requirements.' },
+                { q: 'How much does tent rental cost in Dubai?', a: 'Tent rental in Dubai varies by type, size, and duration. Contact us for a custom quote based on your specific requirements — we work with all budgets from family Ramadan setups to large industrial structures.' },
                 { q: 'Who provides iftar tent for rent in Dubai?', a: 'Tent Now provides iftar tent rental Dubai for corporate and community events. We set up iftar tents at Business Bay offices, DIFC terraces, Jumeirah villa compounds, and hotel extensions across Dubai. All IACAD permits and Civil Defence approvals are fully managed.' },
                 { q: 'Do Ramadan tents in Dubai need IACAD permits?', a: 'Yes. IACAD (Islamic Affairs and Charitable Activities Department) approval is required for all Ramadan tent setups in Dubai, in addition to Dubai Municipality Article 13 permits and Civil Defence approvals. Non-compliant structures risk fines of AED 500,000. Tent Now handles all permit streams.' },
                 { q: 'How much is majlis tent hire in Dubai?', a: 'Majlis tent hire Dubai is priced based on size, duration, interior specifications, and location. Intimate 20-person family majlis setups to 100+ guest corporate configurations are all available. Contact Tent Now for a custom quote — we work with all budgets.' },
@@ -69,8 +69,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Dubai Tent Rental Quote'
         },
         'abu-dhabi': {
-            title: 'Tent Rental Abu Dhabi | Industrial & Warehouse Tents',
-            metaDescription: 'Tent rental Abu Dhabi — KIZAD, Mussafah & ICAD specialists. DMT + Civil Defence permits handled. 72-hr deployment. Iftar tent & Ramadan tent setup 2026. Free quote.',
+            title: 'Tent Rental Abu Dhabi | Storage, Event & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Abu Dhabi — Ramadan tents, warehouse & industrial structures. Civil Defence-approved. ADM permits handled. 72-hr deployment. Free quote today.',
             subtitle: 'Serving KIZAD, Mussafah, ICAD, Yas Island, and Abu Dhabi Industrial Areas Since 1994',
             intro: 'When it comes to tent rental Abu Dhabi, the demands are unlike any other emirate. Abu Dhabi\'s industrial base is the foundation of the UAE economy — KIZAD hosts the world\'s third-largest free zone, Mussafah accommodates over 1,000 industrial companies, and ADNOC\'s operations span the emirate and beyond. From Yas Island event setups to Saadiyat Island cultural district constructions and Corniche waterfront occasions, the need for deployable, compliant tent structures is constant. Tent Now delivers full-service tent rental Abu Dhabi — from industrial warehousing to Ramadan iftar tents — with Abu Dhabi Municipality (ADM) permits and Civil Defence approvals fully managed. Where competitors benchmark themselves against Emirates Palace-level service, we deliver it.',
             whyUs: 'Three decades of industrial and event tent deployments in Abu Dhabi, navigating the Abu Dhabi Municipality (ADM) permit process, Civil Defence approvals, Abu Dhabi Ports authority requirements, and — for major events — Abu Dhabi National Events Committee (ADNEC) clearances. We understand that Abu Dhabi\'s standards are different from Dubai\'s — specifications are stricter, documentation requirements are heavier, and the expectation is that your supplier has everything in order before arrival. ADNOC area deployments require specific HSE packages; Corniche and Yas Island locations have their own aesthetic requirements. We know all of it. Our structures are certified, our crews are trained, and our permit packages are complete before the first post goes in the ground.',
@@ -98,7 +98,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['KIZAD (Khalifa Industrial Zone)', 'Mussafah Industrial Area', 'ICAD (Industrial City Abu Dhabi)', 'Khalifa Port', 'Masdar City', 'Yas Island', 'Saadiyat Island', 'Abu Dhabi Corniche', 'Al Reem Island', 'Mohammed Bin Zayed City', 'ADNOC Area', 'Al Raha Beach'],
             faqs: [
                 { q: 'What is the best tent rental company in Abu Dhabi?', a: 'Tent Now has 30+ years in Abu Dhabi, with dedicated DMT permit management and deployment capability across KIZAD, Mussafah, ICAD, Yas Island, Saadiyat Island, and Corniche locations. We are trusted by industrial operators, construction companies, and event organisers across the capital.' },
-                { q: 'How much does tent for rent in Abu Dhabi cost?', a: 'Tent for rent in Abu Dhabi with Tent Now starts from AED 15–40 per sqm per month for industrial structures, with event and Ramadan tent configurations priced based on size, duration, and fit-out requirements. Contact us for a custom quote — Abu Dhabi pricing reflects the emirate\'s higher permit and logistics demands.' },
+                { q: 'How much does tent for rent in Abu Dhabi cost?', a: 'Tent rental in Abu Dhabi is priced based on type, size, duration, and fit-out requirements. Contact us for a custom quote — Abu Dhabi pricing reflects the emirate\'s permit and logistics demands.' },
                 { q: 'What are tents in Abu Dhabi available for — events or industrial use?', a: 'Tent Now covers both. Tents in Abu Dhabi for industrial use include clear span warehouse structures for KIZAD, Mussafah, and ADNOC area operations. For events, we supply Ramadan iftar tents, corporate hospitality structures, and exhibition canopies across Yas Island, Saadiyat Island, and Abu Dhabi Corniche.' },
                 { q: 'How does Ramadan tent rental Abu Dhabi 2026 work?', a: 'Ramadan tent rental Abu Dhabi 2026 requires ADM (Abu Dhabi Municipality) permit approval — Tent Now manages this process end-to-end, including structural drawings and Civil Defence sign-off. Book early as Ramadan 2026 capacity fills from October 2025 onwards. Contact Tent Now now to secure your dates.' },
                 { q: 'Can you set up an iftar tent in Abu Dhabi?', a: 'Yes. Iftar tent setup in Abu Dhabi is a core Ramadan service for Tent Now — from hotel grounds near the Corniche to private villa compounds, corporate campuses, and public spaces approved by ADM. We handle the full setup, from permit to final decoration coordination.' },
@@ -107,8 +107,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Abu Dhabi Tent Rental Quote'
         },
         sharjah: {
-            title: 'Tent Rental in Sharjah | Industrial & Warehouse Tents',
-            metaDescription: 'Tent rental in Sharjah — locally based in SAIF Zone. No out-of-town fees, same-day site visits, 48-hr deployment. Sharjah Municipality permits included. Free quote.',
+            title: 'Tent Rental Sharjah | Storage & Event Tents | Tent Now',
+            metaDescription: 'Sharjah\'s local tent rental specialists — Civil Defence-approved for storage, events & Ramadan. Based in SAIF Zone. Same-day site visits. Free quote in 2 hours.',
             subtitle: 'Based in SAIF Zone — Sharjah\'s Local Tent Hire Specialists Since 1994',
             intro: 'Looking for tent rental in Sharjah? Tent Now is headquartered right here in Sharjah\'s SAIF Zone — making us the fastest and most cost-effective Sharjah tent hire provider in the UAE. We are not a Dubai company serving Sharjah as an afterthought. The Hamriyah Free Zone, Sharjah\'s 18 industrial areas, the Blue Souk area, Al Majaz Waterfront, University City, and the Sharjah Airport International Free Zone are all on our doorstep. No out-of-town mobilization fees. Same-day site visits. Faster tent for rent in Sharjah than any competitor in the market.',
             whyUs: 'Thirty years operating from SAIF Zone means we know Sharjah\'s industrial regulatory environment better than anyone. Sharjah Municipality permit requirements (including their notably faster approval process compared to Dubai), Sharjah Civil Defence standards, SAIF Zone and Hamriyah Free Zone authority approvals — we handle all of these as routine operations. Our Sharjah industrial clients benefit from the lowest mobilization costs, fastest response times, and a team that understands the specific conditions of Sharjah\'s industrial areas — from the coastal humidity of Hamriyah to the inland heat of the industrial zones. Ramadan tent setup in Sharjah is a core part of our seasonal offering — from Al Majaz Waterfront to private villa compounds in Muwaileh.',
@@ -136,7 +136,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['SAIF Zone', 'Hamriyah Free Zone', 'Industrial Area 1–18', 'Sharjah Airport Free Zone', 'Al Sajaa Industrial', 'Al Majaz Waterfront', 'Blue Souk Area', 'University City', 'Muwaileh Commercial', 'Al Rahmaniya'],
             faqs: [
                 { q: 'What is the best tent rental company in Sharjah?', a: 'Tent Now is headquartered in SAIF Zone, Sharjah — making us the only industrial and event tent rental specialist based in the emirate. 30 years of Sharjah Municipality, Civil Defence, SAIF Zone, and Hamriyah authority permits, with no out-of-town fees and same-day response.' },
-                { q: 'How much does tent rental in Sharjah cost?', a: 'Tent rental in Sharjah with Tent Now starts from AED 15 per sqm/month for industrial structures, with competitive pricing on event and Ramadan tent hire. Being locally based means no out-of-town transport markup — contact us for a custom quote tailored to your site and duration.' },
+                { q: 'How much does tent rental in Sharjah cost?', a: 'Tent rental in Sharjah with Tent Now is competitively priced — being locally based means no out-of-town transport markup. Contact us for a custom quote tailored to your site and duration.' },
                 { q: 'Is there a tent for rent in Sharjah for events and Ramadan?', a: 'Yes — Tent Now provides tent for rent in Sharjah for industrial, corporate, and Ramadan purposes. We serve locations across the emirate including Al Majaz Waterfront, University City, and Blue Souk area venues, with rapid setup within 48–72 hours.' },
                 { q: 'How does the Ramadan tent setup process work in Sharjah?', a: 'Ramadan tent setup in Sharjah involves Sharjah Municipality permit approval, which is typically faster than in Dubai. Tent Now handles the full permit process, structure installation, and fit-out coordination — contact us early in the season as Ramadan 2026 bookings fill quickly.' },
                 { q: 'Can you deploy storage tents in SAIF Zone and Hamriyah Free Zone?', a: 'Yes — these are our home territories. We manage SAIF Zone and Hamriyah Free Zone authority approvals as part of our standard service, with same-day site assessments available from our on-site base.' },
@@ -144,8 +144,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Sharjah Tent Hire Quote'
         },
         ajman: {
-            title: 'Tent Rental in Ajman | Ramadan, Majlis & Industrial Tents',
-            metaDescription: 'Tent rental in Ajman — Ramadan tent hire, majlis tent setup, iftar tent for rent in Ajman. Ajman Municipality permits faster and cheaper than Dubai. Free quote today.',
+            title: 'Tent Rental Ajman | Ramadan, Majlis & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Ajman — Ramadan tents, majlis hire & industrial storage at better value than Dubai. Ajman Municipality permits faster & cheaper. Free quote today.',
             subtitle: 'Ajman Tent Hire Specialists — Ramadan, Majlis & Industrial Structures',
             intro: 'Looking for tent rental in Ajman? Whether it\'s a Ramadan iftar tent, a private majlis setup, or industrial warehouse coverage, Tent Now delivers tent rental in Ajman with speed and full compliance. Ajman tent hire is one of the best-value options in the UAE — Ajman Municipality\'s permit process is both quicker and more affordable than Dubai\'s, making it the smart choice for businesses and families planning events. We serve the Industrial Area, Al Jurf, Al Bustan, and Corniche Ajman for events, as well as Ajman Free Zone and Ajman Port for industrial needs. The Ajman Free Zone hosts over 9,000 companies, making it one of the UAE\'s most active commercial hubs — and our 30 years of tent for rent in Ajman experience means we know every approval requirement inside out.',
             whyUs: 'Our proximity to Ajman from SAIF Zone Sharjah means low mobilization costs and fast response times. We\'ve navigated Ajman Municipality and Civil Defence permit requirements for industrial structures and Ramadan tents many times over. Ajman Free Zone authority approvals are part of our routine service. We understand the specific conditions of Ajman\'s coastal industrial areas and the wind load requirements that apply.',
@@ -181,8 +181,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Ajman Tent Rental Quote'
         },
         'ras-al-khaimah': {
-            title: 'Tent Rental in Ras Al Khaimah | Ramadan & Industrial Tents',
-            metaDescription: 'Tent rental in Ras Al Khaimah — Ramadan tent hire RAK, majlis setup, warehouse tents. Al Hamra, Mina Al Arab, RAK Free Zone. RAK Municipality permits included. Free quote.',
+            title: 'Tent Rental Ras Al Khaimah | Ramadan & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Ras Al Khaimah — Ramadan tents, majlis & warehouse storage. Al Hamra, Mina Al Arab, RAK Free Zone. RAK permits included. Free quote.',
             subtitle: 'RAK Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Looking for tent rental in Ras Al Khaimah? Tent Now provides tent hire Ras Al Khaimah for Ramadan events, private majlis setups, corporate hospitality, and industrial warehousing across the emirate. RAK\'s diverse geography — from the luxury resorts of Al Hamra and Mina Al Arab to the industrial corridors of RAK Free Trade Zone — means every tent rental in RAK requires specialist knowledge. We have 30 years of deployments across this emirate. Al Hamra Villa gardens, Al Marjan Island hotel extensions, and Mina Al Arab waterfront venues are all within our regular coverage. RAK Municipality permit specifics differ from Dubai and Abu Dhabi — the process is generally more streamlined, and our long-standing relationships with RAK authorities mean faster approvals. The RAK Free Trade Zone hosts over 14,000 companies, and RAK Maritime City is expanding rapidly — our industrial tent deployments here are engineered for the emirate\'s specific coastal and mountain wind load requirements.',
             whyUs: 'We\'ve been serving RAK\'s industrial and events sector for three decades. RAK\'s geographic and climatic conditions — coastal humidity on one side, mountainous terrain and stronger winds on the other — require specific structural engineering. Our RAK deployments account for the emirate\'s unique wind load requirements and the temperature differentials between coastal and inland sites. We handle RAK Municipality and Civil Defence permits and RAK Free Trade Zone authority approvals as routine operations.',
@@ -210,15 +210,15 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['Al Hamra', 'Mina Al Arab', 'Al Marjan Island', 'RAK Free Trade Zone', 'RAK Maritime City', 'Al Hamra Industrial Zone', 'Al Jazeera Al Hamra', 'Al Dhait', 'Khuzam', 'Nakheel', 'RAK Corniche', 'Ras Al Khaimah City'],
             faqs: [
                 { q: 'What tent rental companies serve Ras Al Khaimah?', a: 'Tent Now has served RAK for 30+ years — Ramadan tent hire, majlis setups, corporate iftar tents, and industrial storage. We handle RAK Municipality, Civil Defence, RAK Free Trade Zone, and RAK Maritime City permits. Our structures are engineered for RAK\'s specific wind load conditions.' },
-                { q: 'How much does tent rental in RAK cost?', a: 'Tent rental in Ras Al Khaimah varies by type. Ramadan and event tents are priced competitively below Dubai rates. Industrial tent hire RAK starts from AED 15 per sqm/month. Contact us for a custom quote based on your location and requirements.' },
+                { q: 'How much does tent rental in RAK cost?', a: 'Tent rental in Ras Al Khaimah varies by type, size, and duration. Ramadan and event tents are priced competitively. Contact us for a custom quote based on your location and requirements.' },
                 { q: 'Can you set up a Ramadan or majlis tent in RAK?', a: 'Yes. We provide Ramadan tent rental in Ras Al Khaimah for private villas, hotel extensions, and corporate campuses across Al Hamra, Mina Al Arab, Al Marjan Island, and all RAK areas. All RAK Municipality and Civil Defence permits included.' },
                 { q: 'Are your RAK structures rated for the local wind conditions?', a: 'Yes. Our clear span and warehouse frame structures are engineered for 100+ km/h wind loads using 6061-T6 aluminum frames and 850 gsm PVC fabric — appropriate for both RAK\'s exposed coastal and mountain-adjacent wind patterns.' },
             ],
             cta: 'Get Your RAK Tent Rental Quote'
         },
         fujairah: {
-            title: 'Tent Rental in Fujairah | Ramadan, Majlis & Industrial Tents',
-            metaDescription: 'Tent rental in Fujairah — Ramadan tent hire, majlis setup, iftar tent Fujairah. Fujairah Fort area, Corniche, free zone industrial. All permits included. Free quote.',
+            title: 'Tent Rental Fujairah | Ramadan, Majlis & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Fujairah — Ramadan tents near Fujairah Fort, majlis hire & storage. East coast specialists since 1994. All permits included. Free quote.',
             subtitle: 'Fujairah Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Tent rental in Fujairah demands specialist knowledge of the east coast\'s unique geography and regulatory environment. Tent Now provides Fujairah tent hire for Ramadan events, private majlis setups, and industrial storage across the emirate. The area near Fujairah Fort and the Old Town is one of the emirate\'s most scenic event locations; the Fujairah Corniche waterfront is popular for corporate and community iftar tent setups; and the free zone industrial areas support ongoing industrial tent deployments. Fujairah tent hire also serves the growing residential areas near the city centre where families seek private Ramadan tent rental in Fujairah for their home gardens. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions — our structures are engineered for these east coast conditions. Fujairah Municipality permits for temporary structures are part of our routine service, alongside Fujairah Free Zone and Civil Defence approvals.',
             whyUs: 'Fujairah\'s east coast geography creates unique structural requirements. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions that differ significantly from the western UAE coast. We have 30 years of Fujairah deployments and understand these conditions. We handle Fujairah Municipality and Civil Defence permits and Fujairah Free Zone authority approvals as standard operational practice.',
@@ -246,15 +246,15 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['Fujairah Fort Area', 'Fujairah Corniche', 'Fujairah City Centre', 'Fujairah Free Zone', 'Fujairah Port', 'FOIZ (Fujairah Oil Industry Zone)', 'Dibba Industrial Area', 'Al Faseel', 'Merbeih', 'Al Shohadaa', 'Qidfa', 'Khor Fakkan'],
             faqs: [
                 { q: 'What tent rental companies serve Fujairah?', a: 'Tent Now has served Fujairah for 30+ years — Ramadan tent rental in Fujairah, majlis setups, corporate iftar tents, and industrial storage. We handle Fujairah Municipality, Civil Defence, Fujairah Free Zone, and Fujairah Port authority permits. Our structures are engineered for east coast conditions.' },
-                { q: 'How much does tent rental in Fujairah cost?', a: 'Tent rental in Fujairah is competitively priced. Ramadan and majlis tents are available for family and corporate budgets. Industrial tent hire from AED 15 per sqm/month. Contact us for a custom quote based on your location, size, and requirements.' },
+                { q: 'How much does tent rental in Fujairah cost?', a: 'Tent rental in Fujairah is competitively priced for both Ramadan and industrial needs. Contact us for a custom quote based on your location, size, and requirements.' },
                 { q: 'Can you set up a Ramadan tent near Fujairah Fort?', a: 'Yes. The area near Fujairah Fort and the Old Town is a popular setting for heritage-themed Ramadan tent and majlis setups. We handle all Fujairah Municipality permits for these locations as part of our standard service.' },
                 { q: 'How quickly can you deploy a tent in Fujairah?', a: 'Ramadan and majlis tents typically deploy in 1–2 days. Industrial storage structures are operational within 5–7 days for east coast deployments. Urgent requirements can be accommodated — contact us to discuss your timeline.' },
             ],
             cta: 'Get Your Fujairah Tent Rental Quote'
         },
         'umm-al-quwain': {
-            title: 'Tent Rental in Umm Al Quwain | Ramadan & Industrial Tents',
-            metaDescription: 'Tent rental in Umm Al Quwain — Ramadan tent hire, majlis setup, warehouse tent rental UAQ. UAQ Free Zone & industrial estates. All permits included. Free quote.',
+            title: 'Tent Rental Umm Al Quwain | Ramadan & Industrial Tents | Tent Now',
+            metaDescription: 'Tent rental Umm Al Quwain — Ramadan tents, majlis hire & warehouse storage. UAE\'s most cost-effective tent rental. UAQ Free Zone permits included. Free quote.',
             subtitle: 'UAQ Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Tent rental in Umm Al Quwain covers a wide range of needs — from Ramadan majlis setups for UAQ\'s close-knit residential communities to industrial warehouse tent rental for the growing UAQ Free Trade Zone and the emirate\'s expanding industrial estates. Tent rental in Umm Al Quwain is particularly cost-competitive: UAQ\'s lower land costs and accessible permit process make it one of the most affordable tent hire destinations in the UAE. The UAQ Free Trade Zone warehouse tent rental segment is showing strong demand — our Arabic-language warehouse tent page here is already at position 3 on Google, reflecting how well this market is developing. UAQ\'s industrial estates and free zones are attracting manufacturing and logistics operators who need flexible, compliant covered infrastructure without the premium pricing of Dubai or Abu Dhabi.',
             whyUs: 'Our SAIF Zone base in Sharjah gives us efficient access to UAQ with minimal mobilization costs. We handle UAQ Municipality and Civil Defence permits and UAQ Free Trade Zone authority approvals as part of our standard service. 30 years of UAE-wide deployments means we bring the same engineering standards and compliance knowledge to UAQ that we bring to Dubai and Abu Dhabi — at pricing that reflects the emirate\'s cost-conscious market.',
@@ -282,7 +282,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             areas: ['UAQ Free Trade Zone', 'UAQ Industrial Estates', 'UAQ Port', 'UAQ Industrial Area', 'Al Salamah', 'Al Ramlah', 'Al Raudah', 'Al Khor', 'Umm Al Quwain City', 'Al Sinniyah Island', 'Falaj Al Mualla'],
             faqs: [
                 { q: 'What tent rental companies serve Umm Al Quwain?', a: 'Tent Now serves UAQ from our SAIF Zone base in Sharjah — competitive mobilization costs, full UAQ Municipality, Civil Defence, and UAQ Free Trade Zone permits included. We cover Ramadan tents, majlis setups, and industrial/warehouse tent rental.' },
-                { q: 'How much does tent rental cost in Umm Al Quwain?', a: 'Tent rental in Umm Al Quwain is among the most affordable in the UAE. Ramadan and majlis tents are priced competitively. Industrial tent hire starts from AED 15 per sqm/month. Contact us for a custom quote.' },
+                { q: 'How much does tent rental cost in Umm Al Quwain?', a: 'Tent rental in Umm Al Quwain is among the most affordable in the UAE. Ramadan and majlis tents are priced competitively. Contact us for a custom quote.' },
                 { q: 'Can you set up a Ramadan or warehouse tent in UAQ?', a: 'Yes. We provide both Ramadan tent rental and warehouse tent rental in Umm Al Quwain. Our UAQ Free Trade Zone warehouse tent service is in high demand — all permits and authority approvals fully included.' },
                 { q: 'How quickly can you deploy a tent in UAQ?', a: 'Ramadan and majlis setups take 1–2 days. Industrial and warehouse structures are operational within 3–5 days from our Sharjah base. Urgent requirements can be accommodated within 72 hours for pre-engineered configurations.' },
             ],
@@ -291,8 +291,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     },
     ar: {
         dubai: {
-            title: 'تأجير خيام في دبي | خيام رمضان ومجالس وإفطار وخيام صناعية',
-            metaDescription: 'خيام للإيجار في دبي — خيام إفطار رمضان دبي، تأجير خيمة مجلس، خيام الإفطار الشركات. تصاريح IACAD مشمولة. جميرا، بزنس باي، DIFC. احصل على عرض مجاني.',
+            title: 'تأجير خيام دبي | خيام رمضان ومجالس وإفطار وصناعية | Tent Now',
+            metaDescription: 'تأجير خيام في دبي — خيام رمضان معتمدة من الدفاع المدني، مجالس وتخزين صناعي. تصاريح IACAD مشمولة. جميرا وDIFC وبزنس باي. رد فوري. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في دبي — رمضان ومجالس وإفطار وخيام صناعية منذ 1994',
             intro: 'هل تبحث عن خيام للإيجار في دبي؟ سواء كنت تحتاج خيمة إفطار رمضان في دبي لضيافة الشركات، أو تأجير خيمة مجلس خاصة لتجمعات العائلة الرمضانية، أو مخازن صناعية مغطاة في جافزا ودبي ساوث، فإن Tent Now توفر تأجير الخيام في دبي منذ 1994. دبي هي السوق الأكثر تنافسية في الإمارات — وخبرتنا الممتدة 30 عاماً تعني معرفة كل متطلبات التصاريح وكل منطقة فعاليات وكل تحدٍّ للتركيب. من إعداد خيام الإفطار الرمضانية في فلل جميرا إلى خيام الإفطار المؤسسية في بزنس باي وتراسات DIFC وفنادق داون تاون دبي — نتولى كل النطاق. خور دبي والأحياء القديمة ومنطقة الفهيدي التاريخية لها متطلبات خاصة بمناطق التراث — ونعرفها جيداً. تصاريح IACAD (دائرة الشؤون الإسلامية والعمل الخيري) إلزامية لجميع خيام رمضان في دبي؛ ونتولى إدارتها ضمن خدمتنا الروتينية بجانب موافقات الدفاع المدني وبلدية دبي.',
             whyUs: 'ثلاثون عاماً من تأجير الخيام في دبي — صناعية ورمضانية على حدٍّ سواء. نعرف عملية تصريح بلدية دبي للمنشآت المؤقتة (المادة 13)، ومتطلبات IACAD الخاصة بدبي، وموافقات سلامة الدفاع المدني، والمناطق الحرة التي تتطلب موافقات منفصلة. نعرف أن حدائق فلل جميرا تحتاج تثبيتاً مختلفاً عن تراسات DIFC. نعلم أن رطوبة فبراير على الساحل قاسية على المواد الرخيصة. كل تصريح، كل شهادة سلامة، كل موافقة هيكلية — تُنجز قبل أن نبدأ.',
@@ -329,8 +329,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في دبي'
         },
         'abu-dhabi': {
-            title: 'تأجير خيام في أبوظبي | خيام صناعية وفعاليات رمضان',
-            metaDescription: 'تأجير خيام في أبوظبي — KIZAD ومصفح وجزيرة ياس والكورنيش. تصاريح ADM والدفاع المدني مشمولة. خيام إفطار رمضان 2026. نشر خلال 72 ساعة. احصل على عرض.',
+            title: 'تأجير خيام أبوظبي | خيام تخزين وفعاليات رمضان | Tent Now',
+            metaDescription: 'تأجير خيام في أبوظبي — خيام رمضان وإفطار، مستودعات وخيام صناعية. معتمدة من الدفاع المدني. تصاريح ADM مشمولة. نشر خلال 72 ساعة. احصل على عرض مجاني.',
             subtitle: 'خدمة KIZAD ومصفح وجزيرة ياس والسعديات وأبوظبي الصناعية منذ 1994',
             intro: 'تأجير الخيام في أبوظبي له متطلبات فريدة تختلف عن سائر الإمارات. القاعدة الصناعية في أبوظبي هي أساس الاقتصاد الإماراتي — KIZAD يستضيف ثالث أكبر منطقة حرة في العالم، ومصفح يضم أكثر من 1,000 شركة صناعية، وعمليات أدنوك تمتد عبر الإمارة. من إعداد الفعاليات في جزيرة ياس إلى مشاريع البناء في جزيرة السعديات ومناسبات الكورنيش، الحاجة لخيام قابلة للنشر ومتوافقة مع الأنظمة أمر دائم. Tent Now تقدم تأجير خيام في أبوظبي لجميع الأغراض — من المستودعات الصناعية إلى خيام الإفطار الرمضانية — مع إدارة كاملة لتصاريح بلدية أبوظبي (ADM) والدفاع المدني.',
             whyUs: 'ثلاثة عقود من نشر الخيام الصناعية في أبوظبي، بالتعامل مع عملية تصريح دائرة البلديات والنقل (DMT)، وموافقات الدفاع المدني، ومتطلبات مينائي أبوظبي. نفهم أن معايير أبوظبي الصناعية مختلفة عن دبي — المواصفات أكثر صرامة، ومتطلبات التوثيق أثقل.',
@@ -367,8 +367,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في أبوظبي'
         },
         sharjah: {
-            title: 'تأجير خيام في الشارقة | خيام صناعية وفعاليات',
-            metaDescription: 'خيام للإيجار في الشارقة — مقرنا في منطقة SAIF. بدون رسوم نقل، تقييم في نفس اليوم، نشر خلال 48 ساعة. تصاريح بلدية الشارقة مشمولة. احصل على عرض.',
+            title: 'تأجير خيام الشارقة | خيام تخزين وفعاليات ورمضان | Tent Now',
+            metaDescription: 'متخصصو تأجير الخيام المحليون في الشارقة — معتمدة من الدفاع المدني. مقرنا في SAIF. بدون رسوم نقل، تقييم الموقع في نفس اليوم. احصل على عرض خلال ساعتين.',
             subtitle: 'مقرنا في منطقة SAIF — متخصصو تأجير الخيام المحليون في الشارقة منذ 1994',
             intro: 'تبحث عن خيام للإيجار في الشارقة؟ Tent Now مقرها في منطقة SAIF بالشارقة مباشرةً — مما يجعلنا أسرع وأكثر كفاءة من حيث التكلفة لتأجير الخيام في الشارقة. نحن لسنا شركة دبي تخدم الشارقة — نحن المتخصصون المحليون. منطقة SAIF ومنطقة البلو سوك وواجهة المجاز المائية ومدينة الجامعات والمناطق الصناعية الـ18 في متناول يدنا. بدون رسوم نقل خارج المدينة، وتقييم الموقع في نفس اليوم.',
             whyUs: 'ثلاثون عاماً من منطقة SAIF تعني أننا نعرف البيئة التنظيمية في الشارقة أفضل من أي أحد آخر. متطلبات تصاريح بلدية الشارقة (التي تتميز بسرعة أعلى في الموافقة مقارنةً بدبي)، معايير الدفاع المدني، موافقات منطقة SAIF وميناء حمرية الحرة — نتعامل معها جميعاً كعمليات روتينية. إعداد خيام رمضان في الشارقة هو جزء أساسي من عروضنا الموسمية — من واجهة المجاز إلى مجمعات الفلل الخاصة في مويلح.',
@@ -404,8 +404,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في الشارقة'
         },
         ajman: {
-            title: 'تأجير خيام في عجمان | خيام رمضان ومجالس وخيام صناعية',
-            metaDescription: 'خيام للإيجار في عجمان — تأجير خيمة رمضان وإفطار في عجمان، إيجار خيام بأسعار أفضل من دبي. تصاريح بلدية عجمان أسرع وأوفر. احصل على عرض مجاني.',
+            title: 'تأجير خيام عجمان | خيام رمضان ومجالس وصناعية | Tent Now',
+            metaDescription: 'تأجير خيام في عجمان — خيام رمضان ومجالس وتخزين صناعي بأسعار أوفر من دبي. تصاريح بلدية عجمان أسرع وأرخص. احصل على عرض مجاني اليوم.',
             subtitle: 'متخصصو تأجير الخيام في عجمان — رمضان ومجالس وخيام صناعية',
             intro: 'هل تبحث عن خيام للإيجار في عجمان؟ Tent Now توفر تأجير خيمة رمضان وإفطار ومجلس في عجمان للمناسبات السكنية والمؤسسية، إضافةً إلى خيام التخزين الصناعية للمنطقة الحرة والجرف. تأجير الخيام في عجمان من أفضل الخيارات في الإمارات من حيث التكلفة — إجراء بلدية عجمان للتصاريح أسرع وأرخص من دبي، مما يجعله الخيار الذكي للأسر والشركات. نخدم المنطقة الصناعية والجرف والبستان وكورنيش عجمان للفعاليات، والمنطقة الحرة وميناء عجمان للاحتياجات الصناعية. المنطقة الحرة بعجمان تستضيف أكثر من 9,000 شركة، وخبرتنا الممتدة 30 عاماً في خيام للإيجار في عجمان تعني معرفة كل متطلبات الموافقة من الداخل.',
             whyUs: 'قربنا من عجمان من قاعدة SAIF في الشارقة يعني تكاليف تنقل منخفضة وأوقات استجابة سريعة. نتولى تصاريح بلدية عجمان والدفاع المدني وسلطة المنطقة الحرة بعجمان للخيام الرمضانية والصناعية ضمن خدمتنا القياسية.',
@@ -441,8 +441,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في عجمان'
         },
         'ras-al-khaimah': {
-            title: 'تأجير خيام في رأس الخيمة | خيام رمضان وخيام صناعية',
-            metaDescription: 'تأجير خيام في رأس الخيمة — خيام رمضان وإيجار مجالس وخيام مستودعات. الحمراء وميناء العرب والمنطقة الحرة. تصاريح بلدية رأس الخيمة مشمولة. احصل على عرض.',
+            title: 'تأجير خيام رأس الخيمة | خيام رمضان وصناعية | Tent Now',
+            metaDescription: 'تأجير خيام في رأس الخيمة — خيام رمضان ومجالس ومستودعات صناعية. الحمراء وميناء العرب والمنطقة الحرة. تصاريح البلدية مشمولة. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في رأس الخيمة — رمضان وفعاليات وخيام صناعية منذ 1994',
             intro: 'هل تبحث عن تأجير خيام في رأس الخيمة؟ Tent Now توفر خيام للإيجار في رأس الخيمة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والضيافة المؤسسية والتخزين الصناعي في جميع أنحاء الإمارة. الجغرافيا المتنوعة في رأس الخيمة — من منتجعات الحمراء الفاخرة وميناء العرب وجزيرة مرجان إلى الممرات الصناعية في المنطقة الحرة — تعني أن كل تأجير خيام في رأس الخيمة يتطلب معرفة متخصصة. لدينا 30 عاماً من النشر في هذه الإمارة. حدائق فلل الحمراء وامتدادات فنادق جزيرة مرجان ومواقع الواجهة البحرية في ميناء العرب كلها ضمن تغطيتنا المنتظمة. متطلبات تصاريح بلدية رأس الخيمة للمنشآت المؤقتة تختلف عن دبي وأبوظبي — عادةً أكثر انسيابية، وعلاقاتنا الراسخة مع سلطات رأس الخيمة تعني موافقات أسرع.',
             whyUs: 'خدمنا القطاع الصناعي والفعاليات في رأس الخيمة لثلاثة عقود. الظروف الجغرافية والمناخية في رأس الخيمة — الرطوبة الساحلية من جهة، والتضاريس الجبلية والرياح الأقوى من الجهة الأخرى — تتطلب هندسة هيكلية محددة. نتولى تصاريح بلدية رأس الخيمة والدفاع المدني والمنطقة الحرة ضمن العمليات الروتينية.',
@@ -477,8 +477,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في رأس الخيمة'
         },
         fujairah: {
-            title: 'تأجير خيام في الفجيرة | خيام رمضان ومجالس وخيام صناعية',
-            metaDescription: 'تأجير خيام في الفجيرة — خيام رمضان وإفطار في الفجيرة، إيجار مجالس، خيام صناعية. منطقة قلعة الفجيرة، الكورنيش، المنطقة الحرة. جميع التصاريح مشمولة. احصل على عرض.',
+            title: 'تأجير خيام الفجيرة | خيام رمضان ومجالس وصناعية | Tent Now',
+            metaDescription: 'تأجير خيام في الفجيرة — خيام رمضان قرب قلعة الفجيرة، مجالس وتخزين صناعي. متخصصو الساحل الشرقي. جميع التصاريح مشمولة. رد في نفس اليوم. احصل على عرض.',
             subtitle: 'متخصصو تأجير الخيام في الفجيرة — رمضان وفعاليات وخيام صناعية منذ 1994',
             intro: 'يتطلب تأجير الخيام في الفجيرة معرفة متخصصة بالجغرافيا الفريدة للساحل الشرقي وبيئته التنظيمية. Tent Now توفر تأجير خيام في الفجيرة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والتخزين الصناعي في جميع أنحاء الإمارة. المنطقة المحيطة بقلعة الفجيرة والمدينة القديمة من أجمل مواقع الفعاليات في الإمارة؛ وكورنيش الفجيرة يحظى بشعبية لتجهيزات خيام الإفطار المؤسسية والمجتمعية. تأجير خيام رمضان في الفجيرة يخدم أيضاً المناطق السكنية المتنامية قرب المدينة حيث تسعى الأسر لتجهيزات مجلس خاصة في حدائق منازلها. جبال الحجر غرباً وخليج عُمان شرقاً يخلقان أنماط رياح ورطوبة خاصة — هياكلنا مهندسة لهذه الظروف. تصاريح بلدية الفجيرة للمنشآت المؤقتة جزء من خدمتنا الروتينية.',
             whyUs: 'الجغرافيا الساحلية الشرقية في الفجيرة تخلق متطلبات هيكلية فريدة. لدينا 30 عاماً من النشر في الفجيرة ونفهم هذه الظروف جيداً. نتولى تصاريح بلدية الفجيرة والدفاع المدني والمنطقة الحرة ضمن الممارسة التشغيلية القياسية.',
@@ -513,8 +513,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في الفجيرة'
         },
         'umm-al-quwain': {
-            title: 'تأجير خيام في أم القيوين | خيام رمضان وخيام صناعية',
-            metaDescription: 'تأجير خيام في أم القيوين — خيام رمضان ومجالس وخيام مستودعات. المنطقة الحرة والمناطق الصناعية في أم القيوين. جميع التصاريح مشمولة. احصل على عرض مجاني.',
+            title: 'تأجير خيام أم القيوين | خيام رمضان وصناعية | Tent Now',
+            metaDescription: 'تأجير خيام في أم القيوين — خيام رمضان ومجالس ومستودعات. الأوفر في الإمارات. المنطقة الحرة والمناطق الصناعية. جميع التصاريح مشمولة. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في أم القيوين — رمضان وخيام صناعية منذ 1994',
             intro: 'تأجير الخيام في أم القيوين يشمل احتياجات متنوعة — من تجهيزات مجالس رمضان للمجتمعات السكنية المتلاحمة في أم القيوين إلى تأجير خيام المستودعات الصناعية للمنطقة الحرة المتنامية والمناطق الصناعية في الإمارة. تأجير الخيام في أم القيوين تنافسي بشكل خاص: انخفاض تكاليف الأراضي وسهولة إجراءات التصاريح تجعلها من أوفر وجهات تأجير الخيام في الإمارات. قطاع تأجير خيام المستودعات الصناعية في أم القيوين يشهد طلباً متنامياً — صفحتنا العربية لخيام المستودعات هنا وصلت بالفعل للمرتبة 3 على جوجل، مما يعكس تطور هذا السوق بشكل ملحوظ. المناطق الصناعية والمناطق الحرة في أم القيوين تستقطب مشغلي التصنيع واللوجستيات الباحثين عن بنية تحتية مغطاة متوافقة ومرنة دون الأسعار المرتفعة في دبي أو أبوظبي.',
             whyUs: 'قاعدتنا في منطقة SAIF بالشارقة تمنحنا وصولاً فعالاً لأم القيوين بتكاليف تنقل منخفضة. نتولى تصاريح بلدية أم القيوين والدفاع المدني وسلطة المنطقة الحرة للخيام الرمضانية والصناعية ضمن خدمتنا القياسية.',
@@ -557,8 +557,8 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
         dubai: {
             'ramadan-tent-rental': {
                 title: 'Ramadan Tent Rental Dubai 2026',
-                subtitle: 'Skip the AED 300/head hotel markup. Get the same quality for less.',
-                intro: 'Here\'s the reality: Dubai\'s top hotels charge AED 295-470 per person for their Ramadan tent experiences. Beautiful? Yes. Necessary? Not if you have your own space. We build the same caliber of structure—at your location, on your terms, for a fraction of the cost.',
+                subtitle: 'Skip the hotel markup. Get the same quality at your own venue.',
+                intro: 'Here\'s the reality: Dubai\'s top hotels charge a significant premium per person for their Ramadan tent experiences. Beautiful? Yes. Necessary? Not if you have your own space. We build the same caliber of structure—at your location, on your terms, for a fraction of the cost.',
                 mainBody: 'We\'ve been doing this in Dubai since before most of our competitors opened their doors. Thirty years of navigating Dubai Municipality permits, Civil Defense approvals, and IACAD requirements. We know that a tent in Dubai Marina needs different wind anchoring than one in Al Quoz. We know that February humidity on the coast is brutal on cheap materials. And we know that getting fined AED 500,000 for an unapproved structure isn\'t something you want to explain to your CFO. Every permit, every safety certification, every structural approval—handled before we start.',
                 features: [
                     { title: 'Full Permit Package', body: 'Dubai Municipality, Civil Defense, IACAD—we handle the paperwork maze so you don\'t have to. Zero surprises on installation day.' },
@@ -566,7 +566,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Location Expertise', body: 'Jumeirah villas, DIFC terraces, DIP industrial sites, JBR hotel extensions—we\'ve installed in every corner of Dubai. We know what works where.' }
                 ],
                 faqs: [
-                    { q: 'How much does Ramadan tent rental cost in Dubai?', a: 'Ramadan tent rental in Dubai runs 15-25% below hotel pricing (AED 295-470/person). Our pricing depends on size, duration, and specifications. Contact us for a custom quote—we work with all budgets from family setups to large corporate Iftars.' },
+                    { q: 'How much does Ramadan tent rental cost in Dubai?', a: 'Ramadan tent rental in Dubai is significantly more affordable than hotel venue pricing. Our pricing depends on size, duration, and specifications. Contact us for a custom quote—we work with all budgets from family setups to large corporate Iftars.' },
                     { q: 'Which companies provide Ramadan tent rental in Dubai?', a: 'Tent Now has 30+ years in UAE Ramadan tent rental. We are based in Sharjah\'s SAIF Zone and serve all seven Emirates including Dubai, handling all Municipality, Civil Defense, and IACAD permits.' },
                     { q: 'Does Ramadan tent rental in Dubai include air conditioning?', a: 'Yes. All our structures include climate-engineered AC systems calculated for your specific tent volume and guest count—21°C guaranteed even at full capacity in Dubai\'s February humidity.' },
                     { q: 'How far in advance should I book a Ramadan tent in Dubai?', a: 'January is ideal, but we are still accepting Ramadan 2026 bookings and can mobilize within 48-72 hours for urgent requests. Contact us now—available slots are limited.' },
@@ -597,7 +597,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'iftar-tent-rental': {
                 title: 'Corporate Iftar Tent Rental Dubai',
                 subtitle: 'Your staff Iftar shouldn\'t cost more than quarterly bonuses.',
-                intro: 'Corporate Iftars in Dubai have two options: book a hotel at AED 250+ per head, or build your own. If you have the space—your office grounds, a parking area, a corporate campus—we can give you the same experience at 15-25% less.',
+                intro: 'Corporate Iftars in Dubai have two options: book a hotel venue at a significant per-head premium, or build your own. If you have the space—your office grounds, a parking area, a corporate campus—we can give you the same experience at a fraction of the hotel cost.',
                 mainBody: 'We work with companies across DIFC, Business Bay, Dubai Investment Park, and Jebel Ali every Ramadan season. The requirements are always the same: look impressive, feed a lot of people efficiently, stay within budget. Our Iftar structures are designed for flow—buffet lines that don\'t create bottlenecks, seating zones that fill and empty smoothly, prayer areas positioned correctly. We handle the Dubai Municipality food service approvals, the Civil Defense safety certifications, and the IACAD permits. Your facilities team doesn\'t need to become permit experts for one month.',
                 features: [
                     { title: 'Operational Flow', body: 'Buffet stations, seating zones, prayer areas, service corridors—designed so 500 people can eat without chaos.' },
@@ -686,7 +686,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
             'ramadan-tent-rental': {
                 title: 'Ramadan Tent Rental Abu Dhabi 2026',
                 subtitle: 'Emirates Palace quality without Emirates Palace pricing.',
-                intro: 'Abu Dhabi sets the bar high. The Emirates Palace tent is stunning—at AED 400+ per person. But if you need your own structure at your own location, you need someone who builds to that standard without the markup.',
+                intro: 'Abu Dhabi sets the bar high. The Emirates Palace tent is stunning—but comes at a significant premium per person. If you need your own structure at your own location, you need someone who builds to that standard without the hotel markup.',
                 mainBody: 'The capital\'s tent market is split between ultra-premium hotel venues and budget operators who cut corners on safety. We sit in the middle: the structural quality and aesthetic polish that Abu Dhabi expects, at prices that work for government budgets, corporate events, and private families. We\'ve been navigating DMT permits for 30 years. We understand that Abu Dhabi requires structures that integrate with the urban landscape—your tent can\'t look like a construction site on the Corniche. Every installation meets Department of Municipalities and Transport standards, Civil Defense requirements, and the unwritten aesthetic expectations of the capital.',
                 features: [
                     { title: 'DMT Compliance', body: 'Abu Dhabi\'s permit process is strict. We handle structural approvals, safety certifications, and aesthetic reviews—all before installation.' },
@@ -694,7 +694,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                     { title: 'Island Logistics', body: 'Yas Island, Saadiyat, Al Reem—we have mobilization teams specialized for Abu Dhabi\'s island installations.' }
                 ],
                 faqs: [
-                    { q: 'How much does Ramadan tent rental cost in Abu Dhabi?', a: 'Ramadan tent rental in Abu Dhabi is priced well below hotel venues like Emirates Palace (AED 400+/person). We offer government, corporate, and family pricing. Contact us for a custom quote based on your location, size, and duration.' },
+                    { q: 'How much does Ramadan tent rental cost in Abu Dhabi?', a: 'Ramadan tent rental in Abu Dhabi is priced well below hotel venues. We offer government, corporate, and family pricing. Contact us for a custom quote based on your location, size, and duration.' },
                     { q: 'Which tent rental companies serve Abu Dhabi?', a: 'Tent Now has 30+ years of Abu Dhabi experience, with specialized DMT permit management and dedicated island installation teams for Yas Island, Saadiyat, and Al Reem.' },
                     { q: 'Do Ramadan tents in Abu Dhabi require DMT permits?', a: 'Yes. The Department of Municipalities and Transport (DMT) requires structural approvals, safety certifications, and aesthetic integration reviews. All permits are included in our service.' },
                     { q: 'What areas of Abu Dhabi do you serve?', a: 'We serve all Abu Dhabi areas: Corniche, Khalifa City, Yas Island, Saadiyat Island, Al Reem Island, Al Maryah Island, Al Bateen, Al Mushrif, Mohammed Bin Zayed City, and more.' },
