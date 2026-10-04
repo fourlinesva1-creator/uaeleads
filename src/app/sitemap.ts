@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { cityContent } from '@/data/city-content';
+import { cityContent, noindexCitySlugs } from '@/data/city-content';
 
 const baseUrl = 'https://www.tentnow.ae';
 
@@ -39,13 +39,13 @@ const mainPages = [
 
 const standaloneServices = [
     'hotel-majlis',
-    'corporate-events',
+    'labor-accommodation-tents',
     'home-majlis',
     'iftar-tent-rental',
     'suhoor-tent-rental',
     'sadu-tent-rental',
     'furniture-rental',
-    'decor-lighting',
+    'cold-storage-tents',
     'iftar-tent-rental-dubai',
     'iftar-tent-rental-abu-dhabi',
     'iftar-tent-rental-sharjah',
@@ -71,6 +71,7 @@ const blogPosts = [
     'tent-rental-uae',
     'upcoming-ramadan-events-dubai-2026',
     'ramadan-calendar-uae-2026',
+    'ramadan-calendar-uae-2027',
     'top-tent-suppliers-uae-2026',
     'ramadan-tent-pricing-guide-uae-2026',
     'corporate-event-tents-dubai-2026',
@@ -102,7 +103,7 @@ export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap 
 
         // Add service pages for each city (only where real content exists)
         slugs.forEach((slug) => {
-            if (cityContent['en']?.[city]?.[slug]) {
+            if (cityContent['en']?.[city]?.[slug] && !noindexCitySlugs.includes(slug)) {
                 sitemapEntries.push({
                     url: `${baseUrl}/${locale}/locations/${city}/${slug}`,
                     lastModified: new Date(),
@@ -129,6 +130,7 @@ export function generateSitemapForLocale(locale: string): MetadataRoute.Sitemap 
         '/services/storage-tents/clear-span-tents',
         '/services/storage-tents/warehouse-tents',
         '/services/storage-tents/industrial-tents',
+        '/portfolio/abu-dhabi-storage-tent',
     ];
     storageTentPages.forEach((page) => {
         sitemapEntries.push({
@@ -167,7 +169,7 @@ const serviceImages: MetadataRoute.Sitemap = [
         images: ['https://www.tentnow.ae/images/tent-now/hotel.jpg'],
     },
     {
-        url: 'https://www.tentnow.ae/en/services/corporate-events',
+        url: 'https://www.tentnow.ae/en/services/labor-accommodation-tents',
         images: ['https://www.tentnow.ae/images/tent-now/corporate.jpg'],
     },
     {
@@ -181,6 +183,14 @@ const serviceImages: MetadataRoute.Sitemap = [
     {
         url: 'https://www.tentnow.ae/en/services/storage-tents',
         images: ['https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg'],
+    },
+    {
+        url: 'https://www.tentnow.ae/en/portfolio/abu-dhabi-storage-tent',
+        images: [
+            'https://www.tentnow.ae/images/projects/abu-dhabi-storage-tent/abu-dhabi-storage-tent-hero.jpg',
+            'https://www.tentnow.ae/images/projects/abu-dhabi-storage-tent/storage-tent-interior-goods.jpg',
+            'https://www.tentnow.ae/images/projects/abu-dhabi-storage-tent/aluminium-frame-installation.jpg',
+        ],
     },
     {
         url: 'https://www.tentnow.ae/en/services/tarpaulins',

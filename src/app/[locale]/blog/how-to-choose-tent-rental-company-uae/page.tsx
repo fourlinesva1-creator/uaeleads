@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'كيف تختار أفضل شركة تأجير خيام في الإمارات ودبي: 7 معايير أساسية | Tent Now'
-        : 'How to Choose the Best Tent Rental Company in UAE & Dubai: 7 Must-Check Criteria | Tent Now';
+        ? 'كيف تختار أفضل شركة تأجير خيام في الإمارات ودبي: 7 معايير أساسية'
+        : 'How to Choose the Best Tent Rental Company in UAE & Dubai: 7 Must-Check Criteria';
 
     const description = isAr
         ? 'تجاهل التصاريح قد يُكلفك غرامة باهظة في الإمارات. تحقق من 7 معايير — الخبرة والتصاريح والمحفظة والدعم — قبل توقيع عقد. استشر شركة خيام موثوقة الآن.'

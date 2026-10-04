@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات مناطق اللعب وملاعب الأطفال في الإمارات | تنت ناو'
-            : "Play Area & Playground Shade Structures UAE | Children's Shading | Tent Now",
+            : "Play Area & Playground Shade Structures UAE | Children's Shading",
         description: isAr
             ? 'مظلات مناطق اللعب وملاعب الأطفال في الإمارات — حماية 95% من الأشعة فوق البنفسجية لمعدات اللعب والمناطق المدرسية الخارجية. أشرعة HDPE وهياكل إطارية. تصاريح بلدية مشمولة.'
             : "Playground and play area shade structures across UAE — 95% UV protection for children's play equipment, school outdoor areas, and residential play zones. HDPE shade sails and frame canopies. Municipality permits included.",
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات مناطق اللعب وملاعب الأطفال في الإمارات | تنت ناو'
-                : "Play Area & Playground Shade Structures UAE | Tent Now",
+                : "Play Area & Playground Shade Structures UAE",
             description: isAr
                 ? 'حماية 95% من الأشعة فوق البنفسجية لمناطق اللعب والملاعب في الإمارات — مدارس وحضانات وفنادق ومجمعات سكنية.'
                 : "95% UV protection for children's play areas across UAE — schools, nurseries, hotels, and residential compounds.",

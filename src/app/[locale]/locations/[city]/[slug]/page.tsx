@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { cityContent } from '@/data/city-content';
+import { cityContent, noindexCitySlugs } from '@/data/city-content';
 import { Link } from '@/i18n/navigation';
 import LocationServiceUI from '@/components/sections/LocationServiceUI';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: content.title,
         description,
+        ...(noindexCitySlugs.includes(slug) && { robots: { index: false, follow: true } }),
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/locations/${city}/${slug}`,
             languages: {

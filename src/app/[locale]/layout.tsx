@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   return {
     title: {
-      template: '%s | Tent Now UAE',
+      template: '%s | Tent Now',
       default:
         locale === 'ar'
           ? 'تأجير خيام رمضان ومجالس | دبي | أبوظبي | الشارقة | Tent Now'

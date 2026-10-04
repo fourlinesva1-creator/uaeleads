@@ -19,7 +19,7 @@ Quality & Craftsmanship	Premium materials & professional installation every time
 Modern Elegance	A fresh take: traditional charm + contemporary design.
 Trust & Reliability	Transparent pricing and timely delivery.
 
-Differentiation from Competitors (e.g., Mumtaz Tents):
+Differentiation from Competitors:
 While legacy players emphasize manufacturing heritage and wide product range, your brand focuses on premium user-centric experience, emotional connection, and Ramadan cultural moments — not just the tent itself.
 
 🧍‍♂️ 3. Brand Persona

@@ -9,6 +9,7 @@ import FAQSchema from '@/components/seo/FAQSchema';
 import { CheckCircle2, Shield, MapPin, ArrowRight, Users, Building2, Home, Landmark, ExternalLink, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import PricingNote from '@/components/ui/PricingNote';
+import { abuDhabiStorageProjectImages } from '@/data/abu-dhabi-storage-tent-project';
 
 interface Props {
     city: string;
@@ -200,17 +201,19 @@ export default function CityOverviewUI({ city, content }: Props) {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {(locale === 'ar' ? [
+                            { slug: 'storage-tent-rental', label: 'تأجير خيام التخزين' },
+                            { slug: 'warehouse-tent-rental', label: 'تأجير خيام المستودعات' },
+                            { slug: 'labor-accommodation-tents', label: 'خيام سكن العمال' },
                             { slug: 'ramadan-tent-rental', label: 'تأجير خيام رمضان' },
                             { slug: 'majlis-tent-rental', label: 'تأجير خيام المجالس' },
                             { slug: 'iftar-tent-rental', label: 'خيام الإفطار' },
-                            { slug: 'suhoor-tent-rental', label: 'خيام السحور' },
-                            { slug: 'sadu-tent-rental', label: 'خيام السدو' },
                         ] : [
+                            { slug: 'storage-tent-rental', label: 'Storage Tent Rental' },
+                            { slug: 'warehouse-tent-rental', label: 'Warehouse Tent Rental' },
+                            { slug: 'labor-accommodation-tents', label: 'Labor Accommodation Tents' },
                             { slug: 'ramadan-tent-rental', label: 'Ramadan Tent Rental' },
                             { slug: 'majlis-tent-rental', label: 'Majlis Tent Rental' },
                             { slug: 'iftar-tent-rental', label: 'Iftar Tent Solutions' },
-                            { slug: 'suhoor-tent-rental', label: 'Suhoor Tent Setups' },
-                            { slug: 'sadu-tent-rental', label: 'Sadu Tent Rental' },
                         ]).map(({ slug, label }) => (
                             <Link
                                 key={slug}
@@ -254,6 +257,45 @@ export default function CityOverviewUI({ city, content }: Props) {
                     )}
                 </div>
             </section>
+
+            {/* Recent project in this city */}
+            {city === 'abu-dhabi' && (
+                <section className="py-20 border-t border-border/30">
+                    <div className="container-luxury">
+                        <Link
+                            href="/portfolio/abu-dhabi-storage-tent"
+                            className="group grid md:grid-cols-2 bg-[#1a212e] border border-border/50 rounded-2xl overflow-hidden hover:border-gold/50 transition-all"
+                        >
+                            <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[280px]">
+                                <Image
+                                    src={abuDhabiStorageProjectImages.gallery[2].src}
+                                    alt={locale === 'ar' ? 'خيمة تخزين مكيفة ومغلقة بالكامل في أبوظبي' : 'Fully enclosed air-conditioned storage tent in Abu Dhabi'}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="p-8 md:p-10 flex flex-col justify-center">
+                                <p className="text-gold text-xs uppercase tracking-widest mb-3">
+                                    {locale === 'ar' ? 'مشروع حديث في أبوظبي' : 'Recent Project in Abu Dhabi'}
+                                </p>
+                                <h2 className="text-2xl md:text-3xl font-display text-white mb-4 group-hover:text-gold transition-colors">
+                                    {locale === 'ar' ? 'خيمة تخزين بمساحة 4,000 م²' : '4,000 sqm Storage Tent'}
+                                </h2>
+                                <p className="text-text-muted mb-6">
+                                    {locale === 'ar'
+                                        ? 'هيكل 30×20 م وهيكلان 20×85 م من خيام التخزين المغلقة بالكامل والمكيفة، مع أبواب رول شتر وإضاءة، بجانب مستودع لتخزين البضائع بأمان.'
+                                        : 'One 30×20 m and two 20×85 m fully enclosed, air-conditioned storage tents with roller shutter doors and lighting, installed beside a warehouse for secure goods storage.'}
+                                </p>
+                                <span className="inline-flex items-center gap-2 text-gold font-display text-sm">
+                                    {locale === 'ar' ? 'عرض المشروع' : 'View Project'}
+                                    <ArrowRight size={16} className="rtl:rotate-180" />
+                                </span>
+                            </div>
+                        </Link>
+                    </div>
+                </section>
+            )}
 
             {/* FAQ Section */}
             {content.faqs && content.faqs.length > 0 && (

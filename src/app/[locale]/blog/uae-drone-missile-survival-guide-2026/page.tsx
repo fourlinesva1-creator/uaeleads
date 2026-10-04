@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'دليل البقاء في الإمارات: ماذا تفعل عند هجوم بالطائرات المسيّرة أو الصواريخ 2026 | Tent Now'
-        : 'UAE Survival Guide: What To Do During a Drone or Missile Attack 2026 | Tent Now';
+        ? 'دليل البقاء في الإمارات: ماذا تفعل عند هجوم بالطائرات المسيّرة أو الصواريخ 2026'
+        : 'UAE Survival Guide: What To Do During a Drone or Missile Attack 2026';
 
     const description = locale === 'ar'
         ? 'دليل عملي للمقيمين في الإمارات لحمايتهم خلال التهديدات الجوية. خطوات فورية مثبتة، أماكن الإيواء، الإسعافات الأولية، وأرقام الطوارئ — بناءً على بروتوكولات الدفاع المدني الإماراتي.'
@@ -944,7 +944,7 @@ export default function UAESurvivalGuidePage() {
                     <h2 className="text-xl font-display text-[#D4AF37] mb-3">Looking for Premium Tent Structures in UAE?</h2>
                     <p className="text-[#9da6b9] text-sm mb-6">Tent Now provides professional event tent solutions across all seven Emirates — from Ramadan Majlis to corporate event structures.</p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <Link href="/services/corporate-events" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">
+                        <Link href="/blog/corporate-event-tents-dubai-2026" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">
                             Corporate Event Tents
                         </Link>
                         <Link href="/services/iftar-tent-rental" className="block text-center bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-colors text-sm font-semibold">

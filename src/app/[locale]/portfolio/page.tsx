@@ -2,7 +2,8 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
+import { ArrowRight } from 'lucide-react';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -10,10 +11,9 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: 'nav' });
 
     return {
-        title: `Our Event Portfolio | Premium Tent & Majlis Rentals UAE | ${t('portfolio')}`,
+        title: locale === 'ar' ? 'أعمالنا | مشاريع خيام التخزين والفعاليات في الإمارات' : 'Portfolio | Storage, Event & Majlis Tent Projects in the UAE',
         description: 'Explore Tent Now\'s legacy of over 5,000 successful Ramadan Majlis, corporate Iftar tents, and industrial event setups across Dubai and the UAE.',
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/portfolio`,
@@ -111,6 +111,34 @@ function PortfolioContent() {
                     </div>
                 </div>
 
+                {/* Featured Case Study */}
+                <Link
+                    href="/portfolio/abu-dhabi-storage-tent"
+                    className="group mb-12 grid grid-cols-1 lg:grid-cols-2 rounded-3xl overflow-hidden border border-[#282e39] bg-[#1a212e] hover:border-gold/40 transition-all"
+                >
+                    <div className="relative aspect-video lg:aspect-auto lg:min-h-[420px] overflow-hidden">
+                        <Image
+                            src="/images/projects/abu-dhabi-storage-tent/storage-tent-interior-goods.jpg"
+                            alt={t('items.abuDhabiStorage.title')}
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                    </div>
+                    <div className="p-8 lg:p-12 flex flex-col justify-center">
+                        <span className="text-xs uppercase tracking-[0.2em] text-gold font-display mb-4 block">
+                            {t('featured.label')}
+                        </span>
+                        <h2 className="text-3xl md:text-4xl font-display text-white mb-4 group-hover:text-gold transition-colors">
+                            {t('items.abuDhabiStorage.title')}
+                        </h2>
+                        <p className="text-[#9da6b9] leading-relaxed mb-8">{t('items.abuDhabiStorage.summary')}</p>
+                        <span className="text-gold font-bold inline-flex items-center gap-2">
+                            {t('featured.cta')} <ArrowRight size={18} className="rtl:rotate-180" />
+                        </span>
+                    </div>
+                </Link>
+
                 {/* Gallery Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {portfolioItems.map((item) => (
@@ -142,9 +170,9 @@ function PortfolioContent() {
                     <p className="text-[#9da6b9] mb-10 max-w-2xl mx-auto text-lg">
                         {t('cta.body')}
                     </p>
-                    <a href="/contact" className="btn-gold-fill px-12 py-5 rounded-xl font-display inline-block text-lg shadow-[0_10px_30px_rgba(212,175,55,0.2)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.3)] transition-all">
+                    <Link href="/contact" className="btn-gold-fill px-12 py-5 rounded-xl font-display inline-block text-lg shadow-[0_10px_30px_rgba(212,175,55,0.2)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.3)] transition-all">
                         {t('cta.btn')}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

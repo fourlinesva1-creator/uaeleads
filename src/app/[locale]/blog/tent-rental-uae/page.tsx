@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام في الإمارات | دليل شامل لجميع أنواع الخيام ودبي وأبوظبي 2026 | Tent Now'
-        : 'Tent Rental UAE | Complete Guide to All Tent Types, Prices & All 7 Emirates | Tent Now';
+        ? 'تأجير خيام في الإمارات | دليل شامل لجميع أنواع الخيام ودبي وأبوظبي 2026'
+        : 'Tent Rental UAE | Complete Guide to All Tent Types, Prices & All 7 Emirates';
 
     const description = locale === 'ar'
         ? 'كل ما تحتاج معرفته عن تأجير الخيام في الإمارات — خيام رمضان والمجالس والفعاليات والتخزين الصناعي. أسعار ومناطق شاملة. استشارة مجانية من خبراء Tent Now.'
@@ -130,7 +130,7 @@ export default function TentRentalUAEPage() {
                         <>
                             {/* ===== ARABIC CONTENT ===== */}
                             <p>
-                                الإمارات العربية المتحدة من أكثر دول العالم استخداماً للخيام المؤقتة—سواء لموسم رمضان المبارك، أو الفعاليات الضخمة، أو تخزين البضائع الصناعية، أو حفلات الأعراس الراقية. وبفضل خبرة تمتد لأكثر من <strong>30 عاماً</strong> في خدمة جميع الإمارات السبع، تُقدّم Tent Now—المدعومة بقدرات مجموعة ممتاز—أوسع تشكيلة من الخيام المتاحة بأسعار تنافسية وجودة لا تُضاهى.
+                                الإمارات العربية المتحدة من أكثر دول العالم استخداماً للخيام المؤقتة—سواء لموسم رمضان المبارك، أو الفعاليات الضخمة، أو تخزين البضائع الصناعية، أو حفلات الأعراس الراقية. وبفضل خبرة تمتد لأكثر من <strong>30 عاماً</strong> في خدمة جميع الإمارات السبع، تُقدّم Tent Now أوسع تشكيلة من الخيام المتاحة بأسعار تنافسية وجودة لا تُضاهى.
                             </p>
                             <p>
                                 في هذا الدليل الشامل، ستتعرف على كل أنواع الخيام التي نوفرها، والمناطق التي نخدمها، وكيف نتولى كل شيء من التصاريح حتى التركيب والديكور الداخلي.
@@ -510,10 +510,10 @@ export default function TentRentalUAEPage() {
                         <>
                             {/* ===== ENGLISH CONTENT ===== */}
                             <p>
-                                The UAE is home to some of the world&apos;s most spectacular temporary structures. From intimate Ramadan Majlis tents in Jumeirah villas to 5,000-capacity <Link href="/services/corporate-events" className="text-gold hover:underline">corporate events</Link> marquees in Abu Dhabi, temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link> spanning thousands of square metres in Sharjah&apos;s industrial zones, and <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> extensions — tent rental in the UAE is a mature, sophisticated market.
+                                The UAE is home to some of the world&apos;s most spectacular temporary structures. From intimate Ramadan Majlis tents in Jumeirah villas to 5,000-capacity <Link href="/blog/corporate-event-tents-dubai-2026" className="text-gold hover:underline">corporate events</Link> marquees in Abu Dhabi, temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link> spanning thousands of square metres in Sharjah&apos;s industrial zones, and <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> extensions — tent rental in the UAE is a mature, sophisticated market.
                             </p>
                             <p>
-                                At Tent Now, backed by the expertise of <strong>Mumtaz Group</strong>, we bring over <strong>30 years of combined industry knowledge</strong> across all seven Emirates. Whether you need <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> for Ramadan or a large event structure, this is your complete guide to every tent type we offer, the full-service support behind each one, and how to choose the right structure for your needs.
+                                At Tent Now, we bring over <strong>30 years of combined industry knowledge</strong> across all seven Emirates. Whether you need <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> for Ramadan or a large event structure, this is your complete guide to every tent type we offer, the full-service support behind each one, and how to choose the right structure for your needs.
                             </p>
 
                             {/* Quick Stats */}
@@ -834,7 +834,7 @@ export default function TentRentalUAEPage() {
                                     {
                                         num: '01',
                                         title: '30+ Years of UAE-Specific Experience',
-                                        body: 'Our leadership team has decades of experience through Mumtaz Group — making us one of the most knowledgeable tent suppliers in the region. We know what works in Jumeirah villas, what survives RAK coastal wind loads, and what Civil Defense expects in every emirate.',
+                                        body: 'Our leadership team has decades of hands-on experience in the UAE tent industry — making us one of the most knowledgeable tent suppliers in the region. We know what works in Jumeirah villas, what survives RAK coastal wind loads, and what Civil Defense expects in every emirate.',
                                     },
                                     {
                                         num: '02',

@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'أسعار تأجير الخيام في الإمارات 2026 | دليل التسعير الكامل | Tent Now'
-        : 'Tent Rental Prices in UAE 2026 | Complete Pricing Guide | Tent Now';
+        ? 'أسعار تأجير الخيام في الإمارات 2026 | دليل التسعير الكامل'
+        : 'Tent Rental Prices in UAE 2026 | Complete Pricing Guide';
     const description = isAr
         ? 'دليل شامل لأسعار تأجير الخيام في الإمارات 2026. أسعار خيام رمضان والمجالس والفعاليات المؤسسية وخيام التخزين الصناعية في دبي وأبوظبي والشارقة.'
         : 'Complete guide to tent rental prices in UAE for 2026. Ramadan tent costs, majlis rental rates, corporate event tents, and industrial storage tent pricing across Dubai, Abu Dhabi, and Sharjah.';

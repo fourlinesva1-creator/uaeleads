@@ -135,7 +135,7 @@ export default function ArticlePage() {
 
                             <h2>1. الحدث الأبرز: حي رمضان في مدينة إكسبو</h2>
                             <p>
-                                هل تذكرون إكسبو 2020؟ بالطبع تذكرونه. حسناً، إنه يعود للحياة مرة أخرى من خلال <strong>"حي رمضان".</strong> وإذا كنتم تبحثون عن تنظيم فعالية خاصة، فاطّلعوا على خدمات <Link href="/services/corporate-events" className="text-gold hover:underline font-semibold">خيام الفعاليات المؤسسية</Link> أو <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">مجالس الفنادق الفاخرة</Link> لدينا.
+                                هل تذكرون إكسبو 2020؟ بالطبع تذكرونه. حسناً، إنه يعود للحياة مرة أخرى من خلال <strong>"حي رمضان".</strong> وإذا كنتم تبحثون عن تنظيم فعالية خاصة، فاطّلعوا على خدمات <Link href="/blog/corporate-event-tents-dubai-2026" className="text-gold hover:underline font-semibold">خيام الفعاليات المؤسسية</Link> أو <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">مجالس الفنادق الفاخرة</Link> لدينا.
                             </p>
                             <ul>
                                 <li><strong>الأجواء:</strong> تخيلوا "سوبر ماركت الجدة" (نعم، هذا شيء حقيقي هناك للأطفال)، ورواية القصص التقليدية، وأجواء تشبه قرية بدوية عصرية. إنه مكان ضخم، في الهواء الطلق، ومليء بالحنين.</li>
@@ -251,7 +251,7 @@ export default function ArticlePage() {
                             <h2>1. The Heavy Hitter: Hai Ramadan at Expo City</h2>
                             <p>
                                 Remember Expo 2020? Of course you do. Well, it comes alive again for <strong>"Hai Ramadan."</strong> And if you are looking to host your own event, explore our{' '}
-                                <Link href="/services/corporate-events" className="text-gold hover:underline font-semibold">corporate event tents</Link> or{' '}
+                                <Link href="/blog/corporate-event-tents-dubai-2026" className="text-gold hover:underline font-semibold">corporate event tents</Link> or{' '}
                                 <Link href="/services/hotel-majlis" className="text-gold hover:underline font-semibold">hotel majlis tents</Link> built for the UAE&apos;s most demanding events.
                             </p>
                             <ul>

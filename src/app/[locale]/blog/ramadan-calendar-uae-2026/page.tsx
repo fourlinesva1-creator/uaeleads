@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تقويم رمضان 2026 الإمارات | التواريخ وأوقات الصلاة ودليل إعداد خيمة المجلس | Tent Now'
-        : 'Ramadan 2026 UAE Calendar | Dates, Timing & Tent Setup Guide | Tent Now';
+        ? 'تقويم رمضان 2026 الإمارات | التواريخ وأوقات الصلاة ودليل إعداد خيمة المجلس'
+        : 'Ramadan 2026 UAE Calendar | Dates, Timing & Tent Setup Guide';
 
     const description = locale === 'ar'
         ? 'تقويم رمضان 2026 الكامل للإمارات مع أوقات الصلاة وجداول الإفطار والسحور وكيفية إعداد مجلس خيمة خاص. خطط لموسم 2027 مبكراً للحصول على أفضل الأسعار.'
@@ -134,7 +134,7 @@ export default function RamadanCalendarPage() {
                                 <span className="text-gold text-lg flex-shrink-0">★</span>
                                 <p className="text-sm text-white/90">
                                     <strong className="text-gold">تخطط لرمضان 2027؟</strong> احجز مبكراً للحصول على أفضل الأسعار وضمان التوفر.{' '}
-                                    <Link href="/contact" className="text-gold underline hover:text-white font-semibold">تواصل معنا الآن</Link> لتأمين إعداد خيمتك لموسم 2027.
+                                    <Link href="/blog/ramadan-calendar-uae-2027" className="text-gold underline hover:text-white font-semibold">اطلع على تقويم رمضان 2027</Link> أو <Link href="/request-quote" className="text-gold underline hover:text-white font-semibold">اطلب عرض سعر</Link> لتأمين إعداد خيمتك لموسم 2027.
                                 </p>
                             </div>
 
@@ -344,7 +344,7 @@ export default function RamadanCalendarPage() {
                                 <span className="text-gold text-lg flex-shrink-0">★</span>
                                 <p className="text-sm text-white/90">
                                     <strong className="text-gold">Looking ahead to Ramadan 2027?</strong> Book early for the best rates and guaranteed availability.{' '}
-                                    <Link href="/contact" className="text-gold underline hover:text-white font-semibold">Contact us now</Link> to secure your 2027 tent setup.
+                                    See the <Link href="/blog/ramadan-calendar-uae-2027" className="text-gold underline hover:text-white font-semibold">Ramadan 2027 UAE calendar</Link> or <Link href="/request-quote" className="text-gold underline hover:text-white font-semibold">request a quote</Link> to secure your 2027 tent setup.
                                 </p>
                             </div>
 

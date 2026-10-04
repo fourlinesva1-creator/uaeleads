@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات الإمارات | حلول تظليل خارجي شاملة | تنت ناو'
-            : 'Shade Structures UAE | Outdoor Shading Solutions | Tent Now',
+            : 'Shade Structures UAE | Outdoor Shading Solutions',
         description: isAr
             ? 'مظلات في جميع أنحاء الإمارات — مظلات مواقف السيارات والممشى ومناطق اللعب والمسابح والملاعب الرياضية والمدارس والمساجد. تصاريح بلدية مشمولة. مسح موقعي مجاني.'
             : 'Shade structures across UAE — car park canopies, walkway shades, play area shades, pool shades, sports court shading, school shades, mosque shades. Municipality permits included. Civil Defence approved. Free site survey.',
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات الإمارات | حلول تظليل خارجي شاملة | تنت ناو'
-                : 'Shade Structures UAE | Outdoor Shading Solutions | Tent Now',
+                : 'Shade Structures UAE | Outdoor Shading Solutions',
             description: isAr
                 ? 'مظلات في جميع أنحاء الإمارات — مواقف السيارات والممشيات والمدارس والمساجد والملاعب الرياضية والمسابح. تصاريح بلدية مشمولة.'
                 : 'Shade structures across UAE — car park canopies, walkway shades, play area shades, pool shades, sports court shading, school shades, mosque shades. Municipality permits included.',

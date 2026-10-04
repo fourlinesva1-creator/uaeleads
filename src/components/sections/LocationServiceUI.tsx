@@ -32,6 +32,8 @@ const serviceImages: Record<string, string> = {
     'majlis-tent-rental': '/images/tent-now/home-majlis.jpg',
     'iftar-tent-rental': '/images/tent-now/iftar-tents.jpg',
     'suhoor-tent-rental': '/images/tent-now/home-majlis.jpg',
+    'storage-tent-rental': '/images/storage-tents/storage-tent-hero.jpg',
+    'warehouse-tent-rental': '/images/storage-tents/storage-tent-1.jpeg',
 };
 
 export default function LocationServiceUI({ city, slug, content }: Props) {

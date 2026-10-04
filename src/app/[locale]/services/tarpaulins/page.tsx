@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'مشمع بولي إيثيلين PE200 — بيع وتوريد في الإمارات | Tent Now'
-        : 'PE Tarpaulins UAE | Dutarp PE200 200gsm Supply & Sale | Tent Now';
+        ? 'مشمع بولي إيثيلين PE200 — بيع وتوريد في الإمارات'
+        : 'PE Tarpaulins UAE | Dutarp PE200 200gsm Supply & Sale';
 
     const description = isAr
         ? 'مشمع بولي إيثيلين مقوّى 200 جرام/م² (PE200) للبناء والصناعة واللوجستيات في الإمارات. 16 مقاساً قياسياً من 3.6×3.6م حتى 18×18م. متوفر أيضاً بشكل بكرات. تواصل للحصول على أسعار اليوم.'

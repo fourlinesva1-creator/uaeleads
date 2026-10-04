@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام الإفطار في دبي 2026 | تجهيز خيام رمضان ومجالس مكيفة - Tent Now'
-        : 'Iftar Tent Rental Dubai 2026 | Ramadan Tent Setup, Majlis & AC Tents - Tent Now';
+        ? 'تأجير خيام الإفطار في دبي 2026 | تجهيز خيام رمضان ومجالس مكيفة'
+        : 'Iftar Tent Rental Dubai 2026 | Ramadan Tent Setup, Majlis & AC Tents';
 
     const description = locale === 'ar'
         ? 'أفضل تأجير خيام إفطار في دبي للمجالس العائلية وإفطارات الشركات وفعاليات الفنادق والتجمعات المجتمعية. تجهيز كامل مع تكييف وديكور وتصاريح بلدية دبي والدفاع المدني. خبرة 30 عامًا. احصل على عرض أسعار اليوم!'

@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام التخزين الصناعية في الإمارات | توفير 70% مقارنة بالمستودعات التقليدية | Tent Now'
-        : 'Industrial Storage Tent Rental UAE | Save 70% vs Traditional Warehouses | Tent Now';
+        ? 'تأجير خيام التخزين الصناعية في الإمارات | توفير 70% مقارنة بالمستودعات التقليدية'
+        : 'Industrial Storage Tent Rental UAE | Save 70% vs Traditional Warehouses';
 
     const description = locale === 'ar'
         ? 'خيام تخزين صناعية معتمدة دفاع مدني في الإمارات — تُنصب خلال أيام بتكلفة AED 15/م² شهرياً. تصاريح شاملة لدبي وأبوظبي وجميع الإمارات. اطلب عرضاً في 24 ساعة.'

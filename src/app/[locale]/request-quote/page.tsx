@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const t = await getTranslations({ locale, namespace: 'quote' });
 
     const title = locale === 'ar'
-        ? 'طلب عرض سعر | خيام رمضان والمجالس الفاخرة في الإمارات'
-        : 'Request a Quote | Premium Ramadan Tent & Majlis Rentals UAE';
+        ? 'طلب عرض سعر مجاني | تأجير خيام في الإمارات'
+        : 'Request a Free Tent Rental Quote | UAE';
 
     const description = locale === 'ar'
         ? 'احصل على عرض سعر مخصص لخيمة رمضان أو مجلس الإفطار. خبرة 30 عاماً في خدمة دبي وأبوظبي والشارقة وجميع الإمارات.'

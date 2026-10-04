@@ -31,7 +31,7 @@ export interface CityOverview {
 export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     en: {
         dubai: {
-            title: 'Tent Rental Dubai | Ramadan, Majlis & Industrial Tents | Tent Now',
+            title: 'Tent Rental Dubai | Ramadan, Majlis & Industrial Tents',
             metaDescription: 'Tent rental Dubai — Civil Defence-approved Ramadan tents, majlis & storage. IACAD permits included. JAFZA, DIFC, Jumeirah. Same-day response. Free quote.',
             subtitle: 'Dubai\'s Trusted Tent Hire Specialists — Ramadan, Majlis, Iftar & Industrial Since 1994',
             intro: 'Looking for tent rental in Dubai? Whether you need iftar tent rental Dubai for corporate hospitality, a private majlis tent rental Dubai for family Ramadan gatherings, or covered industrial storage across JAFZA and Dubai South, Tent Now has been delivering tent rental in Dubai since 1994. Dubai is the UAE\'s most competitive market — and our 30 years of experience means we know every permit requirement, every event zone, and every installation challenge. From Ramadan tent hire Dubai setups in Jumeirah villa gardens to corporate iftar tent setup in Dubai at Business Bay offices, DIFC terraces, and Downtown Dubai hotels, we handle the full scope. Dubai Creek, Old Dubai, and Al Fahidi cultural district locations have their own heritage area requirements — we know those too. IACAD (Islamic Affairs and Charitable Activities Department) permits are mandatory for all Ramadan tent setups in Dubai; we manage these as a routine service alongside Civil Defence and Dubai Municipality approvals.',
@@ -69,8 +69,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Dubai Tent Rental Quote'
         },
         'abu-dhabi': {
-            title: 'Tent Rental Abu Dhabi | Storage, Event & Industrial Tents | Tent Now',
-            metaDescription: 'Tent rental Abu Dhabi — Ramadan tents, warehouse & industrial structures. Civil Defence-approved. ADM permits handled. 72-hr deployment. Free quote today.',
+            title: 'Tent Rental Abu Dhabi | Storage, Event & Ramadan Tents',
+            metaDescription: 'Tents for rent in Abu Dhabi: storage, warehouse, event and Ramadan tents, with AC, generators and lighting available. ADM permits handled. 72-hour deployment. Free quote in 2 hours.',
             subtitle: 'Serving KIZAD, Mussafah, ICAD, Yas Island, and Abu Dhabi Industrial Areas Since 1994',
             intro: 'When it comes to tent rental Abu Dhabi, the demands are unlike any other emirate. Abu Dhabi\'s industrial base is the foundation of the UAE economy — KIZAD hosts the world\'s third-largest free zone, Mussafah accommodates over 1,000 industrial companies, and ADNOC\'s operations span the emirate and beyond. From Yas Island event setups to Saadiyat Island cultural district constructions and Corniche waterfront occasions, the need for deployable, compliant tent structures is constant. Tent Now delivers full-service tent rental Abu Dhabi — from industrial warehousing to Ramadan iftar tents — with Abu Dhabi Municipality (ADM) permits and Civil Defence approvals fully managed. Where competitors benchmark themselves against Emirates Palace-level service, we deliver it.',
             whyUs: 'Three decades of industrial and event tent deployments in Abu Dhabi, navigating the Abu Dhabi Municipality (ADM) permit process, Civil Defence approvals, Abu Dhabi Ports authority requirements, and — for major events — Abu Dhabi National Events Committee (ADNEC) clearances. We understand that Abu Dhabi\'s standards are different from Dubai\'s — specifications are stricter, documentation requirements are heavier, and the expectation is that your supplier has everything in order before arrival. ADNOC area deployments require specific HSE packages; Corniche and Yas Island locations have their own aesthetic requirements. We know all of it. Our structures are certified, our crews are trained, and our permit packages are complete before the first post goes in the ground.',
@@ -107,8 +107,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Abu Dhabi Tent Rental Quote'
         },
         sharjah: {
-            title: 'Tent Rental Sharjah | Storage & Event Tents | Tent Now',
-            metaDescription: 'Sharjah\'s local tent rental specialists — Civil Defence-approved for storage, events & Ramadan. Based in SAIF Zone. Same-day site visits. Free quote in 2 hours.',
+            title: 'Tent Rental Sharjah | Storage, Event & Ramadan Tents',
+            metaDescription: 'Tents for rent in Sharjah from a SAIF Zone-based team: storage, warehouse, event and Ramadan tents. No out-of-town mobilisation fees. Same-day site visits. Free quote in 2 hours.',
             subtitle: 'Based in SAIF Zone — Sharjah\'s Local Tent Hire Specialists Since 1994',
             intro: 'Looking for tent rental in Sharjah? Tent Now is headquartered right here in Sharjah\'s SAIF Zone — making us the fastest and most cost-effective Sharjah tent hire provider in the UAE. We are not a Dubai company serving Sharjah as an afterthought. The Hamriyah Free Zone, Sharjah\'s 18 industrial areas, the Blue Souk area, Al Majaz Waterfront, University City, and the Sharjah Airport International Free Zone are all on our doorstep. No out-of-town mobilization fees. Same-day site visits. Faster tent for rent in Sharjah than any competitor in the market.',
             whyUs: 'Thirty years operating from SAIF Zone means we know Sharjah\'s industrial regulatory environment better than anyone. Sharjah Municipality permit requirements (including their notably faster approval process compared to Dubai), Sharjah Civil Defence standards, SAIF Zone and Hamriyah Free Zone authority approvals — we handle all of these as routine operations. Our Sharjah industrial clients benefit from the lowest mobilization costs, fastest response times, and a team that understands the specific conditions of Sharjah\'s industrial areas — from the coastal humidity of Hamriyah to the inland heat of the industrial zones. Ramadan tent setup in Sharjah is a core part of our seasonal offering — from Al Majaz Waterfront to private villa compounds in Muwaileh.',
@@ -144,7 +144,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Sharjah Tent Hire Quote'
         },
         ajman: {
-            title: 'Tent Rental Ajman | Ramadan, Majlis & Industrial Tents | Tent Now',
+            title: 'Tent Rental Ajman | Ramadan, Majlis & Industrial Tents',
             metaDescription: 'Tent rental Ajman — Ramadan tents, majlis hire & industrial storage at better value than Dubai. Ajman Municipality permits faster & cheaper. Free quote today.',
             subtitle: 'Ajman Tent Hire Specialists — Ramadan, Majlis & Industrial Structures',
             intro: 'Looking for tent rental in Ajman? Whether it\'s a Ramadan iftar tent, a private majlis setup, or industrial warehouse coverage, Tent Now delivers tent rental in Ajman with speed and full compliance. Ajman tent hire is one of the best-value options in the UAE — Ajman Municipality\'s permit process is both quicker and more affordable than Dubai\'s, making it the smart choice for businesses and families planning events. We serve the Industrial Area, Al Jurf, Al Bustan, and Corniche Ajman for events, as well as Ajman Free Zone and Ajman Port for industrial needs. The Ajman Free Zone hosts over 9,000 companies, making it one of the UAE\'s most active commercial hubs — and our 30 years of tent for rent in Ajman experience means we know every approval requirement inside out.',
@@ -181,7 +181,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Ajman Tent Rental Quote'
         },
         'ras-al-khaimah': {
-            title: 'Tent Rental Ras Al Khaimah | Ramadan & Industrial Tents | Tent Now',
+            title: 'Tent Rental Ras Al Khaimah | Ramadan & Industrial Tents',
             metaDescription: 'Tent rental Ras Al Khaimah — Ramadan tents, majlis & warehouse storage. Al Hamra, Mina Al Arab, RAK Free Zone. RAK permits included. Free quote.',
             subtitle: 'RAK Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Looking for tent rental in Ras Al Khaimah? Tent Now provides tent hire Ras Al Khaimah for Ramadan events, private majlis setups, corporate hospitality, and industrial warehousing across the emirate. RAK\'s diverse geography — from the luxury resorts of Al Hamra and Mina Al Arab to the industrial corridors of RAK Free Trade Zone — means every tent rental in RAK requires specialist knowledge. We have 30 years of deployments across this emirate. Al Hamra Villa gardens, Al Marjan Island hotel extensions, and Mina Al Arab waterfront venues are all within our regular coverage. RAK Municipality permit specifics differ from Dubai and Abu Dhabi — the process is generally more streamlined, and our long-standing relationships with RAK authorities mean faster approvals. The RAK Free Trade Zone hosts over 14,000 companies, and RAK Maritime City is expanding rapidly — our industrial tent deployments here are engineered for the emirate\'s specific coastal and mountain wind load requirements.',
@@ -217,7 +217,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your RAK Tent Rental Quote'
         },
         fujairah: {
-            title: 'Tent Rental Fujairah | Ramadan, Majlis & Industrial Tents | Tent Now',
+            title: 'Tent Rental Fujairah | Ramadan, Majlis & Industrial Tents',
             metaDescription: 'Tent rental Fujairah — Ramadan tents near Fujairah Fort, majlis hire & storage. East coast specialists since 1994. All permits included. Free quote.',
             subtitle: 'Fujairah Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Tent rental in Fujairah demands specialist knowledge of the east coast\'s unique geography and regulatory environment. Tent Now provides Fujairah tent hire for Ramadan events, private majlis setups, and industrial storage across the emirate. The area near Fujairah Fort and the Old Town is one of the emirate\'s most scenic event locations; the Fujairah Corniche waterfront is popular for corporate and community iftar tent setups; and the free zone industrial areas support ongoing industrial tent deployments. Fujairah tent hire also serves the growing residential areas near the city centre where families seek private Ramadan tent rental in Fujairah for their home gardens. The Hajar Mountains to the west and the Gulf of Oman to the east create specific wind patterns and humidity conditions — our structures are engineered for these east coast conditions. Fujairah Municipality permits for temporary structures are part of our routine service, alongside Fujairah Free Zone and Civil Defence approvals.',
@@ -253,7 +253,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'Get Your Fujairah Tent Rental Quote'
         },
         'umm-al-quwain': {
-            title: 'Tent Rental Umm Al Quwain | Ramadan & Industrial Tents | Tent Now',
+            title: 'Tent Rental Umm Al Quwain | Ramadan & Industrial Tents',
             metaDescription: 'Tent rental Umm Al Quwain — Ramadan tents, majlis hire & warehouse storage. UAE\'s most cost-effective tent rental. UAQ Free Zone permits included. Free quote.',
             subtitle: 'UAQ Tent Hire Specialists — Ramadan, Events & Industrial Since 1994',
             intro: 'Tent rental in Umm Al Quwain covers a wide range of needs — from Ramadan majlis setups for UAQ\'s close-knit residential communities to industrial warehouse tent rental for the growing UAQ Free Trade Zone and the emirate\'s expanding industrial estates. Tent rental in Umm Al Quwain is particularly cost-competitive: UAQ\'s lower land costs and accessible permit process make it one of the most affordable tent hire destinations in the UAE. The UAQ Free Trade Zone warehouse tent rental segment is showing strong demand — our Arabic-language warehouse tent page here is already at position 3 on Google, reflecting how well this market is developing. UAQ\'s industrial estates and free zones are attracting manufacturing and logistics operators who need flexible, compliant covered infrastructure without the premium pricing of Dubai or Abu Dhabi.',
@@ -291,7 +291,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     },
     ar: {
         dubai: {
-            title: 'تأجير خيام دبي | خيام رمضان ومجالس وإفطار وصناعية | Tent Now',
+            title: 'تأجير خيام دبي | خيام رمضان ومجالس وإفطار وصناعية',
             metaDescription: 'تأجير خيام في دبي — خيام رمضان معتمدة من الدفاع المدني، مجالس وتخزين صناعي. تصاريح IACAD مشمولة. جميرا وDIFC وبزنس باي. رد فوري. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في دبي — رمضان ومجالس وإفطار وخيام صناعية منذ 1994',
             intro: 'هل تبحث عن خيام للإيجار في دبي؟ سواء كنت تحتاج خيمة إفطار رمضان في دبي لضيافة الشركات، أو تأجير خيمة مجلس خاصة لتجمعات العائلة الرمضانية، أو مخازن صناعية مغطاة في جافزا ودبي ساوث، فإن Tent Now توفر تأجير الخيام في دبي منذ 1994. دبي هي السوق الأكثر تنافسية في الإمارات — وخبرتنا الممتدة 30 عاماً تعني معرفة كل متطلبات التصاريح وكل منطقة فعاليات وكل تحدٍّ للتركيب. من إعداد خيام الإفطار الرمضانية في فلل جميرا إلى خيام الإفطار المؤسسية في بزنس باي وتراسات DIFC وفنادق داون تاون دبي — نتولى كل النطاق. خور دبي والأحياء القديمة ومنطقة الفهيدي التاريخية لها متطلبات خاصة بمناطق التراث — ونعرفها جيداً. تصاريح IACAD (دائرة الشؤون الإسلامية والعمل الخيري) إلزامية لجميع خيام رمضان في دبي؛ ونتولى إدارتها ضمن خدمتنا الروتينية بجانب موافقات الدفاع المدني وبلدية دبي.',
@@ -329,8 +329,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في دبي'
         },
         'abu-dhabi': {
-            title: 'تأجير خيام أبوظبي | خيام تخزين وفعاليات رمضان | Tent Now',
-            metaDescription: 'تأجير خيام في أبوظبي — خيام رمضان وإفطار، مستودعات وخيام صناعية. معتمدة من الدفاع المدني. تصاريح ADM مشمولة. نشر خلال 72 ساعة. احصل على عرض مجاني.',
+            title: 'تأجير خيام أبوظبي | خيام تخزين وفعاليات ورمضان',
+            metaDescription: 'خيام للإيجار في أبوظبي: خيام تخزين ومستودعات وفعاليات ورمضان، مع توفير التكييف والمولدات والإضاءة. تصاريح ADM مشمولة. تركيب خلال 72 ساعة. عرض سعر مجاني خلال ساعتين.',
             subtitle: 'خدمة KIZAD ومصفح وجزيرة ياس والسعديات وأبوظبي الصناعية منذ 1994',
             intro: 'تأجير الخيام في أبوظبي له متطلبات فريدة تختلف عن سائر الإمارات. القاعدة الصناعية في أبوظبي هي أساس الاقتصاد الإماراتي — KIZAD يستضيف ثالث أكبر منطقة حرة في العالم، ومصفح يضم أكثر من 1,000 شركة صناعية، وعمليات أدنوك تمتد عبر الإمارة. من إعداد الفعاليات في جزيرة ياس إلى مشاريع البناء في جزيرة السعديات ومناسبات الكورنيش، الحاجة لخيام قابلة للنشر ومتوافقة مع الأنظمة أمر دائم. Tent Now تقدم تأجير خيام في أبوظبي لجميع الأغراض — من المستودعات الصناعية إلى خيام الإفطار الرمضانية — مع إدارة كاملة لتصاريح بلدية أبوظبي (ADM) والدفاع المدني.',
             whyUs: 'ثلاثة عقود من نشر الخيام الصناعية في أبوظبي، بالتعامل مع عملية تصريح دائرة البلديات والنقل (DMT)، وموافقات الدفاع المدني، ومتطلبات مينائي أبوظبي. نفهم أن معايير أبوظبي الصناعية مختلفة عن دبي — المواصفات أكثر صرامة، ومتطلبات التوثيق أثقل.',
@@ -367,8 +367,8 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في أبوظبي'
         },
         sharjah: {
-            title: 'تأجير خيام الشارقة | خيام تخزين وفعاليات ورمضان | Tent Now',
-            metaDescription: 'متخصصو تأجير الخيام المحليون في الشارقة — معتمدة من الدفاع المدني. مقرنا في SAIF. بدون رسوم نقل، تقييم الموقع في نفس اليوم. احصل على عرض خلال ساعتين.',
+            title: 'تأجير خيام الشارقة | خيام تخزين وفعاليات ورمضان',
+            metaDescription: 'خيام للإيجار في الشارقة من فريق مقره منطقة SAIF: خيام تخزين ومستودعات وفعاليات ورمضان. بدون رسوم نقل، معاينة الموقع في نفس اليوم. عرض سعر مجاني خلال ساعتين.',
             subtitle: 'مقرنا في منطقة SAIF — متخصصو تأجير الخيام المحليون في الشارقة منذ 1994',
             intro: 'تبحث عن خيام للإيجار في الشارقة؟ Tent Now مقرها في منطقة SAIF بالشارقة مباشرةً — مما يجعلنا أسرع وأكثر كفاءة من حيث التكلفة لتأجير الخيام في الشارقة. نحن لسنا شركة دبي تخدم الشارقة — نحن المتخصصون المحليون. منطقة SAIF ومنطقة البلو سوك وواجهة المجاز المائية ومدينة الجامعات والمناطق الصناعية الـ18 في متناول يدنا. بدون رسوم نقل خارج المدينة، وتقييم الموقع في نفس اليوم.',
             whyUs: 'ثلاثون عاماً من منطقة SAIF تعني أننا نعرف البيئة التنظيمية في الشارقة أفضل من أي أحد آخر. متطلبات تصاريح بلدية الشارقة (التي تتميز بسرعة أعلى في الموافقة مقارنةً بدبي)، معايير الدفاع المدني، موافقات منطقة SAIF وميناء حمرية الحرة — نتعامل معها جميعاً كعمليات روتينية. إعداد خيام رمضان في الشارقة هو جزء أساسي من عروضنا الموسمية — من واجهة المجاز إلى مجمعات الفلل الخاصة في مويلح.',
@@ -404,7 +404,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في الشارقة'
         },
         ajman: {
-            title: 'تأجير خيام عجمان | خيام رمضان ومجالس وصناعية | Tent Now',
+            title: 'تأجير خيام عجمان | خيام رمضان ومجالس وصناعية',
             metaDescription: 'تأجير خيام في عجمان — خيام رمضان ومجالس وتخزين صناعي بأسعار أوفر من دبي. تصاريح بلدية عجمان أسرع وأرخص. احصل على عرض مجاني اليوم.',
             subtitle: 'متخصصو تأجير الخيام في عجمان — رمضان ومجالس وخيام صناعية',
             intro: 'هل تبحث عن خيام للإيجار في عجمان؟ Tent Now توفر تأجير خيمة رمضان وإفطار ومجلس في عجمان للمناسبات السكنية والمؤسسية، إضافةً إلى خيام التخزين الصناعية للمنطقة الحرة والجرف. تأجير الخيام في عجمان من أفضل الخيارات في الإمارات من حيث التكلفة — إجراء بلدية عجمان للتصاريح أسرع وأرخص من دبي، مما يجعله الخيار الذكي للأسر والشركات. نخدم المنطقة الصناعية والجرف والبستان وكورنيش عجمان للفعاليات، والمنطقة الحرة وميناء عجمان للاحتياجات الصناعية. المنطقة الحرة بعجمان تستضيف أكثر من 9,000 شركة، وخبرتنا الممتدة 30 عاماً في خيام للإيجار في عجمان تعني معرفة كل متطلبات الموافقة من الداخل.',
@@ -441,7 +441,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في عجمان'
         },
         'ras-al-khaimah': {
-            title: 'تأجير خيام رأس الخيمة | خيام رمضان وصناعية | Tent Now',
+            title: 'تأجير خيام رأس الخيمة | خيام رمضان وصناعية',
             metaDescription: 'تأجير خيام في رأس الخيمة — خيام رمضان ومجالس ومستودعات صناعية. الحمراء وميناء العرب والمنطقة الحرة. تصاريح البلدية مشمولة. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في رأس الخيمة — رمضان وفعاليات وخيام صناعية منذ 1994',
             intro: 'هل تبحث عن تأجير خيام في رأس الخيمة؟ Tent Now توفر خيام للإيجار في رأس الخيمة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والضيافة المؤسسية والتخزين الصناعي في جميع أنحاء الإمارة. الجغرافيا المتنوعة في رأس الخيمة — من منتجعات الحمراء الفاخرة وميناء العرب وجزيرة مرجان إلى الممرات الصناعية في المنطقة الحرة — تعني أن كل تأجير خيام في رأس الخيمة يتطلب معرفة متخصصة. لدينا 30 عاماً من النشر في هذه الإمارة. حدائق فلل الحمراء وامتدادات فنادق جزيرة مرجان ومواقع الواجهة البحرية في ميناء العرب كلها ضمن تغطيتنا المنتظمة. متطلبات تصاريح بلدية رأس الخيمة للمنشآت المؤقتة تختلف عن دبي وأبوظبي — عادةً أكثر انسيابية، وعلاقاتنا الراسخة مع سلطات رأس الخيمة تعني موافقات أسرع.',
@@ -477,7 +477,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في رأس الخيمة'
         },
         fujairah: {
-            title: 'تأجير خيام الفجيرة | خيام رمضان ومجالس وصناعية | Tent Now',
+            title: 'تأجير خيام الفجيرة | خيام رمضان ومجالس وصناعية',
             metaDescription: 'تأجير خيام في الفجيرة — خيام رمضان قرب قلعة الفجيرة، مجالس وتخزين صناعي. متخصصو الساحل الشرقي. جميع التصاريح مشمولة. رد في نفس اليوم. احصل على عرض.',
             subtitle: 'متخصصو تأجير الخيام في الفجيرة — رمضان وفعاليات وخيام صناعية منذ 1994',
             intro: 'يتطلب تأجير الخيام في الفجيرة معرفة متخصصة بالجغرافيا الفريدة للساحل الشرقي وبيئته التنظيمية. Tent Now توفر تأجير خيام في الفجيرة للفعاليات الرمضانية وتجهيزات المجالس الخاصة والتخزين الصناعي في جميع أنحاء الإمارة. المنطقة المحيطة بقلعة الفجيرة والمدينة القديمة من أجمل مواقع الفعاليات في الإمارة؛ وكورنيش الفجيرة يحظى بشعبية لتجهيزات خيام الإفطار المؤسسية والمجتمعية. تأجير خيام رمضان في الفجيرة يخدم أيضاً المناطق السكنية المتنامية قرب المدينة حيث تسعى الأسر لتجهيزات مجلس خاصة في حدائق منازلها. جبال الحجر غرباً وخليج عُمان شرقاً يخلقان أنماط رياح ورطوبة خاصة — هياكلنا مهندسة لهذه الظروف. تصاريح بلدية الفجيرة للمنشآت المؤقتة جزء من خدمتنا الروتينية.',
@@ -513,7 +513,7 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
             cta: 'احصل على عرض تأجير الخيام في الفجيرة'
         },
         'umm-al-quwain': {
-            title: 'تأجير خيام أم القيوين | خيام رمضان وصناعية | Tent Now',
+            title: 'تأجير خيام أم القيوين | خيام رمضان وصناعية',
             metaDescription: 'تأجير خيام في أم القيوين — خيام رمضان ومجالس ومستودعات. الأوفر في الإمارات. المنطقة الحرة والمناطق الصناعية. جميع التصاريح مشمولة. احصل على عرض مجاني.',
             subtitle: 'متخصصو تأجير الخيام في أم القيوين — رمضان وخيام صناعية منذ 1994',
             intro: 'تأجير الخيام في أم القيوين يشمل احتياجات متنوعة — من تجهيزات مجالس رمضان للمجتمعات السكنية المتلاحمة في أم القيوين إلى تأجير خيام المستودعات الصناعية للمنطقة الحرة المتنامية والمناطق الصناعية في الإمارة. تأجير الخيام في أم القيوين تنافسي بشكل خاص: انخفاض تكاليف الأراضي وسهولة إجراءات التصاريح تجعلها من أوفر وجهات تأجير الخيام في الإمارات. قطاع تأجير خيام المستودعات الصناعية في أم القيوين يشهد طلباً متنامياً — صفحتنا العربية لخيام المستودعات هنا وصلت بالفعل للمرتبة 3 على جوجل، مما يعكس تطور هذا السوق بشكل ملحوظ. المناطق الصناعية والمناطق الحرة في أم القيوين تستقطب مشغلي التصنيع واللوجستيات الباحثين عن بنية تحتية مغطاة متوافقة ومرنة دون الأسعار المرتفعة في دبي أو أبوظبي.',
@@ -551,6 +551,11 @@ export const cityOverviews: Record<string, Record<string, CityOverview>> = {
     }
 };
 
+
+// Niche city × service pages with no search demand (Search Console, Oct 2026).
+// They stay live for visitors but are noindexed and kept out of the sitemaps so
+// Google spends its crawl on the pages that bring leads.
+export const noindexCitySlugs = ['suhoor-tent-rental', 'sadu-tent-rental'];
 
 export const cityContent: Record<string, Record<string, Record<string, SEOContent>>> = {
     en: {
@@ -631,7 +636,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Inquire About Sadu Tents'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Dubai | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Dubai',
                 subtitle: 'Clear span structures at JAFZA, Dubai Industrial City, Dubai South & DIP — deployed in 72 hours',
                 intro: 'Dubai\'s warehouse vacancy sits at 3% — the lowest in a decade. If you need covered industrial storage in Dubai today, waiting for permanent construction is not an option. Tent Now deploys clear span storage tents up to 60m wide at JAFZA, Dubai South, Dubai Industrial City, and DIP within 72 hours of contract signing, at 50–70% less than permanent construction.',
                 mainBody: 'Every storage tent deployment in Dubai starts with the same question: what does your operation actually need? A construction site storing rebar and precast panels has different requirements than a 3PL operator needing forklift aisles and racking clearance, which is different again from an oil and gas contractor housing equipment. We\'ve handled all three — and dozens of variants — across Dubai\'s industrial zones for three decades. Our clear span structures use 6061-T6 aircraft-grade aluminium frames with 850 gsm reinforced PVC cladding rated for 100+ km/h winds and 50°C heat loads. They install on any hard standing surface without ground penetration, making them viable on leased plots, construction sites, and free zone parcels where ground anchoring permissions are restricted. Dubai Municipality Article 13 temporary structure permits, Civil Defence fire safety certifications (DIN 4102 B1 fabric), and free zone authority approvals — all handled before mobilisation.',
@@ -648,7 +653,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Dubai Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Dubai | Temporary Warehouse Structures',
+                title: 'Warehouse Tent Rental Dubai',
                 subtitle: 'Modular warehouse frames for JAFZA, Dubai South, DIP and Al Quoz — expandable as you grow',
                 intro: 'Dubai\'s logistics and warehousing market hit USD 3.02 billion in 2024 and is growing at 9.9% CAGR. When permanent warehouse space is unavailable or too slow, Tent Now\'s modular warehouse frame tents give logistics operators, e-commerce fulfilment centres, and 3PL providers immediate covered capacity across Dubai\'s key logistics corridors.',
                 mainBody: 'Warehouse frame tents differ from event structures in one fundamental way: they are designed for year-round operational use under UAE industrial conditions. That means 850 gsm PVC cladding with UV-block and heat-reflective coating, 6061-T6 aluminium frames engineered for sustained 100+ km/h wind loads, and ground anchoring systems that work on concrete slabs without breaking surface integrity. Our warehouse tents install on any hardstanding in JAFZA, Dubai South, DIP, or Al Quoz, comply with Dubai Municipality temporary structure regulations, and include Civil Defence fire safety certification. They are modular — start with what you need, add bays as demand grows, relocate when your lease situation changes.',
@@ -665,7 +670,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Dubai Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Dubai | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Dubai',
                 subtitle: 'UAE-compliant temporary workforce accommodation for construction sites across Dubai',
                 intro: 'Every major construction project in Dubai needs compliant workforce accommodation from day one. Ministry of Human Resources guidelines for labour accommodation are specific and enforced. Tent Now provides temporary labour accommodation tent systems that meet UAE regulatory requirements across Dubai\'s active construction zones — Jebel Ali, Dubai South, Business Bay, and beyond.',
                 mainBody: 'Labour accommodation is not a commodity purchase. A non-compliant workforce camp on a Dubai construction site creates liability for the main contractor and project owner — not just the accommodation provider. Our accommodation tent systems are designed to meet the UAE Cabinet Resolution No. 13 of 2009 and subsequent MoHRE guidelines: adequate floor space per worker, proper ventilation and cooling, compliant sanitation provision, and fire safety systems. Structures use 850 gsm insulated PVC to manage internal temperature in Dubai\'s 45°C+ summers, with mechanical ventilation integrated as standard. Civil Defence fire safety approvals are included. We work directly with main contractors, project owners, and camp operators across Dubai.',
@@ -755,7 +760,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Inquire About Sadu Tents'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Abu Dhabi | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Abu Dhabi',
                 subtitle: 'Clear span industrial structures at KIZAD, Mussafah, ICAD and Khalifa Port',
                 intro: 'Abu Dhabi\'s industrial zones are expanding rapidly. KIZAD, Mussafah Industrial Area, ICAD, and Khalifa Port are attracting manufacturers, logistics operators, and contractors who need covered storage infrastructure immediately. Tent Now deploys clear span industrial storage tents up to 60m wide within 72 hours, at 50–70% less than permanent construction — fully compliant with Abu Dhabi\'s DMT temporary structure regulations.',
                 mainBody: 'Abu Dhabi\'s regulatory environment for temporary structures is specific and enforced. The Department of Municipalities and Transport (DMT) requires structural engineering sign-off, Civil Defence fire safety certification, and free zone authority approval for structures in KIZAD and Khalifa Port. Tent Now has managed this process hundreds of times. Our industrial storage tents use 850 gsm reinforced PVC cladding rated for 50°C ambient temperatures and 100+ km/h wind loads — conditions that are routine across Abu Dhabi\'s industrial zones. Column-free clear span designs accommodate forklift traffic, overhead crane operations, and full racking installations without internal obstructions.',
@@ -772,7 +777,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get an Abu Dhabi Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Abu Dhabi | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Abu Dhabi',
                 subtitle: 'Modular warehouse structures for logistics and distribution in KIZAD and Khalifa Port',
                 intro: 'Abu Dhabi\'s logistics and warehousing sector is growing alongside Khalifa Port\'s expanding throughput. When permanent warehouse construction timelines extend to 18–24 months, Tent Now\'s modular warehouse frame tents give operators immediate capacity — deployable on any hardstanding surface in KIZAD, Mussafah, or Khalifa Industrial Zone.',
                 mainBody: 'Our warehouse frame tent systems are engineered for year-round operational use under UAE industrial conditions — not seasonal or event use. 850 gsm UV-reflective PVC cladding, 6061-T6 aluminium structural frames, mechanical ventilation integration, and reinforced ground anchoring on concrete slabs. The modular bay system allows expansion without new permits, giving logistics operators flexibility as throughput grows. All structures comply with Abu Dhabi DMT temporary structure regulations and include Civil Defence fire safety certification.',
@@ -789,7 +794,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get an Abu Dhabi Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Abu Dhabi | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Abu Dhabi',
                 subtitle: 'MoHRE-compliant temporary workforce accommodation for Abu Dhabi construction sites',
                 intro: 'Abu Dhabi\'s mega-infrastructure projects — from Khalifa City expansion to KIZAD industrial development — require compliant workforce accommodation from day one. Tent Now provides temporary labour accommodation tent systems meeting UAE Ministry of Human Resources guidelines, deployed rapidly across Abu Dhabi\'s active construction zones.',
                 mainBody: 'Labour accommodation compliance in Abu Dhabi is monitored actively. MoHRE inspections on active construction sites are routine, and non-compliance generates project delays and contractor liability. Our accommodation systems are designed to meet UAE Cabinet Resolution No. 13 of 2009 requirements: adequate floor space per worker, certified mechanical ventilation, compliant cooling in Abu Dhabi\'s 48°C+ peak summers, and fire safety systems with Civil Defence approval. We work with main contractors, project owners, and camp operators across Mussafah, Khalifa City, KIZAD, and Abu Dhabi island projects.',
@@ -867,7 +872,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Book Suhoor Space'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Sharjah | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Sharjah',
                 subtitle: 'Local experts in SAIF Zone — serving Hamriyah Free Zone and Sharjah Industrial Areas 1-18',
                 intro: 'Tent Now is headquartered in SAIF Zone, Sharjah — giving us a structural competitive advantage over every tent supplier based in Dubai. No out-of-emirate mobilisation fees. Fastest response times in Sharjah. Deepest familiarity with Sharjah Municipality and Civil Defence temporary structure requirements. We deploy clear span industrial storage tents up to 60m wide across SAIF Zone, Hamriyah Free Zone, and all 18 Sharjah Industrial Areas.',
                 mainBody: 'Sharjah is home to the highest concentration of manufacturing and trading businesses in the UAE. SAIF Zone and Hamriyah Free Zone house thousands of operators who regularly need overflow storage, temporary production cover, and equipment shelters. Industrial Areas 1 through 18 contain hundreds of active factories. Our storage tent systems address each scenario: column-free clear span for warehouse operations, reinforced structures for heavy material storage, and modular systems that expand with production demand. Because we are locally based, we have pre-positioned materials and equipment for same-day or next-day mobilisation — something no Dubai-based competitor can match.',
@@ -884,7 +889,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Sharjah Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Sharjah | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Sharjah',
                 subtitle: 'Modular warehouse frames for SAIF Zone, Hamriyah and Sharjah Industrial Areas',
                 intro: 'Sharjah\'s industrial and free zone ecosystem is one of the most cost-competitive in the UAE. Tent Now\'s modular warehouse tent systems give operators in SAIF Zone and Hamriyah Free Zone immediate covered storage capacity at 50–70% less than permanent construction — with the added advantage of our local base meaning fastest deployment in the emirate.',
                 mainBody: 'Warehouse tent frame systems for Sharjah\'s industrial zones are engineered for year-round UAE operational conditions. 850 gsm PVC, 6061-T6 aluminium frames, heat-reflective coating for Sharjah\'s inland summer temperatures, and integrated ventilation as standard. Modular bay expansion requires no new permit cycle for footprint expansions within the approved structure boundary. Because we operate from SAIF Zone, we have the shortest supply chain and fastest response of any tent provider in Sharjah.',
@@ -901,7 +906,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Sharjah Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Sharjah | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Sharjah',
                 subtitle: 'MoHRE-compliant workforce accommodation for Sharjah construction sites and industrial zones',
                 intro: 'Sharjah\'s active construction pipeline across Muwaileh, Al Tai, and the industrial corridor requires compliant workforce accommodation at every active site. As the only tent company headquartered in Sharjah, Tent Now provides faster, more cost-effective MoHRE-compliant labour accommodation tent systems than any competitor.',
                 mainBody: 'Labour accommodation compliance is not optional in Sharjah. Sharjah Municipality and MoHRE enforce UAE Cabinet Resolution No. 13 requirements on active construction sites, and inspections occur regularly. Our accommodation tent systems meet floor space, ventilation, cooling, and fire safety requirements. We integrate sanitation blocks, mess facilities, and recreation areas into complete camp layouts. Insulated 850 gsm PVC cladding with mechanical HVAC maintains interior conditions in Sharjah\'s 45°C+ peak summers — where industrial zone temperatures can run higher than coastal areas.',
@@ -968,7 +973,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Design Suhoor Lounge'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Ajman | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Ajman',
                 subtitle: 'Clear span storage structures at Ajman Free Zone, Al Jurf Industrial Area and Ajman Port',
                 intro: 'Ajman offers some of the most cost-competitive industrial real estate in the UAE, making it an increasingly attractive base for manufacturers, traders, and logistics operators. Tent Now deploys industrial storage tents in Ajman Free Zone, Al Jurf Industrial Area, and around Ajman Port within 72 hours — providing overflow storage and covered operational space at 50–70% less than permanent construction.',
                 mainBody: 'Ajman\'s industrial zone and free zone are compact but active. Manufacturers need overflow production cover when factory space is constrained. Traders need temporary goods storage while negotiating permanent lease renewals. Logistics operators need buffer capacity for peak periods. Our clear span storage tents address all three scenarios with column-free spans up to 60m, installation on any hardstanding surface without ground penetration, and full Ajman Municipality and Civil Defence compliance handled before mobilisation.',
@@ -985,7 +990,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get an Ajman Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Ajman | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Ajman',
                 subtitle: 'Modular warehouse structures for Ajman Free Zone and Al Jurf Industrial Area',
                 intro: 'Ajman\'s strategic position between Dubai and Sharjah makes it an attractive logistics hub for operators who need affordable covered storage space. Tent Now\'s modular warehouse frame tents deploy rapidly in Ajman Free Zone and Al Jurf — fully operational within days at a fraction of permanent construction cost.',
                 mainBody: 'Modular warehouse tent systems for Ajman are built for UAE industrial conditions: 850 gsm UV-reflective PVC, 6061-T6 aluminium frames, and integrated mechanical ventilation. The modular bay system allows expansion without triggering a new permit cycle, making these structures genuinely flexible for businesses with variable storage requirements. All structures comply with Ajman Municipality temporary structure regulations and include Civil Defence fire safety certification.',
@@ -1002,7 +1007,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get an Ajman Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Ajman | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Ajman',
                 subtitle: 'MoHRE-compliant workforce accommodation for Ajman construction and industrial sites',
                 intro: 'Ajman\'s growing construction activity across Al Jurf, Al Tallah, and Ajman Port requires compliant workforce accommodation. Tent Now provides MoHRE-standard temporary labour accommodation systems deployed rapidly across Ajman — meeting UAE regulatory requirements at competitive pricing.',
                 mainBody: 'Labour accommodation compliance applies equally in Ajman as in any other UAE emirate. MoHRE and Ajman Municipality inspections occur on active construction sites, and non-compliant camps create contractor liability. Our accommodation systems meet UAE Cabinet Resolution No. 13 requirements: adequate floor space, certified mechanical ventilation, proper cooling, and Civil Defence fire safety approval. Complete camp configurations include sanitation blocks, mess facilities, and recreation areas.',
@@ -1069,7 +1074,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Design Suhoor Setup'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Ras Al Khaimah | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Ras Al Khaimah',
                 subtitle: 'Clear span industrial structures at RAK Free Trade Zone, RAK Maritime City and Al Hamra Industrial Zone',
                 intro: 'Ras Al Khaimah is emerging as a significant manufacturing and industrial hub in the UAE. RAK Free Trade Zone, RAK Maritime City, and the growing Al Hamra Industrial Zone are attracting operators who need flexible covered storage infrastructure. Tent Now deploys industrial storage tents up to 60m clear span in RAK within 72 hours — fully compliant with RAK Municipality and Civil Defence requirements.',
                 mainBody: 'RAK\'s industrial development is accelerating. Ceramic, building materials, and industrial manufacturing — RAK\'s traditional strengths — are being joined by logistics, maritime, and light manufacturing. Each sector needs covered storage: raw materials, finished goods, equipment, and in the maritime sector, vessel components and maintenance infrastructure. Our industrial storage tent systems address each requirement with column-free clear span designs, 850 gsm PVC rated for RAK\'s coastal wind loads (100+ km/h), and installation on any hardstanding surface without ground penetration. RAK Municipality temporary structure permits and Civil Defence fire safety certifications handled before mobilisation.',
@@ -1086,7 +1091,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a RAK Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Ras Al Khaimah | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Ras Al Khaimah',
                 subtitle: 'Modular warehouse frames for RAK Free Trade Zone and RAK Maritime City',
                 intro: 'RAK\'s growing logistics and manufacturing sector needs flexible warehouse capacity. Tent Now\'s modular warehouse frame tents deploy rapidly in RAK Free Trade Zone and RAK Maritime City — giving operators immediate covered storage at 50–70% less than permanent construction with full RAK regulatory compliance.',
                 mainBody: 'Warehouse tent frame systems for RAK are engineered for the Northern Emirates climate — coastal humidity, higher wind speeds, and the full range of UAE temperature extremes. 850 gsm PVC with UV-block and heat-reflective coating, 6061-T6 aluminium rated for 100+ km/h wind loads, and integrated mechanical ventilation. The modular bay system allows expansion as throughput grows. RAK Municipality temporary structure permits and Civil Defence fire safety certifications included.',
@@ -1103,7 +1108,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a RAK Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Ras Al Khaimah | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Ras Al Khaimah',
                 subtitle: 'MoHRE-compliant workforce accommodation for RAK construction and industrial sites',
                 intro: 'RAK\'s expanding construction and industrial sectors require compliant workforce accommodation. Tent Now provides MoHRE-standard temporary labour accommodation systems for construction sites and industrial operations across Ras Al Khaimah.',
                 mainBody: 'Labour accommodation compliance requirements are uniform across all UAE emirates. MoHRE and RAK Municipality enforce UAE Cabinet Resolution No. 13 standards on active construction and industrial sites. Our accommodation tent systems meet all required specifications: adequate floor space, certified mechanical ventilation, compliant cooling for RAK\'s 45°C+ summers, and Civil Defence fire safety approval. Complete camp configurations include sanitation blocks, mess facilities, and recreation areas for full camp infrastructure.',
@@ -1176,7 +1181,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Design Suhoor Space'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Fujairah | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Fujairah',
                 subtitle: 'Clear span storage structures at Fujairah Free Zone, Fujairah Port and FOIZ',
                 intro: 'Fujairah is the UAE\'s gateway to Indian Ocean shipping lanes — the only emirate with direct access to the Gulf of Oman. Fujairah Port\'s bunkering and logistics operations, the Fujairah Free Zone, and the Fujairah Oil Industry Zone (FOIZ) all generate significant demand for industrial storage infrastructure. Tent Now deploys clear span storage tents in Fujairah within 72 hours — rated for coastal conditions and compliant with Fujairah Municipality regulations.',
                 mainBody: 'Fujairah\'s industrial environment has specific requirements that distinguish it from inland UAE operations. Salt-air corrosion, higher humidity, and the east coast\'s distinct wind patterns mean that structural specifications matter more here than in some other emirates. Our industrial storage tents use marine-grade fittings and galvanised connections alongside 850 gsm UV-rated PVC — engineered for coastal conditions. FOIZ operators handling petroleum products require structures with DIN 4102 B1 fire ratings and explosion-proof electrical options, both available as standard in our oil and gas tent configurations. Fujairah Municipality temporary structure permits and Civil Defence fire safety certifications handled before mobilisation.',
@@ -1193,7 +1198,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Fujairah Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Fujairah | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Fujairah',
                 subtitle: 'Modular warehouse frames for Fujairah Free Zone and east coast logistics operations',
                 intro: 'Fujairah\'s growing role as a trade hub — handling cargo transiting between Indian Ocean and Gulf shipping routes — is creating increasing demand for logistics warehousing. Tent Now\'s modular warehouse frame tents provide immediate covered storage capacity in Fujairah Free Zone and port-adjacent areas at 50–70% less than permanent construction.',
                 mainBody: 'Warehouse tent systems for Fujairah must account for east coast conditions: higher ambient humidity, coastal wind loading, and the temperature swings between coastal and inland areas of the emirate. Our systems use 850 gsm UV-reflective PVC with moisture-barrier backing, 6061-T6 aluminium rated for 100+ km/h coastal wind loads, and mechanical ventilation as standard. The modular bay system allows expansion without new permit cycles. Fujairah Municipality approvals and Civil Defence fire safety certification handled end to end.',
@@ -1210,7 +1215,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a Fujairah Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Fujairah | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Fujairah',
                 subtitle: 'MoHRE-compliant workforce accommodation for Fujairah construction and port projects',
                 intro: 'Fujairah\'s infrastructure expansion — including port development, industrial zone growth, and the residential construction boom — requires compliant workforce accommodation. Tent Now provides MoHRE-standard temporary labour accommodation tent systems for construction and industrial operations across Fujairah.',
                 mainBody: 'Labour accommodation compliance in Fujairah follows the same UAE-wide standards enforced by MoHRE and Fujairah Municipality. Our accommodation systems meet UAE Cabinet Resolution No. 13 requirements across all key metrics: floor space per worker, mechanical ventilation, cooling, and fire safety. Coastal conditions in Fujairah introduce additional humidity management requirements — our insulated 850 gsm PVC with dehumidification-capable HVAC systems address this directly. Complete camp configurations available for 50 to 2,000+ workers.',
@@ -1277,7 +1282,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Design Suhoor Setup'
             },
             'storage-tent-rental': {
-                title: 'Storage Tent Rental Umm Al Quwain | Industrial Temporary Warehouses',
+                title: 'Storage Tent Rental Umm Al Quwain',
                 subtitle: 'Clear span industrial structures at UAQ Free Trade Zone and UAQ Port',
                 intro: 'Umm Al Quwain offers the most cost-competitive industrial real estate in the UAE. UAQ Free Trade Zone and the growing port area are attracting industrial operators who need affordable, flexible covered storage infrastructure. Tent Now deploys industrial storage tents in UAQ within 72 hours — full UAE regulatory compliance at the Northern Emirates\' best value price point.',
                 mainBody: 'For industrial operators on tighter budgets who still need compliant, quality covered storage, UAQ represents a genuine opportunity. Lower land costs, competitive free zone fees, and growing port infrastructure — combined with Tent Now\'s industrial-grade tent systems — create the most cost-effective covered storage solution in the UAE. Our clear span storage tents install on any hardstanding surface in UAQ Free Trade Zone and port-adjacent areas without ground penetration, comply with UAQ Municipality and Civil Defence requirements, and deploy within 72 hours of contract signing.',
@@ -1294,7 +1299,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a UAQ Storage Quote'
             },
             'warehouse-tent-rental': {
-                title: 'Warehouse Tent Rental Umm Al Quwain | Temporary Warehouse Solutions',
+                title: 'Warehouse Tent Rental Umm Al Quwain',
                 subtitle: 'Modular warehouse frames for UAQ Free Trade Zone and UAQ Port industrial area',
                 intro: 'UAQ\'s strategic position between Sharjah and Ras Al Khaimah and its growing industrial base make it an increasingly attractive location for warehouse operations seeking affordability. Tent Now\'s modular warehouse frame tents provide immediate covered storage in UAQ at the lowest cost point in the UAE.',
                 mainBody: 'Modular warehouse tent systems for UAQ are built to the same engineering standards as our structures across the UAE: 850 gsm UV-reflective PVC, 6061-T6 aluminium frames, mechanical ventilation integration, and reinforced concrete surface anchoring. The modular bay system allows expansion without new permit cycles. UAQ Municipality temporary structure permits and Civil Defence fire safety certifications handled end to end.',
@@ -1311,7 +1316,7 @@ export const cityContent: Record<string, Record<string, Record<string, SEOConten
                 cta: 'Get a UAQ Warehouse Quote'
             },
             'labor-accommodation-tents': {
-                title: 'Labor Accommodation Tents Umm Al Quwain | Workforce Housing Structures',
+                title: 'Labor Accommodation Tents Umm Al Quwain',
                 subtitle: 'MoHRE-compliant workforce accommodation for UAQ construction and industrial projects',
                 intro: 'UAQ\'s growing construction activity requires compliant workforce accommodation. Tent Now provides MoHRE-standard temporary labour accommodation tent systems at UAQ\'s most competitive pricing — meeting all UAE regulatory requirements for workforce housing on construction and industrial sites.',
                 mainBody: 'Labour accommodation compliance requirements are uniform across all UAE emirates including UAQ. MoHRE standards (UAE Cabinet Resolution No. 13) apply equally to sites in Umm Al Quwain as in Dubai or Abu Dhabi. Our accommodation systems meet all required specifications: floor space, mechanical ventilation, cooling, and fire safety. Complete camp configurations include sanitation blocks, mess halls, and recreation areas for self-contained camp infrastructure.',

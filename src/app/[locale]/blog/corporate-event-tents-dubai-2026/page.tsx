@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'خيام فعاليات الشركات دبي | تأجير خيام للأعمال والفعاليات 2026 | Tent Now'
-        : 'Corporate Event Tents Dubai | Tent Rental for Business Events 2026 | Tent Now';
+        ? 'خيام فعاليات الشركات دبي | تأجير خيام للأعمال والفعاليات 2026'
+        : 'Corporate Event Tents Dubai | Tent Rental for Business Events 2026';
 
     const description = isAr
         ? 'استأجر خيام فعاليات مؤسسية فاخرة في دبي لإطلاق المنتجات وحفلات العشاء وفعاليات الفرق. خيارات مكيفة متاحة. استشارة مجانية.'
@@ -115,7 +115,7 @@ export default function CorporateEventTents() {
                         <p>
                             {isAr
                                 ? 'شهد مشهد الفعاليات المؤسسية في دبي تحولاً ملحوظاً في السنوات الأخيرة، حيث أصبحت الأماكن الخارجية الخيار المفضل بشكل متزايد للشركات التي تسعى إلى خلق تجارب لا تُنسى. مع ترسيخ الإمارة لمكانتها كمركز الأعمال الرائد في الشرق الأوسط، نما الطلب على مساحات الفعاليات المؤسسية المتطورة بشكل كبير.'
-                                : <>Dubai&apos;s corporate event landscape has undergone a remarkable transformation in recent years, with outdoor venues increasingly becoming the preferred choice for businesses seeking to create memorable experiences. Whether you need <Link href="/services/corporate-events" className="text-gold hover:underline">corporate event tent rental Dubai</Link> or a luxury <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis tents</Link> setup, solutions are available to match every scale and budget. As the emirate solidifies its position as the Middle East&apos;s premier business hub, the demand for sophisticated corporate event spaces has grown exponentially.</>}
+                                : <>Dubai&apos;s corporate event landscape has undergone a remarkable transformation in recent years, with outdoor venues increasingly becoming the preferred choice for businesses seeking to create memorable experiences. Whether you need <Link href="/request-quote" className="text-gold hover:underline">corporate event tent rental Dubai</Link> or a luxury <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis tents</Link> setup, solutions are available to match every scale and budget. As the emirate solidifies its position as the Middle East&apos;s premier business hub, the demand for sophisticated corporate event spaces has grown exponentially.</>}
                         </p>
                         <p className="mt-4">
                             {isAr

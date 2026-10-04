@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات الممشى والمشاة في الإمارات | ممرات مسقوفة | تنت ناو'
-            : 'Walkway & Pedestrian Shade Structures UAE | Covered Walkways | Tent Now',
+            : 'Walkway & Pedestrian Shade Structures UAE | Covered Walkways',
         description: isAr
             ? 'مظلات الممشى وتغطية مسارات المشاة في الإمارات — مدارس ومستشفيات ومجمعات سكنية ومراكز تسوق. هياكل معيارية، تصاريح بلدية مشمولة. مسح موقعي مجاني.'
             : 'Walkway shade structures and covered pedestrian paths across UAE — schools, hospitals, housing developments, shopping centres. Modular clear-span frames, HDPE fabric, polycarbonate options. Municipality permits included.',
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات الممشى والمشاة في الإمارات | تنت ناو'
-                : 'Walkway & Pedestrian Shade Structures UAE | Tent Now',
+                : 'Walkway & Pedestrian Shade Structures UAE',
             description: isAr
                 ? 'مظلات الممشى وتغطية مسارات المشاة في الإمارات — مدارس ومستشفيات ومجمعات سكنية ومراكز تسوق. هياكل معيارية، تصاريح بلدية مشمولة.'
                 : 'Walkway shade structures for schools, hospitals, housing developments, and commercial sites across UAE. Modular frames, HDPE fabric, polycarbonate options.',

@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام رمضان في الإمارات | جميع الإمارات السبع - Tent Now'
-        : 'Ramadan Tent Rental Across the UAE | All 7 Emirates - Tent Now';
+        ? 'تأجير خيام رمضان في الإمارات | جميع الإمارات السبع'
+        : 'Ramadan Tent Rental Across the UAE | All 7 Emirates';
 
     const description = locale === 'ar'
         ? 'تأجير خيام رمضان والمجالس في دبي وأبوظبي والشارقة وعجمان ورأس الخيمة والفجيرة وأم القيوين. خبرة 30 عامًا في جميع الإمارات.'

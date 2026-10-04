@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات المسابح في الإمارات | تظليل حمامات السباحة | تنت ناو'
-            : 'Pool Shade Structures UAE | Swimming Pool Canopies | Tent Now',
+            : 'Pool Shade Structures UAE | Swimming Pool Canopies',
         description: isAr
             ? 'مظلات المسابح في الإمارات — أشرعة شد وهياكل بولي كربونات وبرجولات لتظليل حمامات السباحة في الفلل والفنادق والمجمعات السكنية. حماية 95% من الأشعة فوق البنفسجية. تصاريح بلدية مشمولة.'
             : 'Pool shade structures across UAE — tensile sail canopies, polycarbonate covers, and pergola shade for villa, hotel, and community swimming pools. 95% UV protection. Municipality permits included. Free site survey.',
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات المسابح في الإمارات | تنت ناو'
-                : 'Pool Shade Structures UAE | Tent Now',
+                : 'Pool Shade Structures UAE',
             description: isAr
                 ? 'مظلات مسابح السباحة للفلل والفنادق والمجمعات السكنية في الإمارات — أشرعة شد وبولي كربونات وبرجولات.'
                 : 'Swimming pool shade structures for villas, hotels, and residential compounds across UAE — tensile sails, polycarbonate, and pergola canopies.',

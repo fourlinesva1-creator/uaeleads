@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const t = await getTranslations({ locale, namespace: 'faq' });
 
     return {
-        title: t('title'),
+        title: locale === 'ar' ? 'الأسئلة الشائعة | أسعار وتصاريح وتركيب الخيام في الإمارات' : 'Tent Rental FAQ | Prices, Permits & Setup in the UAE',
         description: t('intro'),
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/faq`,

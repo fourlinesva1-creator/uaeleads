@@ -42,3 +42,6 @@ nul
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Client POs / invoices — confidential, never commit
+seo audit/pricing/

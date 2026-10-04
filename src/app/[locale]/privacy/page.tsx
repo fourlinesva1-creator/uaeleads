@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
     const isAr = locale === 'ar';
     return {
-        title: isAr ? 'سياسة الخصوصية | Tent Now' : 'Privacy Policy | Tent Now',
+        title: isAr ? 'سياسة الخصوصية' : 'Privacy Policy',
         description: isAr
             ? 'سياسة خصوصية Tent Now — كيف نجمع معلوماتك ونستخدمها ونحميها.'
             : 'Tent Now Privacy Policy — how we collect, use, and protect your information.',

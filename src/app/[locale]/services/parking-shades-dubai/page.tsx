@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const title = locale === 'ar'
         ? 'مظلات مواقف السيارات في دبي | مظلات للفلل والمجمعات التجارية | تنت ناو'
-        : 'Parking Shade Structures Dubai | Car Park Canopies | Tent Now';
+        : 'Parking Shade Structures Dubai | Car Park Canopies';
 
     const description = locale === 'ar'
         ? 'مظلات مواقف سيارات في دبي للفلل والمجمعات التجارية والمواقف متعددة الطوابق. تصاريح بلدية دبي مشمولة. مسح موقعي مجاني. اتصل بنا الآن.'

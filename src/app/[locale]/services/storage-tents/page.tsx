@@ -9,6 +9,7 @@ import FAQSchema from '@/components/seo/FAQSchema';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { storageTentHubContent } from '@/data/storage-tent-content';
 import PricingNote from '@/components/ui/PricingNote';
+import EquipmentRental from '@/components/sections/EquipmentRental';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'تأجير خيام التخزين في الإمارات | خيام المستودعات والصناعة | تنت ناو'
-            : 'Storage Tent Rental UAE | Warehouse & Industrial Tents | Tent Now',
+            : 'Storage Tent Rental UAE | Warehouse & Industrial Tents',
         description: isAr
             ? 'تأجير خيام التخزين في جميع أنحاء الإمارات — خيام مستودعات، كلير سبان وهياكل صناعية. معتمدة من الدفاع المدني. تخدم دبي وأبوظبي والشارقة وجميع الإمارات السبع.'
             : 'Storage tent rental across UAE — warehouse tents, clear span & industrial structures. Civil Defence approved. Serving Dubai, Abu Dhabi, Sharjah & all 7 emirates.',
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Storage Tent Rental UAE | Warehouse & Industrial Tents | Tent Now',
+            title: 'Storage Tent Rental UAE | Warehouse & Industrial Tents',
             description: 'Storage tent rental across UAE — warehouse tents, clear span & industrial structures. Civil Defence approved. Serving Dubai, Abu Dhabi, Sharjah & all 7 emirates.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-hero.jpg' }],
         },
@@ -197,6 +198,42 @@ export default async function StorageTentsPage({ params }: Props) {
                     </div>
                 </div>
             </section>
+
+            {/* Recent Project */}
+            <section className="container-luxury pb-24">
+                <Link
+                    href="/portfolio/abu-dhabi-storage-tent"
+                    className="group grid grid-cols-1 lg:grid-cols-2 rounded-3xl overflow-hidden border border-[#282e39] bg-[#1a212e] hover:border-gold/40 transition-all"
+                >
+                    <div className="relative aspect-video lg:aspect-auto lg:min-h-[360px] overflow-hidden">
+                        <Image
+                            src="/images/projects/abu-dhabi-storage-tent/pvc-storage-tent-exterior.jpg"
+                            alt={isRtl ? 'خيمة تخزين مكيفة ومغلقة بالكامل في أبوظبي' : 'Fully enclosed air-conditioned storage tent in Abu Dhabi'}
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                    </div>
+                    <div className="p-8 lg:p-12 flex flex-col justify-center">
+                        <span className="text-xs uppercase tracking-[0.2em] text-gold font-display mb-4 block">
+                            {isRtl ? 'مشروع حديث · أبوظبي' : 'Recent Project · Abu Dhabi'}
+                        </span>
+                        <h2 className="text-2xl md:text-3xl font-display text-white mb-4 group-hover:text-gold transition-colors">
+                            {isRtl ? 'خيمة تخزين بمساحة 4,000 م² للبضائع المهمة' : '4,000 sqm Storage Tent for Secure Goods Storage'}
+                        </h2>
+                        <p className="text-[#9da6b9] leading-relaxed mb-8">
+                            {isRtl
+                                ? 'هيكل 30×20 م وهيكلان 20×85 م مغلقة بالكامل بقماش PVC مع التكييف والإضاءة وأبواب رول شتر — بإيجار 45 يوماً.'
+                                : 'One 30x20m and two 20x85m structures — PVC roof, all sides closed, AC, lighting and roller shutter doors on a 45-day rental.'}
+                        </p>
+                        <span className="text-gold font-bold inline-flex items-center gap-2">
+                            {isRtl ? 'عرض المشروع' : 'View Project'} <ArrowRight size={18} className="rtl:rotate-180" />
+                        </span>
+                    </div>
+                </Link>
+            </section>
+
+            <EquipmentRental locale={locale} />
 
             {/* Industries Served */}
             <section className="py-24 bg-[#0d1219] border-t border-[#1a212e]">

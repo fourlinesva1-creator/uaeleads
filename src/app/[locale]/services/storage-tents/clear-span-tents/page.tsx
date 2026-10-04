@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'تأجير خيام الامتداد الحر في الإمارات | هياكل تخزين بدون أعمدة | تنت ناو'
-            : 'Clear Span Tent Rental UAE | Column-Free Storage Structures | Tent Now',
+            : 'Clear Span Tent Rental UAE | Column-Free Storage Structures',
         description: isAr
             ? 'تأجير خيام الامتداد الحر في الإمارات — هياكل ألومنيوم بدون أعمدة بعرض حتى 50م. مثالية للتخزين والمعارض والفعاليات. معتمدة من الدفاع المدني.'
             : 'Clear span tent rental UAE — column-free aluminum structures up to 50m wide. Perfect for warehousing, exhibitions & events. Civil Defence approved.',
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Clear Span Tent Rental UAE | Column-Free Storage Structures | Tent Now',
+            title: 'Clear Span Tent Rental UAE | Column-Free Storage Structures',
             description: 'Clear span tent rental UAE — column-free aluminum structures up to 50m wide. Perfect for warehousing, exhibitions & events. Civil Defence approved.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-1.jpeg' }],
         },

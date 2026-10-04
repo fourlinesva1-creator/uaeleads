@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات الحدائق والفراغات الخارجية في الإمارات | برجولات ومظلات فِناء | تنت ناو'
-            : 'Garden & Outdoor Shade Structures UAE | Pergolas & Patio Canopies | Tent Now',
+            : 'Garden & Outdoor Shade Structures UAE | Pergolas & Patio Canopies',
         description: isAr
             ? 'مظلات الحدائق والفراغات الخارجية في الإمارات — برجولات وأشرعة ظل ومظلات فِناء للحدائق الخاصة وتناول الطعام الخارجي والمناطق المُشجَّرة. حماية 95% من الأشعة فوق البنفسجية. تصاريح بلدية مشمولة.'
             : 'Garden and outdoor shade structures across UAE — pergolas, shade sails, and patio canopies for villa gardens, outdoor dining areas, and landscaped spaces. 95% UV protection. Municipality permits included. Free site survey.',
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات الحدائق والفراغات الخارجية في الإمارات | تنت ناو'
-                : 'Garden & Outdoor Shade Structures UAE | Tent Now',
+                : 'Garden & Outdoor Shade Structures UAE',
             description: isAr
                 ? 'برجولات وأشرعة ظل ومظلات فِناء للحدائق الخاصة ومناطق الطعام الخارجية والمناطق المُشجَّرة في الإمارات.'
                 : 'Pergolas, shade sails, and patio canopies for villa gardens, outdoor dining, and landscaped areas across UAE.',

@@ -26,12 +26,12 @@ const shadeSubLinks: SubLink[] = [
 
 const serviceLinks: ServiceLink[] = [
   { key: 'hotel', href: '/services/hotel-majlis' },
-  { key: 'corporate', href: '/services/corporate-events' },
+  { key: 'corporate', href: '/services/labor-accommodation-tents' },
   { key: 'home', href: '/services/home-majlis' },
   { key: 'iftar', href: '/services/iftar-tent-rental' },
   { key: 'sadu', href: '/services/sadu-tent-rental' },
   { key: 'furniture', href: '/services/furniture-rental' },
-  { key: 'decor', href: '/services/decor-lighting' },
+  { key: 'decor', href: '/services/cold-storage-tents' },
   { key: 'storage', href: '/services/storage-tents', children: storageSubLinks, subsNamespace: 'storageSubs' },
   { key: 'tarpaulins', href: '/services/tarpaulins' },
   { key: 'shadeStructures', href: '/services/shade-structures', children: shadeSubLinks, subsNamespace: 'shadeSubs' },

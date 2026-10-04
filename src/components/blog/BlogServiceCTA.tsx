@@ -23,7 +23,7 @@ const content = {
             services: [
                 { label: 'Hotel Majlis Tents', href: '/services/hotel-majlis' },
                 { label: 'Iftar Tent Rental', href: '/services/iftar-tent-rental' },
-                { label: 'Corporate Events', href: '/services/corporate-events' },
+                { label: 'Labor Accommodation', href: '/services/labor-accommodation-tents' },
                 { label: 'Home Majlis', href: '/services/home-majlis' },
             ],
         },
@@ -57,7 +57,7 @@ const content = {
             cta2: { label: 'View All Services', href: '/services' },
             services: [
                 { label: 'Ramadan Tents', href: '/services/iftar-tent-rental' },
-                { label: 'Corporate Events', href: '/services/corporate-events' },
+                { label: 'Labor Accommodation', href: '/services/labor-accommodation-tents' },
                 { label: 'Storage Tents', href: '/services/storage-tents' },
                 { label: 'Hotel Majlis', href: '/services/hotel-majlis' },
             ],
@@ -78,7 +78,7 @@ const content = {
             services: [
                 { label: 'مجالس الفنادق', href: '/services/hotel-majlis' },
                 { label: 'خيام الإفطار', href: '/services/iftar-tent-rental' },
-                { label: 'فعاليات الشركات', href: '/services/corporate-events' },
+                { label: 'سكن العمال', href: '/services/labor-accommodation-tents' },
                 { label: 'مجالس منزلية', href: '/services/home-majlis' },
             ],
         },
@@ -112,7 +112,7 @@ const content = {
             cta2: { label: 'استعرض جميع الخدمات', href: '/services' },
             services: [
                 { label: 'خيام رمضان', href: '/services/iftar-tent-rental' },
-                { label: 'فعاليات الشركات', href: '/services/corporate-events' },
+                { label: 'سكن العمال', href: '/services/labor-accommodation-tents' },
                 { label: 'خيام التخزين', href: '/services/storage-tents' },
                 { label: 'مجالس الفنادق', href: '/services/hotel-majlis' },
             ],

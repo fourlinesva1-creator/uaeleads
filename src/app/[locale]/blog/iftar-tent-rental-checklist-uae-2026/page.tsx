@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'قائمة مراجعة تأجير خيمة الإفطار: 12 نقطة يجب تأكيدها قبل الحجز | Tent Now'
-        : 'Iftar Tent Rental Checklist: 12 Things to Confirm Before Booking | Tent Now';
+        ? 'قائمة مراجعة تأجير خيمة الإفطار: 12 نقطة يجب تأكيدها قبل الحجز'
+        : 'Iftar Tent Rental Checklist: 12 Things to Confirm Before Booking';
 
     const description = isAr
         ? 'كل ما يجب التحقق منه قبل حجز خيمة إفطار في الإمارات — التصاريح، التكييف، الحجم، الديكور، التوقيت، والتكلفة. لا مفاجآت يوم الفعالية.'

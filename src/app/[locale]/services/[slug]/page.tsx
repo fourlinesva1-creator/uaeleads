@@ -16,13 +16,13 @@ type Props = {
 
 const serviceMap: Record<string, string> = {
     'hotel-majlis': 'hotel',
-    'corporate-events': 'corporate',
+    'labor-accommodation-tents': 'corporate',
     'home-majlis': 'home',
     'iftar-tent-rental': 'iftar',
     'suhoor-tent-rental': 'suhoor',
     'sadu-tent-rental': 'sadu',
     'furniture-rental': 'furniture',
-    'decor-lighting': 'decor'
+    'cold-storage-tents': 'decor'
 };
 
 const blogPostTitles: Record<string, string> = {
@@ -35,28 +35,30 @@ const blogPostTitles: Record<string, string> = {
     'top-tent-suppliers-uae-2026': 'Top Tent Suppliers UAE 2026',
     'upcoming-ramadan-events-dubai-2026': 'Upcoming Ramadan Events Dubai 2026',
     'tent-rental-uae': 'Tent Rental UAE: Complete Guide',
+    'industrial-storage-tent-rental-uae-2026': 'Industrial Storage Tent Rental UAE 2026',
+    'tarpaulin-vs-storage-tent-uae': 'Tarpaulin or Storage Tent?',
 };
 
 const relatedPostsBySlug: Record<string, string[]> = {
     'hotel-majlis': ['hotel-majlis-setup-guide-uae-2026', 'ramadan-tent-pricing-guide-uae-2026', 'top-tent-suppliers-uae-2026'],
-    'corporate-events': ['corporate-event-tents-dubai-2026', 'how-to-choose-tent-rental-company-uae', 'top-tent-suppliers-uae-2026'],
+    'labor-accommodation-tents': ['industrial-storage-tent-rental-uae-2026', 'how-to-choose-tent-rental-company-uae', 'tent-rental-uae'],
     'home-majlis': ['iftar-tent-rental-checklist-uae-2026', 'ramadan-calendar-uae-2026', 'ramadan-tent-pricing-guide-uae-2026'],
     'iftar-tent-rental': ['iftar-tent-rental-checklist-uae-2026', 'ramadan-calendar-uae-2026', 'ramadan-tent-pricing-guide-uae-2026'],
     'suhoor-tent-rental': ['ramadan-calendar-uae-2026', 'iftar-tent-rental-checklist-uae-2026', 'upcoming-ramadan-events-dubai-2026'],
     'sadu-tent-rental': ['top-tent-suppliers-uae-2026', 'how-to-choose-tent-rental-company-uae', 'tent-rental-uae'],
     'furniture-rental': ['hotel-majlis-setup-guide-uae-2026', 'corporate-event-tents-dubai-2026', 'top-tent-suppliers-uae-2026'],
-    'decor-lighting': ['hotel-majlis-setup-guide-uae-2026', 'upcoming-ramadan-events-dubai-2026', 'corporate-event-tents-dubai-2026'],
+    'cold-storage-tents': ['industrial-storage-tent-rental-uae-2026', 'tarpaulin-vs-storage-tent-uae', 'tent-rental-uae'],
 };
 
 const imageMap: Record<string, string> = {
     'hotel-majlis': '/images/tent-now/hotel.jpg',
-    'corporate-events': '/images/tent-now/corporate.jpg',
+    'labor-accommodation-tents': '/images/storage-tents/storage-tent-2.jpeg',
     'home-majlis': '/images/tent-now/home-majlis.jpg',
     'iftar-tent-rental': '/images/tent-now/iftar-tents.jpg',
     'suhoor-tent-rental': '/images/tent-now/home-majlis.jpg',
     'sadu-tent-rental': '/images/tent-now/sadu-tents.jpg',
     'furniture-rental': '/images/tent-now/furniture.jpg',
-    'decor-lighting': '/images/tent-now/lighting-and-decor.jpg'
+    'cold-storage-tents': '/images/storage-tents/storage-tent-hero.jpg'
 };
 
 export async function generateStaticParams() {
@@ -128,18 +130,18 @@ const serviceFaqsBySlug: Record<string, { en: { q: string; a: string }[]; ar: { 
             { q: 'ما هو أصغر حجم لخيمة إفطار متاحة؟', a: 'تبدأ أصغر إعداداتنا من 4م × 6م (24 متر مربع) وتناسب 15–20 ضيفاً، وتصل هياكلنا إلى أكثر من 1,000 ضيف.' },
         ],
     },
-    'corporate-events': {
+    'labor-accommodation-tents': {
         en: [
-            { q: 'Can Tent Now handle corporate Ramadan events for 500+ guests?', a: 'Yes. We regularly execute corporate iftar and Ramadan events for 200–1,500 guests. We provide full turnkey solutions including tent, furniture, decor, lighting, flooring, and permit management.' },
-            { q: 'What corporate sectors do you serve most?', a: 'We work with banking and finance, real estate, hospitality, logistics, oil and gas, and government entities across the UAE. We understand the protocol requirements for high-profile corporate events.' },
-            { q: 'Do you have references from corporate clients?', a: 'Yes. Our client list includes UAE-based multinationals, government departments, and major hospitality groups. References are available upon request during the quotation process.' },
-            { q: 'Can we customise the tent with our brand colours and logo?', a: 'Absolutely. We offer branded tent structures, custom printed backdrops, logo panels, and full custom decor theming to match your brand identity.' },
+            { q: 'What standards do your labor accommodation tents meet?', a: 'Our labor accommodation structures are planned around UAE workforce housing requirements, including a minimum of 3 sqm per worker, proper ventilation, air conditioning and fire safety provisions.' },
+            { q: 'Can the tents include AC, lighting and power?', a: 'Yes. We can supply air conditioning, lighting, electrical distribution and generators with the structure, so the accommodation is ready to use when installation finishes.' },
+            { q: 'How quickly can you install labor accommodation on site?', a: 'Standard installations are completed within 48 to 72 hours of site readiness. Larger camps are phased so crews can move in section by section.' },
+            { q: 'Do you handle permits for workforce housing?', a: 'Yes. We prepare the municipality and Civil Defence documentation for the structure as part of the project.' },
         ],
         ar: [
-            { q: 'هل تتعامل Tent Now مع فعاليات مؤسسية لأكثر من 500 ضيف؟', a: 'نعم. ننجز بانتظام فعاليات إفطار مؤسسية لـ 200–1,500 ضيف، بحلول متكاملة تشمل الخيمة والأثاث والديكور والإضاءة والتصاريح.' },
-            { q: 'ما القطاعات التي تخدمونها؟', a: 'نخدم قطاعات البنوك والعقارات والضيافة واللوجستيات والنفط والغاز والجهات الحكومية في الإمارات.' },
-            { q: 'هل يمكن تخصيص الخيمة بألوان وشعار الشركة؟', a: 'بالتأكيد. نوفر هياكل خيام بشعارات مطبوعة ولوحات مخصصة وديكور متكامل يتناسب مع هوية علامتك التجارية.' },
-            { q: 'هل لديكم مراجع من عملاء مؤسسيين؟', a: 'نعم. قائمة عملائنا تشمل شركات متعددة الجنسيات ودوائر حكومية ومجموعات ضيافة كبرى. المراجع متاحة عند الطلب أثناء عملية تقديم العرض.' },
+            { q: 'ما المعايير التي تستوفيها خيام سكن العمال لديكم؟', a: 'نصمم هياكل سكن العمال وفق متطلبات الإسكان في الإمارات، بما في ذلك 3 م² كحد أدنى لكل عامل، وتهوية مناسبة، وتكييف، واشتراطات السلامة من الحريق.' },
+            { q: 'هل يمكن تزويد الخيام بالتكييف والإضاءة والكهرباء؟', a: 'نعم. نوفر التكييف والإضاءة والتوزيع الكهربائي والمولدات مع الهيكل، ليكون السكن جاهزاً للاستخدام عند انتهاء التركيب.' },
+            { q: 'كم يستغرق تركيب سكن العمال في الموقع؟', a: 'تكتمل التركيبات القياسية خلال 48 إلى 72 ساعة من جاهزية الموقع. وتُنفذ المعسكرات الكبيرة على مراحل ليتمكن العمال من الانتقال قسماً بعد قسم.' },
+            { q: 'هل تتولون تصاريح سكن العمال؟', a: 'نعم. نجهز مستندات البلدية والدفاع المدني الخاصة بالهيكل ضمن المشروع.' },
         ],
     },
 };

@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام الإفطار في الشارقة 2026 | تجهيز خيام رمضان ومجالس - Tent Now'
-        : 'Iftar Tent Rental Sharjah 2026 | Ramadan Tent Setup & Majlis Solutions - Tent Now';
+        ? 'تأجير خيام الإفطار في الشارقة 2026 | تجهيز خيام رمضان ومجالس'
+        : 'Iftar Tent Rental Sharjah 2026 | Ramadan Tent Setup & Majlis Solutions';
 
     const description = locale === 'ar'
         ? 'أفضل تأجير خيام إفطار في الشارقة للمؤسسات الثقافية والمساجد والشركات والعائلات. خيام تقليدية أصيلة مع تكييف وسلامة من الحريق. خيام سدو تراثية متوفرة. نتولى تصاريح بلدية الشارقة. عرض أسعار مجاني!'

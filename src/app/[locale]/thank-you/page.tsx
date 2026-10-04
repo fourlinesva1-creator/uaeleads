@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
     return {
-        title: locale === 'ar' ? 'شكراً لك | Tent Now' : 'Thank You | Tent Now',
+        title: locale === 'ar' ? 'شكراً لك' : 'Thank You',
         description: 'Your request has been received. Our team will contact you shortly.',
         robots: {
             index: false,

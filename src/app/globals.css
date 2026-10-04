@@ -473,6 +473,24 @@
     animation: fadeInUp 0.6s ease-out forwards;
   }
 
+  /* Hero: staggered reveal + slow drift on the background photo */
+  .hero-reveal {
+    animation: fadeInUp 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero-drift {
+    animation: heroDrift 28s ease-in-out infinite alternate;
+  }
+
+  @keyframes heroDrift {
+    from { transform: scale(1.04) translate3d(0, 0, 0); }
+    to { transform: scale(1.14) translate3d(-1.5%, -1%, 0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-reveal, .hero-drift { animation: none; }
+  }
+
   .animate-slide-in-left {
     animation: slideInLeft 0.6s ease-out forwards;
   }

@@ -5,21 +5,21 @@ import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 const cities = [
-  { key: 'dubai', href: '/locations/dubai/ramadan-tent-rental', labelEn: 'Ramadan Tent Dubai', labelAr: 'خيمة رمضان دبي' },
-  { key: 'abuDhabi', href: '/locations/abu-dhabi/ramadan-tent-rental', labelEn: 'Ramadan Tent Abu Dhabi', labelAr: 'خيمة رمضان أبوظبي' },
-  { key: 'sharjah', href: '/locations/sharjah/ramadan-tent-rental', labelEn: 'Ramadan Tent Sharjah', labelAr: 'خيمة رمضان الشارقة' },
-  { key: 'ajman', href: '/locations/ajman/ramadan-tent-rental', labelEn: 'Ramadan Tent Ajman', labelAr: 'خيمة رمضان عجمان' },
-  { key: 'rak', href: '/locations/ras-al-khaimah/ramadan-tent-rental', labelEn: 'Ramadan Tent Ras Al Khaimah', labelAr: 'خيمة رمضان رأس الخيمة' },
-  { key: 'fujairah', href: '/locations/fujairah/ramadan-tent-rental', labelEn: 'Ramadan Tent Fujairah', labelAr: 'خيمة رمضان الفجيرة' },
-  { key: 'uaq', href: '/locations/umm-al-quwain/ramadan-tent-rental', labelEn: 'Ramadan Tent Umm Al Quwain', labelAr: 'خيمة رمضان أم القيوين' },
+  { key: 'dubai', href: '/locations/dubai', labelEn: 'Tent Rental Dubai', labelAr: 'تأجير خيام دبي' },
+  { key: 'abuDhabi', href: '/locations/abu-dhabi', labelEn: 'Tent Rental Abu Dhabi', labelAr: 'تأجير خيام أبوظبي' },
+  { key: 'sharjah', href: '/locations/sharjah', labelEn: 'Tent Rental Sharjah', labelAr: 'تأجير خيام الشارقة' },
+  { key: 'ajman', href: '/locations/ajman', labelEn: 'Tent Rental Ajman', labelAr: 'تأجير خيام عجمان' },
+  { key: 'rak', href: '/locations/ras-al-khaimah', labelEn: 'Tent Rental Ras Al Khaimah', labelAr: 'تأجير خيام رأس الخيمة' },
+  { key: 'fujairah', href: '/locations/fujairah', labelEn: 'Tent Rental Fujairah', labelAr: 'تأجير خيام الفجيرة' },
+  { key: 'uaq', href: '/locations/umm-al-quwain', labelEn: 'Tent Rental Umm Al Quwain', labelAr: 'تأجير خيام أم القيوين' },
 ];
 
 const services = [
   { key: 'hotel', href: '/services/hotel-majlis' },
-  { key: 'corporate', href: '/services/corporate-events' },
+  { key: 'corporate', href: '/services/labor-accommodation-tents' },
   { key: 'home', href: '/services/home-majlis' },
   { key: 'furniture', href: '/services/furniture-rental' },
-  { key: 'decor', href: '/services/decor-lighting' },
+  { key: 'decor', href: '/services/cold-storage-tents' },
 ];
 
 const iftarPages = [

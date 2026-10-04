@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const title = locale === 'ar'
         ? 'مظلات مواقف السيارات في عجمان | مظلات للفلل والمجمعات التجارية | تنت ناو'
-        : 'Parking Shade Structures Ajman | Car Park Canopies | Tent Now';
+        : 'Parking Shade Structures Ajman | Car Park Canopies';
 
     const description = locale === 'ar'
         ? 'مظلات مواقف سيارات في عجمان — مظلات متدلية ومسطحة وHDPE للفلل والمواقع الصناعية والمباني التجارية. تصاريح بلدية عجمان مشمولة. أسعار تنافسية في الإمارات.'

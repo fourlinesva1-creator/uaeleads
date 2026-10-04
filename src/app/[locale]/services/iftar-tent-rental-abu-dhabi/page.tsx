@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'تأجير خيام الإفطار في أبوظبي 2026 | تجهيز خيام رمضان ومجالس - Tent Now'
-        : 'Iftar Tent Rental Abu Dhabi 2026 | Ramadan Tent Setup & Majlis Solutions - Tent Now';
+        ? 'تأجير خيام الإفطار في أبوظبي 2026 | تجهيز خيام رمضان ومجالس'
+        : 'Iftar Tent Rental Abu Dhabi 2026 | Ramadan Tent Setup & Majlis Solutions';
 
     const description = locale === 'ar'
         ? 'أفضل تأجير خيام إفطار في أبوظبي للجهات الحكومية والشركات والفنادق والعائلات. خيام مكيفة مع بوابات أمنية وأقمشة مقاومة للحريق. نتولى تصاريح بلدية أبوظبي والدفاع المدني. احصل على عرض أسعار مجاني!'

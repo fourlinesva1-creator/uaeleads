@@ -23,8 +23,11 @@
   },
   "hero": {
     "label": "Dubai Warehouse Vacancy at 3% — Deploy Your Own in 72 Hours",
-    "titleBold": "INDUSTRIAL STORAGE",
-    "titleLight": "TENTS UAE",
+    "titleBold": "Industrial Storage",
+    "titleLight": "Tents in the UAE",
+    "lede": "Civil Defence-approved clear span structures, 3m to 50m+ wide, installed on any surface in 72 hours, at 50–70% less than permanent construction.",
+    "caption": "Recent project · Abu Dhabi · 4,000 sqm",
+    "captionCta": "View project",
     "description": "Dubai industrial rents rose 33% last year with vacancy at just 3%. Tent Now deploys Civil Defence-approved clear span structures — 3m to 50m+ wide, on any surface — at 50–70% less than permanent construction. UAE's most experienced industrial tent provider since 1994.",
     "introduction": {
       "hook": "In the UAE, business moves fast — but permanent construction cannot keep pace. When logistics capacity is needed in days, not months, when a construction site requires covered storage before materials arrive, or when a project camp must be operational on day one, traditional buildings are not the answer.",
@@ -74,9 +77,7 @@
       "title": "Three Decades of Industrial Infrastructure. One Standard of Engineering Excellence.",
       "subtitle": "The UAE's most experienced provider of industrial-grade temporary structures.",
       "body": "To understand Tent Now, you have to understand the pace of infrastructure development in the Emirates. We were here when the first free zones were being built. We've supplied storage tents to the region's largest construction projects, labor accommodation to workforce camps housing thousands, and industrial structures to oil fields across the GCC. Over 30 years, we've evolved from simple canvas covers to engineered clear-span systems with 850 gsm PVC fabric and 6061-T6 aluminum alloy frames — rated for 15–20 years under UAE desert and coastal conditions.",
-      "ethos": "We started with a simple mission: solve real industrial problems faster and more cost-effectively than permanent construction. That mission drives every structure we deploy today.",
-      "subsidiaryPre": "We are a proud subsidiary of",
-      "mumtazGroup": "Mumtaz Group of Companies"
+      "ethos": "We started with a simple mission: solve real industrial problems faster and more cost-effectively than permanent construction. That mission drives every structure we deploy today."
     },
     "features": {
       "heritage": {
@@ -463,6 +464,14 @@
     "titleGold": "Industrial Excellence",
     "subtitle": "500,000+ sqm deployed across the UAE over three decades",
     "viewMore": "View Full Portfolio",
+    "recentProject": {
+      "label": "Recent Project · Abu Dhabi",
+      "title": "4,000 sqm Storage Tent for Secure Goods"
+    },
+    "featured": {
+      "label": "Featured Case Study",
+      "cta": "View Project"
+    },
     "label": "Industry-Leading Infrastructure",
     "description": "From mega-construction site storage to logistics distribution hubs and oil field personnel camps, we define the standard for industrial temporary structures across the UAE.",
     "sectionStoryTitle": "Proven Engineering Since 1994",
@@ -475,6 +484,11 @@
       "emirates": "Emirates Served"
     },
     "items": {
+      "abuDhabiStorage": {
+        "title": "4,000 sqm Storage Tent — Abu Dhabi",
+        "category": "Storage",
+        "summary": "One 30x20m and two 20x85m fully enclosed, air-conditioned PVC storage tents with lighting and roller shutter doors — a 45-day rental for secure storage of important goods."
+      },
       "brandLaunch": {
         "title": "Construction Site Storage",
         "category": "Construction"

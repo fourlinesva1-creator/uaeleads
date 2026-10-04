@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'أسعار تأجير خيام رمضان في الإمارات: دليل تقديري 2026 | Tent Now'
-        : 'Ramadan Tent Rental Pricing in UAE: 2026 Estimated Guide | Tent Now';
+        ? 'أسعار تأجير خيام رمضان في الإمارات: دليل تقديري 2026'
+        : 'Ramadan Tent Rental Pricing in UAE: 2026 Estimated Guide';
 
     const description = locale === 'ar'
         ? 'دليل شامل لأسعار تأجير خيام رمضان 2026 في الإمارات. تعرف على تكاليف خيام المجالس العائلية وخيام الإفطار للشركات والفنادق مع مقارنة بين أفضل الشركات.'
@@ -757,7 +757,7 @@ export default function RamadanTentPricingGuidePage() {
                             </div>
 
                             <p className="my-6">
-                                Whether you are looking for an <Link href="/services/iftar-tent-rental-dubai">Iftar tent rental in Dubai</Link> or planning a <Link href="/services/corporate-events">corporate Ramadan event</Link>, understanding pricing helps you make informed decisions and allocate your budget wisely.
+                                Whether you are looking for an <Link href="/services/iftar-tent-rental-dubai">Iftar tent rental in Dubai</Link> or planning a <Link href="/blog/corporate-event-tents-dubai-2026">corporate Ramadan event</Link>, understanding pricing helps you make informed decisions and allocate your budget wisely.
                             </p>
 
                             <hr className="border-border my-12" />

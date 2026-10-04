@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'مظلات مواقف ومواقف السيارات في الإمارات | مظلات | تنت ناو'
-            : 'Car Park & Parking Shade Structures UAE | Canopies | Tent Now',
+            : 'Car Park & Parking Shade Structures UAE | Canopies',
         description: isAr
             ? 'مظلات مواقف السيارات في الإمارات — مظلات كابولية وأشرعة شد ومسطحة وبولي كربونات للفلل السكنية والمواقف التجارية والمنشآت الصناعية. تصاريح بلدية مشمولة. مسح موقعي مجاني.'
             : 'Car park and parking shade structures UAE — cantilever, tensile sail, flat, and polycarbonate canopies for residential villas, commercial car parks, and industrial facilities. Municipality permits included. Free site survey.',
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: isAr
                 ? 'مظلات مواقف السيارات في الإمارات | تنت ناو'
-                : 'Parking Shade Structures UAE | Tent Now',
+                : 'Parking Shade Structures UAE',
             description: isAr
                 ? 'هياكل مظلات HDPE وأشرعة شد وبولي كربونات للمواقف السكنية والتجارية والصناعية في الإمارات.'
                 : 'HDPE, tensile sail, flat, and polycarbonate parking shade structures for residential, commercial, and industrial car parks across the UAE.',

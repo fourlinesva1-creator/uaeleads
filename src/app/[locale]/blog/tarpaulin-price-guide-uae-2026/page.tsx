@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'دليل أسعار المشمع في الإمارات 2026: PE مقابل PVC، تقييمات GSM، ودليل الشراء | Tent Now'
-        : 'Tarpaulin Price Guide UAE 2026: PE vs PVC, GSM Ratings & What to Buy | Tent Now';
+        ? 'دليل أسعار المشمع في الإمارات 2026: PE مقابل PVC، تقييمات GSM، ودليل الشراء'
+        : 'Tarpaulin Price Guide UAE 2026: PE vs PVC, GSM Ratings & What to Buy';
 
     const description = locale === 'ar'
         ? 'دليل شامل لأسعار المشمع في الإمارات 2026. مقارنة PE مقابل PVC مقابل HDPE، فهم تقييمات GSM، جدول الأسعار الكامل بالدرهم، وكيفية اختيار المشمع الصحيح لمشاريع البناء واللوجستيات والزراعة في الإمارات.'

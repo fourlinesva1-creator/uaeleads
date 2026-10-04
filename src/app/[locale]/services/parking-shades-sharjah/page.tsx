@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const title = locale === 'ar'
         ? 'مظلات مواقف السيارات في الشارقة | أسعار تنافسية | تنت ناو'
-        : 'Parking Shade Structures Sharjah | Car Park Canopies | Tent Now';
+        : 'Parking Shade Structures Sharjah | Car Park Canopies';
 
     const description = locale === 'ar'
         ? 'مظلات مواقف سيارات في الشارقة — أكثر أسعاراً تنافسية في الإمارات. مظلات متدلية ومسطحة وشراعية للفلل والمناطق الصناعية والمدارس والمساجد. تصاريح بلدية الشارقة مشمولة.'

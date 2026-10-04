@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const title = locale === 'ar'
         ? 'مظلات مواقف السيارات في أبوظبي | مظلات للفلل والمباني الحكومية | تنت ناو'
-        : 'Parking Shade Structures Abu Dhabi | Car Park Canopies | Tent Now';
+        : 'Parking Shade Structures Abu Dhabi | Car Park Canopies';
 
     const description = locale === 'ar'
         ? 'مظلات مواقف سيارات في أبوظبي للفلل والمباني الحكومية ومواقف السيارات التجارية. تصاريح بلدية أبوظبي مشمولة. مسح موقعي مجاني. اتصل بنا الآن.'

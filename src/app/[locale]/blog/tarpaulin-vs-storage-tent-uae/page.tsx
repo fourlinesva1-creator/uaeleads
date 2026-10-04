@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'مشمع أم خيمة تخزين؟ كيف يختار المقاولون الإماراتيون الحل الصحيح | Tent Now'
-        : 'Tarpaulin or Storage Tent? How UAE Contractors Choose the Right Site Cover | Tent Now';
+        ? 'مشمع أم خيمة تخزين؟ كيف يختار المقاولون الإماراتيون الحل الصحيح'
+        : 'Tarpaulin or Storage Tent? How UAE Contractors Choose the Right Site Cover';
 
     const description = locale === 'ar'
         ? 'الدليل الشامل لاختيار بين مشمع PE والخيمة الصناعية لمشاريع الإمارات. جدول مقارنة، تحليل التكاليف، ودليل القرار حسب نوع المشروع — البناء واللوجستيات والزراعة والنفط والغاز.'

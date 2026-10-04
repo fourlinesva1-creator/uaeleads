@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isAr = locale === 'ar';
     return {
         title: isAr
-            ? 'تأجير خيام المستودعات | هياكل التخزين الصناعي في الإمارات | Tent Now'
-            : 'Warehouse Tent Rental UAE | Industrial Storage Tents | Tent Now',
+            ? 'تأجير خيام المستودعات | هياكل التخزين الصناعي في الإمارات'
+            : 'Warehouse Tent Rental UAE | Industrial Storage Tents',
         description: isAr
             ? 'تأجير خيام المستودعات في الإمارات — هياكل فولاذية من 10×10م إلى 50×100م. معتمدة من الدفاع المدني، توصيل سريع. عرض سعر مجاني خلال ساعتين.'
             : 'Warehouse tent rental across UAE — steel-frame structures from 10×10m to 50×100m. Civil Defence approved, fast delivery. Free quote within 2 hours.',
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Warehouse Tent Rental UAE | Industrial Storage Tents | Tent Now',
+            title: 'Warehouse Tent Rental UAE | Industrial Storage Tents',
             description: 'Warehouse tent rental across UAE — steel-frame structures from 10×10m to 50×100m. Civil Defence approved, fast delivery. Free quote within 2 hours.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-2.jpeg' }],
         },

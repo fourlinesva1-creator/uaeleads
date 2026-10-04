@@ -4,7 +4,6 @@ import { Phone, MapPin, Clock } from 'lucide-react';
 import ContactForm from '@/components/forms/ContactForm';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -12,11 +11,10 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: 'nav' });
 
     const isAr = locale === 'ar';
     return {
-        title: t('contact'),
+        title: isAr ? 'اتصل بنا | عروض أسعار تأجير الخيام في الإمارات' : 'Contact Us | Tent Rental Quotes in Dubai, Abu Dhabi & Sharjah',
         description: isAr
             ? 'تواصل مع Tent Now لتأجير خيام رمضان والمجالس الفاخرة في دبي وأبوظبي وجميع أنحاء الإمارات. رد خلال 24 ساعة.'
             : 'Get in touch with Tent Now for premium Ramadan tent and Majlis rentals in Dubai, Abu Dhabi, and across the UAE. Response within 24 hours.',

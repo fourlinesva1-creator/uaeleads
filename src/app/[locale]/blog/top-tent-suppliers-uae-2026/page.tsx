@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
 
     const title = locale === 'ar'
-        ? 'أفضل موردي الخيام في الإمارات 2026 | مقارنة شركات تأجير الخيام في دبي وأبوظبي | Tent Now'
-        : 'Top Tent Suppliers UAE 2026 | Best Tent Rental Companies in Dubai & Abu Dhabi | Tent Now';
+        ? 'أفضل موردي الخيام في الإمارات 2026 | مقارنة شركات تأجير الخيام في دبي وأبوظبي'
+        : 'Top Tent Suppliers UAE 2026 | Best Tent Rental Companies in Dubai & Abu Dhabi';
 
     const description = locale === 'ar'
         ? 'أفضل 10 شركات لتأجير وتوريد الخيام في الإمارات لرمضان 2026 — مقارنة معتمدة تشمل الخبرة والأسعار والتصاريح والتغطية الجغرافية. احجز مبكراً قبل امتلاء المواعيد.'
@@ -236,8 +236,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">05</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2"><a href="https://almumtaztents.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Mumtaz Tents</a></h3>
-                                            <p className="text-text-muted text-sm">من أكبر موردي الخيام في الإمارات، مقرها الشارقة وتخدم جميع الإمارات. تشتهر بالخيام العربية التقليدية والمجالس وهياكل الفعاليات الكبرى، وهي الشركة الأم لـ Tent Now مع عقود من الخبرة في السوق الإماراتي.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Mumtaz Tents</h3>
+                                            <p className="text-text-muted text-sm">من أكبر موردي الخيام في الإمارات، مقرها الشارقة وتخدم جميع الإمارات. تشتهر بالخيام العربية التقليدية والمجالس وهياكل الفعاليات الكبرى، مع عقود من الخبرة في السوق الإماراتي.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -418,7 +418,7 @@ export default function TopTentSuppliersPage() {
                                 Ramadan is one of the most significant seasons for families, communities, and businesses across the UAE — a time of gathering, generosity, and celebration. Whether you are planning large-scale corporate iftars, intimate family Majlis tents, or VIP Ramadan experiences, choosing the right tent supplier can make all the difference in comfort, compliance, and aesthetics. Explore our full range of <Link href="/services" className="text-gold hover:underline">tent rental services in UAE</Link> to find the right fit.
                             </p>
                             <p>
-                                From <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> setups and <Link href="/services/corporate-events" className="text-gold hover:underline">corporate events</Link> to <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> and temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link>, we have compiled the <strong>top 10 tent rental and supplier companies in the UAE</strong> to help you make the best choice for the Ramadan 2026 season.
+                                From <Link href="/services/hotel-majlis" className="text-gold hover:underline">hotel majlis</Link> setups and <Link href="/blog/corporate-event-tents-dubai-2026" className="text-gold hover:underline">corporate events</Link> to <Link href="/services/iftar-tent-rental" className="text-gold hover:underline">iftar tent rental</Link> and temporary <Link href="/services/storage-tents" className="text-gold hover:underline">storage tent rental</Link>, we have compiled the <strong>top 10 tent rental and supplier companies in the UAE</strong> to help you make the best choice for the Ramadan 2026 season.
                             </p>
 
                             <hr className="border-border my-12" />
@@ -513,8 +513,8 @@ export default function TopTentSuppliersPage() {
                                     <div className="flex items-start gap-4">
                                         <span className="text-2xl font-bold text-gold/50 font-display">05</span>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-white mb-2"><a href="https://almumtaztents.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Mumtaz Tents</a></h3>
-                                            <p className="text-text-muted text-sm">One of the largest tent suppliers in the UAE, based in Sharjah and serving all Emirates. Renowned for traditional Arabic tents, Majlis setups, and large-scale event structures, Mumtaz Tents is the parent company of Tent Now with decades of experience in the UAE market.</p>
+                                            <h3 className="text-xl font-semibold text-white mb-2">Mumtaz Tents</h3>
+                                            <p className="text-text-muted text-sm">One of the largest tent suppliers in the UAE, based in Sharjah and serving all Emirates. Renowned for traditional Arabic tents, Majlis setups, and large-scale event structures, with decades of experience in the UAE market.</p>
                                         </div>
                                     </div>
                                 </div>

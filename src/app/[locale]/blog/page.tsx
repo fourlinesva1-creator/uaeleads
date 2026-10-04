@@ -57,6 +57,15 @@ export default function BlogPage() {
 
     const blogPosts = locale === 'ar' ? [
         {
+            slug: 'ramadan-calendar-uae-2027',
+            title: 'تقويم رمضان 2027 في الإمارات: التواريخ المتوقعة ومواعيد الإفطار وعيد الفطر',
+            excerpt: 'من المتوقع أن يبدأ رمضان 2027 يوم 8 فبراير. التواريخ المتوقعة، مواعيد الإفطار والسحور التقريبية، ومتى تحجز خيمة رمضان.',
+            image: '/images/blog/ramadan-dubai-skyline-2026.png',
+            date: '4 أكتوبر 2026',
+            readTime: '5 دقائق قراءة',
+            category: 'دليل'
+        },
+        {
             slug: 'tarpaulin-vs-storage-tent-uae',
             title: 'مشمع أم خيمة تخزين؟ كيف يختار المقاولون الإماراتيون الحل الصحيح',
             excerpt: 'الدليل الشامل لاختيار بين مشمع PE والخيمة الصناعية لمشاريع الإمارات. جدول مقارنة، تحليل التكاليف، ودليل القرار حسب نوع المشروع.',
@@ -174,6 +183,15 @@ export default function BlogPage() {
             category: 'فعاليات'
         }
     ] : [
+        {
+            slug: 'ramadan-calendar-uae-2027',
+            title: 'Ramadan 2027 UAE Calendar: Expected Dates, Iftar Times & Eid Al Fitr',
+            excerpt: 'Ramadan 2027 is expected to start on 8 February. Expected dates, approximate iftar and suhoor times, and when to book your Ramadan tent.',
+            image: '/images/blog/ramadan-dubai-skyline-2026.png',
+            date: 'October 4, 2026',
+            readTime: '5 min read',
+            category: 'Guide'
+        },
         {
             slug: 'tarpaulin-vs-storage-tent-uae',
             title: 'Tarpaulin or Storage Tent? How UAE Contractors Choose the Right Site Cover',

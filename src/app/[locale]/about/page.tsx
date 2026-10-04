@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const t = await getTranslations({ locale, namespace: 'experience' });
 
     return {
-        title: t('ourStory.title'),
+        title: locale === 'ar' ? 'من نحن | شركة تأجير خيام في الإمارات' : 'About Us | Tent Rental Company in the UAE',
         description: t('ourStory.subtitle'),
         alternates: {
             canonical: `https://www.tentnow.ae/${locale}/about`,
@@ -74,9 +74,6 @@ function AboutContent() {
                             </p>
                             <p className="text-lg text-[#9da6b9] leading-relaxed">
                                 {t('ourStory.ethos')}
-                            </p>
-                            <p className="text-lg text-[#9da6b9] leading-relaxed mt-6">
-                                {t('ourStory.subsidiaryPre')} <a href="https://almumtaztents.com/" className="text-[#D4AF37] hover:text-white transition-colors" target="_blank">{t('ourStory.mumtazGroup')}</a>.
                             </p>
                         </div>
                     </div>

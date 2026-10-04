@@ -6,7 +6,7 @@ The UAE is home to some of the world’s most spectacular events — from luxury
 
 If you're searching for tent rental in UAE or tent rental in Dubai, choosing an experienced and trusted supplier makes all the difference.
 
-At Tent Now UAE, backed by the expertise of Mumtaz Group, we bring over 30 years of combined industry knowledge, delivering high-quality tent solutions with competitive pricing and unmatched attention to detail.
+At Tent Now UAE, we bring over 30 years of combined industry knowledge, delivering high-quality tent solutions with competitive pricing and unmatched attention to detail.
 
 🌍 Serving All Emirates – Dubai, Abu Dhabi, Sharjah & Beyond
 
@@ -106,7 +106,7 @@ While many companies offer tent rental in Dubai, few combine:
 
 ✅ 30+ Years of Industry Experience
 
-Our leadership team has decades of experience through Mumtaz Group, making us one of the most knowledgeable tent suppliers in the UAE.
+Our leadership team has decades of hands-on experience in the UAE tent industry, making us one of the most knowledgeable tent suppliers in the UAE.
 
 ✅ Competitive Pricing with Premium Quality
 

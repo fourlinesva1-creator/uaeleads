@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const isAr = locale === 'ar';
 
     const title = isAr
-        ? 'دليل إعداد مجلس الفنادق الرمضاني: ما الذي تتوقعه من شركة تأجير الخيام | Tent Now'
-        : 'Hotel Ramadan Majlis Setup Guide: What to Expect From a Tent Rental Company | Tent Now';
+        ? 'دليل إعداد مجلس الفنادق الرمضاني: ما الذي تتوقعه من شركة تأجير الخيام'
+        : 'Hotel Ramadan Majlis Setup Guide: What to Expect From a Tent Rental Company';
 
     const description = isAr
         ? 'الدليل الشامل لمديري الفنادق حول إعداد مجالس رمضان — من الجداول الزمنية للتركيب والتصاريح إلى الموازنة بين المناطق والمواصفات التقنية.'

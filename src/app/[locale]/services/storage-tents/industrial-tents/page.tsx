@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: isAr
             ? 'تأجير الخيام الصناعية في الإمارات | هياكل تخزين ثقيلة التحمل | تنت ناو'
-            : 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures | Tent Now',
+            : 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures',
         description: isAr
             ? 'تأجير خيام صناعية في الإمارات — هياكل ثقيلة التحمل للنفط والغاز والإنشاء والتصنيع. مقاومة للعوامل الجوية ومتوافقة مع الدفاع المدني. احصل على عرض سعر.'
             : 'Industrial tent rental UAE — heavy-duty structures for oil & gas, construction & manufacturing. Weather-resistant, Civil Defence compliant. Get a quote.',
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures | Tent Now',
+            title: 'Industrial Tent Rental UAE | Heavy-Duty Storage Structures',
             description: 'Industrial tent rental UAE — heavy-duty structures for oil & gas, construction & manufacturing. Weather-resistant, Civil Defence compliant. Get a quote.',
             images: [{ url: 'https://www.tentnow.ae/images/storage-tents/storage-tent-3.jpeg' }],
         },

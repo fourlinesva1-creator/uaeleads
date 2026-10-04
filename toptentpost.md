@@ -8,7 +8,7 @@ Here’s our top 10 list of tent suppliers and rental experts trusted in the UAE
 
 🌙 1. Tent Now – Premium Ramadan & Event Tent Rentals UAE
 
-Your go-to provider for authentic Ramadan tents, Majlis setups, and bespoke event infrastructure across all Emirates. As a separate operating entity with expertise inherited from Mumtaz Tents, Tent Now brings over 30 years of UAE-specific tent experience, exceptional design capability, and the ability to source the best rates without compromising on quality or service.
+Your go-to provider for authentic Ramadan tents, Majlis setups, and bespoke event infrastructure across all Emirates. Tent Now brings over 30 years of UAE-specific tent experience, exceptional design capability, and the ability to source the best rates without compromising on quality or service.
 
 Why Tent Now is a top choice:
 
@@ -153,7 +153,7 @@ While many suppliers operate in the UAE, Tent Now offers a unique competitive ad
 
 🔹 30+ Years of UAE Market Experience
 
-Inherited expertise from Mumtaz Tents but operating independently with a focused event-driven structure.
+An independent operator with a focused, event-driven structure.
 
 🔹 Better Rates – Same Premium Quality
 
