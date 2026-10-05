@@ -44,4 +44,4 @@ nul
 next-env.d.ts
 
 # Client POs / invoices — confidential, never commit
-seo audit/pricing/
+seo audit/

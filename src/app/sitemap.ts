@@ -28,6 +28,7 @@ const mainPages = [
     '',
     '/services',
     '/pricing',
+    '/tent-cost-calculator',
     '/locations',
     '/portfolio',
     '/about',

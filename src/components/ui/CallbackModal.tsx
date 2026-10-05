@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useModal } from './ModalProvider';
 import { X } from 'lucide-react';
@@ -10,7 +10,7 @@ import { useRecaptcha } from '@/hooks/useRecaptcha';
 export default function CallbackModal() {
     const t = useTranslations('callback');
     const common = useTranslations('common');
-    const { isCallbackOpen, closeCallback } = useModal();
+    const { isCallbackOpen, callbackContext, closeCallback } = useModal();
     const router = useRouter();
 
     const [formData, setFormData] = useState({
@@ -35,6 +35,16 @@ export default function CallbackModal() {
             body: JSON.stringify(payload),
         }).catch(() => { /* silently ignore */ });
     };
+
+    // Prefill from an attached context (e.g. the tent calculator) without overwriting what was typed.
+    useEffect(() => {
+        if (!isCallbackOpen || !callbackContext) return;
+        setFormData((prev) => ({
+            ...prev,
+            location: prev.location || callbackContext.location || '',
+            purpose: prev.purpose || callbackContext.purpose || '',
+        }));
+    }, [isCallbackOpen, callbackContext]);
 
     if (!isCallbackOpen) return null;
 
@@ -72,6 +82,7 @@ export default function CallbackModal() {
         captureToSheet({
             formType: 'callback',
             formStep: 'complete',
+            ...callbackContext?.payload,
             name: formData.name,
             phone: formData.phone,
             location: formData.location,
@@ -107,6 +118,7 @@ export default function CallbackModal() {
             `*Location:* ${formData.location}%0A` +
             `*Purpose:* ${formData.purpose}%0A` +
             `*Preferred Call Time:* ${formData.time || 'N/A'}%0A` +
+            (callbackContext?.summary ? `*Calculator:* ${encodeURIComponent(callbackContext.summary)}%0A` : '') +
             `--------------------------------`;
 
         const whatsappUrl = `https://wa.me/971501826969?text=${waMessage}`;
@@ -158,6 +170,11 @@ export default function CallbackModal() {
                             <div className="mb-8">
                                 <h3 className="text-2xl font-display text-white mb-2">{t('title')}</h3>
                                 <p className="text-[#9da6b9]">{t('subtitle')}</p>
+                                {callbackContext?.summary && (
+                                    <p className="mt-3 rounded-xl bg-[#101622] border border-[#282e39] px-3 py-2 text-xs text-[#D4AF37]">
+                                        {callbackContext.summary}
+                                    </p>
+                                )}
                             </div>
 
                             <form onSubmit={handleSubmit} className="space-y-4">

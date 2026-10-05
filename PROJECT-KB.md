@@ -276,6 +276,8 @@ more than a coverage problem.
 | Modal path | `components/ui/CallbackModal.tsx` via `ModalProvider` (Hero "request callback") |
 | Direct channels | WhatsApp `wa.me/971501826969`, tel `+971501826969` — hardcoded in Hero, Footer, `WhatsAppButton` |
 | Success | `/[locale]/thank-you` |
+| Calculator leads | `formType: 'calculator'` from `/[locale]/tent-cost-calculator` (WhatsApp, quote form, callback with setup attached). Payload + score in `src/lib/calculator/lead.ts`; spec in `kb/tent-cost-calculator/04-lead-capture.md` |
+| Validation | `/api/capture-lead` accepts only flat JSON ≤ 16 KB with `formType` quote/callback/calculator (zod) |
 
 Env (`.env.example`): Postgres (`POSTGRES_*`), SendGrid (`SENDGRID_API_KEY`,
 `EMAIL_FROM`), analytics (`NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GTM_ID`), reCAPTCHA
@@ -313,6 +315,13 @@ inputs.
 ---
 
 ## 10. Change log
+
+### 2026-10-06 — Tent cost calculator (Phases 3–4)
+
+- New route `/[locale]/tent-cost-calculator` (+ `/print`, `opengraph-image`), in all 3 sitemaps, indexable.
+- Lead capture: `formType: 'calculator'`; `ModalProvider.openCallback(context?)` can attach a payload.
+- `PricingNote` now shows `RATES_UPDATED` instead of "December 2025".
+- `CalculatorBanner` links added to `/pricing`, service, location and price-blog pages; footer links to Pricing + Calculator.
 
 ### 2026-10-04 — SEO fixes from Search Console review
 
@@ -381,6 +390,11 @@ agent worktree, gitignored, not published). Delete the worktree when convenient.
 ---
 
 ## 11. Open work
+
+**Tent cost calculator** — public EN/AR calculator page with lead capture, started
+2026-10-05. Full spec, pricing model and build checklist in
+[`kb/tent-cost-calculator/`](kb/tent-cost-calculator/README.md). Built and indexable (2026-10-06); launch waits
+on the Google Sheet columns, an owner decision on `/pricing` ranges + permits, and the push. Rates refine as invoices arrive.
 
 **Content, image and video refresh** — the active brief. Media notes:
 

@@ -459,7 +459,7 @@ export default function IftarTentSetupContent({
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <button
-                                    onClick={openCallback}
+                                    onClick={() => openCallback()}
                                     className="btn-gold-fill px-8 py-4 rounded-xl font-display flex items-center gap-3 text-sm uppercase tracking-widest"
                                 >
                                     {t.ctaButton}

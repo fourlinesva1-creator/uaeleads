@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import BlogSchema from '@/components/blog/BlogSchema';
 import PricingNote from '@/components/ui/PricingNote';
+import CalculatorBanner from '@/components/calculator/CalculatorBanner';
 import ShareButtons from '@/components/blog/ShareButtons';
 import BlogServiceCTA from '@/components/blog/BlogServiceCTA';
 
@@ -122,6 +123,7 @@ export default function TentRentalUAEPage() {
                 </div>
 
                 <PricingNote locale={locale} className="mb-8" />
+                <CalculatorBanner locale={locale} className="mb-8" />
 
                 {/* Content Body */}
                 <div className="prose prose-invert prose-lg max-w-none prose-headings:font-display prose-headings:text-gold prose-a:text-gold prose-strong:text-white">

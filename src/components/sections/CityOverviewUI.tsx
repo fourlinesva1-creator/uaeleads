@@ -1,5 +1,6 @@
 'use client';
 
+import CalculatorBanner from '@/components/calculator/CalculatorBanner';
 import { useModal } from '@/components/ui/ModalProvider';
 import { Link } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
@@ -336,6 +337,7 @@ export default function CityOverviewUI({ city, content }: Props) {
             {/* Final CTA */}
             <section className="py-20">
                 <div className="container-luxury">
+                    <CalculatorBanner locale={locale} className="mb-10" />
                     <div className="p-12 lg:p-20 bg-gold rounded-3xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 p-16 opacity-10 transform translate-x-8 -translate-y-8">
                             <ArrowRight size={300} strokeWidth={1} />
@@ -351,7 +353,7 @@ export default function CityOverviewUI({ city, content }: Props) {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button
-                                    onClick={openCallback}
+                                    onClick={() => openCallback()}
                                     className="px-10 py-5 bg-[#101622] text-white rounded-xl font-display tracking-wide hover:bg-[#1a212e] transition-colors"
                                 >
                                     {content.cta}

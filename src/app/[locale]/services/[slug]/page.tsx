@@ -1,4 +1,5 @@
 import { setRequestLocale } from 'next-intl/server';
+import CalculatorBanner from '@/components/calculator/CalculatorBanner';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -312,6 +313,7 @@ function ServiceDetailContent({ serviceId, slug }: { serviceId: string; slug: st
                                 {isAr ? 'واتساب للحصول على سعر فوري' : 'WhatsApp for Instant Quote'}
                             </a>
                         </div>
+                        <CalculatorBanner locale={isAr ? 'ar' : 'en'} className="mt-8" />
                     </div>
 
                     {/* From Our Blog */}

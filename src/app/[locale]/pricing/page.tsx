@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import JsonLd from '@/components/seo/JsonLd';
 import FAQSchema from '@/components/seo/FAQSchema';
 import PricingNote from '@/components/ui/PricingNote';
+import CalculatorBanner from '@/components/calculator/CalculatorBanner';
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -201,6 +202,7 @@ export default function PricingPage() {
             <section className="py-4">
                 <div className="container-luxury">
                     <PricingNote locale={locale} className="text-sm py-4 px-5" />
+                    <CalculatorBanner locale={locale} className="mt-4" />
                 </div>
             </section>
 

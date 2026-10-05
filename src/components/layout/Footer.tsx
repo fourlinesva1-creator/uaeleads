@@ -163,6 +163,16 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link href="/pricing" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  {locale === 'ar' ? 'الأسعار' : 'Pricing'}
+                </Link>
+              </li>
+              <li>
+                <Link href="/tent-cost-calculator" className="text-text-muted hover:text-gold transition-colors text-sm font-medium">
+                  {locale === 'ar' ? 'حاسبة تكلفة الخيام' : 'Tent Cost Calculator'}
+                </Link>
+              </li>
               <li className="pt-2 flex items-start gap-3">
                 <svg className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

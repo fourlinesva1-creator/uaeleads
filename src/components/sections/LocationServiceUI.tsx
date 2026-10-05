@@ -1,5 +1,6 @@
 'use client';
 
+import CalculatorBanner from '@/components/calculator/CalculatorBanner';
 import { useTranslations, useLocale } from 'next-intl';
 import { useModal } from '@/components/ui/ModalProvider';
 import { CheckCircle2, ArrowRight, ChevronDown } from 'lucide-react';
@@ -119,6 +120,7 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                                 <FAQSchema items={content.faqs} />
                                 <div className="mt-20 pt-16 border-t border-border/30">
                                     <PricingNote locale={locale} className="mb-10" />
+                                    <CalculatorBanner locale={locale} className="mb-10" />
                                     <h2 className="text-2xl md:text-3xl font-display text-white mb-10">
                                         {locale === 'ar' ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
                                     </h2>
@@ -202,7 +204,7 @@ export default function LocationServiceUI({ city, slug, content }: Props) {
                                     </p>
                                 </div>
                                 <button
-                                    onClick={openCallback}
+                                    onClick={() => openCallback()}
                                     className="px-10 py-5 bg-[#101622] text-white rounded-xl font-bold tracking-widest uppercase hover:bg-[#1a212e] transition-all shadow-2xl"
                                 >
                                     {content.cta}

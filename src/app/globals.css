@@ -387,6 +387,13 @@
     @apply left-6;
   }
 
+  /* Tent cost calculator: keep the float clear of the mobile summary bar */
+  @media (max-width: 1023px) {
+    body.has-calc-bar .whatsapp-float {
+      bottom: 6rem;
+    }
+  }
+
   /* ===== IMAGE HOVER EFFECTS ===== */
   .image-zoom-container {
     @apply relative overflow-hidden;
@@ -537,5 +544,18 @@
   /* Gold glow on hover */
   .hover-glow-gold {
     @apply transition-shadow duration-300 hover:shadow-gold;
+  }
+}
+
+/* Printable calculator quote: hide the site chrome and print on white. */
+@media print {
+  body > header,
+  header.sticky,
+  footer,
+  .whatsapp-float {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
   }
 }

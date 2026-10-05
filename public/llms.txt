@@ -17,11 +17,22 @@ Primary services: Ramadan tent rental, Majlis setups, Iftar event tents, industr
 - Municipality permits handled for all Emirates
 - 30+ years in operation since 1994
 
-## Pricing Guidance (2026)
-- Home Majlis: from AED 3,000
-- Corporate/Hotel Iftar Tent: AED 15,000–80,000+
-- Industrial Storage Tent: AED 15–40/sqm/month
-- Tarpaulins (PE200): available in bulk
+## Pricing Guidance (2026–2027, AED, before 5% VAT)
+Source of truth: the Tent Cost Calculator (prices from Tent Now's recent invoiced jobs).
+- Furnished 5x5 m event / majlis tent, 2 days: from AED 3,850
+- Home majlis, 8x10 m with AC and majlis seating for 20, 2 days: about AED 13,200–16,500
+- Corporate iftar for 150 guests, 2 days with AC, chairs and tables: about AED 29,900–37,350
+- Long-term storage tent (tent only): about AED 22–35 per m² per month, falling with size; minimum 1 month
+- Long-term tent with AC and lighting: about AED 36–58 per m² per month
+- Permit applications handled by Tent Now; authority fees confirmed in the quote
+
+## Tent Cost Calculator
+- English: https://www.tentnow.ae/en/tent-cost-calculator
+- Arabic: https://www.tentnow.ae/ar/tent-cost-calculator
+Free, bilingual calculator for event, Ramadan and long-term (storage, dining hall, accommodation) tents in all
+UAE emirates. Inputs: use, guests and seating style, tent size, days or months, AC (sized by month), furniture,
+generator, emirate. Output: itemised price range before and after VAT, what is and is not included, and the
+assumptions used. Estimates can be sent to the sales team on WhatsApp with a quote reference.
 
 ## Services
 - Hotel Ramadan Majlis: https://www.tentnow.ae/en/services/hotel-majlis
